@@ -1,0 +1,1682 @@
+[
+ {
+  "id": "courts-0",
+  "doc": "sg-judgment-01.txt",
+  "category": "PERSON",
+  "off": 1226,
+  "len": 15
+ },
+ {
+  "id": "courts-1",
+  "doc": "sg-judgment-01.txt",
+  "category": "DATETIME",
+  "off": 9572,
+  "len": 14
+ },
+ {
+  "id": "courts-2",
+  "doc": "sg-judgment-01.txt",
+  "category": "CODE",
+  "off": 12328,
+  "len": 15
+ },
+ {
+  "id": "courts-3",
+  "doc": "sg-judgment-02.txt",
+  "category": "ORG",
+  "off": 11985,
+  "len": 21
+ },
+ {
+  "id": "courts-4",
+  "doc": "sg-judgment-02.txt",
+  "category": "DEM",
+  "off": 40287,
+  "len": 8
+ },
+ {
+  "id": "courts-5",
+  "doc": "sg-judgment-02.txt",
+  "category": "DATETIME",
+  "off": 109534,
+  "len": 17
+ },
+ {
+  "id": "courts-6",
+  "doc": "sg-judgment-03.txt",
+  "category": "PERSON",
+  "off": 24610,
+  "len": 8
+ },
+ {
+  "id": "courts-7",
+  "doc": "sg-judgment-03.txt",
+  "category": "DATETIME",
+  "off": 8538,
+  "len": 12
+ },
+ {
+  "id": "courts-8",
+  "doc": "sg-judgment-03.txt",
+  "category": "DEM",
+  "off": 10841,
+  "len": 8
+ },
+ {
+  "id": "courts-9",
+  "doc": "sg-judgment-04.txt",
+  "category": "ORG",
+  "off": 702,
+  "len": 28
+ },
+ {
+  "id": "courts-10",
+  "doc": "sg-judgment-04.txt",
+  "category": "DATETIME",
+  "off": 4434,
+  "len": 15
+ },
+ {
+  "id": "courts-11",
+  "doc": "sg-judgment-04.txt",
+  "category": "QUANTITY",
+  "off": 10574,
+  "len": 8
+ },
+ {
+  "id": "courts-12",
+  "doc": "sg-judgment-05.txt",
+  "category": "PERSON",
+  "off": 28624,
+  "len": 13
+ },
+ {
+  "id": "courts-13",
+  "doc": "sg-judgment-05.txt",
+  "category": "DATETIME",
+  "off": 7069,
+  "len": 17
+ },
+ {
+  "id": "courts-14",
+  "doc": "sg-judgment-05.txt",
+  "category": "MISC",
+  "off": 5736,
+  "len": 31
+ },
+ {
+  "id": "courts-15",
+  "doc": "sg-judgment-06.txt",
+  "category": "ORG",
+  "off": 39371,
+  "len": 24
+ },
+ {
+  "id": "courts-16",
+  "doc": "sg-judgment-06.txt",
+  "category": "DATETIME",
+  "off": 8733,
+  "len": 10
+ },
+ {
+  "id": "courts-17",
+  "doc": "sg-judgment-06.txt",
+  "category": "MISC",
+  "off": 2100,
+  "len": 10
+ },
+ {
+  "id": "courts-18",
+  "doc": "sg-judgment-07.txt",
+  "category": "DEM",
+  "off": 157414,
+  "len": 23
+ },
+ {
+  "id": "courts-19",
+  "doc": "sg-judgment-07.txt",
+  "category": "DATETIME",
+  "off": 14892,
+  "len": 6
+ },
+ {
+  "id": "courts-20",
+  "doc": "sg-judgment-08.txt",
+  "category": "PERSON",
+  "off": 3374,
+  "len": 41
+ },
+ {
+  "id": "courts-21",
+  "doc": "sg-judgment-08.txt",
+  "category": "ORG",
+  "off": 2052,
+  "len": 3
+ },
+ {
+  "id": "courts-22",
+  "doc": "sg-judgment-08.txt",
+  "category": "MISC",
+  "off": 1694,
+  "len": 17
+ },
+ {
+  "id": "courts-23",
+  "doc": "sg-judgment-08.txt",
+  "category": "DATETIME",
+  "off": 22123,
+  "len": 6
+ },
+ {
+  "id": "courts-24",
+  "doc": "sg-judgment-09.txt",
+  "category": "PERSON",
+  "off": 208576,
+  "len": 21
+ },
+ {
+  "id": "courts-25",
+  "doc": "sg-judgment-09.txt",
+  "category": "ORG",
+  "off": 73892,
+  "len": 24
+ },
+ {
+  "id": "courts-26",
+  "doc": "sg-judgment-09.txt",
+  "category": "MISC",
+  "off": 53558,
+  "len": 12
+ },
+ {
+  "id": "courts-27",
+  "doc": "sg-judgment-09.txt",
+  "category": "QUANTITY",
+  "off": 15276,
+  "len": 13
+ },
+ {
+  "id": "courts-28",
+  "doc": "sg-judgment-10.txt",
+  "category": "CODE",
+  "off": 9465,
+  "len": 8
+ },
+ {
+  "id": "courts-29",
+  "doc": "sg-judgment-10.txt",
+  "category": "DATETIME",
+  "off": 5857,
+  "len": 13
+ },
+ {
+  "id": "courts-30",
+  "doc": "sg-judgment-10.txt",
+  "category": "DEM",
+  "off": 2541,
+  "len": 6
+ },
+ {
+  "id": "courts-31",
+  "doc": "sg-judgment-10.txt",
+  "category": "PERSON",
+  "off": 11985,
+  "len": 6
+ },
+ {
+  "id": "courts-32",
+  "doc": "sg-judgment-11.txt",
+  "category": "PERSON",
+  "off": 2802,
+  "len": 12
+ },
+ {
+  "id": "courts-33",
+  "doc": "sg-judgment-11.txt",
+  "category": "ORG",
+  "off": 89143,
+  "len": 19
+ },
+ {
+  "id": "courts-34",
+  "doc": "sg-judgment-11.txt",
+  "category": "DEM",
+  "off": 60823,
+  "len": 33
+ },
+ {
+  "id": "courts-35",
+  "doc": "sg-judgment-11.txt",
+  "category": "DATETIME",
+  "off": 9775,
+  "len": 15
+ },
+ {
+  "id": "courts-36",
+  "doc": "sg-judgment-11.txt",
+  "category": "DATETIME",
+  "off": 57910,
+  "len": 16
+ },
+ {
+  "id": "courts-37",
+  "doc": "sg-judgment-11.txt",
+  "category": "MISC",
+  "off": 18552,
+  "len": 63
+ },
+ {
+  "id": "courts-38",
+  "doc": "sg-judgment-12.txt",
+  "category": "ORG",
+  "off": 5167,
+  "len": 6
+ },
+ {
+  "id": "courts-39",
+  "doc": "sg-judgment-12.txt",
+  "category": "DEM",
+  "off": 15465,
+  "len": 15
+ },
+ {
+  "id": "courts-40",
+  "doc": "sg-judgment-13.txt",
+  "category": "ORG",
+  "off": 9851,
+  "len": 8
+ },
+ {
+  "id": "courts-41",
+  "doc": "sg-judgment-13.txt",
+  "category": "PERSON",
+  "off": 35510,
+  "len": 13
+ },
+ {
+  "id": "courts-42",
+  "doc": "sg-judgment-13.txt",
+  "category": "DATETIME",
+  "off": 118831,
+  "len": 15
+ },
+ {
+  "id": "courts-43",
+  "doc": "sg-judgment-14.txt",
+  "category": "PERSON",
+  "off": 24066,
+  "len": 11
+ },
+ {
+  "id": "courts-44",
+  "doc": "sg-judgment-14.txt",
+  "category": "DATETIME",
+  "off": 6533,
+  "len": 10
+ },
+ {
+  "id": "courts-45",
+  "doc": "sg-judgment-15.txt",
+  "category": "DATETIME",
+  "off": 14828,
+  "len": 12
+ },
+ {
+  "id": "courts-46",
+  "doc": "sg-judgment-15.txt",
+  "category": "ORG",
+  "off": 4140,
+  "len": 12
+ },
+ {
+  "id": "courts-47",
+  "doc": "sg-judgment-15.txt",
+  "category": "LOC",
+  "off": 2310,
+  "len": 9
+ },
+ {
+  "id": "courts-48",
+  "doc": "sg-judgment-16.txt",
+  "category": "CODE",
+  "off": 531,
+  "len": 32
+ },
+ {
+  "id": "courts-49",
+  "doc": "sg-judgment-16.txt",
+  "category": "QUANTITY",
+  "off": 1758,
+  "len": 8
+ },
+ {
+  "id": "courts-50",
+  "doc": "sg-judgment-16.txt",
+  "category": "MISC",
+  "off": 8108,
+  "len": 12
+ },
+ {
+  "id": "courts-51",
+  "doc": "sg-judgment-17.txt",
+  "category": "ORG",
+  "off": 49860,
+  "len": 10
+ },
+ {
+  "id": "courts-52",
+  "doc": "sg-judgment-17.txt",
+  "category": "QUANTITY",
+  "off": 13236,
+  "len": 6
+ },
+ {
+  "id": "courts-53",
+  "doc": "sg-judgment-18.txt",
+  "category": "PERSON",
+  "off": 46329,
+  "len": 10
+ },
+ {
+  "id": "courts-54",
+  "doc": "sg-judgment-18.txt",
+  "category": "DATETIME",
+  "off": 5661,
+  "len": 4
+ },
+ {
+  "id": "courts-55",
+  "doc": "sg-judgment-18.txt",
+  "category": "QUANTITY",
+  "off": 10433,
+  "len": 16
+ },
+ {
+  "id": "courts-56",
+  "doc": "sg-judgment-18.txt",
+  "category": "DEM",
+  "off": 7623,
+  "len": 37
+ },
+ {
+  "id": "courts-57",
+  "doc": "sg-judgment-19.txt",
+  "category": "PERSON",
+  "off": 198073,
+  "len": 14
+ },
+ {
+  "id": "courts-58",
+  "doc": "sg-judgment-19.txt",
+  "category": "QUANTITY",
+  "off": 139719,
+  "len": 13
+ },
+ {
+  "id": "courts-59",
+  "doc": "sg-judgment-19.txt",
+  "category": "ORG",
+  "off": 4085,
+  "len": 3
+ },
+ {
+  "id": "courts-60",
+  "doc": "sg-judgment-19.txt",
+  "category": "ORG",
+  "off": 93356,
+  "len": 27
+ },
+ {
+  "id": "courts-61",
+  "doc": "sg-judgment-20.txt",
+  "category": "PERSON",
+  "off": 5491,
+  "len": 17
+ },
+ {
+  "id": "courts-62",
+  "doc": "sg-judgment-20.txt",
+  "category": "ORG",
+  "off": 59368,
+  "len": 22
+ },
+ {
+  "id": "courts-63",
+  "doc": "sg-judgment-20.txt",
+  "category": "DATETIME",
+  "off": 10618,
+  "len": 15
+ },
+ {
+  "id": "courts-64",
+  "doc": "sg-judgment-20.txt",
+  "category": "MISC",
+  "off": 8505,
+  "len": 18
+ },
+ {
+  "id": "courts-65",
+  "doc": "sg-judgment-21.txt",
+  "category": "DATETIME",
+  "off": 2836,
+  "len": 16
+ },
+ {
+  "id": "courts-66",
+  "doc": "sg-judgment-22.txt",
+  "category": "PERSON",
+  "off": 5947,
+  "len": 11
+ },
+ {
+  "id": "courts-67",
+  "doc": "sg-judgment-22.txt",
+  "category": "DATETIME",
+  "off": 2606,
+  "len": 17
+ },
+ {
+  "id": "courts-68",
+  "doc": "sg-judgment-23.txt",
+  "category": "DEM",
+  "off": 4549,
+  "len": 13
+ },
+ {
+  "id": "courts-69",
+  "doc": "sg-judgment-23.txt",
+  "category": "ORG",
+  "off": 701,
+  "len": 16
+ },
+ {
+  "id": "courts-70",
+  "doc": "sg-judgment-24.txt",
+  "category": "DEM",
+  "off": 15654,
+  "len": 8
+ },
+ {
+  "id": "courts-71",
+  "doc": "sg-judgment-24.txt",
+  "category": "ORG",
+  "off": 624,
+  "len": 23
+ },
+ {
+  "id": "courts-72",
+  "doc": "sg-judgment-24.txt",
+  "category": "PERSON",
+  "off": 29742,
+  "len": 7
+ },
+ {
+  "id": "courts-73",
+  "doc": "sg-judgment-24.txt",
+  "category": "MISC",
+  "off": 12830,
+  "len": 13
+ },
+ {
+  "id": "courts-74",
+  "doc": "sg-judgment-25.txt",
+  "category": "ORG",
+  "off": 1401,
+  "len": 15
+ },
+ {
+  "id": "courts-75",
+  "doc": "sg-judgment-25.txt",
+  "category": "QUANTITY",
+  "off": 5203,
+  "len": 8
+ },
+ {
+  "id": "courts-76",
+  "doc": "us-opinion-02.txt",
+  "category": "DEM",
+  "off": 4519,
+  "len": 11
+ },
+ {
+  "id": "courts-77",
+  "doc": "us-opinion-03.txt",
+  "category": "PERSON",
+  "off": 24315,
+  "len": 7
+ },
+ {
+  "id": "courts-78",
+  "doc": "us-opinion-03.txt",
+  "category": "DATETIME",
+  "off": 7719,
+  "len": 16
+ },
+ {
+  "id": "courts-79",
+  "doc": "us-opinion-03.txt",
+  "category": "MISC",
+  "off": 5820,
+  "len": 18
+ },
+ {
+  "id": "courts-80",
+  "doc": "us-opinion-04.txt",
+  "category": "DATETIME",
+  "off": 2912,
+  "len": 17
+ },
+ {
+  "id": "courts-81",
+  "doc": "us-opinion-04.txt",
+  "category": "MISC",
+  "off": 13449,
+  "len": 24
+ },
+ {
+  "id": "courts-82",
+  "doc": "us-opinion-05.txt",
+  "category": "ORG",
+  "off": 11293,
+  "len": 30
+ },
+ {
+  "id": "courts-83",
+  "doc": "us-opinion-06.txt",
+  "category": "DATETIME",
+  "off": 851,
+  "len": 14
+ },
+ {
+  "id": "courts-84",
+  "doc": "us-opinion-06.txt",
+  "category": "DATETIME",
+  "off": 7146,
+  "len": 4
+ },
+ {
+  "id": "courts-85",
+  "doc": "us-opinion-07.txt",
+  "category": "QUANTITY",
+  "off": 1759,
+  "len": 14
+ },
+ {
+  "id": "courts-86",
+  "doc": "us-opinion-07.txt",
+  "category": "DATETIME",
+  "off": 3211,
+  "len": 9
+ },
+ {
+  "id": "courts-87",
+  "doc": "us-opinion-08.txt",
+  "category": "LOC",
+  "off": 15218,
+  "len": 7
+ },
+ {
+  "id": "courts-88",
+  "doc": "us-opinion-08.txt",
+  "category": "QUANTITY",
+  "off": 8251,
+  "len": 7
+ },
+ {
+  "id": "courts-89",
+  "doc": "us-opinion-09.txt",
+  "category": "ORG",
+  "off": 451,
+  "len": 10
+ },
+ {
+  "id": "courts-90",
+  "doc": "us-opinion-09.txt",
+  "category": "DATETIME",
+  "off": 16684,
+  "len": 9
+ },
+ {
+  "id": "courts-91",
+  "doc": "us-opinion-10.txt",
+  "category": "ORG",
+  "off": 1818,
+  "len": 31
+ },
+ {
+  "id": "courts-92",
+  "doc": "us-opinion-10.txt",
+  "category": "DEM",
+  "off": 12522,
+  "len": 21
+ },
+ {
+  "id": "courts-93",
+  "doc": "us-opinion-10.txt",
+  "category": "DATETIME",
+  "off": 3139,
+  "len": 12
+ },
+ {
+  "id": "courts-94",
+  "doc": "us-opinion-11.txt",
+  "category": "ORG",
+  "off": 655,
+  "len": 16
+ },
+ {
+  "id": "courts-95",
+  "doc": "us-opinion-11.txt",
+  "category": "CODE",
+  "off": 16206,
+  "len": 16
+ },
+ {
+  "id": "courts-96",
+  "doc": "us-opinion-11.txt",
+  "category": "MISC",
+  "off": 500,
+  "len": 10
+ },
+ {
+  "id": "courts-97",
+  "doc": "us-opinion-12.txt",
+  "category": "ORG",
+  "off": 4099,
+  "len": 22
+ },
+ {
+  "id": "courts-98",
+  "doc": "us-opinion-12.txt",
+  "category": "ORG",
+  "off": 14548,
+  "len": 44
+ },
+ {
+  "id": "courts-99",
+  "doc": "us-opinion-13.txt",
+  "category": "ORG",
+  "off": 1258,
+  "len": 18
+ },
+ {
+  "id": "courts-100",
+  "doc": "us-opinion-14.txt",
+  "category": "ORG",
+  "off": 396,
+  "len": 65
+ },
+ {
+  "id": "courts-101",
+  "doc": "us-opinion-14.txt",
+  "category": "ORG",
+  "off": 7301,
+  "len": 19
+ },
+ {
+  "id": "courts-102",
+  "doc": "us-opinion-15.txt",
+  "category": "ORG",
+  "off": 17071,
+  "len": 12
+ },
+ {
+  "id": "courts-103",
+  "doc": "us-opinion-16.txt",
+  "category": "ORG",
+  "off": 7,
+  "len": 10
+ },
+ {
+  "id": "courts-104",
+  "doc": "us-opinion-16.txt",
+  "category": "DATETIME",
+  "off": 7863,
+  "len": 11
+ },
+ {
+  "id": "courts-105",
+  "doc": "us-opinion-17.txt",
+  "category": "ORG",
+  "off": 14665,
+  "len": 13
+ },
+ {
+  "id": "courts-106",
+  "doc": "us-opinion-17.txt",
+  "category": "MISC",
+  "off": 871,
+  "len": 38
+ },
+ {
+  "id": "courts-107",
+  "doc": "us-opinion-18.txt",
+  "category": "MISC",
+  "off": 7311,
+  "len": 34
+ },
+ {
+  "id": "courts-108",
+  "doc": "us-opinion-18.txt",
+  "category": "CODE",
+  "off": 12987,
+  "len": 12
+ },
+ {
+  "id": "courts-109",
+  "doc": "us-opinion-19.txt",
+  "category": "MISC",
+  "off": 25783,
+  "len": 36
+ },
+ {
+  "id": "courts-110",
+  "doc": "us-opinion-19.txt",
+  "category": "ORG",
+  "off": 5274,
+  "len": 63
+ },
+ {
+  "id": "courts-111",
+  "doc": "us-opinion-20.txt",
+  "category": "ORG",
+  "off": 4502,
+  "len": 11
+ },
+ {
+  "id": "courts-112",
+  "doc": "us-opinion-21.txt",
+  "category": "CODE",
+  "off": 251,
+  "len": 27
+ },
+ {
+  "id": "courts-113",
+  "doc": "us-opinion-22.txt",
+  "category": "MISC",
+  "off": 18600,
+  "len": 16
+ },
+ {
+  "id": "courts-114",
+  "doc": "us-opinion-22.txt",
+  "category": "DATETIME",
+  "off": 3902,
+  "len": 17
+ },
+ {
+  "id": "courts-115",
+  "doc": "us-opinion-22.txt",
+  "category": "CODE",
+  "off": 15057,
+  "len": 11
+ },
+ {
+  "id": "courts-116",
+  "doc": "us-opinion-23.txt",
+  "category": "CODE",
+  "off": 2554,
+  "len": 11
+ },
+ {
+  "id": "courts-117",
+  "doc": "us-opinion-24.txt",
+  "category": "CODE",
+  "off": 23232,
+  "len": 14
+ },
+ {
+  "id": "courts-118",
+  "doc": "us-opinion-24.txt",
+  "category": "ORG",
+  "off": 20989,
+  "len": 26
+ },
+ {
+  "id": "courts-119",
+  "doc": "us-opinion-24.txt",
+  "category": "DATETIME",
+  "off": 17045,
+  "len": 12
+ },
+ {
+  "id": "edgar-0",
+  "doc": "edgar-ex10-01.txt",
+  "category": "PERSON",
+  "off": 9740,
+  "len": 14
+ },
+ {
+  "id": "edgar-1",
+  "doc": "edgar-ex10-01.txt",
+  "category": "LOC",
+  "off": 7102,
+  "len": 29
+ },
+ {
+  "id": "edgar-2",
+  "doc": "edgar-ex10-01.txt",
+  "category": "QUANTITY",
+  "off": 6473,
+  "len": 12
+ },
+ {
+  "id": "edgar-3",
+  "doc": "edgar-ex10-02.txt",
+  "category": "ORG",
+  "off": 3181,
+  "len": 18
+ },
+ {
+  "id": "edgar-4",
+  "doc": "edgar-ex10-02.txt",
+  "category": "DATETIME",
+  "off": 1395,
+  "len": 17
+ },
+ {
+  "id": "edgar-5",
+  "doc": "edgar-ex10-03.txt",
+  "category": "DEM",
+  "off": 773,
+  "len": 24
+ },
+ {
+  "id": "edgar-6",
+  "doc": "edgar-ex10-04.txt",
+  "category": "DATETIME",
+  "off": 837,
+  "len": 17
+ },
+ {
+  "id": "edgar-7",
+  "doc": "edgar-ex10-05.txt",
+  "category": "DATETIME",
+  "off": 3855,
+  "len": 13
+ },
+ {
+  "id": "edgar-8",
+  "doc": "edgar-ex10-06.txt",
+  "category": "DATETIME",
+  "off": 3855,
+  "len": 13
+ },
+ {
+  "id": "edgar-9",
+  "doc": "edgar-ex10-06.txt",
+  "category": "MISC",
+  "off": 6729,
+  "len": 24
+ },
+ {
+  "id": "edgar-10",
+  "doc": "edgar-ex10-07.txt",
+  "category": "ORG",
+  "off": 3937,
+  "len": 11
+ },
+ {
+  "id": "edgar-11",
+  "doc": "edgar-ex10-07.txt",
+  "category": "MISC",
+  "off": 2082,
+  "len": 27
+ },
+ {
+  "id": "edgar-12",
+  "doc": "edgar-ex10-08.txt",
+  "category": "DATETIME",
+  "off": 7594,
+  "len": 4
+ },
+ {
+  "id": "edgar-13",
+  "doc": "edgar-ex10-08.txt",
+  "category": "LOC",
+  "off": 8703,
+  "len": 19
+ },
+ {
+  "id": "edgar-14",
+  "doc": "edgar-ex10-08.txt",
+  "category": "MISC",
+  "off": 5476,
+  "len": 63
+ },
+ {
+  "id": "edgar-15",
+  "doc": "edgar-ex10-09.txt",
+  "category": "ORG",
+  "off": 720,
+  "len": 17
+ },
+ {
+  "id": "edgar-16",
+  "doc": "edgar-ex10-09.txt",
+  "category": "QUANTITY",
+  "off": 22305,
+  "len": 11
+ },
+ {
+  "id": "edgar-17",
+  "doc": "edgar-ex10-09.txt",
+  "category": "DATETIME",
+  "off": 1115,
+  "len": 15
+ },
+ {
+  "id": "edgar-18",
+  "doc": "edgar-ex10-09.txt",
+  "category": "DATETIME",
+  "off": 28501,
+  "len": 17
+ },
+ {
+  "id": "edgar-19",
+  "doc": "edgar-ex10-09.txt",
+  "category": "DATETIME",
+  "off": 36716,
+  "len": 17
+ },
+ {
+  "id": "edgar-20",
+  "doc": "edgar-ex10-09.txt",
+  "category": "DATETIME",
+  "off": 45665,
+  "len": 17
+ },
+ {
+  "id": "edgar-21",
+  "doc": "edgar-ex10-09.txt",
+  "category": "DATETIME",
+  "off": 58101,
+  "len": 14
+ },
+ {
+  "id": "edgar-22",
+  "doc": "edgar-ex10-09.txt",
+  "category": "DATETIME",
+  "off": 8599,
+  "len": 10
+ },
+ {
+  "id": "edgar-23",
+  "doc": "edgar-ex10-10.txt",
+  "category": "DATETIME",
+  "off": 1726,
+  "len": 9
+ },
+ {
+  "id": "edgar-24",
+  "doc": "edgar-ex10-10.txt",
+  "category": "DATETIME",
+  "off": 59263,
+  "len": 16
+ },
+ {
+  "id": "edgar-25",
+  "doc": "edgar-ex10-10.txt",
+  "category": "DATETIME",
+  "off": 48405,
+  "len": 17
+ },
+ {
+  "id": "edgar-26",
+  "doc": "edgar-ex10-10.txt",
+  "category": "DATETIME",
+  "off": 31039,
+  "len": 17
+ },
+ {
+  "id": "edgar-27",
+  "doc": "edgar-ex10-10.txt",
+  "category": "DATETIME",
+  "off": 40718,
+  "len": 15
+ },
+ {
+  "id": "edgar-28",
+  "doc": "edgar-ex10-10.txt",
+  "category": "DEM",
+  "off": 3716,
+  "len": 19
+ },
+ {
+  "id": "edgar-29",
+  "doc": "edgar-ex10-10.txt",
+  "category": "ORG",
+  "off": 2857,
+  "len": 16
+ },
+ {
+  "id": "edgar-30",
+  "doc": "edgar-ex10-10.txt",
+  "category": "QUANTITY",
+  "off": 4024,
+  "len": 11
+ },
+ {
+  "id": "edgar-31",
+  "doc": "edgar-ex10-11.txt",
+  "category": "ORG",
+  "off": 443,
+  "len": 19
+ },
+ {
+  "id": "edgar-32",
+  "doc": "edgar-ex10-12.txt",
+  "category": "PERSON",
+  "off": 9504,
+  "len": 16
+ },
+ {
+  "id": "edgar-33",
+  "doc": "edgar-ex10-12.txt",
+  "category": "DEM",
+  "off": 3837,
+  "len": 30
+ },
+ {
+  "id": "edgar-34",
+  "doc": "edgar-ex10-13.txt",
+  "category": "ORG",
+  "off": 11539,
+  "len": 25
+ },
+ {
+  "id": "edgar-35",
+  "doc": "edgar-ex10-13.txt",
+  "category": "DATETIME",
+  "off": 6104,
+  "len": 16
+ },
+ {
+  "id": "edgar-36",
+  "doc": "edgar-ex10-14.txt",
+  "category": "DEM",
+  "off": 7914,
+  "len": 36
+ },
+ {
+  "id": "edgar-37",
+  "doc": "edgar-ex10-14.txt",
+  "category": "ORG",
+  "off": 343,
+  "len": 26
+ },
+ {
+  "id": "edgar-38",
+  "doc": "edgar-ex10-15.txt",
+  "category": "DEM",
+  "off": 653,
+  "len": 21
+ },
+ {
+  "id": "edgar-39",
+  "doc": "edgar-ex10-15.txt",
+  "category": "DATETIME",
+  "off": 16823,
+  "len": 10
+ },
+ {
+  "id": "edgar-40",
+  "doc": "edgar-ex10-15.txt",
+  "category": "LOC",
+  "off": 1527,
+  "len": 5
+ },
+ {
+  "id": "edgar-41",
+  "doc": "edgar-ex10-16.txt",
+  "category": "DEM",
+  "off": 2253,
+  "len": 19
+ },
+ {
+  "id": "edgar-42",
+  "doc": "edgar-ex10-16.txt",
+  "category": "DATETIME",
+  "off": 5200,
+  "len": 13
+ },
+ {
+  "id": "edgar-43",
+  "doc": "edgar-ex10-16.txt",
+  "category": "LOC",
+  "off": 467,
+  "len": 15
+ },
+ {
+  "id": "edgar-44",
+  "doc": "edgar-ex10-16.txt",
+  "category": "MISC",
+  "off": 7176,
+  "len": 16
+ },
+ {
+  "id": "edgar-45",
+  "doc": "edgar-ex10-17.txt",
+  "category": "ORG",
+  "off": 22297,
+  "len": 26
+ },
+ {
+  "id": "edgar-46",
+  "doc": "edgar-ex10-17.txt",
+  "category": "DATETIME",
+  "off": 9884,
+  "len": 17
+ },
+ {
+  "id": "edgar-47",
+  "doc": "edgar-ex10-18.txt",
+  "category": "PERSON",
+  "off": 7441,
+  "len": 15
+ },
+ {
+  "id": "edgar-48",
+  "doc": "edgar-ex10-18.txt",
+  "category": "DATETIME",
+  "off": 9884,
+  "len": 17
+ },
+ {
+  "id": "edgar-49",
+  "doc": "edgar-ex10-18.txt",
+  "category": "QUANTITY",
+  "off": 10621,
+  "len": 11
+ },
+ {
+  "id": "edgar-50",
+  "doc": "edgar-ex10-18.txt",
+  "category": "MISC",
+  "off": 14185,
+  "len": 36
+ },
+ {
+  "id": "edgar-51",
+  "doc": "edgar-ex10-19.txt",
+  "category": "ORG",
+  "off": 62010,
+  "len": 4
+ },
+ {
+  "id": "edgar-52",
+  "doc": "edgar-ex10-19.txt",
+  "category": "DATETIME",
+  "off": 6645,
+  "len": 11
+ },
+ {
+  "id": "edgar-53",
+  "doc": "edgar-ex10-20.txt",
+  "category": "ORG",
+  "off": 480,
+  "len": 19
+ },
+ {
+  "id": "edgar-54",
+  "doc": "edgar-ex10-20.txt",
+  "category": "MISC",
+  "off": 31859,
+  "len": 29
+ },
+ {
+  "id": "edgar-55",
+  "doc": "edgar-ex10-21.txt",
+  "category": "PERSON",
+  "off": 16609,
+  "len": 11
+ },
+ {
+  "id": "edgar-56",
+  "doc": "edgar-ex10-21.txt",
+  "category": "DEM",
+  "off": 16648,
+  "len": 38
+ },
+ {
+  "id": "edgar-57",
+  "doc": "edgar-ex10-22.txt",
+  "category": "MISC",
+  "off": 740,
+  "len": 20
+ },
+ {
+  "id": "edgar-58",
+  "doc": "edgar-ex10-22.txt",
+  "category": "DATETIME",
+  "off": 18522,
+  "len": 14
+ },
+ {
+  "id": "edgar-59",
+  "doc": "edgar-ex10-22.txt",
+  "category": "QUANTITY",
+  "off": 18240,
+  "len": 6
+ },
+ {
+  "id": "edgar-60",
+  "doc": "edgar-ex10-23.txt",
+  "category": "DATETIME",
+  "off": 15979,
+  "len": 16
+ },
+ {
+  "id": "edgar-61",
+  "doc": "edgar-ex10-23.txt",
+  "category": "QUANTITY",
+  "off": 18240,
+  "len": 6
+ },
+ {
+  "id": "edgar-62",
+  "doc": "edgar-ex10-23.txt",
+  "category": "CODE",
+  "off": 4369,
+  "len": 26
+ },
+ {
+  "id": "edgar-63",
+  "doc": "edgar-ex10-24.txt",
+  "category": "DATETIME",
+  "off": 9812,
+  "len": 14
+ },
+ {
+  "id": "edgar-64",
+  "doc": "edgar-ex10-25.txt",
+  "category": "QUANTITY",
+  "off": 3293,
+  "len": 23
+ },
+ {
+  "id": "edgar-65",
+  "doc": "edgar-ex10-25.txt",
+  "category": "DATETIME",
+  "off": 5065,
+  "len": 10
+ },
+ {
+  "id": "edgar-66",
+  "doc": "edgar-ex10-26.txt",
+  "category": "DATETIME",
+  "off": 1468,
+  "len": 17
+ },
+ {
+  "id": "edgar-67",
+  "doc": "edgar-ex10-26.txt",
+  "category": "MISC",
+  "off": 12117,
+  "len": 50
+ },
+ {
+  "id": "edgar-68",
+  "doc": "edgar-ex10-27.txt",
+  "category": "DATETIME",
+  "off": 3212,
+  "len": 33
+ },
+ {
+  "id": "edgar-69",
+  "doc": "edgar-ex10-28.txt",
+  "category": "ORG",
+  "off": 33626,
+  "len": 14
+ },
+ {
+  "id": "edgar-70",
+  "doc": "edgar-ex10-28.txt",
+  "category": "LOC",
+  "off": 569,
+  "len": 8
+ },
+ {
+  "id": "edgar-71",
+  "doc": "edgar-ex10-28.txt",
+  "category": "DATETIME",
+  "off": 8819,
+  "len": 13
+ },
+ {
+  "id": "edgar-72",
+  "doc": "edgar-ex10-28.txt",
+  "category": "QUANTITY",
+  "off": 3797,
+  "len": 43
+ },
+ {
+  "id": "edgar-73",
+  "doc": "edgar-ex10-29.txt",
+  "category": "ORG",
+  "off": 648,
+  "len": 16
+ },
+ {
+  "id": "edgar-74",
+  "doc": "edgar-ex10-29.txt",
+  "category": "LOC",
+  "off": 2338,
+  "len": 5
+ },
+ {
+  "id": "edgar-75",
+  "doc": "edgar-ex10-29.txt",
+  "category": "MISC",
+  "off": 395,
+  "len": 20
+ },
+ {
+  "id": "edgar-76",
+  "doc": "edgar-ex10-29.txt",
+  "category": "QUANTITY",
+  "off": 9322,
+  "len": 32
+ },
+ {
+  "id": "edgar-77",
+  "doc": "edgar-ex10-30.txt",
+  "category": "LOC",
+  "off": 30095,
+  "len": 31
+ },
+ {
+  "id": "edgar-78",
+  "doc": "edgar-ex10-30.txt",
+  "category": "DATETIME",
+  "off": 7379,
+  "len": 12
+ },
+ {
+  "id": "edgar-79",
+  "doc": "edgar-ex10-31.txt",
+  "category": "MISC",
+  "off": 514,
+  "len": 8
+ },
+ {
+  "id": "edgar-80",
+  "doc": "edgar-ex10-32.txt",
+  "category": "ORG",
+  "off": 423,
+  "len": 18
+ },
+ {
+  "id": "edgar-81",
+  "doc": "edgar-ex10-33.txt",
+  "category": "DEM",
+  "off": 329,
+  "len": 23
+ },
+ {
+  "id": "edgar-82",
+  "doc": "edgar-ex10-33.txt",
+  "category": "DATETIME",
+  "off": 29685,
+  "len": 8
+ },
+ {
+  "id": "edgar-83",
+  "doc": "edgar-ex10-33.txt",
+  "category": "ORG",
+  "off": 1256,
+  "len": 3
+ },
+ {
+  "id": "edgar-84",
+  "doc": "edgar-ex10-34.txt",
+  "category": "ORG",
+  "off": 10531,
+  "len": 18
+ },
+ {
+  "id": "edgar-85",
+  "doc": "edgar-ex10-34.txt",
+  "category": "DATETIME",
+  "off": 5464,
+  "len": 22
+ },
+ {
+  "id": "edgar-86",
+  "doc": "edgar-ex10-34.txt",
+  "category": "QUANTITY",
+  "off": 1061,
+  "len": 16
+ },
+ {
+  "id": "edgar-87",
+  "doc": "edgar-ex10-35.txt",
+  "category": "ORG",
+  "off": 3059,
+  "len": 37
+ },
+ {
+  "id": "edgar-88",
+  "doc": "edgar-ex10-35.txt",
+  "category": "DATETIME",
+  "off": 11769,
+  "len": 12
+ },
+ {
+  "id": "edgar-89",
+  "doc": "edgar-ex10-35.txt",
+  "category": "MISC",
+  "off": 13280,
+  "len": 19
+ },
+ {
+  "id": "edgar-90",
+  "doc": "edgar-ex10-36.txt",
+  "category": "QUANTITY",
+  "off": 9165,
+  "len": 14
+ },
+ {
+  "id": "edgar-91",
+  "doc": "edgar-ex10-36.txt",
+  "category": "ORG",
+  "off": 48827,
+  "len": 26
+ },
+ {
+  "id": "edgar-92",
+  "doc": "edgar-ex10-37.txt",
+  "category": "ORG",
+  "off": 414,
+  "len": 11
+ },
+ {
+  "id": "edgar-93",
+  "doc": "edgar-ex10-37.txt",
+  "category": "DATETIME",
+  "off": 584,
+  "len": 13
+ },
+ {
+  "id": "edgar-94",
+  "doc": "edgar-ex10-37.txt",
+  "category": "DATETIME",
+  "off": 40997,
+  "len": 22
+ },
+ {
+  "id": "edgar-95",
+  "doc": "edgar-ex10-38.txt",
+  "category": "ORG",
+  "off": 414,
+  "len": 11
+ },
+ {
+  "id": "edgar-96",
+  "doc": "edgar-ex10-38.txt",
+  "category": "DATETIME",
+  "off": 45726,
+  "len": 17
+ },
+ {
+  "id": "edgar-97",
+  "doc": "edgar-ex10-38.txt",
+  "category": "MISC",
+  "off": 24398,
+  "len": 57
+ },
+ {
+  "id": "edgar-98",
+  "doc": "edgar-ex10-39.txt",
+  "category": "MISC",
+  "off": 8671,
+  "len": 5
+ },
+ {
+  "id": "edgar-99",
+  "doc": "edgar-ex10-40.txt",
+  "category": "MISC",
+  "off": 814,
+  "len": 20
+ },
+ {
+  "id": "edgar-100",
+  "doc": "edgar-ex10-41.txt",
+  "category": "ORG",
+  "off": 3978,
+  "len": 34
+ },
+ {
+  "id": "edgar-101",
+  "doc": "edgar-ex10-41.txt",
+  "category": "QUANTITY",
+  "off": 28392,
+  "len": 7
+ },
+ {
+  "id": "edgar-102",
+  "doc": "edgar-ex10-42.txt",
+  "category": "DEM",
+  "off": 886,
+  "len": 52
+ },
+ {
+  "id": "edgar-103",
+  "doc": "edgar-ex10-42.txt",
+  "category": "QUANTITY",
+  "off": 28392,
+  "len": 7
+ },
+ {
+  "id": "edgar-104",
+  "doc": "edgar-ex10-42.txt",
+  "category": "LOC",
+  "off": 53499,
+  "len": 57
+ },
+ {
+  "id": "edgar-105",
+  "doc": "edgar-ex10-43.txt",
+  "category": "QUANTITY",
+  "off": 2497,
+  "len": 47
+ },
+ {
+  "id": "edgar-106",
+  "doc": "edgar-ex10-43.txt",
+  "category": "DATETIME",
+  "off": 6400,
+  "len": 16
+ },
+ {
+  "id": "edgar-107",
+  "doc": "edgar-ex10-43.txt",
+  "category": "ORG",
+  "off": 18711,
+  "len": 15
+ },
+ {
+  "id": "edgar-108",
+  "doc": "edgar-ex10-44.txt",
+  "category": "DATETIME",
+  "off": 341,
+  "len": 12
+ },
+ {
+  "id": "edgar-109",
+  "doc": "edgar-ex10-44.txt",
+  "category": "LOC",
+  "off": 21150,
+  "len": 17
+ },
+ {
+  "id": "edgar-110",
+  "doc": "edgar-ex10-45.txt",
+  "category": "ORG",
+  "off": 2176,
+  "len": 18
+ },
+ {
+  "id": "edgar-111",
+  "doc": "edgar-ex10-45.txt",
+  "category": "DATETIME",
+  "off": 7114,
+  "len": 7
+ },
+ {
+  "id": "edgar-112",
+  "doc": "edgar-ex10-45.txt",
+  "category": "QUANTITY",
+  "off": 3501,
+  "len": 17
+ },
+ {
+  "id": "edgar-113",
+  "doc": "edgar-ex10-46.txt",
+  "category": "ORG",
+  "off": 9937,
+  "len": 11
+ },
+ {
+  "id": "edgar-114",
+  "doc": "edgar-ex10-46.txt",
+  "category": "DATETIME",
+  "off": 11867,
+  "len": 19
+ },
+ {
+  "id": "edgar-115",
+  "doc": "edgar-ex10-46.txt",
+  "category": "MISC",
+  "off": 6985,
+  "len": 10
+ },
+ {
+  "id": "edgar-116",
+  "doc": "edgar-ex10-47.txt",
+  "category": "DATETIME",
+  "off": 1065,
+  "len": 17
+ },
+ {
+  "id": "edgar-117",
+  "doc": "edgar-ex10-48.txt",
+  "category": "DEM",
+  "off": 15421,
+  "len": 8
+ },
+ {
+  "id": "edgar-118",
+  "doc": "edgar-ex10-48.txt",
+  "category": "MISC",
+  "off": 1337,
+  "len": 29
+ },
+ {
+  "id": "edgar-119",
+  "doc": "edgar-ex10-49.txt",
+  "category": "DATETIME",
+  "off": 456,
+  "len": 29
+ }
+]

@@ -1,0 +1,41 @@
+name: Missed name or number
+description: The app left a name, number or other identifying detail readable in a document it redacted.
+title: "miss: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste a client's document, or any text you are not free to publish, into this form.**
+        Show the miss with a public document (a filing, a judgment, a press release) or with
+        invented text written the same way. If the only way to show it is a client's text, do not
+        post it here: report it privately, as SECURITY.md says, and describe the kind of name or
+        number and how it was written.
+  - type: input
+    id: source
+    attributes:
+      label: Where the miss reproduces
+      description: A public URL, or "invented text" if you wrote the example yourself.
+      placeholder: https://www.sec.gov/Archives/edgar/... or "invented text"
+    validations:
+      required: true
+  - type: textarea
+    id: missed
+    attributes:
+      label: What was left readable
+      description: The text exactly as it appears in the public or invented document, what kind it is (a person, a company, an address, a phone number, an e-mail address, an ID or case number), and how it was written (spaced out, hyphenated, across a line break, inside a link, in a header or footer).
+      placeholder: 'Person: "Dorothy Ballan-tyne", hyphenated across a line break in the footer'
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version and Windows version
+      description: The About screen gives the app version. Say which setting "These documents" was on, if you changed it.
+      placeholder: 0.1.0, Windows 11
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional. The table rows near the miss, or what you expected to happen.

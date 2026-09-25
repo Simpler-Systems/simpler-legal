@@ -1,0 +1,55 @@
+{
+ "doc": "us-r4-01.txt",
+ "docSha256_16": "f2b43fb8e8c156d6",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 10,
+   "off": 9852,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 9837,
+   "len": 22
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 51844,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 53434,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 49198,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 28006,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 44488,
+   "len": 3
+  }
+ ]
+}

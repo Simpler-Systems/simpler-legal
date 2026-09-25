@@ -1,0 +1,450 @@
+{
+ "doc": "uk-civ-04.txt",
+ "docSha256_16": "ac6ef3086cfa855d",
+ "entities": [
+  {
+   "category": "PERSON",
+   "off": 6,
+   "len": 19
+  },
+  {
+   "category": "PERSON",
+   "off": 4965,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "off": 1681,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "off": 2880,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "off": 2880,
+   "len": 9
+  },
+  {
+   "category": "PERSON",
+   "off": 1748,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "off": 2964,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "off": 9012,
+   "len": 28
+  },
+  {
+   "category": "PERSON",
+   "off": 9140,
+   "len": 20
+  },
+  {
+   "category": "PERSON",
+   "off": 9081,
+   "len": 16
+  },
+  {
+   "category": "PERSON",
+   "off": 9846,
+   "len": 9
+  },
+  {
+   "category": "PERSON",
+   "off": 4573,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "off": 0,
+   "len": 3
+  },
+  {
+   "category": "CODE",
+   "off": 1507,
+   "len": 3
+  },
+  {
+   "category": "PERSON",
+   "off": 1361,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "off": 1941,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "off": 7608,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "off": 1337,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "off": 1820,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "off": 2146,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "off": 3832,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "off": 6832,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "off": 8582,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "off": 9876,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "off": 4118,
+   "len": 6
+  },
+  {
+   "category": "DATETIME",
+   "off": 3947,
+   "len": 6
+  },
+  {
+   "category": "DATETIME",
+   "off": 9333,
+   "len": 6
+  },
+  {
+   "category": "DATETIME",
+   "off": 9380,
+   "len": 7
+  },
+  {
+   "category": "DATETIME",
+   "off": 9556,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "off": 10050,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "off": 2526,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "off": 2719,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "off": 3868,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "off": 10188,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "off": 10231,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "off": 10256,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "off": 4656,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "off": 5871,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "off": 5956,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "off": 6493,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "off": 10222,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "off": 6554,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "off": 9763,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "off": 9799,
+   "len": 9
+  },
+  {
+   "category": "CODE",
+   "off": 1222,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "off": 1026,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "off": 2261,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "off": 3112,
+   "len": 34
+  },
+  {
+   "category": "MISC",
+   "off": 3401,
+   "len": 59
+  },
+  {
+   "category": "MISC",
+   "off": 7621,
+   "len": 31
+  },
+  {
+   "category": "MISC",
+   "off": 7621,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "off": 10334,
+   "len": 47
+  },
+  {
+   "category": "MISC",
+   "off": 2606,
+   "len": 11
+  },
+  {
+   "category": "MISC",
+   "off": 7714,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "off": 7714,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "off": 7801,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "off": 7829,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 3173,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "off": 3266,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "off": 1237,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "off": 1266,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "off": 1390,
+   "len": 23
+  },
+  {
+   "category": "LOC",
+   "off": 1288,
+   "len": 23
+  },
+  {
+   "category": "LOC",
+   "off": 1312,
+   "len": 24
+  },
+  {
+   "category": "ORG",
+   "off": 45,
+   "len": 21
+  },
+  {
+   "category": "ORG",
+   "off": 10389,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "off": 28,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "off": 3498,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "off": 3505,
+   "len": 4
+  },
+  {
+   "category": "LOC",
+   "off": 3899,
+   "len": 11
+  },
+  {
+   "category": "LOC",
+   "off": 4056,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "off": 4941,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "off": 1712,
+   "len": 16
+  },
+  {
+   "category": "ORG",
+   "off": 1778,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "off": 3615,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "off": 4219,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "off": 10745,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "off": 10829,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "off": 4890,
+   "len": 20
+  },
+  {
+   "category": "MISC",
+   "off": 9042,
+   "len": 34
+  },
+  {
+   "category": "MISC",
+   "off": 9099,
+   "len": 39
+  },
+  {
+   "category": "MISC",
+   "off": 4558,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "off": 1512,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "unmatchable": true
+  },
+  {
+   "category": "MISC",
+   "off": 11240,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "off": 11717,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 1527,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "off": 2453,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "off": 2898,
+   "len": 9
+  }
+ ]
+}

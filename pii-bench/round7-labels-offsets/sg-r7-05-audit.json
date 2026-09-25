@@ -1,0 +1,13 @@
+{
+ "doc": "sg-r7-05.txt",
+ "docSha256_16": "654a901ed700bcfc",
+ "entities": [
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 4185,
+   "len": 12
+  }
+ ]
+}

@@ -1,0 +1,930 @@
+{
+ "doc": "sg-r4-02.txt",
+ "docSha256_16": "64684c6a77186e32",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 510,
+   "len": 22
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 538,
+   "len": 30
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 574,
+   "len": 27
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 607,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 627,
+   "len": 30
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 663,
+   "len": 31
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 700,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 729,
+   "len": 27
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 762,
+   "len": 21
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 790,
+   "len": 29
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 826,
+   "len": 30
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 863,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 887,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 908,
+   "len": 26
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 941,
+   "len": 33
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 981,
+   "len": 25
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1013,
+   "len": 26
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1046,
+   "len": 16
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1069,
+   "len": 36
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1112,
+   "len": 24
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1143,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1165,
+   "len": 30
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1202,
+   "len": 30
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 1239,
+   "len": 29
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 5437,
+   "len": 32
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 5459,
+   "len": 9
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 15898,
+   "len": 28
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 5,
+   "off": 4770,
+   "len": 26
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 15959,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 16015,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 16032,
+   "len": 20
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 16103,
+   "len": 16
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 16188,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 16243,
+   "len": 26
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 16321,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 2130,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 2130,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 2919,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 1366,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1391,
+   "len": 25
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1422,
+   "len": 25
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 1453,
+   "len": 25
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 13,
+   "off": 1453,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 1484,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 53,
+   "off": 3734,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1516,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 13,
+   "off": 1516,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1533,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 13,
+   "off": 1533,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1553,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1587,
+   "len": 41
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 1635,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 4,
+   "off": 1635,
+   "len": 5
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 5811,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 5852,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 5118,
+   "len": 44
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 6844,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 9835,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 16121,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 16198,
+   "len": 16
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 16271,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 12016,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 1332,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 1333,
+   "len": 10
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1610,
+   "len": 9
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 417,
+   "len": 9
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 6997,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 0,
+   "len": 13
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 441,
+   "len": 30
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 473,
+   "len": 23
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 2497,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 15,
+   "off": 2500,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 7589,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 8,
+   "off": 7818,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 6,
+   "off": 2147,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 2163,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3061,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3117,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3272,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3378,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3439,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3457,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3577,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3779,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3942,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 4196,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 5,
+   "off": 4806,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 5082,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 5825,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 6003,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 6823,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 7037,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 7505,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 7730,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 5479,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 9552,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 9244,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 11994,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 13813,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 16728,
+   "len": 23
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 17017,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3339,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3636,
+   "len": 14
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 7158,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8748,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8765,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8777,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8792,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 10279,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 10393,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 12929,
+   "len": 44
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 362,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 383,
+   "len": 43
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 2035,
+   "len": 34
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 15873,
+   "len": 23
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 16818,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 1962,
+   "len": 6
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 1980,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 4234,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 4219,
+   "len": 23
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 5304,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 11,
+   "off": 5881,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 13,
+   "off": 7194,
+   "len": 22
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 15,
+   "off": 3657,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 4,
+   "off": 3358,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 6083,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 6599,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 2755,
+   "len": 25
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 8,
+   "off": 2728,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 30,
+   "off": 2908,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 5019,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 4381,
+   "len": 13
+  }
+ ]
+}

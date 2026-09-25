@@ -1,0 +1,146 @@
+{
+ "doc": "edgar-ex10-32.txt",
+ "docSha256_16": "70eeac1a80c703f8",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 490,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 5711,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 281,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 14314,
+   "len": 17
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "doctrine_note": "P0b projection: party org, no person anchor",
+   "off": 423,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "doctrine_note": "P0b projection: party org, no person anchor",
+   "off": 5620,
+   "len": 18
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 785,
+   "len": 51
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 14339,
+   "len": 36
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 396,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 636,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 4,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 654,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 671,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 5805,
+   "len": 16
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 1998,
+   "len": 36
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 4401,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 13085,
+   "len": 19
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 445,
+   "len": 8
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 13964,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 2555,
+   "len": 14
+  }
+ ]
+}

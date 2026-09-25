@@ -1,0 +1,135 @@
+{
+ "doc": "edgar-ex10-39.txt",
+ "docSha256_16": "561a7933b7b0eece",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 3,
+   "off": 431,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 15364,
+   "len": 21
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 15408,
+   "len": 49
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 6142,
+   "len": 32
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "doctrine_note": "P0b projection: party org, no person anchor",
+   "off": 397,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 4186,
+   "len": 34
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 13017,
+   "len": 32
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 13052,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 31,
+   "off": 814,
+   "len": 20
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 305,
+   "len": 30
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 14972,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 14176,
+   "len": 23
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 8671,
+   "len": 5
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 363,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "doctrine_note": "P0 projection: date/amount shape, no identity anchor",
+   "off": 12781,
+   "len": 18
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 10579,
+   "len": 14
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 13228,
+   "len": 13
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 15324,
+   "len": 17
+  }
+ ]
+}

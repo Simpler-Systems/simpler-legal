@@ -1,0 +1,447 @@
+{
+ "doc": "edgar-r5-14.txt",
+ "docSha256_16": "f5a966cd17cefc8e",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 3,
+   "off": 74,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 74,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 80,
+   "len": 4
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 20637,
+   "len": 14
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 85,
+   "len": 24
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 110,
+   "len": 29
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 129,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 286,
+   "len": 27
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 286,
+   "len": 6
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 20976,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 326,
+   "len": 29
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 20653,
+   "len": 35
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 326,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 373,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 20721,
+   "len": 37
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 20913,
+   "len": 61
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 28142,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 3,
+   "off": 60,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 253,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1106,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 20598,
+   "len": 14
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 2220,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 2765,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 2760,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 1260,
+   "len": 34
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 2474,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 2485,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 4511,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8822,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 12154,
+   "len": 14
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 27214,
+   "len": 20
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 27604,
+   "len": 23
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 27949,
+   "len": 14
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 4,
+   "off": 7157,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 5104,
+   "len": 15
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 18312,
+   "len": 19
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 21005,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 0,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 46,
+   "len": 12
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 10,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 12,
+   "off": 1833,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 10157,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 1853,
+   "len": 29
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 22817,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 22832,
+   "len": 41
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 22879,
+   "len": 37
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 22922,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 22952,
+   "len": 44
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 22999,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23011,
+   "len": 39
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23056,
+   "len": 39
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23101,
+   "len": 49
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23156,
+   "len": 44
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23206,
+   "len": 30
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23242,
+   "len": 26
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23274,
+   "len": 38
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23318,
+   "len": 27
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23351,
+   "len": 43
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 23172,
+   "len": 28
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 24923,
+   "len": 54
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 26402,
+   "len": 39
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 26449,
+   "len": 40
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 8,
+   "len": 1
+  }
+ ]
+}

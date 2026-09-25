@@ -1,0 +1,307 @@
+{
+ "doc": "edgar-ex10-14.txt",
+ "docSha256_16": "2946b30c6b14af82",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 8,
+   "off": 315,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 16,
+   "off": 3321,
+   "len": 21
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 4,
+   "off": 3398,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 4,
+   "off": 7953,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 4,
+   "off": 10547,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 4,
+   "off": 13562,
+   "len": 14
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "NO_MASK",
+   "occurrences": 21,
+   "off": 1065,
+   "len": 9
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 3366,
+   "len": 29
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "QUASI",
+   "occurrences": 4,
+   "off": 10404,
+   "len": 28
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 7914,
+   "len": 36
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 6,
+   "off": 418,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 707,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 3779,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 6104,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 8356,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 11454,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 14,
+   "off": 2569,
+   "len": 18
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 9476,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 11694,
+   "len": 26
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 11454,
+   "len": 37
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 11651,
+   "len": 37
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 1355,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 1872,
+   "len": 23
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 4385,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 4,
+   "off": 1129,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 4,
+   "off": 4181,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 32,
+   "off": 343,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 10,
+   "off": 343,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 7969,
+   "len": 33
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 8429,
+   "len": 35
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 10983,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 6,
+   "off": 1173,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 8985,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 11539,
+   "len": 25
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 9,
+   "off": 459,
+   "len": 44
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 370,
+   "len": 47
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8003,
+   "len": 44
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 6,
+   "off": 2944,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 41,
+   "off": 664,
+   "len": 20
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 2240,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 4248,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 2142,
+   "len": 12
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 12,
+   "off": 993,
+   "len": 12
+  }
+ ]
+}

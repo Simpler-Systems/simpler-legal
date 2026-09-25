@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r4-12.txt",
+ "docSha256_16": "87faff4951dd332a",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "org_defined_term_variant",
+   "occurrences": 1,
+   "off": 4329,
+   "len": 21
+  }
+ ]
+}

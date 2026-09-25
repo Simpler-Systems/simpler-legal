@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r5-04.txt",
+ "docSha256_16": "a8e8764f64286b78",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 91,
+   "len": 16
+  }
+ ]
+}

@@ -1,0 +1,1414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simpler Legal — legal documents redacted on your own machine</title>
+<!-- THE SHAREABLE SUMMARY — this tag and og:description below are the line Google, Slack,
+     Teams and LinkedIn render, and they were the one surface the body's honesty never reached.
+     Until 2026-09-23 both read "Every identifying detail is removed", which this repository's
+     own committed boards refute. Recomputed over the exact 46 documents behind the four-draw
+     claim (summing perDoc over pii-bench/runs/ROUND{5,6,7}-edgar-firstcontact.json and
+     PUREOOS-firstcontact.json): DIRECT 0 leaked of 184 spans — that claim holds, and it is the
+     strong one — but QUASI 245 of 503 spans left readable (r5 93/132, r6 70/225, r7 73/129,
+     pure-OOS 9/17, i.e. 48.7%). Preserving that class is policy — dates, amounts, places and
+     business facts are what the frontier model has to reason about, measured at 0.968
+     substance-equivalence — but it is not a tuned target either: per-round QUASI recall swings
+     29.5 → 68.9 → 43.4, so the honest thing to publish is the number, not an intention.
+     README.md:72-78 already states the claim as "identities are withheld, not that inference is
+     impossible". So lead with what is true and checkable —
+     46 unseen SEC-filed business agreements, zero identity leaks, four consecutive fresh
+     draws — and name what stays: dates, amounts AND places, in both tags. "Most places (not a
+     person's address)", not bare "places" (2026-09-23): the gold's geography rule
+     (derive-product-gold.mjs P0i) keeps a place only when no occurrence is tied to a person's
+     life, and holds full personal addresses DIRECT and street/notice addresses QUASI, so a
+     card saying every place stays readable would tell a lawyer the client's home address
+     ships. The parenthesis states the rule, not a guarantee: a QUASI address is one of the
+     class left readable in 245 of 503 spans, which the body's evidence section says. "Business
+     agreements", never bare "documents": all 46 are EX-10 exhibits from EDGAR
+     (pii-bench/round{5,6,7}-manifest.json + pureoos-manifest.json), and on a page about
+     legal documents a lawyer reads "documents" as court filings — the genre where the
+     latest fresh round leaked in 4 of 25 (ROUND7-courts-firstcontact.json), and where a
+     firm's own filings kept an identifier readable in 14 of 20 under the default setting
+     (OPS_LEDGER.md 2026-09-15, FREEZE.md "Profiles added AFTER the freeze"). So the tags say
+     the harder genres still leak, and do not list "judgments" or "matter files" beside the
+     zero. Two more things both tags must carry. "People's names", not "names": the default
+     doctrine releases a company name that is not the document's own identity
+     (app/frontend/src/lib/profile.ts 'auto'; derive-product-gold.mjs P0b), so company names
+     are named among what stays. And no custody claim wider than "no account, no API key and
+     no server of ours": "nothing leaves" is false, because the product exists to produce a
+     copy the user sends to an AI provider (Export.tsx), and "the app sends nothing off the
+     machine" came off on 2026-09-25, because the model server the app started read
+     llama.cpp's own network settings (engine.rs has removed them since later that day; the
+     llama-gap law in tools/site-claims.mjs) and what WebView2 sends is Microsoft's and
+     unmeasured: no packet capture is on record (PRIVACY.md). Both tags must keep saying the same thing; a
+     card that outruns the page is the same defect in a different font. "With its source on
+     GitHub" is true only once github.com/Simpler-Systems/simpler-legal is public; it answered 404 on
+     2026-09-23, so this page is not deployed before the repository is public and the v0.1.0
+     release exists (owner ruling 28, 2026-09-25). And which engine: the card
+     travels without the results note, and FREEZE.md C1 says rounds 5-7 each ran the engine
+     as it stood that round (FS7, FS8, FS9) and only the pure-OOS probe, 1 of the 46, met fresh
+     paper frozen. The app says the same (About.tsx; lib/profile.ts "45 ran the engine before
+     the freeze, one ran it frozen"), so the card, the hero and research.html's headline stat
+     carry that split too; without it a quoted card reads as a property of the download. -->
+<meta name="description" content="A local redaction engine for legal documents, Apache-2.0-licensed, with its source on GitHub. People's names and identifiers are removed — not covered — on your own hardware: 46 unseen SEC-filed business agreements, zero identity leaks across four consecutive fresh draws (45 of them ran the engine as it stood before its freeze, 1 ran the frozen engine). Court judgments and a firm's own filings still leak some, and the evidence says how many. Dates, amounts and most places (not a person's address) stay readable on purpose, and by default so do company names. There is no account, no API key and no server of ours." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/IBMPlexSerif-SemiBold-Latin1.woff2" crossorigin />
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/IBMPlexSans-Regular-Latin1.woff2" crossorigin />
+<link rel="stylesheet" href="fonts.css" />
+<link rel="canonical" href="https://simpler.legal/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://simpler.legal/" />
+<meta property="og:site_name" content="Simpler Legal" />
+<meta property="og:title" content="Redact legal documents before they leave your machine" />
+<meta property="og:description" content="A local redaction engine for legal documents, Apache-2.0-licensed, with its source on GitHub. People's names and identifiers are removed — not covered — on your own hardware: 46 unseen SEC-filed business agreements, zero identity leaks across four consecutive fresh draws (45 of them ran the engine as it stood before its freeze, 1 ran the frozen engine). Court judgments and a firm's own filings still leak some, and the evidence says how many. Dates, amounts and most places (not a person's address) stay readable on purpose, and by default so do company names. There is no account, no API key and no server of ours." />
+<!-- SCREENSHOT SWAP PENDING: assets/og-card.png is still RED's social card — its wordmark
+     reads "Simpler Redact". Retake before launch; see the full asset list at the hero fold. -->
+<meta property="og:image" content="https://simpler.legal/assets/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://simpler.legal/assets/og-card.png" />
+<!--
+  SLOT PROTOCOL (for the session that lands the final numbers):
+  every element with [data-slot] is a placeholder awaiting measured results.
+  Fill the text, remove the `slot-pending` class, and link the row's evidence
+  file. Do NOT invent numbers; every figure must trace to a bench artifact in
+  the repo. Slots: span-recall, rails-recall, insample-recall, oos-recall,
+  corpus-size, occurrence-count, junk-rate.
+  STATUS 2026-07-22: the v1.0 numbers have LANDED — the results table is filled
+  from bench artifacts (see the tbody comment for sourcing rules). Remaining
+  data-slot: none on this page. research.html carries the full record.
+  DOWNLOADS (2026-09-25, owner ruling 28): the installer is offered only at
+  GitHub Releases (releases/latest), and the model only at Google's own Hugging
+  Face address, the one Setup.tsx MODEL_URL holds. There is no download host of
+  ours and no copy of the model here. tools/site-claims.mjs holds both.
+-->
+<style>
+  /* paper-on-a-light-table, v2 ramp — design/DESIGN_SPEC_LIGHT_2026-07-20.md (+ addendum) */
+  :root{
+    color-scheme:light;
+    /* the almond ground — foundry-paper light mode, tuned to the brand red's warm axis */
+    --table:#F0E9DD; --chrome:#F7F2E9; --paper:#FFFEFA; --card:#FAF6ED;
+    --hair:#E3DACA; --border:#CFC5B2; --border-strong:#8D8371; --hover:#EAE1D2;
+    --ink:#37352F; --sec:#5D5951; --mut:#665F55; --faint:#9B968E;
+    --red:#16324F; --red-hover:#0F2438; --red-wash:#E8EEF6;
+    --applied:#1F1D1A;
+    --go:#1B7247; --go-wash:#E2F2E9; --amber:#8C6109; --amber-wash:#FBF3DB;
+    --person:#3D6FA5; --person-wash:#E8F0F8;
+    --sh-paper:0 1px 3px rgba(31,29,26,.08),0 12px 32px rgba(31,29,26,.07);
+    --sh-card:0 1px 3px rgba(31,29,26,.05);
+    --sans:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+    --serif:'IBM Plex Serif','Charter',Georgia,Cambria,serif;
+    --mono:'IBM Plex Mono','Cascadia Code',Consolas,ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:clip}
+  :focus-visible{outline:2px solid var(--border-strong);outline-offset:2px;border-radius:3px}
+  body{background:var(--table);color:var(--ink);font-family:var(--sans);font-size:16px;font-weight:450;line-height:1.6}
+  b,strong{font-weight:600}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:2.5px;text-decoration-color:var(--border)}
+  a:hover{color:var(--red);text-decoration-color:var(--red)}
+  img{max-width:100%;display:block}
+  code{font-family:var(--mono);font-size:.88em;background:var(--card);border:1px solid var(--hair);border-radius:5px;padding:1px 6px}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+
+  /* ── floating pill nav ─────────────────────────────────────────── */
+  .navbar{position:sticky;top:16px;z-index:50;display:flex;justify-content:center;padding:0 16px}
+  .navpill{display:flex;align-items:center;gap:26px;background:rgba(255,253,247,.94);backdrop-filter:blur(10px);
+    border:1px solid var(--hair);border-radius:999px;padding:10px 22px;box-shadow:0 2px 8px rgba(31,29,26,.07)}
+  .navpill .brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
+  .navpill .brand svg{display:block}
+  .navpill .brand b{font-size:14px;font-weight:600}
+  .navpill nav{display:flex;gap:22px;font-size:14px}
+  .navpill nav a{color:var(--sec);text-decoration:none}
+  .navpill nav a:hover{color:var(--ink)}
+  #gh-stars{font-family:var(--mono);font-size:11px;color:var(--mut);background:var(--card);
+    border:1px solid var(--hair);border-radius:999px;padding:1px 8px;margin-left:7px;vertical-align:1px}
+  #gh-stars::before{content:"★ ";color:var(--amber)}
+  .navpill,.navpill nav{flex-wrap:nowrap;white-space:nowrap}
+  @media (max-width:520px){
+    .navpill .brand b{display:none}
+    .navpill{gap:14px;padding:9px 16px}
+    .navpill nav{gap:14px;font-size:13.5px}
+  }
+
+  /* ── hero ─────────────────────────────────────────────────────── */
+  .hero-ground{position:relative}
+  .hero-ground::before{content:"";position:absolute;inset:-90px 0 0;pointer-events:none;
+    background-image:radial-gradient(var(--border) 1px,transparent 1.4px);background-size:24px 24px;opacity:.5;
+    -webkit-mask-image:radial-gradient(ellipse 60% 62% at 50% 36%,#000 30%,transparent 78%);
+    mask-image:radial-gradient(ellipse 60% 62% at 50% 36%,#000 30%,transparent 78%)}
+  .hero{position:relative;padding:92px 0 0;text-align:center}
+  .hero h1{font-family:var(--serif);font-size:clamp(36px,5.5vw,56px);line-height:1.13;font-weight:600;
+    letter-spacing:-.015em;text-wrap:balance;max-width:880px;margin:0 auto}
+  .hero .sub{margin:24px auto 0;font-size:18px;line-height:1.6;color:var(--sec);max-width:56ch;text-wrap:pretty}
+  .hero .sub b{color:var(--ink);font-weight:600}
+  .cta{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;align-items:center;justify-content:center}
+  .btn-red{display:inline-block;background:var(--red);color:#fff;font-size:15px;font-weight:600;
+    padding:13px 26px;border-radius:9px;text-decoration:none;box-shadow:0 1px 2px rgba(31,29,26,.18)}
+  .btn-red:hover{background:var(--red-hover);color:#fff}
+  .btn-plain{display:inline-block;background:var(--paper);border:1px solid var(--border);color:var(--ink);
+    font-size:15px;font-weight:600;padding:12px 25px;border-radius:9px;text-decoration:none;box-shadow:var(--sh-card)}
+  .btn-plain:hover{background:var(--hover)}
+  .cta-note{margin-top:16px;font-size:13.5px;color:var(--mut)}
+
+  /* the redaction token — the hero performs the product */
+  .tok{display:inline-block;position:relative;vertical-align:baseline;white-space:nowrap;border-radius:7px;
+    padding:1px 12px;font-family:var(--sans);font-size:.7em;font-weight:600;line-height:1.4;text-align:center;
+    background:var(--person-wash);color:var(--person);border:1.5px solid transparent;
+    transition:background .35s,color .35s,border-color .35s}
+  .tok .tok-tag{display:none;font-family:var(--mono);font-weight:400}
+  .tok.p1{background:var(--red-wash);color:var(--ink);border-color:var(--red)}
+  .tok.p2{background:var(--applied);color:var(--applied);border-color:var(--applied)}
+  .tok.p3{background:var(--card);color:var(--ink);border-color:var(--border)}
+  .tok.p3 .tok-name{display:none}
+  .tok.p3 .tok-tag{display:inline}
+
+  /* app screenshot rising out of the fold */
+  .fold{margin-top:64px;position:relative}
+  .fold .shot{max-width:1004px;margin:0 auto;background:var(--paper);border:1px solid var(--border);
+    border-bottom:none;border-radius:12px 12px 0 0;box-shadow:var(--sh-paper);overflow:hidden}
+  .fold .shot img{width:100%}
+
+  /* ── the tape band ─────────────────────────────────────────────── */
+  .tape{position:relative;z-index:2;background:var(--red);color:#fff;transform:rotate(-1deg) scale(1.02);
+    margin:-30px 0 0;padding:13px 0;overflow:hidden;white-space:nowrap;
+    border-top:2px dashed rgba(255,255,255,.5);border-bottom:2px dashed rgba(255,255,255,.5);
+    box-shadow:0 5px 16px rgba(31,29,26,.2)}
+  .tape span{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.18em;padding:0 30px}
+  .tape span i{font-style:normal;opacity:.55;padding-right:30px}
+
+  /* ── section scaffold ─────────────────────────────────────────── */
+  .sec{padding:96px 0}
+  .sec + .sec{padding-top:0}
+  .sec.band{background:var(--chrome);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);
+    padding:88px 0;margin-top:0}
+  .sec.band + .sec{padding-top:96px}
+  section[id]{scroll-margin-top:88px}
+  .kicker{font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:12px}
+  .sec h2{font-family:var(--serif);font-size:clamp(29px,3.4vw,38px);font-weight:600;letter-spacing:-.012em;
+    line-height:1.18;margin-bottom:14px;text-wrap:balance}
+  .sec .lead{color:var(--sec);font-size:17.5px;line-height:1.62;max-width:62ch;margin-bottom:34px;text-wrap:pretty}
+  .sec .lead b{color:var(--ink);font-weight:600}
+  /* centered composition: heads and closing morals sit on the page axis */
+  .sechead{max-width:800px;margin:0 auto 42px;text-align:center}
+  .sechead .lead{margin:0 auto}
+  /* the evidence section breaks rank: a ledger reads left-to-right */
+  .sechead.left{max-width:none;margin:0 0 38px;text-align:left}
+  .sechead.left .lead{margin:0}
+  .moral{margin:32px auto 0;font-size:16px;line-height:1.65;color:var(--sec);max-width:62ch;text-align:center;text-wrap:pretty}
+  .moral b{color:var(--ink);font-weight:600}
+
+  /* ── the copy-paste demo ──────────────────────────────────────── */
+  .demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:780px){.demo-grid{grid-template-columns:1fr}}
+  .doc{background:var(--paper);border:1px solid var(--hair);border-radius:10px;box-shadow:var(--sh-card);overflow:hidden}
+  .doc .doc-head{display:flex;align-items:center;gap:8px;background:var(--card);border-bottom:1px solid var(--hair);
+    padding:11px 16px;font-size:13.5px;color:var(--sec)}
+  .doc .doc-head b{color:var(--ink);font-weight:600}
+  .doc .doc-body{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:15.5px;line-height:1.85;padding:24px 26px;color:var(--ink)}
+  .doc .doc-foot{border-top:1px solid var(--hair);padding:11px 16px;font-size:13px;line-height:1.55;color:var(--mut)}
+  .leaky .bar{background:var(--applied);color:var(--applied);border-radius:2px;padding:0 3px}
+  .leaky .doc-body ::selection{background:var(--red-wash);color:var(--ink)}
+  .leaky .doc-body::selection{background:var(--red-wash);color:var(--ink)}
+  .clean .tag{font-family:var(--mono);font-size:12.5px;background:var(--card);border:1px solid var(--border);border-radius:4px;padding:0 5px;white-space:nowrap}
+  .try{display:flex;width:max-content;align-items:center;gap:8px;background:var(--paper);border:1px solid var(--border);
+    border-radius:999px;padding:7px 16px;font-size:13.5px;font-weight:600;color:var(--ink);margin:0 auto 20px;box-shadow:var(--sh-card)}
+  .try::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--go);flex:none}
+  .paste-check{margin-top:16px;background:var(--paper);border:1px solid var(--hair);border-radius:10px;
+    box-shadow:var(--sh-card);padding:16px 18px}
+  .paste-check label{display:block;font-size:13.5px;font-weight:600;margin-bottom:9px}
+  .paste-check textarea{width:100%;min-height:54px;resize:vertical;border:1px solid var(--border);border-radius:7px;
+    background:var(--card);color:var(--ink);font-family:var(--mono);font-size:13px;padding:10px 12px}
+  .paste-check textarea:focus{outline:2px solid var(--border-strong);outline-offset:1px}
+  .paste-check .hint{margin-top:9px;font-size:13px;color:var(--mut)}
+  .paste-check .hint.bad{color:var(--red);font-weight:600}
+  .paste-check .hint.good{color:var(--go);font-weight:600}
+  /* ── the server moved in ──────────────────────────────────────── */
+  .srv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:780px){.srv-grid{grid-template-columns:1fr}}
+  .srv-grid svg{width:100%;height:auto;display:block}
+  .wireflow{animation:march 1.1s linear infinite}
+  @keyframes march{to{stroke-dashoffset:-14}}
+  .traveldoc{animation:travel 3.2s ease-in-out infinite}
+  @keyframes travel{0%{transform:translateX(0);opacity:0}12%{opacity:1}88%{opacity:1}100%{transform:translateX(118px);opacity:0}}
+  .pulse{animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.3}}
+
+  /* ── the factory corridor ─────────────────────────────────────── */
+  .factory{background:var(--paper);border:1px solid var(--hair);border-radius:10px;box-shadow:var(--sh-card);
+    padding:24px 18px 10px;margin-bottom:18px}
+  .factory-inner{overflow-x:auto;overflow-y:hidden}
+  .factory svg{width:100%;min-width:720px;height:auto;display:block}
+  .fdoc{animation:fmove 13s linear infinite}
+  @keyframes fmove{
+    0%{transform:translate(90px,150px);opacity:0}
+    2%{transform:translate(90px,150px);opacity:1}
+    15%{transform:translate(90px,150px)}
+    25%{transform:translate(330px,150px)}
+    40%{transform:translate(330px,150px)}
+    50%{transform:translate(570px,150px)}
+    64%{transform:translate(570px,150px)}
+    73%{transform:translate(810px,150px)}
+    89%{transform:translate(810px,150px);opacity:1}
+    98%{transform:translate(980px,150px);opacity:0}
+    100%{transform:translate(980px,150px);opacity:0}
+  }
+  .fdropin{animation:fdropin 13s linear infinite}
+  @keyframes fdropin{0%{transform:translateY(-52px)}5%{transform:translateY(0)}100%{transform:translateY(0)}}
+  .flines{animation:flines 13s linear infinite}
+  @keyframes flines{0%,31%{opacity:1}35%,100%{opacity:0}}
+  .fbars{animation:fbars 13s linear infinite}
+  @keyframes fbars{0%,31%{opacity:0}35%,100%{opacity:1}}
+  .fbeam{opacity:0;animation:fbeam 13s linear infinite}
+  @keyframes fbeam{0%,26%{opacity:0;transform:translateY(0)}28%{opacity:1}37%{opacity:1;transform:translateY(48px)}39%,100%{opacity:0;transform:translateY(48px)}}
+  .farm{animation:farm 13s linear infinite}
+  @keyframes farm{0%,49%{transform:translateY(0)}53%{transform:translateY(16px)}57%,100%{transform:translateY(0)}}
+  .fbadge{opacity:0;animation:fbadge 13s linear infinite}
+  @keyframes fbadge{0%,53%{opacity:0}56%,100%{opacity:1}}
+  .fkey{opacity:0;animation:fkey 13s linear infinite}
+  @keyframes fkey{0%,76%{opacity:0}80%,88%{opacity:1}93%,100%{opacity:0}}
+  .flabel{font-family:var(--sans);font-size:12px;fill:var(--mut)}
+
+  /* ── steps — captions under the corridor sheet, not more cards ── */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0 28px}
+  .step{border-top:1px solid var(--border);padding:16px 4px 6px;position:relative}
+  .step .n{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1;color:var(--faint);display:block;margin-bottom:12px}
+  .step h3{font-size:15.5px;font-weight:600;margin-bottom:6px}
+  .step p{font-size:14px;line-height:1.6;color:var(--sec)}
+  .stamp{position:absolute;top:14px;right:4px;border:2.5px solid var(--red);color:var(--red);border-radius:5px;
+    transform:rotate(-7deg);font-size:10.5px;font-weight:700;letter-spacing:.09em;padding:2px 8px;opacity:.8}
+
+  /* ── app screenshots ──────────────────────────────────────────── */
+  .shots{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media (max-width:780px){.shots{grid-template-columns:1fr}}
+  .shotcard{background:var(--paper);border:1px solid var(--hair);border-radius:10px;overflow:hidden;box-shadow:var(--sh-card)}
+  .shotcard img{width:100%;border-bottom:1px solid var(--hair)}
+  .shotcard p{padding:15px 18px;font-size:14px;line-height:1.6;color:var(--sec)}
+  .shotcard p b{color:var(--ink)}
+
+  /* ── evidence / exhibits ──────────────────────────────────────── */
+  .exhibits{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .exhibit{background:var(--paper);border:1px solid var(--hair);border-radius:10px;padding:20px 22px;box-shadow:var(--sh-card)}
+  .exhibit .ex-label{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--red);margin-bottom:9px}
+  .exhibit h3{font-size:15.5px;font-weight:600;margin-bottom:6px}
+  .exhibit p{font-size:14px;line-height:1.6;color:var(--sec);margin-bottom:10px}
+  .exhibit a{font-size:13.5px}
+  .results{margin-top:34px;background:var(--paper);border:1px solid var(--hair);border-radius:10px;overflow:hidden;box-shadow:var(--sh-card)}
+  .results table{width:100%;border-collapse:collapse;font-size:14px}
+  .results th{text-align:left;font-weight:600;background:var(--card);border-bottom:1px solid var(--hair);padding:11px 16px}
+  .results td{border-bottom:1px solid var(--hair);padding:11px 16px;color:var(--sec)}
+  .results tr:last-child td{border-bottom:none}
+  .results td:first-child{color:var(--ink)}
+  .slot-pending{color:var(--amber)!important;font-size:12.5px}
+  .slot-pending::before{content:"● ";font-size:9px;vertical-align:1px}
+  .results-note{padding:13px 16px;font-size:13px;line-height:1.6;color:var(--mut);border-top:1px solid var(--hair);background:var(--card)}
+  .repro{margin-top:16px;background:var(--paper);border:1px solid var(--hair);border-radius:10px;padding:20px 22px;box-shadow:var(--sh-card)}
+  .repro h3{font-size:15.5px;font-weight:600;margin-bottom:5px}
+  .repro p{font-size:14px;color:var(--sec);margin-bottom:12px}
+  .repro pre{font-family:var(--mono);font-size:13px;line-height:1.75;background:var(--card);border:1px solid var(--hair);
+    border-radius:8px;padding:14px 17px;overflow-x:auto;color:var(--ink)}
+  .honest{margin:34px auto 0;background:var(--paper);border-left:3px solid var(--red);border-radius:0 10px 10px 0;
+    box-shadow:var(--sh-card);padding:18px 22px;color:var(--sec);max-width:70ch;font-size:15px;line-height:1.65}
+  .honest b{color:var(--ink)}
+
+  /* ── download ─────────────────────────────────────────────────── */
+  .dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin-top:6px}
+  .dl{background:var(--paper);border:1px solid var(--hair);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:9px;box-shadow:var(--sh-card)}
+  .dl h3{font-size:15.5px;font-weight:600;display:flex;align-items:center;gap:9px}
+  .dl h3 svg{flex:none;color:var(--sec)}
+  .dl .meta{font-size:13px;line-height:1.55;color:var(--mut)}
+  .dl a{align-self:flex-start;font-size:13.5px;color:var(--sec);margin-top:auto}
+  .dl.bundle{border:1px solid var(--border-strong)}
+  .dl.bundle .zero{font-size:13px;color:var(--go);font-weight:600}
+  .dl-all{margin-top:16px;text-align:center;font-size:13.5px;color:var(--mut)}
+  .notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 36px;margin-top:26px}
+  .note{border-top:1px solid var(--border);padding:16px 4px 14px}
+  .note h3{font-size:14.5px;font-weight:600;margin-bottom:6px}
+  .note p{font-size:14px;line-height:1.6;color:var(--sec)}
+  .note p b{color:var(--ink)}
+
+  .checks{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;max-width:920px;margin:0 auto}
+  @media (max-width:720px){.checks{grid-template-columns:1fr}}
+  .check{display:flex;gap:14px;align-items:flex-start;border-top:1px solid var(--border);padding:18px 4px 16px}
+  .check svg{flex:none;margin-top:2px;color:var(--mut)}
+  .check b{display:block;color:var(--ink);font-size:14.5px;margin-bottom:4px}
+  .check p{font-size:14px;line-height:1.6;color:var(--sec)}
+
+  .faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:0 40px}
+  .faq .claim{border-top:1px solid var(--border);padding:18px 4px 16px}
+  .faq h3{font-size:15px;font-weight:600}
+  .faq p{font-size:14px;line-height:1.6;color:var(--sec);margin-top:6px}
+
+  footer{border-top:1px solid var(--hair);background:var(--chrome);padding:30px 0 40px;color:var(--mut);font-size:13.5px}
+  footer .row{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+  footer .fbrand{display:flex;align-items:center;gap:8px;color:var(--ink);font-weight:600}
+  footer .spacer{flex:1}
+  footer a{color:var(--sec)}
+  footer .legal{margin-top:14px;font-size:13px;color:var(--faint)}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .tok{transition:none}
+    .wireflow,.traveldoc,.pulse{animation:none}
+    .traveldoc{opacity:1}
+    .fdoc,.fdropin,.flines,.fbars,.fbeam,.farm,.fbadge,.fkey{animation:none}
+    .fdoc{transform:translate(330px,150px)}
+    .flines{opacity:0}.fbars{opacity:1}
+  }
+
+  /* ── night mode: the desk lamp goes down, the paper stays paper ──
+     (the spec's sanctioned dark pattern: chrome darkens to warm charcoal,
+      document sheets never invert) */
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme:dark;
+      --table:#232220; --chrome:#2A2826; --paper:#2F2D2A; --card:#282624;
+      --hair:#3B3835; --border:#4A4641; --border-strong:#767068; --hover:#35322E;
+      --ink:#E7E4DE; --sec:#B4AEA5; --mut:#9B958B; --faint:#716C64;
+      --red:#6E96BE; --red-hover:#5B84AD; --red-wash:#1C2B3D;
+      --applied:#141312;
+      --go:#54B183; --go-wash:#20342A; --amber:#D3A445; --amber-wash:#383021;
+      --person:#82ABD7; --person-wash:#26313E;
+      --sh-paper:0 1px 3px rgba(0,0,0,.5),0 14px 36px rgba(0,0,0,.45);
+      --sh-card:0 1px 3px rgba(0,0,0,.35);
+    }
+    .hero-ground::before{opacity:.3}
+    .navpill{background:rgba(42,40,38,.94)}
+    .fold .shot img,.shotcard img{filter:brightness(.9) contrast(1.02)}
+    .btn-red{box-shadow:0 1px 2px rgba(0,0,0,.4)}
+    .tape{box-shadow:0 5px 18px rgba(0,0,0,.5);background:#16324F}
+    /* paper objects stay light: the demo documents and diagram sheets are
+       literal sheets on the dark desk — re-derive the light ramp locally */
+    .demo-grid .doc,.srv-grid .doc,.factory{
+      --paper:#FAF7F1; --card:#F1EDE6; --hair:#DCD8CF; --border:#C9C5BD;
+      --border-strong:#87837B; --ink:#37352F; --sec:#5D5951; --mut:#6C675F;
+      --faint:#9B968E; --applied:#1F1D1A; --red:#16324F; --red-wash:#FBEAE8;
+      --go:#1B7247;
+      background:var(--paper);border-color:#4A4641}
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navpill">
+    <a class="brand" href="#top"><img src="favicon.svg" alt="" width="20" height="20" style="border-radius:5px" /><b>Simpler Legal</b></a>
+    <nav>
+      <a href="#demo">See it work</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#download">Download</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal">Source<span id="gh-stars" hidden></span></a>
+    </nav>
+  </div>
+</div>
+
+<div class="hero-ground" id="top">
+  <div class="wrap">
+    <div class="hero">
+      <h1>Redact <span class="tok" id="tok" role="img" aria-label="example: a name being redacted to the placeholder Person 1"><span
+        class="tok-name">Mr.&nbsp;Chris&nbsp;P.&nbsp;Bacon</span><span class="tok-tag">[Person1]</span></span>
+        before the document leaves your&nbsp;machine.</h1>
+      <!-- Scoped to what was measured. The zero is an EDGAR result; "judgments, agreements and
+           matter files" beside it read as a zero on all three, and the only run on a firm's own
+           filings kept an identifier readable in 14 of 20 (FREEZE.md, Profiles added AFTER the
+           freeze). Round 4 is "the first under the current gold and scorer", not "the first
+           draw": rounds 1-2 ran earlier under the old gold (ROUND5.md round-over-round table).
+           "You review everything" is gone: the frozen engine confirms every row it returns
+           (engine.ts mapLegalOutcome), so the finish button is open the moment the table
+           loads. What holds is the gate: Export releases only a document whose review was
+           finished (Export.tsx), and the finish is the lawyer's attestation (lib/review.ts
+           FINISH_LABEL, lib/attest.ts). -->
+      <p class="sub">A local model and deterministic rails find people's names and identifying
+      numbers in legal documents, <b>on hardware you own</b> —
+      <a href="#evidence">46 unseen SEC-filed business agreements, zero identity leaks</a>, measured across four
+      consecutive fresh draws; 45 of those documents ran the engine as it stood before it was
+      frozen, and one ran the frozen engine. The draw before them, round 4, the first under the current gold and
+      scorer, leaked 3 identity spans in 1 of its 15 documents and is published as drawn. Court
+      judgments and a firm's own filings are harder, and the evidence below says by how much.
+      Nothing exports until you finish the review, and finishing is your sign-off that you
+      have read the document and its marks.</p>
+      <div class="cta">
+        <a class="btn-red" href="#download">Download</a>
+        <a class="btn-plain" href="https://github.com/Simpler-Systems/simpler-legal">Read the source</a>
+      </div>
+      <p class="cta-note">Free · Apache-2.0 · no account, no server of ours, no telemetry · v0.1.0 for Windows, not code-signed</p>
+    </div>
+  </div>
+
+  <div class="fold">
+    <!-- SCREENSHOT SWAP PENDING — DO NOT LAUNCH BEFORE THESE ARE RETAKEN.
+         Every image asset on this site is still a simpler-red capture. Verified by opening
+         each file 2026-07-25; what is wrong in each, precisely:
+
+           assets/react-app-drop-v2.png   (used here, line ~419)
+             sidebar masthead reads "Simpler AI / simpler.red" under the RED kite logo;
+             red PDF file card; red stepper dot on "Drop".
+           assets/react-app-review.png    (used in the walkthrough, line ~629)
+             same red masthead + "simpler.red"; red stepper dot; the primary guided-review
+             button "Confirm — redact as PERSON 1" is red.
+           assets/react-app-export.png    (used in the walkthrough, line ~635)
+             same red masthead + "simpler.red"; red stepper dot; primary "Copy redacted text"
+             button is red; closing paragraph pitches "simpler.asia", not this product.
+           assets/og-card.png             (og:image AND twitter:image, lines 36 and 40)
+             this is RED'S SOCIAL CARD: the wordmark reads "Simpler Redact", red kite logo,
+             red diagonal tape. It is what every shared simpler.legal link renders as.
+             Highest-visibility miss of the four — fix this one first.
+
+         Retake all four from the navy build at localhost:1435. Until then the hero, review and
+         export alt texts and the caption under the hero shot SAY these are simpler-red
+         captures; when you retake, rewrite all three alts and delete the caption. The review
+         retake should show the tally line, not a guided card: on the frozen engine no row
+         arrives flagged, so a real document opens with no card. og-card.png must be
+         re-rendered at 1200x630 to match the meta tags. -->
+    <div class="shot wrap" style="padding:0">
+      <img src="assets/react-app-drop-v2.png" alt="A screenshot of the sibling app simpler-red, not of Simpler Legal: the simpler.red masthead with its kite, a document drop sheet with TXT, PDF and DOCX file cards, a trust footer stating nothing is uploaded, and the Drop, Review, Export stepper — engine ready at 127.0.0.1." />
+    </div>
+    <p class="cta-note" style="margin-top:10px">Screenshots on this page are of the sibling app simpler-red, not of Simpler Legal. They are retaken before launch.</p>
+  </div>
+</div>
+
+<!-- "Nothing leaves this machine, ever" was false for the one copy the product exists to
+     produce: the Export screen tells the user to paste the redacted text into ChatGPT, Claude,
+     Copilot or Gemini (Export.tsx). "The app sends nothing off this machine" came off on
+     2026-09-25: the model server the app started read llama.cpp's own network settings (the
+     llama-gap law in tools/site-claims.mjs; engine.rs has removed them since later that day),
+     and no packet capture of the packaged app is on record (PRIVACY.md). What stays is true
+     of the code in every state. -->
+<div class="tape" aria-label="No API key. No account. No server of ours.">
+  <span><i>&#9888;</i>NO API KEY &middot; NO ACCOUNT &middot; NO SERVER OF OURS</span><span aria-hidden="true"><i>&#9888;</i>NO API KEY &middot; NO ACCOUNT &middot; NO SERVER OF OURS</span><span aria-hidden="true"><i>&#9888;</i>NO API KEY &middot; NO ACCOUNT &middot; NO SERVER OF OURS</span>
+</div>
+
+<section class="sec band" id="demo">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">The core claim, live</p>
+      <h2>Ink hides. Deletion removes.</h2>
+      <!-- A news claim about a named release stood here with no source in the page or the
+           repository; the mechanism needs no anecdote, the left document demonstrates it. The
+           right document is written by hand in the engine's tag format ([Person1], [Id1],
+           [Address1]: lib-core/anonymize.mjs buildTable and EXTRACT_SYSTEM, which has no
+           ACCOUNT class) and is labelled as an illustration, because it is not an engine run. -->
+      <p class="lead">Ink drawn over text leaves the text in the file, one copy-paste away. Both
+      documents below are real text on this page. The right-hand one is an illustration written
+      in the export's tag format, not a recorded engine run.</p>
+    </div>
+    <span class="try">Try it — select either document, copy, paste below</span>
+    <div class="demo-grid">
+      <div class="doc leaky">
+        <div class="doc-head"><b>How redaction usually works</b> — ink drawn over text</div>
+        <div class="doc-body">
+          Dear <span class="bar">Mrs. Margaret Ellison</span>, further to your instruction of 12 March,
+          we confirm settlement from account <span class="bar">7449-2210-0031</span> and registration of
+          the property at <span class="bar">14 Belmont Road</span> in your name.
+        </div>
+        <div class="doc-foot">The names are still in this page — your selection just proved it.</div>
+      </div>
+      <div class="doc clean">
+        <div class="doc-head"><b>What a Simpler Legal export looks like</b> — text replaced, then rebuilt</div>
+        <div class="doc-body">
+          Dear <span class="tag">[Person1]</span>, further to your instruction of 12 March,
+          we confirm settlement from account <span class="tag">[Id1]</span> and registration of
+          the property at <span class="tag">[Address1]</span> in your name.
+        </div>
+        <div class="doc-foot">Nothing to find — the name isn't hidden here, it isn't <em>in</em> here. View-source this page: same result.</div>
+      </div>
+    </div>
+    <div class="paste-check">
+      <label for="paste">Paste what you copied:</label>
+      <textarea id="paste" spellcheck="false" placeholder="paste here — see what survived the ink"></textarea>
+      <p class="hint">It works on the left document. It has nothing to work on in the right one.</p>
+    </div>
+    <!-- "Every identifying detail is deleted" was the same absolute the meta description carried
+         (fixed 2026-09-23, see the head). This paragraph is about the MECHANISM — deletion, not
+         ink — so it says what happens to what the engine redacts, and leaves coverage to the
+         evidence section, which publishes it: DIRECT 0/184, QUASI 245 of 503 spans readable.
+         The tag sentence used to say "the same person becomes the same tag everywhere".
+         buildTable (lib-core/anonymize.mjs) keys each tag on the lowercased surface string,
+         and on the post-freeze showcase document the defined term for the executive and its
+         possessive carry two different [Person] tags (raw/stripped/pureoos-FINAL).
+         "Every copy of the same spelling gets the same tag" was cut 2026-09-23: the frozen chain
+         also writes a bare, unnumbered [Person] (apply-v2.mjs, lib-legal/legal-rails.mjs), which
+         the app passes through unchanged (engine.ts mapLegalOutcome takes the service's final
+         text and row tags as they are). Aligned with lib-legal/regions.mjs alignTags over the
+         71 frozen-era FINAL outputs (raw/stripped/{pureoos,r5-edgar,r6-edgar,r7-edgar,
+         r7-courts}-FINAL; raw/ is not in the repository): a bare [Person] stands for two or
+         more different spellings in 15 of the 25 court judgments and in none of the 46
+         agreements; one exact spelling carries two different tags in 9 of the 71 (8 of them a
+         company tag in one place and a person tag in another).
+         The .docx check: every author bookmark is renamed bm1 … whatever it is called
+         (docxWrite.ts, the comment above WORD_BOOKMARK). What still ships under a passing check,
+         and what now masks or holds, is cited above the files FAQ and driven through the real
+         writer by tools/site-claims.mjs, which fails when a sentence here and the writer part.
+         The run-together, box/bar equation and namespace/element-name cases this paragraph
+         named on 2026-09-23 are closed (docx-parts laws 45, 46, 49). The plain-word and
+         McDonald sentences are refFind 'text' in docxWrite.ts (textHolds, owner ruling 8: never
+         inside a plain word of letters, found where a capital starts it), which engine.ts uses
+         for the text export too; the percent-escape sentence came off when pctRuns (ruling 10)
+         masked it in both exports. -->
+    <p class="moral">Simpler Legal never draws boxes over your document. Everything it redacts is
+    <b>deleted from the text and substituted with a placeholder</b>, and a text export is a new file
+    rebuilt from the cleaned text. A .docx export is not: it rewrites your original Word package,
+    so its safety rests on a check rather than on impossibility — the finished file is walked
+    again, and if the check finds a name the engine found or a term from your always-redact
+    list still in it, the export is held back. The check has blind spots, listed in the questions below. A name the engine never
+    found, in the body or in the headers, footers and notes it reads apart from the body, is in
+    no table, so the check cannot catch it unless the name is on your always-redact list. A name run into a
+    plain word of letters where nothing marks both its ends is a second:
+    <code>kestrelholdings</code> where the list says Kestrel, or <code>tanholdings</code> where
+    the table says Tan, is not masked in the text export or in the .docx, and the check passes.
+    So is a name typed with its letters spaced apart. Word's hidden places are a third: a
+    name split between separate parts of an equation, such as a fraction's top and bottom,
+    ships, and the check passes. Tags follow spellings, not people: a different form of the same person's name, such
+    as a surname alone or a possessive, can get a tag of its own, so the AI you hand the
+    document to may read one person as two. The reverse happens too. Some names are replaced
+    by a bare, unnumbered <code>[Person]</code> that does not tell people apart: on the
+    benchmark's 25 court judgments, one <code>[Person]</code> stood for two or more
+    differently spelled names in 15 (in none of its 46 agreements). And one spelling can carry
+    two tags: in 9 of those 71 documents a name was tagged as a company in one place and a
+    person in another, or as two different people. A table row can also reach into a different,
+    longer name: with Donald in the table, McDonald becomes <code>Mc[Person1]</code>, and the
+    two read as one. Across separate documents of one matter the
+    tags are not coordinated either: the same person can carry a different tag in each file.
+    The map from tags back to names is a
+    separate file that never exports with the document unless you explicitly say so.</p>
+  </div>
+</section>
+
+<section class="sec" id="local">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">Why local isn't a feature toggle</p>
+      <h2>Your laptop becomes the AI server.</h2>
+      <p class="lead">"AI" has meant "send it to a data center" for so long that <em>local</em> sounds
+      like a setting. It isn't — it's the direction of travel reversed. Your documents don't go to
+      the AI. <b>The AI comes to you.</b></p>
+    </div>
+    <div class="srv-grid">
+      <div class="doc">
+        <div class="doc-head"><b>A cloud AI tool</b> — the document travels</div>
+        <div class="doc-body" style="font-family:var(--sans);padding:18px 20px 10px">
+          <svg viewBox="0 0 360 118" role="img" aria-label="A laptop sending documents over a wire to a large building labeled as someone else's computer.">
+            <rect x="18" y="26" width="76" height="52" rx="4" fill="var(--paper)" stroke="var(--border-strong)" stroke-width="1.5"/>
+            <rect x="30" y="36" width="24" height="32" rx="2" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M34 43 h16 M34 48 h16 M34 53 h10" stroke="var(--faint)" stroke-width="1.2"/>
+            <rect x="10" y="82" width="92" height="6" rx="3" fill="var(--card)" stroke="var(--border-strong)" stroke-width="1.2"/>
+            <path d="M104 58 H248" stroke="var(--border-strong)" stroke-width="1.5" stroke-dasharray="7 7" class="wireflow" fill="none"/>
+            <path d="M244 53 l8 5 -8 5" fill="none" stroke="var(--border-strong)" stroke-width="1.5"/>
+            <g class="traveldoc">
+              <rect x="112" y="44" width="17" height="22" rx="2" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"/>
+              <path d="M116 51 h9 M116 55 h9 M116 59 h6" stroke="var(--faint)" stroke-width="1.1"/>
+            </g>
+            <rect x="262" y="12" width="84" height="76" rx="3" fill="var(--card)" stroke="var(--border-strong)" stroke-width="1.5"/>
+            <g fill="var(--faint)">
+              <rect x="272" y="22" width="9" height="9"/><rect x="288" y="22" width="9" height="9"/><rect x="304" y="22" width="9" height="9"/><rect x="320" y="22" width="9" height="9"/>
+              <rect x="272" y="38" width="9" height="9"/><rect x="288" y="38" width="9" height="9"/><rect x="304" y="38" width="9" height="9"/><rect x="320" y="38" width="9" height="9"/>
+              <rect x="272" y="54" width="9" height="9"/><rect x="288" y="54" width="9" height="9"/><rect x="304" y="54" width="9" height="9"/><rect x="320" y="54" width="9" height="9"/>
+            </g>
+            <text x="300" y="102" text-anchor="middle" font-family="var(--mono)" font-size="8.5" fill="var(--mut)">someone else's computer</text>
+            <path d="M6 90 H250" stroke="var(--hair)" stroke-width="1"/>
+          </svg>
+        </div>
+        <!-- "their logs remember it" was an absolute that zero-retention offerings contradict
+             (LAUNCH.md §10); custody and the provider's terms are the durable point. -->
+        <div class="doc-foot">Your document travels to their machine. Their hardware reads it and
+        their terms decide what is kept, and for how long — and your client's name is in it.</div>
+      </div>
+      <div class="doc">
+        <div class="doc-head"><b>Simpler Legal</b> — the AI moved in</div>
+        <div class="doc-body" style="font-family:var(--sans);padding:18px 20px 10px">
+          <svg viewBox="0 0 360 118" role="img" aria-label="A large laptop containing a small AI server at address 127.0.0.1 and a document that stays inside; the outgoing wire is severed with a red cut.">
+            <rect x="52" y="10" width="196" height="82" rx="5" fill="var(--paper)" stroke="var(--border-strong)" stroke-width="1.5"/>
+            <rect x="40" y="96" width="220" height="7" rx="3" fill="var(--card)" stroke="var(--border-strong)" stroke-width="1.2"/>
+            <rect x="76" y="24" width="60" height="46" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.3"/>
+            <path d="M84 35 h36 M84 46 h36 M84 57 h36" stroke="var(--border-strong)" stroke-width="1.5"/>
+            <circle cx="127" cy="35" r="2.6" fill="var(--go)" class="pulse"/>
+            <circle cx="127" cy="46" r="2.6" fill="var(--go)" class="pulse" style="animation-delay:.7s"/>
+            <text x="106" y="84" text-anchor="middle" font-family="var(--mono)" font-size="9" fill="var(--mut)">127.0.0.1</text>
+            <rect x="176" y="28" width="30" height="40" rx="2" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M181 36 h20 M181 42 h20 M181 54 h20 M181 60 h13" stroke="var(--faint)" stroke-width="1.2"/>
+            <rect x="181" y="46" width="15" height="4" fill="var(--applied)"/>
+            <path d="M150 47 h18" stroke="var(--border-strong)" stroke-width="1.3" stroke-dasharray="3 3"/>
+            <path d="M164 43 l6 4 -6 4" fill="none" stroke="var(--border-strong)" stroke-width="1.3"/>
+            <path d="M258 58 H290 M316 58 H352" stroke="var(--border-strong)" stroke-width="1.5" stroke-dasharray="7 7" fill="none"/>
+            <path d="M295 50 l14 16 M309 50 l-14 16" stroke="var(--red)" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M6 104 H354" stroke="var(--hair)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="doc-foot">The model lives on your disk — one 3.35&nbsp;GB file, hash-checked when the
+        app starts it. It serves at
+        <b>127.0.0.1</b>: an address that cannot leave your machine, by definition. The document
+        never touches the wire.</div>
+      </div>
+    </div>
+    <p class="moral">It's the same architecture the AI labs run — a model behind a server —
+    except the server is your laptop and it listens only on 127.0.0.1. That's why there is
+    <b>no per-page pricing, no monthly allowance, no metering</b>: nobody's hardware is doing you a
+    favor. Length still has a practical limit: in pre-launch testing, documents of about 60,000
+    words ran for about 14 minutes and returned nothing, twice, and nothing yet records why.
+    The model itself is <b>Google's Gemma&nbsp;4&nbsp;E2B, not fine-tuned or altered by us</b>; the
+    repository records it as Google's stock quantized weights. What the launcher checks is
+    narrower than where the file came from: when the app starts the model server, it hashes the
+    file against the SHA-256 pinned in this repository and refuses one that does not match. That
+    proves you are running the file the benchmark record pins. The pin is also the SHA-256
+    that Hugging Face lists for that file at one revision of Google's own repository there, the
+    address the app and this page give for the download (checked 2026-09-25), so a file that
+    passes is the file published at that revision.</p>
+    <!-- Sources: LAUNCH.md 4.8 (the 60k-word stall); THIRD_PARTY_NOTICES.md "The model weights"
+         (the pinned URL, revision 69536a21, and the HEAD request of 2026-09-25 whose
+         X-Linked-ETag is the pin); Setup.tsx MODEL_URL; main.rs MODEL_SHA256;
+         locate-model.mjs CATALOG (the pin); tools/launch-server.cmd (the check).
+         engine.rs check_explicit_model now hashes a SIMPLER_MODEL_GGUF file before the app
+         starts the launcher, and verify_hand_model checks the file a model server started
+         outside the app reports against the same pin (see the IT note). -->
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">The corridor</p>
+      <h2>Four steps, all local</h2>
+      <p class="lead">One corridor, no suite, no workflow product. It does one job.</p>
+    </div>
+    <div class="factory" aria-label="A document on a conveyor: dropped in, scanned and redacted, stamped as reviewed, then exported with its key produced separately.">
+      <div class="factory-inner">
+      <svg viewBox="0 0 960 196" aria-hidden="true">
+        <!-- conveyor -->
+        <path d="M20 150 H940" stroke="var(--border-strong)" stroke-width="1.5"/>
+        <path d="M20 156 H940" stroke="var(--hair)" stroke-width="1"/>
+        <!-- station 1: the drop slot -->
+        <path d="M62 44 V78 M118 44 V78" stroke="var(--border)" stroke-width="1.5"/>
+        <path d="M90 50 V72 M84 66 l6 8 6-8" fill="none" stroke="var(--mut)" stroke-width="1.5" stroke-linecap="round"/>
+        <!-- station 2: the scanner gate -->
+        <path d="M298 150 V88 Q298 68 318 68 H342 Q362 68 362 88 V150" fill="none" stroke="var(--ink)" stroke-width="1.6"/>
+        <line class="fbeam" x1="303" y1="84" x2="357" y2="84" stroke="var(--red)" stroke-width="2"/>
+        <!-- station 3: the stamp arm -->
+        <g class="farm">
+          <path d="M570 46 V64" stroke="var(--ink)" stroke-width="1.6"/>
+          <rect x="548" y="64" width="44" height="14" rx="3" fill="var(--card)" stroke="var(--ink)" stroke-width="1.5"/>
+        </g>
+        <!-- station 4: the out gate -->
+        <path d="M782 150 V80 M838 150 V80" stroke="var(--border)" stroke-width="1.5"/>
+        <path d="M782 80 H838" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <!-- the document -->
+        <g class="fdoc">
+          <g class="fdropin">
+            <rect x="-23" y="-58" width="46" height="58" rx="3" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.5"/>
+            <g class="flines" stroke="var(--faint)" stroke-width="1.6">
+              <path d="M-14 -46 H14 M-14 -38 H14 M-14 -30 H8 M-14 -22 H14 M-14 -14 H4"/>
+            </g>
+            <g class="fbars">
+              <path d="M-14 -46 H14 M-14 -22 H14" stroke="var(--faint)" stroke-width="1.6"/>
+              <rect x="-14" y="-41" width="20" height="5" fill="var(--applied)"/>
+              <rect x="-14" y="-33" width="26" height="5" fill="var(--applied)"/>
+              <rect x="-14" y="-17" width="14" height="5" fill="var(--applied)"/>
+            </g>
+            <g class="fbadge">
+              <circle cx="14" cy="-52" r="8.5" fill="var(--go)"/>
+              <path d="M10 -52 l3 3 5-6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+        </g>
+        <!-- the key, produced separately at export -->
+        <g class="fkey">
+          <g transform="translate(852,118)">
+            <circle cx="0" cy="0" r="6" fill="none" stroke="var(--mut)" stroke-width="1.7"/>
+            <path d="M5 4 l14 14 M13 12 l4-4 M17 16 l4-4" stroke="var(--mut)" stroke-width="1.7" stroke-linecap="round" fill="none"/>
+          </g>
+        </g>
+        <!-- labels -->
+        <text class="flabel" x="90" y="182" text-anchor="middle">Drop</text>
+        <text class="flabel" x="330" y="182" text-anchor="middle">Redact</text>
+        <text class="flabel" x="570" y="182" text-anchor="middle">Review</text>
+        <text class="flabel" x="810" y="182" text-anchor="middle">Export + key</text>
+      </svg>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><h3>Drop</h3><p>A contract, a letter, an intake form. It never uploads — there is nowhere to upload to.</p></div>
+      <div class="step"><span class="n">2</span><h3>Redact</h3><p>A wide sweep finds identities; code removes every copy document-wide; a second pass re-reads the result hunting anything left behind.</p></div>
+      <div class="step"><span class="stamp">Reviewed</span><span class="n">3</span><h3>Review</h3><p>Everything found, in one table, with keyboard shortcuts. The frozen engine marks nothing as uncertain, so its table opens with no row flagged and the reading is yours. If the lighter in-app engine runs instead, the rows it is unsure of are flagged and walked one at a time. Nothing exports until you finish.</p></div>
+      <div class="step"><span class="n">4</span><h3>Export</h3><p>The redacted copy — plus, separately and only if you ask, the key that maps tags back to names.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="app">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">The app</p>
+      <h2>The review is the gate</h2>
+      <!-- What the review does, from the code as it stands (2026-09-23). The frozen service
+           path (the default when the local engine runs) confirms every row: mapLegalOutcome in
+           engine.ts, and serve-legal.mjs gives no per-row provenance to key a flag on. Only the
+           in-app core's mapping (engine.ts, at the status mapping) flags rows: a name found
+           only on the second read, and possible boilerplate. The tally is lib/review.ts
+           tallyLine ("decided by you · as marked automatically · waiting on you"), and the
+           receipt prints the same split (receiptReviewLine). lib/attest.ts takes a finish off
+           when a later change leaves readable something that was masked when it was pressed. -->
+      <p class="lead">If a run is incomplete, or a masked name is still found in the export, the
+      export is held. The last check is yours: nothing exports until you finish the review, and
+      finishing is your sign-off, not the machine's.</p>
+    </div>
+    <div class="shots">
+      <div class="shotcard">
+        <img src="assets/react-app-review.png" loading="lazy" alt="The review screen of the sibling app simpler-red, not of Simpler Legal: the original document and the redacted copy side by side with strong colored highlights, a guided-review card walking a pending item, and an entity table with confirm and leave-visible controls per row." />
+        <p><b>Review.</b> Original and redacted side by side, every finding highlighted in place.
+        The count under the table keeps apart what you decided and what stands as the machine
+        marked it, and the receipt carries the same split. Rows an engine flags as uncertain are
+        walked one at a time and hold the finish button until you decide them; the frozen
+        engine flags none. If you change a finished document so that something masked at
+        finish becomes readable, the finish comes off.</p>
+      </div>
+      <div class="shotcard">
+        <img src="assets/react-app-export.png" loading="lazy" alt="The export screen of the sibling app simpler-red, not of Simpler Legal: the found-kept-redacted funnel, verification checks including a partial-name check, a paper receipt, and buttons to copy the redacted text or save it as a file." />
+        <p><b>Export.</b> The honest funnel, verify-by-extraction plus a partial-name check, a receipt
+        for your records — then copy the redacted text straight into the AI you use, or save it as a
+        file. The original is never touched.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="evidence">
+  <div class="wrap">
+    <div class="sechead left">
+      <p class="kicker">Measured, published, reproducible</p>
+      <h2>The evidence</h2>
+      <!-- Was "Ours is a command you can run. The corpus, the ground truth, and every measured run
+           live in the repository". The documents do not ship (they re-fetch), the Family Court
+           gold is withheld (WITHHELD.md §3), the firm-filings run is a ledger entry whose
+           documents stayed out of the tree (OPS_LEDGER.md 2026-09-14), and re-running the engine
+           needs a model the repository does not carry. And the repository itself answered 404
+           on 2026-09-23 (LAUNCH.md §3.2 recorded the same on 2026-09-22). -->
+      <p class="lead">Every accuracy number in this industry is a sentence you're asked to believe.
+      Ours come with the files behind them: the draw manifests, the gold labels, the scorer and
+      every round's board are committed in the repository, and the exhibits below link to them.
+      The <a href="research.html">full methodology, per-class results and leak ledger have their own page</a>.</p>
+    </div>
+    <div class="exhibits">
+      <div class="exhibit">
+        <p class="ex-label">EXHIBIT A</p>
+        <h3>The corpus</h3>
+        <!-- Labellers, by commit: rounds 4-7 "80-agent Opus swarm" (2d3540b, 3584cbd, 32ffc52,
+             aa95438); UK probe "20 Opus agents" (535bdfb); the 100-document development set
+             "dual-labeled (Sonnet swarm)" (311e686; BENCHMARK.md:99, pii-bench/README.md:21).
+             The 240 ceiling calls are sampled from that development set
+             (build-ceiling-sample.mjs, from oos-labels-product). -->
+        <p>Over 260 real public documents — Singapore High Court and Family Court judgments,
+        US federal opinions, UK judgments, SEC agreements — blind-labeled by AI agents we ran
+        ourselves <em>before</em> the engine ever saw them, sealed by commit: each walk-forward
+        round (4 to 7) by a swarm of 80 Opus agents, the UK probe by 20 Opus agents, and the
+        100-document development set by two Sonnet labellers plus an adjudicator per document.
+        The instrument itself is measured: 8 agents re-judged 240 gold calls sampled from the
+        development set, blind — whether a quasi-identifier should be masked or kept; identity
+        (DIRECT) labels were not sampled — and agreed with the sealed gold on 213, or 88.8%.
+        That is less than it sounds: 203 of the 240 calls were “keep”, so answering “keep” every
+        time would have agreed on 84.6%. It is an agreement rate on mask-or-keep calls, not a
+        ceiling on quasi-identifier recall, and we publish it instead of claiming
+        quasi-identifier scores above it. It measures
+        the Sonnet-labelled development gold, on 2026-07-23, before later revisions of the
+        gold's doctrine, and has not been re-measured since; for the round boards, scored
+        against Opus-labelled gold, it is an indicator, not their measured limit.</p>
+        <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/pii-bench">pii-bench/ in the repo</a>
+      </div>
+      <div class="exhibit">
+        <p class="ex-label">EXHIBIT B</p>
+        <h3>The rounds</h3>
+        <!-- Not "pre-registered". Rounds 6 and 7: the recipe is in the round write-up committed
+             83 s and 75 s before the draw (4ecee03 04:21:29 -> 81fe4c8 04:22:52; c72b7d7
+             07:54:42 -> a2df071 07:55:57). Round 4, round 5 and the pure-OOS probe: the rule
+             first appears in the commit that adds the draw script and its manifest (ddf83c6,
+             11bc737, e25637d; ROUND5.md arrives after the draw, in 02b29a8). And the identifiers are not reprinted on THIS site only:
+             ROUND4-7.md, several engine source comments and commit messages still carry some. -->
+        <p>Fixes prove themselves on paper they have never seen: every round draws fresh documents
+        by a fixed rule written into its draw script and committed with the draw, and the board
+        publishes as drawn — including the misses, each named by class with its diagnosis. The
+        rule was not registered in advance in any meaningful sense: for rounds 6 and 7 it was
+        committed in the round's write-up about a minute before the draw, and for round 4,
+        round 5 and the post-freeze probe it first appears with the draw. This
+        site does not reprint the identifiers; the round write-ups in the repository, and some
+        engine source comments, still name some of them.</p>
+        <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/BENCHMARK.md">the full measurement record</a>
+      </div>
+      <div class="exhibit">
+        <p class="ex-label">EXHIBIT C</p>
+        <h3>The freeze</h3>
+        <!-- FREEZE.md:5-6: "a DIRECT leak in the frozen configuration on real paper, or owner
+             order". FREEZE.md claims table vs this page: "independent relabel agreement",
+             "blind Opus Q&A" (harness-v1.js tells the judge which answer is the redacted one),
+             "pre-registered rule", "courts pack byte-unchanged" (UKPROBE predates the round-6
+             and round-7 fix-sets), and a panel with no committed output. FREEZE.md:121 on the
+             firm round: "firm has no sealed gold and no round board". -->
+        <p>The engine is frozen with its claims table, each claim beside the record it cites.
+        It unfreezes only if an identity leaks in the frozen configuration on real paper, or
+        the maintainer orders it. The firm-filings run below found identifiers readable under
+        the frozen configuration; it was checked against one AI agent's list, with no sealed
+        gold, and was not treated as a receipt against the freeze. The post-freeze receipt: one
+        agreement drawn and run after the freeze, through the live engine adapter, with zero
+        identity leaks. It was filed on 2026-01-21, months before the freeze; what makes it
+        unseen is that it was in no earlier draw. Where the claims table and this page differ,
+        this page's wording is the checked one. The differences include the 88.8% (240 sampled
+        calls re-judged, not a relabel; answering “keep” every time would have agreed on
+        84.6%), the utility judge (the table says blind; its prompt
+        says which answer came from the redacted copy), "pre-registered" draw rules (see
+        Exhibit B), the UK probe (run on the configuration from before the round-6 and round-7
+        fixes, not the frozen one), and an adversarial review panel that left no committed
+        output.</p>
+        <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/FREEZE.md">FREEZE.md — the freeze and its claims table</a>
+      </div>
+    </div>
+
+    <div class="results">
+      <table>
+        <thead>
+          <tr><th>Measurement</th><th>Corpus</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+          <!-- Numbers of record — each links to its committed artifact. First-contact
+               (never-seen paper) and in-sample are SEPARATE rows — never blend. -->
+          <tr>
+            <!-- 2001, not 2002: edgar-r6-07 is accession 0000950123-01-509413, filed 2001
+                 (round6-manifest.json). 43 of 46 carry a DIRECT gold span; edgar-r5-01, -r5-15
+                 and -r6-09 carry none and cannot leak (FREEZE.md claims table). -->
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/BENCHMARK.md">SEC-filed business agreements — four consecutive fresh draws, first contact each time</a></td>
+            <td>46 unseen EDGAR agreements, 2001–2026 filings, each draw by a fixed rule committed with it — rounds 5, 6 and 7 plus the post-freeze probe below. 43 of the 46 contain an identity to leak; 3 contain none</td>
+            <td><b>Zero identity leaks</b> — gate 100%. The draw before them, round 4, leaked 3 in 1 of its 15 documents; that board is published as drawn</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/ROUND7.md">Court judgments — the hard genre, latest fresh round, published as drawn</a></td>
+            <td>25 unseen SG + US judgments</td>
+            <td>97.7% identity recall · 21/25 leak-free</td>
+          </tr>
+          <tr>
+            <!-- UKPROBE-firstcontact.json was scored 2026-07-23T17:14Z (commit eb3329d), before the
+                 round-6 fix-set (692de46), the round-7 fix-set (ae154ac) and the freeze (04f3c5d).
+                 "Byte-unchanged" means not changed FOR the UK; it is not the frozen pack. -->
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/BENCHMARK.md">Jurisdiction transfer — the courts configuration as it stood before the round-6 and round-7 fixes, not changed for the UK</a></td>
+            <td>10 UK judgments it was never tuned for. The frozen configuration has not been run on them</td>
+            <!-- was a bare "100.0%", which reads as "100% of everything". The board it cites,
+                 pii-bench/runs/UKPROBE-firstcontact.json, is DIRECT 100.0 / gate 100 / QUASI 40.0
+                 — the 100 is the identity axis. Every result cell on this page names its axis. -->
+            <td><b>100.0% identity recall</b> — gate 100%</td>
+          </tr>
+          <tr>
+            <!-- pii-bench/utility-bench/harness-v1.js: the two analysts each see one copy, but the
+                 judge prompt says which answer came from the redacted copy, and the masked copies
+                 are raw/stripped/r4-*-FINAL, the round-4 engine. Hence not "blind", not "exports". -->
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/pii-bench/utility-bench">The other direction — what a frontier AI still extracts from the redacted copy</a></td>
+            <td>25 round-4 documents, masked by the engine as it stood then, before the freeze · 125 questions answered separately from the original and from the masked copy, scored by a model judge told which answer came from which</td>
+            <td><b>0.968</b> substance-equivalence</td>
+          </tr>
+          <tr>
+            <!-- pureoos-manifest.json: filed 2026-01-21; the freeze is 04f3c5d, 2026-07-24 10:31, and
+                 the draw is e25637d, 18:24 the same day. The document predates the project; only
+                 the draw and the run postdate the freeze. -->
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/FREEZE.md">The post-freeze probe — a document drawn and run after the engine was frozen</a></td>
+            <td>1 agreement, filed 2026-01-21 and in no earlier draw; draw rule committed with the draw</td>
+            <!-- A "3-reviewer adversarial panel failed to refute it" clause stood here. Its only
+                 trace is commit 48adcd9's message: no panel prompt, output or finding is committed
+                 anywhere in the tree (LAUNCH.md 1.7), so it is not a receipt and is not claimed. -->
+            <td><b>Zero identity leaks</b> — 3 identity spans in its gold, 0 readable</td>
+          </tr>
+          <tr>
+            <!-- pii-bench/gold-ceiling/verdicts.json: "Cold re-adjudication of 240 QUASI/NO_MASK
+                 gold calls", agentCount 8; build-ceiling-sample.mjs skips every DIRECT entity.
+                 `node score-ceiling.mjs` prints 213/240 = 88.8%. It was never a full relabel.
+                 ceiling-key.json holds 203 NO_MASK and 37 QUASI calls, so an all-keep answer
+                 agrees on 203/240 = 84.6% (FREEZE.md Corrections; BENCHMARK.md). -->
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/pii-bench/gold-ceiling">The gold's own agreement — 240 development-set gold calls re-judged blind</a></td>
+            <td>quasi-identifier mask-or-keep calls only, from the Sonnet-labelled development set; identity (DIRECT) labels not sampled</td>
+            <td>88.8% agreement (213/240), against 84.6% for answering “keep” on every call (203 of the 240 were “keep”) — on that gold, quasi-identifier and preservation scores above it cannot be told apart from label disagreement. Measured 2026-07-23, before later doctrine revisions; not re-measured since, and not measured on the Opus-labelled round gold, for which it is an indicator only</td>
+          </tr>
+          <tr>
+            <!-- OPS_LEDGER.md 2026-09-15 and FREEZE.md "Profiles added AFTER the freeze": 21 RECAP
+                 filings, 20 scorable, 296 identifiers listed by one agent ("One labeler (the
+                 agent), no gold", OPS_LEDGER.md:636). The default ('auto',
+                 lib/profile.ts) is the "frozen" column. No sealed gold, no round board, and the
+                 documents and hand check are not in the tree (OPS_LEDGER.md 2026-09-14). -->
+            <td><a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/FREEZE.md">Court filings in a firm's own shapes — briefs, complaints, letters, a settlement, declarations</a></td>
+            <td>20 public filings (CourtListener RECAP), 296 identifiers listed by one AI agent reading each original — no second labeller, no sealed gold and no round board; the documents and that list are not in the repository</td>
+            <td>Default setting: an identifier still readable in <b>14 of 20</b> (27 of 296 — mostly party companies, law-firm names, docket numbers and fee amounts). With the “Our own matter files” setting: 8 of 20 (11 of 296). No email or phone number survived under either</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- The two fallback cases: engine.ts stripDocument runs the in-app core (stripText) when
+           legalServiceHealth is false and ensureEngine finds a healthy model server (App.tsx
+           stripInto), and in its catch ("Legal service failed … using in-app core") when the
+           service fails on a document, a run the app stopped included (engine.rs strip_proxy
+           trip). With no model, or on an engine error, the table is protectedEntities /
+           withProtectedTerms + syncFloorRows and the status reads "Read, not redacted". -->
+      <p class="results-note">Measured 2026-07-19 → 2026-07-24, each row from a committed board,
+      except the firm-filings row (2026-09-15), whose record is a ledger entry. Rounds 5–7 each
+      ran the engine as it stood that day; only the post-freeze probe ran the frozen engine. Every
+      number here is for the full pack pipeline with its local model, the one the app reaches
+      through its local adapter. When the adapter is absent, is refused, or fails on a document
+      (including a run the app stopped) but the model is running, the app says so and runs a
+      lighter in-app engine instead, and no number on this page was
+      measured on that path. When the model itself is unavailable, no engine runs: the app marks
+      the document “Read, not redacted”, masks only your always-redact list and the
+      safety-net patterns for structured identifiers such as phone numbers and emails, and
+      leaves the rest to you. Both kinds of rows are published — the converged genre (zero identity leaks, four
+      consecutive draws running, after round 4 leaked) and the honest one (courts, where every
+      fresh draw still finds something new, each named in the open and either fixed or left on
+      the published open shelf). A vendor that shows you only one number is showing you the
+      wrong one. Want the methodology, round-by-round boards and every named miss?
+      <a href="research.html">The measurement record</a>.</p>
+    </div>
+
+    <div class="repro">
+      <h3>Reproduce it yourself</h3>
+      <!-- README.md "Be aware of what these scripts are": the draw scripts re-run the acquisition
+           protocol and rewrite their manifest in place (build-round7.mjs, build-pureoos.mjs
+           writeFileSync), and the EDGAR legs query SEC full-text search live, so a later rebuild
+           may draw a different set and drops the sha pins. The pinned manifests come back with
+           git checkout; backfill-manifest-sha.mjs --check exits 3 on drift or a missing
+           document; the gold ships as offsets and needs gold-offsets.mjs hydrate first. -->
+      <p>The corpus manifests, the sealed gold (as character offsets, not text), the scorer and
+      every board ship in the tree. The source documents themselves don't — they re-fetch from the
+      public sources they came from, and each manifest pins every document by URL and a hash of
+      its text. The draw scripts re-run the search rather than replay that list, and they rewrite
+      the manifest as they go. The business-agreement draws query SEC full-text search live, so a
+      later rebuild may not return the same documents; put the pinned manifests back and the hash
+      check tells you whether yours are the ones the boards measured. There is no
+      replay-from-manifest command yet. The courts numbers do not fully rebuild: the gold for the
+      Singapore Family Court judgments is withheld, because it indexes where that court's own
+      anonymisation missed, and the scorer says so and scores the rest
+      (<a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/WITHHELD.md">WITHHELD.md</a>).
+      Re-running the engine needs the local model and a llama.cpp build (see Download).
+      The scorer proves itself before it proves anything else. The hash check and the hydrate
+      step both walk every set, not only the one you rebuilt: with one round rebuilt they
+      print MISS for every document of the others and exit 3. Read the DRIFT and MISS lines
+      for your round — no DRIFT and no MISS there means your documents are the ones measured.</p>
+      <!-- backfill-manifest-sha.mjs SETS lists all six manifests and exits 3 on any missing
+           file; gold-offsets.mjs hydrate walks every gold set and exits 3 "INCOMPLETE". -->
+      <pre>git clone https://github.com/Simpler-Systems/simpler-legal
+cd simpler-legal
+node score-pii.mjs selftest              # the scorer proves itself first: 8/8
+node build-round7.mjs                    # re-draw a round from public sources (rewrites its manifest)
+git checkout pii-bench/                  # put the pinned manifests back
+node backfill-manifest-sha.mjs --check   # checks every set: MISS for sets you did not rebuild, DRIFT if yours differ
+node gold-offsets.mjs hydrate            # rebuild the gold's span text; also reports sets you did not rebuild
+node serve-legal.mjs                     # the frozen engine behind one local endpoint (needs the model)</pre>
+    </div>
+
+    <!-- The new meta description says "dates, amounts and places stay readable on purpose" — this
+         is where the page has to back it, because nothing else in the body said so. The 245/503
+         is recomputed from the same four boards the zero-leak claim comes from (perDoc.quasi over
+         ROUND{5,6,7}-edgar-firstcontact.json + PUREOOS-firstcontact.json), and the last sentence
+         is README.md:77-78 word for word: the site must not claim more than the repository does.
+         The company-name sentence is lib/profile.ts PROFILES in plain words ('auto' note, and
+         'firm': "company and brand names are never released"); the control is Settings.tsx
+         "Redaction → These documents". The fallback sentence is engine.ts profileNote: "that
+         setting did not run … may leave company and brand names readable". The miss clause is
+         OPS_LEDGER.md "What still survives, by mechanism — all 11" (the firm-setting run over
+         the 20 firm filings): BKX Services in a Re: line (doc 08), IBLLC in 1 of 59 (doc 01).
+         The places sentence is derive-product-gold.mjs P0i (lines 107-118): LOC is NO_MASK
+         unless an occurrence sits within ±90 chars of a personal-life anchor (lives, resides,
+         home, born in …); address-shaped spans and notice-block context stay QUASI; "DIRECT
+         (full personal addresses) never touched". It states what the gold targets; the QUASI
+         245/503 below is how much of that class the engine left. The 88.8% was called a
+         "ceiling" here until 2026-09-23; FREEZE.md Corrections says it is "not a ceiling on
+         QUASI recall" and that answering KEEP every time would agree on 203/240 = 84.6%
+         (pii-bench/gold-ceiling/ceiling-key.json: 203 NO_MASK, 37 QUASI). -->
+    <div class="honest">
+      <b>The honest claim:</b> we measure this on real documents and publish what we find — including
+      the misses. What gets removed is identities — people's names, identifiers, the things that
+      point at a person. Dates, amounts, business facts and most places stay in the document on
+      purpose, because that is what you want the AI to reason about. A person's full address is
+      treated as an identifier. A place tied to a person (where someone lives or was born) and a
+      street or notice address are treated as quasi-identifiers, which the engine removes only in
+      part (below). Company names depend on a setting: by
+      default a company name is released when it is not the document's own identity, and the
+      “Our own matter files” setting (Settings → Redaction) releases none by design when the
+      local engine runs it. The engine can still miss one: on the 20 firm filings under that
+      setting, two company names stayed readable, one in a Re: line and one in 1 of its 59
+      mentions. If the local engine does not run the document, the app says the setting
+      did not run and that company and brand names may remain readable. Quasi-identifiers are not a target the engine
+      was tuned to reach: the walk-forward rounds added some quasi-identifier rules, but pushing
+      that axis further was deferred by decision at the freeze. (The gold labels themselves agreed
+      with a blind re-judging on 88.8% of sampled mask-or-keep calls; answering “keep” every time
+      would have agreed on 84.6%.) Across those same
+      46 agreements, 245 of 503 quasi-identifier spans were left readable, so a distinctive enough
+      profile can still be inferred from what remains. The claim
+      is that identities are withheld, not that inference is impossible.
+      We don't claim it's perfect on every document ever written; nobody can, and the ones
+      who do aren't showing you their corpus. That's why nothing exports until you finish the
+      review — the last line of defense is you, and the receipt records how much of the table
+      you decided yourself.
+    </div>
+  </div>
+</section>
+
+<section class="sec band" id="download">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">Get it</p>
+      <h2>Download</h2>
+      <!-- What exists, from the build config and the app source, not from intentions:
+           tauri.conf.json bundle.targets is ["nsis"] only, so the one installer is a Windows .exe;
+           no .msi, .dmg, .AppImage or .deb is built. The model is in neither the repo nor the
+           installer, and the app cannot fetch it: Setup.tsx's "Download & verify" button is
+           disabled, and there is no in-app file picker (Settings.tsx shows the path it found
+           and a "Check now" hash button, nothing more). What IS real: locate-model.mjs / main.rs
+           model_check search a bounded folder list, and launch-server.cmd runs
+           `locate-model.mjs --path --verify`, refusing a file whose sha256 misses the pin.
+           No RAM figure is measured anywhere in the repo, so none is printed. The model's
+           address is Google's own, pinned by revision: Setup.tsx MODEL_URL, the README's step 1
+           and THIRD_PARTY_NOTICES.md hold the same URL, and site-claims fails when this page's
+           link differs from it. The installer link is GitHub Releases' "latest", and the words
+           beside it come from tauri.conf.json (version, targets nsis, no signing). -->
+      <p class="lead">Desktop app for Windows. Reads PDF, Word and plain text;
+      a text export is a new file rebuilt from scratch, and a .docx export rewrites your original
+      Word package and is held back if a check of the finished file finds a name from the review
+      table or your always-redact list still in it (<a href="#faq-files">what that check cannot see</a>). The model (3.35&nbsp;GB) is not in the installer, and the app does not download it:
+      you download <code>gemma-4-E2B_q4_0-it.gguf</code> yourself, from
+      <a href="https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf/resolve/69536a21d70340464240401ba38223d805f6a709/gemma-4-E2B_q4_0-it.gguf">Google's Hugging Face repository, at the revision the app is pinned to</a>
+      (Apache-2.0; the app's Setup screen shows the same address), and put it where the app
+      looks (below). The file of the same name on that repository's main branch is a later
+      upload with a different SHA-256, which the app refuses. The file you need is exactly
+      3,349,514,112 bytes with SHA-256 <code>3646b4c1…455e6fd</code>. When the app starts the
+      model server, the launcher <b>hash-checks the file against that pin</b> and refuses one
+      that does not match.</p>
+    </div>
+    <div class="dl-grid">
+      <!-- A card for another platform or for an app-plus-model bundle is added only when that
+           artifact is built: tauri.conf.json targets nsis alone, and the installer does not
+           carry the model. -->
+      <div class="dl"><h3><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.6 10.6 4.5v6.6H3zM11.7 4.3 21 3v8.1h-9.3zM3 12.1h7.6v6.7L3 17.7zM11.7 12.1H21V21l-9.3-1.4z"/></svg>Windows</h3><span class="meta">.exe installer · x64 · per-user install, no admin needed</span><span class="meta"><b>v0.1.0, Windows, unsigned: Windows SmartScreen will warn</b> before it runs (see “Heads up” below).</span><a href="https://github.com/Simpler-Systems/simpler-legal/releases/latest">Download from GitHub Releases</a></div>
+      <div class="dl"><h3><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.9c0-2.4 2-3.6 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.6.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.3 1.3 9.7.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.1-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8 0 0-2.6-1-2.7-3.9zM14 5.6c.7-.8 1.1-2 1-3.1-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.4z"/></svg>macOS</h3><span class="meta">Not built. The build produces a Windows installer only.</span></div>
+      <div class="dl"><h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2.6c-2.2 0-3.6 1.7-3.6 3.9 0 1.5-.5 2.8-1.3 4.2-.9 1.6-2 3.3-2 5.2 0 2.8 2.2 5 6.9 5s6.9-2.2 6.9-5c0-1.9-1.1-3.6-2-5.2-.8-1.4-1.3-2.7-1.3-4.2 0-2.2-1.4-3.9-3.6-3.9z"/><path d="M9.9 7.3 h.01 M14.1 7.3 h.01" stroke-linecap="round" stroke-width="2.2"/><path d="M10.6 9.6c.8.7 2 .7 2.8 0" stroke-linecap="round"/></svg>Linux</h3><span class="meta">Not built. The build produces a Windows installer only.</span></div>
+      <div class="dl bundle"><h3><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8.2 12 3.6l9 4.6v7.6L12 20.4 3 15.8zM3 8.2l9 4.6m0 0 9-4.6M12 12.8v7.6" stroke-linejoin="round"/></svg>Offline bundle</h3><span class="meta">App and model in one download: not built. The installer does not carry the model; you download it from Google (above).</span>
+        <span class="meta">By the app's code, it makes no connection off the machine with or without a bundle. The installer is another matter: its configuration leaves the WebView2 setting at Tauri's default, so on a computer without Microsoft's WebView2 runtime it downloads Microsoft's installer for it and runs it silently. That is read from the configuration and has not been captured; see the <a href="it.html#network">IT brief</a>.</span>
+        </div>
+    </div>
+    <p class="dl-all">Every release is on <a href="https://github.com/Simpler-Systems/simpler-legal/releases">GitHub Releases</a>. To build the installer yourself, follow <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/BUILDING.md">BUILDING.md</a>.</p>
+    <div class="notes">
+      <div class="note"><h3>Where the app looks for the model</h3><p>There is no file picker yet.
+      The app looks for <code>gemma-4-E2B_q4_0-it.gguf</code> in a fixed, short list of folders
+      and uses the copy in place: the shared <code>%APPDATA%\Simpler AI\models</code> folder
+      (the place to put a new download; it is in the roaming profile, so on a network that
+      copies roaming profiles to a server, use <code>%LOCALAPPDATA%\simpler-legal\models</code>
+      instead), your Downloads folder, <code>~\models</code>, and the
+      model folders of LM Studio, Hugging Face, GPT4All, Jan and Ollama, plus a
+      <code>models</code> folder under <code>%APPDATA%</code> or <code>%LOCALAPPDATA%</code>
+      named for any Simpler app (<code>simpler-legal</code>, <code>simpler-red</code> and four
+      others). It never searches the whole disk. For a copy anywhere else, either move it into one
+      of those folders or name its folder in the <code>SIMPLER_MODEL_PATH</code> environment
+      variable, which the app searches first. <code>SIMPLER_MODEL_GGUF</code> names the file
+      itself; the app hash-checks it before starting the model with it. Settings shows
+      which file it found and can hash-check it on demand; the hash decides, not the filename.</p></div>
+      <!-- What the app checks before a document leaves its process (2026-09-23):
+           service_auth.rs + serve-legal.mjs (1436: HMAC challenge on the connection that then
+           carries the document; bearer token on /strip; Host and Origin gates); port_owner.rs
+           + engine.rs model_holder / verify_hand_model (49400: owner from the kernel TCP table;
+           another account, SYSTEM or an uninspectable listener on any address refused; your own
+           account's server used only after its model file matches the pin and it reports ctx
+           8192 and 1 slot; one answering 401/403 refused as "another open copy of
+           simpler.legal"); relay.rs (the chain reaches the model only through the app's relay;
+           each connection is written to only after the kernel's connection table names the
+           checked model process as its far end; a change trips the run) and model_watch.rs (the
+           run stops when the checked model exits); check_explicit_model (SIMPLER_MODEL_GGUF is
+           hashed by the app first). The service-side gates are exercised by
+           test/service-auth.mjs and test/service-lifecycle.mjs, both gates in tools/verify.mjs;
+           the Rust half's cargo unit tests are verify.mjs's rust-unit gate (skipped, with the
+           reason, when cargo or app/src-tauri/binaries is absent). port_owner.rs: none
+           of this protects against code running as the user. A hand-started service's token
+           file: serve-legal.mjs tokenFile, engine.rs (same path). Model key and /slots:
+           engine.rs spawn_launcher sets LLAMA_ARG_ENDPOINT_SLOTS=0 and a per-launch
+           LLAMA_API_KEY only for a launcher it starts ("neither has been run against a live
+           server"); tools/launch-server.* set neither; model_notes() puts on screen a trusted
+           server that answers /slots, and the app's own server answering without the key.
+           Proxies: engine.rs scrub_proxy on every spawn; no HTTP client crate in Cargo.toml;
+           serve-legal.mjs proxyHazard refuses to start (exit 2) when Node would send its model
+           calls through a proxy. No capture of the packaged app is committed. -->
+      <div class="note"><h3>On a work machine?</h3><p>By the app's code, it makes no network
+      connection off the machine: every call it makes is to 127.0.0.1 (see
+      <a href="#verify">Audit us</a>). Its installer may fetch Microsoft's WebView2 runtime (see
+      the offline-bundle card above). No packet
+      capture of the packaged app, its installer or the WebView2 runtime it renders in is on
+      record yet. On a shared Windows host, loopback ports belong to the machine, not to one
+      user, so the app checks who is on its two ports before it sends a document. The engine
+      service on 1436 must prove, on the connection that will carry the document, that it holds
+      a secret token: the one the app gave it, or, for a service you started by hand, the one
+      that service wrote to your local profile. Anything else on that port is sent nothing. On 49400 the
+      app asks Windows which account owns the model server: another account's, or one the app
+      may not inspect, is refused, and one of yours that the app did not start is used only
+      after its model file matches the pinned hash. The engine reaches the model only through a
+      relay inside the app, which writes nothing on a connection until Windows names the far
+      end as the process it checked, and stops the run if that process changes or exits. The
+      engine service also refuses requests addressed to any host but this machine, and requests
+      from web pages other than the app's own development server. The model server has no such
+      checks: it is llama.cpp's own, which by default publishes the last text it was given at
+      <code>/slots</code> and takes requests from any web page. The app starts it with
+      <code>/slots</code> switched off and with a key made at each launch that only the app
+      and the processes it starts for the model hold, two settings not yet tested against a running server. If a model server the app
+      uses still answers at <code>/slots</code>, or the app's own answers without the key, the
+      app says so on screen. A model server you start by hand with the launcher below has
+      neither setting. The app also starts everything with proxy settings removed. None of this
+      protects against a program running under your own account. The
+      <a href="it.html">IT brief</a> has the detail, and
+      <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/PRIVACY.md">PRIVACY.md</a> says
+      what the app sends and what it keeps on disk. Report a security problem privately, through
+      the repository's <a href="https://github.com/Simpler-Systems/simpler-legal/security/advisories/new">Security tab</a>,
+      as <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/SECURITY.md">SECURITY.md</a>
+      says; not in a public issue, and never with a client's document attached.</p></div>
+      <div class="note"><h3>Heads up, Windows users</h3><p>Version 0.1.0 is <b>not
+      code-signed</b>, so Windows SmartScreen will warn: a blue "Windows protected your PC"
+      screen. Click <b>More info → Run anyway</b>. The warning is accurate: there is no publisher
+      for Windows to recognise. The way to know what you are running is to read the source and
+      build it yourself
+      (<a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/BUILDING.md">BUILDING.md</a>).</p></div>
+      <div class="note"><h3>Command line today</h3><p>The engine already runs from source, and
+      there is no package to install — the engine scripts are plain Node (20 or later) with no
+      dependencies. You supply two things the repository does not carry: the model file (3.35&nbsp;GB,
+      in one of the folders above) and a llama.cpp build, on your PATH or named in
+      <code>SIMPLER_LLAMA_BIN</code>. Then <code>git clone</code>, <code>tools/launch-server.sh</code>
+      (<code>tools\launch-server.cmd</code> on Windows) to serve the pinned local model — it
+      hash-checks the file first and refuses one that does not match, unless you name the file in
+      <code>SIMPLER_MODEL_GGUF</code>, which skips the check — and
+      <code>node serve-legal.mjs</code> to put the frozen engine on <code>127.0.0.1:1436</code> —
+      <code>POST /strip</code> returns the redacted text and the entity table, and needs the
+      token that launch writes to
+      <code>%LOCALAPPDATA%\Simpler AI\run\legal-service-1436.token</code>, sent as
+      <code>Authorization: Bearer</code>. The launcher does not switch off the model server's
+      <code>/slots</code> endpoint and gives it no key, so any web page open while it runs can
+      send it text and read the last text it was given (see the note above); set
+      <code>LLAMA_ARG_ENDPOINT_SLOTS=0</code> in that shell before running it, which is the switch
+      the app sets for a server it starts and has not yet been tested against a running server.
+      <code>serve-legal.mjs</code> refuses to start, and says which setting to remove, when
+      Node's own proxy switch and an <code>HTTP_PROXY</code> setting, with 127.0.0.1 not in
+      <code>NO_PROXY</code>, would send its model calls through a proxy. Every published board
+      was produced on Windows; the POSIX launcher passes the same flags but has no board of its
+      own. The model weights are Google's, under Apache-2.0
+      (<a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/THIRD_PARTY_NOTICES.md">THIRD_PARTY_NOTICES.md</a>).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec verify" id="verify">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">Audit us</p>
+      <h2>Don't trust us — check</h2>
+      <p class="lead">The privacy claim is testable. The first check takes five minutes and no expertise at all.</p>
+    </div>
+    <div class="checks">
+      <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3 3 10.6l6.4 2.6L21 3zM21 3l-5.6 17.4-3.9-7.2M21 3 9.4 13.2"/></svg>
+        <!-- No airplane-mode run and no packet capture of the packaged app is committed anywhere
+             (git grep wireshark|pktmon|netstat|airplane outside site/ finds only App.tsx:416's
+             advice). So both tests are offered as tests, with the code's prediction, not as
+             observed results. -->
+        <div><b>The airplane test — anyone can do this</b><p>Turn off Wi-Fi, redact a document. By the code, everything should keep working, because every call the app makes is to this machine. No recorded run of this test is on file yet.</p></div></div>
+      <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2.5 12 7 12 10 5.5 14 18.5 17 12 21.5 12"/></svg>
+        <div><b>Watch the wire</b><p>Run a network monitor (Wireshark, or Windows' own Resource Monitor or pktmon) during a redaction. By the code, you should see no connection off this machine, only loopback
+        traffic to 127.0.0.1 — the app talking to its own model server on port 49400, its engine
+        on port 1436, and its relay between the two on a port that changes at each launch. No
+        capture of this is on record yet.</p></div></div>
+      <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8.5 7-5 5 5 5M15.5 7l5 5-5 5"/></svg>
+        <div><b>Read the code</b><p>It's Apache-2.0 source, on GitHub. Grep the app and engine for a network call: every one goes to
+        127.0.0.1 — ports 49400 (the model) and 1436 (the engine), both bound to loopback, and the
+        app's relay between them. The app's Rust side has no HTTP client library: it writes its
+        requests itself, sends document text only on a connection it has checked first, and it starts every process
+        with the proxy settings removed, so a system <code>HTTP_PROXY</code> cannot route a
+        document through a proxy. There is no updater and no telemetry. The other
+        <code>http://</code> strings in the app's source code (<code>app/frontend/src</code>,
+        <code>app/src-tauri/src</code>) name four hosts, schemas.openxmlformats.org,
+        schemas.microsoft.com, purl.org and www.w3.org: they are the addresses of the XML
+        namespaces Word and Office files use, which the .docx writer and its check recognise, and
+        examples of such addresses in the text of the .docx receipt. None of them is requested.
+        Outside comments, the app's source code in those two folders holds one
+        <code>https://</code> address: Google's address for the model file, which the Setup and
+        Settings screens show as text for you to copy. The app
+        never requests it.</p></div></div>
+      <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><circle cx="7.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><path d="M12 12h6" stroke-linecap="round"/></svg>
+        <div><b>In the app itself</b><p>The egress pill in the corner reads "0 requests off this machine" and opens that window's live network record — what the app itself requested, and what the browser loaded for the page. It says what it cannot see, too.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">Questions</p>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq">
+      <!-- The old answer ("the confidentiality question only exists when documents leave your
+           custody") answered local custody and never the copy the product exists to send out
+           (LAUNCH.md §10; Export.tsx tells the user to paste it into ChatGPT, Claude, Copilot or
+           Gemini). What that copy still carries: QUASI 245 of 503 spans readable over the 46
+           agreements, company names by default (lib/profile.ts), and the misses above. -->
+      <div class="claim"><h3>Can I use this with privileged or confidential matter files?</h3><p>The redaction itself stays in your custody: this is local software, your originals never reach us or anyone else, and there is no server of ours that could receive them. But the product exists to make a copy you then send to an AI provider, and your confidentiality and privilege analysis applies to that copy. It still carries the matter's facts, dates, amounts and most places, by default the names of companies that are not the document's own identity, and anything the engine missed — on a firm's own filings, an identifier was still readable in 14 of 20 under the default setting (see the evidence above). Review it before you send it, and weigh the provider's terms as you would for any disclosure. Not legal advice; apply your own professional judgment, as you would anyway.</p></div>
+      <!-- The .docx answer is docxWrite.ts, docx.ts and engine.ts as they stand on 2026-09-24,
+           each case driven through the real engine, walker and writer (table row "Margaret
+           Tan", always-redact list Kestrel and Harrow Leung, US practice unless named) by
+           tools/site-claims.mjs, which exits 1 when a sentence below and the code part. What the
+           check reads is Export.tsx docxScope ("every part, each part's name, the text between
+           its tags, every attribute value, the names of its elements and attributes, and the
+           namespaces it declares or lists"). The receipt carries docxScope whole, and docxScope
+           now names the equation, the letters spaced apart, the plain word of letters, the
+           longer name, Office's namespace names and a number under Office's prefixes, so this
+           answer says so (site-claims reads docxScope for each and turns red when one goes).
+           The element and attribute names are read in every part except, in Word's own parts, a
+           name under an Office namespace or an unprefixed attribute on a non-w: Office element
+           (nsOfName; an unprefixed attribute on a w: element is read, W3-7).
+           Closed this round, each measured masked or held: a name run together in any part of
+           the text a reader sees (docx-parts law 46; engine.ts places the same reading in the
+           text export); an equation split across a box, border box, bar, accent, group
+           character or bracket-less delimiter (law 45); a namespace declaration, a compatibility
+           list and an element or attribute name (law 49); "margaretTan" in an add-in attribute;
+           "<?mso-…?>" (removed, law 50); a Social Security number, telephone number or e-mail
+           address in a chart's currency section (law 48); a telephone number in an unknown part
+           (held, law 47, owner ruling 2); an element name or "[$Jonas Whitfield] 0" in an
+           unknown part (held); a look-alike part name such as word/stylesX.xml (now listed under
+           Warnings: docx.ts STRUCTURAL_RE is anchored).
+           Closed on 2026-09-24: a percent-escaped name (a space, an apostrophe, an accented
+           letter, a Chinese name, a listed term) is masked in both exports and holds in a
+           namespace declaration (pctRuns, owner ruling 10); a telephone number in an add-in's
+           attribute or element holds (attrNet/elemNet, ruling 11); an unprefixed attribute on a
+           w: element and the XML declaration's encoding hold. Over-masking closed by ruling 8:
+           "Margaret Tang", "Wong Wei Ming", "reporter" are kept (site-claims holds each).
+           Still shipping, measured: a name run into a plain word of letters with no break at its
+           end, at any length ("kestrelholdings" for the listed term Kestrel, "margarettanfile"
+           for row Margaret Tan, "tanholdings" for row Tan, "LIWUCORP" for row Li Wu), and under
+           RUN_FLOOR (6) inside an address ("tanholdings.com"); a row of digits grouped with a
+           comma (DIGIT_SEP); a name with its letters spaced apart (both exports); a name across
+           a fraction, a base and its script, or matrix cells (docx.ts MATH_APART, kept apart on
+           purpose); a lower-case name under six characters in an add-in attribute of a known
+           part ("lee" for row Lee, D13R-2); element and attribute names under Office's
+           namespaces in a known part (Word writes none, so the page names the class, not the
+           form); a telephone number in w:tel or unprefixed on v:shape (nsOfName counts both as
+           Office's; docxScope says so). Over-masking now: row Donald in "McDonald" ->
+           "Mc[Person1]" (a capital is a break), row Law in "the Laws Committee" -> "the
+           [Person1]s Committee" (the plural ending), in the .docx and the text export alike.
+           Unknown parts: the writer's note (docxWrite.ts, "is a part this writer does not know")
+           is printed word for word on the save line and the receipt (Export.tsx); of a name not
+           in the table, "whitfield" or "jonasWhitfield" as an attribute value (a small-letter
+           word after purl.org or www.w3.org in an attribute too), "whitfield2291" between tags,
+           <acme:whitfield/>, acme:whitfield="1", a prefix "whitfield:", the part's own file
+           name, <w:JonasWhitfield/> and a namespace address "urn:matters:Jonas Whitfield" are
+           kept, while the same name between tags, "jonasWhitfield" between tags,
+           <acme:Whitfield/> and a small-letter or capital word after the host between tags
+           hold (owner ruling 12).
+           Intake: detect.ts refusal reasons; its rule (the comment above the .eml refusal) is
+           that a user-facing "we catch it" line carries the exceptions, so the FAQ names ASCII85
+           (measured route=text) and the short or id-shaped base64 runs it lets through. pdf.ts
+           leaves out the one page that carries such a block; store.ts holds a PDF with no
+           readable page and writes "[page N is not included: this app could not read it]" for
+           every refused page.
+           Each blind spot the FAQ states is driven by a site-claims law against the writer and the
+           text export as they stand (owner rulings 8 to 19, D1, 2026-09-24 and 2026-09-25): the
+           digits a row is found across are DIGIT_SEP's, and each mark it does not list (a comma,
+           an underscore, a square bracket, a no-break space in " - ", a fraction slash, an
+           ideographic full stop, a white bullet) ships verified from both exports; a line break
+           inside an escape is read only in a link with a scheme or "www." and not where the next
+           line starts with "&gt;" (LINK_BROKEN); a direction or format mark inside a name ships
+           (REF_INVISIBLE reads through a zero-width space, joiner and soft hyphen only). The
+           receipt names each (Export.tsx docxScope; site-claims RECEIPT_NAMES). A clause comes
+           off when its law says the case closed. -->
+      <div class="claim" id="faq-files"><h3>What files does it read?</h3><p>PDF, Word (.docx) and plain text. Scanned or image-only pages need OCR, which isn't included yet — we'd rather tell you that plainly than silently guess at a page. A PDF with no readable page is held; a scanned page inside an otherwise readable PDF is left out, and the copy carries a line in its place (<code>[page 7 is not included: this app could not read it]</code>). A saved email, or a file whose text carries an email's headers or encoded content such as a base64 attachment, is held before the engine reads it, because the app cannot read what is encoded and so cannot mask it; the hold says how to get through (save the message body as text or PDF, and each attachment as its own file). In a PDF, only the page that carries such a block is left out, marked the same way, and the other pages are read. Not every encoding is caught: ASCII85, for one, goes through unread, and so does a base64 run short enough, or shaped enough like a column of ids, to pass for one. A file is held when a run of characters written as % and two hexadecimal digits spells two or more plain Latin letters or digits, or, outside a web link or a file path, two or more letters of another script such as Chinese; an escaped space or punctuation mark, an escaped accented letter, and escaped letters of another script inside a link or a path go through on one line, except in a file name with a bare comma or semicolon in it, which is held, and a name written that way is masked in both exports, the escapes with it (see below); printed across rows, such a link can still be held. A text export is a new file rebuilt from the redacted text — never your original with boxes drawn on it. A .docx export is different: it rewrites your original Word package, and its safety rests on a check rather than on impossibility. The finished file is read again: every part and the part's name, its text, every attribute value, the names of its elements and attributes (in the parts Word writes, not a name under one of Office's own namespaces), and the namespaces it declares or lists. It is held back if the check finds a name from the review table or a term from your always-redact list still in it, with its words apart or run together, or something the safety-net pattern masks. The check has blind spots, stated plainly here. The receipt states what the check reads and what it does not, and names the blind spots below that concern the check itself: a name split between the parts of an equation; a name with its letters spaced apart or each in brackets, with a hyphen, a line break or an invisible direction or format mark inside one of its words, broken across the lines of a quoted reply, or with a letter written as a symbol in the Symbol font; a name run into a plain word of letters; a name under six letters inside an address or in a value in the file's code; a row masked inside a longer name; a row of digits alone under six digits inside a longer number or value, or grouped other than by the marks it lists; a character reference without its semicolon (other than <code>&amp;nbsp</code> and one by number), one HTML does not define, or one escaped again; a name under one of Office's own namespaces; and a number under one of Office's own prefixes or in a drawing's position, size or share of the page. First, the engine reads the main body, and then, in a request of its own, the text the saved .docx carries outside it: headers (with any watermark), footers, footnotes, endnotes, chart and SmartArt text. A name it finds only there is masked wherever the saved .docx carries it, and the Review screen lists it; the copied text and the .txt are the body alone. If the body was read and that text was not, or its read could not be used, the .docx is held and says why. A name the engine did not find anywhere, and that is not on your always-redact list, is not masked anywhere in the file, and the check passes. Second, a name or listed term run together with other words (<code>KestrelCapital</code> or <code>kestrelcapital.com</code> where the list says Kestrel, <code>MargaretTan</code> where the table says Margaret Tan) is masked in the text a reader sees, in the text export too, and holds the export wherever else the check finds it. In the text a reader sees, a name is found inside a longer word only where a break marks both its ends — a space or punctuation mark, letters meeting digits, a capital after a small letter — or before a plural ending when it is written with its capital (<code>the Smiths</code> where the table says Smith), or, from six letters and digits, inside a web or e-mail address, a path, a handle, a tag or a word with a digit in it (<code>www.kestrelcorp.com</code>, <code>@kestrelholdings</code> or <code>#kestrelholdings</code> where the list says Kestrel). Run into a plain word of letters where nothing marks both its ends, a name of any length ships, in the text export as well, and the check passes (<code>kestrelholdings</code> where the list says Kestrel, <code>margarettanfile</code> where the table says Margaret Tan, <code>tanholdings</code> or <code>Tanholdings</code> where it says Tan, <code>LIWUCORP</code> where it says Li Wu), and so does a name under six letters inside an address (<code>tanholdings.com</code>). A row of digits alone, such as an account or matter number you add to the table, is found from six digits wherever they stand together, inside a longer number or a reference too (an IBAN that ends in it), and in the text a reader sees also across one mark that groups them: a space of any kind or a tab, a full stop, a middle dot or the bullet (•), a slash, a hyphen, a dash or the minus sign, a hyphen with a plain space either side (<code>3192 - 6819</code>), or a round closing bracket and one plain space after the first group, as <code>(3192) 6819</code> is written; grouped any other way — with a comma (<code>3192,6819</code>), an underscore, a colon, two spaces, a line break, an en or em dash or a slash with a space either side (<code>3192 – 6819</code>, as a range is written), a square bracket (<code>[3192] 6819</code>), a no-break space beside a bracket or a hyphen, or a mark that only looks like one of those (a fraction slash, an ideographic or small full stop, a swung dash, a heavy minus sign, a white, black or triangular bullet: <code>3192⁄6819</code>, <code>3192。6819</code>, <code>3192◦6819</code>) — it ships from both exports, and the check passes. A row of fewer than six digits, such as a five-digit matter number, is masked where it stands alone in the text, and holds the export where it is the whole of a value in the file's code that the check reads (in an add-in's attribute, in a part this app does not know, or between the tags of an element under one of Office's own namespaces); it is not looked for inside a longer number or value (<code>9944179</code>, or <code>Matter 44179</code> as one value, where the table says 44179), in an attribute under one of Office's own prefixes (<code>w:tel</code>) or with no prefix on a drawn shape, or in a drawing's position, size or share of the page: there it ships, and the check passes. A name written with percent-escapes, as a web link writes a space (<code>Margaret%20Tan</code>), an apostrophe, an accented letter (<code>M%C3%BCller</code> for Müller) or a Chinese name, or with a character reference typed out, with its semicolon or, for <code>&amp;nbsp</code> and a reference by number, without it (<code>Margaret&amp;nbsp;Tan</code>, <code>Margaret&amp;nbspTan</code>, <code>Margaret&amp;#160Tan</code>), is read as the characters it writes: it is masked in both exports, the escapes with it, and holds the export in the file's code. An escape that writes no character where a name could stand (<code>Ren%E9%20Tan</code> where the table says René Tan) holds both exports. Written as a mail gateway rewrites a link (Proofpoint's <code>Ren*E9*20Tan</code> or <code>Ren-E9-20Tan</code>), the same escape holds both exports too. A line break that a mail program's wrap put inside an escape, or inside a mail gateway's wrapping of a link, is read across where the link starts with a scheme (<code>https://</code>) or <code>www.</code>, and the name is masked; in a link that starts with neither, or where the line after the break starts with a quote mark (<code>&gt;</code>), as each line of a quoted reply does, a name broken that way ships from both exports, and so does a name with a line break inside its own letters (<code>Marg</code> and <code>aret Tan</code> on two lines), in a link or in prose. The same rule can mask too much. A row is found in a longer name where a capital marks where it starts: with Donald in the table, McDonald becomes <code>Mc[Person1]</code>. And a row is found before a plural ending on a word written with its capital: with Law in the table, the Laws Committee becomes <code>the [Person1]s Committee</code>. And inside a tag, as inside an address or a handle, a row of six letters or more is found wherever it stands: with Porter in the table, <code>#supporters</code> becomes <code>#sup[Person1]s</code>. All three happen in the text export too, and the AI you hand the copy to may read someone else, or something else, as the person in your table. A name that ends in a short designator is found with the designator written out, and the whole word is masked with it: with Hickson Corp in the table, Hickson Corporation becomes <code>[Company1]</code>, in the text export too. Third, a Word file keeps names you never see on the page. The app gives every bookmark the author made a neutral name (<code>bm1</code>, <code>bm2</code> and so on; the ones Word makes itself, for a table of contents or a cross-reference, keep theirs), does the same for every list and caption label the author named, and renames styles and fonts that carry a masked name. Internal links, page-number and footnote-number references and the table of contents follow the renamed bookmark and keep working, except that a table of contents whose entries are written as link fields keeps its page numbers but its entries stop being links; a cross-reference that shows a clause's number or text (Word's REF field), and a link written as a field code, become plain text and no longer update, and the save line and the receipt say so. Measured on 2026-09-24, a name still ships, and the check passes, when its letters are spaced apart in the text or each written in brackets (<code>M a r g a r e t T a n</code>, <code>⒨⒜⒭⒢⒜⒭⒠⒯ ⒯⒜⒩</code>), in the text export too; when a hyphen stands inside one of its words (<code>Marga-ret Tan</code>, as text copied from a PDF keeps a line's break), in the text export too; when an invisible mark that sets the direction or format of text stands inside one of its words (a left-to-right mark, as text pasted from a right-to-left document can carry), in the text export too; when it is written with a character reference that has lost its semicolon, other than <code>&amp;nbsp</code> or one by number, that HTML does not define, or that was escaped again (<code>Ren&amp;eacute Tan</code>, <code>Margaret&amp;NBSP;Tan</code>, <code>Ren&amp;amp;eacute; Tan</code>), in the text export too; when a letter of it is written as a symbol in the Symbol font, which Word draws as the Greek capital shaped like the Latin one (the A of <code>Margaret TΑn</code>), in the .docx; when it is split between separate parts of an equation, such as a fraction's top and bottom, a base and its superscript, or two cells of a matrix; when it is shorter than six letters and a program wrote it in lower case as a value in the code of one of Word's own parts (<code>lee</code> where the table says Lee); and when a program other than Word wrote it into one of the few places in the file's code that Word fills only with its own words. A telephone or other number that the safety-net pattern masks in the text holds the export when an add-in wrote it into an attribute or an element of its own in one of Word's own parts, or when it is written as digits alone between the tags of an element under one of Office's own namespaces (<code>&lt;w14:tel&gt;2125550147&lt;/w14:tel&gt;</code>), but is not found when a program wrote it into an attribute under one of Office's own prefixes (<code>w:tel</code>), into an attribute with no prefix on a drawn shape, or into a drawing's position, size or share of the page (<code>&lt;wp:posOffset&gt;</code>). Fourth, a part of the file this app does not know, such as an add-in's, is kept only when what it holds reads as code — numbers, dates, ids, single code words, names Word looks up; anything typed in it, or a number the safety-net pattern would mask, holds the export. What is kept is read by the check for your table's names (a row of digits alone under six digits only where it is the whole of a value) and by the safety-net pattern, but a name that is not in your table is kept as written where it stands as a program writes code: in small letters, or starting with one and run together (<code>whitfield</code>, <code>jonasWhitfield</code>), as an attribute's value, and so at the end of a web address on a host Office's own addresses use (purl.org, www.w3.org) in an attribute; run together with digits between its tags (<code>whitfield2291</code>); in small letters, or so run together, as the name of an element, an attribute or a prefix; as the part's own file name; whatever it says, as the name of an element under one of Office's own namespaces; and, whatever it says, in the address of a namespace the part declares (<code>urn:matters:Jonas Whitfield</code>). When the export keeps such a part, the save line and the receipt carry the writer's note naming it, and the Review screen lists it under Warnings (“Unrecognized part not scanned”). If a part is named there, delete the object it belongs to or copy the document's text into a new blank document, and drop that copy instead.</p></div>
+      <div class="claim"><h3>What does it cost?</h3><p>Nothing. Apache-2.0-licensed, no account, no tiers. If you want document work handled end-to-end on the AI subscription you already pay for, that's our sibling product — <a href="https://simpler.asia">simpler.asia</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <span class="fbrand"><img src="favicon.svg" alt="" width="16" height="16" style="border-radius:4px" />Simpler Legal</span>
+      <a href="research.html">Research</a>
+      <a href="it.html">IT brief</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal">GitHub</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal/releases">Releases</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/SECURITY.md">Security</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/PRIVACY.md">Privacy</a>
+      <span class="spacer"></span>
+      <span>Want it handled end-to-end, on the AI subscription you already pay for? <a href="https://simpler.asia">simpler.asia</a></span>
+    </div>
+    <p class="legal">© 2026 Simpler Terminal Value Systems Pte Ltd · Apache-2.0 licensed · the Gemma 4 model is Google's, also under Apache-2.0</p>
+  </div>
+</footer>
+
+<script>
+  // the hero token: found → marked → removed → replaced, then hold and loop
+  (function () {
+    var tok = document.getElementById('tok');
+    if (!tok) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      tok.className = 'tok p3';
+      return;
+    }
+    var phases = [
+      { cls: 'tok',    hold: 1600 },  // found (entity wash)
+      { cls: 'tok p1', hold: 1300 },  // marked (red outline)
+      { cls: 'tok p2', hold: 1300 },  // removed (ink block — preview)
+      { cls: 'tok p3', hold: 2600 }   // replaced (the actual export)
+    ];
+    // lock the token to the widest state so the headline never reflows
+    tok.className = 'tok'; var wName = tok.offsetWidth;
+    tok.className = 'tok p3'; var wTag = tok.offsetWidth;
+    tok.className = 'tok';
+    tok.style.width = Math.max(wName, wTag) + 'px';
+    var i = 0;
+    function step() {
+      tok.className = phases[i].cls;
+      var hold = phases[i].hold;
+      i = (i + 1) % phases.length;
+      setTimeout(step, hold);
+    }
+    step();
+  })();
+
+  // the star count: GitHub's own API, the page's ONE outbound call, and it
+  // only shows once the count is worth showing (threshold below). Fails to
+  // nothing — no chip, no error. Cached per session to spare the rate limit.
+  (function () {
+    var el = document.getElementById('gh-stars');
+    if (!el || !window.fetch) return;
+    var MIN = 25; // below this, social proof is anti-social-proof
+    function show(n) {
+      if (n < MIN) return;
+      el.textContent = n >= 1000 ? (n / 1000).toFixed(n >= 10000 ? 0 : 1) + 'k' : String(n);
+      el.hidden = false;
+    }
+    var cached = sessionStorage.getItem('gh-stars');
+    if (cached !== null) { show(+cached); return; }
+    fetch('https://api.github.com/repos/Simpler-Systems/simpler-legal')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || typeof d.stargazers_count !== 'number') return;
+        sessionStorage.setItem('gh-stars', String(d.stargazers_count));
+        show(d.stargazers_count);
+      })
+      .catch(function () {});
+  })();
+
+  // the paste check: tell the visitor what survived
+  (function () {
+    var ta = document.getElementById('paste');
+    var hint = document.querySelector('.paste-check .hint');
+    if (!ta || !hint) return;
+    var original = hint.textContent;
+    ta.addEventListener('input', function () {
+      var v = ta.value;
+      hint.classList.remove('bad', 'good');
+      if (!v.trim()) { hint.textContent = original; return; }
+      if (/margaret|ellison|7449|belmont/i.test(v)) {
+        hint.classList.add('bad');
+        hint.textContent = '✗ The name survived the ink. That is the copy-paste failure — now try the export on the right.';
+      } else if (/\[(person|id|address) ?1\]|instruction of 12 march|settlement from account|in your name/i.test(v)) {
+        hint.classList.add('good');
+        hint.textContent = '✓ Nothing identifying survived — placeholders only. That is the difference.';
+      } else {
+        hint.textContent = 'That isn’t from either document above — select one of them, copy, and paste it here.';
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>

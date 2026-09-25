@@ -1,0 +1,368 @@
+{
+ "builtAt": "2026-07-24",
+ "protocol": "ROUND 7: FS9/LN0/P0i/P0j fix-set first-contact; gold scheme closes the cited-code blind spot; blind swarm gold BEFORE engine; published as drawn; arrival order",
+ "docs": [
+  {
+   "file": "edgar-r7-01.txt",
+   "source": "edgar-r7",
+   "title": "MIDDLEFIELD BANC CORP  (MBCN)  (CIK 0000836147)",
+   "cite": "0000950152-06-005793",
+   "url": "https://www.sec.gov/Archives/edgar/data/836147/000095015206005793/l21240aexv10w4w3.htm",
+   "words": 5021,
+   "sha256_16": "c354eeae8027e562"
+  },
+  {
+   "file": "edgar-r7-02.txt",
+   "source": "edgar-r7",
+   "title": "Cape Fear Bank CORP  (CIK 0001334872)",
+   "cite": "0001193125-06-242805",
+   "url": "https://www.sec.gov/Archives/edgar/data/1334872/000119312506242805/dex1003.htm",
+   "words": 4904,
+   "sha256_16": "095e5c97c46fa5bc"
+  },
+  {
+   "file": "edgar-r7-03.txt",
+   "source": "edgar-r7",
+   "title": "Hyperfine, Inc.  (HYPR)  (CIK 0001833769)",
+   "cite": "0001193125-23-028445",
+   "url": "https://www.sec.gov/Archives/edgar/data/1833769/000119312523028445/d430074dex103.htm",
+   "words": 3443,
+   "sha256_16": "f46b37b6984a6eaa"
+  },
+  {
+   "file": "edgar-r7-04.txt",
+   "source": "edgar-r7",
+   "title": "NANOMETRICS INC  (ONTO)  (CIK 0000704532)",
+   "cite": "0001193125-07-175659",
+   "url": "https://www.sec.gov/Archives/edgar/data/704532/000119312507175659/dex103.htm",
+   "words": 3805,
+   "sha256_16": "627a44b2895c8ff8"
+  },
+  {
+   "file": "edgar-r7-05.txt",
+   "source": "edgar-r7",
+   "title": "CIPHERLOC Corp  (SDCH)  (CIK 0001022505)",
+   "cite": "0001493152-19-019306",
+   "url": "https://www.sec.gov/Archives/edgar/data/1022505/000149315219019306/ex10-1.htm",
+   "words": 5693,
+   "sha256_16": "4cca0ee43466647e"
+  },
+  {
+   "file": "edgar-r7-06.txt",
+   "source": "edgar-r7",
+   "title": "REALTY INCOME CORP  (O, O-P)  (CIK 0000726728)",
+   "cite": "0001104659-18-062529",
+   "url": "https://www.sec.gov/Archives/edgar/data/726728/000110465918062529/a18-36779_1ex10d1.htm",
+   "words": 2052,
+   "sha256_16": "bb8c129585026bd8"
+  },
+  {
+   "file": "edgar-r7-07.txt",
+   "source": "edgar-r7",
+   "title": "Zoned Properties, Inc.  (ZDPY)  (CIK 0001279620)",
+   "cite": "0001213900-26-005387",
+   "url": "https://www.sec.gov/Archives/edgar/data/1279620/000121390026005387/ea027306801ex10-2_zoned.htm",
+   "words": 8997,
+   "sha256_16": "8ea16ddcc25f7df1"
+  },
+  {
+   "file": "edgar-r7-08.txt",
+   "source": "edgar-r7",
+   "title": "PSQ Holdings, Inc.  (PSQH, PSQH-WT)  (CIK 0001847064)",
+   "cite": "0001104659-26-054944",
+   "url": "https://www.sec.gov/Archives/edgar/data/1847064/000110465926054944/tm2613506d1_ex10-1.htm",
+   "words": 3462,
+   "sha256_16": "cb48f9490f5a6c58"
+  },
+  {
+   "file": "edgar-r7-09.txt",
+   "source": "edgar-r7",
+   "title": "CHESAPEAKE ENERGY CORP  (CHK, CHKEL, CHKEW, CHKEZ)  (CIK 0000895126)",
+   "cite": "0000895126-21-000119",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512621000119/a101frankpattersonseveranc.htm",
+   "words": 3697,
+   "sha256_16": "d89c38df15b98876"
+  },
+  {
+   "file": "edgar-r7-10.txt",
+   "source": "edgar-r7",
+   "title": "Colt Defense LLC  (CIK 0001508677)",
+   "cite": "0001104659-14-050525",
+   "url": "https://www.sec.gov/Archives/edgar/data/1508677/000110465914050525/a14-16760_1ex10d1.htm",
+   "words": 3896,
+   "sha256_16": "ebcef49580c53793"
+  },
+  {
+   "file": "edgar-r7-11.txt",
+   "source": "edgar-r7",
+   "title": "ARENA PHARMACEUTICALS INC  (CIK 0001080709)",
+   "cite": "0001628280-16-015927",
+   "url": "https://www.sec.gov/Archives/edgar/data/1080709/000162828016015927/ex101-may92016.htm",
+   "words": 9112,
+   "sha256_16": "a5b399e70a80fcd0"
+  },
+  {
+   "file": "edgar-r7-12.txt",
+   "source": "edgar-r7",
+   "title": "ILLINOIS TOOL WORKS INC  (ITW)  (CIK 0000049826)",
+   "cite": "0000049826-13-000050",
+   "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982613000050/itwexhibit102.htm",
+   "words": 1399,
+   "sha256_16": "9062b2e0afb94ee6"
+  },
+  {
+   "file": "edgar-r7-13.txt",
+   "source": "edgar-r7",
+   "title": "BARRIER THERAPEUTICS INC  (CIK 0001173657)",
+   "cite": "0001193125-08-073101",
+   "url": "https://www.sec.gov/Archives/edgar/data/1173657/000119312508073101/dex101.htm",
+   "words": 3627,
+   "sha256_16": "8a807a53cb6fb1a5"
+  },
+  {
+   "file": "edgar-r7-14.txt",
+   "source": "edgar-r7",
+   "title": "MAKO Surgical Corp.  (CIK 0001411861)",
+   "cite": "0000897101-12-000130",
+   "url": "https://www.sec.gov/Archives/edgar/data/1411861/000089710112000130/mako120373_ex10-1.htm",
+   "words": 2839,
+   "sha256_16": "4b1bbc5aa52166d1"
+  },
+  {
+   "file": "edgar-r7-15.txt",
+   "source": "edgar-r7",
+   "title": "RIVOLI BANCORP INC  (CIK 0001160861)",
+   "cite": "0001181431-05-051370",
+   "url": "https://www.sec.gov/Archives/edgar/data/1160861/000118143105051370/rrd91819_7880.htm",
+   "words": 2209,
+   "sha256_16": "5338bced06f793a3"
+  },
+  {
+   "file": "us-r7-01.txt",
+   "source": "us-r7",
+   "title": "Beehive Telephone Co. v. Federal Communications Commission",
+   "cite": "180 F.3d 314",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662794)",
+   "words": 3645,
+   "sha256_16": "f970bede38b583bc"
+  },
+  {
+   "file": "us-r7-02.txt",
+   "source": "us-r7",
+   "title": "Valencia-Lucena v. United States Coast Guard",
+   "cite": "180 F.3d 321",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662837)",
+   "words": 3423,
+   "sha256_16": "e5d5987ea35646ca"
+  },
+  {
+   "file": "us-r7-03.txt",
+   "source": "us-r7",
+   "title": "Rogers v. United States",
+   "cite": "180 F.3d 349",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662982)",
+   "words": 5453,
+   "sha256_16": "10b8870c2b5dbcf8"
+  },
+  {
+   "file": "us-r7-04.txt",
+   "source": "us-r7",
+   "title": "United States v. Altro",
+   "cite": "180 F.3d 372",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663216)",
+   "words": 4836,
+   "sha256_16": "b3842f434ff21ad5"
+  },
+  {
+   "file": "us-r7-05.txt",
+   "source": "us-r7",
+   "title": "United States v. Arena",
+   "cite": "180 F.3d 380",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663271)",
+   "words": 9610,
+   "sha256_16": "8e19d1c4e834ab44"
+  },
+  {
+   "file": "us-r7-06.txt",
+   "source": "us-r7",
+   "title": "Brown v. Andrews",
+   "cite": "180 F.3d 403",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663353)",
+   "words": 3112,
+   "sha256_16": "6963c3ac447ce33c"
+  },
+  {
+   "file": "us-r7-07.txt",
+   "source": "us-r7",
+   "title": "Posr v. Court Officer Shield # 207",
+   "cite": "180 F.3d 409",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663394)",
+   "words": 4976,
+   "sha256_16": "eaac834ddfccc051"
+  },
+  {
+   "file": "us-r7-08.txt",
+   "source": "us-r7",
+   "title": "Leather v. Eyck",
+   "cite": "180 F.3d 420",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663471)",
+   "words": 2953,
+   "sha256_16": "4d7b618d7899ec41"
+  },
+  {
+   "file": "us-r7-09.txt",
+   "source": "us-r7",
+   "title": "Turner v. General Motors Acceptance Corp.",
+   "cite": "180 F.3d 451",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663586)",
+   "words": 3788,
+   "sha256_16": "b66efde0bd326a6b"
+  },
+  {
+   "file": "us-r7-10.txt",
+   "source": "us-r7",
+   "title": "United States v. Case",
+   "cite": "180 F.3d 464",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11663646)",
+   "words": 2157,
+   "sha256_16": "842678c345fbe0b6"
+  },
+  {
+   "file": "sg-r7-01.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 1",
+   "cite": "[2020] SGHC 1",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_1",
+   "words": 30242,
+   "sha256_16": "84d6ef6b6420947b"
+  },
+  {
+   "file": "sg-r7-02.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 2",
+   "cite": "[2020] SGHC 2",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_2",
+   "words": 16491,
+   "sha256_16": "f1622c7de9cf626c"
+  },
+  {
+   "file": "sg-r7-03.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 3",
+   "cite": "[2020] SGHC 3",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_3",
+   "words": 19940,
+   "sha256_16": "5148df3bad0138a7"
+  },
+  {
+   "file": "sg-r7-04.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 4",
+   "cite": "[2020] SGHC 4",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_4",
+   "words": 31087,
+   "sha256_16": "9386e08e64e60707"
+  },
+  {
+   "file": "sg-r7-05.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 7",
+   "cite": "[2020] SGHC 7",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_7",
+   "words": 6524,
+   "sha256_16": "654a901ed700bcfc"
+  },
+  {
+   "file": "sg-r7-06.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 8",
+   "cite": "[2020] SGHC 8",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_8",
+   "words": 12099,
+   "sha256_16": "de1d6f6c987e90c4"
+  },
+  {
+   "file": "sg-r7-07.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 11",
+   "cite": "[2020] SGHC 11",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_11",
+   "words": 7337,
+   "sha256_16": "e43735663ee5a042"
+  },
+  {
+   "file": "sg-r7-08.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 12",
+   "cite": "[2020] SGHC 12",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_12",
+   "words": 7214,
+   "sha256_16": "590b9846059e4904"
+  },
+  {
+   "file": "sg-r7-09.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 13",
+   "cite": "[2020] SGHC 13",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_13",
+   "words": 7861,
+   "sha256_16": "78afe4dd9f73131a"
+  },
+  {
+   "file": "sg-r7-10.txt",
+   "source": "sg-r7",
+   "title": "[2020] SGHC 14",
+   "cite": "[2020] SGHC 14",
+   "url": "https://www.elitigation.sg/gd/s/2020_SGHC_14",
+   "words": 7399,
+   "sha256_16": "7cfd64844a270f90"
+  },
+  {
+   "file": "sghcf-r7-01.txt",
+   "source": "sghcf-r7",
+   "title": "[2021] SGHCF 1",
+   "cite": "[2021] SGHCF 1",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHCF_1",
+   "words": 11410,
+   "sha256_16": "226ff69addfa9791"
+  },
+  {
+   "file": "sghcf-r7-02.txt",
+   "source": "sghcf-r7",
+   "title": "[2021] SGHCF 2",
+   "cite": "[2021] SGHCF 2",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHCF_2",
+   "words": 5723,
+   "sha256_16": "e9dec409e1c495e8"
+  },
+  {
+   "file": "sghcf-r7-03.txt",
+   "source": "sghcf-r7",
+   "title": "[2021] SGHCF 3",
+   "cite": "[2021] SGHCF 3",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHCF_3",
+   "words": 4389,
+   "sha256_16": "4009631b6be35add"
+  },
+  {
+   "file": "sghcf-r7-04.txt",
+   "source": "sghcf-r7",
+   "title": "[2021] SGHCF 10",
+   "cite": "[2021] SGHCF 10",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHCF_10",
+   "words": 4670,
+   "sha256_16": "00f9f3b282d9e67c"
+  },
+  {
+   "file": "sghcf-r7-05.txt",
+   "source": "sghcf-r7",
+   "title": "[2021] SGHCF 12",
+   "cite": "[2021] SGHCF 12",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHCF_12",
+   "words": 5376,
+   "sha256_16": "f866357caaa73900"
+  }
+ ],
+ "shaPinnedAt": "2026-07-25",
+ "shaNote": "sha256_16 = first 16 hex of sha256 over the extracted text as scored. A rebuild that does not match these was not the corpus these boards measured."
+}

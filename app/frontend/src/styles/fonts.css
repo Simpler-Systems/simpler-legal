@@ -1,0 +1,25 @@
+/* IBM Plex, self-hosted latin subsets — one typographic identity with
+   simpler.legal; no external font hosts, ever. The four Serif files are
+   byte-identical to fonts/split/woff2/ in the npm package @ibm/plex-serif 2.0.0.
+   Serif 400 is document prose; Serif 600 is titles, headings and the Drop screen's step numerals.
+   © 2017 IBM Corp. with Reserved Font Name "Plex", SIL Open Font License 1.1.
+   Full licence text ships beside the fonts: public/fonts/LICENSE.txt, served at
+   /fonts/LICENSE.txt (repo-wide attribution: ../../../../THIRD_PARTY_NOTICES.md). */
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:400;font-display:swap;
+  src:url('/fonts/IBMPlexSans-Regular-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:450;font-display:swap;
+  src:url('/fonts/IBMPlexSans-Text-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:500;font-display:swap;
+  src:url('/fonts/IBMPlexSans-Medium-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Sans';font-style:normal;font-weight:600;font-display:swap;
+  src:url('/fonts/IBMPlexSans-SemiBold-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Serif';font-style:normal;font-weight:400;font-display:swap;
+  src:url('/fonts/IBMPlexSerif-Regular-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Serif';font-style:italic;font-weight:400;font-display:swap;
+  src:url('/fonts/IBMPlexSerif-Italic-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Serif';font-style:normal;font-weight:600;font-display:swap;
+  src:url('/fonts/IBMPlexSerif-SemiBold-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Serif';font-style:italic;font-weight:600;font-display:swap;
+  src:url('/fonts/IBMPlexSerif-SemiBoldItalic-Latin1.woff2') format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;
+  src:url('/fonts/IBMPlexMono-Regular-Latin1.woff2') format('woff2')}

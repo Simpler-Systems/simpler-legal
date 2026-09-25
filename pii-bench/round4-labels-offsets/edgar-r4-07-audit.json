@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r4-07.txt",
+ "docSha256_16": "3c3c63d1cd56a4ec",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 7753,
+   "len": 70
+  }
+ ]
+}

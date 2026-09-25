@@ -1,0 +1,13 @@
+{
+ "doc": "sg-r5-09.txt",
+ "docSha256_16": "e0582975b957b82d",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 43473,
+   "len": 2
+  }
+ ]
+}

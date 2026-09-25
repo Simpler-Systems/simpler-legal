@@ -1,0 +1,458 @@
+{
+ "name": "v1legal3b-pred-tab-devslice26",
+ "split": "dev",
+ "strippedDir": "raw/stripped/tab-dev-slice-v1legal3b-pred",
+ "scoredAt": "2026-07-21T17:13:14.056Z",
+ "aggregate": {
+  "docs": 26,
+  "directRecall": 1,
+  "quasiRecall": 0.750207468879668,
+  "noMaskPreservation": 0.8055555555555556,
+  "gatePassRate": 1,
+  "unmatchable": 0
+ },
+ "perDoc": [
+  {
+   "file": "001-101444.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 16,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 9,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-108409.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 21,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 8,
+    "preserved": 8
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-114244.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 43,
+    "leaked": 18
+   },
+   "no_mask": {
+    "total": 12,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-169481.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 62,
+    "leaked": 19
+   },
+   "no_mask": {
+    "total": 26,
+    "preserved": 24
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57563.txt",
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 76,
+    "leaked": 15
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 12
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-58018.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 59,
+    "leaked": 11
+   },
+   "no_mask": {
+    "total": 11,
+    "preserved": 10
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-58590.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 65,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 12,
+    "preserved": 11
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-58913.txt",
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 72,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 21,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-59864.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 50,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-60605.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 70,
+    "leaked": 25
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-61100.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 41,
+    "leaked": 22
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-61549.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 63,
+    "leaked": 9
+   },
+   "no_mask": {
+    "total": 9,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-67243.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 48,
+    "leaked": 17
+   },
+   "no_mask": {
+    "total": 8,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-69128.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 38,
+    "leaked": 13
+   },
+   "no_mask": {
+    "total": 6,
+    "preserved": 6
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-70759.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 15,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 10
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-79012.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 46,
+    "leaked": 20
+   },
+   "no_mask": {
+    "total": 14,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-82485.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 25,
+    "leaked": 8
+   },
+   "no_mask": {
+    "total": 6,
+    "preserved": 6
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-83613.txt",
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 29,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 8,
+    "preserved": 8
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-84285.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 76,
+    "leaked": 18
+   },
+   "no_mask": {
+    "total": 20,
+    "preserved": 14
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-86146.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 55,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 8
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-87426.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 71,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 12
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-88377.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 47,
+    "leaked": 23
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 5
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-90131.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 35,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-91094.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 21,
+    "leaked": 8
+   },
+   "no_mask": {
+    "total": 13,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-94981.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 24,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 10
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-97995.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 37,
+    "leaked": 10
+   },
+   "no_mask": {
+    "total": 15,
+    "preserved": 10
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  }
+ ]
+}

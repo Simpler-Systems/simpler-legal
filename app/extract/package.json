@@ -1,0 +1,17 @@
+{
+  "name": "simpler-legal-extract",
+  "private": true,
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "W3 extraction layer — forensic OOXML walker (docx v0). Runs in Node for tests; bundles into the webview at M2.",
+  "scripts": {
+    "test": "node make-fixture.mjs && node test.mjs && node make-fixture-pdf.mjs && node make-fixture-scan.mjs && node test-pdf.mjs && node test-text.mjs",
+    "test:ocr": "node test-ocr.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.10.1",
+    "pdfjs-dist": "^6.1.200",
+    "tesseract.js": "^7.0.0"
+  }
+}

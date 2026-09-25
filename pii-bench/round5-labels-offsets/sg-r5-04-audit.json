@@ -1,0 +1,20 @@
+{
+ "doc": "sg-r5-04.txt",
+ "docSha256_16": "92dde2e32a0bdff0",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 5,
+   "off": 1642,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 4,
+   "off": 2849,
+   "len": 3
+  }
+ ]
+}

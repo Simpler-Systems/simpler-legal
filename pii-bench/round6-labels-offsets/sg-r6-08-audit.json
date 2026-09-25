@@ -1,0 +1,13 @@
+{
+ "doc": "sg-r6-08.txt",
+ "docSha256_16": "40473dc68ddf0c2e",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 18153,
+   "len": 11
+  }
+ ]
+}

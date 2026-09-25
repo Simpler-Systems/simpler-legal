@@ -1,0 +1,13 @@
+{
+ "doc": "us-r6-07.txt",
+ "docSha256_16": "e7350abaf853e814",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 33341,
+   "len": 6
+  }
+ ]
+}

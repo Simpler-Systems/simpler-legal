@@ -1,0 +1,12 @@
+{
+ "doc": "uk-civ-05.txt",
+ "docSha256_16": "13a5d79433687e43",
+ "entities": [
+  {
+   "category": "ORG",
+   "occurrences": 3,
+   "off": 29,
+   "len": 13
+  }
+ ]
+}

@@ -1,0 +1,48 @@
+{
+ "doc": "us-r6-10.txt",
+ "docSha256_16": "82d25072fdc06101",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 1,
+   "off": 8199,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 1,
+   "off": 16962,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 1,
+   "off": 21131,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "record_id_nomask",
+   "occurrences": 1,
+   "off": 110,
+   "len": 15
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "source_domain_nomask",
+   "occurrences": 1,
+   "off": 84,
+   "len": 15
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "volume_id_nomask",
+   "occurrences": 1,
+   "off": 101,
+   "len": 7
+  }
+ ]
+}

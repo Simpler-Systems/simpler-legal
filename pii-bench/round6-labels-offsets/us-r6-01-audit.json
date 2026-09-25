@@ -1,0 +1,13 @@
+{
+ "doc": "us-r6-01.txt",
+ "docSha256_16": "8970ca2257e29a95",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 2,
+   "off": 150,
+   "len": 4
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "doc": "us-r4-10.txt",
+ "docSha256_16": "40b0c0895bccaabd",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 78,
+   "len": 3
+  }
+ ]
+}

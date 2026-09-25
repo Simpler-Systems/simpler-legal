@@ -1,0 +1,54 @@
+[package]
+name = "simpler-legal"
+version = "0.1.0"
+description = "simpler.legal — on-device document redaction"
+edition = "2021"
+license = "Apache-2.0"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+# the save dialog behind lib/tauri.ts saveTextFile — the JS half (@tauri-apps/plugin-dialog)
+# was already a dependency; without this Rust half every save in the packaged app failed
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# model_check(verify = true): streamed sha256 of the model file against the pin
+sha2 = "0.10"
+# No HTTP client crate. Every road that carries document text writes raw HTTP on a socket
+# that was checked first (service_auth.rs for the adapter, relay.rs for the model): a client
+# with its own pool and proxy settings would pick its own connection. ureq was removed
+# 2026-09-23 with complete_local's move onto relay::connect_verified; Cargo.lock drops it.
+
+[target.'cfg(target_os = "windows")'.dependencies]
+# job_object.rs: the kill-on-close job every engine child is assigned to (the harness's
+# pin and feature set; Win32_Security is what makes CreateJobObjectW's optional
+# SECURITY_ATTRIBUTES pointer resolve). IpHelper: port_owner.rs reads who holds the model
+# port from the kernel's TCP table. Cryptography: BCryptGenRandom for the per-launch token
+# the adapter proves itself with (engine.rs). ToolHelp: the parent of a model-port holder, for a
+# model server this app started but could not put in its job (port_owner.rs parent_of). WinSock:
+# the relay's listening socket, bound with SO_EXCLUSIVEADDRUSE so no other socket can share its
+# port (relay.rs). WindowsAndMessaging, HiDpi, LibraryLoader: window_icon.rs loads the exe's
+# icon at the size the window's DPI asks for. None of them adds a crate: they are features of
+# the windows crate.
+windows = { version = "0.58", features = [
+    "Win32_System_JobObjects",
+    "Win32_System_Threading",
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Security_Cryptography",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_Networking_WinSock",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_HiDpi",
+    "Win32_System_LibraryLoader",
+] }
+
+[features]
+# Test builds only: the close faults exit_guard.rs is checked against (LAUNCH.md, "The app that
+# did not exit"). Never in the installer build; the installer check refuses an exe that carries
+# the fault's names. Gdi: RegisterClassW, for the fault's message-only window, and only here.
+exit-fault = ["windows/Win32_Graphics_Gdi"]

@@ -1,0 +1,1228 @@
+{
+ "name": "ussg50-FS2d",
+ "batch": "all",
+ "strippedDir": "raw/stripped/ussg50-fs2d",
+ "scoredAt": "2026-07-22T13:30:55.535Z",
+ "aggregate": {
+  "docs": 100,
+  "missingOutputs": [
+   "edgar-ex10-01.txt",
+   "edgar-ex10-02.txt",
+   "edgar-ex10-03.txt",
+   "edgar-ex10-04.txt",
+   "edgar-ex10-05.txt",
+   "edgar-ex10-06.txt",
+   "edgar-ex10-07.txt",
+   "edgar-ex10-08.txt",
+   "edgar-ex10-09.txt",
+   "edgar-ex10-10.txt",
+   "edgar-ex10-11.txt",
+   "edgar-ex10-12.txt",
+   "edgar-ex10-13.txt",
+   "edgar-ex10-14.txt",
+   "edgar-ex10-15.txt",
+   "edgar-ex10-16.txt",
+   "edgar-ex10-17.txt",
+   "edgar-ex10-18.txt",
+   "edgar-ex10-19.txt",
+   "edgar-ex10-20.txt",
+   "edgar-ex10-21.txt",
+   "edgar-ex10-22.txt",
+   "edgar-ex10-23.txt",
+   "edgar-ex10-24.txt",
+   "edgar-ex10-25.txt",
+   "edgar-ex10-26.txt",
+   "edgar-ex10-27.txt",
+   "edgar-ex10-28.txt",
+   "edgar-ex10-29.txt",
+   "edgar-ex10-30.txt",
+   "edgar-ex10-31.txt",
+   "edgar-ex10-32.txt",
+   "edgar-ex10-33.txt",
+   "edgar-ex10-34.txt",
+   "edgar-ex10-35.txt",
+   "edgar-ex10-36.txt",
+   "edgar-ex10-37.txt",
+   "edgar-ex10-38.txt",
+   "edgar-ex10-39.txt",
+   "edgar-ex10-40.txt",
+   "edgar-ex10-41.txt",
+   "edgar-ex10-42.txt",
+   "edgar-ex10-43.txt",
+   "edgar-ex10-44.txt",
+   "edgar-ex10-45.txt",
+   "edgar-ex10-46.txt",
+   "edgar-ex10-47.txt",
+   "edgar-ex10-48.txt",
+   "edgar-ex10-49.txt",
+   "edgar-ex10-50.txt"
+  ],
+  "directRecall": 0.9774127310061602,
+  "quasiRecall": 0.7872105843439912,
+  "noMaskPreservation": 0.29369842460615153,
+  "gatePassRate": 0.8,
+  "unmatchable": 96
+ },
+ "perDoc": [
+  {
+   "file": "us-opinion-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 11,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 17,
+    "preserved": 11
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 5,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 8
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 2
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 8
+   },
+   "no_mask": {
+    "total": 75,
+    "preserved": 12
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 2
+  },
+  {
+   "file": "us-opinion-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 41,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 36,
+    "preserved": 8
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 38,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 28,
+    "preserved": 9
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-07.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 22,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 42,
+    "preserved": 15
+   },
+   "unmatchable": 4,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "us-opinion-08.txt",
+   "missing": false,
+   "direct": {
+    "total": 18,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 55,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 31,
+    "preserved": 18
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-09.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 4,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 57,
+    "preserved": 34
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-10.txt",
+   "missing": false,
+   "direct": {
+    "total": 19,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 56,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 58,
+    "preserved": 17
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "us-opinion-11.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 103,
+    "preserved": 40
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-12.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 94,
+    "preserved": 29
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-13.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 10,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 38,
+    "preserved": 15
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-14.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 14,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 41,
+    "preserved": 19
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-15.txt",
+   "missing": false,
+   "direct": {
+    "total": 14,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 12,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 32,
+    "preserved": 5
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "us-opinion-16.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 4,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 60,
+    "preserved": 18
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-17.txt",
+   "missing": false,
+   "direct": {
+    "total": 7,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 42,
+    "preserved": 19
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "us-opinion-18.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 77,
+    "preserved": 28
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-19.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 8,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 66,
+    "preserved": 25
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "us-opinion-20.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 19,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 11
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-21.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 12,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 34,
+    "preserved": 12
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-22.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 5,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 78,
+    "preserved": 19
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-23.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 54,
+    "preserved": 22
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-24.txt",
+   "missing": false,
+   "direct": {
+    "total": 6,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 36,
+    "leaked": 10
+   },
+   "no_mask": {
+    "total": 57,
+    "preserved": 10
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-25.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 76,
+    "preserved": 23
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 7,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 58,
+    "leaked": 10
+   },
+   "no_mask": {
+    "total": 27,
+    "preserved": 14
+   },
+   "unmatchable": 8,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 51,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 76,
+    "leaked": 15
+   },
+   "no_mask": {
+    "total": 44,
+    "preserved": 17
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 16,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 70,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 41,
+    "preserved": 10
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "sg-judgment-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 12,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 83,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 26,
+    "preserved": 4
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 14,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 44,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 55,
+    "preserved": 7
+   },
+   "unmatchable": 4,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 15,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 80,
+    "leaked": 25
+   },
+   "no_mask": {
+    "total": 39,
+    "preserved": 17
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-07.txt",
+   "missing": false,
+   "direct": {
+    "total": 12,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 44,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 41,
+    "preserved": 9
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-08.txt",
+   "missing": false,
+   "direct": {
+    "total": 11,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 71,
+    "leaked": 35
+   },
+   "no_mask": {
+    "total": 64,
+    "preserved": 13
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-09.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 77,
+    "leaked": 21
+   },
+   "no_mask": {
+    "total": 70,
+    "preserved": 10
+   },
+   "unmatchable": 10,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-10.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 105,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 58,
+    "preserved": 11
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-11.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 125,
+    "leaked": 22
+   },
+   "no_mask": {
+    "total": 82,
+    "preserved": 20
+   },
+   "unmatchable": 4,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "sg-judgment-12.txt",
+   "missing": false,
+   "direct": {
+    "total": 18,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 48,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 25,
+    "preserved": 8
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-13.txt",
+   "missing": false,
+   "direct": {
+    "total": 23,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 33,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 78,
+    "preserved": 29
+   },
+   "unmatchable": 5,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-14.txt",
+   "missing": false,
+   "direct": {
+    "total": 14,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 10,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 70,
+    "preserved": 13
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-15.txt",
+   "missing": false,
+   "direct": {
+    "total": 12,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 25,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 82,
+    "preserved": 21
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-16.txt",
+   "missing": false,
+   "direct": {
+    "total": 9,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 57,
+    "leaked": 11
+   },
+   "no_mask": {
+    "total": 45,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-17.txt",
+   "missing": false,
+   "direct": {
+    "total": 18,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 33,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 47,
+    "preserved": 9
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-18.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 114,
+    "leaked": 21
+   },
+   "no_mask": {
+    "total": 52,
+    "preserved": 12
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-19.txt",
+   "missing": false,
+   "direct": {
+    "total": 54,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 40,
+    "leaked": 11
+   },
+   "no_mask": {
+    "total": 115,
+    "preserved": 37
+   },
+   "unmatchable": 9,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-20.txt",
+   "missing": false,
+   "direct": {
+    "total": 13,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 78,
+    "leaked": 11
+   },
+   "no_mask": {
+    "total": 38,
+    "preserved": 10
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-21.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 24,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 40,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "sg-judgment-22.txt",
+   "missing": false,
+   "direct": {
+    "total": 11,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 21,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 59,
+    "preserved": 13
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "sg-judgment-23.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 15,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 60,
+    "preserved": 25
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-24.txt",
+   "missing": false,
+   "direct": {
+    "total": 8,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 36,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 79,
+    "preserved": 11
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-judgment-25.txt",
+   "missing": false,
+   "direct": {
+    "total": 13,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 26,
+    "leaked": 10
+   },
+   "no_mask": {
+    "total": 49,
+    "preserved": 9
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-01.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-02.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-03.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-04.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-05.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-06.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-07.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-08.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-09.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-10.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-11.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-12.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-13.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-14.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-15.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-16.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-17.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-18.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-19.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-20.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-21.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-22.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-23.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-24.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-25.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-26.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-27.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-28.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-29.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-30.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-31.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-32.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-33.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-34.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-35.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-36.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-37.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-38.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-39.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-40.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-41.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-42.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-43.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-44.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-45.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-46.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-47.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-48.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-49.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-50.txt",
+   "missing": true
+  }
+ ]
+}

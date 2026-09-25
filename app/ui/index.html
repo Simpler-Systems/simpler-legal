@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simpler Legal — DESIGN MOCK (older; the real app runs on :1435)</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<style>
+  /* ===== paper-on-a-light-table · design/DESIGN_SPEC_LIGHT_2026-07-20.md ===== */
+  :root{
+    --table:#EDEBE7; --chrome:#F7F6F3; --paper:#FFFFFF; --card:#FCFCFB;
+    --hoverw:#F2F0EC; --hair:#E3E1DC; --border:#D6D3CD;
+    --ink:#37352F; --ink2:#6F6B64; --mut:#9B968E;
+    --red:#16324F; --red-hover:#0F2438; --red-wash:#E8EEF6;
+    --go:#1E7F4F; --go-wash:#E2F2E9;
+    --amber:#B27A0B; --amber-wash:#FBF3DB;
+    --held:#8F1F1B; --held-wash:#F6E2E0;
+    --c-person:#3D6FA5; --w-person:#E8F0F8;
+    --c-org:#6C5DA8;    --w-org:#EDEAF7;
+    --c-loc:#2F7D6D;    --w-loc:#E3F1ED;
+    --c-date:#9A7B24;   --w-date:#F7F0DC;
+    --c-id:#536270;     --w-id:#EAEEF2;
+    --c-contact:#A34E7E;--w-contact:#F6E9F1;
+    --c-term:#9B968E;   --w-term:#F2F0EC;
+    --sh-paper:0 1px 3px rgba(31,29,26,.08),0 8px 24px rgba(31,29,26,.06);
+    --sh-card:0 1px 3px rgba(31,29,26,.06);
+    --sans:'Segoe UI Variable Text','Segoe UI',system-ui,sans-serif;
+    --serif:'Charter','Bitstream Charter',Georgia,Cambria,serif;
+    --mono:'Cascadia Code',Consolas,ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:var(--table);color:var(--ink);font-family:var(--sans);font-size:13px;line-height:1.45;overflow:hidden}
+  button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
+  :focus-visible{outline:2px solid var(--red);outline-offset:2px;border-radius:6px}
+  .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  .shell{display:grid;grid-template-columns:200px minmax(0,1fr);height:100vh}
+
+  /* rail */
+  .rail{background:var(--chrome);border-right:1px solid var(--hair);display:flex;flex-direction:column;padding:14px 10px}
+  .brand{display:flex;align-items:center;gap:9px;padding:4px 10px 16px}
+  .brand img{width:42px;height:42px;border-radius:10px}
+  .brandstack{display:flex;flex-direction:column;line-height:1.15}.brandstack b{font-size:17px;font-weight:700;letter-spacing:-0.01em}
+  .navlbl{font-size:11px;color:var(--mut);padding:10px 10px 4px}
+  .nav-row{display:flex;align-items:center;gap:9px;width:100%;text-align:left;padding:7px 10px;border-radius:7px;color:var(--ink2);font-size:13px}
+  .nav-row:hover{background:var(--hoverw)}
+  .nav-row[data-on]{background:var(--paper);box-shadow:var(--sh-card);color:var(--ink);font-weight:600}
+  .nav-row svg{flex:none;opacity:.75}
+  .nav-count{margin-left:auto;font-size:11.5px;color:var(--mut);font-variant-numeric:tabular-nums}
+  .rail-foot{margin-top:auto;padding:10px;font-size:11px;color:var(--mut);line-height:1.6}
+
+  /* topbar */
+  .main{display:flex;flex-direction:column;min-width:0;min-height:0}
+  .topbar{display:flex;align-items:center;gap:16px;background:var(--chrome);border-bottom:1px solid var(--hair);padding:0 20px;height:48px;flex:none;position:relative}
+  .steps{display:flex;gap:22px;margin:0 auto}
+  .stepq{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--mut)}
+  .stepq[data-state="active"]{color:var(--ink);font-weight:600}
+  .stepq[data-state="done"]{color:var(--ink2)}
+  .stepq .ring{width:14px;height:14px;border-radius:50%;border:1.5px solid var(--border);flex:none;display:inline-flex;align-items:center;justify-content:center}
+  .stepq[data-state="active"] .ring{border-color:var(--red);border-top-color:var(--red);background:conic-gradient(var(--red) 0 40%,transparent 40%);-webkit-mask:radial-gradient(circle 4.2px,transparent 62%,#000 63%);mask:radial-gradient(circle 4.2px,transparent 62%,#000 63%)}
+  .stepq[data-state="done"] .ring{background:var(--ink);border-color:var(--ink)}
+  .stepq[data-state="done"] .ring::after{content:"✓";color:#fff;font-size:8.5px;line-height:1}
+  .stepq[data-locked]{opacity:.45;pointer-events:none}
+  .egress{display:flex;align-items:center;gap:7px;background:var(--paper);border:1px solid var(--hair);border-radius:999px;padding:5px 13px;font-size:12px;color:var(--ink2);cursor:pointer;box-shadow:var(--sh-card)}
+  .egress .dot{width:6px;height:6px;border-radius:50%;background:var(--go);flex:none}
+  .egress[data-fetch]{color:var(--amber)}
+  .egress[data-fetch] .dot{background:var(--amber)}
+  .netlog{position:absolute;top:46px;right:20px;z-index:30;width:420px;background:var(--paper);border:1px solid var(--hair);border-radius:10px;box-shadow:var(--sh-paper);padding:16px}
+  .netlog h4{font-size:13px;font-weight:600;margin-bottom:8px}
+  .nl-row{display:flex;gap:10px;font-size:12px;color:var(--ink2);padding:5px 0;border-bottom:1px solid var(--hair)}
+  .nl-row:last-of-type{border-bottom:none}
+  .nl-row .t{color:var(--mut);flex:none;width:88px;font-variant-numeric:tabular-nums}
+  .netlog .note{margin-top:9px;color:var(--mut);font-size:12px}
+
+  /* content */
+  .content{flex:1;overflow-y:auto;overflow-x:hidden;min-height:0}
+  /* Fits a 1080p laptop at 150% Windows scaling (~997px CSS viewport) — the median
+     professional machine. Column is fluid; never a fixed width that can overflow. */
+  .screen,.lane{display:none;width:min(760px,100%);margin:0 auto;padding:36px 28px 56px}
+  .screen[data-on],.lane[data-on]{display:block}
+  h1{font-size:20px;font-weight:600;margin-bottom:4px}
+  .sub{color:var(--ink2);font-size:13px;margin-bottom:24px;max-width:64ch}
+  .seclbl{font-size:13px;font-weight:600;margin:22px 0 8px;display:flex;gap:8px;align-items:baseline}
+  .seclbl .cnt{color:var(--mut);font-weight:400;font-size:12px;font-variant-numeric:tabular-nums}
+
+  .btn-red{background:var(--red);color:#fff;font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:8px}
+  .btn-red:hover{background:var(--red-hover)}
+  .btn-ghost{color:var(--ink);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:2px;padding:4px 6px}
+  .btn-quiet{color:var(--ink2);font-size:12.5px;padding:4px 6px}
+  .btn-quiet:hover{color:var(--ink)}
+  .chipf{background:var(--paper);border:1px solid var(--hair);border-radius:999px;padding:3px 12px;font-size:12px;color:var(--ink2)}
+  .chipf:hover{background:var(--hoverw)}
+  .chipf[data-on]{background:var(--ink);border-color:var(--ink);color:#fff}
+
+  /* drop */
+  .dropcard{background:var(--card);border:1.5px dashed var(--border);border-radius:12px;box-shadow:var(--sh-card);min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;cursor:pointer;padding:28px;transition:border-color .15s,background .15s}
+  .dropcard:hover{border-color:var(--red);background:linear-gradient(rgba(251,234,232,.35),rgba(251,234,232,.35)),var(--card)}
+  .dropcard img{width:40px;height:40px;transition:transform .15s}
+  .dropcard:hover img{transform:rotate(8deg)}
+  .dropcard h2{font-size:20px;font-weight:600}
+  .dropcard .fmts{font-size:13px;color:var(--ink2)}
+  .trustline{display:flex;gap:7px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:12.5px;color:var(--ink2);max-width:100%}
+  .trustline svg{flex:none;color:var(--go)}
+  .undernote{font-size:12px;color:var(--mut);margin-top:12px;text-align:center}
+  .dropslim{background:var(--card);border:1.5px dashed var(--border);border-radius:10px;padding:14px 18px;font-size:12.5px;color:var(--ink2);text-align:center;cursor:pointer;margin-bottom:18px}
+  .dropslim:hover{border-color:var(--red)}
+
+  .q-row{background:var(--paper);border-radius:6px;box-shadow:var(--sh-card);display:flex;align-items:center;gap:12px;padding:0 16px;height:48px;margin-bottom:8px}
+  .fbadge{font-size:9.5px;font-weight:600;color:var(--c-id);border:1px solid var(--hair);border-radius:4px;padding:1px 5px;flex:none}
+  .q-row .fname{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1}
+  .q-row .fmeta{font-size:11.5px;color:var(--mut);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .q-row .well{margin-left:auto;width:200px;flex:none;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink2)}
+  .ringi{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--border);flex:none;display:inline-flex;align-items:center;justify-content:center}
+  .ringi[data-s="done"]{background:var(--red);border-color:var(--red)}
+  .ringi[data-s="done"]::after{content:"";width:5px;height:5px;border-radius:50%;background:#fff}
+  .ringi[data-s="rev"]{background:var(--ink);border-color:var(--ink)}
+  .ringi[data-s="rev"]::after{content:"✓";color:#fff;font-size:8px}
+  .ringi[data-s="exp"]{border-color:var(--go);background:var(--go)}
+  .ringi[data-s="exp"]::after{content:"✓";color:#fff;font-size:8px}
+  .scanbar{flex:1;height:3px;background:var(--hair);border-radius:99px;overflow:hidden}
+  .scanbar i{display:block;height:100%;width:62%;background:var(--red)}
+  .q-row[data-held]{background:linear-gradient(var(--amber-wash),var(--amber-wash)),var(--paper)}
+  .heldlbl{color:var(--amber);font-weight:600;font-size:12px;display:flex;gap:6px;align-items:center}
+  .q-row .rm{color:var(--mut);padding:2px 4px;font-size:13px}
+  .q-row .rm:hover{color:var(--held)}
+  details.why{margin:14px 2px;color:var(--ink2);font-size:12.5px}
+  details.why summary{cursor:pointer}
+  details.why p{margin-top:7px;max-width:72ch;color:var(--ink2)}
+  .exportdock{display:flex;justify-content:flex-end;margin-top:18px}
+
+  /* review */
+  .rev-wrap{display:grid;grid-template-columns:minmax(420px,1fr) 380px;gap:0;max-width:none;padding:0;height:100%}
+  .rev-paperpane{overflow:auto;padding:36px 40px}
+  .paper{background:var(--paper);border-radius:6px;box-shadow:var(--sh-paper);padding:48px;max-width:760px;margin:0 auto}
+  .paper .doc{font-family:var(--serif);font-size:15px;line-height:1.65;color:var(--ink);max-width:700px}
+  .paper .doc h3{font-family:var(--serif);font-size:17px;margin-bottom:14px}
+  .paper .doc p{margin-bottom:12px}
+  .sp{border-radius:3px;padding:0 3px;border-bottom:1px solid transparent;cursor:pointer}
+  .sp[data-hot]{outline:1.5px solid var(--red)}
+  .sp[data-dead]{background:none !important;border-bottom:1px dashed var(--held);color:var(--ink)}
+  .sp-person{background:var(--w-person);border-bottom-color:var(--c-person)}
+  .sp-org{background:var(--w-org);border-bottom-color:var(--c-org)}
+  .sp-loc{background:var(--w-loc);border-bottom-color:var(--c-loc)}
+  .sp-id{background:var(--w-id);border-bottom-color:var(--c-id)}
+  .sp-contact{background:var(--w-contact);border-bottom-color:var(--c-contact)}
+  .sp-term{background:var(--w-term);border-bottom-color:var(--c-term)}
+  .rev-rail{background:var(--chrome);border-left:1px solid var(--hair);overflow:auto;padding:20px}
+  .cover{background:var(--paper);border-radius:6px;box-shadow:var(--sh-card);padding:10px 14px;font-size:12px;color:var(--ink2);display:flex;gap:8px;align-items:center;margin-bottom:12px}
+  .cover .segs{display:flex;gap:2px;flex:1}
+  .cover .segs i{height:6px;flex:1;background:var(--go);border-radius:2px;opacity:.75}
+  .cover .segs i[data-warn]{background:var(--amber)}
+  .pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+  .egroup{font-size:13px;font-weight:600;margin:14px 0 6px;display:flex;gap:8px;align-items:baseline}
+  .egroup .cnt{color:var(--mut);font-weight:400;font-size:12px}
+  .erow{display:flex;align-items:center;gap:9px;padding:8px 8px;border-radius:6px;cursor:pointer}
+  .erow:hover{background:var(--hoverw)}
+  .erow[data-sel]{background:var(--paper);box-shadow:var(--sh-card)}
+  .erow[data-dead]{opacity:.45}
+  .erow[data-dead] .etext{text-decoration:line-through}
+  .edot{width:8px;height:8px;border-radius:50%;flex:none}
+  .etext{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .eocc{color:var(--mut);font-size:11.5px;margin-left:auto;font-variant-numeric:tabular-nums;flex:none}
+  .eprov{color:var(--mut);font-size:10.5px;flex:none}
+  .eact{color:var(--mut);font-size:11.5px;border:1px solid var(--hair);border-radius:5px;padding:1px 7px;flex:none;opacity:0}
+  .erow:hover .eact,.erow[data-sel] .eact{opacity:1}
+  .eact:hover{color:var(--held);border-color:var(--held)}
+  .erow[data-dead] .eact:hover{color:var(--go);border-color:var(--go)}
+  .kbdhint{font-size:11.5px;color:var(--mut);margin-top:12px}
+  kbd{font-family:var(--mono);font-size:10.5px;background:var(--paper);border:1px solid var(--hair);border-bottom-width:2px;border-radius:4px;padding:0 5px}
+  .railbtns{display:flex;gap:8px;margin-top:14px;align-items:center;flex-wrap:wrap}
+
+  /* export */
+  .funnel{font-size:15px;margin-bottom:8px}
+  .vrow{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ink2);margin-bottom:4px}
+  .vrow .ck{color:var(--go);font-weight:700}
+  .paperlet{background:var(--paper);border:1px solid var(--hair);border-radius:6px;box-shadow:var(--sh-card);padding:18px 20px;margin-top:16px;max-width:520px}
+  .paperlet h4{font-size:13px;font-weight:600;margin-bottom:8px}
+  .rrow{display:flex;gap:10px;font-size:12.5px;color:var(--ink2);padding:4px 0;border-bottom:1px dashed var(--hair)}
+  .rrow:last-of-type{border-bottom:none}
+  .rrow b{color:var(--ink);font-weight:600;flex:none;width:92px;font-variant-numeric:tabular-nums}
+  .keynote{display:flex;gap:8px;align-items:flex-start;background:var(--amber-wash);border-radius:6px;padding:10px 12px;font-size:12.5px;color:var(--ink2);margin-top:14px;max-width:520px}
+  .keynote b{color:var(--amber)}
+  .postnote{font-size:12.5px;color:var(--ink2);margin-top:16px;max-width:64ch}
+
+  /* history / settings */
+  .hrow{background:var(--paper);border-radius:6px;box-shadow:var(--sh-card);display:flex;align-items:center;gap:12px;padding:0 16px;height:52px;margin-bottom:8px;font-size:13px;cursor:pointer}
+  .hrow[data-held-row]{background:linear-gradient(var(--amber-wash),var(--amber-wash)),var(--paper)}
+  .hname{font-weight:600}
+  .hmeta{color:var(--mut);font-size:11.5px;font-variant-numeric:tabular-nums}
+  .hlinks{margin-left:auto;display:flex;gap:12px;font-size:12px}
+  .hlinks button{color:var(--ink2);text-decoration:underline;text-underline-offset:2px}
+  .hlinks button:hover{color:var(--ink)}
+  .setcard{background:var(--paper);border-radius:8px;box-shadow:var(--sh-card);padding:18px 20px;margin-bottom:14px;max-width:640px}
+  .setcard h3{font-size:15px;font-weight:600;margin-bottom:10px}
+  .srow{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:13px;color:var(--ink2)}
+  .srow .k{flex:none;width:120px;color:var(--ink)}
+  .seg{display:inline-flex;background:var(--hoverw);border-radius:7px;padding:2px}
+  .seg button{padding:3px 12px;font-size:12.5px;color:var(--ink2);border-radius:5px}
+  .seg button[data-on]{background:var(--paper);box-shadow:var(--sh-card);color:var(--ink);font-weight:600}
+  .logpane{background:var(--card);border:1px solid var(--hair);border-radius:6px;padding:10px 14px;font-family:var(--mono);font-size:11px;line-height:1.8;color:var(--ink2);overflow-x:auto;white-space:pre;margin-top:8px;font-variant-numeric:tabular-nums}
+
+  /* setup */
+  .setupcard{background:var(--paper);border-radius:10px;box-shadow:var(--sh-paper);padding:32px;max-width:560px;margin:24px auto;text-align:center}
+  .setupcard img{width:36px;height:36px;margin-bottom:12px}
+  .setupcard h2{font-size:18px;font-weight:600;margin-bottom:8px}
+  .setupcard p{font-size:13px;color:var(--ink2);max-width:46ch;margin:0 auto 18px}
+  .pbar{height:5px;background:var(--hair);border-radius:99px;overflow:hidden;margin:14px 0 6px}
+  .pbar i{display:block;height:100%;width:0%;background:var(--red);transition:width .4s}
+  .sha{font-family:var(--mono);font-size:11px;color:var(--mut)}
+  .wzstat{font-size:12.5px;color:var(--ink2);min-height:18px;margin-top:6px}
+
+  .toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,16px);background:var(--ink);color:#fff;border-radius:8px;padding:10px 16px;display:flex;gap:14px;align-items:center;font-size:12.5px;box-shadow:0 12px 32px rgba(31,29,26,.35);opacity:0;pointer-events:none;transition:opacity .15s,transform .15s;z-index:40}
+  .toast[data-on]{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+  .toast .undo{color:#D9E4F2;font-weight:600}
+  @media (max-width:1100px){
+    .rev-wrap{grid-template-columns:minmax(0,1fr) 320px}
+    .rev-paperpane{padding:24px 20px}
+    .paper{padding:32px}
+    .rail{padding:12px 8px}
+  }
+  @media (max-width:900px){
+    .rev-wrap{grid-template-columns:minmax(0,1fr)}
+    .rev-rail{border-left:none;border-top:1px solid var(--hair)}
+  }
+</style>
+</head>
+<body>
+<!-- This file is a DESIGN MOCK kept for reference, not the product. The shipped
+     frontend is app/frontend (tauri.conf.json frontendDist = ../frontend/dist).
+     Every number on this page is a hand-typed prop: the "0 outbound connections"
+     pill, the huggingface.co download entry and the receipt rows are drawn, not
+     measured. The real app measures them (app/frontend/src/lib/netmeter.ts). -->
+<div style="position:sticky;top:0;z-index:9999;background:#8C6109;color:#fff;font:600 12.5px/1.5 system-ui,sans-serif;padding:7px 14px;text-align:center">
+  DESIGN MOCK — not the product. Every number on this page is a hand-typed prop, not a measurement. The real app is app/frontend.
+</div>
+
+<div class="shell">
+  <aside class="rail">
+    <div class="brand"><img src="favicon.svg" alt="" /><div class="brandstack"><b>Simpler</b><b>Legal</b></div></div>
+    <div class="navlbl">Work</div>
+    <button class="nav-row" data-lane="redact" data-on>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M9 13h6M9 17h4"/></svg>
+      Redact<span class="nav-count" id="navcount">3</span>
+    </button>
+    <button class="nav-row" data-lane="map" onclick="window.location.href='/synergy.html'">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="8" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8 7l7.6 1M7 8l4 8M17 10l-4 6"/></svg>
+      Map
+    </button>
+    <button class="nav-row" data-lane="history">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      History
+    </button>
+    <div class="navlbl">Recent</div>
+    <button class="nav-row" style="font-size:12px" data-recent><span class="fbadge">TXT</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">jv-agreement-hastings</span></button>
+    <button class="nav-row" style="font-size:12px" data-recent><span class="fbadge">DOCX</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">engagement-approach</span></button>
+    <button class="nav-row" style="font-size:12px" data-recent><span class="fbadge">TXT</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">nda-hifn-draft</span></button>
+    <div class="navlbl">System</div>
+    <button class="nav-row" data-lane="settings">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.5-2-3.5-2.4 1a7 7 0 0 0-2-1.2L14 3h-4l-.4 2.6a7 7 0 0 0-2 1.2l-2.4-1-2 3.5 2 1.5A7 7 0 0 0 5 12"/></svg>
+      Settings
+    </button>
+    <button class="nav-row" data-lane="about">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      About
+    </button>
+    <div class="rail-foot">
+      <div style="display:flex;align-items:center;gap:6px;color:var(--ink2);margin-bottom:4px"><span style="width:6px;height:6px;border-radius:50%;background:var(--go);flex:none"></span>Engine ready · local</div>
+      v0.1 · Nothing leaves this machine.
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <nav class="steps" id="steps">
+        <button class="stepq" data-s="1" data-state="active"><span class="ring"></span>Drop</button>
+        <button class="stepq" data-s="2" data-state="" data-locked><span class="ring"></span>Review</button>
+        <button class="stepq" data-s="3" data-state="" data-locked><span class="ring"></span>Export</button>
+      </nav>
+      <button class="egress" id="egress" style="position:absolute;right:20px"><span class="dot"></span><span id="egresstxt">0 outbound connections</span></button>
+      <div class="netlog" id="netlog" hidden>
+        <h4>Network activity — the complete record</h4>
+        <div class="nl-row"><span class="t">Jul 19, 19:55</span><span>Model download · <span class="mono">huggingface.co</span> · 3.0 GB · hash verified ✓ — the only connection, ever</span></div>
+        <div class="nl-row"><span class="t">Since then</span><span style="color:var(--go);font-weight:600">0 outbound connections</span></div>
+        <div class="note">Redaction never touches the network — this list is the proof, not a promise. Check it yourself: turn on airplane mode, or watch with any network monitor.</div>
+        <div style="margin-top:10px"><button class="btn-quiet">Export network log</button></div>
+      </div>
+    </header>
+
+    <main class="content">
+
+    <!-- ===== LANE: REDACT ===== -->
+    <div class="lane" data-lane="redact" data-on style="width:100%;max-width:none;padding:0">
+
+      <!-- 1 · DROP -->
+      <section class="screen" data-s="1" data-on>
+        <div class="dropslim" onclick="void(0)" id="dropmore" hidden>Drop more files — or <u>browse</u></div>
+        <div class="dropcard" id="dropcard">
+          <img src="favicon.svg" alt="" />
+          <h2>Drop a document to redact</h2>
+          <div class="fmts">PDF, Word, or plain text — or click to <u>browse</u>. Folders work too.</div>
+          <div class="trustline">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            Processed entirely on this machine — nothing is uploaded, ever. <button class="btn-quiet" onclick="event.stopPropagation();document.getElementById('netlog').hidden=false" style="text-decoration:underline">See the network record</button>
+          </div>
+        </div>
+        <div class="undernote">Scanned pages are held for now — reading them needs OCR, which ships later. <button class="btn-quiet" style="text-decoration:underline">Try it on a sample NDA</button></div>
+
+        <div class="seclbl">Queue <span class="cnt">3 ready · 1 held</span></div>
+        <div class="q-row">
+          <span class="fbadge">TXT</span><span class="fname">jv-agreement-hastings.txt</span><span class="fmeta">6,694 words · 41 KB</span>
+          <span class="well"><span class="scanbar"><i></i></span><span style="white-space:nowrap">Scanning — pass 1 of 2</span></span>
+          <button class="rm" title="Remove">✕</button>
+        </div>
+        <div class="q-row">
+          <span class="fbadge">MD</span><span class="fname">side-letter-2026.md</span><span class="fmeta">1,102 words · 8 KB</span>
+          <span class="well"><span class="ringi" data-s="done"></span>34 entities found<button class="btn-ghost" onclick="adv(2)" style="margin-left:auto">Review</button></span>
+          <button class="rm" title="Remove">✕</button>
+        </div>
+        <div class="q-row">
+          <span class="fbadge">DOCX</span><span class="fname">engagement-approach.docx</span><span class="fmeta">2,282 words · 18 parts</span>
+          <span class="well"><span class="ringi" data-s="rev"></span>Reviewed — ready</span>
+          <button class="rm" title="Remove">✕</button>
+        </div>
+        <div class="q-row" data-held>
+          <span class="fbadge">PDF</span><span class="fname">signed-agreement-scan.pdf</span><span class="fmeta">image-only</span>
+          <span class="well"><span class="heldlbl">⚠ Held — scanned pages need OCR</span></span>
+          <button class="rm" title="Remove">✕</button>
+        </div>
+        <details class="why">
+          <summary>Why files get held — and the honest workarounds</summary>
+          <p>Scanned or image-only pages have no text to read; we hold them rather than silently miss what's in the pixels. Spreadsheets: save each sheet as CSV. Slide decks: File → Export → outline text. Emails: in Outlook, File → Save As → Text. Legacy .doc: re-save as .docx. Conversions lose images, charts, comments and hidden tabs — if the sensitive bits might live there, wait for native support.</p>
+        </details>
+        <div class="exportdock">
+          <button class="btn-red" onclick="adv(3)">Export redacted copy</button>
+        </div>
+        <div class="undernote" style="text-align:left">Every run is the full two-pass redaction (about 3 minutes per 7,000 words on this machine). No page caps, no metering — there is no server to throttle you.</div>
+      </section>
+
+      <!-- 2 · REVIEW -->
+      <section class="screen" data-s="2" style="width:100%;max-width:none;padding:0;height:calc(100vh - 48px)">
+        <div class="rev-wrap">
+          <div class="rev-paperpane">
+            <div class="paper">
+              <div class="doc">
+                <h3>Joint Venture Agreement</h3>
+                <p>This Agreement is entered into by and between <span class="sp sp-org" data-k="hastings">Hastings Holdings Ltd</span>, a company incorporated in Singapore (<span class="sp sp-id" data-k="uen">UEN 199204512K</span>), having its registered office at <span class="sp sp-loc" data-k="addr1">80 Raffles Place, #32-01</span>, and <span class="sp sp-org" data-k="intraco">Intraco Corporation</span> (together, the “Parties”).</p>
+                <p>1. <b>Representatives.</b> Hastings appoints <span class="sp sp-person" data-k="lim">Lim Wei Sheng</span> as its authorised representative, reachable at <span class="sp sp-contact" data-k="phone1">+65 6438 2210</span>. Intraco appoints <span class="sp sp-person" data-k="tan">Margaret Tan</span>, reachable at <span class="sp sp-contact" data-k="usphone">(415) 555-0173</span>.</p>
+                <p>2. <b>Notices.</b> All notices to <span class="sp sp-person" data-k="lim">Lim Wei Sheng</span> shall be copied to <span class="sp sp-person" data-k="tan">Margaret Tan</span>. As agreed by <span class="sp sp-person" data-k="low">wei sheng</span> in the side letter…</p>
+                <p>3. <span class="sp sp-term" data-k="junk1">Force Majeure</span>. Neither Party shall be liable for any failure caused by events beyond its reasonable control, subject to <span class="sp sp-term" data-k="junk2">Governing Law</span> and notice within ten <span class="sp sp-term" data-k="junk3">Business Days</span>…</p>
+              </div>
+            </div>
+          </div>
+          <div class="rev-rail">
+            <div class="cover"><span>Coverage</span><span class="segs"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span style="white-space:nowrap">14 of 14 parts</span></div>
+            <div class="pills" id="pills">
+              <button class="chipf" data-g="all" data-on>All 34</button>
+              <button class="chipf" data-g="both">Both passes 19</button>
+              <button class="chipf" data-g="single">One pass 7</button>
+              <button class="chipf" data-g="rail">Pattern 5</button>
+              <button class="chipf" data-g="residue">Second sweep 3</button>
+            </div>
+
+            <div class="egroup">People <span class="cnt">3</span></div>
+            <div class="erow" data-g="both" data-k="lim"><span class="edot" style="background:var(--c-person)"></span><span class="etext">Lim Wei Sheng</span><span class="eprov">both passes</span><span class="eocc">×12</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="both" data-k="tan"><span class="edot" style="background:var(--c-person)"></span><span class="etext">Margaret Tan</span><span class="eprov">both passes</span><span class="eocc">×9</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="residue" data-k="low"><span class="edot" style="background:var(--c-person)"></span><span class="etext">wei sheng</span><span class="eprov">second sweep</span><span class="eocc">×2</span><button class="eact">Discard</button></div>
+
+            <div class="egroup">Organizations <span class="cnt">2</span></div>
+            <div class="erow" data-g="both" data-k="hastings"><span class="edot" style="background:var(--c-org)"></span><span class="etext">Hastings Holdings Ltd</span><span class="eprov">both passes</span><span class="eocc">×41</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="both" data-k="intraco"><span class="edot" style="background:var(--c-org)"></span><span class="etext">Intraco Corporation</span><span class="eprov">both passes</span><span class="eocc">×38</span><button class="eact">Discard</button></div>
+
+            <div class="egroup">Locations <span class="cnt">1</span></div>
+            <div class="erow" data-g="single" data-k="addr1"><span class="edot" style="background:var(--c-loc)"></span><span class="etext">80 Raffles Place, #32-01</span><span class="eprov">one pass</span><span class="eocc">×3</span><button class="eact">Discard</button></div>
+
+            <div class="egroup">IDs &amp; contact <span class="cnt">3</span></div>
+            <div class="erow" data-g="rail" data-k="uen"><span class="edot" style="background:var(--c-id)"></span><span class="etext">UEN 199204512K</span><span class="eprov">pattern</span><span class="eocc">×4</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="single" data-k="phone1"><span class="edot" style="background:var(--c-contact)"></span><span class="etext">+65 6438 2210</span><span class="eprov">one pass</span><span class="eocc">×2</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="residue" data-k="usphone"><span class="edot" style="background:var(--c-contact)"></span><span class="etext">(415) 555-0173</span><span class="eprov">second sweep</span><span class="eocc">×1</span><button class="eact">Discard</button></div>
+
+            <div class="egroup">Possible over-matches <span class="cnt">3</span></div>
+            <div class="erow" data-g="rail" data-k="junk1" data-junk><span class="edot" style="background:var(--c-term)"></span><span class="etext">Force Majeure</span><span class="eprov">pattern</span><span class="eocc">×6</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="rail" data-k="junk2" data-junk><span class="edot" style="background:var(--c-term)"></span><span class="etext">Governing Law</span><span class="eprov">pattern</span><span class="eocc">×3</span><button class="eact">Discard</button></div>
+            <div class="erow" data-g="rail" data-k="junk3" data-junk><span class="edot" style="background:var(--c-term)"></span><span class="etext">Business Days</span><span class="eprov">pattern</span><span class="eocc">×2</span><button class="eact">Discard</button></div>
+
+            <div class="railbtns">
+              <button class="chipf" id="bulkjunk">Discard 3 over-matches</button>
+              <button class="chipf">Add a missed span…</button>
+            </div>
+            <div class="kbdhint"><kbd>↑</kbd><kbd>↓</kbd> move · <kbd>D</kbd> discard · <kbd>U</kbd> undo · <kbd>Enter</kbd> jump to text</div>
+            <div class="railbtns" style="justify-content:flex-end">
+              <button class="btn-red" onclick="adv(3)">Looks right — continue</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 · EXPORT -->
+      <section class="screen" data-s="3">
+        <h1>Export</h1>
+        <div class="sub">The redacted copy is what leaves your boundary. The key that reverses it stays here unless you export it deliberately — they must never travel together.</div>
+
+        <div class="funnel"><b>34 found → 31 kept → 214 occurrences blanked</b></div>
+        <div class="vrow"><span class="ck">✓</span> Every masked span re-checked against the export — nothing recoverable by extraction</div>
+        <div class="vrow"><span class="ck">✓</span> 14 of 14 document parts scanned · 1 embedded image noted as not scanned</div>
+        <div class="vrow"><span class="ck">✓</span> 0 outbound connections during this run · model hash pinned</div>
+
+        <div class="paperlet">
+          <h4>Receipt</h4>
+          <div class="rrow"><b>31 kept</b><span>entities masked across 214 occurrences · both passes + second sweep</span></div>
+          <div class="rrow"><b>3 discarded</b><span>over-matches you cleared in review, logged with your decision</span></div>
+          <div class="rrow"><b>Verified</b><span>export re-checked by extraction; original file untouched</span></div>
+          <div class="rrow"><b>Private</b><span>no network activity · processed on this machine only</span></div>
+          <div style="margin-top:8px"><button class="btn-quiet" style="text-decoration:underline">Export receipt</button></div>
+        </div>
+
+        <div class="keynote"><b>⚠</b><span><b>Keep the key private.</b> The re-identification key (and its plain two-column cheat sheet) reverses the redaction — never send it with the document. Tags are consistent within this document only: [PERSON-1] in a different file may be someone else.</span></div>
+
+        <div class="exportdock" style="justify-content:flex-start;gap:10px;align-items:center">
+          <button class="btn-red">Export redacted copy</button>
+          <button class="btn-quiet" style="text-decoration:underline">Formats: .txt · .docx · .pdf</button>
+          <button class="btn-quiet" style="text-decoration:underline">Cheat sheet</button>
+          <button class="btn-quiet" style="text-decoration:underline">Key (.json)</button>
+        </div>
+        <div class="postnote">Next: paste the redacted text into the AI you already use — ChatGPT, Claude, Copilot, Gemini. If the reply mentions [PERSON-1], keep the cheat sheet beside you; there's no auto-unmask, by design. Want it handled end-to-end instead? <b>simpler.asia</b> runs on the same subscription you already pay for.</div>
+        <div class="postnote" style="color:var(--mut)">This output is de-identified, not “anonymized” — and the last line of defense was you, ten seconds ago.</div>
+      </section>
+    </div>
+
+    <!-- ===== LANE: HISTORY ===== -->
+    <div class="lane" data-lane="history">
+      <h1>History</h1>
+      <div class="sub">Every redaction stays on this machine — files, decisions, receipts. Clear it any time in Settings.</div>
+      <div class="hrow"><span class="fbadge">TXT</span><span class="hname">jv-agreement-hastings.txt</span><span class="hmeta">today 14:32 · 31 kept · 3 discarded · 214 occurrences</span><span class="hlinks"><button>Receipt</button><button>Run log</button><button>Reopen review</button><button>Show files</button></span></div>
+      <div class="hrow"><span class="fbadge">MD</span><span class="hname">side-letter-2026.md</span><span class="hmeta">today 14:29 · reviewed, not exported</span><span class="hlinks"><button>Reopen review</button></span></div>
+      <div class="hrow"><span class="fbadge">TXT</span><span class="hname">nda-hifn-draft.txt</span><span class="hmeta">Jul 18 · 22 kept · 2 discarded · 187 occurrences</span><span class="hlinks"><button>Receipt</button><button>Run log</button><button>Show files</button></span></div>
+      <div class="hrow" data-held-row><span class="fbadge">TXT</span><span class="hname">promissory-note-v2.txt</span><span class="hmeta" style="color:var(--amber);font-weight:600">⚠ Incomplete — held · a model call failed · nothing was written</span><span class="hlinks"><button>Re-run</button></span></div>
+      <div class="postnote" style="color:var(--mut)">Run logs record what happened — counts and stages — never what was found. Document content is never logged.</div>
+    </div>
+
+    <!-- ===== LANE: SETTINGS ===== -->
+    <div class="lane" data-lane="settings">
+      <h1>Settings</h1>
+      <div class="sub">Everything here is local. No account, no sync — and no telemetry toggle, because there's no telemetry.</div>
+      <div class="setcard">
+        <h3>Redaction</h3>
+        <div class="srow"><span class="k">Save to</span><span class="seg"><button data-on>Next to original</button><button>A fixed folder…</button></span></div>
+        <div class="srow"><span class="k">Passes</span><span class="seg"><button>1</button><button data-on>2</button><button>3</button></span></div>
+      </div>
+      <div class="setcard">
+        <h3>History</h3>
+        <div class="srow"><span class="k">Keep history</span><span class="seg"><button data-on>On</button><button>Off</button></span></div>
+        <div class="srow"><span class="k">Stored</span><span>on this machine only · 4 runs · 122 KB</span></div>
+        <div class="srow"><button class="btn-quiet" style="text-decoration:underline">Clear history…</button></div>
+      </div>
+      <div class="setcard">
+        <h3>Engine</h3>
+        <div class="srow"><span class="k">Model</span><span>gemma-4-E2B · hash verified ✓ · <span class="sha">3646B4C1…55E6FD</span></span></div>
+        <div class="srow"><span class="k">Status</span><span style="color:var(--go);font-weight:600">Ready — local</span></div>
+        <div class="srow"><span class="k">Memory</span><span>16 GB detected · comfortable</span></div>
+        <div class="logpane">19:58:11  start llama-server · port 44173 · this machine only
+19:58:39  ready · warmup 28.1 s · memory check passed
+          prompts and document text are never logged</div>
+        <div class="srow" style="margin-top:6px;gap:14px">
+          <button class="btn-quiet" style="text-decoration:underline">Re-verify model</button>
+          <button class="btn-quiet" style="text-decoration:underline">Restart engine</button>
+          <button class="btn-quiet" style="text-decoration:underline">Open logs folder</button>
+          <button class="btn-quiet" style="text-decoration:underline" onclick="showSetup()">View first-run setup</button>
+        </div>
+      </div>
+      <div class="setcard">
+        <h3>Appearance</h3>
+        <div class="srow"><span class="k">Theme</span><span class="seg"><button data-on>Light</button><button>Dark chrome</button><button>System</button></span></div>
+        <div class="srow" style="color:var(--mut);font-size:12px">Dark mode darkens the chrome only — the document always stays paper.</div>
+      </div>
+    </div>
+
+    <!-- ===== LANE: ABOUT ===== -->
+    <div class="lane" data-lane="about">
+      <h1>About</h1>
+      <div class="sub">Simpler Legal v0.1 — local document redaction. Open source, Apache-2.0 licensed.</div>
+      <div class="setcard">
+        <div class="srow"><span class="k">Version</span><span>0.1.0 · engine frozen at bench-green</span></div>
+        <div class="srow"><span class="k">Network</span><span>one download at setup, then none — ever</span></div>
+        <div class="srow"><span class="k">Source</span><span><u>github.com/Simpler-Systems/simpler-legal</u> · verify us: turn off Wi-Fi and redact a document</span></div>
+        <div class="postnote">The honest claim: two independently-tested passes, each catching everything on our published test set, guarded by tests that fail loudly on any future leak. Not “provably perfect on any document ever written” — that's why you review the table before anything leaves.</div>
+      </div>
+    </div>
+
+    <!-- ===== SETUP (first run) ===== -->
+    <div class="lane" data-lane="setup" style="width:100%;max-width:none">
+      <div class="setupcard">
+        <img src="favicon.svg" alt="" />
+        <h2>One-time setup</h2>
+        <p>Simpler Legal downloads its one model (3.0 GB), verifies it by hash, and never touches the network again. This is the only connection this app will ever make.</p>
+        <div class="pbar"><i id="wzbar"></i></div>
+        <div class="wzstat" id="wzstat">Ready when you are.</div>
+        <div class="sha">gemma-4-E2B · 3646B4C147CD…AA455E6FD</div>
+        <div style="margin-top:18px;display:flex;gap:12px;justify-content:center;align-items:center">
+          <button class="btn-red" id="wzgo">Download &amp; verify</button>
+          <button class="btn-quiet" style="text-decoration:underline">Already have the model file?</button>
+          <button class="btn-red" id="wzdone" style="display:none" onclick="hideSetup()">Start redacting</button>
+        </div>
+        <div class="postnote" style="text-align:center;color:var(--mut)">Saw a blue “Windows protected your PC” note at install? Normal for a new open-source app — the binary is signed; Windows just hasn't met the publisher yet.</div>
+      </div>
+    </div>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span id="toastmsg">Discarded</span><button class="undo" onclick="undo()">Undo (10s)</button></div>
+
+<script>
+  // lanes
+  const laneEls=[...document.querySelectorAll('.lane')];
+  function showLane(name){
+    laneEls.forEach(l=>l.toggleAttribute('data-on', l.dataset.lane===name));
+    document.querySelectorAll('.nav-row').forEach(x=>x.toggleAttribute('data-on', x.dataset.lane===name));
+    document.getElementById('steps').style.visibility = name==='redact' ? 'visible' : 'hidden';
+  }
+  document.querySelectorAll('.nav-row').forEach(b=>b.addEventListener('click',()=>showLane(b.dataset.lane)));
+  function showSetup(){ showLane('setup'); }
+  function hideSetup(){ showLane('redact'); }
+
+  // corridor stepper (3 steps, ring-fill)
+  let maxReached=1;
+  function paintSteps(cur){
+    document.querySelectorAll('.stepq').forEach(s=>{
+      const n=+s.dataset.s;
+      s.dataset.state = n<cur ? 'done' : (n===cur ? 'active' : '');
+      s.toggleAttribute('data-locked', n>maxReached);
+    });
+  }
+  function go(n){
+    if(n>maxReached) return;
+    document.querySelectorAll('.screen').forEach(s=>s.toggleAttribute('data-on', s.dataset.s==String(n)));
+    paintSteps(n);
+    if(n===2) setTimeout(()=>selectRow(0),50);
+  }
+  function adv(n){ maxReached=Math.max(maxReached,n); go(n); }
+  document.querySelectorAll('.stepq').forEach(s=>s.addEventListener('click',()=>go(+s.dataset.s)));
+  paintSteps(1);
+
+  // review interactions
+  const rows=[...document.querySelectorAll('.erow')];
+  let sel=-1, lastKill=[], toastTimer=null;
+  function selectRow(i){
+    if(i<0||i>=rows.length) return;
+    sel=i;
+    rows.forEach((r,j)=>r.toggleAttribute('data-sel', j===i));
+    const k=rows[i].dataset.k;
+    document.querySelectorAll('.sp').forEach(m=>m.toggleAttribute('data-hot', m.dataset.k===k));
+    rows[i].scrollIntoView({block:'nearest'});
+  }
+  rows.forEach((r,i)=>{
+    r.addEventListener('click',()=>selectRow(i));
+    r.querySelector('.eact').addEventListener('click',e=>{e.stopPropagation(); r.hasAttribute('data-dead')?revive(r):kill(i);});
+  });
+  document.querySelectorAll('.sp').forEach(m=>m.addEventListener('click',()=>{
+    const i=rows.findIndex(r=>r.dataset.k===m.dataset.k);
+    if(i>=0){ selectRow(i); }
+  }));
+  function setDead(r,dead){
+    r.toggleAttribute('data-dead',dead);
+    r.querySelector('.eact').textContent=dead?'Restore':'Discard';
+    document.querySelectorAll('.sp[data-k="'+r.dataset.k+'"]').forEach(m=>m.toggleAttribute('data-dead',dead));
+  }
+  function kill(i,batch){
+    const r=rows[i]; if(!r||r.hasAttribute('data-dead'))return false;
+    setDead(r,true);
+    if(!batch){ lastKill=[r]; toast('Discarded “'+r.querySelector('.etext').textContent+'” — spans return to plain text'); }
+    return true;
+  }
+  function revive(r){ setDead(r,false); }
+  function undo(){ lastKill.forEach(r=>revive(r)); lastKill=[]; hideToast(); }
+  function toast(msg){
+    document.getElementById('toastmsg').textContent=msg;
+    document.getElementById('toast').setAttribute('data-on','');
+    clearTimeout(toastTimer); toastTimer=setTimeout(hideToast,10000);
+  }
+  function hideToast(){document.getElementById('toast').removeAttribute('data-on')}
+  document.addEventListener('keydown',e=>{
+    const on2=document.querySelector('.lane[data-lane="redact"]').hasAttribute('data-on')
+           && document.querySelector('.screen[data-s="2"]').hasAttribute('data-on');
+    if(!on2||/input|textarea/i.test(e.target.tagName))return;
+    if(e.key==='ArrowDown'||e.key==='j'){e.preventDefault();selectRow(Math.min(sel+1,rows.length-1));}
+    if(e.key==='ArrowUp'||e.key==='k'){e.preventDefault();selectRow(Math.max(sel-1,0));}
+    if(e.key==='d'||e.key==='D'||e.key==='x'){e.preventDefault();if(sel>=0)kill(sel);}
+    if(e.key==='u'||e.key==='U'){e.preventDefault();undo();}
+    if(e.key==='Enter'){e.preventDefault();const k=rows[sel]&&rows[sel].dataset.k;const m=document.querySelector('.sp[data-k="'+k+'"]');if(m)m.scrollIntoView({block:'center',behavior:'smooth'});}
+  });
+
+  // provenance filter
+  document.querySelectorAll('.chipf[data-g]').forEach(p=>p.addEventListener('click',()=>{
+    document.querySelectorAll('.chipf[data-g]').forEach(x=>x.removeAttribute('data-on'));
+    p.setAttribute('data-on','');
+    const g=p.dataset.g;
+    rows.forEach(r=>r.style.display=(g==='all'||r.dataset.g===g)?'':'none');
+  }));
+
+  // bulk over-matches
+  document.getElementById('bulkjunk').addEventListener('click',function(){
+    if(!this.dataset.armed){this.dataset.armed='1';this.textContent='Sure? Discard 3';this.style.color='var(--held)';return;}
+    const killed=[];
+    rows.forEach((r,i)=>{ if(r.hasAttribute('data-junk') && kill(i,true)) killed.push(r); });
+    lastKill=killed;
+    this.textContent='Over-matches cleared';this.dataset.armed='';this.style.color='';
+    toast(killed.length+' over-matches discarded — one Undo restores all');
+  });
+
+  // network log
+  document.getElementById('egress').addEventListener('click',e=>{
+    e.stopPropagation();
+    document.getElementById('netlog').hidden=!document.getElementById('netlog').hidden;
+  });
+  document.addEventListener('click',e=>{
+    const nl=document.getElementById('netlog');
+    if(!nl.hidden && !nl.contains(e.target)) nl.hidden=true;
+  });
+
+  // setup wizard
+  const egress=document.getElementById('egress'), egressTxt=document.getElementById('egresstxt');
+  document.getElementById('wzgo').addEventListener('click',function(){
+    this.style.display='none';
+    egress.setAttribute('data-fetch','');
+    egressTxt.textContent='fetching the model — the only network call this app ever makes';
+    const bar=document.getElementById('wzbar'), stat=document.getElementById('wzstat');
+    let pct=0;
+    const t=setInterval(()=>{
+      pct+=6; bar.style.width=Math.min(pct,100)+'%';
+      stat.textContent='Downloading — '+(3.0*Math.min(pct,100)/100).toFixed(1)+' of 3.0 GB · safe to leave running, it resumes';
+      if(pct>=100){clearInterval(t);
+        stat.textContent='Verifying against the pinned hash…';
+        setTimeout(()=>{ stat.textContent='Starting the local engine…';
+          setTimeout(()=>{ stat.textContent='Ready. Everything is offline from here on.';
+            egress.removeAttribute('data-fetch');
+            egressTxt.textContent='0 outbound connections';
+            document.getElementById('wzdone').style.display='';
+          },1200);
+        },1000);
+      }
+    },300);
+  });
+
+  // queue chrome
+  document.querySelectorAll('.q-row .rm').forEach(b=>b.addEventListener('click',e=>{
+    e.stopPropagation(); b.closest('.q-row').style.display='none';
+  }));
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+ "doc": "sg-r4-04.txt",
+ "docSha256_16": "7ef96b034ccbc301",
+ "entities": [
+  {
+   "category": "DATETIME",
+   "identifier_type": "period",
+   "occurrences": 4,
+   "off": 60034,
+   "len": 26
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "period",
+   "occurrences": 1,
+   "off": 56073,
+   "len": 21
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "period",
+   "occurrences": 1,
+   "off": 48974,
+   "len": 25
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "defined_term_alias",
+   "occurrences": 1,
+   "off": 65761,
+   "len": 5
+  }
+ ]
+}

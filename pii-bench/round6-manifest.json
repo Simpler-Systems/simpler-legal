@@ -1,0 +1,368 @@
+{
+ "builtAt": "2026-07-24",
+ "protocol": "ROUND 6: FS8+P0h fix-set first-contact; blind swarm gold BEFORE engine; published as drawn; arrival order",
+ "docs": [
+  {
+   "file": "edgar-r6-01.txt",
+   "source": "edgar-r6",
+   "title": "SMITH & WOLLENSKY RESTAURANT GROUP INC  (CIK 0001137047)",
+   "cite": "0001116679-06-000282",
+   "url": "https://www.sec.gov/Archives/edgar/data/1137047/000111667906000282/hazmatguaranty-dallas.htm",
+   "words": 5775,
+   "sha256_16": "2aa36f9d679b09d6"
+  },
+  {
+   "file": "edgar-r6-02.txt",
+   "source": "edgar-r6",
+   "title": "Avalon GloboCare Corp.  (ALBT)  (CIK 0001630212)",
+   "cite": "0001213900-23-043586",
+   "url": "https://www.sec.gov/Archives/edgar/data/1630212/000121390023043586/ea179379ex10-9_avalon.htm",
+   "words": 3131,
+   "sha256_16": "1930be9412bfac39"
+  },
+  {
+   "file": "edgar-r6-03.txt",
+   "source": "edgar-r6",
+   "title": "STONERIDGE INC  (SRI)  (CIK 0001043337)",
+   "cite": "0001144204-15-017240",
+   "url": "https://www.sec.gov/Archives/edgar/data/1043337/000114420415017240/v404813_ex10-3.htm",
+   "words": 2934,
+   "sha256_16": "5908b0a5431e9e6f"
+  },
+  {
+   "file": "edgar-r6-04.txt",
+   "source": "edgar-r6",
+   "title": "Ensysce Biosciences, Inc.  (ENSC, ENSCW)  (CIK 0001716947)",
+   "cite": "0001493152-21-016378",
+   "url": "https://www.sec.gov/Archives/edgar/data/1716947/000149315221016378/ex10-2.htm",
+   "words": 6072,
+   "sha256_16": "72d8c2189d9c7b74"
+  },
+  {
+   "file": "edgar-r6-05.txt",
+   "source": "edgar-r6",
+   "title": "CAPTERRA FINANCIAL GROUP, INC.  (CIK 0001233275)",
+   "cite": "0000823579-10-000269",
+   "url": "https://www.sec.gov/Archives/edgar/data/1233275/000082357910000269/ex1044.htm",
+   "words": 1980,
+   "sha256_16": "ed1fd325fba2a0fd"
+  },
+  {
+   "file": "edgar-r6-06.txt",
+   "source": "edgar-r6",
+   "title": "COLLEGIATE PACIFIC INC  (CIK 0000828747)",
+   "cite": "0000950134-06-021386",
+   "url": "https://www.sec.gov/Archives/edgar/data/828747/000095013406021386/d41271exv10w3.htm",
+   "words": 6584,
+   "sha256_16": "85c9f70eceefdd31"
+  },
+  {
+   "file": "edgar-r6-07.txt",
+   "source": "edgar-r6",
+   "title": "HANOVER DIRECT INC  (CIK 0000320333)",
+   "cite": "0000950123-01-509413",
+   "url": "https://www.sec.gov/Archives/edgar/data/320333/000095012301509413/y55962ex10-3.txt",
+   "words": 2890,
+   "sha256_16": "b5b284bfbef26fba"
+  },
+  {
+   "file": "edgar-r6-08.txt",
+   "source": "edgar-r6",
+   "title": "Suspect Detection Systems, Inc.  (CIK 0001391674)",
+   "cite": "0001213900-11-003976",
+   "url": "https://www.sec.gov/Archives/edgar/data/1391674/000121390011003976/f8k072711ex10xxii_suspect.htm",
+   "words": 1090,
+   "sha256_16": "b1067227bac5803c"
+  },
+  {
+   "file": "edgar-r6-09.txt",
+   "source": "edgar-r6",
+   "title": "Tower Group International, Ltd.  (CIK 0001289592)",
+   "cite": "0001193125-13-435382",
+   "url": "https://www.sec.gov/Archives/edgar/data/1289592/000119312513435382/d626587dex101.htm",
+   "words": 3833,
+   "sha256_16": "a9d0c70a2ca4ed85"
+  },
+  {
+   "file": "edgar-r6-10.txt",
+   "source": "edgar-r6",
+   "title": "HELIOS TECHNOLOGIES, INC.  (HLIO)  (CIK 0001024795)",
+   "cite": "0001564590-20-018045",
+   "url": "https://www.sec.gov/Archives/edgar/data/1024795/000156459020018045/hlio-ex101_6.htm",
+   "words": 4963,
+   "sha256_16": "c489340458fe46e5"
+  },
+  {
+   "file": "edgar-r6-11.txt",
+   "source": "edgar-r6",
+   "title": "PACIFIC OFFICE PROPERTIES TRUST, INC.  (CIK 0000830748)",
+   "cite": "0000830748-10-000041",
+   "url": "https://www.sec.gov/Archives/edgar/data/830748/000083074810000041/exh10_2.htm",
+   "words": 1582,
+   "sha256_16": "84b377f718cc71c0"
+  },
+  {
+   "file": "edgar-r6-12.txt",
+   "source": "edgar-r6",
+   "title": "MCT HOLDING CORP  (CIK 0001367311)",
+   "cite": "0000897101-12-000488",
+   "url": "https://www.sec.gov/Archives/edgar/data/1367311/000089710112000488/dakota121172_ex10-19.htm",
+   "words": 1530,
+   "sha256_16": "eab0702e33986839"
+  },
+  {
+   "file": "edgar-r6-13.txt",
+   "source": "edgar-r6",
+   "title": "CEDAR INCOME FUND LTD /MD/  (CDR-PB, CDR-PC)  (CIK 0000761648)",
+   "cite": "0000950116-03-001765",
+   "url": "https://www.sec.gov/Archives/edgar/data/761648/000095011603001765/ex10-32.txt",
+   "words": 2500,
+   "sha256_16": "d6303e4408a4f7f3"
+  },
+  {
+   "file": "edgar-r6-14.txt",
+   "source": "edgar-r6",
+   "title": "Inland Diversified Real Estate Trust, Inc.  (CIK 0001438897)",
+   "cite": "0001438897-10-000020",
+   "url": "https://www.sec.gov/Archives/edgar/data/1438897/000143889710000020/exhibit107.htm",
+   "words": 3918,
+   "sha256_16": "491c71119f27920a"
+  },
+  {
+   "file": "edgar-r6-15.txt",
+   "source": "edgar-r6",
+   "title": "GTJ REIT, Inc.  (CIK 0001368757)",
+   "cite": "0001104659-13-011788",
+   "url": "https://www.sec.gov/Archives/edgar/data/1368757/000110465913011788/a13-3284_3ex10d32.htm",
+   "words": 6350,
+   "sha256_16": "71e2d983fef90161"
+  },
+  {
+   "file": "us-r6-01.txt",
+   "source": "us-r6",
+   "title": "United States v. Nutall",
+   "cite": "180 F.3d 182",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662017)",
+   "words": 3740,
+   "sha256_16": "8970ca2257e29a95"
+  },
+  {
+   "file": "us-r6-02.txt",
+   "source": "us-r6",
+   "title": "Alvidres-Reyes v. Reno",
+   "cite": "180 F.3d 199",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662192)",
+   "words": 3181,
+   "sha256_16": "a33b803f213ae6f2"
+  },
+  {
+   "file": "us-r6-03.txt",
+   "source": "us-r6",
+   "title": "Felder v. Johnson",
+   "cite": "180 F.3d 206",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662232)",
+   "words": 5318,
+   "sha256_16": "3fcdea0769e9d80a"
+  },
+  {
+   "file": "us-r6-04.txt",
+   "source": "us-r6",
+   "title": "United States v. Green",
+   "cite": "180 F.3d 216",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662275)",
+   "words": 4805,
+   "sha256_16": "564416ec54b69393"
+  },
+  {
+   "file": "us-r6-05.txt",
+   "source": "us-r6",
+   "title": "United States v. Nuñez",
+   "cite": "180 F.3d 227",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662319)",
+   "words": 3320,
+   "sha256_16": "1c9bd5f25fb6370b"
+  },
+  {
+   "file": "us-r6-06.txt",
+   "source": "us-r6",
+   "title": "Bass v. Parkwood Hospital",
+   "cite": "180 F.3d 234",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662368)",
+   "words": 5903,
+   "sha256_16": "9d817767b9e24015"
+  },
+  {
+   "file": "us-r6-07.txt",
+   "source": "us-r6",
+   "title": "50-Off Stores, Inc. v. Banques Paribas (Suisse), S.A.",
+   "cite": "180 F.3d 247",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662463)",
+   "words": 6665,
+   "sha256_16": "e7350abaf853e814"
+  },
+  {
+   "file": "us-r6-08.txt",
+   "source": "us-r6",
+   "title": "Cummock v. Gore",
+   "cite": "180 F.3d 282",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662621)",
+   "words": 6362,
+   "sha256_16": "84ae9b97bc3b79a5"
+  },
+  {
+   "file": "us-r6-09.txt",
+   "source": "us-r6",
+   "title": "Byrd v. Reno",
+   "cite": "180 F.3d 298",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662678)",
+   "words": 2537,
+   "sha256_16": "cf08bf3dba6d7ce8"
+  },
+  {
+   "file": "us-r6-10.txt",
+   "source": "us-r6",
+   "title": "Southwestern Bell Telephone Co. v. Federal Communications Commission",
+   "cite": "180 F.3d 307",
+   "url": "https://static.case.law/f3d/180.zip (CAP id 11662765)",
+   "words": 3414,
+   "sha256_16": "82d25072fdc06101"
+  },
+  {
+   "file": "sg-r6-01.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 1",
+   "cite": "[2021] SGHC 1",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_1",
+   "words": 8304,
+   "sha256_16": "2e22021323802122"
+  },
+  {
+   "file": "sg-r6-02.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 2",
+   "cite": "[2021] SGHC 2",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_2",
+   "words": 10156,
+   "sha256_16": "54e8c07e23fb3c22"
+  },
+  {
+   "file": "sg-r6-03.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 3",
+   "cite": "[2021] SGHC 3",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_3",
+   "words": 16583,
+   "sha256_16": "3aeb44583a82a8e9"
+  },
+  {
+   "file": "sg-r6-04.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 4",
+   "cite": "[2021] SGHC 4",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_4",
+   "words": 9777,
+   "sha256_16": "2f93aacdf4a28bb4"
+  },
+  {
+   "file": "sg-r6-05.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 5",
+   "cite": "[2021] SGHC 5",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_5",
+   "words": 8969,
+   "sha256_16": "ae8049713fd7e2ea"
+  },
+  {
+   "file": "sg-r6-06.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 6",
+   "cite": "[2021] SGHC 6",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_6",
+   "words": 8500,
+   "sha256_16": "2ee77c1a5fed913c"
+  },
+  {
+   "file": "sg-r6-07.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 7",
+   "cite": "[2021] SGHC 7",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_7",
+   "words": 4208,
+   "sha256_16": "aded751bfb1c9569"
+  },
+  {
+   "file": "sg-r6-08.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 8",
+   "cite": "[2021] SGHC 8",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_8",
+   "words": 12892,
+   "sha256_16": "40473dc68ddf0c2e"
+  },
+  {
+   "file": "sg-r6-09.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 10",
+   "cite": "[2021] SGHC 10",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_10",
+   "words": 29338,
+   "sha256_16": "3fb6deda95152f59"
+  },
+  {
+   "file": "sg-r6-10.txt",
+   "source": "sg-r6",
+   "title": "[2021] SGHC 11",
+   "cite": "[2021] SGHC 11",
+   "url": "https://www.elitigation.sg/gd/s/2021_SGHC_11",
+   "words": 21026,
+   "sha256_16": "4c32ee0aa875b6ed"
+  },
+  {
+   "file": "sghcf-r6-01.txt",
+   "source": "sghcf-r6",
+   "title": "[2022] SGHCF 1",
+   "cite": "[2022] SGHCF 1",
+   "url": "https://www.elitigation.sg/gd/s/2022_SGHCF_1",
+   "words": 4228,
+   "sha256_16": "a41be6d0c3541b9e"
+  },
+  {
+   "file": "sghcf-r6-02.txt",
+   "source": "sghcf-r6",
+   "title": "[2022] SGHCF 2",
+   "cite": "[2022] SGHCF 2",
+   "url": "https://www.elitigation.sg/gd/s/2022_SGHCF_2",
+   "words": 3201,
+   "sha256_16": "52684cfe95fa84ec"
+  },
+  {
+   "file": "sghcf-r6-03.txt",
+   "source": "sghcf-r6",
+   "title": "[2022] SGHCF 3",
+   "cite": "[2022] SGHCF 3",
+   "url": "https://www.elitigation.sg/gd/s/2022_SGHCF_3",
+   "words": 5716,
+   "sha256_16": "a6ef098ed802113d"
+  },
+  {
+   "file": "sghcf-r6-04.txt",
+   "source": "sghcf-r6",
+   "title": "[2022] SGHCF 7",
+   "cite": "[2022] SGHCF 7",
+   "url": "https://www.elitigation.sg/gd/s/2022_SGHCF_7",
+   "words": 12352,
+   "sha256_16": "a82ea03bc5da3237"
+  },
+  {
+   "file": "sghcf-r6-05.txt",
+   "source": "sghcf-r6",
+   "title": "[2022] SGHCF 8",
+   "cite": "[2022] SGHCF 8",
+   "url": "https://www.elitigation.sg/gd/s/2022_SGHCF_8",
+   "words": 3481,
+   "sha256_16": "6a965ec19ff66ef0"
+  }
+ ],
+ "shaPinnedAt": "2026-07-25",
+ "shaNote": "sha256_16 = first 16 hex of sha256 over the extracted text as scored. A rebuild that does not match these was not the corpus these boards measured."
+}

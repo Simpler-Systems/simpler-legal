@@ -1,0 +1,96 @@
+{
+ "auditedAt": "2026-07-27T17:54:20.526Z",
+ "method": "deterministic identity-shape sweep vs gold span containment (red F8 pattern)",
+ "totalHits": 124,
+ "totalUncovered": 29,
+ "perShape": {
+  "zip-addr": 8,
+  "long-id": 21
+ },
+ "samples": {
+  "zip-addr": [
+   {
+    "file": "edgar-ex10-07.txt",
+    "off": 8703,
+    "len": 19
+   },
+   {
+    "file": "edgar-ex10-29.txt",
+    "off": 24025,
+    "len": 14
+   },
+   {
+    "file": "edgar-ex10-29.txt",
+    "off": 24162,
+    "len": 19
+   },
+   {
+    "file": "edgar-ex10-29.txt",
+    "off": 24335,
+    "len": 14
+   },
+   {
+    "file": "edgar-ex10-33.txt",
+    "off": 696,
+    "len": 18
+   },
+   {
+    "file": "edgar-ex10-33.txt",
+    "off": 21318,
+    "len": 18
+   },
+   {
+    "file": "edgar-ex10-34.txt",
+    "off": 696,
+    "len": 18
+   },
+   {
+    "file": "edgar-ex10-34.txt",
+    "off": 21318,
+    "len": 18
+   }
+  ],
+  "long-id": [
+   {
+    "file": "sg-judgment-13.txt",
+    "off": 74979,
+    "len": 8
+   },
+   {
+    "file": "us-opinion-03.txt",
+    "off": 34886,
+    "len": 7
+   },
+   {
+    "file": "us-opinion-11.txt",
+    "off": 19035,
+    "len": 7
+   },
+   {
+    "file": "us-opinion-12.txt",
+    "off": 4267,
+    "len": 7
+   },
+   {
+    "file": "us-opinion-12.txt",
+    "off": 4438,
+    "len": 7
+   },
+   {
+    "file": "us-opinion-12.txt",
+    "off": 7681,
+    "len": 7
+   },
+   {
+    "file": "us-opinion-12.txt",
+    "off": 10567,
+    "len": 7
+   },
+   {
+    "file": "us-opinion-16.txt",
+    "off": 1126,
+    "len": 7
+   }
+  ]
+ }
+}

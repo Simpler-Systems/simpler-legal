@@ -1,0 +1,20 @@
+{
+ "doc": "us-r5-09.txt",
+ "docSha256_16": "a1259a89889f7a89",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "legal_publisher_in_statute_citation_NOMASK",
+   "occurrences": 4,
+   "off": 575,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "legal_publisher_in_statute_citation_NOMASK",
+   "occurrences": 1,
+   "off": 8906,
+   "len": 6
+  }
+ ]
+}

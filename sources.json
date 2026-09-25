@@ -1,0 +1,794 @@
+[
+  {
+    "file": "corpus\\c1-fourth-amendment-doc1.txt",
+    "caseName": "United States v. Santa",
+    "court": "United States Court of Appeals for the Second Circuit",
+    "date": "1999-06-02",
+    "cite": "180 F.3d 20",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc2.txt",
+    "caseName": "United States v. Liu",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "1999-06-10",
+    "cite": "180 F.3d 957",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc3.txt",
+    "caseName": "United States v. Caballero-Chavez",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2001-08-13",
+    "cite": "260 F.3d 863",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc4.txt",
+    "caseName": "United States v. Washington",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2003-07-24",
+    "cite": "340 F.3d 222",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc5.txt",
+    "caseName": "United States v. Calor",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2003-08-15",
+    "cite": "340 F.3d 428",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc6.txt",
+    "caseName": "United States v. Lopez-Moreno",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2005-08-08",
+    "cite": "420 F.3d 420",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc7.txt",
+    "caseName": "Ward v. Dretke",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2005-08-09",
+    "cite": "420 F.3d 479",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc8.txt",
+    "caseName": "United States v. Navarro-Diaz",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2005-08-18",
+    "cite": "420 F.3d 581",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c1-fourth-amendment-doc9.txt",
+    "caseName": "United States v. Brown",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2007-08-22",
+    "cite": "500 F.3d 48",
+    "cluster": 1
+  },
+  {
+    "file": "newcases\\c1-fourth-amendment-new.txt",
+    "caseName": "United States v. Stroman",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2007-08-22",
+    "cite": "500 F.3d 61",
+    "cluster": 1
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc1.txt",
+    "caseName": "Hayden v. County of Nassau",
+    "court": "United States Court of Appeals for the Second Circuit",
+    "date": "1999-06-09",
+    "cite": "180 F.3d 42",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc2.txt",
+    "caseName": "Anderson v. Zubieta",
+    "court": "United States Court of Appeals for the District of Columbia Circuit",
+    "date": "1999-07-02",
+    "cite": "180 F.3d 329",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc3.txt",
+    "caseName": "Banks v. Travelers Companies",
+    "court": "United States Court of Appeals for the Second Circuit",
+    "date": "1999-05-12",
+    "cite": "180 F.3d 358",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc4.txt",
+    "caseName": "Richardson v. New York State Department of Correctional Service",
+    "court": "United States Court of Appeals for the Second Circuit",
+    "date": "1999-06-16",
+    "cite": "180 F.3d 426",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc5.txt",
+    "caseName": "Pietras v. Board of Fire Commissioners of the Farmingville Fire District",
+    "court": "United States Court of Appeals for the Second Circuit",
+    "date": "1999-06-18",
+    "cite": "180 F.3d 468",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc6.txt",
+    "caseName": "Brinkley v. Harbour Recreation Club",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "1999-06-14",
+    "cite": "180 F.3d 598",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc7.txt",
+    "caseName": "Davis v. Virginia Commonwealth University",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "1999-06-29",
+    "cite": "180 F.3d 626",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc8.txt",
+    "caseName": "Zugay v. Progressive Care, S.C.",
+    "court": "United States Court of Appeals for the Seventh Circuit",
+    "date": "1999-06-28",
+    "cite": "180 F.3d 901",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c2-title-vii-doc9.txt",
+    "caseName": "Stanback v. Best Diversified Products, Inc.",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "1999-05-10",
+    "cite": "180 F.3d 903",
+    "cluster": 2
+  },
+  {
+    "file": "newcases\\c2-title-vii-new.txt",
+    "caseName": "Scott v. County of Ramsey",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "1999-06-01",
+    "cite": "180 F.3d 913",
+    "cluster": 2
+  },
+  {
+    "file": "corpus\\c3-patent-doc1.txt",
+    "caseName": "Transmatic, Inc. v. Gulton Industries, Inc.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "1999-04-29",
+    "cite": "180 F.3d 1343",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc2.txt",
+    "caseName": "Finnigan Corp. v. International Trade Commission",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "1999-06-09",
+    "cite": "180 F.3d 1354",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc3.txt",
+    "caseName": "Innovad Inc. v. Microsoft Corp.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2001-08-06",
+    "cite": "260 F.3d 1326",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc4.txt",
+    "caseName": "Day International, Inc. v. Reeves Bros.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2001-08-09",
+    "cite": "260 F.3d 1343",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc5.txt",
+    "caseName": "Anchor Wall Systems, Inc. v. Rockwood Retaining Walls, Inc.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2003-08-13",
+    "cite": "340 F.3d 1298",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc6.txt",
+    "caseName": "Hewlett-Packard Co. v. Mustek Systems, Inc.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2003-08-07",
+    "cite": "340 F.3d 1314",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc7.txt",
+    "caseName": "Electronics for Imaging, Inc. v. Coyle",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2003-08-18",
+    "cite": "340 F.3d 1344",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc8.txt",
+    "caseName": "Bayer AG v. Housey Pharmaceuticals, Inc.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2003-08-22",
+    "cite": "340 F.3d 1367",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c3-patent-doc9.txt",
+    "caseName": "Freedman Seating Co. v. American Seating Co.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2005-08-11",
+    "cite": "420 F.3d 1350",
+    "cluster": 3
+  },
+  {
+    "file": "newcases\\c3-patent-new.txt",
+    "caseName": "MEMC Electronic Materials, Inc. v. Mitsubishi Materials Silicon Corp.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2005-08-22",
+    "cite": "420 F.3d 1369",
+    "cluster": 3
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc1.txt",
+    "caseName": "Foley & Lardner v. Biondo",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "1999-06-08",
+    "cite": "180 F.3d 126",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc2.txt",
+    "caseName": "Devan v. Simon DeBartolo Group, L.P.",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "1999-06-08",
+    "cite": "180 F.3d 149",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc3.txt",
+    "caseName": "United States Trustee v. First Jersey Securities, Inc.",
+    "court": "United States Court of Appeals for the Third Circuit",
+    "date": "1999-06-10",
+    "cite": "180 F.3d 504",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc4.txt",
+    "caseName": "Internal Revenue Service v. Orr",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "1999-07-12",
+    "cite": "180 F.3d 656",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc5.txt",
+    "caseName": "Traina v. Sewell",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "1999-07-27",
+    "cite": "180 F.3d 707",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc6.txt",
+    "caseName": "Levander v. Prober",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "1999-07-07",
+    "cite": "180 F.3d 1114",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc7.txt",
+    "caseName": "McCrory v. Spigel",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2001-08-13",
+    "cite": "260 F.3d 27",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc8.txt",
+    "caseName": "Hickman v. Texas",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2001-07-26",
+    "cite": "260 F.3d 400",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c4-bankruptcy-doc9.txt",
+    "caseName": "Poss v. Morris",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2001-08-13",
+    "cite": "260 F.3d 654",
+    "cluster": 4
+  },
+  {
+    "file": "newcases\\c4-bankruptcy-new.txt",
+    "caseName": "United States ex rel. Gebert v. Transport Administrative Services",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2001-08-14",
+    "cite": "260 F.3d 909",
+    "cluster": 4
+  },
+  {
+    "file": "corpus\\c5-asylum-doc1.txt",
+    "caseName": "Andriasian v. Immigration & Naturalization Service",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "1999-06-11",
+    "cite": "180 F.3d 1033",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc2.txt",
+    "caseName": "Yousefi v. U.S. Immigration & Naturalization Service",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "2001-08-08",
+    "cite": "260 F.3d 318",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc3.txt",
+    "caseName": "Valderrama v. Immigration & Naturalization Service",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2001-08-13",
+    "cite": "260 F.3d 1083",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc4.txt",
+    "caseName": "Kalitani v. Ashcroft",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2003-08-11",
+    "cite": "340 F.3d 1",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc5.txt",
+    "caseName": "Raffington v. Immigration & Naturalization Service",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2003-08-26",
+    "cite": "340 F.3d 720",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc6.txt",
+    "caseName": "Singh v. Immigration & Naturalization Service",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2003-08-15",
+    "cite": "340 F.3d 802",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc7.txt",
+    "caseName": "Mendez-Gutierrez v. Ashcroft",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2003-08-20",
+    "cite": "340 F.3d 865",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc8.txt",
+    "caseName": "Poradisova v. Gonzales",
+    "court": "United States Court of Appeals for the Second Circuit",
+    "date": "2005-08-16",
+    "cite": "420 F.3d 70",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c5-asylum-doc9.txt",
+    "caseName": "Lusingo v. Gonzales",
+    "court": "United States Court of Appeals for the Third Circuit",
+    "date": "2005-08-19",
+    "cite": "420 F.3d 193",
+    "cluster": 5
+  },
+  {
+    "file": "newcases\\c5-asylum-new.txt",
+    "caseName": "Kamara v. Attorney General",
+    "court": "United States Court of Appeals for the Third Circuit",
+    "date": "2005-08-29",
+    "cite": "420 F.3d 202",
+    "cluster": 5
+  },
+  {
+    "file": "corpus\\c6-insurance-doc1.txt",
+    "caseName": "Chiropractic America v. LaVecchia",
+    "court": "United States Court of Appeals for the Third Circuit",
+    "date": "1999-04-14",
+    "cite": "180 F.3d 99",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc2.txt",
+    "caseName": "Smoak v. Independent Fire Insurance",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "1999-06-23",
+    "cite": "180 F.3d 172",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc3.txt",
+    "caseName": "Morales v. Cooperative of American Physicians, Inc., Mutual Protection Trust",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "1999-06-14",
+    "cite": "180 F.3d 1060",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc4.txt",
+    "caseName": "Underwriters at Lloyd's v. Labarca",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2001-08-02",
+    "cite": "260 F.3d 3",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc5.txt",
+    "caseName": "Liberty Mutual Insurance v. Metropolitan Life Insurance",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2001-08-15",
+    "cite": "260 F.3d 54",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc6.txt",
+    "caseName": "Barron v. Unum Life Insurance Co. of America",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "2001-08-06",
+    "cite": "260 F.3d 310",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc7.txt",
+    "caseName": "McAvey v. Chen-Horng Lee",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2001-07-25",
+    "cite": "260 F.3d 359",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc8.txt",
+    "caseName": "Stucky v. City of San Antonio",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2001-07-30",
+    "cite": "260 F.3d 424",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c6-insurance-doc9.txt",
+    "caseName": "Lenning v. Commercial Union Insurance",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2001-08-07",
+    "cite": "260 F.3d 574",
+    "cluster": 6
+  },
+  {
+    "file": "newcases\\c6-insurance-new.txt",
+    "caseName": "Nichols v. United States",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2001-08-13",
+    "cite": "260 F.3d 637",
+    "cluster": 6
+  },
+  {
+    "file": "corpus\\c7-negligence-doc1.txt",
+    "caseName": "Bartley v. Euclid, Inc.",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "1999-06-25",
+    "cite": "180 F.3d 175",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc2.txt",
+    "caseName": "Walk v. Starkey Machinery, Inc.",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "1999-06-08",
+    "cite": "180 F.3d 937",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc3.txt",
+    "caseName": "Franklin Savings Corp. v. United States",
+    "court": "United States Court of Appeals for the Tenth Circuit",
+    "date": "1999-05-04",
+    "cite": "180 F.3d 1124",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc4.txt",
+    "caseName": "Saldana v. Kmart Corp.",
+    "court": "United States Court of Appeals for the Third Circuit",
+    "date": "2001-07-23",
+    "cite": "260 F.3d 228",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc5.txt",
+    "caseName": "Hickson Corp. v. Norfolk Southern Railway Co.",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2001-08-03",
+    "cite": "260 F.3d 559",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc6.txt",
+    "caseName": "Peklar v. Ikerd",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2001-08-09",
+    "cite": "260 F.3d 1035",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc7.txt",
+    "caseName": "Anderson v. Raymond Corp.",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2003-08-13",
+    "cite": "340 F.3d 520",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc8.txt",
+    "caseName": "Braga v. Genlyte Group, Inc.",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2005-08-25",
+    "cite": "420 F.3d 35",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c7-negligence-doc9.txt",
+    "caseName": "Georgacarakos v. United States",
+    "court": "United States Court of Appeals for the Tenth Circuit",
+    "date": "2005-08-29",
+    "cite": "420 F.3d 1185",
+    "cluster": 7
+  },
+  {
+    "file": "newcases\\c7-negligence-new.txt",
+    "caseName": "United States v. Moore",
+    "court": "United States Court of Appeals for the Tenth Circuit",
+    "date": "2005-08-30",
+    "cite": "420 F.3d 1218",
+    "cluster": 7
+  },
+  {
+    "file": "corpus\\c8-contract-doc1.txt",
+    "caseName": "Holmes v. Amerex Rent-A-Car",
+    "court": "United States Court of Appeals for the District of Columbia Circuit",
+    "date": "1999-06-18",
+    "cite": "180 F.3d 294",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc2.txt",
+    "caseName": "Cooper Distributing Co. v. Amana Refrigeration, Inc.",
+    "court": "United States Court of Appeals for the Third Circuit",
+    "date": "1999-06-18",
+    "cite": "180 F.3d 542",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc3.txt",
+    "caseName": "Scheduled Airlines Traffic Offices, Inc. v. Objective, Inc.",
+    "court": "United States Court of Appeals for the Fourth Circuit",
+    "date": "1999-06-14",
+    "cite": "180 F.3d 583",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc4.txt",
+    "caseName": "Khan v. Gallitano",
+    "court": "United States Court of Appeals for the Seventh Circuit",
+    "date": "1999-06-11",
+    "cite": "180 F.3d 829",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc5.txt",
+    "caseName": "Heating & Air Specialists, Inc. v. Jones",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "1999-06-07",
+    "cite": "180 F.3d 923",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc6.txt",
+    "caseName": "Hardy v. Jefferson Community College",
+    "court": "United States Court of Appeals for the Sixth Circuit",
+    "date": "2001-08-15",
+    "cite": "260 F.3d 671",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc7.txt",
+    "caseName": "Help At Home, Inc. v. Medical Capital, L.L.C.",
+    "court": "United States Court of Appeals for the Seventh Circuit",
+    "date": "2001-08-07",
+    "cite": "260 F.3d 748",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc8.txt",
+    "caseName": "Ernie Haire Ford, Inc. v. Ford Motor Co.",
+    "court": "United States Court of Appeals for the Eleventh Circuit",
+    "date": "2001-08-08",
+    "cite": "260 F.3d 1285",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c8-contract-doc9.txt",
+    "caseName": "Appling v. State Farm Mutual Automobile Insurance",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2003-08-13",
+    "cite": "340 F.3d 769",
+    "cluster": 8
+  },
+  {
+    "file": "newcases\\c8-contract-new.txt",
+    "caseName": "Lyrick Studios, Inc. v. Big Idea Productions, Inc.",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2005-08-05",
+    "cite": "420 F.3d 388",
+    "cluster": 8
+  },
+  {
+    "file": "corpus\\c9-defamation-doc1.txt",
+    "caseName": "Pipitone v. United States",
+    "court": "United States Court of Appeals for the Seventh Circuit",
+    "date": "1999-06-14",
+    "cite": "180 F.3d 859",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc2.txt",
+    "caseName": "Horwitz v. Board of Education of Avoca School District No. 37",
+    "court": "United States Court of Appeals for the Seventh Circuit",
+    "date": "2001-07-26",
+    "cite": "260 F.3d 602",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc3.txt",
+    "caseName": "Traditional Cat Ass'n v. Gilbreath",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2003-08-19",
+    "cite": "340 F.3d 829",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc4.txt",
+    "caseName": "e360 Insight v. Spamhaus Project",
+    "court": "United States Court of Appeals for the Seventh Circuit",
+    "date": "2007-08-30",
+    "cite": "500 F.3d 594",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc5.txt",
+    "caseName": "Levesque v. Doocy",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2009-03-19",
+    "cite": "560 F.3d 82",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc6.txt",
+    "caseName": "Price v. Stossel",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2010-08-24",
+    "cite": "620 F.3d 992",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc7.txt",
+    "caseName": "Cockram v. Genesco, Inc.",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2012-06-08",
+    "cite": "680 F.3d 1046",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc8.txt",
+    "caseName": "Obsidian Finance Group, LLC v. Cox",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2014-01-17",
+    "cite": "740 F.3d 1284",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c9-defamation-doc9.txt",
+    "caseName": "Gore v. Trans World Airlines",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2000-04-26",
+    "cite": "210 F.3d 944",
+    "cluster": 9
+  },
+  {
+    "file": "newcases\\c9-defamation-new.txt",
+    "caseName": "Weiner v. San Diego County",
+    "court": "United States Court of Appeals for the Ninth Circuit",
+    "date": "2000-04-27",
+    "cite": "210 F.3d 1025",
+    "cluster": 9
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc1.txt",
+    "caseName": "McDonnell Douglas Corp. v. National Aeronautics & Space Administration",
+    "court": "United States Court of Appeals for the District of Columbia Circuit",
+    "date": "1999-06-25",
+    "cite": "180 F.3d 303",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc2.txt",
+    "caseName": "Contract Freighters, Inc. v. Secretary of United States Department of Transportation",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2001-08-10",
+    "cite": "260 F.3d 858",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc3.txt",
+    "caseName": "BP Chemicals Ltd. v. Jiangsu SOPO Corp. (Group) Ltd.",
+    "court": "United States Court of Appeals for the Eighth Circuit",
+    "date": "2005-08-25",
+    "cite": "420 F.3d 810",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc4.txt",
+    "caseName": "General Universal Systems, Inc. v. HAL, Inc.",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2007-09-17",
+    "cite": "500 F.3d 444",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc5.txt",
+    "caseName": "Foster-Miller, Inc. v. Babcock & Wilcox Canada",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2000-03-31",
+    "cite": "210 F.3d 1",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc6.txt",
+    "caseName": "Reingold v. Swiftships Inc.",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2000-04-14",
+    "cite": "210 F.3d 320",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc7.txt",
+    "caseName": "Epstein v. C.R. Bard, Inc.",
+    "court": "United States Court of Appeals for the First Circuit",
+    "date": "2006-08-25",
+    "cite": "460 F.3d 183",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc8.txt",
+    "caseName": "Daniels Health Sciences, L.L.C. v. Vascular Health Sciences, L.L.C.",
+    "court": "United States Court of Appeals for the Fifth Circuit",
+    "date": "2013-03-05",
+    "cite": "710 F.3d 579",
+    "cluster": 10
+  },
+  {
+    "file": "corpus\\c10-trade-secret-doc9.txt",
+    "caseName": "Raytheon Co. v. Indigo Sys. Corp.",
+    "court": "United States Court of Appeals for the Federal Circuit",
+    "date": "2018-07-12",
+    "cite": "895 F.3d 1333",
+    "cluster": 10
+  }
+]

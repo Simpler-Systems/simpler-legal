@@ -1,0 +1,27 @@
+{
+ "doc": "sg-r5-06.txt",
+ "docSha256_16": "1fdcb784891420b6",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 70082,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 5,
+   "off": 74407,
+   "len": 3
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 103100,
+   "len": 9
+  }
+ ]
+}

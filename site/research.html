@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simpler Legal — The Measurement Record</title>
+<style>
+:root{
+  --paper:#F7F6F3; --ink:#37352F; --muted:#6F6B64; --line:#E3E1DC; --card:#FCFCFB;
+  --navy:#16324F; --navy-wash:#E8EEF6; --gold:#D4AF37; --good:#1E7F4F; --good-wash:#E2F2E9;
+  --warn:#9A7B24; --warn-wash:#F7F0DC; --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --paper:#191919; --ink:#E6E4DF; --muted:#9B968E; --line:#33322F; --card:#211F1E;
+         --navy-wash:#1C2B3D; --good-wash:#16281E; --warn-wash:#2B2517; }
+}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font:16px/1.65 'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;padding:0 20px 80px}
+main{max-width:880px;margin:0 auto}
+header{padding:56px 0 8px}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.kite{width:44px;height:44px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;flex:none}
+.kite svg{display:block}
+.brandstack{font-weight:700;line-height:1.15;font-size:17px}
+h1{font-size:34px;line-height:1.2;letter-spacing:-.01em;margin:6px 0 10px}
+.sub{color:var(--muted);max-width:620px}
+h2{font-size:22px;margin:56px 0 6px;letter-spacing:-.005em}
+h2 .sec{color:var(--gold);font-family:var(--mono);font-size:14px;margin-right:8px}
+h3{font-size:16px;margin:24px 0 6px}
+p{margin:10px 0;max-width:720px}
+.note{color:var(--muted);font-size:14px;max-width:720px}
+.headline{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:30px 0 8px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px}
+.stat b{display:block;font-size:30px;letter-spacing:-.02em;color:var(--navy)}
+@media (prefers-color-scheme: dark){ .stat b{color:#7FA6CC} }
+.stat span{font-size:13.5px;color:var(--muted)}
+.tablewrap{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;background:var(--card)}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:none}
+td.g{color:var(--good);font-weight:600}
+td.num{font-family:var(--mono);font-size:13.5px}
+.pill{display:inline-block;padding:1px 9px;border-radius:99px;font-size:12.5px;font-weight:600}
+.pill.good{background:var(--good-wash);color:var(--good)}
+.pill.warn{background:var(--warn-wash);color:var(--warn)}
+.pill.navy{background:var(--navy-wash);color:var(--navy)}
+@media (prefers-color-scheme: dark){ .pill.navy{color:#7FA6CC} }
+code,pre{font-family:var(--mono);font-size:13px}
+code{background:var(--navy-wash);padding:1px 6px;border-radius:5px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow-x:auto;margin:12px 0}
+ul{margin:10px 0 10px 22px;max-width:720px}
+li{margin:6px 0}
+.miss{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.miss code{background:var(--warn-wash)}
+.rule{border:none;border-top:1px solid var(--line);margin:48px 0}
+footer{margin-top:64px;color:var(--muted);font-size:13.5px}
+a{color:var(--navy)} @media (prefers-color-scheme: dark){ a{color:#7FA6CC} }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">
+    <div class="kite"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2 L20 10 L12 22 L4 10 Z" fill="#D4AF37"/></svg></div>
+    <div class="brandstack">Simpler<br>Legal</div>
+  </div>
+  <h1>The Measurement Record</h1>
+  <!-- This sentence used to read "Every claim on this page traces to a committed run record".
+       Two did not: a 3-lens adversarial panel whose only trace is a commit message (nothing
+       committed — LAUNCH.md 1.7), and a 122-second strip time found only in that same message.
+       Both are cut. What remains cites files: boards in pii-bench/runs/, the utility and
+       gold-ceiling results in pii-bench/, and the round write-ups. -->
+  <!-- Re-checked 2026-09-23, claim by claim. Two numbers rest on a committed file that is not a
+       run record: 14/14 (ROUND7.md only; the Family Court gold is withheld) and the firm-filings
+       round (OPS_LEDGER.md / FREEZE.md; its documents and hand check never entered the tree).
+       Each says so where it appears. The one post-contact rescore (round 4's P0f) is shown
+       beside its as-drawn board in §2. The repository answered 404 on 2026-09-23. -->
+  <p class="sub">Every number on this page comes from a file committed in the repository: the run
+  boards in <code>pii-bench/runs/</code>, the utility and gold-ceiling results in
+  <code>pii-bench/</code>, and the write-ups (ROUND4–7.md, FREEZE.md, BENCHMARK.md,
+  OPS_LEDGER.md). Where a number rests on a write-up rather than a board, the text says so. The
+  repository is <a href="https://github.com/Simpler-Systems/simpler-legal">github.com/Simpler-Systems/simpler-legal</a>.
+  Numbers are published as drawn — including the misses, each named by class with its diagnosis.
+  Each round's gold was sealed before the engine ever saw that round's paper; the one gold change
+  made after contact, in round 4, is shown beside the board it changed.</p>
+  <div class="headline">
+    <div class="stat"><b>46 / 0</b><span>unseen SEC-filed business agreements across four consecutive fresh draws — zero DIRECT identity leaks. 45 of the 46 ran the engine as it stood before its freeze, 1 the frozen engine. The draw before them, round 4, the first under the current gold and scorer, leaked 3 in 1 of its 15 and is published as drawn</span></div>
+    <div class="stat"><b>0.968</b><span>analytical utility: on 121 of 125 questions, a judge scored the answer from the masked copy equivalent in substance to the answer from the original. The copies were 25 round-4 documents, masked by the engine as it stood before its freeze</span></div>
+    <div class="stat"><b>3.35&nbsp;GB</b><span>the local model: one file, pinned by SHA-256. The engine reaches it on 127.0.0.1 only</span></div>
+    <div class="stat"><b>88.8%</b><span>the gold's own agreement on the development set: 213 of 240 quasi-identifier mask-or-keep calls re-judged blind agreed with it. Answering “keep” every time would agree on 84.6%</span></div>
+  </div>
+</header>
+
+<h2><span class="sec">§1</span>How the numbers are made</h2>
+<p>The discipline is <b>walk-forward</b>: every fix must prove itself on documents it has never
+seen. Each round draws fresh public paper by a fixed rule (fresh search queries, fresh
+court years, zero overlap with every prior draw, first qualifying documents in arrival order).
+The rule is written into the round's draw script. For rounds 6 and 7 it was committed in the
+round write-up about a minute before the draw commit (<code>4ecee03</code> before
+<code>81fe4c8</code>, <code>c72b7d7</code> before <code>a2df071</code>); for round 4, round 5 and
+the post-freeze probe it first appears with the draw. Neither is a pre-registration in any
+meaningful sense. A blind swarm of Opus agents (80 per
+round) builds gold <i>before the engine touches anything</i> (sealed by a wall commit), the engine runs
+once, and the board publishes as drawn. One variable per experimental arm. The identity gate —
+zero DIRECT leaks — is inviolable: an arm that leaks dies, whatever else it improves.</p>
+<p>The instrument is measured like the engine: the scorer carries a self-test (8/8), occurrence
+counting is word-bounded (v1 counted substrings — <code>Bo</code> "leaked" inside
+<code>Board</code>; we found it, fixed it, and rescored every baseline), and the gold's own
+agreement is published. 240 gold calls were sampled from the gold of the 100-document
+development set (<code>oos</code> in the repository), which was labelled differently from the
+rounds: two Sonnet labellers plus an adjudicator per document (<code>311e686</code>,
+BENCHMARK.md) — 120 courts, 120 business, every one a
+quasi-identifier mask-or-keep call; identity (DIRECT) labels were not sampled — and 8 agents
+re-judged them blind, without the gold's answer. They agreed with the sealed gold on 213:
+<b>88.8%</b> (courts 89.2, business 88.3). That is less than it sounds: 203 of the 240 calls
+were "keep", so answering "keep" every time would have agreed on 203, or 84.6%. It is an
+agreement rate on mask-or-keep calls, not a ceiling on quasi-identifier recall, and it says
+nothing about the DIRECT labels.
+It was measured on 2026-07-23 (commit <code>a266114</code>). The gold's doctrine was revised
+several times after that (projections P0f to P0k, commits <code>694b4c4</code> to
+<code>ae154ac</code>), and round 4's instrument-v2 board and the rounds 5–7 boards are scored
+under those revisions, against gold the Opus swarms labelled; the agreement was measured on
+neither, so for those boards it is an indicator, not a measured limit.
+<code>node pii-bench/gold-ceiling/score-ceiling.mjs</code> recomputes it from the committed
+sample, key and verdicts.</p>
+
+<h2><span class="sec">§2</span>The campaign — first contact, round over round</h2>
+<!-- Round 4 courts used to show only the instrument-v2 row (98.9 / 92%) under a note calling
+     every row sealed first contact. pii-bench/runs/ROUND4-courts-firstcontact.json is 87.9 /
+     76.0 / 30.3 / 56.8; ROUND4-courts-instrumentv2.json is 98.9 / 92.0 / 30.2 / 56.6; ROUND4.md
+     publishes both. P0f was committed after engine contact (694b4c4). -->
+<p class="note">Each row is the fix-set's first meeting with fresh paper, scored against that
+round's own sealed gold — except round 4's second courts row, rescored after contact under P0f,
+a projection that stops counting the court's own pseudonyms (which the engine correctly kept) as
+leaks (ROUND4.md). Both round-4 courts rows are shown. DIRECT = identity recall; gate = share of
+documents with zero identity leaks; QUASI = quasi-identifier recall; NM = preservation of text
+that should stay readable.</p>
+<div class="tablewrap"><table>
+<tr><th>Round</th><th>Genre</th><th>DIRECT</th><th>Gate</th><th>QUASI</th><th>NM</th></tr>
+<tr><td rowspan="3" class="num">4</td><td>Courts (25), as drawn</td><td class="num">87.9</td><td class="num">76%</td><td class="num">30.3</td><td class="num">56.8</td></tr>
+<tr><td>Courts (25), rescored under P0f</td><td class="num">98.9</td><td class="num">92%</td><td class="num">30.2</td><td class="num">56.6</td></tr>
+<tr><td>Business (15)</td><td class="num">96.6</td><td class="num">93%</td><td class="num">33.8</td><td class="num">74.2</td></tr>
+<tr><td rowspan="2" class="num">5</td><td>Courts (25)</td><td class="num">99.4</td><td class="num">92%</td><td class="num">39.4</td><td class="num">58.2</td></tr>
+<tr><td>Business (15)</td><td class="g">100.0</td><td class="g">100%</td><td class="num">29.5</td><td class="num">72.3</td></tr>
+<tr><td rowspan="2" class="num">6</td><td>Courts (25)</td><td class="num">98.5</td><td class="num">92%</td><td class="num">44.4</td><td class="num">56.0</td></tr>
+<tr><td>Business (15)</td><td class="g">100.0</td><td class="g">100%</td><td class="num">68.9</td><td class="num">66.3</td></tr>
+<tr><td rowspan="2" class="num">7</td><td>Courts (25)</td><td class="num">97.7</td><td class="num">84%</td><td class="num">39.5</td><td class="num">55.1</td></tr>
+<tr><td>Business (15)</td><td class="g">100.0</td><td class="g">100%</td><td class="num">43.4</td><td class="g">74.9</td></tr>
+<tr><td class="num">OOS</td><td>Business, drawn after the freeze (1)</td><td class="g">100.0</td><td class="g">100%</td><td class="num">47.1</td><td class="g">78.1</td></tr>
+</table></div>
+<p><span class="pill good">Business genre: converged</span> — four consecutive fresh draws,
+rounds 5, 6 and 7 plus the post-freeze pure-OOS probe, at zero DIRECT identity leaks:
+<b>46 unseen SEC-filed business agreements (EDGAR exhibits), zero identity leaks</b>. 43 of the
+46 contain an identity to leak; 3 contain none and could not have leaked. Rounds 5–7 each ran
+the engine as it stood that day; only the post-freeze probe ran the frozen configuration. The
+draw before them, round 4, the first under the current gold and scorer, leaked 3 DIRECT spans in
+1 of its 15 documents and is published as drawn. (Rounds 1–2 ran earlier under an older gold and
+scorer and are not comparable; ROUND5.md shows them.)</p>
+<p><span class="pill warn">Courts: not converged</span> — every fresh draw
+has surfaced new classes (two in round 5, two in round 6, five in round 7 per ROUND7.md), each
+named, and either fixed on later paper or
+left on the open shelf in FREEZE.md. Courts documents are public; the genre is our
+credibility bench, not a privacy product. The wobble is in §5, each miss named by class.</p>
+
+<h2><span class="sec">§3</span>The post-AI metric: does the analysis survive?</h2>
+<p>Pre-AI redaction tools measure spans. The real question in 2026 is different: <b>after
+masking, can a frontier model still do the work?</b> We measured it: 25 original/masked pairs,
+5 analytical questions each (obligations, procedure, remedies, risk — never identities). One
+analyst reads only the original, another only the masked copy, and a judge scores
+substance-equivalence. The judge is not blind: its prompt says which answer came from the
+redacted copy and that placeholder-for-name substitutions count as equivalent. All three roles
+are Opus agents (<code>pii-bench/utility-bench/harness-v1.js</code>).</p>
+<p><b>Aggregate utility 0.968</b> — 121 of 125 answers equivalent, zero partial, 24 of 25
+documents at a perfect 1.00. The four divergents are all in one document. The result file keeps
+the judge's reasons for three of them, and each faults the <i>original-side</i> answer, not the
+masked one: two say it was empty, one that it missed the question. They are counted against us
+and published as drawn. The 25 documents are round-4 paper, masked by the engine as it stood
+then, before the freeze.</p>
+
+<h2><span class="sec">§4</span>Transfer and the hard cases</h2>
+<ul>
+<!-- UK: UKPROBE-firstcontact.json scored 2026-07-23T17:14Z (eb3329d), before the round-6 and
+     round-7 fix-sets (692de46, ae154ac) and the freeze (04f3c5d). Pure-OOS: pureoos-manifest.json
+     "filed": "2026-01-21"; the draw commit e25637d (2026-07-24 18:24) carries the rule AND the
+     manifest; the freeze is 10:31 the same day. The document predates the project (day zero
+     2026-07-19), so "filed after the freeze" was false; drawn and run after it is true. -->
+<li><b>UK transfer probe:</b> the courts configuration as it stood before the round-6 and
+round-7 fixes, not changed for the UK, on 10 UK judgments it was never tuned for —
+<b>100.0 DIRECT, gate 100%</b>. The frozen configuration has not been run on this set.</li>
+<li><b>Court-anonymized family judgments (SGHCF):</b> the engine must <i>preserve</i> the
+court's own pseudonyms while catching real names the court missed. The parties' codes survive
+correctly — and the cited-case codes (<code>TYS v TYT [2017]</code>) exposed an instrument
+find: both our engine and the gold labelers of rounds 5 and 6 (Opus agent swarms) missed them.
+Fixed both sides; round 7 scored the class for the first time: <b>14/14 preserved</b>. That
+figure is recorded in ROUND7.md; because the Family Court gold is withheld, it cannot be
+rescored from the repository.</li>
+<li><b>The pure-OOS probe:</b> one document, drawn and run after the engine was frozen, by a
+fixed rule (a fresh query, the first qualifying 2026 filing, zero overlap with every earlier
+draw) committed together with its result — an executive transition agreement <b>filed
+2026-01-21</b>. It was filed months before the freeze and before this project began; what makes
+it unseen is that it was in no earlier draw. Blind gold sealed first; stripped through the live
+engine adapter. Board: 100.0 / gate 100% — 3 DIRECT spans in its gold, none readable — and the
+best preservation of the campaign (NM 78.1).</li>
+<li><b>Court filings in a firm's own shapes</b> (2026-09-15, after the freeze): 20 public
+filings from CourtListener RECAP — briefs, complaints, an answer, a demand letter, a
+settlement, declarations, an engagement letter — scored against 296 identifiers listed by one
+AI agent reading each original, with no second labeller, no sealed gold and no round board. Under the default setting an identifier stayed
+readable in <b>14 of 20</b> (27 of the 296, mostly party companies, law-firm names, docket
+numbers and fee amounts); under the opt-in “Our own matter files” setting, 8 of 20 (11 of the
+296). No email address or phone number survived under either. Of the 11 left under the firm
+setting, 7 sit in the first-page caption or a “Re:” line, by the survivor table in
+OPS_LEDGER.md (2026-09-15); FREEZE.md first said 8 and corrects itself to 7 (its
+correction C9). The record is
+OPS_LEDGER.md (2026-09-14 and 2026-09-15) and FREEZE.md; the documents, the engine output and
+the agent's list are not in the repository.</li>
+</ul>
+
+<h2><span class="sec">§5</span>The misses, by class</h2>
+<p class="note">The brand is honest misses. Every identity that survived a fresh-paper round
+of this campaign (rounds 4–7 and the pure-OOS probe) is listed here with its diagnosis. Each is
+either fixed — reproven on later paper, or, for round 7's two release-side breaks, re-run on the
+same documents because no round 8 was drawn — or named on the open shelf. Earlier rounds ran
+under an older gold scheme and scorer and are not comparable; ROUND5.md shows rounds 1–2. What this page does <em>not</em> print is the identifier itself: most
+of these came from Singapore judgments we are not free to redistribute, and several of them a
+court had already anonymised. The diagnosis is what carries the engineering; the string would
+only carry the person. Each is shown as its class, in its real shape. The repository does not
+yet hold to the same rule: the round write-ups (ROUND4–7.md), several engine source comments and
+some commit messages still name some of these people.</p>
+<div class="miss"><b>Round 4:</b> <code>[given name, inside a court-anonymised judgment]</code> — a
+real name the court's own anonymisation missed, and the engine too; the most important miss of
+the round. <code>[initials alias]</code> — an alias the initials rail did not derive.
+<code>[three surnames, one separation agreement]</code> — several individuals in one business
+agreement, under-tabled by the substrate; this is the round-4 business leak, 3 spans in 1 of
+15 documents. All five spans fixed before round 5, and no recurrence of those classes on
+round-5 paper.</div>
+<div class="miss"><b>Round 5:</b> <code>[surname, shared with a cited judge]</code> — a judge
+correctly identified and released shared a surname with the masked party, so the release
+surfaced it; collision veto added, fail-closed. <code>[given name in quotes, after a name
+run]</code> — a bare quoted nickname with no parenthesis or keyword; nickname rail added.
+Both classes: zero recurrence on rounds 6–7.</div>
+<div class="miss"><b>Round 6:</b> <code>[four × 4-digit account tail]</code> — introduced as
+"account number ending in NNNN", then reused as a defined alias; fragment rail added, reproven
+in round 7. <code>[surname of a long-dead composer]</code> — a cultural reference in a judge's
+flourish, a contested gold label, resolved by doctrine ruling: creators of cited works are not
+private individuals.</div>
+<div class="miss"><b>Round 7:</b> <code>[surname]</code> and <code>[three-part personal name +
+firm]</code> — two release-side breaks, where the engine unmasked correct masks via a caption
+format and a glue pattern it had never seen; both fixed and dry-run-proven the same session.
+<code>[three × SG vehicle plate, format SXX&nbsp;0000X]</code> — open shelf, rail-able.
+<code>[initials + numeric suffix]</code> — an affidavit alias, open shelf.
+<code>[single given name, non-English]</code> — in a footnote, the hardest of the set.
+<code>[bare definite role reference]</code> — a contested label, marked DIRECT against the
+labelling scheme's own role-word rule.</div>
+<p class="note">The frozen engine's known limits are stated in FREEZE.md: courts QUASI recall
+ran 39–44 on rounds 5–7. FREEZE.md's shelf once set that against the 88.8% gold agreement as a
+ceiling; its own correction C6 says the 88.8% is not a ceiling on quasi-identifier recall
+(answering "keep" every time would agree on 84.6%). The rounds did add quasi-identifier rules,
+but pushing that axis further belongs to a compliance profile and was deferred at the
+freeze — the export-to-AI profile's bar is utility, measured at 0.968 on round-4 paper
+masked before the freeze. And stripping withholds
+identities — it does not claim inference-proofing.</p>
+
+<h2><span class="sec">§6</span>Reproduce our numbers</h2>
+<pre># the scorer proves itself first
+node score-pii.mjs selftest                # 8/8 verdicts verified
+
+# re-draw from public sources: this re-runs the search and REWRITES the manifest;
+# the EDGAR legs query SEC full-text search live, so a later draw may differ
+node build-round7.mjs && node build-pureoos.mjs
+git checkout pii-bench/                    # put the pinned manifests back
+node backfill-manifest-sha.mjs --check     # checks all six sets: MISS for any you did not
+                                           # rebuild (exit 3), DRIFT if yours differ
+
+# the gold ships as character offsets; rebuild its span text from your corpus
+node gold-offsets.mjs hydrate              # walks every gold set; exits 3 while any is missing
+
+# rescore any board from committed gold + your own strip
+node score-pii.mjs --stripped &lt;dir&gt; --batch all --name recheck \
+  --labels pii-bench/round7-gold-product --docs raw/round7 \
+  --manifest pii-bench/round7-manifest.json
+
+# the frozen engine behind one endpoint (needs the local model)
+node serve-legal.mjs --port 1436 --llama 49400</pre>
+<p class="note">Model: Gemma E2B, quantized, not fine-tuned by us, sha256-pinned
+(<code>3646b4c1…</code>, 3.35&nbsp;GB), temperature 0, local llama.cpp server. No cloud, no
+fine-tune, no telemetry. The pin identifies the file the benchmark record ran on, and it is
+the SHA-256 Hugging Face lists for that file at revision <code>69536a21</code> of Google's
+repository <code>google/gemma-4-E2B-it-qat-q4_0-gguf</code>, where the README and the app send
+you to download it (checked 2026-09-25). Gold labels (as character offsets, not text), boards, manifests,
+doctrine projections, and the full round narratives (ROUND4–7.md, FREEZE.md, BENCHMARK.md) are
+committed in the repository. The Singapore Family Court gold is withheld, because it indexes
+where that court's own anonymisation missed, so the courts boards do not fully reproduce; the
+scorer says so and scores the rest (WITHHELD.md). What reproduces, once your rebuilt documents
+pass the hash check against the pinned manifests, is the gold, the manifests and the scorer:
+you can rescore against your own strip. The stripped outputs the boards scored are not
+committed (<code>raw/</code> is gitignored), so re-deriving a board means re-running the engine
+as it stood for that board: the commit that published it is <code>02b29a8</code> for round 5,
+<code>7788339</code> for round 6, <code>c8f2e68</code> for round 7 and <code>eb3329d</code> for
+the UK probe, and the post-freeze probe ran the frozen tag <code>v1-legal-frozen</code>. Serve
+the pinned model as well. The llama.cpp backend is not pinned (FREEZE.md), so model-side output
+may differ. With one set rebuilt, the hash check and the hydrate step report MISS for the others
+and exit 3; read the lines for your set. The draw scripts re-run the acquisition rather than
+replay a fixed list, and there is no replay-from-manifest command yet, so a later EDGAR rebuild
+that draws different documents cannot reproduce those boards (README.md).</p>
+
+<hr class="rule">
+<footer>
+<p><b>Simpler Legal</b> — the legal vertical of the simpler family. Engine frozen as
+<code>v1-legal-frozen</code>; this page reflects the record of 2026-07-19 to 2026-07-24, the
+firm-filings measurement of 2026-09-15, and the corrections recorded in the write-ups since.
+Third-party data: Caselaw Access Project (public domain), SEC EDGAR (US public records), TAB
+benchmark (MIT), Singapore eLitigation (public portal; judgments not redistributed — URLs and
+our annotations only, and no annotations for the Family Court set), The National Archives'
+Find Case Law (Open Justice Licence; URLs only), and CourtListener RECAP (public court
+filings; their text is not in the repository). Apache-2.0 licensed. Misses named by class on
+this page; the identifiers themselves are not reprinted here, though the round write-ups in the
+repository still name some.</p>
+</footer>
+</main>
+</body>
+</html>

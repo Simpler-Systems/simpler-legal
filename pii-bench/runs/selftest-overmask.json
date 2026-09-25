@@ -1,0 +1,132 @@
+{
+ "name": "selftest-overmask",
+ "batch": "selftest",
+ "strippedDir": "raw/scorer-selftest/overmask",
+ "scoredAt": "2026-09-25T03:23:40.859Z",
+ "aggregate": {
+  "docs": 6,
+  "scoredDocs": 6,
+  "missingOutputs": [],
+  "directRecall": 1,
+  "quasiRecall": 1,
+  "noMaskPreservation": 0,
+  "gatePassRate": 1,
+  "unmatchable": 5
+ },
+ "perDoc": [
+  {
+   "file": "us-opinion-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 11,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 17,
+    "preserved": 0
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 5,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 0
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 75,
+    "preserved": 0
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 41,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 0
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 36,
+    "preserved": 0
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-opinion-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 38,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 28,
+    "preserved": 0
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  }
+ ]
+}

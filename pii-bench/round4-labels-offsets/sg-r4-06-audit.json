@@ -1,0 +1,27 @@
+{
+ "doc": "sg-r4-06.txt",
+ "docSha256_16": "8a00cb1ec1377cfa",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 9310,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 85937,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 44284,
+   "len": 12
+  }
+ ]
+}

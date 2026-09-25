@@ -1,0 +1,27 @@
+{
+ "doc": "edgar-r4-14.txt",
+ "docSha256_16": "06f28a0bd2269c1b",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 12119,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 35125,
+   "len": 20
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 8,
+   "len": 2
+  }
+ ]
+}

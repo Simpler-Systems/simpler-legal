@@ -1,0 +1,65 @@
+{
+  "source": "https://raw.githubusercontent.com/NorskRegnesentral/text-anonymization-benchmark/558e09e26d6b36f5f78440074e6a233946d98bd9",
+  "commit": "558e09e26d6b36f5f78440074e6a233946d98bd9",
+  "license": "MIT (Norsk Regnesentral)",
+  "fetchedAt": "2026-07-21T07:51:20.334Z",
+  "splits": {
+    "train": {
+      "docs": 1014,
+      "words": {
+        "min": 185,
+        "median": 916,
+        "max": 5144
+      },
+      "mentions": 95030,
+      "annotatorsPerCorpus": 11
+    },
+    "dev": {
+      "docs": 127,
+      "words": {
+        "min": 248,
+        "median": 666,
+        "max": 2299
+      },
+      "mentions": 29435,
+      "annotatorsPerCorpus": 12
+    },
+    "test": {
+      "docs": 127,
+      "words": {
+        "min": 253,
+        "median": 629,
+        "max": 2072
+      },
+      "mentions": 30541,
+      "annotatorsPerCorpus": 12
+    }
+  },
+  "words": {
+    "min": 185,
+    "median": 869,
+    "max": 5144
+  },
+  "semanticCategories": {
+    "CODE": 6471,
+    "ORG": 40695,
+    "DEM": 8683,
+    "PERSON": 24322,
+    "DATETIME": 53668,
+    "LOC": 9982,
+    "QUANTITY": 4141,
+    "MISC": 7044
+  },
+  "identifierTypes": {
+    "DIRECT": 6739,
+    "NO_MASK": 50023,
+    "QUASI": 98244
+  },
+  "confidentialStatuses": {
+    "ETHNIC": 806,
+    "POLITICS": 1039,
+    "HEALTH": 2320,
+    "BELIEF": 655,
+    "SEX": 516
+  }
+}

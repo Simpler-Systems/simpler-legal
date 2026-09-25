@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simpler Legal — brief for IT &amp; InfoSec reviewers</title>
+<meta name="description" content="One page for IT and security teams: what Simpler Legal is, what it needs, what it does on the network and on the local ports, and what each of those statements rests on." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="canonical" href="https://simpler.legal/it.html" />
+<link rel="stylesheet" href="fonts.css" />
+<style>
+  /* paper-on-a-light-table, almond ground — matches index.html tokens */
+  :root{
+    color-scheme:light;
+    --table:#F0E9DD; --chrome:#F7F2E9; --paper:#FFFEFA; --card:#FAF6ED;
+    --hair:#E3DACA; --border:#CFC5B2; --border-strong:#8D8371; --hover:#EAE1D2;
+    --ink:#37352F; --sec:#5D5951; --mut:#665F55; --faint:#9B968E;
+    --red:#16324F; --red-hover:#A62B24;
+    --go:#1B7247; --amber:#8C6109;
+    --sh-card:0 1px 3px rgba(31,29,26,.05);
+    --sans:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+    --serif:'IBM Plex Serif','Charter',Georgia,Cambria,serif;
+    --mono:'IBM Plex Mono','Cascadia Code',Consolas,ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{overflow-x:clip}
+  :focus-visible{outline:2px solid var(--border-strong);outline-offset:2px;border-radius:3px}
+  body{background:var(--table);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:2.5px;text-decoration-color:var(--border)}
+  a:hover{color:var(--red);text-decoration-color:var(--red)}
+  code{font-family:var(--mono);font-size:.88em;background:var(--card);border:1px solid var(--hair);border-radius:5px;padding:1px 6px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px}
+
+  .navbar{position:sticky;top:14px;z-index:50;display:flex;justify-content:center;padding:0 16px}
+  .navpill{display:flex;align-items:center;gap:22px;background:rgba(255,253,247,.92);backdrop-filter:blur(8px);
+    border:1px solid var(--hair);border-radius:999px;padding:9px 20px;box-shadow:var(--sh-card);flex-wrap:nowrap;white-space:nowrap}
+  .navpill .brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink)}
+  .navpill .brand b{font-size:13.5px;font-weight:600}
+  .navpill nav{display:flex;gap:18px;font-size:13px;flex-wrap:nowrap}
+  .navpill nav a{color:var(--sec);text-decoration:none}
+  .navpill nav a:hover{color:var(--ink)}
+  @media (max-width:520px){.navpill .brand b{display:none}.navpill{gap:12px;padding:9px 16px}.navpill nav{gap:12px}}
+
+  .head{padding:56px 0 0}
+  .head h1{font-family:var(--serif);font-size:32px;font-weight:600;line-height:1.18;letter-spacing:-.01em;text-wrap:balance}
+  .head .sub{margin-top:12px;font-size:15px;color:var(--sec);max-width:68ch}
+  .head .print-note{margin-top:14px;font-size:12.5px;color:var(--mut)}
+
+  section{padding:44px 0 0}
+  section[id]{scroll-margin-top:88px}
+  section h2{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
+  section p, section li{color:var(--sec);font-size:14px;line-height:1.65;max-width:74ch}
+  section p b, section li b{color:var(--ink)}
+  section ul{margin:8px 0 0 20px}
+  section li{margin-bottom:8px}
+
+  .facts{background:var(--paper);border:1px solid var(--hair);border-radius:10px;overflow:hidden;box-shadow:var(--sh-card);margin-top:12px}
+  .facts table{border-collapse:collapse;width:100%;font-size:13.5px}
+  .facts td{border-bottom:1px solid var(--hair);padding:11px 15px;vertical-align:top;color:var(--sec);line-height:1.6}
+  .facts tr:last-child td{border-bottom:none}
+  .facts td:first-child{width:215px;font-weight:600;color:var(--ink);border-right:1px solid var(--hair)}
+  .ok{color:var(--go);font-weight:600}
+
+  footer{border-top:1px solid var(--hair);background:var(--chrome);margin-top:56px;padding:22px 0 40px;color:var(--mut);font-size:12.5px}
+  footer .row{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+  footer .spacer{flex:1}
+  footer a{color:var(--sec)}
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme:dark;
+      --table:#232220; --chrome:#2A2826; --paper:#2F2D2A; --card:#282624;
+      --hair:#3B3835; --border:#4A4641; --border-strong:#767068; --hover:#35322E;
+      --ink:#E7E4DE; --sec:#B4AEA5; --mut:#9B958B; --faint:#716C64;
+      --red:#6E96BE; --red-hover:#5B84AD;
+      --go:#54B183; --amber:#D3A445;
+      --sh-card:0 1px 3px rgba(0,0,0,.35);
+    }
+    .navpill{background:rgba(42,40,38,.94)}
+  }
+
+  /* forwarded and printed: force the light paper, drop the chrome */
+  @media print{
+    :root{
+      --table:#fff; --chrome:#fff; --paper:#fff; --card:#f5f2ec;
+      --hair:#d8d2c6; --border:#c2bbab; --ink:#1c1a17; --sec:#3d3a34; --mut:#5c574e;
+      --red:#16324F; --go:#175f3d; --sh-card:none;
+    }
+    .navbar{display:none}
+    .head{padding-top:8px}
+    section{padding-top:22px}
+    body{font-size:12.5px}
+    .facts{break-inside:avoid}
+    footer{background:none;margin-top:24px;padding:12px 0 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navpill">
+    <a class="brand" href="index.html"><img src="favicon.svg" alt="" width="20" height="20" style="border-radius:5px" /><b>Simpler Legal</b></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#download">Download</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal">Source</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+  <!-- Rewritten 2026-09-23 against the code. The previous brief described things that did not
+       exist: a ~3.0 GB model fetch over HTTPS from a download host of ours, an offline bundle
+       that "makes no network calls, ever", macOS and Linux builds, a portable build and an MSI,
+       a persistent local history, GitHub private security reporting, and a public,
+       reproducible source tree (LAUNCH.md §3.5, §3.6, §4.6, §6). 2026-09-25 (owner rulings 28
+       and 30): the release is v0.1.0 on GitHub Releases, unsigned; security reports go through
+       GitHub private vulnerability reporting; the licence is Apache-2.0 with the third-party
+       texts in licenses/. This page is not deployed before the repository is public and that
+       release exists. Each statement below names what it rests
+       on: the code (file named in a comment), a test in the repository, or nothing yet. The
+       local-port section is what the round of 2026-09-23 shipped: serve-legal.mjs (Host,
+       Origin and Sec-Fetch-Site gates, bearer on /strip, /hello, per-run llamaPort,
+       proxyHazard), service_auth.rs, port_owner.rs, relay.rs (per-connection model check),
+       model_watch.rs and engine.rs (model key, /slots off, scrub_proxy, sweep_stale_once,
+       log_dir). relay.rs is staged (git status "AM") but not yet committed: it must be
+       committed with the page, or a clone does not build the app this page describes. -->
+  <div class="head">
+    <h1>The brief for IT &amp; InfoSec reviewers</h1>
+    <p class="sub">A user at your organization wants to run Simpler Legal. This page answers the
+    standard software-review questions, and says for each answer what it rests on: the code, a
+    test in the repository, or nothing yet. The files named here are in the source repository,
+    <a href="https://github.com/Simpler-Systems/simpler-legal">github.com/Simpler-Systems/simpler-legal</a>.</p>
+    <p class="print-note">Print-friendly — forward or attach as-is to a software-review request.
+    This page lives at <code>simpler.legal/it.html</code>.</p>
+  </div>
+
+  <section id="what">
+    <h2>What it is</h2>
+    <p>A local desktop application for <b>Windows</b> that removes people's names and
+    identifying numbers from legal documents <b>on the user's machine</b>, so the redacted copy —
+    not the original — can be pasted into an AI service or shared externally. There is no
+    account and no server of ours; the app runs two local services of its own, on the loopback
+    address only (below). It is licensed Apache-2.0, © Simpler Terminal Value Systems Pte Ltd.
+    This page exists to give your existing software-review process what it will ask for — not
+    to argue you should skip that process. If your organization routes tools that touch
+    regulated data (MNPI, NPI, PHI) through third-party or AI-governance review, that review
+    still applies; this page describes the software's behavior, not your data-handling
+    policy.</p>
+  </section>
+
+  <section id="network">
+    <h2>Network behavior</h2>
+    <!-- engine.rs (every call to 127.0.0.1; complete_local writes raw HTTP on a socket
+         relay::connect_verified checked; Cargo.toml "No HTTP client crate", ureq removed;
+         scrub_proxy on every spawn: PROXY_VARS + --use-env-proxy out of NODE_OPTIONS);
+         serve-legal.mjs proxyHazard (exit 2, the proxy address never printed); relay.rs
+         Relay::start (exclusive_listener(0): an ephemeral 127.0.0.1 port, SO_EXCLUSIVEADDRUSE).
+         serve-legal.mjs listen on 127.0.0.1, launch-server.cmd --host 127.0.0.1. CSP:
+         tauri.conf.json app.security.csp (quoted whole); tauri-codegen 2.6.3
+         embedded_assets.rs add_if_applicable hashes every bundled .js/.mjs into script-src and
+         tauri 2.11.5 manager/mod.rs set_csp adds them to the served header; no
+         dangerousDisableAssetCspModification is set; app/frontend/index.html has no inline
+         <script> or <style>. A hash source in script-src makes a CSP2+ browser ignore
+         'unsafe-inline' for scripts (wf3 G13-2 found the bundled worker's hash in the built exe).
+         Bundle: no webviewInstallMode, targets nsis; Cargo.lock tauri 2.11.5 / tauri-utils
+         2.9.3, whose config.rs `impl Default for WebviewInstallMode` = DownloadBootstrapper
+         { silent: true } ("Requires an internet connection"), and @tauri-apps/cli 2.11.4 (the
+         installer's builder) has the same default in its config.schema.json. Model:
+         locate-model.mjs CATALOG; Setup.tsx's download button is disabled and there is no
+         file picker (LAUNCH.md §4.6); main.rs model search puts %APPDATA%\Simpler AI\models
+         first after SIMPLER_MODEL_PATH. -->
+    <div class="facts"><table>
+      <tr><td>Calls off the machine</td><td><span class="ok">None, by the code.</span> Every
+        request the app makes goes to <code>127.0.0.1</code>: port 1436 (the engine service),
+        port 49400 (the model server), and one more loopback port the system assigns at each
+        launch, where the app's own relay carries the engine's requests to the model (below).
+        The app's Rust side uses no HTTP client library: it writes HTTP itself on sockets it has
+        checked, so there is no proxy setting for it to read. Every process the app starts is
+        started with <code>HTTP_PROXY</code>, <code>HTTPS_PROXY</code>, <code>ALL_PROXY</code>
+        and <code>NODE_USE_ENV_PROXY</code> removed from its environment and
+        <code>--use-env-proxy</code> taken out of <code>NODE_OPTIONS</code>. An engine service
+        started by hand refuses to start when those settings would send its requests through a
+        proxy, and says which setting to remove. The model server is started with llama.cpp's own
+        settings that would make it connect to another computer removed from its environment
+        (<code>LLAMA_ARG_RPC</code>, which sends the model's work to other computers, the
+        settings that download a model, and <code>HF_TOKEN</code>) and with
+        <code>LLAMA_OFFLINE=1</code>, which llama.cpp's help describes as preventing network
+        access. That has not yet been run against a live model server. The window's configured Content-Security-Policy
+        is <code style="word-break:break-all">default-src 'self'; style-src 'self'
+        'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'
+        data:</code>, so the window's own requests may go to the app's own origin only. At
+        build, Tauri adds a SHA-256 hash of each bundled script to <code>script-src</code>, and
+        with a hash there WebView2 ignores <code>'unsafe-inline'</code> for scripts: inline
+        script does not run in the packaged window. Inline style is allowed. No packet capture
+        of the packaged app is on record yet.</td></tr>
+      <tr><td>The model file</td><td><b>Not downloaded by the app.</b> There is no in-app
+        download and no file picker. The user downloads <code>gemma-4-E2B_q4_0-it.gguf</code>
+        from Google's Hugging Face repository (Apache-2.0), at an address that names the file by
+        its revision and that the Setup and Settings screens show as text,
+        <code style="word-break:break-all">https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf/resolve/69536a21d70340464240401ba38223d805f6a709/gemma-4-E2B_q4_0-it.gguf</code>,
+        or gets it through whatever channel you approve, and places it in one of
+        the folders the app searches — the intended one is
+        <code>%APPDATA%\Simpler AI\models</code>. That folder is in the <b>roaming</b> profile:
+        under roaming profiles or folder redirection, a 3.3 GB file there is copied to the
+        profile server. The list the app searches also includes
+        <code>%LOCALAPPDATA%\simpler-legal\models</code>, which does not roam, or an
+        administrator can set <code>SIMPLER_MODEL_PATH</code> to a folder. The file must be exactly
+        3,349,514,112 bytes with SHA-256
+        <code style="word-break:break-all">3646b4c147cd235a44d91df1546d3b7d8e29b547dbe4e1f80856419aa455e6fd</code>;
+        when the app starts the model server, the file is hashed against that pin (by the
+        launcher, or by the app itself when <code>SIMPLER_MODEL_GGUF</code> names the file) and
+        one that does not match is refused. The pin identifies the file the benchmark ran on,
+        and it is the SHA-256 Hugging Face lists for that file at that revision of Google's
+        repository (checked 2026-09-25). The file of the same name on that repository's main
+        branch is a later upload with a different SHA-256; the app refuses it.</td></tr>
+      <tr><td>Installer and WebView2</td><td>The app renders in Microsoft's WebView2 runtime.
+        The repository does not set what the installer does when that runtime is missing, so
+        Tauri's default applies (<code>webviewInstallMode</code> unset; the default in the Tauri
+        build tools the repository uses (CLI 2.11.4, <code>tauri-utils</code> 2.9.3 in the Rust
+        lockfile) is <code>downloadBootstrapper</code>, silent): the installer downloads Microsoft's WebView2
+        bootstrapper from <code>https://go.microsoft.com/fwlink/p/?LinkId=2124703</code> and runs
+        it without a prompt, which Tauri documents as needing an internet connection. When the
+        runtime is already there, the installer does not connect. This is read from the
+        configuration and Tauri's installer template; no install has been captured.</td></tr>
+      <tr><td>Offline bundle</td><td><b>Not built.</b> The installer does not carry the
+        model.</td></tr>
+      <tr><td>Telemetry / analytics / updates</td><td>None in the code: no crash reporting, no
+        usage analytics, no update check, and no auto-updater.</td></tr>
+    </table></div>
+  </section>
+
+  <section id="ports">
+    <h2>The two local services, and who may use them</h2>
+    <p>Loopback ports belong to the machine, not to one user. On a shared Windows host (Remote
+    Desktop, Citrix) another signed-in account could bind port 1436 or 49400 before the app does
+    and wait for documents. Until 2026-09-23 the app would have sent it the unredacted text. It
+    now establishes who is on each port before any document text leaves its process.</p>
+    <div class="facts"><table>
+      <tr><td>Engine service<br><code>127.0.0.1:1436</code></td><td>A Node process running the
+        frozen redaction pipeline. It answers only requests addressed to
+        <code>127.0.0.1:1436</code> or <code>localhost:1436</code>, so a page reaching it through
+        a DNS name it controls (DNS rebinding) is refused. A browser request that names an Origin
+        is refused unless that Origin is the app's development server
+        (<code>http://localhost:1435</code> or <code>http://127.0.0.1:1435</code>), and a request
+        a browser marks as coming from another site is refused even without one. The one endpoint
+        that takes document text needs a per-launch token as a bearer credential, checked before
+        the request body is read. The app tells the service, for each document, which port to
+        reach the model on: the app's relay, not port 49400. A service too old to take that is
+        refused.</td></tr>
+      <tr><td>How the app knows it is its own service</td><td>The app makes 32 random bytes when
+        it starts the service and hands them over in the service's environment, never on its
+        command line. Before sending a document it sends a random challenge; the service must
+        answer with an HMAC-SHA256 keyed by that token, and the document then goes on the same
+        TCP connection. A process on the port that cannot answer is sent nothing and the screen
+        names it; if the model server is up, the app reads the document with its lighter in-app
+        engine instead. A
+        service a developer starts by hand writes its token to
+        <code>%LOCALAPPDATA%\Simpler AI\run\legal-service-1436.token</code> (not the roaming
+        profile); the app can use that service, and says on screen and on the receipt that it
+        did.</td></tr>
+      <tr><td>Model server<br><code>127.0.0.1:49400</code></td><td>llama.cpp's
+        <code>llama-server</code>, which cannot prove anything about itself. So the app reads
+        Windows' TCP tables. If any process listening on port 49400, on any address, belongs to
+        another Windows account, to SYSTEM, or is one the app may not inspect, the app refuses
+        the port, sends nothing, and names the process. Otherwise the model server is the
+        process that accepts a connection to <code>127.0.0.1:49400</code>. One the app started
+        is used. One under the user's own account that the app did not start is used only after
+        the model file it reports matches the pinned size and SHA-256, and it reports the
+        frozen context size (8192) and slot count (1); the screen and the receipt say it was
+        started outside the app. One that will not answer without a key, as the model server of
+        another open copy of the app does, is refused, and the screen says to close the other
+        copy and press Retry.</td></tr>
+      <tr><td>Every connection to the model</td><td>The pipeline's own stages connect to the
+        model many times per document, for minutes. They are pointed at the app's relay, a
+        loopback port the system picks at each launch that the app holds exclusively, so no
+        other process can open a second socket on it. The relay accepts a connection only from
+        the engine service the app started or one of its pipeline stages (or, during a run on a
+        service started by hand, that service or a process it started), and passes on only the
+        two requests the pipeline makes. For each one it opens its own connection to the model
+        port and writes nothing on it until Windows' connection table names the far end as the
+        checked model process, by process id and start time; if it is any other process, nothing
+        is written. During a run, a change of model process, or the model process exiting, stops
+        the run, and the app says so. The app's own requests to
+        the model (its in-app engine and its checks) use the same per-connection check, except
+        the status poll's <code>GET /health</code>, which carries no document text and only
+        decides whether those checks run next.</td></tr>
+      <tr><td>Web pages and the model server</td><td>The model server has none of the engine
+        service's Host or Origin checks. By default, upstream <code>llama-server</code> publishes
+        each slot's last prompt and output at <code>GET /slots</code> and answers any Origin,
+        so a web page open in the user's browser while it runs could read the last piece of a
+        document the model was given, or send it text. When the app starts the model server it
+        sets <code>LLAMA_ARG_ENDPOINT_SLOTS=0</code>, the switch that turns that endpoint off,
+        and a key made at that launch (<code>LLAMA_API_KEY</code>) that every endpoint except
+        <code>/health</code> and <code>/models</code> then requires. The key is in the app, and
+        in the environment of the launcher it starts and of what that launcher starts (the
+        model server and, when no model path is set, a model-locating step); the engine service,
+        its pipeline stages and web pages do not have it. The relay adds it to what it forwards.
+        Neither setting has been tested against a running server. So the app asks <code>/slots</code> on every model server it
+        uses, and asks its own whether a request without the key is refused; when either check
+        fails, the screen says so and tells the user what to do, and the app still uses that
+        server. The repository's own launcher (<code>tools/launch-server.cmd</code>,
+        <code>.sh</code>) sets neither, so a model server started by hand with it serves
+        <code>/slots</code> and takes requests without a key.</td></tr>
+      <tr><td>What this does not cover</td><td>A program running under the user's own account.
+        It can already read the user's files; no local check changes that. The
+        <code>/slots</code> exposure above is separate: there a web page, not a program, could
+        read document text.</td></tr>
+      <tr><td>How it is tested</td><td>Two test scripts run the real service on scratch ports
+        and check its side (<code>app/frontend/test/service-auth.mjs</code>,
+        <code>service-lifecycle.mjs</code>); both are part of the repository's one-command check
+        (<code>tools/verify.mjs</code>). The app's side — the port-owner check, the relay and its
+        per-connection check, the launch sweep — is Rust. It has unit tests
+        (<code>cargo test</code> in <code>app/src-tauri</code>), which the one-command check runs
+        when the Rust toolchain and the app's bundled Node runtime
+        (<code>app/src-tauri/binaries</code>) are present; when either is missing it skips them
+        and says which. No run of the frozen chain through the relay against a live model server
+        is recorded yet: the byte-for-byte comparison of the chain's output with and without the
+        relay has not been made (<code>FREEZE.md</code>, Transport changes).</td></tr>
+      <tr><td>Supervision</td><td>The services the app starts, and what they start, normally
+        run in Windows kill-on-close job objects (one for the model, one for the engine
+        service), so closing or crashing the app stops them. The
+        code states the exceptions. If Windows will not create the job, or will not put the model
+        launcher in one (a parent job that forbids nesting, as some managed environments set),
+        that process runs without the guarantee: closing the app stops the launcher, but a
+        <code>llama-server</code> it started can outlive the app and keep port 49400. The app
+        notices the second case and still recognises that server as its own. A process started
+        in the instant between a spawn and its assignment to the job is not covered either. A
+        service started by hand outside the app is not the app's to stop: closing the app does
+        not stop it, and until it is stopped where it was started, any program running under the
+        user's account can read its token file and send it text. Settings says so while the app
+        is using such a service.</td></tr>
+    </table></div>
+    <!-- Sources: serve-legal.mjs header and gates 1-4 (hostAllowed, DEV_ORIGINS, Sec-Fetch-Site,
+         bearerMatches before the body, /hello proofFor, tokenFile under LOCALAPPDATA);
+         service_auth.rs (one connection for /hello and /strip); engine.rs header, model_holder,
+         model_holder (a Foreign listener on ANY address refuses; the holder is whoever accepts
+         at 127.0.0.1, relay::answering), verify_hand_model (FROZEN_CTX 8192, FROZEN_SLOTS 1;
+         401/403 refused with "another open copy of simpler.legal … press Retry"),
+         adapter_refusal (in-app core fallback); serve-legal.mjs /strip llamaPort and /hello
+         llamaPerRun (an older service is refused); relay.rs header (admission, per-connection
+         connect_verified by pid + creation time, GET /health and POST /v1/chat/completions
+         only, Authorization stripped, key added for the app's own model, SO_EXCLUSIVEADDRUSE on
+         an ephemeral port); model_watch.rs (the run stops when the checked process exits);
+         port_owner.rs ("does not protect against code running as you"); engineStatus.ts
+         HAND_SERVICE / HAND_MODEL (receipt); job_object.rs Kind::Model / Kind::Adapter ("Known
+         gap, stated: a grandchild started between our spawn() and assign_child() is not
+         covered"; JOBS `None` "loses the cleanup guarantee") and engine.rs unjobbed_launcher /
+         shutdown (kills the launcher, not its llama-server); engine.rs spawn_launcher
+         (LLAMA_ARG_ENDPOINT_SLOTS=0, LLAMA_API_KEY: "neither has been run against a live server
+         by this lane") and model_notes() (/slots probe on every trusted server, the key check
+         on the app's own); `grep -i "slots\|api-key" tools/launch-server.*` finds nothing.
+         Two exceptions the rows state, because an auditor who greps will find them: status_now
+         (engine.rs:1163) polls GET /health through http_get, a plain connect_timeout with no
+         owner check (only its answer decides whether trusted_model runs); and the key is set
+         with cmd.env on the launcher's cmd.exe (spawn_launcher), so cmd.exe, llama-server and
+         launch-server.cmd's `node locate-model.mjs` inherit it — model_key's "held in this
+         process only" is the in-memory copy, not the whole truth.
+         tools/verify.mjs gates service-auth, service-lifecycle and rust-unit (cargo test,
+         offline; its need() skips it, with the reason, when cargo is not on PATH or
+         app/src-tauri/binaries is absent); 44 #[test] in app/src-tauri/src as of 2026-09-23.
+         No file records a full-chain run: service-auth.mjs says the Rust half "needs a built
+         binary and is not run here", service_auth.rs:18 says a scratch harness CAN drive it,
+         and FREEZE.md (Transport changes) says the relay run against a live model server is
+         not recorded. A hand-started service outliving the app (owner ruling, 2026-09-23: stated,
+         not killed): engineStatus.ts, the Settings line for t.service === 'hand' ("Closing this
+         app does not stop that service …"). Left on disk: engineStatus.ts, the `disk` sentences
+         (fixed words, no path; `named` says where the folder is named: legal-serve.log for a
+         service the app started, engine.rs pump_logs, or the window of a hand-started one;
+         serve-legal.mjs's own error line names the folder and is kept off the receipt);
+         Export.tsx prints the engine detail on the receipt's engine line.
+         tools/site-claims.mjs holds these rows to that code. The two service test files were
+         staged but not committed when this was written. -->
+  </section>
+
+  <section id="endpoint">
+    <h2>Endpoint requirements</h2>
+    <div class="facts"><table>
+      <tr><td>Platform</td><td>Windows x64 only. The build produces one NSIS <code>.exe</code>
+        installer; no macOS, Linux, MSI or portable build exists.</td></tr>
+      <tr><td>Admin rights</td><td>Not required: the installer is configured as a per-user
+        install. The install folder must be writable, because the engine service writes its
+        working files there (below).</td></tr>
+      <tr><td>SmartScreen</td><td><b>v0.1.0, Windows, unsigned: Windows SmartScreen will
+        warn</b> before the installer runs. Nothing in the repository signs the installer or the
+        app's executable, so there is no publisher for Windows to recognise. The way to know what
+        you are running is to build it from source (<code>BUILDING.md</code> in the
+        repository).</td></tr>
+      <tr><td>Data at rest</td><td>Saved exports go where the user saves them. The app keeps no
+        document history between sessions. Kept between sessions, in the app's local web
+        storage: the user's always-redact term list and two settings (practice and redaction
+        profile). While the engine service works on a document it writes working copies —
+        including the unredacted text and the key from tags back to names — under the install
+        folder's <code>engine\raw\stripped\_serve\</code>, and deletes them when the run ends. If
+        the app or the service is killed, they stay until the next launch of the app, or the
+        next start of a service on the same port, removes them; the app's sweep deletes nothing
+        when it cannot read which ports are in use. When a run fails or is stopped and its working
+        copies were not removed, the engine line on the screen and on the receipt says the
+        working copy and the key were left on the disk, in fixed words that name no folder, and
+        says where the folder is named: in <code>legal-serve.log</code>, in the logs folder the
+        History screen gives, when the app started the service (the app's next start of the
+        service rewrites that file and removes the folder or names it there again), or in the
+        window a service started by hand runs in.
+        The in-app engine writes nothing to disk.
+        Two log files, overwritten each time the app starts the service or the model server, sit
+        in the local (not roaming) profile: <code>%LOCALAPPDATA%\Simpler AI\logs\legal-serve.log</code>
+        (the service's status lines, which name paths, run ids and failures) and
+        <code>legal-llama-server.log</code> (llama.cpp's own console output, at a verbosity the
+        app fixes so that a user setting cannot raise it). The app rewrites the user's profile
+        path and account name (when it is three characters or longer) in each line to
+        <code>%USERPROFILE%</code> and <code>%USERNAME%</code>. In one measured model-server log
+        at that verbosity (347 lines) the account name appeared only inside the model's path and
+        no document text appeared; the log has not been audited for every setting, and an
+        account name with non-ASCII letters can survive in the launcher's own echo line (not
+        tested). Earlier builds wrote these two logs to the roaming
+        <code>%APPDATA%\Simpler AI\logs</code>; the app deletes those two files at
+        launch. A third file in the same folder, <code>legal-app-exit.log</code>, is written only
+        when the app has to end itself after its window has closed: a line with the time and what
+        it did to stop the engine, with no document text and no paths. It is kept until it passes
+        256 KB, then deleted at the next launch. An ordinary close writes nothing to it.</td></tr>
+      <tr><td>What the installer carries</td><td>The app, a Node runtime for the engine
+        service, the pipeline scripts, a llama.cpp build (<code>llama-server.exe</code> and
+        its DLLs), and a <code>licenses</code> folder beside the app with this product's
+        <code>LICENSE</code>, <code>NOTICE</code> and <code>THIRD_PARTY_NOTICES.md</code>, the
+        licence texts of what it carries, and a note on the three Microsoft runtime files beside
+        llama.cpp, which come with no licence text. The model is not included.</td></tr>
+    </table></div>
+    <!-- tauri.conf.json (targets nsis, installMode currentUser, externalBin binaries/node,
+         resources incl. llama-cuda/ -> llama/); History.tsx ("history doesn't persist between
+         sessions"); practice.ts, profile.ts, protected.ts (localStorage); serve-legal.mjs
+         scratch note and engine.rs shutdown / sweep_adapter_trees (engine_root is
+         <exe dir>/engine, so the tree is engine\raw\stripped\_serve); engine.rs
+         sweep_stale_once (once per launch, before any spawn; idle_by: nothing deleted when the
+         port table cannot be read; deletes the two roaming logs) and serve-legal.mjs
+         sweepStale('boot sweep') (its own port's trees); engine.rs log_dir (%LOCALAPPDATA%,
+         "Measured 2026-09-23 … 347 lines"), log_file (truncate per start), redaction_patterns
+         (names under 3 chars left alone) and redact ("an account name outside ASCII can
+         survive in that one line (not measured)"), spawn_launcher LLAMA_LOG_VERBOSITY=3 and
+         LLAMA_LOG_FILE removed; serve-legal.mjs console lines (token path, sweep counts, run
+         ids, rm failures; stage output is captured by execFile, not logged). -->
+  </section>
+
+  <section id="applocker">
+    <h2>Application control (AppLocker / WDAC / MDM)</h2>
+    <p>A per-user install answers <i>elevation</i>, not <i>allowlisting</i>. If your endpoints run
+    application control, the app needs rules:</p>
+    <ul>
+      <li><b>Publisher rule:</b> <b>not available</b> — nothing is code-signed, so there is no
+        publisher name or certificate thumbprint to write a rule against. Use hash rules against
+        the release you deploy or a build you produced.</li>
+      <li><b>What runs:</b> the app's own executable; <code>node.exe</code> beside it, which runs
+        the engine service and its pipeline stages; <code>cmd.exe</code> running
+        <code>engine\tools\launch-server.cmd</code>; and <code>llama\llama-server.exe</code>.
+        Blocking <code>cmd.exe</code> or <code>llama-server.exe</code> stops the model from
+        starting. Blocking <code>node.exe</code> stops the engine service, and stops the model
+        too, because the launcher uses <code>node.exe</code> to find and hash-check the model
+        file — unless the <code>SIMPLER_MODEL_GGUF</code> environment variable names the model
+        file, in which case the app hash-checks it itself, starts the model, and documents go to
+        the lighter in-app engine. With no model, the app marks the document "Read, not
+        redacted" and <b>does not redact it</b>: it masks only the user's always-redact list and
+        the safety-net patterns for structured identifiers (phone numbers, emails and the like),
+        and the rest is left to the user to select by hand. The in-app engine, on which none of
+        the published numbers was measured, runs when the model server is up and the engine
+        service is absent, refused, or fails on a document; the screen and the receipt name
+        it.</li>
+      <li><b>Install path:</b> by default <code>%LOCALAPPDATA%\simpler.legal</code>, the
+        per-user folder Tauri's installer names after the product; its setup program shows a
+        folder page where the user can choose another, so read the path from the machine. This
+        is read from Tauri's installer template; no install has been captured.</li>
+    </ul>
+    <!-- engine.rs "Layout the packaged app expects" and spawn_launcher (Command::new("cmd") on
+         tools/launch-server.cmd; check_explicit_model hashes SIMPLER_MODEL_GGUF in Rust before
+         the spawn). launch-server.cmd:37-39 skips `node locate-model.mjs --path --verify`
+         (line 46, its only node use) when SIMPLER_MODEL_GGUF is set, and exits 2 with no model.
+         App.tsx stripInto: `const up = svc ? true : await ensureEngine()`; with no model, the
+         document gets protectedEntities + syncFloorRows only and the status "Read, not redacted
+         — engine offline" (or "— engine error" when the service is up and the model is not).
+         engine.ts stripDocument: the in-app core (stripText) runs when legalServiceHealth is
+         false, and in the catch "Legal service failed … using in-app core" when the service
+         fails on a document, including a run the app stopped. -->
+  </section>
+
+  <section id="verify">
+    <h2>Verify it yourself — don't take this page's word</h2>
+    <ul>
+      <li><b>Airplane test:</b> disable networking and redact a document. By the code, everything
+        should work, because every call the app makes is to this machine. No recorded run of this
+        test is on file.</li>
+      <li><b>Wire audit:</b> run a network monitor (Wireshark, or Windows' own pktmon or Resource
+        Monitor) during a redaction. By the code you should see only loopback traffic to
+        <code>127.0.0.1</code>: ports 1436 and 49400, and the relay's port, which changes at
+        each launch. No capture is on record. This is the check
+        that does not depend on the app's own reporting: the app's in-window record counts only
+        its window, not its background workers, its Rust side or other processes, and says
+        so.</li>
+      <li><b>Port audit:</b> <code>netstat -ano</code> shows which process holds 1436 and 49400;
+        the app sends text to 1436 only after its holder proves it has the launch's token, and
+        refuses a 49400 holder under another Windows account, SYSTEM, or a process it may not
+        inspect.</li>
+      <li><b>Source audit:</b> the window's requests go through one file,
+        <code>app/frontend/src/lib/tauri.ts</code>; in the packaged app they become commands in
+        <code>app/src-tauri/src/engine.rs</code>, which reaches <code>127.0.0.1:1436</code> and
+        <code>127.0.0.1:49400</code> only. The pipeline's stages reach the model through the
+        app's relay (<code>app/src-tauri/src/relay.rs</code>). There is no model download to
+        audit.</li>
+      <li><b>Artifact audit:</b> the installer is unsigned, so take its SHA-256 yourself from the
+        copy you reviewed and allowlist that hash. The model pin is in
+        <code>locate-model.mjs</code> and in the app.</li>
+      <li><b>Accuracy audit:</b> the benchmark's draw manifests, gold labels (as character
+        offsets), scorer and result boards are in the repository; the documents themselves
+        re-fetch from public sources, and one court's gold is withheld. The measurement record is
+        at <a href="research.html">simpler.legal/research</a>.</li>
+    </ul>
+  </section>
+
+  <section id="artifacts">
+    <h2>Audit artifacts your users get</h2>
+    <p>Every export can come with a <b>redaction receipt</b>. It records rows kept and left
+    visible, tags placed, which safety-net tables ran, how many rows the user decided and how
+    many stand as the engine marked them, whether the review was finished, a mask check, a
+    check that none of the listed names is found in the export, a partial-name check, which
+    engine ran (and whether a service or model server was started outside the app), and a
+    network line counting requests off the machine as seen from the app's window, with what
+    that count cannot see. Every line that concerns a name is a count: the receipt prints no
+    name from the table, no always-redact term and no piece of either, apart from the fixed
+    words of the .docx scope line, which are the same on every receipt whatever the table
+    holds: examples such as KestrelCapital and XYZReport, the designators Co, Corp and Inc, and
+    words such as Office and Dublin Core. A rule that looks for a client's name will match the
+    receipt when the name shares one of those words. The names the user chose to leave
+    readable are counted on it and listed in the name key, under "Left readable by your
+    decision", each marked where it is boilerplate, on the always-redact list, or readable only
+    in part. A piece of a listed name that may still be readable in the export (for example
+    <code>Hastings</code> left behind by a masked <code>Hastings Holdings Ltd</code>) is
+    counted on it and named only on the Export screen: printed beside the words "partial
+    name", a piece would tell the reader which readable word belongs to a masked name. The
+    partial-name check reads the copied text and the .txt, which stand for the body, and of a
+    .docx export the text of every other part the writer saves (a header, a footer, a note, a
+    chart, SmartArt), as saved; it does not read the file's code, nor the text Word keeps there
+    as a setting (a watermark, the signer a signature line suggests, the text a list prints
+    beside each number). It looks for each word of a masked row or a listed term from four
+    letters, from two where both the name and the copy write it with a capital, or from four
+    digits, and never inside a plain word of letters. It skips words too common to stand for a
+    name alone (titles, designators, two-letter codes, the, and, for, of, and Bank, Road,
+    Street, Place and Avenue) even where one is a surname, so Ms Street left in the copy is not
+    flagged where the table says Della Street. Its line on the receipt says what it read,
+    whatever it found. The
+    original filename is withheld, because the receipt travels with the redacted copy. The name
+    key, which maps tags back to names, is saved or copied only when the user asks, as a
+    separate file whose name begins <code>DO-NOT-SEND-namekey</code>. For a .docx export the
+    receipt also carries the writer's own notes: what it removed, what it renamed, what it
+    wrote out as plain text (a cross-reference, for example), and any part of the file it did
+    not know and kept. Whether the receipt satisfies a given regulator, court or file
+    requirement is your professionals' judgment.</p>
+    <!-- Export.tsx `receipt` array; lib/review.ts receiptReviewLine; engineStatus.ts. Count-only
+         since lane P1 (2026-09-23): discardLine "N by your explicit decision, not named here"
+         and the fragment line "fragment check: N partial name(s) of listed names may survive —
+         not named here; the Export screen lists them. Read: …" (both in Export.tsx `receipt`;
+         line numbers are left out because the file moves under every round);
+         test/protected-terms.mjs law 18g reads every receipt line for a name, a term or a piece
+         of one. What the partial-name check reads is Export.tsx fragWhere and fragHow, printed
+         after "Read:" on the fragment line and in the ⚠ (owner ruling 21), pinned by
+         protected-terms 18z and by site-claims; engine.ts survivingFragments holds the floors
+         (four letters, two capitalised in both, four digits) and never reads inside a plain
+         word of letters; its FRAGMENT_STOP is the list of skipped words, and the writer's
+         ATTR_MASK values (a watermark, a signer, a list's number text) are masked in place,
+         outside the flows the check reads (site-claims fragCodeUnread and fragStopSkips drive
+         both, 2026-09-25). The name key's "# Left readable by your decision" section (and
+         leftReadable in the .json; marks from leftMarks and "in part") is the owner ruling of
+         2026-09-23, pinned by protected-terms 18m and 18o; the key is saved as
+         outName('DO-NOT-SEND-namekey', …). The "redacted .docx:" receipt line prints
+         WriteReport.notes. The sentence naming two engine-line
+         defects was cut 2026-09-23 because both are closed in the code: wf4 S3-2 — engine.ts
+         stripText keeps one coreRun() per document (engine.ts:948) and stamps with it (mapOutcome → inAppCoreStamp(doc, { run }), engine.ts:1036), so a
+         failed document's answers are never read by the next; S3-3 — engine.rs
+         complete_verified_on returns an Answered naming the process "from the first byte of
+         the request on", and tauri.ts completeLocal records it (done(r, !r.error)). -->
+  </section>
+
+  <section id="regulatory">
+    <h2>Plain-language regulatory framing (not legal advice)</h2>
+    <ul>
+      <li><b>What leaves, and how:</b> the app sends nothing to us — there is no vendor endpoint.
+        The redacted copy the user then pastes into an AI service is a separate disclosure,
+        governed by your agreements with that provider. That copy still carries the document's
+        facts, dates, amounts and most places, by default the names of companies that are not the
+        document's own identity, and anything the engine missed.</li>
+      <li><b>HIPAA:</b> a BAA covers vendors who receive PHI. This software sends us nothing;
+        whether the AI provider needs one is a question about the redacted copy.</li>
+      <li><b>GLBA / banking (OCC, FDIC):</b> the tool is software under your existing endpoint
+        controls and makes no connection off the endpoint by its code. Whether a redacted copy
+        may go to an AI provider is your policy decision.</li>
+      <li><b>SEC / Reg S-P (RIAs):</b> the app keeps no history between sessions; saved receipts
+        can support books-and-records practices if the user files them.</li>
+      <li><b>Separate question:</b> approving this app and permitting redacted output to be
+        pasted into an external AI are different policy decisions at most organizations — clear
+        both.</li>
+    </ul>
+  </section>
+
+  <section id="facts">
+    <h2>Project facts</h2>
+    <div class="facts"><table>
+      <tr><td>License</td><td>Apache-2.0, © Simpler Terminal Value Systems Pte Ltd. The
+        installer's licence page is the Apache-2.0 text, followed by the terms Microsoft requires
+        users to accept for the three Visual C++ runtime files beside llama.cpp; there is no
+        separate end-user licence for this product's own code.
+        The installer puts <code>LICENSE</code>, <code>NOTICE</code>,
+        <code>THIRD_PARTY_NOTICES.md</code> and the licence texts of llama.cpp (with the npm
+        packages in the web page its server carries), the OpenMP runtime beside it, Node.js, the
+        Rust crates and Microsoft WebView2 loader linked into the app, the npm packages its window
+        is bundled from, and the setup program's NSIS parts in a <code>licenses</code> folder
+        beside the app. The Visual C++ runtime beside llama.cpp is Microsoft's and comes with no
+        licence text; <code>licenses/msvc-runtime.txt</code> says where each file comes from and
+        quotes what Microsoft says about redistributing them. The OpenMP runtime beside it is the
+        LLVM project's, under Apache-2.0 with LLVM exceptions
+        (<code>licenses/llvm-openmp-LICENSE.txt</code>). The model
+        is Google's Gemma 4 E2B, under Apache-2.0, and the installer does not carry it
+        (<code>THIRD_PARTY_NOTICES.md</code>).</td></tr>
+      <tr><td>Source &amp; releases</td><td><a href="https://github.com/Simpler-Systems/simpler-legal"><code>github.com/Simpler-Systems/simpler-legal</code></a>;
+        the installer is on <a href="https://github.com/Simpler-Systems/simpler-legal/releases/latest">GitHub Releases</a>
+        (v0.1.0, Windows, unsigned: Windows SmartScreen will warn).</td></tr>
+      <tr><td>Security disclosures</td><td>Privately, through GitHub:
+        <a href="https://github.com/Simpler-Systems/simpler-legal/security/advisories/new"><code style="word-break:break-all">github.com/Simpler-Systems/simpler-legal/security/advisories/new</code></a>
+        (<code>SECURITY.md</code> in the repository says what is in scope). If GitHub is not an
+        option, write to <code>support@simpler.asia</code>. What the app sends and keeps on disk: <code>PRIVACY.md</code>.</td></tr>
+      <tr><td>Supply chain</td><td>No SBOM is published. <code>licenses/rust-crates.txt</code>
+        and <code>licenses/npm-packages.txt</code> list every Rust crate linked into the app and
+        every npm package its window is bundled from, with its version. No auto-update.</td></tr>
+      <tr><td>What it deliberately is not</td><td>No cloud service, no accounts, no browser
+        extension, no Office/Outlook add-ins, no document storage between sessions. Scope is one
+        job: local redaction, with a review the user must finish before anything exports.</td></tr>
+    </table></div>
+    <!-- tauri.conf.json bundle (license, licenseFile = app/src-tauri/installer-licence.txt,
+         resources carrying LICENSE, NOTICE, THIRD_PARTY_NOTICES.md and licenses/), checked by
+         tools/derive-notice.mjs; licenses/llvm-openmp-LICENSE.txt and msvc-runtime.txt; SECURITY.md
+         (owner ruling 30); engine.ts exportPlan `unreviewed`. -->
+  </section>
+</div>
+
+<footer>
+  <div class="wrap row">
+    <span>Simpler Legal · simpler.legal/it.html</span>
+    <span>© 2026 Simpler Terminal Value Systems Pte Ltd · Apache-2.0 licensed</span>
+    <span class="spacer"></span>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="https://github.com/Simpler-Systems/simpler-legal">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>

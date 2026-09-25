@@ -1,0 +1,35 @@
+{
+ "doc": "uk-civ-06.txt",
+ "docSha256_16": "742d1215f3f1dd43",
+ "entities": [
+  {
+   "category": "PERSON",
+   "unmatchable": true
+  },
+  {
+   "category": "HEALTH",
+   "off": 3329,
+   "len": 18
+  },
+  {
+   "category": "HEALTH",
+   "off": 3367,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "off": 5650,
+   "len": 19
+  },
+  {
+   "category": "DATETIME",
+   "off": 11438,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 21236,
+   "len": 13
+  }
+ ]
+}

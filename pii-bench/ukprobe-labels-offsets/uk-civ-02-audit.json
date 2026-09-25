@@ -1,0 +1,16 @@
+{
+ "doc": "uk-civ-02.txt",
+ "docSha256_16": "72095132c41e7023",
+ "entities": [
+  {
+   "category": "ORG",
+   "off": 15981,
+   "len": 3
+  },
+  {
+   "category": "DATETIME",
+   "off": 2767,
+   "len": 4
+  }
+ ]
+}

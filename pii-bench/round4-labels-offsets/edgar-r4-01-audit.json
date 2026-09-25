@@ -1,0 +1,20 @@
+{
+ "doc": "edgar-r4-01.txt",
+ "docSha256_16": "b809928ce18e5fdf",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 33,
+   "len": 12
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 47,
+   "len": 12
+  }
+ ]
+}

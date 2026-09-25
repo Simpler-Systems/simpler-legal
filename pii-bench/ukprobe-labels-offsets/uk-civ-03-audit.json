@@ -1,0 +1,16 @@
+{
+ "doc": "uk-civ-03.txt",
+ "docSha256_16": "583dca6c45d1ddf8",
+ "entities": [
+  {
+   "category": "ORG",
+   "off": 63,
+   "len": 21
+  },
+  {
+   "category": "ORG",
+   "off": 46,
+   "len": 13
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "doc": "sg-r7-10.txt",
+ "docSha256_16": "7cfd64844a270f90",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 24270,
+   "len": 3
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 24388,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 34401,
+   "len": 54
+  }
+ ]
+}

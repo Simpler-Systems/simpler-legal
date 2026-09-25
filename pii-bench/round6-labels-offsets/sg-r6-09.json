@@ -1,0 +1,3576 @@
+{
+ "doc": "sg-r6-09.txt",
+ "docSha256_16": "3fb6deda95152f59",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_plaintiff_deceased",
+   "occurrences": 1,
+   "off": 473,
+   "len": 29
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_plaintiff_deceased",
+   "occurrences": 3,
+   "off": 991,
+   "len": 27
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_plaintiff_deceased",
+   "occurrences": 1,
+   "off": 1651,
+   "len": 32
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_plaintiff_deceased",
+   "occurrences": 170,
+   "off": 1697,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_second_plaintiff",
+   "occurrences": 1,
+   "off": 508,
+   "len": 21
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_second_plaintiff",
+   "occurrences": 1,
+   "off": 1731,
+   "len": 24
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_second_plaintiff",
+   "occurrences": 15,
+   "off": 1731,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_second_defendant_doctor",
+   "occurrences": 1,
+   "off": 589,
+   "len": 22
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_second_defendant_doctor",
+   "occurrences": 1,
+   "off": 7977,
+   "len": 25
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_second_defendant_doctor",
+   "occurrences": 4,
+   "off": 7977,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_third_defendant_doctor",
+   "occurrences": 1,
+   "off": 617,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_third_defendant_doctor",
+   "occurrences": 1,
+   "off": 8451,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_third_defendant_doctor",
+   "occurrences": 3,
+   "off": 8451,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_fourth_defendant_doctor",
+   "occurrences": 1,
+   "off": 633,
+   "len": 18
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_fourth_defendant_doctor",
+   "occurrences": 1,
+   "off": 9487,
+   "len": 20
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_fourth_defendant_doctor",
+   "occurrences": 8,
+   "off": 9487,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_radiologist",
+   "occurrences": 1,
+   "off": 9225,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_witness_doctor",
+   "occurrences": 1,
+   "off": 10510,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_witness_doctor",
+   "occurrences": 4,
+   "off": 10525,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 5,
+   "off": 10563,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 2,
+   "off": 10580,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 1,
+   "off": 154639,
+   "len": 21
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_doctor",
+   "occurrences": 1,
+   "off": 11095,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_doctor",
+   "occurrences": 4,
+   "off": 11112,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_radiologist",
+   "occurrences": 1,
+   "off": 11531,
+   "len": 18
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_respiratory_physician",
+   "occurrences": 1,
+   "off": 11933,
+   "len": 49
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_respiratory_physician",
+   "occurrences": 6,
+   "off": 11985,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_radiologist",
+   "occurrences": 1,
+   "off": 12231,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_radiologist",
+   "occurrences": 5,
+   "off": 12251,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_radiologist",
+   "occurrences": 1,
+   "off": 12479,
+   "len": 26
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 4,
+   "off": 12673,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 55,
+   "off": 12699,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_doctor",
+   "occurrences": 1,
+   "off": 13677,
+   "len": 43
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_doctor",
+   "occurrences": 1,
+   "off": 14036,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_doctor",
+   "occurrences": 1,
+   "off": 14036,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 2,
+   "off": 35312,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_expert_witness",
+   "occurrences": 30,
+   "off": 35329,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_employer",
+   "occurrences": 1,
+   "off": 126933,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_employer",
+   "occurrences": 2,
+   "off": 126951,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_boyfriend",
+   "occurrences": 2,
+   "off": 101207,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_mother",
+   "occurrences": 1,
+   "off": 136075,
+   "len": 19
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_mother",
+   "occurrences": 13,
+   "off": 136075,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_mother",
+   "occurrences": 1,
+   "off": 136988,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 1,
+   "off": 4806,
+   "len": 21
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 14,
+   "off": 4806,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 1,
+   "off": 4809,
+   "len": 18
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 1,
+   "off": 174853,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 1,
+   "off": 174876,
+   "len": 21
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 2,
+   "off": 62122,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 1,
+   "off": 62119,
+   "len": 18
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "person_name_counsel",
+   "occurrences": 20,
+   "off": 38265,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "judge_of_instant_case",
+   "occurrences": 3,
+   "off": 1149,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "judicial_office_code",
+   "occurrences": 2,
+   "off": 1169,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "judicial_role_word",
+   "occurrences": 2,
+   "off": 4408,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "public_official_legislative_citation",
+   "occurrences": 1,
+   "off": 122427,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "government_office",
+   "occurrences": 1,
+   "off": 122402,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_judge",
+   "occurrences": 3,
+   "off": 113432,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_judge",
+   "occurrences": 4,
+   "off": 163954,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_judge",
+   "occurrences": 4,
+   "off": 80780,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_judge",
+   "occurrences": 1,
+   "off": 156973,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 16,
+   "off": 25742,
+   "len": 19
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 3,
+   "off": 25578,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 5,
+   "off": 60121,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 25665,
+   "len": 26
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 4,
+   "off": 137872,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 137963,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 138407,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 2,
+   "off": 138340,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 138003,
+   "len": 20
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 122040,
+   "len": 20
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 122099,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 122136,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_alias",
+   "occurrences": 1,
+   "off": 122155,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 86796,
+   "len": 20
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 86777,
+   "len": 16
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 87994,
+   "len": 19
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 88068,
+   "len": 22
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 88094,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_case_shortname",
+   "occurrences": 3,
+   "off": 87994,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 4,
+   "off": 88819,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 88852,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 88870,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 88898,
+   "len": 25
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 6,
+   "off": 76259,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 76287,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 76299,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 3,
+   "off": 75847,
+   "len": 19
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 75869,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 7,
+   "off": 76616,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 76662,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 76690,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 4,
+   "off": 93120,
+   "len": 16
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 93139,
+   "len": 43
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 10,
+   "off": 145320,
+   "len": 10
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 145333,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_context_hospital",
+   "occurrences": 1,
+   "off": 145481,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 101379,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_case_shortname",
+   "occurrences": 7,
+   "off": 101379,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 101419,
+   "len": 25
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "precedent_case_shortname_anonymised",
+   "occurrences": 10,
+   "off": 141847,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 141853,
+   "len": 23
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 79464,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 79474,
+   "len": 5
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "precedent_case_citation",
+   "occurrences": 1,
+   "off": 80797,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "precedent_case_citation",
+   "occurrences": 1,
+   "off": 145711,
+   "len": 23
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "precedent_case_shortname",
+   "occurrences": 2,
+   "off": 145711,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "precedent_case_citation",
+   "occurrences": 1,
+   "off": 155142,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 6,
+   "off": 155146,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 72837,
+   "len": 31
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 72871,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 72894,
+   "len": 29
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 73582,
+   "len": 33
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 73618,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 112344,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 112357,
+   "len": 39
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 4,
+   "off": 113105,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 113123,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "precedent_case_shortname",
+   "occurrences": 5,
+   "off": 113213,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 113336,
+   "len": 40
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 6,
+   "off": 113379,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 121209,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 121226,
+   "len": 11
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "precedent_case_shortname_anonymised",
+   "occurrences": 4,
+   "off": 123415,
+   "len": 3
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "precedent_party_anonymised",
+   "occurrences": 1,
+   "off": 123470,
+   "len": 3
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 159878,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 159893,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "precedent_party_org",
+   "occurrences": 1,
+   "off": 159951,
+   "len": 28
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 159982,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party_and_case_shortname",
+   "occurrences": 4,
+   "off": 169813,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 169841,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 133111,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "precedent_party",
+   "occurrences": 1,
+   "off": 133127,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "medical_literature_author",
+   "occurrences": 1,
+   "off": 40725,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "medical_literature_author",
+   "occurrences": 1,
+   "off": 40731,
+   "len": 9
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "medical_literature_author",
+   "occurrences": 1,
+   "off": 52295,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "legal_text_author",
+   "occurrences": 1,
+   "off": 86170,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "legal_text_author",
+   "occurrences": 1,
+   "off": 132830,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "legal_text_author",
+   "occurrences": 1,
+   "off": 132852,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "first_defendant_hospital",
+   "occurrences": 5,
+   "off": 552,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "first_defendant_hospital_abbrev",
+   "occurrences": 130,
+   "off": 1596,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "clinic",
+   "occurrences": 2,
+   "off": 11056,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital",
+   "occurrences": 1,
+   "off": 84526,
+   "len": 32
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_abbrev",
+   "occurrences": 4,
+   "off": 84561,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital",
+   "occurrences": 2,
+   "off": 84572,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_abbrev",
+   "occurrences": 4,
+   "off": 84601,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital",
+   "occurrences": 1,
+   "off": 143645,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_abbrev",
+   "occurrences": 3,
+   "off": 143676,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "medical_institute",
+   "occurrences": 2,
+   "off": 143961,
+   "len": 36
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_department",
+   "occurrences": 1,
+   "off": 143919,
+   "len": 34
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_department",
+   "occurrences": 1,
+   "off": 144098,
+   "len": 32
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_department",
+   "occurrences": 1,
+   "off": 7917,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_department_abbrev",
+   "occurrences": 3,
+   "off": 7948,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_department",
+   "occurrences": 1,
+   "off": 6260,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "hospital_department_abbrev",
+   "occurrences": 9,
+   "off": 6285,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "employer",
+   "occurrences": 1,
+   "off": 126693,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "newspaper",
+   "occurrences": 1,
+   "off": 126378,
+   "len": 17
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "newspaper",
+   "occurrences": 1,
+   "off": 126382,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "medical_body",
+   "occurrences": 1,
+   "off": 40352,
+   "len": 36
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "website_url",
+   "occurrences": 3,
+   "off": 39035,
+   "len": 21
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "medical_database",
+   "occurrences": 1,
+   "off": 39204,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "medical_database",
+   "occurrences": 2,
+   "off": 43063,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "clinical_study",
+   "occurrences": 2,
+   "off": 39372,
+   "len": 29
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "clinical_study_abbrev",
+   "occurrences": 5,
+   "off": 43905,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "clinical_study",
+   "occurrences": 2,
+   "off": 39525,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "clinical_study",
+   "occurrences": 2,
+   "off": 39662,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "clinical_study",
+   "occurrences": 2,
+   "off": 39662,
+   "len": 6
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "law_firm",
+   "occurrences": 1,
+   "off": 174783,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "law_firm",
+   "occurrences": 1,
+   "off": 174899,
+   "len": 16
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "publisher",
+   "occurrences": 3,
+   "off": 86267,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "publisher",
+   "occurrences": 1,
+   "off": 76095,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 2,
+   "off": 1092,
+   "len": 34
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 1,
+   "off": 363,
+   "len": 63
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 6,
+   "off": 1116,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 45,
+   "off": 1400,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 1,
+   "off": 174747,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 1,
+   "off": 156271,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 1,
+   "off": 156298,
+   "len": 27
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_publisher",
+   "occurrences": 1,
+   "off": 146671,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "court_role",
+   "occurrences": 3,
+   "off": 4356,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "court_role_abbrev",
+   "occurrences": 4,
+   "off": 4378,
+   "len": 2
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "court_role",
+   "occurrences": 1,
+   "off": 4408,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "court_role",
+   "occurrences": 1,
+   "off": 4366,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body",
+   "occurrences": 1,
+   "off": 61538,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body",
+   "occurrences": 1,
+   "off": 162532,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_abbrev",
+   "occurrences": 1,
+   "off": 162555,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme",
+   "occurrences": 1,
+   "off": 162459,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme",
+   "occurrences": 1,
+   "off": 162492,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme",
+   "occurrences": 1,
+   "off": 162459,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme",
+   "occurrences": 1,
+   "off": 163344,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme",
+   "occurrences": 1,
+   "off": 163262,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme",
+   "occurrences": 1,
+   "off": 162515,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body",
+   "occurrences": 1,
+   "off": 70753,
+   "len": 17
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_scheme_provident_fund",
+   "occurrences": 10,
+   "off": 20932,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "legal_publisher",
+   "occurrences": 1,
+   "off": 949,
+   "len": 6
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "law_report",
+   "occurrences": 1,
+   "off": 967,
+   "len": 21
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "jurisdiction",
+   "occurrences": 1,
+   "off": 405,
+   "len": 21
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "place_jurisdiction",
+   "occurrences": 14,
+   "off": 967,
+   "len": 9
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "home_district",
+   "occurrences": 1,
+   "off": 552,
+   "len": 6
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "country",
+   "occurrences": 1,
+   "off": 116515,
+   "len": 24
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "country",
+   "occurrences": 1,
+   "off": 116543,
+   "len": 5
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "country",
+   "occurrences": 1,
+   "off": 113361,
+   "len": 11
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "nationality_sex",
+   "occurrences": 2,
+   "off": 43788,
+   "len": 18
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "nationality",
+   "occurrences": 1,
+   "off": 43788,
+   "len": 11
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "nationality_sex",
+   "occurrences": 1,
+   "off": 70786,
+   "len": 13
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "nationality",
+   "occurrences": 1,
+   "off": 70786,
+   "len": 8
+  },
+  {
+   "category": "DEM",
+   "identifier_type": "sex",
+   "occurrences": 4,
+   "off": 43800,
+   "len": 6
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "lifestyle_attribute",
+   "occurrences": 3,
+   "off": 43807,
+   "len": 6
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation",
+   "occurrences": 1,
+   "off": 126257,
+   "len": 41
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation_field",
+   "occurrences": 1,
+   "off": 126625,
+   "len": 28
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation_precedent",
+   "occurrences": 1,
+   "off": 88166,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 2,
+   "off": 143861,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 143907,
+   "len": 46
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 12207,
+   "len": 22
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 3,
+   "off": 11799,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "legal_role",
+   "occurrences": 4,
+   "off": 1809,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "suit_docket_number",
+   "occurrences": 2,
+   "off": 442,
+   "len": 18
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "suit_docket_number",
+   "occurrences": 1,
+   "off": 1864,
+   "len": 12
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "suit_docket_number",
+   "occurrences": 2,
+   "off": 1879,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "summons_number",
+   "occurrences": 2,
+   "off": 124313,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "appeal_docket_number",
+   "occurrences": 1,
+   "off": 173950,
+   "len": 13
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "neutral_citation_instant_case",
+   "occurrences": 3,
+   "off": 0,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 1502,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 6098,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 25722,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 72925,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 73648,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 75894,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 76315,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 76705,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 86836,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 88108,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 88993,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 80811,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 93195,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 101445,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 145358,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 145735,
+   "len": 18
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 141888,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 79480,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 155155,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 113154,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 113224,
+   "len": 18
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 113387,
+   "len": 18
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 121238,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 123474,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 122169,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 159908,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 159994,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 169854,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 138085,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 112408,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "case_citation",
+   "occurrences": 1,
+   "off": 133144,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "journal_citation",
+   "occurrences": 1,
+   "off": 52473,
+   "len": 28
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 72357,
+   "len": 35
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_abbrev",
+   "occurrences": 12,
+   "off": 72396,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 139107,
+   "len": 56
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 146671,
+   "len": 54
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 146746,
+   "len": 42
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_abbrev",
+   "occurrences": 4,
+   "off": 146791,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "legislative_citation",
+   "occurrences": 1,
+   "off": 122468,
+   "len": 80
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "hearing_dates",
+   "occurrences": 1,
+   "off": 1174,
+   "len": 48
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "judgment_date",
+   "occurrences": 1,
+   "off": 1223,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_of_death",
+   "occurrences": 18,
+   "off": 2080,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 2,
+   "off": 2133,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 7639,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 7876,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 8350,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 6,
+   "off": 9378,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 2,
+   "off": 10008,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 11013,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 11211,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 11746,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 11869,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 13099,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 13341,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 2,
+   "off": 13538,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 14364,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 14451,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 3,
+   "off": 15845,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 15864,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 4430,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 4548,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 4652,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 4695,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "trial_dates",
+   "occurrences": 1,
+   "off": 3988,
+   "len": 29
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "newspaper_date",
+   "occurrences": 1,
+   "off": 126399,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 149490,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_service_of_writ",
+   "occurrences": 1,
+   "off": 170578,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_interim_payment",
+   "occurrences": 3,
+   "off": 170429,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 170632,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 4,
+   "off": 161567,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 158787,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 117420,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 122453,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_precedent",
+   "occurrences": 1,
+   "off": 172503,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_precedent",
+   "occurrences": 2,
+   "off": 172561,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 40,
+   "off": 3763,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 10,
+   "off": 7301,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 30,
+   "off": 3591,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 15,
+   "off": 14270,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 3,
+   "off": 7879,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 3,
+   "off": 7642,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 6,
+   "off": 11213,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 4,
+   "off": 10944,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 3,
+   "off": 10010,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 3,
+   "off": 15866,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 4,
+   "off": 16100,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 4,
+   "off": 16289,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 1,
+   "off": 11016,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year",
+   "occurrences": 3,
+   "off": 28656,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "approximate_period",
+   "occurrences": 3,
+   "off": 119281,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "approximate_period",
+   "occurrences": 2,
+   "off": 129308,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month_year_precedent",
+   "occurrences": 1,
+   "off": 60064,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 7650,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 7307,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 3768,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 10,
+   "off": 3597,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 3,
+   "off": 70811,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 14277,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 12,
+   "off": 456,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 10,
+   "off": 12527,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 2,
+   "off": 12958,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 3,
+   "off": 20840,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 1503,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year_projection",
+   "occurrences": 2,
+   "off": 20896,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 73649,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 2,
+   "off": 60074,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 2,
+   "off": 1218,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "period",
+   "occurrences": 1,
+   "off": 105232,
+   "len": 19
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "document_version_timestamp",
+   "occurrences": 1,
+   "off": 175183,
+   "len": 37
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age",
+   "occurrences": 1,
+   "off": 44258,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age",
+   "occurrences": 3,
+   "off": 69937,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age",
+   "occurrences": 1,
+   "off": 99479,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age",
+   "occurrences": 3,
+   "off": 60839,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_father",
+   "occurrences": 1,
+   "off": 135256,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_mother",
+   "occurrences": 1,
+   "off": 43990,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_mother",
+   "occurrences": 1,
+   "off": 139342,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_brother",
+   "occurrences": 1,
+   "off": 135462,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 138428,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "life_expectancy",
+   "occurrences": 2,
+   "off": 138218,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 98605,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 88154,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 89058,
+   "len": 20
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 123891,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 124164,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_precedent",
+   "occurrences": 1,
+   "off": 70805,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "life_expectancy_precedent",
+   "occurrences": 1,
+   "off": 70848,
+   "len": 17
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "statutory_retirement_age",
+   "occurrences": 1,
+   "off": 139077,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "age_range_study",
+   "occurrences": 1,
+   "off": 43975,
+   "len": 28
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "smoking_history",
+   "occurrences": 1,
+   "off": 44058,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "smoking_history",
+   "occurrences": 1,
+   "off": 44315,
+   "len": 21
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_total_claim",
+   "occurrences": 1,
+   "off": 20437,
+   "len": 14
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 20520,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 20616,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 20684,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 20758,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 20846,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 20902,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 20978,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 21034,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 21138,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_estate_claim",
+   "occurrences": 3,
+   "off": 21176,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_aggravated_punitive",
+   "occurrences": 3,
+   "off": 21227,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_special_damages",
+   "occurrences": 2,
+   "off": 21268,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 21358,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 6,
+   "off": 21398,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 21441,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 22032,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 6,
+   "off": 22081,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_dependency",
+   "occurrences": 5,
+   "off": 22116,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 73994,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 74098,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 75423,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 9,
+   "off": 4494,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 75575,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 75662,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 5,
+   "off": 75715,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 78794,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 92710,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 5,
+   "off": 93768,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 7,
+   "off": 86926,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 86981,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 89588,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 89914,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 93621,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 93830,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 93946,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 94037,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 2,
+   "off": 90442,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 4,
+   "off": 100787,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 3,
+   "off": 141469,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 3,
+   "off": 100678,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 125427,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2008",
+   "occurrences": 1,
+   "off": 125908,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2009",
+   "occurrences": 1,
+   "off": 125931,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2010",
+   "occurrences": 1,
+   "off": 125954,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2011",
+   "occurrences": 1,
+   "off": 125977,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2012",
+   "occurrences": 1,
+   "off": 126000,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2013",
+   "occurrences": 1,
+   "off": 126023,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2014",
+   "occurrences": 1,
+   "off": 126046,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2015",
+   "occurrences": 1,
+   "off": 126069,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_salary_2016",
+   "occurrences": 1,
+   "off": 126095,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_hourly_wage",
+   "occurrences": 1,
+   "off": 126812,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly",
+   "occurrences": 4,
+   "off": 117563,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_annual",
+   "occurrences": 1,
+   "off": 117538,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 3,
+   "off": 117349,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly",
+   "occurrences": 1,
+   "off": 128955,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 128987,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly_to_parents",
+   "occurrences": 1,
+   "off": 129230,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly_to_brother",
+   "occurrences": 1,
+   "off": 4494,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly",
+   "occurrences": 3,
+   "off": 129652,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly",
+   "occurrences": 1,
+   "off": 129684,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly",
+   "occurrences": 1,
+   "off": 129784,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly_token",
+   "occurrences": 4,
+   "off": 75423,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_monthly",
+   "occurrences": 5,
+   "off": 137551,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_precedent",
+   "occurrences": 1,
+   "off": 134167,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 170728,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_total_award",
+   "occurrences": 1,
+   "off": 169222,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_general_damages",
+   "occurrences": 3,
+   "off": 141614,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_special_damages",
+   "occurrences": 3,
+   "off": 169447,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_costs",
+   "occurrences": 1,
+   "off": 174539,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 3,
+   "off": 163035,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_cash_payment",
+   "occurrences": 1,
+   "off": 163234,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_medisave",
+   "occurrences": 1,
+   "off": 163272,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_insurance",
+   "occurrences": 1,
+   "off": 163313,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_medifund",
+   "occurrences": 1,
+   "off": 163358,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 161192,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money",
+   "occurrences": 1,
+   "off": 161212,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_taxi_fare",
+   "occurrences": 2,
+   "off": 167999,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "interest_rate",
+   "occurrences": 6,
+   "off": 169727,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "interest_rate",
+   "occurrences": 1,
+   "off": 170239,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "interest_rate_precedent",
+   "occurrences": 1,
+   "off": 171171,
+   "len": 2
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "interest_rate_precedent",
+   "occurrences": 1,
+   "off": 171349,
+   "len": 2
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "discount_rate",
+   "occurrences": 2,
+   "off": 138600,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 3,
+   "off": 48450,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage_survival_drop",
+   "occurrences": 3,
+   "off": 39931,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39187,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39191,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39195,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39199,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39355,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 2,
+   "off": 38668,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 38752,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39367,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39505,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 2,
+   "off": 38759,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39657,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39892,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 39904,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate_range",
+   "occurrences": 1,
+   "off": 38668,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate_range",
+   "occurrences": 1,
+   "off": 38752,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 2,
+   "off": 64717,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "survival_rate",
+   "occurrences": 1,
+   "off": 48444,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "false_reporting_rate_precedent",
+   "occurrences": 1,
+   "off": 156200,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10730,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10762,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10804,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10816,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10828,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10840,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_ct",
+   "occurrences": 1,
+   "off": 12344,
+   "len": 17
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "tumour_size",
+   "occurrences": 1,
+   "off": 13836,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "tumour_size_threshold",
+   "occurrences": 6,
+   "off": 31026,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "tumour_size_threshold",
+   "occurrences": 6,
+   "off": 36952,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "tumour_size_threshold",
+   "occurrences": 1,
+   "off": 31099,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 2,
+   "off": 10758,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 2,
+   "off": 10780,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "nodule_measurement_cm",
+   "occurrences": 1,
+   "off": 10792,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "lymph_node_finding",
+   "occurrences": 1,
+   "off": 13933,
+   "len": 26
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "lymph_node_finding",
+   "occurrences": 1,
+   "off": 33973,
+   "len": 25
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "lymph_node_level",
+   "occurrences": 2,
+   "off": 13964,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "lymph_node_station",
+   "occurrences": 1,
+   "off": 34002,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration_precedent",
+   "occurrences": 1,
+   "off": 87192,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "trip_count",
+   "occurrences": 1,
+   "off": 168022,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 3940,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration",
+   "occurrences": 2,
+   "off": 17033,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration_precedent",
+   "occurrences": 1,
+   "off": 79615,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 68327,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 68396,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "multiplier_years",
+   "occurrences": 6,
+   "off": 64725,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "discounted_multiplier",
+   "occurrences": 2,
+   "off": 141265,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "discounted_multiplier_precedent",
+   "occurrences": 1,
+   "off": 138690,
+   "len": 11
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration",
+   "occurrences": 3,
+   "off": 44141,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "median_survival",
+   "occurrences": 1,
+   "off": 96786,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "median_survival",
+   "occurrences": 1,
+   "off": 96888,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "duration_life_lost",
+   "occurrences": 4,
+   "off": 96608,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "gene_medical_term",
+   "occurrences": 30,
+   "off": 14719,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "gene_medical_term",
+   "occurrences": 2,
+   "off": 14712,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "cancer_type",
+   "occurrences": 3,
+   "off": 13917,
+   "len": 5
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "drug_name",
+   "occurrences": 2,
+   "off": 15937,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "drug_name",
+   "occurrences": 4,
+   "off": 16012,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "drug_name",
+   "occurrences": 3,
+   "off": 16026,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "drug_name",
+   "occurrences": 4,
+   "off": 16361,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "product_precedent",
+   "occurrences": 1,
+   "off": 87141,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "document_abbrev",
+   "occurrences": 25,
+   "off": 12508,
+   "len": 4
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "document_code",
+   "occurrences": 5,
+   "off": 84765,
+   "len": 12
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "document_code",
+   "occurrences": 3,
+   "off": 125862,
+   "len": 9
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "document_code_plaintiff_submissions",
+   "occurrences": 9,
+   "off": 38876,
+   "len": 3
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "document_code_defendant_submissions",
+   "occurrences": 6,
+   "off": 38954,
+   "len": 3
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 1,
+   "off": 39627,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 6,
+   "off": 52247,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 6,
+   "off": 40015,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 1,
+   "off": 39058,
+   "len": 16
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 2,
+   "off": 39067,
+   "len": 2
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 1,
+   "off": 36837,
+   "len": 2
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "exhibit_code",
+   "occurrences": 1,
+   "off": 39072,
+   "len": 2
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "bundle_reference",
+   "occurrences": 1,
+   "off": 44205,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "bundle_reference",
+   "occurrences": 1,
+   "off": 39826,
+   "len": 50
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "pleading_schedule",
+   "occurrences": 1,
+   "off": 84291,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "pleading_schedule",
+   "occurrences": 3,
+   "off": 161631,
+   "len": 10
+  }
+ ]
+}

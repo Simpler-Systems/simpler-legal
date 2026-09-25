@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r5-13.txt",
+ "docSha256_16": "c5f8eedb7ad5db73",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 10,
+   "len": 17
+  }
+ ]
+}

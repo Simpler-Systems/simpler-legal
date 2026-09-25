@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"The main window: app-defined commands (write_text_file, model_check) plus the save dialog. No open dialog, no fs plugin, no shell — the app reads nothing from disk on its own and writes only where the save dialog was pointed.","local":true,"windows":["main"],"permissions":["core:default","dialog:allow-save"]}}

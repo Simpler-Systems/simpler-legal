@@ -1,0 +1,22 @@
+{
+  "name": "simpler-legal",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Simpler Legal: local redaction for legal documents on your own machine, with the measurement record behind it. Apache-2.0, by Simpler Terminal Value Systems Pte Ltd, Singapore.",
+  "license": "Apache-2.0",
+  "scripts": {
+    "verify": "node tools/verify.mjs",
+    "test": "npm run verify",
+    "notices": "node tools/derive-notice.mjs",
+    "notices:write": "node tools/derive-notice.mjs --write",
+    "graph": "node graph.mjs build",
+    "sync-viewer": "node sync-viewer.mjs",
+    "dev": "npm --prefix app/frontend run dev",
+    "build:app": "npm --prefix app/frontend run build",
+    "setup": "npm --prefix app/frontend ci && npm --prefix app/extract ci"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

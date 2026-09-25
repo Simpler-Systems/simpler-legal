@@ -1,0 +1,27 @@
+{
+ "doc": "us-r6-08.txt",
+ "docSha256_16": "84ae9b97bc3b79a5",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 13967,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 35201,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 7545,
+   "len": 30
+  }
+ ]
+}

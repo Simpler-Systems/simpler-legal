@@ -1,0 +1,230 @@
+{
+ "racedAt": "wave1",
+ "basis": "GPU substrate + cached umbrella labels",
+ "results": [
+  {
+   "name": "echr+gove+cour",
+   "q": 74.6,
+   "n": 82.9,
+   "dr": 100,
+   "sum": 157.5
+  },
+  {
+   "name": "echr+gove+cour+othe",
+   "q": 74.6,
+   "n": 82.9,
+   "dr": 100,
+   "sum": 157.5
+  },
+  {
+   "name": "gove+cour",
+   "q": 74.7,
+   "n": 81.7,
+   "dr": 100,
+   "sum": 156.4
+  },
+  {
+   "name": "echr+gove+cour+comp",
+   "q": 72.4,
+   "n": 84,
+   "dr": 99.7,
+   "sum": 156.4
+  },
+  {
+   "name": "gove+cour+othe",
+   "q": 74.7,
+   "n": 81.7,
+   "dr": 100,
+   "sum": 156.4
+  },
+  {
+   "name": "echr+gove+cour+comp+othe",
+   "q": 72.4,
+   "n": 84,
+   "dr": 99.7,
+   "sum": 156.4
+  },
+  {
+   "name": "echr+gove",
+   "q": 75.6,
+   "n": 79.9,
+   "dr": 100,
+   "sum": 155.5
+  },
+  {
+   "name": "echr+gove+othe",
+   "q": 75.6,
+   "n": 79.9,
+   "dr": 100,
+   "sum": 155.5
+  },
+  {
+   "name": "gove+cour+comp",
+   "q": 72.5,
+   "n": 82.7,
+   "dr": 99.7,
+   "sum": 155.2
+  },
+  {
+   "name": "gove+cour+comp+othe",
+   "q": 72.5,
+   "n": 82.7,
+   "dr": 99.7,
+   "sum": 155.2
+  },
+  {
+   "name": "gove",
+   "q": 75.7,
+   "n": 78.6,
+   "dr": 100,
+   "sum": 154.3
+  },
+  {
+   "name": "echr+gove+comp",
+   "q": 73.4,
+   "n": 80.9,
+   "dr": 99.7,
+   "sum": 154.3
+  },
+  {
+   "name": "gove+othe",
+   "q": 75.7,
+   "n": 78.6,
+   "dr": 100,
+   "sum": 154.3
+  },
+  {
+   "name": "echr+gove+comp+othe",
+   "q": 73.4,
+   "n": 80.9,
+   "dr": 99.7,
+   "sum": 154.3
+  },
+  {
+   "name": "gove+comp",
+   "q": 73.5,
+   "n": 79.7,
+   "dr": 99.7,
+   "sum": 153.2
+  },
+  {
+   "name": "gove+comp+othe",
+   "q": 73.5,
+   "n": 79.7,
+   "dr": 99.7,
+   "sum": 153.2
+  },
+  {
+   "name": "echr+cour",
+   "q": 78.3,
+   "n": 65.5,
+   "dr": 100,
+   "sum": 143.8
+  },
+  {
+   "name": "echr+cour+othe",
+   "q": 78.3,
+   "n": 65.5,
+   "dr": 100,
+   "sum": 143.8
+  },
+  {
+   "name": "cour",
+   "q": 78.4,
+   "n": 64.3,
+   "dr": 100,
+   "sum": 142.7
+  },
+  {
+   "name": "echr+cour+comp",
+   "q": 76.1,
+   "n": 66.6,
+   "dr": 99.7,
+   "sum": 142.7
+  },
+  {
+   "name": "echr+cour+comp+othe",
+   "q": 76.1,
+   "n": 66.6,
+   "dr": 99.7,
+   "sum": 142.7
+  },
+  {
+   "name": "cour+othe",
+   "q": 78.3,
+   "n": 64.3,
+   "dr": 100,
+   "sum": 142.6
+  },
+  {
+   "name": "echr",
+   "q": 79.3,
+   "n": 62.5,
+   "dr": 100,
+   "sum": 141.8
+  },
+  {
+   "name": "echr+othe",
+   "q": 79.3,
+   "n": 62.5,
+   "dr": 100,
+   "sum": 141.8
+  },
+  {
+   "name": "cour+comp",
+   "q": 76.2,
+   "n": 65.4,
+   "dr": 99.7,
+   "sum": 141.60000000000002
+  },
+  {
+   "name": "cour+comp+othe",
+   "q": 76.2,
+   "n": 65.4,
+   "dr": 99.7,
+   "sum": 141.60000000000002
+  },
+  {
+   "name": "none",
+   "q": 79.4,
+   "n": 61.3,
+   "dr": 100,
+   "sum": 140.7
+  },
+  {
+   "name": "echr+comp",
+   "q": 77.2,
+   "n": 63.5,
+   "dr": 99.7,
+   "sum": 140.7
+  },
+  {
+   "name": "othe",
+   "q": 79.4,
+   "n": 61.3,
+   "dr": 100,
+   "sum": 140.7
+  },
+  {
+   "name": "echr+comp+othe",
+   "q": 77.1,
+   "n": 63.5,
+   "dr": 99.7,
+   "sum": 140.6
+  },
+  {
+   "name": "comp",
+   "q": 77.2,
+   "n": 62.3,
+   "dr": 99.7,
+   "sum": 139.5
+  },
+  {
+   "name": "comp+othe",
+   "q": 77.2,
+   "n": 62.3,
+   "dr": 99.7,
+   "sum": 139.5
+  }
+ ]
+}

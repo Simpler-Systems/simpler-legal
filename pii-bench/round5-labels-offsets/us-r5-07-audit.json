@@ -1,0 +1,13 @@
+{
+ "doc": "us-r5-07.txt",
+ "docSha256_16": "7288ffb6451000dd",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 64,
+   "len": 15
+  }
+ ]
+}

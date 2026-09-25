@@ -1,0 +1,156 @@
+Microsoft runtime files in the Windows installer
+===============================================
+
+The installer's llama\ folder (this repository's llama-cuda/ folder, which
+app/src-tauri/tauri.conf.json bundles as llama/) carries three runtime files
+built by Microsoft, the Visual C++ runtime. llama.cpp's server and libraries
+load them. None of them is covered by this product's Apache-2.0 licence, and
+none is Simpler Terminal Value Systems Pte Ltd's work.
+
+Until 2026-09-25 the folder also carried a fourth file built by Microsoft,
+libomp140.x86_64.dll. It no longer does; section 2 says what replaced it and
+why. Section 3 says what the installer asks of the people who install it.
+
+
+1. The Visual C++ runtime
+-------------------------
+
+  msvcp140.dll        file version 14.44.35211.0
+    sha256 0f885b509a685d2bbfa652fed26b5fb31d88fbdab0a978c641d1c7b8aa460aa9
+  vcruntime140.dll    file version 14.44.35211.0
+    sha256 d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066
+  vcruntime140_1.dll  file version 14.44.35211.0
+    sha256 1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f
+
+Each file is byte-identical to the file of the same name in
+VC\Redist\MSVC\14.44.35112\x64\Microsoft.VC143.CRT\ of a Visual Studio 2022
+Build Tools installation (compared 2026-09-25), and carries a valid Microsoft
+Authenticode signature. llama.cpp's own release zip for build 9222 does not
+include them; they were added beside it.
+
+Microsoft's list of Distributable Code for Visual Studio 2022
+(https://aka.ms/vs/17/redistribution, which redirects to
+https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution,
+read 2026-09-25) says, for the Visual C++ runtime files:
+
+  "Subject to the License Terms for the software, you may copy and distribute
+  with your program any of the files within the following folder and its
+  subfolders except as noted below. You may not modify these files.
+  [VisualStudioFolder]\VC\redist"
+
+and that page applies to "a validly licensed copy" of Visual Studio
+Enterprise 2022, Visual Studio Professional 2022 or Visual Studio Community
+2022. The Distributable Code section of the Visual Studio Community 2022
+licence terms
+(https://visualstudio.microsoft.com/wp-content/uploads/2021/11/Visual-Studio-2022-Community-License-EN.docx,
+read 2026-09-25) follows. The words are verbatim; the document numbers its
+list items automatically, and those letters are left out here.
+
+  DISTRIBUTABLE CODE. The software contains code that you may distribute in applications you develop as described in this Section. For purposes of this Section 4, the term “distribution” also means deployment of your applications for third parties to access over the Internet.
+  Right to Use and Distribute. The code and text files listed below are “Distributable Code”.
+  Distributable List. You may copy and distribute the object code form of code listed on the Distributable List located at https://aka.ms/vs/17/redistribution.
+  Sample Code, Templates and Styles. You may copy, modify and distribute the source and object code form of code marked as “sample”, “template”, “simple styles” and “sketch styles”.
+  Third Party Distribution. You may permit distributors of your applications to copy and distribute the Distributable Code as part of those applications.
+  Distribution Requirements. For any Distributable Code you distribute, you must:
+  add significant primary functionality to it in your applications; and
+  require distributors and external end users to agree to terms that protect the Distributable Code at least as much as this agreement.
+  Distribution Restrictions. You may not:
+  distribute components or runtimes that are marked “Preview”, “Pre-release” or “Beta”;
+  use Microsoft’s trademarks in your applications’ names or in a way that suggests your applications come from or are endorsed by Microsoft; or
+  modify or distribute the source code of any Distributable Code so that any part of it becomes subject to an Excluded License. An “Excluded License” is one that requires, as a condition of use, modification or distribution of code, that (i) it be disclosed or distributed in source code form; or (ii) others have the right to modify it.
+
+
+2. libomp140.x86_64.dll is not Microsoft's build
+-------------------------------------------------
+
+Each of the 14 ggml-cpu-*.dll files in the folder imports
+libomp140.x86_64.dll by that name, in its normal import table (not a delayed
+import), so Windows will not load one of them unless a file of that name can
+be found. They import 8 functions from it, all by name: __kmpc_barrier,
+__kmpc_end_single, __kmpc_fork_call, __kmpc_global_thread_num,
+__kmpc_push_num_threads, __kmpc_single, omp_get_num_threads and
+omp_get_thread_num.
+
+The copy in llama.cpp's own release zip for build 9222
+(https://github.com/ggml-org/llama.cpp/releases/download/b9222/llama-b9222-bin-win-vulkan-x64.zip,
+sha256 71d896955c0ae3576f6fd147f4ca197aa6a839ed7693651c14fe74014cef954e) is
+Microsoft's build:
+
+  libomp140.x86_64.dll  file version 20140926, 634,936 bytes
+    product name "LLVM* OpenMP* Runtime Library", company name "LLVM"
+    sha256 9ab1cb787e52b2a36133899c01c1db1f876067d1471cd224ead85f40a8152b99
+    Authenticode signature valid, signer Microsoft Corporation
+
+It is byte-identical to
+VC\Redist\MSVC\14.44.35112\debug_nonredist\x64\Microsoft.VC143.OpenMP.LLVM\libomp140.x86_64.dll
+of a Visual Studio 2022 Build Tools installation (compared 2026-09-25). The
+same Microsoft page lists Microsoft.VC[version].OpenMP.LLVM under
+debug_nonredist in its "Utilities List", and says:
+
+  "You may not distribute the contents of the following folders (please see
+  List of Utilities and Build Tools for Visual Studio 2022 for allowed usage
+  for development/testing purposes):
+  [VisualStudioFolder]VC\Redist\MSVC\[version]\debug_nonredist"
+
+Microsoft's documentation of the /openmp compiler option
+(https://learn.microsoft.com/en-us/cpp/build/reference/openmp-enable-openmp-2-0-support,
+read 2026-09-25) says: "Support currently isn't available for production code,
+since the required libomp DLLs aren't redistributable." The Visual Studio 2022
+Build Tools installation on the build machine holds no libomp140 file in any
+folder Microsoft lists as redistributable: its x64\Microsoft.VC143.OpenMP
+folder holds only vcomp140.dll, MSVC's own OpenMP runtime, which exports
+different functions. So Microsoft's copy is not shipped.
+
+What ships instead, under the same file name because that is the name the
+ggml-cpu-*.dll files import, is the LLVM project's own OpenMP runtime as
+conda-forge builds it:
+
+  libomp140.x86_64.dll  671,232 bytes, not code-signed
+    sha256 a64c9f8ab95efcad73679113425a6c8ae770ca77db89c87f4821db44415a76c4
+    = Library/bin/libomp.dll in the conda-forge package llvm-openmp 22.1.8,
+      build h4fa8253_3
+      (https://conda.anaconda.org/conda-forge/win-64/llvm-openmp-22.1.8-h4fa8253_3.conda,
+      sha256 36951e53e6e6f75d390d04bdd460ecd055ef7c4e2167bfdc12e310efe936378a,
+      348,928 bytes, the sha256 anaconda.org's API publishes for that file),
+      built by the recipe conda-forge/openmp-feedstock at commit
+      7b529585913eb257eef73d51d201357f2562f9d6 from the llvm-project source
+      at tag llvmorg-22.1.8 (zip sha256
+      d06ea5796b0979733f454b3e3120d2db501008f20a4ef04c1619713feaba3758)
+
+It is licensed under the Apache License 2.0 with LLVM Exceptions; the text is
+licenses/llvm-openmp-LICENSE.txt. It exports all 8 functions above by name.
+It imports only KERNEL32, PSAPI, VCRUNTIME140 (shipped in the same folder, see
+section 1; the package asks for vc14_runtime 14.44.35208 or later, and the
+copy shipped is 14.44.35211) and the api-ms-win-crt-* libraries of the
+Universal C Runtime, which is part of Windows 10 and later.
+tools/fetch-deps.mjs takes it from the pinned package, checks both sha256
+values, and writes it as llama-cuda/libomp140.x86_64.dll.
+
+Measured on 2026-09-25: llama-server build 9222, started with the frozen
+launcher's arguments from a folder holding this copy, loaded it (its loaded
+module list showed this file, not a copy elsewhere on the machine) and gave
+byte-identical answers to 4 of 4 deterministic requests (of 64, 6, 4 and 300
+tokens) with this copy and with Microsoft's. The same day the app itself,
+with this copy, stripped 24 of the 45 EDGAR documents of launch rounds 5-7
+to output byte-identical to the same engine run with Microsoft's copy. The
+other 21 were not run: the session running the test was short of memory and
+its driver was stopped (OPS_LEDGER.md, 2026-09-25).
+
+
+3. What the installer asks of the people who install it
+--------------------------------------------------------
+
+Section 1's Distribution Requirements say a distributor must "require
+distributors and external end users to agree to terms that protect the
+Distributable Code at least as much as this agreement". The installer's
+licence page (the file app/src-tauri/installer-licence.txt, which
+bundle.licenseFile in app/src-tauri/tauri.conf.json names) is this product's
+LICENSE, unchanged, followed by a short section headed "Microsoft Visual C++
+runtime files in the llama folder". That section names the three files of
+section 1 and says that, by installing, the user agrees, for those files, to
+no warranty or liability from Microsoft; to no reverse engineering,
+decompiling or disassembling except where the law expressly permits it; to
+not removing, minimising, blocking or modifying Microsoft's notices; and to
+using them only with this software. tools/derive-notice.mjs fails when that
+file does not begin with LICENSE's exact bytes, or when its section names a
+file that is not in the llama folder or leaves out one of the three.

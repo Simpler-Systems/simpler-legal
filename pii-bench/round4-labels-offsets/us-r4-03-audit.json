@@ -1,0 +1,69 @@
+{
+ "doc": "us-r4-03.txt",
+ "docSha256_16": "cdbf6f41d074f5e2",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 1,
+   "off": 6523,
+   "len": 25
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 1,
+   "off": 11522,
+   "len": 68
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 1,
+   "off": 12255,
+   "len": 23
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "party-collective-role",
+   "occurrences": 3,
+   "off": 22274,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "guidance-document",
+   "occurrences": 3,
+   "off": 30862,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 57972,
+   "len": 11
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 42154,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 42268,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 42455,
+   "len": 15
+  }
+ ]
+}

@@ -1,0 +1,962 @@
+[
+ {
+  "id": "courts-0",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-1",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-2",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-3",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-4",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-5",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-6",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-7",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-8",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-9",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-10",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-11",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-12",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-13",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-14",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-15",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-16",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-17",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-18",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-19",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-20",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-21",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-22",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-23",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-24",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-25",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-26",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-27",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-28",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-29",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-30",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-31",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-32",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-33",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-34",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-35",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-36",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-37",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-38",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-39",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-40",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-41",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-42",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-43",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-44",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-45",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-46",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-47",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-48",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-49",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-50",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-51",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-52",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-53",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-54",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-55",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-56",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-57",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-58",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-59",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-60",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-61",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-62",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-63",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-64",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-65",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-66",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-67",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-68",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-69",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-70",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-71",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-72",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-73",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-74",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-75",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-76",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-77",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-78",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-79",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-80",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-81",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-82",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-83",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-84",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-85",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-86",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-87",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-88",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-89",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-90",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-91",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-92",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-93",
+  "gold": "QUASI"
+ },
+ {
+  "id": "courts-94",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-95",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-96",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-97",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-98",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-99",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-100",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-101",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-102",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-103",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-104",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-105",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-106",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-107",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-108",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-109",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-110",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-111",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-112",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-113",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-114",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-115",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-116",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-117",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-118",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "courts-119",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-0",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-1",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-2",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-3",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-4",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-5",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-6",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-7",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-8",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-9",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-10",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-11",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-12",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-13",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-14",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-15",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-16",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-17",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-18",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-19",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-20",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-21",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-22",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-23",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-24",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-25",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-26",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-27",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-28",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-29",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-30",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-31",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-32",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-33",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-34",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-35",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-36",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-37",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-38",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-39",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-40",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-41",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-42",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-43",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-44",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-45",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-46",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-47",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-48",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-49",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-50",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-51",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-52",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-53",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-54",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-55",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-56",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-57",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-58",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-59",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-60",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-61",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-62",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-63",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-64",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-65",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-66",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-67",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-68",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-69",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-70",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-71",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-72",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-73",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-74",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-75",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-76",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-77",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-78",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-79",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-80",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-81",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-82",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-83",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-84",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-85",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-86",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-87",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-88",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-89",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-90",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-91",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-92",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-93",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-94",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-95",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-96",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-97",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-98",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-99",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-100",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-101",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-102",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-103",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-104",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-105",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-106",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-107",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-108",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-109",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-110",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-111",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-112",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-113",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-114",
+  "gold": "QUASI"
+ },
+ {
+  "id": "edgar-115",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-116",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-117",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-118",
+  "gold": "NO_MASK"
+ },
+ {
+  "id": "edgar-119",
+  "gold": "QUASI"
+ }
+]

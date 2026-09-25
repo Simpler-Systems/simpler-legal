@@ -1,0 +1,20 @@
+{
+ "doc": "sg-r6-03.txt",
+ "docSha256_16": "3aeb44583a82a8e9",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 4,
+   "off": 72623,
+   "len": 7
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 107291,
+   "len": 11
+  }
+ ]
+}

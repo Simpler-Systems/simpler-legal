@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r6-13.txt",
+ "docSha256_16": "d6303e4408a4f7f3",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 14275,
+   "len": 6
+  }
+ ]
+}

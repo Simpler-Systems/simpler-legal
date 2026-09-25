@@ -1,0 +1,27 @@
+{
+ "doc": "edgar-r4-02.txt",
+ "docSha256_16": "57df85e7afde2382",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 21850,
+   "len": 5
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 29916,
+   "len": 47
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "QUASI",
+   "occurrences": 7,
+   "off": 29898,
+   "len": 6
+  }
+ ]
+}

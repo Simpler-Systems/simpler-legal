@@ -1,0 +1,5007 @@
+{
+ "minedAt": "2026-07-22T09:02:35.326Z",
+ "note": "QUASI-only forms (zero NM conflict corpus-wide) surviving in v1-legal.9 — the oracle-certified free mass; build SHAPE rails from these, never lists",
+ "count": 998,
+ "byCat": {
+  "DEM": 178,
+  "PERSON": 19,
+  "QUANTITY": 92,
+  "ORG": 232,
+  "LOC": 88,
+  "MISC": 226,
+  "CODE": 7,
+  "DATETIME": 156
+ },
+ "forms": [
+  {
+   "form": "son",
+   "docs": 127,
+   "cat": "DEM"
+  },
+  {
+   "form": "am",
+   "docs": 127,
+   "cat": "PERSON"
+  },
+  {
+   "form": "y",
+   "docs": 127,
+   "cat": "PERSON"
+  },
+  {
+   "form": "m",
+   "docs": 127,
+   "cat": "PERSON"
+  },
+  {
+   "form": "no",
+   "docs": 127,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "n",
+   "docs": 127,
+   "cat": "PERSON"
+  },
+  {
+   "form": "h",
+   "docs": 127,
+   "cat": "PERSON"
+  },
+  {
+   "form": "s",
+   "docs": 127,
+   "cat": "PERSON"
+  },
+  {
+   "form": "ta",
+   "docs": 127,
+   "cat": "ORG"
+  },
+  {
+   "form": "ni",
+   "docs": 126,
+   "cat": "ORG"
+  },
+  {
+   "form": "n.",
+   "docs": 121,
+   "cat": "PERSON"
+  },
+  {
+   "form": "s.",
+   "docs": 114,
+   "cat": "PERSON"
+  },
+  {
+   "form": "dm",
+   "docs": 113,
+   "cat": "PERSON"
+  },
+  {
+   "form": "i.",
+   "docs": 104,
+   "cat": "PERSON"
+  },
+  {
+   "form": "eat",
+   "docs": 84,
+   "cat": "ORG"
+  },
+  {
+   "form": "company",
+   "docs": 75,
+   "cat": "ORG"
+  },
+  {
+   "form": "m.",
+   "docs": 63,
+   "cat": "PERSON"
+  },
+  {
+   "form": "ireland",
+   "docs": 58,
+   "cat": "ORG"
+  },
+  {
+   "form": "northern ireland",
+   "docs": 57,
+   "cat": "LOC"
+  },
+  {
+   "form": "commonwealth office",
+   "docs": 46,
+   "cat": "ORG"
+  },
+  {
+   "form": "gl",
+   "docs": 40,
+   "cat": "PERSON"
+  },
+  {
+   "form": "turkish national",
+   "docs": 36,
+   "cat": "DEM"
+  },
+  {
+   "form": "third",
+   "docs": 36,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "usa",
+   "docs": 25,
+   "cat": "LOC"
+  },
+  {
+   "form": "h.",
+   "docs": 25,
+   "cat": "PERSON"
+  },
+  {
+   "form": "17",
+   "docs": 24,
+   "cat": "DEM"
+  },
+  {
+   "form": "ruc",
+   "docs": 22,
+   "cat": "ORG"
+  },
+  {
+   "form": "21",
+   "docs": 22,
+   "cat": "DEM"
+  },
+  {
+   "form": "ira",
+   "docs": 21,
+   "cat": "ORG"
+  },
+  {
+   "form": "seven",
+   "docs": 19,
+   "cat": "DEM"
+  },
+  {
+   "form": "justice",
+   "docs": 19,
+   "cat": "ORG"
+  },
+  {
+   "form": "dependent",
+   "docs": 18,
+   "cat": "DEM"
+  },
+  {
+   "form": "hall",
+   "docs": 18,
+   "cat": "PERSON"
+  },
+  {
+   "form": "police officer",
+   "docs": 17,
+   "cat": "DEM"
+  },
+  {
+   "form": "33",
+   "docs": 17,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "mother",
+   "docs": 14,
+   "cat": "DEM"
+  },
+  {
+   "form": "eight",
+   "docs": 14,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "widows",
+   "docs": 13,
+   "cat": "DEM"
+  },
+  {
+   "form": "twenty",
+   "docs": 10,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "cable",
+   "docs": 10,
+   "cat": "PERSON"
+  },
+  {
+   "form": "raf",
+   "docs": 10,
+   "cat": "ORG"
+  },
+  {
+   "form": "swedish",
+   "docs": 9,
+   "cat": "DEM"
+  },
+  {
+   "form": "84",
+   "docs": 8,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "crown court",
+   "docs": 8,
+   "cat": "ORG"
+  },
+  {
+   "form": "death penalty",
+   "docs": 8,
+   "cat": "MISC"
+  },
+  {
+   "form": "nine",
+   "docs": 7,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "the district court",
+   "docs": 7,
+   "cat": "ORG"
+  },
+  {
+   "form": "father",
+   "docs": 7,
+   "cat": "DEM"
+  },
+  {
+   "form": "diyarbakır",
+   "docs": 7,
+   "cat": "LOC"
+  },
+  {
+   "form": "driver",
+   "docs": 7,
+   "cat": "DEM"
+  },
+  {
+   "form": "78",
+   "docs": 7,
+   "cat": "CODE"
+  },
+  {
+   "form": "police and criminal evidence act 1984",
+   "docs": 7,
+   "cat": "MISC"
+  },
+  {
+   "form": "(tingsrätten)",
+   "docs": 6,
+   "cat": "ORG"
+  },
+  {
+   "form": "barrister",
+   "docs": 6,
+   "cat": "DEM"
+  },
+  {
+   "form": "registrar",
+   "docs": 6,
+   "cat": "ORG"
+  },
+  {
+   "form": "education",
+   "docs": 5,
+   "cat": "MISC"
+  },
+  {
+   "form": "stockholm",
+   "docs": 5,
+   "cat": "LOC"
+  },
+  {
+   "form": "(hovrätten)",
+   "docs": 5,
+   "cat": "ORG"
+  },
+  {
+   "form": "diyarbakır state security court",
+   "docs": 5,
+   "cat": "ORG"
+  },
+  {
+   "form": "lawyer.",
+   "docs": 5,
+   "cat": "DEM"
+  },
+  {
+   "form": "49",
+   "docs": 5,
+   "cat": "DEM"
+  },
+  {
+   "form": "court-martial",
+   "docs": 5,
+   "cat": "MISC"
+  },
+  {
+   "form": "marxist-leninist",
+   "docs": 5,
+   "cat": "DEM"
+  },
+  {
+   "form": "marxist-leninist regime",
+   "docs": 5,
+   "cat": "MISC"
+  },
+  {
+   "form": "1992",
+   "docs": 5,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "28 days",
+   "docs": 5,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "stockholm.",
+   "docs": 4,
+   "cat": "LOC"
+  },
+  {
+   "form": "chair",
+   "docs": 4,
+   "cat": "DEM"
+  },
+  {
+   "form": "six months",
+   "docs": 4,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "denmark",
+   "docs": 4,
+   "cat": "ORG"
+  },
+  {
+   "form": "two month",
+   "docs": 4,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "two days",
+   "docs": 4,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "uk",
+   "docs": 4,
+   "cat": "LOC"
+  },
+  {
+   "form": "twelve years",
+   "docs": 4,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "(kammarrätten)",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "gave birth",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "5 years",
+   "docs": 3,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "diyarbakır assize court",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "girl",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "advokat",
+   "docs": 3,
+   "cat": "MISC"
+  },
+  {
+   "form": "kingdom of denmark",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "danish",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "danish government",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "disability",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "two year",
+   "docs": 3,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "irish",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "daughter",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "q.c.",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "eight days",
+   "docs": 3,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "black",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "1968",
+   "docs": 3,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "commander",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "germany",
+   "docs": 3,
+   "cat": "LOC"
+  },
+  {
+   "form": "murder",
+   "docs": 3,
+   "cat": "MISC"
+  },
+  {
+   "form": "eight months",
+   "docs": 3,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "soldier",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "ankara security directorate",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "liberty",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "eleven",
+   "docs": 3,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "sąd rejonowy",
+   "docs": 3,
+   "cat": "ORG"
+  },
+  {
+   "form": "fifteen",
+   "docs": 3,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "beyoğlu",
+   "docs": 3,
+   "cat": "LOC"
+  },
+  {
+   "form": "clerk",
+   "docs": 3,
+   "cat": "DEM"
+  },
+  {
+   "form": "food industry",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "försäkringsläkare",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "sixteen",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "southwark",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "1996",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "tunceli",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "leaflets",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "three other persons",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "homosexual",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "a school",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "pupils",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "16 years",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "yttrande",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "svea court of appeal (hovrätten)",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "five years",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "through a friend",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "second child",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "father on the birth certificate",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "three members",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "kurdish",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "three years old",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "juror",
+   "docs": 2,
+   "cat": "PERSON"
+  },
+  {
+   "form": "boy",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "seventeen",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "copenhagen",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "high court of western denmark",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "irish government",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "lecturer in law",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "unemployed",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "former wife",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "royal ulster constabulary",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "two days late",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "twenty-two",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "manchester",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "seven year",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "air force act",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "incapacity",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "3 september",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "dss",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "8 years",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "2 months",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "england",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "conspiracy to defraud",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "seventy-second day",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "tukey",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "belfast",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "scottish",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "administrator",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "employment appeal tribunal",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "race",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "psychologist",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "iraq",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "false accounting",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "four others",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "2 days",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "surrey",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "shoulder",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "oxfordshire",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "eighteen month",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "a prisoner",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "1997",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "depression",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "mc",
+   "docs": 2,
+   "cat": "PERSON"
+  },
+  {
+   "form": "4 years",
+   "docs": 2,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "nine hearings",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "twenty-eight",
+   "docs": 2,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "farm",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "widow's bereavement allowance",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "sąd okręgowy",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "sister",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "sisters",
+   "docs": 2,
+   "cat": "DEM"
+  },
+  {
+   "form": "konya",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "bakırköy assize court",
+   "docs": 2,
+   "cat": "ORG"
+  },
+  {
+   "form": "widowed parent’s allowance",
+   "docs": 2,
+   "cat": "MISC"
+  },
+  {
+   "form": "warsaw",
+   "docs": 2,
+   "cat": "LOC"
+  },
+  {
+   "form": "primary school teacher",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "county of stockholm",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "lower back and hip joint problems",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "the usa",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "renovating walls",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "hip joint problems",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "lumbar spondylosis",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "coxarthritis",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "a degenerative joint disease of his lower back and right hip",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "measuring, installing and painting",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pain in his hip joint and lower back",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "carried animal carcasses",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "heavy pieces of meat",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "extreme strain on the back, hips, knees and ankles",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "right hip and lower back",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "hip joint had degenerative alterations",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "lower back was not remarked on",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "hip joint operation",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "moderate arthritis in his hip joint",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "age of 55",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "arthritis",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "serious joint arthritis",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "right hip",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "slaughterhouse",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "hip joint arthritis",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "carried animal carcasses and heavy pieces of meat",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "back, hips, knees and ankles",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "1990",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "1990s",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "one year, five months and twenty days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "sixteen books",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "equality and human rights commission",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "borough of southwark",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "four hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "reconstructive operations",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "severe complications affecting her ears and eyes",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "çiğli directorate of land registration",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "governorship of tunceli",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "malatya administrative court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "nine years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "international commission of jurists",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "40 hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "court of appeal (hovrätten) for southern norrland",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "homosexual propaganda (homosexpropaganda) in the course of a few decades society has swung from rejection of homosexuality and other sexual deviances (avarter) to embracing this deviant sexual proclivity (böjelse)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "southern norrland",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "upper secondary school (gymnasieskola)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "approximately a hundred leaflets",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "in or on the pupils’ lockers",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "school’s principal",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "homosexual propaganda (homosexpropaganda)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "homosexuality",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "sexual deviances (avarter)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "deviant sexual proclivity (böjelse)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "folkkroppen",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "hiv and aids",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "homosexuals",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "modern-day plague",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "avdramatisera",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "sexual deviation (sexuella avart)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "hets mot folkgrupp",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "villkorlig dom",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "three out of five",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "in and on the pupils’ lockers",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pupils and teachers",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "two judges",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "distributed at a school and addressed to the pupils",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "aimed at pupils",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(homosexpropaganda)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(avarter)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(böjelse)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(folkkroppen)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(sexuella avart)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(hets mot folkgrupp)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(villkorlig dom)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "jönköping",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "type ii diabetes",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "vascular spasms",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "heart attack",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "cerebral stroke",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "county of södermanland",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "diabetes",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "type ii diabetes and vascular spasms",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "(livränta)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "arteriosclerosis",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "heart and vascular disorders",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "enforcement authority (kronofogdemyndigheten)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "enforcement authority",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "district court (tingsrätten) of stockholm",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "proof of attachment (bevis om utmätning)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "besluta om rättelse",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "kronofogdemyndigheten",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "(bevis om utmätning)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(besluta om rättelse)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "djibouti",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "gave birth to a son",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "french",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "gave birth to the applicants’ second child",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "five years’",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "could not speak french",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "djibouti national",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "hizbullah",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "diyarbakır public prosecutor’s",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "diyarbakır public prosecutor",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "muş public prosecutor",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "norwegian",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "sarpsborg city court (tingrett)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "car parked near a petrol station",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "seventeen and twenty-three years old",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "foster mother of a child who had been a pupil in the same school class as the victim",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "three votes to two",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "foster mother",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "sarpsborg city court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "twenty-three years",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "arms behind the neck support",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "“insider”",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "ansvarig utgivare",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "chapters 5 and 6",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "chapter 5",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "brottsbalken",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "chapter 10, section 2",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "stockholm district court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "stockholms tingsrätt",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "chapters 1-9",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "chapter 6",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "chapter 1, section 6(2)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "“shady transactions and shady characters” were revealed",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "london-based",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "stockholm district court (stockholms tingsrätt)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "court of appeal (svea hovrätt)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "organised crime within media",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "six months’",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "three co‑accused",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "designer knives, lamps and similar products",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "retten i viborg",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "15 days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "120 hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "city court (retten i viborg)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "lamps and cutlery",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "page 90",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pain in his back and legs",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "numbness in his right arm",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "full disability pension",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "dairy worker",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "food science technician",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "back problems",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "degenerative changes to his back",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "back-related and other problems",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "back-related",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "1972",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "falun",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "car driver",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "källviken 1:18, 1:25 and 1:26",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "falun municipal council (kommunfullmäktige)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "falun district court (tingsrätten)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "municipality of falun",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "falun municipal council",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kommunfullmäktige",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "områdesplan",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "falun district court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "two of the three properties",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "their daughter",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "scientific research and development manager",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "school-teacher",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "dublin",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "church of ireland",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "quakers",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "christian",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "nominated as beneficiary under the pension scheme attached to his employment",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "health insurance in the names of the second and third applicants",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "illegitimate child",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "not practised any formal religion",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "different levels in the family house",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "self-contained flats in the house",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "naturalisation",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "scientific research",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "development manager",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "one month",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "county of norrbotten",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "north of sweden",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "länsstyrelsen",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "norrbotten",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "linjetrafik",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "combined taxi and interurban traffic business",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "transportrådet",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "taxi traffic licence",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "interurban",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "taxi",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "eastern court of appeal (østre landsret)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "separation ved bevilling",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "skilmisse ved bevilling",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "eastern court of appeal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "østre landsret",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "højesteret",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "1949",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "fejde case",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "engineer by profession",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "torsås",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "south-west",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "ronneby",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "skåne",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "blekinge",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "hässleholm",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "karlshamn",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "district court (tingsrätten) of ronneby",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "court of appeal (hovrätten) of skåne and blekinge",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "court of appeal of skåne and blekinge",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "1978",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "irish citizens",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "woodbourne royal ulster constabulary",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "3.40 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "between 8.15 p.m. and 10.00 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "44 hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "44 hours and 5 minutes",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "18 months’",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "7.55 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "antrim police station",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "between 11.05 a.m. and 12.15 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "30 hours and 15 minutes",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "8.15 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "10.00 p.m",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "11.40 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "5 minutes",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "11.05 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "12.15 p.m",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "2.10 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "aged seven",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "180 pupils",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "seven-year-old",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "barnstaple",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "y v. the united kingdom",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "no. 247",
+   "docs": 1,
+   "cat": "CODE"
+  },
+  {
+   "form": "247-a",
+   "docs": 1,
+   "cat": "CODE"
+  },
+  {
+   "form": "approximately 180 pupils",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "five demerit marks",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "fifth demerit mark",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "talking in the corridor",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "being a little late for bed on one occasion",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "three warnings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "three “whacks“",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "rubber-soled gym shoe",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "three days later",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "a no. 247-a",
+   "docs": 1,
+   "cat": "CODE"
+  },
+  {
+   "form": "northern ireland standing advisory commission on human rights",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "czech and slovak federal republic",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "6.30 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "interrogation centre",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "7.30 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "9.32 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "9 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "fourteen hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "thirty minutes",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "forty-three occasions",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "forty- eight hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "5.05 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "castlereagh interrogation centre",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "5.10 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "11.30 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "four days, six hours and twenty-five minutes",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "twenty-two occasions",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "policeman",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "sinn fein headquarters",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "two-day extension",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "three-day extension",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "six days, fourteen hours and thirty minutes",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "forty-three",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "manchester crown court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "10.46 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "12.47 p.m",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "12.50 p.m",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "2.21 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "2.24 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "3.27 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "4.06 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "merseyside",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "wirral",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "merseyside police",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "most senior-ranking female police officer",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "following seven years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "merseyside police authority",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "injury to her knee",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "wing commander",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "squadron leader",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "flight lieutenant",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "raf court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "brüggen",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "raf station, uxbridge",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "directorate of legal services",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "judge advocate general’s office",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "raf station, brüggen",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "air force board",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "non-commissioned officer",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "rheindahlen",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "twenty-two weeks",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "halifax",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "five pounds sterling (“gbp”)",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "southwark crown court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "ilford north",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "five pounds sterling",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "1983",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "skanderborg, denmark",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "partly disabled",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "city court of skanderborg (retten i skanderborg)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "permanent disablement and loss of working capacity",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "national board of industrial injuries",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "arbejdsskadestyrelsen",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "municipality of skanderborg",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "severely injured",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "city court of skanderborg",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "retten i skanderborg",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "prisoner’s advice service",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "fourth review",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "fifth review",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "12 months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "pre-release employment scheme hostel",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "parole board’s",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "her majesty’s pleasure",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "absconded from prison",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "his recapture",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "during her majesty’s pleasure",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "mental abnormality",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "deaf mute",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "british sign language",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "dlp",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "mental abnormality induced by alcohol",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "alcohol problem",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "injuries to her face and back.",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "just over two years later",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "his alcohol problem",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "drinking at least eight cans of lager",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "parole board's discretionary lifer panel (“the dlp”)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "stage 1 british sign language qualification",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "acted as interpreter for",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "injuries to her face and back",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "discretionary lifer panel",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "british sign language qualification",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "birmingham",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "asian",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "birmingham crown court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "friday evening",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "monday morning",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "asians",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "1979",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "sheffield",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "pakistan",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "heroin",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "b.'s",
+   "docs": 1,
+   "cat": "PERSON"
+  },
+  {
+   "form": "lordship's house",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "3 december",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "24 april",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "mrl.wildhaber",
+   "docs": 1,
+   "cat": "PERSON"
+  },
+  {
+   "form": "three times",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "fourth absence",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "brompton barracks",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "christmas",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "february",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "cable and others v. the united kingdom",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "regular forces",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "two and a half years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "psychiatric care",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "early february",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "british nationals",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "722",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "scottish prison",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "drug offence",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "cancer",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "age of 39",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "breadwinner",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "prk-rızgari",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "1960",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "transsexuals",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "post-operative male to female transsexual",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "dress as a woman",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "underwent aversion therapy",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "mid-1960s",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "transsexual",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "married a woman",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "“brain sex” did not fit her body",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "man for work but as a woman in her free time",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "every three months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "gender identity clinic",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "regular consultations with a psychiatrist",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "prescribed hormone therapy",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "attending grooming classes",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "voice training",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "surgery to shorten her vocal chords",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "accepted on the waiting list for gender re-assignment surgery",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "gender re-assignment surgery",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "national health service",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "national insurance (“ni”)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "ni number",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "department of social security (“dss”)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "dss contributions agency",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "age of 60",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "age of 65",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "post-operative male to female transsexual.",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "shorten her vocal chords",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "aversion therapy",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "iran",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "greece",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "city court of hobro (retten i hobro)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "city court of hobro",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "refugee board",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "retten i hobro",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "vestre landsret",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "udlændingestyrelsen",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "flygtningenævnet",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "leave to appeal board",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "procesbevillingsnævnet",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "narcotics",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "1986",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "treasury solicitor",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "two year limitation period",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "bristol",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "bristol crown court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "ecstasy tablets",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pager system",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pager bureau",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pager operator",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "pager terminal",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "clone pagers",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "supply a controlled drug",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "gothenburg",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "1980",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "second half of the 1980s",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "1 year",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "450 swedish kronor (sek)",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "ten hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "western sweden",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "nordic language convention",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "nordiska språkkonventionen",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "1 year and 2 months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "1976",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "social worker",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "employment tribunal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "42 days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "employment tribunal's",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "50 pages",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "house of lords standing order xiii",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "london borough",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "islington",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "black woman",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "london borough of islington",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "bournemouth",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "dorset",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "spain",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "mercedes",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "garage",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "dorset police",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "owned a garage",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "two mercedes cars",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "false compartment in the fuel tank",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "stolen vehicles",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "garage premises",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "3 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "securicor bag",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "17 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "12-13 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "12.5 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "robbery, wounding with intent, possessing firearms with intent to endanger life and possessing ammunition with intent to endanger life",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "six shots",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "police officer in the leg",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "superficial wound to his shoulder.",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "cambridgeshire",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "cambridge constabulary",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "cambridgeshire regional crime squad",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "credit card fraud",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "intelligence bureau of the cambridgeshire county constabulary",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "peterborough crown court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "cambridgeshire county constabulary",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "6.15 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "wolverhampton",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "west midlands police force",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "bilston street police station",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "17 days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "armed robberies of mini-cab drivers",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "person posing as a passenger at night",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "too ill to go to work",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "home office guidelines on the use of equipment in police surveillance operations",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "bilston street police station.",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "bilston street",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "nottingham",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "75 year old",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "parkhurst prison",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "category a” (high security)",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "the murder of a woman whom he had violently assaulted",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "75 year",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "lincoln",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "1957",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "royal navy",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "senior non-commissioned",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "naval police",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "naval barrister",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "admiralty board",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "experienced administrator",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "administrator.",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "naval",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "senior non-commissioned rank",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "suspicion of travel fraud",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "travel allowances",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "naval court-martial",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "travel fraud",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "section 42 of the naval discipline act 1957",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "sections 1 and 15 of the theft act 1968",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "catterick garrison",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "28 days’",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "guardroom of catterick garrison",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "historian",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "gdynia district court (sąd rejonowy)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "gdynia district court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kraków",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "kielce regional court (sąd wojewódzki)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kielce regional court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kraków court of appeal (sąd apelacyjny)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "supreme court (sąd najwyższy)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "o ochronę dóbr osobistych",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "eighteen months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "hammerhead in a sock",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "10 to 2",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "murder,",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "murdered",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "preceding eighteen months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "only 33",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "divisional court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "memory loss",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "four other people",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "three different victims",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "depression and memory loss",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "responding well to medication",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "suffering from depression and memory loss",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "abused four other people including his brother",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "diyarbakır martial law court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "624 co-suspects",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "stoke-on-trent.",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "over 4 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "stoke-on-trent",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "five applicants",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "five cases",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "thirty-five",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "six years and six months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "belen",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "27 may",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "küçükyalı police station",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "küçükyalı bridge",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "2x1 metres",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "falls road, belfast",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "royal ulster constabulary (“ruc”)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "woodbourne police station",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "belfast county court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "northern ireland court of appeal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "belfast magistrates' court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "proceeds of crime",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "79 packages",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "starch",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "diamorphine",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "14 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "criminal appeals office",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "age is 49",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "18 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "12 year",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "unladen lorry",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "(subsequently found to be starch)",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "belly tank of the apparently unladen lorry",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "one half of the 12 year",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "79 packages of powder (subsequently found to be starch)",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "twelve years and six months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "muğla security department",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "siirt civil court of first instance",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "58 occasions",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "58 hearings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "sixty three",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "age sixty",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "aged sixty three",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "sixty five,",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "11.590.000 turkish liras (trl)",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "beyoğlu civil court of general jurisdiction",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "twenty three hearings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "beyoğlu court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "2 years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "5 additional days’",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "10 days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "high risk prisoners",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "such removal risked causing harm to him",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "picked it up and re-inserted it into his anus",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "the item was a suppository",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "no suppositories had been prescribed",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "5 additional days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "as it had already been re-inserted in his anal area",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "already re-inserted the item",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "suspected of being secreted internally",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "to remove an item from his anus",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "siverek security directorate",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "forty-seven days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "mamak military prison",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "1988",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "essex",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "petersfield",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "69 miles per hour (mph)",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "m11",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "essex constabulary",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "north essex magistrates’ court",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "six penalty points",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "47 mph",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "30 mph",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "surrey police",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "4.55 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "three penalty points",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "włocławek regional court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "nineteen",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "batman",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "batman magistrates' court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "nineteen hearings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "batman public prosecutor",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "isle of man",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "grew raspberries",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "department of local government and the environment ('dolge')",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "manx high court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "manx",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "dolge",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "coroner",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "37 page",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "privy council",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "raspberries",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "high court of justice of the isle of man",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "packing raspberries in his kitchen",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "37 page judgment",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "widowed bereavement allowance",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "widow's bereavement tax allowance",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "fourteen years' old",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "150 new turkish liras (ytl)",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "marmaris",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "şırnak",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "eight years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "1956",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "gunner",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "soldiers",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "service police",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "8-day delay",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "mctc",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "“16-day arrest” forms",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "8-day reports",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "headquarters land command",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "16th air assault brigade",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "4th division",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "army general court martial",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "two other soldiers",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "twelve “8-day delay” reports",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "16-day",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "i̇stanbul",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "5.15 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "7.10 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "haseki state hospital",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "ecchymosis",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "9 x 3 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "lower part of his abdominal region",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "7.25 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "büyükçekmece",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "0.5 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "his nose",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "his left heel",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "2-3 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "his left elbow",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "2 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "abdominal region",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "2 x 1 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "the left elbow",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "0.5 x 1 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "the right side of the lower lip",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "the forehead",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "the left heel",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "3 x 1 cm",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "the left lower part of the sternum",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "the upper part of the external part of the outer ear",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "fatih",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "beyoğlu assize court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "one child",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "tczew",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "180 hearings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "fifteen other co‑accused",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "chippenham",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "unmarried sisters",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "thirty-one years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "last thirty-one years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "sister’s",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "sister’",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "four votes to three",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "dev-yol",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "incapacity benefit",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "social security appeals service",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "grand national assembly of turkey",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "national assembly",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "konya assize court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "article 83 of the constitution",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "article 253 § 4 of the code of criminal procedure",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "department of criminal affairs of the ministry of justice",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "rules 131 et seq. of the rules of procedure of the national assembly",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "secretariat of the speaker's office",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "299 files",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "252 cases",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "226 cases",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "konya-ereğli",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "23rd parliament",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "77 files",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "approximately 11 p.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "beyoğlu district",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "taksim",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "ecchymoses and lacerations",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "one centimetre",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "long abrasion on the left side of the rear parietal region",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "thirty centimetre",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "long ecchymosed area stretching from the back of the left shoulder to the right scapular area",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "ecchymosed area",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "below the left scapular region",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "fifteen by five centimetres",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "the left lumbar",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "seven by fourteen centimetres",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "the right side of the chest",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "four one centimetre",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "bleeding grazes",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "the inside of the left arm",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "the left cheek",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "the right tibial region",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "beyoğlu district administrative council",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "sivas military hospital",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "‑ 6, 25 of myopia (nearsightedness)",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "+0,25 of hyperopia (farsightedness)",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "– 6,75 of anisometropia amblyopia (difference in refractive error between the two eyes leading to reduced vision in one eye) on his left eye",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "strong myopic degeneration (-8 degrees) in his left eye",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "37 % of loss of sight",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "vallentuna",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "swedish state",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "57 annexes",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "enforcement service",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "national tax board (riksskatteverket)",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "court of appeal to the government",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "fastställelsetalan",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "three extensions",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "4 january",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "state-owned bank",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "19 march",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "tunceli civil court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "wpa",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "kastamonu state hospital",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "inebolu assize court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "sixteen years old",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "1.20 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "diyarbakır state hospital",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "10.40 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "2.15 a.m.",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "eleven years old",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "four sisters",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "chef",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "fifty hours",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "wood green crown court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "nine months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "mild to moderate depression",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "panic disorder",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "mild mental retardation",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "borderline intellectual functioning",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "dyslexia",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "eleven years",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "six weeks",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "four and a half years’",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "driving whilst disqualified",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "mild to moderate depression, panic disorder, mild mental retardation, borderline intellectual functioning and dyslexia",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "głubczyce",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "opole regional court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "wroclaw court of appeal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "wrocław court of appeal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "central bureau of investigation",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "centralne biuro śledcze",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "warsaw district court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "warsaw regional court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "warsaw court of appeal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "263 § 4",
+   "docs": 1,
+   "cat": "CODE"
+  },
+  {
+   "form": "private security guard",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "etibank",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kahta civil court of first instance",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kahta cadastral court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "kahta court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "electric shock",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "aliağa criminal court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "1995",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "six years'",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "territorial army",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "pay and accounts clerk",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "six-year",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "35 days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "clerical post",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "extra six years",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "bakırköy magistrates' court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "buca prison",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "1982",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "scotland",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "sheriff court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "court of session",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "outer house of the court of session",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "21 days",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "inner court",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "summar roll",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "outer house",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "scottish legal services ombudsman",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "sheriff principal",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "lord ordinary",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "six years and three months",
+   "docs": 1,
+   "cat": "DATETIME"
+  },
+  {
+   "form": "twenty hearings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "two hearings",
+   "docs": 1,
+   "cat": "QUANTITY"
+  },
+  {
+   "form": "grandmother",
+   "docs": 1,
+   "cat": "DEM"
+  },
+  {
+   "form": "ownership and use of land",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "city of warsaw",
+   "docs": 1,
+   "cat": "LOC"
+  },
+  {
+   "form": "local organs of the uniform state power",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "ustawa o terenowych organach jednolitej władzy państwowej",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "state treasury",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "board of the warsaw national council",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "prezydium rady narodowej",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "53(1)",
+   "docs": 1,
+   "cat": "CODE"
+  },
+  {
+   "form": "expropriation of property (conditions and procedures) act",
+   "docs": 1,
+   "cat": "MISC"
+  },
+  {
+   "form": "warsaw district office",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "urząd rejonowy",
+   "docs": 1,
+   "cat": "ORG"
+  },
+  {
+   "form": "215(1)",
+   "docs": 1,
+   "cat": "CODE"
+  },
+  {
+   "form": "wojewódzki sąd administracyjny",
+   "docs": 1,
+   "cat": "ORG"
+  }
+ ]
+}

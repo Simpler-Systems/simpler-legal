@@ -1,0 +1,27 @@
+{
+ "doc": "edgar-r7-11.txt",
+ "docSha256_16": "a5b399e70a80fcd0",
+ "entities": [
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 10,
+   "len": 18
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 2,
+   "off": 34081,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 4190,
+   "len": 3
+  }
+ ]
+}

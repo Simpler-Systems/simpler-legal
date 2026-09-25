@@ -1,0 +1,779 @@
+{
+ "date": "2026-07-23",
+ "question": "Do our engine classes (holes) match what real-world redactors actually redact?",
+ "method": {
+  "edgar": "34 EDGAR exhibits carrying CT-redaction legends fetched via SEC full-text search; every inline redaction marker classified adjacency-first, then table-run/heading, then ±200-char cues",
+  "f3d": "3060 F.3d opinions (24 local CAP volumes) scanned for court redaction/pseudonymization conventions",
+  "sgAnon": "8 SGHCF (Family Division) judgments with letter-coded parties fetched from eLitigation; pseudonym placeholders and KEPT identity surfaces inventoried",
+  "pairs": "true raw/redacted twins verified by two proper-noun probe phrases + >=15 anchor-aligned sites; redacted content recovered from the raw twin and shape-classified"
+ },
+ "edgar": {
+  "docs": 34,
+  "totalSites": 4374,
+  "families": {
+   "technical_product": 782,
+   "date_duration": 596,
+   "pricing_fee": 682,
+   "bank_account": 41,
+   "milestone_event": 89,
+   "quantity_volume": 42,
+   "table_block": 864,
+   "defined_term_name": 12,
+   "contact_address": 134,
+   "entire_provision": 1012,
+   "other_unclear": 36,
+   "entity_counterparty": 52,
+   "territory_place": 5,
+   "person_name": 27
+  },
+  "samples": {
+   "technical_product": [
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. 12.13.2016 TECHNOLOGY PURCHASE …",
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. THIS TECHNOLOGY PURCHASE AGREEME…",
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. To this end, the Parties enter i…"
+   ],
+   "date_duration": [
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. TABLE OF CONTENTS CLAUSE PAGE …",
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. must then be accepted by the Sel…",
+    "red-01.txt: …ectively or individually, within a maximum deadline of 90 days. 8.4 If, within [***] years of the Execution Date, (i) Milestone I has not been achieved and (ii) the…"
+   ],
+   "pricing_fee": [
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. The Sellers shall have no right …",
+    "red-01.txt: …rice Distribution Ratio to the following Seller bank accounts: Account holder: [***] Bank: [***] IBAN: [***] BIC: [***] Account holder: [***] Bank: [***] IBAN…",
+    "red-01.txt: …artridges for it to third parties, the Sellers shall receive a licensing fee of [***]% of the net sales revenue from the Gyronimo Platform Application Cartridges mar…"
+   ],
+   "bank_account": [
+    "red-01.txt: …tion Ratio to the following Seller bank accounts: Account holder: [***] Bank: [***] IBAN: [***] BIC: [***] Account holder: [***] Bank: [***] IBAN: [***] BIC:…",
+    "red-01.txt: … the following Seller bank accounts: Account holder: [***] Bank: [***] IBAN: [***] BIC: [***] Account holder: [***] Bank: [***] IBAN: [***] BIC: [***] In or…",
+    "red-01.txt: …ng Seller bank accounts: Account holder: [***] Bank: [***] IBAN: [***] BIC: [***] Account holder: [***] Bank: [***] IBAN: [***] BIC: [***] In order for paym…"
+   ],
+   "milestone_event": [
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. 6.3 The above Clauses 6.1 and 6.…",
+    "red-01.txt: …ge-based sample-to-answer point-of-care capable diagnostic platform. Should the [***] group have or be developing plans to target development of a cartridge-based sa…",
+    "red-02.txt: …d as a result of post-approval regulatory commitments and (z) shall not include [*****]. - 7 - CERTAIN IDENTIFIED INFORMATION HAS BEEN EXCLUDED FROM THE EXHIBIT BECA…"
+   ],
+   "quantity_volume": [
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. but, due to the infringement of …",
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. Annex 19.4 Press Release Curet…",
+    "red-02.txt: …or Product and intermediate for up to [*****] months following such termination [*****]; and (ii) within sixty (60) days after Enanta's request, Abbott shall provide t…"
+   ],
+   "table_block": [
+    "red-01.txt: …atform. The Seller is aware that Carpegen is a cooperation partner of the joint [***] project ([***]). The obligation under sentence 1 does not apply in this respect…",
+    "red-01.txt: … The obligation under sentence 1 does not apply in this respect, as long as the [***] project of the Sellers supported within the scope the LifeSciences.NRW lead mar…",
+    "red-01.txt: …ot material and (ii) would likely cause competitive harm if publicly disclosed. [***] indicates that information has been redacted. For Systec: Address: [***] Tel…"
+   ],
+   "defined_term_name": [
+    "red-01.txt: …ler is aware that Carpegen is a cooperation partner of the joint [***] project ([***]). The obligation under sentence 1 does not apply in this respect, as long as th…",
+    "red-02.txt: …true-up payments owed by Enanta pursuant to Section 5.4 above. P. Section 5.6 ([*****]) of the Agreement is hereby deleted in its entirety, and the following Section …",
+    "red-07.txt: …differs from the Product) achieves, in a certain calendar year, a market share ([***]) in such country, whichever earlier; and (iii) [***] years from First Commercia…"
+   ],
+   "contact_address": [
+    "red-01.txt: …sed. [***] indicates that information has been redacted. For Systec: Address: [***] Tel.: [***] Fax: [***] E-mail: [***] Att.: [***] with a copy to: Osborne C…",
+    "red-01.txt: …dicates that information has been redacted. For Systec: Address: [***] Tel.: [***] Fax: [***] E-mail: [***] Att.: [***] with a copy to: Osborne Clarke Addres…",
+    "red-01.txt: … information has been redacted. For Systec: Address: [***] Tel.: [***] Fax: [***] E-mail: [***] Att.: [***] with a copy to: Osborne Clarke Address: [***] Te…"
+   ],
+   "entire_provision": [
+    "red-01.txt: …formation has been redacted. Annex 1.1 Commercial Register excerpt of Systec [***] Certain identified information has been excluded from this exhibit because it …",
+    "red-01.txt: …rmation has been redacted. Annex 1.2 Commercial Register excerpt of Carpegen [***] Certain identified information has been excluded from this exhibit because it …",
+    "red-01.txt: …ion has been redacted. Annex 1.3 Commercial Register excerpt of Curetis GmbH [***] Certain identified information has been excluded from this exhibit because it …"
+   ],
+   "other_unclear": [
+    "red-02.txt: …re to provide valid notice. In no event shall the JSC meet less frequently than [*****]. Regular and special meetings of the JSC may be held in person or by teleconfer…",
+    "red-02.txt: …e valid notice. If formed, in no event shall the JDCC meet less frequently than [*****]. Regular and special meetings of the JDCC may be held in person or by teleconfe…",
+    "red-03.txt: …s), and any other provision of this Agreement which by its nature will survive, [***]. 18. Force Majeure. Neither party will be liable for any delay or failure in p…"
+   ],
+   "entity_counterparty": [
+    "red-02.txt: …0.3, and (B) the total Net Sales of the 2D Regimen shall be multiplied by 0.45. [*****] . If the Parties cannot agree on such an adjustment, a Third Party entity that …",
+    "red-05.txt: …\". EXECUTION VERSION - CONFIDENTIAL 11.4 Audits of EVERSANA. Upon not less than [***] written request of Client, EVERSANA shall, and shall cause its Affiliates to, p…",
+    "red-05.txt: …bligations substantially as protective as those set forth in this Agreement; c. [***] who are subject to obligations of confidentiality and non-use substantially as …"
+   ],
+   "territory_place": [
+    "red-03.txt: …Intuitive and Seller hereby consent and submit to the exclusive jurisdiction of [***], and they hereby agree that venue of any claim which arises under this Agreemen…",
+    "red-05.txt: … Affordable Care Act (\"PPACA\"), even if there are joint disclosure obligations; [***], Client shall provide EVERSANA with confirmation that such disclosures were pro…",
+    "red-08.txt: …ineer of international standing in respect of tailing storage facilities, being [***] or if he is unavailable an equivalent geotechnical engineer to be elected by th…"
+   ],
+   "person_name": [
+    "red-05.txt: … THE REGISTRANT TREATS AS PRIVATE OR CONFIDENTIAL. OMISSIONS ARE DESIGNATED AS \"[***]\". EXECUTION VERSION - CONFIDENTIAL PRODUCT COMMERCIALIZATION AGREEMENT This Pro…",
+    "red-08.txt: …UL IF PUBLICLY DISCLOSED. SUCH EXCLUDED INFORMATION HAS BEEN MARKED WITH &ldquo;[***]&rdquo;. In witness whereof this Agreement has been duly executed. SIGNED by …",
+    "red-08.txt: …UL IF PUBLICLY DISCLOSED. SUCH EXCLUDED INFORMATION HAS BEEN MARKED WITH &ldquo;[***]&rdquo;. SIGNED by on behalf of Cascar Do Brasil Mineracao Ltda.: Signature …"
+   ]
+  }
+ },
+ "edgarManifest": [
+  {
+   "file": "red-01.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1293818/000107997319000659/ex10x38a.htm",
+   "company": "OPGEN INC  (OPGN)  (CIK 0001293818)",
+   "date": "2019-12-20",
+   "accession": "0001079973-19-000659",
+   "sites": 143,
+   "words": 13911
+  },
+  {
+   "file": "red-02.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1177648/000156459021004518/enta-ex101_25.htm",
+   "company": "ENANTA PHARMACEUTICALS INC  (ENTA)  (CIK 0001177648)",
+   "date": "2021-02-05",
+   "accession": "0001564590-21-004518",
+   "sites": 367,
+   "words": 64920
+  },
+  {
+   "file": "red-03.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/914156/000117184324001413/exh_101.htm",
+   "company": "UFP TECHNOLOGIES INC  (UFPT)  (CIK 0000914156)",
+   "date": "2024-03-18",
+   "accession": "0001171843-24-001413",
+   "sites": 162,
+   "words": 5758
+  },
+  {
+   "file": "red-04.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1293818/000107997320000022/ex10x35x1.htm",
+   "company": "OPGEN INC  (OPGN)  (CIK 0001293818)",
+   "date": "2020-01-15",
+   "accession": "0001079973-20-000022",
+   "sites": 81,
+   "words": 14132
+  },
+  {
+   "file": "red-05.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1356090/000135609025000007/pgen-20241231x10kxexx101.htm",
+   "company": "PRECIGEN, INC.  (PGEN)  (CIK 0001356090)",
+   "date": "2025-03-19",
+   "accession": "0001356090-25-000007",
+   "sites": 216,
+   "words": 26378
+  },
+  {
+   "file": "red-06.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1001316/000155837022002617/tgtx-20211231xex10d28.htm",
+   "company": "TG THERAPEUTICS, INC.  (TGTX)  (CIK 0001001316)",
+   "date": "2022-03-01",
+   "accession": "0001558370-22-002617",
+   "sites": 14,
+   "words": 40780
+  },
+  {
+   "file": "red-07.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1776985/000119312519252726/d635330dex1038.htm",
+   "company": "BioNTech SE  (BNTX)  (CIK 0001776985)",
+   "date": "2019-09-24",
+   "accession": "0001193125-19-252726",
+   "sites": 244,
+   "words": 27407
+  },
+  {
+   "file": "red-08.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468642/000121390025061798/ea024467907ex10-11_aura.htm",
+   "company": "Aura Minerals Inc.  (AUGO, ORAAF)  (CIK 0001468642)",
+   "date": "2025-07-07",
+   "accession": "0001213900-25-061798",
+   "sites": 125,
+   "words": 19012
+  },
+  {
+   "file": "red-09.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1987867/000110465923129286/tm2331229d2_ex10-30.htm",
+   "company": "CorpAcq Group Plc  (CPGRA)  (CIK 0001987867)",
+   "date": "2023-12-26",
+   "accession": "0001104659-23-129286",
+   "sites": 18,
+   "words": 5507
+  },
+  {
+   "file": "red-10.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1818331/000162828021014760/exhibit1025-super8xk.htm",
+   "company": "Sema4 Holdings Corp.  (WGS, WGSWW)  (CIK 0001818331)",
+   "date": "2021-07-28",
+   "accession": "0001628280-21-014760",
+   "sites": 174,
+   "words": 10296
+  },
+  {
+   "file": "red-11.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1468642/000121390025052236/ea024467901ex10-11_aura.htm",
+   "company": "Aura Minerals Inc.  (CIK 0001468642)",
+   "date": "2025-06-06",
+   "accession": "0001213900-25-052236",
+   "sites": 114,
+   "words": 18809
+  },
+  {
+   "file": "red-12.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1987867/000110465924029527/tm2331229d12_ex2-3.htm",
+   "company": "CorpAcq Group Plc  (CPGRA)  (CIK 0001987867)",
+   "date": "2024-03-01",
+   "accession": "0001104659-24-029527",
+   "sites": 417,
+   "words": 31316
+  },
+  {
+   "file": "red-13.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045942/000165495420009238/ex10-1.htm",
+   "company": "Track Group, Inc.  (TRCK)  (CIK 0001045942)",
+   "date": "2020-08-17",
+   "accession": "0001654954-20-009238",
+   "sites": 114,
+   "words": 24893
+  },
+  {
+   "file": "red-14.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1987867/000110465924007389/tm2331229d6_ex2-3.htm",
+   "company": "CorpAcq Group Plc  (CPGRA)  (CIK 0001987867)",
+   "date": "2024-01-29",
+   "accession": "0001104659-24-007389",
+   "sites": 412,
+   "words": 31128
+  },
+  {
+   "file": "red-15.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1566373/000095017021004065/fstx-ex10_2.htm",
+   "company": "F-star Therapeutics, Inc.  (CIK 0001566373)",
+   "date": "2021-11-10",
+   "accession": "0000950170-21-004065",
+   "sites": 262,
+   "words": 29890
+  },
+  {
+   "file": "red-16.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1156375/000115637522000215/a20120629splicenseagreemen.htm",
+   "company": "CME GROUP INC.  (CME)  (CIK 0001156375)",
+   "date": "2022-08-03",
+   "accession": "0001156375-22-000215",
+   "sites": 24,
+   "words": 18613
+  },
+  {
+   "file": "red-17.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/946581/000162828021015202/nordeuspurchaseagreement.htm",
+   "company": "TAKE TWO INTERACTIVE SOFTWARE INC  (TTWO)  (CIK 0000946581)",
+   "date": "2021-08-03",
+   "accession": "0001628280-21-015202",
+   "sites": 18,
+   "words": 63076
+  },
+  {
+   "file": "red-18.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1811623/000155837023014312/pxmd-20230630xex10d1.htm",
+   "company": "PaxMedica, Inc.  (PXMD)  (CIK 0001811623)",
+   "date": "2023-08-09",
+   "accession": "0001558370-23-014312",
+   "sites": 15,
+   "words": 3266
+  },
+  {
+   "file": "red-19.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/31667/000118518522000805/ex_392014.htm",
+   "company": "EDUCATIONAL DEVELOPMENT CORP  (EDUC)  (CIK 0000031667)",
+   "date": "2022-07-07",
+   "accession": "0001185185-22-000805",
+   "sites": 73,
+   "words": 12749
+  },
+  {
+   "file": "red-20.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1658566/000119312526209025/d150936dex101.htm",
+   "company": "Permian Resources Corp  (PR)  (CIK 0001658566)",
+   "date": "2026-05-06",
+   "accession": "0001193125-26-209025",
+   "sites": 153,
+   "words": 79678
+  },
+  {
+   "file": "red-21.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1557746/000155837019008878/ex-2d1.htm",
+   "company": "Aclaris Therapeutics, Inc.  (ACRS)  (CIK 0001557746)",
+   "date": "2019-10-11",
+   "accession": "0001558370-19-008878",
+   "sites": 165,
+   "words": 28942
+  },
+  {
+   "file": "red-22.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1557883/000156459019016485/derm-ex101_193.htm",
+   "company": "Dermira, Inc.  (CIK 0001557883)",
+   "date": "2019-05-07",
+   "accession": "0001564590-19-016485",
+   "sites": 591,
+   "words": 33582
+  },
+  {
+   "file": "red-23.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1829966/000168316821001107/esports_ex1011.htm",
+   "company": "Esports Technologies, Inc.  (EBET)  (CIK 0001829966)",
+   "date": "2021-03-31",
+   "accession": "0001683168-21-001107",
+   "sites": 76,
+   "words": 8851
+  },
+  {
+   "file": "red-24.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1867066/000110465921112547/filename15.htm",
+   "company": "Journey Medical Corp  (DERM)  (CIK 0001867066)",
+   "date": "2021-09-02",
+   "accession": "0001104659-21-112547",
+   "sites": 39,
+   "words": 11209
+  },
+  {
+   "file": "red-25.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1867066/000110465921128950/tm2122275d9_ex10-13.htm",
+   "company": "Journey Medical Corp  (DERM)  (CIK 0001867066)",
+   "date": "2021-10-22",
+   "accession": "0001104659-21-128950",
+   "sites": 39,
+   "words": 11211
+  },
+  {
+   "file": "red-26.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/822411/000149315222017701/ex10-5.htm",
+   "company": "ImmunoCellular Therapeutics, Ltd.  (IMUC)  (CIK 0000822411)",
+   "date": "2022-06-24",
+   "accession": "0001493152-22-017701",
+   "sites": 36,
+   "words": 3503
+  },
+  {
+   "file": "red-27.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/84839/000117120019000188/i19231_ex10-2.htm",
+   "company": "ROLLINS INC  (ROL)  (CIK 0000084839)",
+   "date": "2019-04-26",
+   "accession": "0001171200-19-000188",
+   "sites": 16,
+   "words": 13221
+  },
+  {
+   "file": "red-28.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1494891/000121390021013664/f10k2020ex10-8_sensus.htm",
+   "company": "Sensus Healthcare, Inc.  (SRTS)  (CIK 0001494891)",
+   "date": "2021-03-05",
+   "accession": "0001213900-21-013664",
+   "sites": 24,
+   "words": 6677
+  },
+  {
+   "file": "red-29.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1797122/000110465920039031/tv538896_ex10-5.htm",
+   "company": "DEAC NV Merger Corp.  (CIK 0001797122)",
+   "date": "2020-03-27",
+   "accession": "0001104659-20-039031",
+   "sites": 38,
+   "words": 12111
+  },
+  {
+   "file": "red-30.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1708331/000121390020038528/fs12020a1ex10-19_virpax.htm",
+   "company": "Virpax Pharmaceuticals, Inc.  (VRPX)  (CIK 0001708331)",
+   "date": "2020-11-20",
+   "accession": "0001213900-20-038528",
+   "sites": 53,
+   "words": 19023
+  },
+  {
+   "file": "red-31.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1809196/000119312520108419/d865842dex109.htm",
+   "company": "Immatics B.V.  (IMTX, IMTXW)  (CIK 0001809196)",
+   "date": "2020-04-16",
+   "accession": "0001193125-20-108419",
+   "sites": 37,
+   "words": 7588
+  },
+  {
+   "file": "red-32.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1727196/000155837024011461/srrk-20240630xex10d2.htm",
+   "company": "Scholar Rock Holding Corp  (SRRK)  (CIK 0001727196)",
+   "date": "2024-08-08",
+   "accession": "0001558370-24-011461",
+   "sites": 19,
+   "words": 6987
+  },
+  {
+   "file": "red-33.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1548187/000154818720000038/exhibit101-msasanminaf.htm",
+   "company": "Soliton, Inc.  (CIK 0001548187)",
+   "date": "2020-03-11",
+   "accession": "0001548187-20-000038",
+   "sites": 6,
+   "words": 9371
+  },
+  {
+   "file": "red-34.txt",
+   "url": "https://www.sec.gov/Archives/edgar/data/1853816/000119312521207676/d137089dex109.htm",
+   "company": "Dermata Therapeutics, Inc.  (DRMA, DRMAW)  (CIK 0001853816)",
+   "date": "2021-07-02",
+   "accession": "0001193125-21-207676",
+   "sites": 89,
+   "words": 20705
+  }
+ ],
+ "f3dConventions": {
+  "cases": 3060,
+  "docsWith": {
+   "redacted_block": 1,
+   "ssn_partial": 0,
+   "account_partial": 1,
+   "doe_pseudonym": 50,
+   "minor_initials": 6,
+   "in_re_initials": 7,
+   "confidential_informant": 88,
+   "asterisk_omission": 79,
+   "juvenile_initials_caption": 2
+  },
+  "hits": {
+   "redacted_block": 18,
+   "ssn_partial": 0,
+   "account_partial": 1,
+   "doe_pseudonym": 149,
+   "minor_initials": 6,
+   "in_re_initials": 10,
+   "confidential_informant": 327,
+   "asterisk_omission": 138,
+   "juvenile_initials_caption": 2
+  },
+  "samples": {
+   "redacted_block": [
+    {
+     "case": "United States v. White",
+     "ctx": "arture based on her psychologist Dr. Michael Hendricks’s diagnosis of [Redacted]. Upon the government’s motion, the district court ordered Dr. Neil Bl"
+    }
+   ],
+   "ssn_partial": [],
+   "account_partial": [
+    {
+     "case": "University of Texas M.D. Anderson Cancer Center v. Sebelius",
+     "ctx": "d for outpatient “services furnished during the cost reporting period ending in 1996.” Id. The fraction’s denominator is “the reasonable cost of such serv"
+    }
+   ],
+   "doe_pseudonym": [
+    {
+     "case": "Valencia-Lucena v. United States Coast Guard",
+     "ctx": "ed its ultimate policy of open government should take precedence. See John Doe Agency v. John Doe Corp., 493 U.S. 146, 151, 110 S.Ct. 471, 107 L.Ed."
+    },
+    {
+     "case": "Avondale Industries, Inc. v. National Labor Relations Board",
+     "ctx": "John steps up to the table and he is asked his name and he says, I am John Doe. And [election observers] say, where do you five? And he says, I live"
+    }
+   ],
+   "minor_initials": [
+    {
+     "case": "United States v. Martin",
+     "ctx": "1072, 1078, 1090, 143 L.Ed.2d 75, 80, 91 (1999). On December 6, 1997, G.M., a juvenile, his mother, and another man and woman arrived at a pawn shop. At the"
+    },
+    {
+     "case": "Castro v. United States",
+     "ctx": "Plaintiffs-Appellants Monica Castro for herself and as next friend of R.M.G., a minor child (collectively “Castro”), brought suit against the United States"
+    }
+   ],
+   "in_re_initials": [
+    {
+     "case": "Devan v. Simon DeBartolo Group, L.P.",
+     "ctx": "port Executive Center, 138 B.R. 628, 629 (Bankr.M.D.Fla.1992) (same); In re I.M.L. Freight, Inc., 37 B.R. 556, 558-59 (Bankr.D.Utah 1984) (same). But "
+    },
+    {
+     "case": "Ritchie Special Credit Investments, Ltd. v. United States Trustee",
+     "ctx": "ate only the personal interests of the trustee.” (emphasis omitted)); In re O.P.M. Leasing Servs., Inc., 16 B.R. 932, 938 (Bankr.S.D.N.Y.1982) (“[I]t "
+    }
+   ],
+   "confidential_informant": [
+    {
+     "case": "United States v. Green",
+     "ctx": "ough information Green provided. Claiming that, instead, Colomb was a confidential informant, Green denied taking money from him. Green admitted, however, that, w"
+    },
+    {
+     "case": "United States v. Boyd",
+     "ctx": "d below, we affirm. I. FACTS After having received information from a confidential informant (Cl) that cocaine was being sold in the lobby area of Cole’s Motor Lo"
+    }
+   ],
+   "asterisk_omission": [
+    {
+     "case": "Beets v. Johnson",
+     "ctx": "to commit the murder for remuneration or the promise of remuneration. * * * * (b) An offense under this section is a capital felony. Tex. Penal C"
+    },
+    {
+     "case": "McDonnell Douglas Corp. v. National Aeronautics & Space Administration",
+     "ctx": "item prices is of no significance in determining the issue before us. * * * NASA’s decision could either be seen as not in accordance with law be"
+    }
+   ],
+   "juvenile_initials_caption": [
+    {
+     "case": "United States v. Williams",
+     "ctx": "ts comments or to correct any potential error in the first instance.” United States v. M.R.M., 513 F.3d 866, 870 (8th Cir.), cert. denied, — U.S. -, 129 S.Ct. 17"
+    },
+    {
+     "case": "Slater v. U.S. Steel Corp.",
+     "ctx": "al process. Id. at 755, 121 S.Ct. at 1817 (citation omitted) (quoting United States v. C.I.T. Constr. Inc., 944 F.2d 253, 259 (5th Cir.1991)). The factual predic"
+    }
+   ]
+  }
+ },
+ "sgAnonymized": [
+  {
+   "file": "sg-anon-01.txt",
+   "id": "2024_SGHCF_2",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_2",
+   "words": 25270,
+   "caption": "WJZ v W",
+   "pseudonyms": {
+    "[H]": 18,
+    "[S]": 2,
+    "[W]": 16,
+    "[H ]": 2,
+    "[B]": 2,
+    "[C]": 2,
+    "[E]": 2,
+    "[SB]": 25,
+    "[the Disputed Property]": 3
+   },
+   "kept": {
+    "full_dates": {
+     "n": 142,
+     "eg": "18 December 2023"
+    },
+    "ages": {
+     "n": 14,
+     "eg": "21 years of age"
+    },
+    "occupations": {
+     "n": 2,
+     "eg": "teacher"
+    },
+    "company_names_kept": {
+     "n": 1,
+     "eg": "Grays LLC"
+    },
+    "money": {
+     "n": 4,
+     "eg": "S$30,000"
+    },
+    "medical": {
+     "n": 2,
+     "eg": "dementia"
+    },
+    "nationalities": {
+     "n": 2,
+     "eg": "Chinese"
+    },
+    "professional_names_kept": {
+     "n": 1,
+     "eg": "Ms Patrina"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-02.txt",
+   "id": "2024_SGHCF_4",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_4",
+   "words": 3094,
+   "caption": "VQF v VQG",
+   "pseudonyms": {},
+   "kept": {
+    "full_dates": {
+     "n": 9,
+     "eg": "12 January 2024"
+    },
+    "ages": {
+     "n": 1,
+     "eg": "age of 21"
+    },
+    "occupations": {
+     "n": 2,
+     "eg": "Manager"
+    },
+    "company_names_kept": {
+     "n": 5,
+     "eg": "Baker St Pte Ltd"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-03.txt",
+   "id": "2024_SGHCF_10",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_10",
+   "words": 2805,
+   "caption": "WUA v WUB",
+   "pseudonyms": {},
+   "kept": {
+    "full_dates": {
+     "n": 5,
+     "eg": "16 January 2024"
+    },
+    "ages": {
+     "n": 1,
+     "eg": "aged 21"
+    },
+    "occupations": {
+     "n": 2,
+     "eg": "director"
+    },
+    "company_names_kept": {
+     "n": 2,
+     "eg": "Withers KatharWong LLP"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-04.txt",
+   "id": "2024_SGHCF_12",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_12",
+   "words": 3603,
+   "caption": "WRP v W",
+   "pseudonyms": {
+    "[s]": 2
+   },
+   "kept": {
+    "full_dates": {
+     "n": 9,
+     "eg": "7 February 2024"
+    },
+    "ages": {
+     "n": 9,
+     "eg": "aged 50"
+    },
+    "occupations": {
+     "n": 1,
+     "eg": "businessman"
+    },
+    "company_names_kept": {
+     "n": 2,
+     "eg": "Co LLC"
+    },
+    "professional_names_kept": {
+     "n": 7,
+     "eg": "Mr Siow"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-05.txt",
+   "id": "2024_SGHCF_16",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_16",
+   "words": 9732,
+   "caption": "VZJ v VZK",
+   "pseudonyms": {
+    "[X]": 2,
+    "[School A]": 4,
+    "[School B]": 4,
+    "[ABC LLC]": 2,
+    "[DEF LLP]": 2
+   },
+   "kept": {
+    "full_dates": {
+     "n": 13,
+     "eg": "28 February 2024"
+    },
+    "ages": {
+     "n": 2,
+     "eg": "11 years old"
+    },
+    "occupations": {
+     "n": 4,
+     "eg": "banker"
+    },
+    "company_names_kept": {
+     "n": 5,
+     "eg": "ABC LLC"
+    },
+    "nationalities": {
+     "n": 2,
+     "eg": "Chinese"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-06.txt",
+   "id": "2024_SGHCF_17",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_17",
+   "words": 5426,
+   "caption": "WVS v WVT",
+   "pseudonyms": {
+    "[19(c)]": 2
+   },
+   "kept": {
+    "full_dates": {
+     "n": 19,
+     "eg": "23 January 2024"
+    },
+    "ages": {
+     "n": 3,
+     "eg": "aged 15"
+    },
+    "company_names_kept": {
+     "n": 11,
+     "eg": "MI Holding LLP"
+    },
+    "nationalities": {
+     "n": 2,
+     "eg": "Chinese"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-07.txt",
+   "id": "2024_SGHCF_20",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_20",
+   "words": 2694,
+   "caption": "VVB v VVA",
+   "pseudonyms": {},
+   "kept": {
+    "full_dates": {
+     "n": 7,
+     "eg": "2 May 2024"
+    },
+    "occupations": {
+     "n": 1,
+     "eg": "accountant"
+    },
+    "company_names_kept": {
+     "n": 3,
+     "eg": "Gledhill LLP"
+    },
+    "professional_names_kept": {
+     "n": 18,
+     "eg": "Ms Low"
+    }
+   }
+  },
+  {
+   "file": "sg-anon-08.txt",
+   "id": "2024_SGHCF_21",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_21",
+   "words": 14413,
+   "caption": "ANJ v ANK",
+   "pseudonyms": {
+    "[his]": 2
+   },
+   "kept": {
+    "full_dates": {
+     "n": 14,
+     "eg": "19 April 2024"
+    },
+    "ages": {
+     "n": 2,
+     "eg": "14 years old"
+    },
+    "occupations": {
+     "n": 1,
+     "eg": "director"
+    },
+    "company_names_kept": {
+     "n": 3,
+     "eg": "AM Legal LLC"
+    },
+    "money": {
+     "n": 1,
+     "eg": "$29,663"
+    }
+   }
+  }
+ ],
+ "pairs": {
+  "verified": [],
+  "contentShapes": []
+ },
+ "headline": {
+  "edgarSplit": "PII-shaped 35.1% / business-confidential 64.0% / unclear 0.8% of 4374 sites",
+  "sgDoctrine": "family courts code persons AND person-anchored entities ([W Holdings], [School A], [the Disputed Property]); keep dates, ages, occupations, unrelated companies, money, medical terms, professional names",
+  "f3dDoctrine": "published opinions redact via pseudonyms (Doe, 50 docs) & minors initials (15 docs) & CI references (88 docs), not black-box blocks (1 doc)"
+ }
+}

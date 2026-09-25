@@ -1,0 +1,368 @@
+{
+ "builtAt": "2026-07-23",
+ "protocol": "ROUND 4 first-contact: blind swarm gold BEFORE engine runs; scores publish as drawn; no stress-selection (arrival order)",
+ "docs": [
+  {
+   "file": "edgar-r4-01.txt",
+   "source": "edgar-r4",
+   "title": "Activision Blizzard, Inc.  (CIK 0000718877)",
+   "cite": "0001104659-21-115515",
+   "url": "https://www.sec.gov/Archives/edgar/data/718877/000110465921115515/tm2127559d1_ex10-1.htm",
+   "words": 5586,
+   "sha256_16": "b809928ce18e5fdf"
+  },
+  {
+   "file": "edgar-r4-02.txt",
+   "source": "edgar-r4",
+   "title": "Healing Co Inc.  (HLCO)  (CIK 0001441082)",
+   "cite": "0001477932-23-001252",
+   "url": "https://www.sec.gov/Archives/edgar/data/1441082/000147793223001252/thcc_ex101.htm",
+   "words": 5254,
+   "sha256_16": "57df85e7afde2382"
+  },
+  {
+   "file": "edgar-r4-03.txt",
+   "source": "edgar-r4",
+   "title": "Revolution Lighting Technologies, Inc.  (CIK 0000917523)",
+   "cite": "0001193125-13-030152",
+   "url": "https://www.sec.gov/Archives/edgar/data/917523/000119312513030152/d476596dex101.htm",
+   "words": 4843,
+   "sha256_16": "667c50d3f4c8b81e"
+  },
+  {
+   "file": "edgar-r4-04.txt",
+   "source": "edgar-r4",
+   "title": "MAKEMUSIC, INC.  (CIK 0000920707)",
+   "cite": "0001193125-12-285324",
+   "url": "https://www.sec.gov/Archives/edgar/data/920707/000119312512285324/d371663dex101.htm",
+   "words": 4585,
+   "sha256_16": "e30b1725240c530a"
+  },
+  {
+   "file": "edgar-r4-05.txt",
+   "source": "edgar-r4",
+   "title": "THINK PARTNERSHIP INC  (INUV)  (CIK 0000829323)",
+   "cite": "0001354488-08-000707",
+   "url": "https://www.sec.gov/Archives/edgar/data/829323/000135448808000707/exhibit101.htm",
+   "words": 3707,
+   "sha256_16": "72b2c9a7ce43174d"
+  },
+  {
+   "file": "edgar-r4-06.txt",
+   "source": "edgar-r4",
+   "title": "UNIGENE LABORATORIES INC  (CIK 0000352747)",
+   "cite": "0001437749-12-005907",
+   "url": "https://www.sec.gov/Archives/edgar/data/352747/000143774912005907/ex10-1.htm",
+   "words": 6167,
+   "sha256_16": "ce3c52ac7b70596a"
+  },
+  {
+   "file": "edgar-r4-07.txt",
+   "source": "edgar-r4",
+   "title": "Alector, Inc.  (ALEC)  (CIK 0001653087)",
+   "cite": "0001193125-22-000619",
+   "url": "https://www.sec.gov/Archives/edgar/data/1653087/000119312522000619/d233849dex101.htm",
+   "words": 5534,
+   "sha256_16": "3c3c63d1cd56a4ec"
+  },
+  {
+   "file": "edgar-r4-08.txt",
+   "source": "edgar-r4",
+   "title": "EMCORE CORP  (EMKR)  (CIK 0000808326)",
+   "cite": "0001104659-14-086158",
+   "url": "https://www.sec.gov/Archives/edgar/data/808326/000110465914086158/a14-26012_1ex10d3.htm",
+   "words": 6445,
+   "sha256_16": "e4ff1685afc9cfa4"
+  },
+  {
+   "file": "edgar-r4-09.txt",
+   "source": "edgar-r4",
+   "title": "ENTERPRISE PRODUCTS PARTNERS L P  (EPD, EPDU)  (CIK 0001061219)",
+   "cite": "0001061219-18-000028",
+   "url": "https://www.sec.gov/Archives/edgar/data/1061219/000106121918000028/exhibit10_3.htm",
+   "words": 4057,
+   "sha256_16": "9269f6e94d92b965"
+  },
+  {
+   "file": "edgar-r4-10.txt",
+   "source": "edgar-r4",
+   "title": "LA JOLLA PHARMACEUTICAL CO  (CIK 0000920465)",
+   "cite": "0001193125-12-017761",
+   "url": "https://www.sec.gov/Archives/edgar/data/920465/000119312512017761/d284844dex102.htm",
+   "words": 2294,
+   "sha256_16": "e6586b8a0bffd929"
+  },
+  {
+   "file": "edgar-r4-11.txt",
+   "source": "edgar-r4",
+   "title": "TESCO CORP  (CIK 0001022705)",
+   "cite": "0001022705-17-000002",
+   "url": "https://www.sec.gov/Archives/edgar/data/1022705/000102270517000002/exh101irausquinseparationa.htm",
+   "words": 3702,
+   "sha256_16": "aedaba1eb5a33945"
+  },
+  {
+   "file": "edgar-r4-12.txt",
+   "source": "edgar-r4",
+   "title": "RIVERVIEW BANCORP INC  (RVSB)  (CIK 0001041368)",
+   "cite": "0000939057-23-000302",
+   "url": "https://www.sec.gov/Archives/edgar/data/1041368/000093905723000302/ex101.htm",
+   "words": 3483,
+   "sha256_16": "87faff4951dd332a"
+  },
+  {
+   "file": "edgar-r4-13.txt",
+   "source": "edgar-r4",
+   "title": "BENIHANA INC  (CIK 0000935226)",
+   "cite": "0001188112-09-002650",
+   "url": "https://www.sec.gov/Archives/edgar/data/935226/000118811209002650/ex10-1.htm",
+   "words": 2650,
+   "sha256_16": "68dffe940d738cb5"
+  },
+  {
+   "file": "edgar-r4-14.txt",
+   "source": "edgar-r4",
+   "title": "Strive, Inc.  (ASST)  (CIK 0001920406)",
+   "cite": "0001213900-25-087278",
+   "url": "https://www.sec.gov/Archives/edgar/data/1920406/000121390025087278/ea025712901ex10-3_strive.htm",
+   "words": 5868,
+   "sha256_16": "06f28a0bd2269c1b"
+  },
+  {
+   "file": "edgar-r4-15.txt",
+   "source": "edgar-r4",
+   "title": "Roka BioScience, Inc.  (CIK 0001472343)",
+   "cite": "0001472343-15-000127",
+   "url": "https://www.sec.gov/Archives/edgar/data/1472343/000147234315000127/ex101ssseparation.htm",
+   "words": 5316,
+   "sha256_16": "8b27fc5a743593f4"
+  },
+  {
+   "file": "us-r4-01.txt",
+   "source": "us-r4",
+   "title": "Sierra Club v. Envtl. Prot. Agency",
+   "cite": "895 F.3d 1",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517555)",
+   "words": 9208,
+   "sha256_16": "f2b43fb8e8c156d6"
+  },
+  {
+   "file": "us-r4-02.txt",
+   "source": "us-r4",
+   "title": "Croley v. Joint Comm. on Judicial Admin.",
+   "cite": "895 F.3d 22",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517602)",
+   "words": 5060,
+   "sha256_16": "b37e53efd70a5f66"
+  },
+  {
+   "file": "us-r4-03.txt",
+   "source": "us-r4",
+   "title": "Am. Rivers v. Fed. Energy Regulatory Comm'n",
+   "cite": "895 F.3d 32",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517610)",
+   "words": 10396,
+   "sha256_16": "cdbf6f41d074f5e2"
+  },
+  {
+   "file": "us-r4-04.txt",
+   "source": "us-r4",
+   "title": "Taylor v. Fed. Aviation Admin.",
+   "cite": "895 F.3d 56",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517637)",
+   "words": 6435,
+   "sha256_16": "cca20168d950b233"
+  },
+  {
+   "file": "us-r4-05.txt",
+   "source": "us-r4",
+   "title": "Veritas Health Servs., Inc. v. Nat'l Labor Relations Bd.",
+   "cite": "895 F.3d 69",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517650)",
+   "words": 8612,
+   "sha256_16": "dc426ca086508949"
+  },
+  {
+   "file": "us-r4-06.txt",
+   "source": "us-r4",
+   "title": "Del. Dep't of Natural Res. & Envtl. Control v. Envtl. Prot. Agency",
+   "cite": "895 F.3d 90",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517672)",
+   "words": 5127,
+   "sha256_16": "cd42678769b1e6ff"
+  },
+  {
+   "file": "us-r4-07.txt",
+   "source": "us-r4",
+   "title": "Del. Riverkeeper Network v. Fed. Energy Regulatory Comm'n",
+   "cite": "895 F.3d 102",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517558)",
+   "words": 4478,
+   "sha256_16": "64b818668f6b8c86"
+  },
+  {
+   "file": "us-r4-08.txt",
+   "source": "us-r4",
+   "title": "Sec'y of Labor v. Consolidation Coal Co.",
+   "cite": "895 F.3d 113",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517573)",
+   "words": 2850,
+   "sha256_16": "0f114d9279b4aa15"
+  },
+  {
+   "file": "us-r4-09.txt",
+   "source": "us-r4",
+   "title": "City of Taunton v. U.S. Envtl. Prot. Agency",
+   "cite": "895 F.3d 120",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517580)",
+   "words": 10182,
+   "sha256_16": "05c4ccb874c6b0cb"
+  },
+  {
+   "file": "us-r4-10.txt",
+   "source": "us-r4",
+   "title": "Acosta v. Local Union 26, Unite Here",
+   "cite": "895 F.3d 141",
+   "url": "https://static.case.law/f3d/895.zip (CAP id 12517595)",
+   "words": 2091,
+   "sha256_16": "40b0c0895bccaabd"
+  },
+  {
+   "file": "sg-r4-01.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 1",
+   "cite": "[2023] SGHC 1",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_1",
+   "words": 7470,
+   "sha256_16": "8689092ed8bced68"
+  },
+  {
+   "file": "sg-r4-02.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 2",
+   "cite": "[2023] SGHC 2",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_2",
+   "words": 2671,
+   "sha256_16": "64684c6a77186e32"
+  },
+  {
+   "file": "sg-r4-03.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 3",
+   "cite": "[2023] SGHC 3",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_3",
+   "words": 16150,
+   "sha256_16": "9825229f0b241ff2"
+  },
+  {
+   "file": "sg-r4-04.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 4",
+   "cite": "[2023] SGHC 4",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_4",
+   "words": 12062,
+   "sha256_16": "7ef96b034ccbc301"
+  },
+  {
+   "file": "sg-r4-05.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 5",
+   "cite": "[2023] SGHC 5",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_5",
+   "words": 7117,
+   "sha256_16": "aee5f182a1362325"
+  },
+  {
+   "file": "sg-r4-06.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 6",
+   "cite": "[2023] SGHC 6",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_6",
+   "words": 16530,
+   "sha256_16": "8a00cb1ec1377cfa"
+  },
+  {
+   "file": "sg-r4-07.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 7",
+   "cite": "[2023] SGHC 7",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_7",
+   "words": 9144,
+   "sha256_16": "81aaa66a413ec1a4"
+  },
+  {
+   "file": "sg-r4-08.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 8",
+   "cite": "[2023] SGHC 8",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_8",
+   "words": 11025,
+   "sha256_16": "d1a9114b58fae9c7"
+  },
+  {
+   "file": "sg-r4-09.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 9",
+   "cite": "[2023] SGHC 9",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_9",
+   "words": 2067,
+   "sha256_16": "c586d96468288fe8"
+  },
+  {
+   "file": "sg-r4-10.txt",
+   "source": "sg-r4",
+   "title": "[2023] SGHC 10",
+   "cite": "[2023] SGHC 10",
+   "url": "https://www.elitigation.sg/gd/s/2023_SGHC_10",
+   "words": 6234,
+   "sha256_16": "98f0c60823f93cba"
+  },
+  {
+   "file": "sghcf-r4-01.txt",
+   "source": "sghcf-r4",
+   "title": "[2024] SGHCF 22",
+   "cite": "[2024] SGHCF 22",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_22",
+   "words": 7238,
+   "sha256_16": "aba08515a2bdadb0"
+  },
+  {
+   "file": "sghcf-r4-02.txt",
+   "source": "sghcf-r4",
+   "title": "[2024] SGHCF 23",
+   "cite": "[2024] SGHCF 23",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_23",
+   "words": 7165,
+   "sha256_16": "3fd4c7350074920c"
+  },
+  {
+   "file": "sghcf-r4-03.txt",
+   "source": "sghcf-r4",
+   "title": "[2024] SGHCF 24",
+   "cite": "[2024] SGHCF 24",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_24",
+   "words": 12698,
+   "sha256_16": "16f918b4a6cd8f3a"
+  },
+  {
+   "file": "sghcf-r4-04.txt",
+   "source": "sghcf-r4",
+   "title": "[2024] SGHCF 25",
+   "cite": "[2024] SGHCF 25",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_25",
+   "words": 11082,
+   "sha256_16": "c1bd3dcc6cb71e13"
+  },
+  {
+   "file": "sghcf-r4-05.txt",
+   "source": "sghcf-r4",
+   "title": "[2024] SGHCF 27",
+   "cite": "[2024] SGHCF 27",
+   "url": "https://www.elitigation.sg/gd/s/2024_SGHCF_27",
+   "words": 3664,
+   "sha256_16": "aa32ca4c154e3e41"
+  }
+ ],
+ "shaPinnedAt": "2026-07-25",
+ "shaNote": "sha256_16 = first 16 hex of sha256 over the extracted text as scored. A rebuild that does not match these was not the corpus these boards measured."
+}

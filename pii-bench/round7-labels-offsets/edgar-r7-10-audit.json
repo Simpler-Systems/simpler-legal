@@ -1,0 +1,27 @@
+{
+ "doc": "edgar-r7-10.txt",
+ "docSha256_16": "ebcef49580c53793",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 13258,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 24277,
+   "len": 4
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 24283,
+   "len": 4
+  }
+ ]
+}

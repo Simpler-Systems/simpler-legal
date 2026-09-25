@@ -1,0 +1,1138 @@
+{
+  "summary": "Cold re-adjudication of 240 QUASI/NO_MASK gold calls to measure instrument self-consistency",
+  "agentCount": 8,
+  "logs": [],
+  "result": {
+    "verdicts": [
+      {
+        "id": "courts-0",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-1",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-2",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-3",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-4",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-5",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-6",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-7",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-8",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-9",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-10",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-11",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-12",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-13",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-14",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-15",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-16",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-17",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-18",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-19",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-20",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-21",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-22",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-23",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-24",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-25",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-26",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-27",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-28",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-29",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-30",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-31",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-32",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-33",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-34",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-35",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-36",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-37",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-38",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-39",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-40",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-41",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-42",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-43",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-44",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-45",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-46",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-47",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-48",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-49",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-50",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-51",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-52",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-53",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-54",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-55",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-56",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-57",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-58",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-59",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-60",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-61",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-62",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-63",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-64",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-65",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-66",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-67",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-68",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-69",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-70",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-71",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-72",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-73",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-74",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-75",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-76",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-77",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-78",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-79",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-80",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-81",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-82",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-83",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-84",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-85",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-86",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-87",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-88",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-89",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-90",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-91",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-92",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-93",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-94",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-95",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-96",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-97",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-98",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-99",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-100",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-101",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-102",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-103",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-104",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-105",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-106",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-107",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-108",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-109",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-110",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-111",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-112",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-113",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-114",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-115",
+        "verdict": "MASK"
+      },
+      {
+        "id": "courts-116",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-117",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-118",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "courts-119",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-0",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-1",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-2",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-3",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-4",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-5",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-6",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-7",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-8",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-9",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-10",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-11",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-12",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-13",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-14",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-15",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-16",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-17",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-18",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-19",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-20",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-21",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-22",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-23",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-24",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-25",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-26",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-27",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-28",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-29",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-30",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-31",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-32",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-33",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-34",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-35",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-36",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-37",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-38",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-39",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-40",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-41",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-42",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-43",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-44",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-45",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-46",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-47",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-48",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-49",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-50",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-51",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-52",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-53",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-54",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-55",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-56",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-57",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-58",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-59",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-60",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-61",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-62",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-63",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-64",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-65",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-66",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-67",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-68",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-69",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-70",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-71",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-72",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-73",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-74",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-75",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-76",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-77",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-78",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-79",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-80",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-81",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-82",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-83",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-84",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-85",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-86",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-87",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-88",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-89",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-90",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-91",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-92",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-93",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-94",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-95",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-96",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-97",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-98",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-99",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-100",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-101",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-102",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-103",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-104",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-105",
+        "verdict": "MASK"
+      },
+      {
+        "id": "edgar-106",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-107",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-108",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-109",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-110",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-111",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-112",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-113",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-114",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-115",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-116",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-117",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-118",
+        "verdict": "KEEP"
+      },
+      {
+        "id": "edgar-119",
+        "verdict": "KEEP"
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Adjudicate"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "judge-0",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "a853ff230f8029c03",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794618327,
+      "queuedAt": 1784794614221,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 0 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794708397,
+      "tokens": 39692,
+      "toolCalls": 5,
+      "durationMs": 90070,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"courts-0\",\"verdict\":\"KEEP\"},{\"id\":\"courts-1\",\"verdict\":\"KEEP\"},{\"id\":\"courts-2\",\"verdict\":\"MASK\"},{\"id\":\"courts-3\",\"verdict\":\"KEEP\"},{\"id\":\"courts-4\",\"verdict\":\"MASK\"},{\"id\":\"courts-5\",\"verdict\":\"KEEP\"},{\"id\":\"courts-6\",\"verdict\":\"KEEP\"},{\"id\":\"courts-7\",\"verdict\":\"KEEP\"},{\"id\":\"courts-8\",\"verdict\":\"KEEP\"},{\"id\":\"courts-9\",\"verdict\":\"KEEP\"},{\"id\":\"courts-10\",\"verdict\":\"KEEP\"},{…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "judge-1",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "abca45509c0018b74",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794617839,
+      "queuedAt": 1784794614221,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 1 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794718047,
+      "tokens": 48303,
+      "toolCalls": 12,
+      "durationMs": 100208,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"courts-30\",\"verdict\":\"KEEP\"},{\"id\":\"courts-31\",\"verdict\":\"KEEP\"},{\"id\":\"courts-32\",\"verdict\":\"KEEP\"},{\"id\":\"courts-33\",\"verdict\":\"KEEP\"},{\"id\":\"courts-34\",\"verdict\":\"MASK\"},{\"id\":\"courts-35\",\"verdict\":\"KEEP\"},{\"id\":\"courts-36\",\"verdict\":\"KEEP\"},{\"id\":\"courts-37\",\"verdict\":\"KEEP\"},{\"id\":\"courts-38\",\"verdict\":\"KEEP\"},{\"id\":\"courts-39\",\"verdict\":\"KEEP\"},{\"id\":\"courts-40\",\"verdict\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "judge-2",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "a56da5e8480b66bd9",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794617964,
+      "queuedAt": 1784794614222,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 2 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794707355,
+      "tokens": 44938,
+      "toolCalls": 10,
+      "durationMs": 89391,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"courts-60\",\"verdict\":\"KEEP\"},{\"id\":\"courts-61\",\"verdict\":\"MASK\"},{\"id\":\"courts-62\",\"verdict\":\"KEEP\"},{\"id\":\"courts-63\",\"verdict\":\"MASK\"},{\"id\":\"courts-64\",\"verdict\":\"MASK\"},{\"id\":\"courts-65\",\"verdict\":\"KEEP\"},{\"id\":\"courts-66\",\"verdict\":\"KEEP\"},{\"id\":\"courts-67\",\"verdict\":\"KEEP\"},{\"id\":\"courts-68\",\"verdict\":\"KEEP\"},{\"id\":\"courts-69\",\"verdict\":\"KEEP\"},{\"id\":\"courts-70\",\"verdict\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "judge-3",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "a1643a05dc7585a6c",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794616918,
+      "queuedAt": 1784794614222,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 3 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794807432,
+      "tokens": 40175,
+      "toolCalls": 14,
+      "durationMs": 190511,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"courts-90\",\"verdict\":\"KEEP\"},{\"id\":\"courts-91\",\"verdict\":\"KEEP\"},{\"id\":\"courts-92\",\"verdict\":\"MASK\"},{\"id\":\"courts-93\",\"verdict\":\"MASK\"},{\"id\":\"courts-94\",\"verdict\":\"KEEP\"},{\"id\":\"courts-95\",\"verdict\":\"KEEP\"},{\"id\":\"courts-96\",\"verdict\":\"KEEP\"},{\"id\":\"courts-97\",\"verdict\":\"KEEP\"},{\"id\":\"courts-98\",\"verdict\":\"KEEP\"},{\"id\":\"courts-99\",\"verdict\":\"MASK\"},{\"id\":\"courts-100\",\"verdict…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "judge-4",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "af2404e134f53a31c",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794620100,
+      "queuedAt": 1784794614222,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 4 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794679838,
+      "tokens": 38498,
+      "toolCalls": 5,
+      "durationMs": 59737,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"edgar-0\",\"verdict\":\"MASK\"},{\"id\":\"edgar-1\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-2\",\"verdict\":\"MASK\"},{\"id\":\"edgar-3\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-4\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-5\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-6\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-7\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-8\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-9\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-10\",\"verdict\":\"KEEP\"},{\"id\":\"edgar…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "judge-5",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "a1fea5e9e79454b68",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794616973,
+      "queuedAt": 1784794614222,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 5 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794688145,
+      "tokens": 39778,
+      "toolCalls": 5,
+      "durationMs": 71172,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"edgar-30\",\"verdict\":\"MASK\"},{\"id\":\"edgar-31\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-32\",\"verdict\":\"MASK\"},{\"id\":\"edgar-33\",\"verdict\":\"MASK\"},{\"id\":\"edgar-34\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-35\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-36\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-37\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-38\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-39\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-40\",\"verdict\":\"KEEP\"},{\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "judge-6",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "a95762266eabac76a",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794616968,
+      "queuedAt": 1784794614222,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 6 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794697599,
+      "tokens": 38302,
+      "toolCalls": 5,
+      "durationMs": 80631,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"edgar-60\",\"verdict\":\"MASK\"},{\"id\":\"edgar-61\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-62\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-63\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-64\",\"verdict\":\"MASK\"},{\"id\":\"edgar-65\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-66\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-67\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-68\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-69\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-70\",\"verdict\":\"KEEP\"},{\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "judge-7",
+      "phaseIndex": 1,
+      "phaseTitle": "Adjudicate",
+      "agentId": "aabb0d7ebc66e316c",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1784794619309,
+      "queuedAt": 1784794614222,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "Read the JSON file at undefined — it is an array of 8 batches. Use ONLY the batch at index 7 (30 entities).\n\nYou are adjudicating anonymization decisions for legal documents under this doctrine (the \"product doctrine\", validated against real court practice):\n- The protected class is PRIVATE INDIVIDUALS in the case (parties, witnesses, family members, employees). MASK anything that helps identify t…",
+      "lastProgressAt": 1784794706387,
+      "tokens": 43611,
+      "toolCalls": 11,
+      "durationMs": 87078,
+      "resultPreview": "{\"verdicts\":[{\"id\":\"edgar-90\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-91\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-92\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-93\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-94\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-95\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-96\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-97\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-98\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-99\",\"verdict\":\"KEEP\"},{\"id\":\"edgar-100\",\"verdict\":\"KEEP\"},{…"
+    }
+  ],
+  "totalTokens": 333297,
+  "totalToolCalls": 67
+}

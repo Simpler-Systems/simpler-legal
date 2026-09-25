@@ -1,0 +1,390 @@
+{
+ "name": "v1-baseline-devrest22",
+ "split": "dev",
+ "strippedDir": "raw/stripped/tab-dev-rest-v1baseline",
+ "scoredAt": "2026-07-21T18:01:12.739Z",
+ "aggregate": {
+  "docs": 22,
+  "directRecall": 0.9230769230769231,
+  "quasiRecall": 0.3293838862559242,
+  "noMaskPreservation": 0.5956873315363881,
+  "gatePassRate": 0.8181818181818182,
+  "unmatchable": 0
+ },
+ "perDoc": [
+  {
+   "file": "001-102115.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 69,
+    "leaked": 62
+   },
+   "no_mask": {
+    "total": 26,
+    "preserved": 15
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-103304.txt",
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 27,
+    "leaked": 20
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-105006.txt",
+   "direct": {
+    "total": 6,
+    "leaked": 2
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 4,
+    "preserved": 2
+   },
+   "unmatchable": 0,
+   "gatePass": false
+  },
+  {
+   "file": "001-106448.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 29,
+    "leaked": 19
+   },
+   "no_mask": {
+    "total": 7,
+    "preserved": 5
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-108462.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 30,
+    "leaked": 23
+   },
+   "no_mask": {
+    "total": 11,
+    "preserved": 5
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-109046.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 93,
+    "leaked": 68
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 5
+   },
+   "unmatchable": 0,
+   "gatePass": false
+  },
+  {
+   "file": "001-110322.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 73,
+    "leaked": 50
+   },
+   "no_mask": {
+    "total": 28,
+    "preserved": 15
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-111540.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 48,
+    "leaked": 42
+   },
+   "no_mask": {
+    "total": 19,
+    "preserved": 15
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-126979.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 20,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 7,
+    "preserved": 4
+   },
+   "unmatchable": 0,
+   "gatePass": false
+  },
+  {
+   "file": "001-148610.txt",
+   "direct": {
+    "total": 4,
+    "leaked": 2
+   },
+   "quasi": {
+    "total": 28,
+    "leaked": 20
+   },
+   "no_mask": {
+    "total": 9,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "gatePass": false
+  },
+  {
+   "file": "001-159211.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 34,
+    "leaked": 29
+   },
+   "no_mask": {
+    "total": 39,
+    "preserved": 22
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-160998.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 62,
+    "leaked": 44
+   },
+   "no_mask": {
+    "total": 15,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-173265.txt",
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 48,
+    "leaked": 41
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 21
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57441.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 56,
+    "leaked": 29
+   },
+   "no_mask": {
+    "total": 17,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57508.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 99,
+    "leaked": 59
+   },
+   "no_mask": {
+    "total": 23,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57562.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 70,
+    "leaked": 41
+   },
+   "no_mask": {
+    "total": 15,
+    "preserved": 3
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57698.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 61,
+    "leaked": 37
+   },
+   "no_mask": {
+    "total": 17,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57721.txt",
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 72,
+    "leaked": 42
+   },
+   "no_mask": {
+    "total": 15,
+    "preserved": 10
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57804.txt",
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 75,
+    "leaked": 43
+   },
+   "no_mask": {
+    "total": 19,
+    "preserved": 12
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57819.txt",
+   "direct": {
+    "total": 7,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 101,
+    "leaked": 66
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 11
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-58039.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 81,
+    "leaked": 45
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 12
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-58097.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 67,
+    "leaked": 37
+   },
+   "no_mask": {
+    "total": 11,
+    "preserved": 6
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  }
+ ]
+}

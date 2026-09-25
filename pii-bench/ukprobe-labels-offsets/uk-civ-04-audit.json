@@ -1,0 +1,71 @@
+{
+ "doc": "uk-civ-04.txt",
+ "docSha256_16": "ac6ef3086cfa855d",
+ "entities": [
+  {
+   "category": "MISC",
+   "off": 4452,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "off": 9701,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "off": 4506,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "off": 4417,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "off": 9264,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "off": 9751,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "off": 10023,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "off": 4856,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "off": 4779,
+   "len": 34
+  },
+  {
+   "category": "MISC",
+   "off": 12704,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "off": 12550,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "off": 3150,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "off": 7656,
+   "len": 4
+  }
+ ]
+}

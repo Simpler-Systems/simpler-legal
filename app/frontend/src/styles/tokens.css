@@ -1,0 +1,74 @@
+/* Simpler Legal — design tokens. System of record: design/DESIGN_SPEC_LIGHT_2026-07-20.md
+   "Paper on a light table." Light-first; dark ships later as chrome-only darkening —
+   the paper never inverts. Components reference tokens only, never literals. */
+:root {
+  /* grounds */
+  --table: #EDEBE7;   /* app canvas — the light table every screen sits on */
+  --chrome: #F7F6F3;  /* sidebar, topbar, right rail */
+  --paper: #FFFFFF;   /* document sheets, receipt cards, queue cards */
+  --card: #FCFCFB;    /* quiet panels */
+  --hover: #E7E5E0;   /* visible warm wash (~ink at 7%) — rows must light up */
+  /* hair/border are DECORATIVE dividers, always reinforced by a tone step or shadow.
+     Anything a user must FIND by its outline uses --border-strong (≥3:1 on every ground). */
+  --hair: #D8D5CF;
+  --border: #C9C5BD;
+  --border-strong: #87837B;
+
+  /* ink — warm 4-stop text ramp, every stop AA on the binding #EDEBE7 table:
+     ink 10.3:1 · ink-2 5.9:1 · mut 4.7:1 · faint is decoration, never text */
+  --ink: #37352F;     /* warm near-black; never #000 */
+  --ink-2: #5D5951;
+  --ink2: #5D5951;    /* alias — mock CSS uses --ink2 */
+  --mut: #65605A; /* AA on the hover wash too (was 4.46:1 on #E7E5E0) */
+  --faint: #9B968E;   /* ghost/placeholder decoration ONLY — never for text a user must read */
+  --hoverw: #E7E5E0;  /* alias — mock CSS name for --hover */
+
+  /* the navy — legal's accent (juridical navy + gold kite); rationed exactly as red's red was: brand mark, one filled CTA per screen, redaction semantics */
+  --red: #16324F;
+  --red-hover: #0F2438;
+  --red-wash: #E8EEF6;
+
+  /* semantic — icon + word, never color alone; darkened to AA as body text */
+  --go: #1B7247;      --go-wash: #E2F2E9;
+  --amber: #8C6109;   --amber-wash: #FBF3DB;
+  --held: #8F1F1B;    --held-wash: #F6E2E0;
+
+  /* entity category tints (dusty, office-supply grade) */
+  /* washes tuned for at-a-glance legibility (owner call 2026-07-22: the marks
+     must read from across the room — saturation over subtlety) */
+  --c-person: #3D6FA5;  --w-person: #C9DEF3;
+  --c-org: #6C5DA8;     --w-org: #DCD3F2;
+  --c-loc: #2F7D6D;     --w-loc: #C4E6DC;
+  --c-date: #7E651E;    --w-date: #F7F0DC;
+  --c-id: #536270;      --w-id: #D5DDE4;
+  --c-contact: #A34E7E; --w-contact: #F1D3E3;
+  /* term/date darkened for AA white-on-chip (measured 4.02/4.01 before) */
+  --c-term: #6E6A61;    --w-term: #E7E3DB;
+  /* protected terms: the user's own declared secrets — a hue no detector class
+     owns, because these are masked by instruction, not by inference */
+  --c-protected: #A4472B; --w-protected: #F7DACE;
+
+  /* material */
+  --sh-paper: 0 1px 3px rgba(31, 29, 26, 0.08), 0 8px 24px rgba(31, 29, 26, 0.06);
+  --sh-card: 0 1px 3px rgba(31, 29, 26, 0.06);
+
+  /* type — Windows-native trust register; mono only for machine values */
+  --sans: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  --serif: 'IBM Plex Serif', 'Charter', Georgia, Cambria, serif;
+  --mono: 'IBM Plex Mono', 'Cascadia Code', Consolas, ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; }
+body {
+  background: var(--table);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.45;
+  overflow: hidden;
+}
+button { font: inherit; color: inherit; background: none; border: none; cursor: pointer; }
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 6px; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }

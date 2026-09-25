@@ -1,0 +1,13 @@
+{
+ "doc": "us-r6-04.txt",
+ "docSha256_16": "564416ec54b69393",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 22025,
+   "len": 7
+  }
+ ]
+}

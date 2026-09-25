@@ -1,0 +1,33 @@
+{
+  "name": "simpler-legal-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node ../../sync-viewer.mjs",
+    "dev": "vite",
+    "prebuild": "node ../../sync-viewer.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test:floor-tables": "node test/floor-tables.mjs",
+    "test:protected-terms": "node test/protected-terms.mjs",
+    "test:doctrine-profile": "node test/doctrine-profile.mjs"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.11.1",
+    "@tauri-apps/plugin-dialog": "^2.7.2",
+    "fast-xml-parser": "^5.10.1",
+    "pdfjs-dist": "^6.1.200",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.4",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.0"
+  }
+}

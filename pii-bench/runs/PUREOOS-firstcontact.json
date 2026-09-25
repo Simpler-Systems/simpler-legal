@@ -1,0 +1,36 @@
+{
+ "name": "PUREOOS-firstcontact",
+ "batch": "all",
+ "strippedDir": "raw/stripped/pureoos-FINAL",
+ "scoredAt": "2026-07-24T10:29:38.598Z",
+ "aggregate": {
+  "docs": 1,
+  "missingOutputs": [],
+  "directRecall": 1,
+  "quasiRecall": 0.47058823529411764,
+  "noMaskPreservation": 0.7808219178082192,
+  "gatePassRate": 1,
+  "unmatchable": 1
+ },
+ "perDoc": [
+  {
+   "file": "pureoos-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 17,
+    "leaked": 9
+   },
+   "no_mask": {
+    "total": 73,
+    "preserved": 57
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r5-14.txt",
+ "docSha256_16": "f5a966cd17cefc8e",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 8,
+   "len": 1
+  }
+ ]
+}

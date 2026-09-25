@@ -1,0 +1,13 @@
+{
+ "doc": "us-r7-07.txt",
+ "docSha256_16": "eaac834ddfccc051",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 76,
+   "len": 15
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "name": "sweep-job-after2",
+ "split": "dev",
+ "strippedDir": "raw/stripped/sweep-job-after2",
+ "scoredAt": "2026-07-21T17:05:58.918Z",
+ "aggregate": {
+  "docs": 5,
+  "directRecall": 1,
+  "quasiRecall": 0.7249190938511327,
+  "noMaskPreservation": 0.8181818181818182,
+  "gatePassRate": 1,
+  "unmatchable": 0
+ },
+ "perDoc": [
+  {
+   "file": "001-114244.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 43,
+    "leaked": 18
+   },
+   "no_mask": {
+    "total": 12,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-57563.txt",
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 76,
+    "leaked": 15
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 14
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-58590.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 65,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 12,
+    "preserved": 11
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-60605.txt",
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 70,
+    "leaked": 28
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 12
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  },
+  {
+   "file": "001-86146.txt",
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 55,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 10,
+    "preserved": 8
+   },
+   "unmatchable": 0,
+   "gatePass": true
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "doc": "us-r4-06.txt",
+ "docSha256_16": "cd42678769b1e6ff",
+ "entities": [
+  {
+   "category": "OCCUPATION",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 29900,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 4194,
+   "len": 8
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 15884,
+   "len": 9
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+# Line endings are load-bearing here, and this repo is authored on Windows
+# (core.autocrlf=true). Without a rule, a checkout writes CRLF into every text file,
+# and two separate things break on an invisible byte:
+#
+#  1. tools/launch-server.sh fails on Linux and macOS with "bad interpreter: no such
+#     file or directory" — a stranger's clone breaking before it runs anything.
+#
+#  2. THE GOLD IS OFFSETS-ONLY. gold-offsets.mjs publishes spans as character offsets
+#     into corpus/ and raw/ documents rather than as verbatim text, because the source
+#     corpora are not ours to redistribute. An offset counts bytes from the start of the
+#     file, so one extra CR per line shifts every span after line 1. On this machine the
+#     documents are the output of build-corpus.mjs and are LF, which is why nothing has
+#     ever failed here; on a fresh Windows CLONE they arrive CRLF and the whole gold
+#     instrument silently scores against the wrong spans. Nothing in the repo would
+#     notice, which is what makes it worth a rule rather than a note.
+#
+# The rule: everything is LF on checkout everywhere, batch files excepted because cmd.exe
+# needs CRLF, and .sh stays explicit so the reason above survives a rewrite of this file.
+* text=auto eol=lf
+*.sh   text eol=lf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+
+# Binary and byte-exact assets: never touch these. `text=auto` above would sniff most of
+# them correctly, but sniffing is a heuristic and the cost of one wrong guess is a .docx
+# fixture that no longer opens or a font that renders as squares, discovered by a user
+# rather than by us. 76 files here are binary; the extensions are named rather than
+# inferred. .bcmap and .pfb come with pdfjs-dist and are read byte-for-byte by the PDF
+# reader; .traineddata is the OCR model.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.icns binary
+*.pdf  binary
+*.docx binary
+*.woff2 binary
+*.ttf  binary
+*.pfb  binary
+*.bcmap binary
+*.gguf binary
+*.traineddata binary
+*.zip  binary
+
+# ── working notes, not published ─────────────────────────────────────────────
+# The public repository is this tree minus the paths marked export-ignore below: the coding
+# assistant's instructions file and four session notes and checklists of July 2026. They are
+# kept here as they are. `git archive` leaves them out, and so does the cut described in
+# LAUNCH.md, "The public repository". Code comments that cite them are left as they are.
+/CLAUDE.md             export-ignore
+/MORNING.md            export-ignore
+/OVERNIGHT.md          export-ignore
+/TASKS_OVERNIGHT.md    export-ignore
+/PLAN_100-90-90.md     export-ignore

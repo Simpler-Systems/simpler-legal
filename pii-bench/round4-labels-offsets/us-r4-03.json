@@ -1,0 +1,1762 @@
+{
+ "doc": "us-r4-03.txt",
+ "docSha256_16": "cdbf6f41d074f5e2",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "case-caption",
+   "occurrences": 1,
+   "off": 7,
+   "len": 43
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "source-url",
+   "occurrences": 1,
+   "off": 59,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "reporter-volume",
+   "occurrences": 1,
+   "off": 76,
+   "len": 7
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "archive-id",
+   "occurrences": 1,
+   "off": 85,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 3,
+   "off": 282,
+   "len": 36
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 1,
+   "off": 21,
+   "len": 29
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 60,
+   "off": 724,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 31426,
+   "len": 16
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 14,
+   "off": 4617,
+   "len": 25
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 1,
+   "off": 28918,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 8,
+   "off": 4726,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 6,
+   "off": 4635,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 1,
+   "off": 28225,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 4588,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 37627,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 1,
+   "off": 28896,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 4,
+   "off": 39577,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 12725,
+   "len": 25
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 1,
+   "off": 6799,
+   "len": 37
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 6813,
+   "len": 23
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 4,
+   "off": 10784,
+   "len": 46
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 1,
+   "off": 32659,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 31267,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 31229,
+   "len": 35
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 7740,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 3,
+   "off": 8484,
+   "len": 16
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government-body",
+   "occurrences": 2,
+   "off": 13136,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 4,
+   "off": 331,
+   "len": 21
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 40,
+   "off": 331,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 2,
+   "off": 9675,
+   "len": 23
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 6,
+   "off": 10352,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 2,
+   "off": 60880,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 1,
+   "off": 6962,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 1,
+   "off": 36401,
+   "len": 27
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company",
+   "occurrences": 1,
+   "off": 32810,
+   "len": 24
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "organization",
+   "occurrences": 2,
+   "off": 8773,
+   "len": 23
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "organization",
+   "occurrences": 2,
+   "off": 8798,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "organization",
+   "occurrences": 1,
+   "off": 8815,
+   "len": 27
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "organization",
+   "occurrences": 1,
+   "off": 8844,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "organization",
+   "occurrences": 1,
+   "off": 8865,
+   "len": 20
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "organization",
+   "occurrences": 1,
+   "off": 8891,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "party-collective-role",
+   "occurrences": 40,
+   "off": 8931,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 5,
+   "off": 11736,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 3,
+   "off": 22521,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 1,
+   "off": 12644,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 26,
+   "off": 13161,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 2,
+   "off": 28257,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court",
+   "occurrences": 1,
+   "off": 37246,
+   "len": 13
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "state",
+   "occurrences": 12,
+   "off": 120,
+   "len": 7
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "state",
+   "occurrences": 3,
+   "off": 134,
+   "len": 7
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "state",
+   "occurrences": 1,
+   "off": 6330,
+   "len": 9
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "state",
+   "occurrences": 3,
+   "off": 60245,
+   "len": 14
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "country",
+   "occurrences": 1,
+   "off": 6799,
+   "len": 13
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "city",
+   "occurrences": 1,
+   "off": 6426,
+   "len": 13
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "region",
+   "occurrences": 1,
+   "off": 49208,
+   "len": 9
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "region",
+   "occurrences": 1,
+   "off": 49219,
+   "len": 9
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "region",
+   "occurrences": 1,
+   "off": 49234,
+   "len": 7
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river",
+   "occurrences": 35,
+   "off": 144,
+   "len": 11
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river-basin",
+   "occurrences": 1,
+   "off": 6246,
+   "len": 17
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river-basin",
+   "occurrences": 1,
+   "off": 33049,
+   "len": 11
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river",
+   "occurrences": 1,
+   "off": 6392,
+   "len": 10
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river",
+   "occurrences": 1,
+   "off": 6407,
+   "len": 13
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river",
+   "occurrences": 1,
+   "off": 6494,
+   "len": 16
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "river-system",
+   "occurrences": 1,
+   "off": 7613,
+   "len": 26
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "project-facility",
+   "occurrences": 6,
+   "off": 7014,
+   "len": 13
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "project-facility",
+   "occurrences": 12,
+   "off": 20596,
+   "len": 19
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "project-facility",
+   "occurrences": 1,
+   "off": 9699,
+   "len": 33
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "project-facility",
+   "occurrences": 1,
+   "off": 20596,
+   "len": 27
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 6,
+   "off": 7120,
+   "len": 5
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 3,
+   "off": 7131,
+   "len": 14
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 6,
+   "off": 7151,
+   "len": 12
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 1,
+   "off": 39080,
+   "len": 16
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 1,
+   "off": 32060,
+   "len": 21
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 2,
+   "off": 7169,
+   "len": 3
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 5,
+   "off": 7178,
+   "len": 8
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 4,
+   "off": 7192,
+   "len": 6
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-dam",
+   "occurrences": 1,
+   "off": 7208,
+   "len": 7
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-facility",
+   "occurrences": 2,
+   "off": 32043,
+   "len": 12
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "development-facility",
+   "occurrences": 1,
+   "off": 37951,
+   "len": 12
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "reservoir",
+   "occurrences": 1,
+   "off": 32311,
+   "len": 8
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "project-facility",
+   "occurrences": 1,
+   "off": 60219,
+   "len": 22
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "project-facility",
+   "occurrences": 2,
+   "off": 60219,
+   "len": 14
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 3,
+   "off": 272,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 2,
+   "off": 355,
+   "len": 7
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 8149,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month-year",
+   "occurrences": 1,
+   "off": 8504,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 8954,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month-year",
+   "occurrences": 1,
+   "off": 9352,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date",
+   "occurrences": 1,
+   "off": 9982,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "month-year",
+   "occurrences": 1,
+   "off": 23286,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 7946,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "decade",
+   "occurrences": 1,
+   "off": 7447,
+   "len": 5
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "decade",
+   "occurrences": 1,
+   "off": 33528,
+   "len": 6
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 7719,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 7714,
+   "len": 24
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 8164,
+   "len": 16
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 9321,
+   "len": 26
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 12336,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 21432,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 21792,
+   "len": 17
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 60410,
+   "len": 23
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "relative",
+   "occurrences": 1,
+   "off": 23080,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 48708,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 48862,
+   "len": 20
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 47854,
+   "len": 20
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "period",
+   "occurrences": 1,
+   "off": 49137,
+   "len": 19
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year-range",
+   "occurrences": 1,
+   "off": 56544,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 2,
+   "off": 49814,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 57765,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 37819,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 2,
+   "off": 42810,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 0,
+   "unmatchable": true
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 3,
+   "off": 59006,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 3,
+   "off": 59356,
+   "len": 15
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 59121,
+   "len": 12
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 60895,
+   "len": 8
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 60920,
+   "len": 10
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 32860,
+   "len": 20
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 11612,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 559,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 7,
+   "off": 38564,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 38554,
+   "len": 29
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 2,
+   "off": 10515,
+   "len": 24
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 8,
+   "off": 54540,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 3,
+   "off": 52125,
+   "len": 7
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 1,
+   "off": 54311,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 2,
+   "off": 68199,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 1,
+   "off": 68016,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "concentration",
+   "occurrences": 1,
+   "off": 61638,
+   "len": 8
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "area",
+   "occurrences": 1,
+   "off": 6285,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "distance",
+   "occurrences": 1,
+   "off": 6454,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 6654,
+   "len": 40
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 6861,
+   "len": 54
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 7990,
+   "len": 28
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 7257,
+   "len": 28
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 2,
+   "off": 9569,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 9593,
+   "len": 24
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 31577,
+   "len": 29
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 31649,
+   "len": 25
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 47252,
+   "len": 25
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 48937,
+   "len": 27
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 49382,
+   "len": 3
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 11665,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 53418,
+   "len": 14
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 56665,
+   "len": 13
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 56907,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 56951,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 56967,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 56993,
+   "len": 4
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 57255,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 57278,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 57292,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 57317,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "percentage",
+   "occurrences": 1,
+   "off": 57340,
+   "len": 12
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "agency-order-cite",
+   "occurrences": 1,
+   "off": 6551,
+   "len": 28
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "agency-order-cite",
+   "occurrences": 1,
+   "off": 11593,
+   "len": 24
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "agency-order-cite",
+   "occurrences": 1,
+   "off": 12281,
+   "len": 24
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 58111,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 68210,
+   "len": 9
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 41961,
+   "len": 32
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "record-cite",
+   "occurrences": 1,
+   "off": 56162,
+   "len": 32
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 8,
+   "off": 6582,
+   "len": 15
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 14,
+   "off": 11621,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 3,
+   "off": 12309,
+   "len": 22
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 25,
+   "off": 9404,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 15,
+   "off": 3640,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "legal-term",
+   "occurrences": 12,
+   "off": 4213,
+   "len": 30
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "legal-term",
+   "occurrences": 1,
+   "off": 9261,
+   "len": 32
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-document",
+   "occurrences": 4,
+   "off": 38513,
+   "len": 25
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "guidance-document",
+   "occurrences": 2,
+   "off": 31297,
+   "len": 25
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "plan-document",
+   "occurrences": 1,
+   "off": 32011,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "plan-document",
+   "occurrences": 1,
+   "off": 32245,
+   "len": 44
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 9,
+   "off": 1708,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 1727,
+   "len": 23
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 3371,
+   "len": 33
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 18,
+   "off": 3407,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 3415,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 8,
+   "off": 4430,
+   "len": 22
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 3,
+   "off": 4455,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 4462,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 27186,
+   "len": 28
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute",
+   "occurrences": 1,
+   "off": 57991,
+   "len": 15
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "rule",
+   "occurrences": 1,
+   "off": 24452,
+   "len": 38
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "rule-cite",
+   "occurrences": 1,
+   "off": 24574,
+   "len": 27
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "constitutional-provision",
+   "occurrences": 2,
+   "off": 13178,
+   "len": 11
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 27167,
+   "len": 47
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 27431,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 28337,
+   "len": 39
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 30380,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 66733,
+   "len": 45
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 2834,
+   "len": 28
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 8294,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 2,
+   "off": 4245,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 3,
+   "off": 5556,
+   "len": 22
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 6216,
+   "len": 20
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 21346,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute-cite",
+   "occurrences": 1,
+   "off": 53648,
+   "len": 27
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 3793,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 3815,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 4403,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 4698,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 5411,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 6035,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 5411,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 4,
+   "off": 30057,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 5411,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 40875,
+   "len": 43
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 2,
+   "off": 9300,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 45669,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 62910,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 63563,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 54177,
+   "len": 73
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "regulation-cite",
+   "occurrences": 1,
+   "off": 67736,
+   "len": 36
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 13113,
+   "len": 63
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 13306,
+   "len": 55
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 13525,
+   "len": 90
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 14217,
+   "len": 54
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 14281,
+   "len": 66
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 6,
+   "off": 14281,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 15036,
+   "len": 126
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 2,
+   "off": 15066,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 18781,
+   "len": 68
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 2,
+   "off": 13306,
+   "len": 11
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 23521,
+   "len": 69
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 23906,
+   "len": 89
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 67495,
+   "len": 86
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 24898,
+   "len": 69
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 1,
+   "off": 25979,
+   "len": 29
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 25434,
+   "len": 58
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 25768,
+   "len": 37
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 27364,
+   "len": 57
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 1,
+   "off": 28151,
+   "len": 31
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 28192,
+   "len": 79
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 28948,
+   "len": 66
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 32632,
+   "len": 94
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 1,
+   "off": 37422,
+   "len": 41
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 43156,
+   "len": 58
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 43329,
+   "len": 51
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 43391,
+   "len": 127
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 44076,
+   "len": 70
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 44357,
+   "len": 95
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-short-cite",
+   "occurrences": 1,
+   "off": 49614,
+   "len": 29
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 45269,
+   "len": 62
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 49744,
+   "len": 75
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 63751,
+   "len": 62
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case-citation",
+   "occurrences": 1,
+   "off": 64258,
+   "len": 81
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "brief-cite",
+   "occurrences": 1,
+   "off": 19957,
+   "len": 17
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "brief-cite",
+   "occurrences": 1,
+   "off": 26761,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "brief-cite",
+   "occurrences": 1,
+   "off": 37985,
+   "len": 13
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "filing-cite",
+   "occurrences": 1,
+   "off": 22761,
+   "len": 51
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "filing-cite",
+   "occurrences": 1,
+   "off": 67088,
+   "len": 33
+  }
+ ]
+}

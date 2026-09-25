@@ -1,0 +1,13 @@
+{
+ "doc": "pureoos-01.txt",
+ "docSha256_16": "edde3f6dae1a5a1d",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 10,
+   "len": 16
+  }
+ ]
+}

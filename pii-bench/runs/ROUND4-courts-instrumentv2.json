@@ -1,0 +1,570 @@
+{
+ "name": "ROUND4-courts-instrumentv2",
+ "batch": "all",
+ "strippedDir": "raw/stripped/r4-courts-FINAL",
+ "scoredAt": "2026-07-23T10:43:15.562Z",
+ "aggregate": {
+  "docs": 40,
+  "missingOutputs": [
+   "edgar-r4-01.txt",
+   "edgar-r4-02.txt",
+   "edgar-r4-03.txt",
+   "edgar-r4-04.txt",
+   "edgar-r4-05.txt",
+   "edgar-r4-06.txt",
+   "edgar-r4-07.txt",
+   "edgar-r4-08.txt",
+   "edgar-r4-09.txt",
+   "edgar-r4-10.txt",
+   "edgar-r4-11.txt",
+   "edgar-r4-12.txt",
+   "edgar-r4-13.txt",
+   "edgar-r4-14.txt",
+   "edgar-r4-15.txt"
+  ],
+  "directRecall": 0.9888888888888889,
+  "quasiRecall": 0.30204081632653057,
+  "noMaskPreservation": 0.5657102373361672,
+  "gatePassRate": 0.92,
+  "unmatchable": 11
+ },
+ "perDoc": [
+  {
+   "file": "edgar-r4-01.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-02.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-03.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-04.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-05.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-06.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-07.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-08.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-09.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-10.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-11.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-12.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-13.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-14.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-r4-15.txt",
+   "missing": true
+  },
+  {
+   "file": "us-r4-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 50,
+    "leaked": 37
+   },
+   "no_mask": {
+    "total": 108,
+    "preserved": 44
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 25,
+    "leaked": 22
+   },
+   "no_mask": {
+    "total": 99,
+    "preserved": 59
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 0,
+    "preserved": 0
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 19,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 114,
+    "preserved": 50
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 40,
+    "leaked": 34
+   },
+   "no_mask": {
+    "total": 167,
+    "preserved": 55
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 20,
+    "leaked": 14
+   },
+   "no_mask": {
+    "total": 118,
+    "preserved": 41
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-07.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 16,
+    "leaked": 9
+   },
+   "no_mask": {
+    "total": 113,
+    "preserved": 49
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-08.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 14,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 83,
+    "preserved": 24
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-09.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 94,
+    "leaked": 64
+   },
+   "no_mask": {
+    "total": 104,
+    "preserved": 44
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "us-r4-10.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 2,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 56,
+    "preserved": 27
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 7,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 21,
+    "leaked": 10
+   },
+   "no_mask": {
+    "total": 139,
+    "preserved": 97
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 35,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 19,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 84,
+    "preserved": 67
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 27,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 39,
+    "leaked": 30
+   },
+   "no_mask": {
+    "total": 225,
+    "preserved": 150
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 0,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 0,
+    "preserved": 0
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 15,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 32,
+    "leaked": 27
+   },
+   "no_mask": {
+    "total": 96,
+    "preserved": 44
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 30,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 29,
+    "leaked": 8
+   },
+   "no_mask": {
+    "total": 152,
+    "preserved": 80
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  },
+  {
+   "file": "sg-r4-07.txt",
+   "missing": false,
+   "direct": {
+    "total": 9,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 30,
+    "leaked": 20
+   },
+   "no_mask": {
+    "total": 148,
+    "preserved": 86
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-08.txt",
+   "missing": false,
+   "direct": {
+    "total": 7,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 69,
+    "leaked": 53
+   },
+   "no_mask": {
+    "total": 86,
+    "preserved": 64
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-09.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 29,
+    "leaked": 25
+   },
+   "no_mask": {
+    "total": 61,
+    "preserved": 39
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sg-r4-10.txt",
+   "missing": false,
+   "direct": {
+    "total": 15,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 28,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 91,
+    "preserved": 49
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sghcf-r4-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 30,
+    "leaked": 24
+   },
+   "no_mask": {
+    "total": 170,
+    "preserved": 110
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sghcf-r4-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 27,
+    "leaked": 16
+   },
+   "no_mask": {
+    "total": 95,
+    "preserved": 54
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sghcf-r4-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 44,
+    "leaked": 30
+   },
+   "no_mask": {
+    "total": 224,
+    "preserved": 154
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sghcf-r4-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 24,
+    "leaked": 23
+   },
+   "no_mask": {
+    "total": 159,
+    "preserved": 107
+   },
+   "unmatchable": 5,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "sghcf-r4-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 1
+   },
+   "quasi": {
+    "total": 34,
+    "leaked": 18
+   },
+   "no_mask": {
+    "total": 131,
+    "preserved": 103
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": false,
+   "leakedCount": 1
+  }
+ ]
+}

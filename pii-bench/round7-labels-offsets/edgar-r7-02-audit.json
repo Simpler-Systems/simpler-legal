@@ -1,0 +1,27 @@
+{
+ "doc": "edgar-r7-02.txt",
+ "docSha256_16": "095e5c97c46fa5bc",
+ "entities": [
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 0,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 11,
+   "len": 11
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 65,
+   "len": 13
+  }
+ ]
+}

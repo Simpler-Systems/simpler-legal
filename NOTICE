@@ -1,0 +1,90 @@
+Simpler Legal
+Copyright 2026 Simpler Terminal Value Systems Pte Ltd
+
+Simpler Legal is made by Simpler Terminal Value Systems Pte Ltd, Singapore
+(https://github.com/Simpler-Systems/simpler-legal; support@simpler.asia).
+Licensed under the Apache License, Version 2.0.
+
+Third-party software, fonts, data and models retain their own terms. This
+file is derived from the contents of this repository by tools/derive-notice.mjs
+(inventory: git ls-files); the fuller accounting is in
+THIRD_PARTY_NOTICES.md.
+
+Software fetched at build time (npm and crates.io; not vendored here)
+- fast-xml-parser (npm, app/extract): MIT.
+- pdfjs-dist (npm, app/extract): Apache-2.0 (Mozilla Foundation).
+- tesseract.js (npm, app/extract): Apache-2.0.
+- @tauri-apps/api (npm, app/frontend): MIT or Apache-2.0 (Tauri Programme within The Commons Conservancy).
+- @tauri-apps/plugin-dialog (npm, app/frontend): MIT or Apache-2.0 (Tauri Programme within The Commons Conservancy).
+- fast-xml-parser (npm, app/frontend): MIT.
+- pdfjs-dist (npm, app/frontend): Apache-2.0 (Mozilla Foundation).
+- react (npm, app/frontend): MIT (Meta Platforms).
+- react-dom (npm, app/frontend): MIT (Meta Platforms).
+- tauri-build (crate, app/src-tauri): MIT or Apache-2.0.
+- tauri (crate, app/src-tauri): MIT or Apache-2.0.
+- tauri-plugin-dialog (crate, app/src-tauri): MIT or Apache-2.0.
+- serde (crate, app/src-tauri): MIT or Apache-2.0.
+- serde_json (crate, app/src-tauri): MIT or Apache-2.0.
+- sha2 (crate, app/src-tauri): MIT or Apache-2.0 (RustCrypto).
+- windows (crate, app/src-tauri): MIT or Apache-2.0 (Microsoft).
+
+Third-party files that DO ship in this repository
+- IBM Plex (IBM Corp., Reserved Font Name "Plex"): SIL Open Font License
+  1.1. Latin woff2 subsets (16 files) in app/frontend/public/fonts/ and
+  site/assets/fonts/; the full OFL text ships in each directory as LICENSE.txt.
+- Adobe CMap resources (Adobe Systems Incorporated): BSD-3-Clause.
+  app/frontend/public/pdfjs/cmaps/ (168 .bcmap files) — see cmaps/LICENSE.
+- Foxit base-14 substitute fonts (PDFium Authors): BSD-3-Clause.
+  app/frontend/public/pdfjs/standard_fonts/ (10 .pfb files) — see LICENSE_FOXIT.
+- Liberation fonts (Red Hat, Inc.; digitized data Google Corporation):
+  SIL Open Font License 1.1.
+  app/frontend/public/pdfjs/standard_fonts/ (4 .ttf files) — see LICENSE_LIBERATION.
+- Caselaw Access Project opinions (99 files): public domain.
+  corpus/, newcases/.
+
+The Windows installer built from this repository (app/src-tauri/tauri.conf.json)
+shows LICENSE on its licence page, followed by the terms Microsoft requires
+users to accept for the three Visual C++ runtime files in its llama folder
+(app/src-tauri/installer-licence.txt), and installs LICENSE, NOTICE,
+THIRD_PARTY_NOTICES.md and the files in licenses/ into a licenses folder
+beside the app. Besides this
+product's own files it carries the following (licenses/README.md gives the
+source and sha256 of each file named):
+- llama.cpp (llama-server and its libraries, from llama.cpp's Windows release
+  zip; The ggml authors), installed as llama\: MIT
+  (licenses/llama.cpp-LICENSE.txt), with the licences of code compiled into
+  it: nlohmann/json and cpp-httplib (MIT) and BoringSSL
+  (licenses/llama.cpp-*-LICENSE.txt), and of the npm packages in the web page
+  llama-server.exe carries (licenses/llama.cpp-webui-npm-packages.txt).
+  Beside it: libomp140.x86_64.dll, the LLVM project's OpenMP runtime as
+  conda-forge builds it (llvm-openmp 22.1.8), Apache-2.0 with LLVM exceptions
+  (licenses/llvm-openmp-LICENSE.txt); and three files built by Microsoft, the
+  Visual C++ runtime, added from Visual Studio 2022 Build Tools, which come
+  with no licence text. licenses/msvc-runtime.txt says where they come from
+  and quotes what Microsoft says about redistributing them.
+- Node.js (Node.js contributors; OpenJS Foundation), installed as node.exe:
+  MIT, with the licences of the components it includes
+  (licenses/node-LICENSE.txt).
+The setup program itself is built from NSIS 3.11 (licenses/NSIS-COPYING.txt)
+and Tauri's nsis_tauri_utils.dll (licenses/nsis_tauri_utils-LICENSE_*.txt).
+The licence texts of the Rust crates linked into the app, and of the npm
+packages its window is bundled from, are in
+licenses/rust-crates.txt and licenses/npm-packages.txt.
+The app's executable also links Microsoft's WebView2 loader
+(WebView2LoaderStatic.lib, through the webview2-com-sys crate):
+licenses/Microsoft.Web.WebView2-LICENSE.txt, with the notices file of the package it comes
+from, licenses/Microsoft.Web.WebView2-NOTICE.txt.
+
+Models and corpora that do NOT ship here (checked: none of these is in the tree)
+- Gemma 4 E2B model weights (Google): Apache-2.0, per the model card and
+  https://ai.google.dev/gemma/docs/gemma_4_license. Not redistributed:
+  hash-pinned and located at runtime; never a repository or installer asset.
+- TAB (Text Anonymization Benchmark), Norsk Regnesentral: MIT. Fetched
+  at a pinned commit by build-pii-bench.mjs into raw/, which is not here.
+- SEC EDGAR filings: US government public records. Fetched from
+  sec.gov; documents not redistributed.
+- Singapore eLitigation judgments: not redistributed; URLs and our
+  annotations only.
+- UK judgments from The National Archives' Find Case Law: Open Justice
+  Licence; not redistributed, refetched by build-ukprobe.mjs with
+  per-document attribution retained.

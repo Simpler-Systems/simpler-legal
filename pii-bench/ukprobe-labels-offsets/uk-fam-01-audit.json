@@ -1,0 +1,31 @@
+{
+ "doc": "uk-fam-01.txt",
+ "docSha256_16": "0ee96522e1f32c7f",
+ "entities": [
+  {
+   "category": "DEM",
+   "off": 65352,
+   "len": 18
+  },
+  {
+   "category": "DEM",
+   "off": 65333,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "off": 39967,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "off": 52029,
+   "len": 10
+  },
+  {
+   "category": "QUANTITY",
+   "off": 78731,
+   "len": 8
+  }
+ ]
+}

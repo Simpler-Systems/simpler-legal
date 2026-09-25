@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r7-09.txt",
+ "docSha256_16": "d89c38df15b98876",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 2,
+   "off": 1609,
+   "len": 5
+  }
+ ]
+}

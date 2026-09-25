@@ -1,0 +1,273 @@
+{
+ "name": "selftest-null",
+ "batch": "selftest",
+ "strippedDir": "raw/scorer-selftest/null",
+ "scoredAt": "2026-09-25T03:23:40.812Z",
+ "aggregate": {
+  "docs": 6,
+  "scoredDocs": 6,
+  "missingOutputs": [],
+  "directRecall": 0,
+  "quasiRecall": 0,
+  "noMaskPreservation": 1,
+  "gatePassRate": 0,
+  "unmatchable": 5
+ },
+ "perDoc": [
+  {
+   "file": "us-opinion-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 3
+   },
+   "quasi": {
+    "total": 11,
+    "leaked": 11
+   },
+   "no_mask": {
+    "total": 17,
+    "preserved": 17
+   },
+   "unmatchable": 0,
+   "leakedSpans": [
+    {
+     "cat": "PERSON",
+     "len": 18,
+     "id": "65a6c0dbe009"
+    },
+    {
+     "cat": "PERSON",
+     "len": 11,
+     "id": "08e5dd9b70d3"
+    },
+    {
+     "cat": "PERSON",
+     "len": 17,
+     "id": "8e23832c3d40"
+    }
+   ],
+   "gatePass": false
+  },
+  {
+   "file": "us-opinion-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 5
+   },
+   "quasi": {
+    "total": 5,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 18
+   },
+   "unmatchable": 0,
+   "leakedSpans": [
+    {
+     "cat": "PERSON",
+     "len": 11,
+     "id": "11e8ff8b531c"
+    },
+    {
+     "cat": "PERSON",
+     "len": 8,
+     "id": "6c2212a037ff"
+    },
+    {
+     "cat": "PERSON",
+     "len": 15,
+     "id": "06645c055e68"
+    },
+    {
+     "cat": "PERSON",
+     "len": 16,
+     "id": "1be1b796f893"
+    },
+    {
+     "cat": "PERSON",
+     "len": 15,
+     "id": "cf6666c66e1b"
+    }
+   ],
+   "gatePass": false
+  },
+  {
+   "file": "us-opinion-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 10
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 23
+   },
+   "no_mask": {
+    "total": 75,
+    "preserved": 75
+   },
+   "unmatchable": 3,
+   "leakedSpans": [
+    {
+     "cat": "PERSON",
+     "len": 17,
+     "id": "8185ce2d12e1"
+    },
+    {
+     "cat": "PERSON",
+     "len": 19,
+     "id": "1ad2667a2a39"
+    },
+    {
+     "cat": "PERSON",
+     "len": 13,
+     "id": "dae923b7acff"
+    },
+    {
+     "cat": "PERSON",
+     "len": 11,
+     "id": "9dfd11342f26"
+    },
+    {
+     "cat": "PERSON",
+     "len": 8,
+     "id": "0cb06dae049c"
+    },
+    {
+     "cat": "PERSON",
+     "len": 6,
+     "id": "94673f90ec1d"
+    },
+    {
+     "cat": "PERSON",
+     "len": 17,
+     "id": "a59cfb5b088c"
+    },
+    {
+     "cat": "PERSON",
+     "len": 15,
+     "id": "667033af39a1"
+    },
+    {
+     "cat": "PERSON",
+     "len": 5,
+     "id": "07724304d1fc"
+    },
+    {
+     "cat": "PERSON",
+     "len": 9,
+     "id": "48546b7bdda3"
+    }
+   ],
+   "gatePass": false
+  },
+  {
+   "file": "us-opinion-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 2
+   },
+   "quasi": {
+    "total": 41,
+    "leaked": 41
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 33
+   },
+   "unmatchable": 0,
+   "leakedSpans": [
+    {
+     "cat": "PERSON",
+     "len": 13,
+     "id": "a2ba1479e800"
+    },
+    {
+     "cat": "PERSON",
+     "len": 7,
+     "id": "beb7df466a6d"
+    }
+   ],
+   "gatePass": false
+  },
+  {
+   "file": "us-opinion-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 4
+   },
+   "quasi": {
+    "total": 23,
+    "leaked": 23
+   },
+   "no_mask": {
+    "total": 36,
+    "preserved": 36
+   },
+   "unmatchable": 0,
+   "leakedSpans": [
+    {
+     "cat": "PERSON",
+     "len": 13,
+     "id": "c5b40482a202"
+    },
+    {
+     "cat": "PERSON",
+     "len": 6,
+     "id": "bfb6a49e1cc8"
+    },
+    {
+     "cat": "PERSON",
+     "len": 17,
+     "id": "f501738388b2"
+    },
+    {
+     "cat": "PERSON",
+     "len": 8,
+     "id": "7e6046c9a277"
+    }
+   ],
+   "gatePass": false
+  },
+  {
+   "file": "us-opinion-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 3
+   },
+   "quasi": {
+    "total": 38,
+    "leaked": 38
+   },
+   "no_mask": {
+    "total": 28,
+    "preserved": 28
+   },
+   "unmatchable": 2,
+   "leakedSpans": [
+    {
+     "cat": "PERSON",
+     "len": 14,
+     "id": "90c94a534f29"
+    },
+    {
+     "cat": "PERSON",
+     "len": 4,
+     "id": "a599cbffb9ac"
+    },
+    {
+     "cat": "PERSON",
+     "len": 6,
+     "id": "5a0e74ee5324"
+    }
+   ],
+   "gatePass": false
+  }
+ ]
+}

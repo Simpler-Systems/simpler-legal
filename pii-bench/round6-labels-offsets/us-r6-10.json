@@ -1,0 +1,657 @@
+{
+ "doc": "us-r6-10.txt",
+ "docSha256_16": "82d25072fdc06101",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "judge_name_nomask",
+   "occurrences": 2,
+   "off": 173,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "judicial_role_nomask",
+   "occurrences": 2,
+   "off": 159,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 7,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 543,
+   "len": 35
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 13,
+   "off": 7,
+   "len": 17
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 6,
+   "off": 16168,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 7,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 11,
+   "off": 587,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 583,
+   "len": 37
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 6823,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 12647,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 4190,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 4201,
+   "len": 5
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 4208,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 4217,
+   "len": 6
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 7227,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "company_quasi",
+   "occurrences": 1,
+   "off": 7236,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 2,
+   "off": 42,
+   "len": 33
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 25,
+   "off": 666,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 6,
+   "off": 3507,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 7,
+   "off": 3105,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 5,
+   "off": 1259,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 10,
+   "off": 4550,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 1,
+   "off": 8451,
+   "len": 30
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "government_body_nomask",
+   "occurrences": 1,
+   "off": 8495,
+   "len": 11
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "generic_role_nomask",
+   "occurrences": 1,
+   "off": 8499,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_nomask",
+   "occurrences": 2,
+   "off": 8133,
+   "len": 13
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_nomask",
+   "occurrences": 5,
+   "off": 140,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_nomask",
+   "occurrences": 5,
+   "off": 8685,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_nomask",
+   "occurrences": 4,
+   "off": 1200,
+   "len": 10
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_nomask",
+   "occurrences": 4,
+   "off": 7527,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_nomask",
+   "occurrences": 1,
+   "off": 21154,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 1223,
+   "len": 65
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 1290,
+   "len": 61
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 7483,
+   "len": 57
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 7656,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 8059,
+   "len": 68
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 8199,
+   "len": 103
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 15800,
+   "len": 55
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 16944,
+   "len": 55
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 17306,
+   "len": 43
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 17602,
+   "len": 112
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 17725,
+   "len": 69
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_citation_nomask",
+   "occurrences": 1,
+   "off": 21118,
+   "len": 49
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_shorthand_nomask",
+   "occurrences": 7,
+   "off": 10592,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_shorthand_nomask",
+   "occurrences": 3,
+   "off": 17306,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_shorthand_nomask",
+   "occurrences": 1,
+   "off": 17799,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_shorthand_nomask",
+   "occurrences": 3,
+   "off": 17602,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "case_shorthand_nomask",
+   "occurrences": 1,
+   "off": 15800,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "case_party_nomask",
+   "occurrences": 1,
+   "off": 15816,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "case_party_nomask",
+   "occurrences": 1,
+   "off": 17318,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "case_party_nomask",
+   "occurrences": 1,
+   "off": 17734,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "case_party_nomask",
+   "occurrences": 1,
+   "off": 17725,
+   "len": 5
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "case_party_nomask",
+   "occurrences": 1,
+   "off": 21118,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_party_nomask",
+   "occurrences": 1,
+   "off": 8206,
+   "len": 35
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 1,
+   "off": 1769,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 1,
+   "off": 7617,
+   "len": 33
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 2,
+   "off": 12357,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 1,
+   "off": 11051,
+   "len": 14
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 1,
+   "off": 11351,
+   "len": 20
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 6,
+   "off": 10672,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 1,
+   "off": 11079,
+   "len": 28
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_nomask",
+   "occurrences": 1,
+   "off": 11438,
+   "len": 3
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "rule_nomask",
+   "occurrences": 1,
+   "off": 20857,
+   "len": 37
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "rule_nomask",
+   "occurrences": 1,
+   "off": 21069,
+   "len": 38
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "rule_nomask",
+   "occurrences": 1,
+   "off": 18211,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "document_title_nomask",
+   "occurrences": 9,
+   "off": 3982,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "document_title_nomask",
+   "occurrences": 2,
+   "off": 4531,
+   "len": 17
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "document_title_nomask",
+   "occurrences": 9,
+   "off": 7084,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "generic_role_nomask",
+   "occurrences": 18,
+   "off": 311,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "generic_role_nomask",
+   "occurrences": 1,
+   "off": 286,
+   "len": 23
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "generic_role_nomask",
+   "occurrences": 13,
+   "off": 2589,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "generic_role_nomask",
+   "occurrences": 11,
+   "off": 468,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "generic_role_nomask",
+   "occurrences": 1,
+   "off": 443,
+   "len": 23
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year_range_quasi",
+   "occurrences": 7,
+   "off": 374,
+   "len": 7
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year_quasi",
+   "occurrences": 1,
+   "off": 987,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year_quasi",
+   "occurrences": 3,
+   "off": 3379,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year_quasi",
+   "occurrences": 8,
+   "off": 374,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year_quasi",
+   "occurrences": 2,
+   "off": 2143,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_range_quasi",
+   "occurrences": 1,
+   "off": 5953,
+   "len": 27
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "date_range_quasi",
+   "occurrences": 1,
+   "off": 6043,
+   "len": 31
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration_quasi",
+   "occurrences": 1,
+   "off": 7782,
+   "len": 21
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration_quasi",
+   "occurrences": 1,
+   "off": 8175,
+   "len": 20
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration_quasi",
+   "occurrences": 1,
+   "off": 3041,
+   "len": 7
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration_quasi",
+   "occurrences": 1,
+   "off": 16238,
+   "len": 6
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration_quasi",
+   "occurrences": 1,
+   "off": 16325,
+   "len": 6
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_quasi",
+   "occurrences": 5,
+   "off": 2162,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "money_quasi",
+   "occurrences": 3,
+   "off": 2226,
+   "len": 5
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count_quasi",
+   "occurrences": 1,
+   "off": 282,
+   "len": 27
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count_quasi",
+   "occurrences": 1,
+   "off": 4089,
+   "len": 22
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count_quasi",
+   "occurrences": 1,
+   "off": 4355,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count_quasi",
+   "occurrences": 1,
+   "off": 526,
+   "len": 15
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count_quasi",
+   "occurrences": 1,
+   "off": 4347,
+   "len": 20
+  }
+ ]
+}

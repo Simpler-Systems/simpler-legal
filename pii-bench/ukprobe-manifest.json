@@ -1,0 +1,98 @@
+{
+ "builtAt": "2026-07-24",
+ "protocol": "UK transfer probe: courts pack UNCHANGED; blind gold before engine; published as drawn",
+ "docs": [
+  {
+   "file": "uk-civ-01.txt",
+   "source": "uk-civ",
+   "cite": "[2024] EWHC KB 2",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2024/2",
+   "licence": "Open Justice Licence",
+   "words": 14509,
+   "sha256_16": "b84ae823becc5161"
+  },
+  {
+   "file": "uk-civ-02.txt",
+   "source": "uk-civ",
+   "cite": "[2024] EWHC KB 9",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2024/9",
+   "licence": "Open Justice Licence",
+   "words": 7155,
+   "sha256_16": "72095132c41e7023"
+  },
+  {
+   "file": "uk-civ-03.txt",
+   "source": "uk-civ",
+   "cite": "[2024] EWHC KB 15",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2024/15",
+   "licence": "Open Justice Licence",
+   "words": 12564,
+   "sha256_16": "583dca6c45d1ddf8"
+  },
+  {
+   "file": "uk-civ-04.txt",
+   "source": "uk-civ",
+   "cite": "[2024] EWHC KB 24",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2024/24",
+   "licence": "Open Justice Licence",
+   "words": 2241,
+   "sha256_16": "ac6ef3086cfa855d"
+  },
+  {
+   "file": "uk-civ-05.txt",
+   "source": "uk-civ",
+   "cite": "[2024] EWHC KB 25",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2024/25",
+   "licence": "Open Justice Licence",
+   "words": 2620,
+   "sha256_16": "13a5d79433687e43"
+  },
+  {
+   "file": "uk-civ-06.txt",
+   "source": "uk-civ",
+   "cite": "[2024] EWHC KB 30",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/kb/2024/30",
+   "licence": "Open Justice Licence",
+   "words": 8450,
+   "sha256_16": "742d1215f3f1dd43"
+  },
+  {
+   "file": "uk-fam-01.txt",
+   "source": "uk-fam",
+   "cite": "[2024] EWHC FAM 17",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/fam/2024/17",
+   "licence": "Open Justice Licence",
+   "words": 13458,
+   "sha256_16": "0ee96522e1f32c7f"
+  },
+  {
+   "file": "uk-fam-02.txt",
+   "source": "uk-fam",
+   "cite": "[2024] EWHC FAM 59",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/fam/2024/59",
+   "licence": "Open Justice Licence",
+   "words": 11748,
+   "sha256_16": "62b1a9cf4d9bfd7e"
+  },
+  {
+   "file": "uk-fam-03.txt",
+   "source": "uk-fam",
+   "cite": "[2024] EWHC FAM 61",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/fam/2024/61",
+   "licence": "Open Justice Licence",
+   "words": 7011,
+   "sha256_16": "74578f0b784eef10"
+  },
+  {
+   "file": "uk-fam-04.txt",
+   "source": "uk-fam",
+   "cite": "[2024] EWHC FAM 64",
+   "url": "https://caselaw.nationalarchives.gov.uk/ewhc/fam/2024/64",
+   "licence": "Open Justice Licence",
+   "words": 9530,
+   "sha256_16": "2616146ed0fdddfd"
+  }
+ ],
+ "shaPinnedAt": "2026-07-25",
+ "shaNote": "sha256_16 = first 16 hex of sha256 over the extracted text as scored. A rebuild that does not match these was not the corpus these boards measured."
+}

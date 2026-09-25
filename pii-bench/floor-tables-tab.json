@@ -1,0 +1,98 @@
+{
+ "source": "TAB (NorskRegnesentral/text-anonymization-benchmark), raw/tab/",
+ "docs": 1268,
+ "words": 1580410,
+ "measuredAt": "2026-09-13T10:37:20.872Z",
+ "practices": {
+  "us": {
+   "label": "United States",
+   "rules": [
+    {
+     "tag": "[ssn]",
+     "re": "\\b(?!000|666|9\\d\\d)\\d{3}[- ](?!00)\\d{2}[- ](?!0000)\\d{4}\\b",
+     "nominated": 0,
+     "rejectedByCheck": 0,
+     "matches": 0,
+     "onGold": 0,
+     "goldTypes": {},
+     "offGold": 0,
+     "underFrozen": 0,
+     "docsHit": 0,
+     "samplesOffGold": []
+    },
+    {
+     "tag": "[ein]",
+     "re": "\\b\\d{2}-\\d{7}\\b",
+     "nominated": 0,
+     "rejectedByCheck": 0,
+     "matches": 0,
+     "onGold": 0,
+     "goldTypes": {},
+     "offGold": 0,
+     "underFrozen": 0,
+     "docsHit": 0,
+     "samplesOffGold": []
+    },
+    {
+     "tag": "[phone]",
+     "re": "(?:\\+?1[ .-])?\\(?\\b[2-9]\\d{2}\\)?[ .-][2-9]\\d{2}[ .-]\\d{4}\\b",
+     "nominated": 1,
+     "rejectedByCheck": 0,
+     "matches": 1,
+     "onGold": 1,
+     "goldTypes": {
+      "QUANTITY": 1
+     },
+     "offGold": 0,
+     "underFrozen": 0,
+     "docsHit": 1,
+     "samplesOffGold": []
+    }
+   ]
+  },
+  "uk": {
+   "label": "United Kingdom",
+   "rules": [
+    {
+     "tag": "[nino]",
+     "re": "\\b[A-Z]{2} ?\\d{2} ?\\d{2} ?\\d{2} ?[A-D]\\b",
+     "nominated": 0,
+     "rejectedByCheck": 0,
+     "matches": 0,
+     "onGold": 0,
+     "goldTypes": {},
+     "offGold": 0,
+     "underFrozen": 0,
+     "docsHit": 0,
+     "samplesOffGold": []
+    },
+    {
+     "tag": "[nhs]",
+     "re": "\\b\\d{3}[ -]\\d{3}[ -]\\d{4}\\b",
+     "nominated": 0,
+     "rejectedByCheck": 0,
+     "matches": 0,
+     "onGold": 0,
+     "goldTypes": {},
+     "offGold": 0,
+     "underFrozen": 0,
+     "docsHit": 0,
+     "samplesOffGold": []
+    },
+    {
+     "tag": "[phone]",
+     "re": "(?:\\+44[ -]?|\\b0)7\\d{3}[ -]?\\d{3}[ -]?\\d{3}\\b",
+     "nominated": 0,
+     "rejectedByCheck": 0,
+     "matches": 0,
+     "onGold": 0,
+     "goldTypes": {},
+     "offGold": 0,
+     "underFrozen": 0,
+     "docsHit": 0,
+     "samplesOffGold": []
+    }
+   ]
+  }
+ }
+}

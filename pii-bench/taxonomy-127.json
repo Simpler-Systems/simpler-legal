@@ -1,0 +1,5259 @@
+{
+ "builtAt": "taxonomy-127 from v1legal7-gpu (screening backend)",
+ "quasiLeaks": {
+  "ORG": {
+   "leaked": 392,
+   "total": 664,
+   "spans": [
+    [
+     "foreign and commonwealth office",
+     30
+    ],
+    [
+     "united kingdom of great britain and northern ireland",
+     27
+    ],
+    [
+     "united kingdom government",
+     23
+    ],
+    [
+     "united kingdom",
+     9
+    ],
+    [
+     "kingdom of sweden",
+     7
+    ],
+    [
+     "diyarbakır state security court",
+     5
+    ],
+    [
+     "high court",
+     5
+    ],
+    [
+     "swedish government",
+     4
+    ],
+    [
+     "diyarbakır assize court",
+     3
+    ],
+    [
+     "ankara assize court",
+     3
+    ],
+    [
+     "danish government",
+     3
+    ],
+    [
+     "istanbul security directorate",
+     3
+    ],
+    [
+     "ankara security directorate",
+     3
+    ],
+    [
+     "benefits agency",
+     3
+    ],
+    [
+     "turkish government",
+     2
+    ],
+    [
+     "council",
+     2
+    ],
+    [
+     "supreme court (högsta domstolen)",
+     2
+    ],
+    [
+     "högsta domstolen",
+     2
+    ],
+    [
+     "the swedish government",
+     2
+    ],
+    [
+     "district court (tingsrätten) of stockholm",
+     2
+    ],
+    [
+     "svea court of appeal (hovrätten)",
+     2
+    ],
+    [
+     "(tingsrätten)",
+     2
+    ],
+    [
+     "(hovrätten)",
+     2
+    ],
+    [
+     "district court",
+     2
+    ],
+    [
+     "kingdom of denmark",
+     2
+    ],
+    [
+     "high court of western denmark",
+     2
+    ],
+    [
+     "irish government",
+     2
+    ],
+    [
+     "sweden",
+     2
+    ],
+    [
+     "parole board",
+     2
+    ],
+    [
+     "government of the united kingdom",
+     2
+    ],
+    [
+     "republic of turkey",
+     2
+    ],
+    [
+     "employment appeal tribunal",
+     2
+    ],
+    [
+     "ministry of foreign affairs",
+     2
+    ],
+    [
+     "republic of poland",
+     2
+    ],
+    [
+     "polish government",
+     2
+    ],
+    [
+     "crown court",
+     2
+    ],
+    [
+     "istanbul state security court",
+     2
+    ],
+    [
+     "bakırköy assize court",
+     2
+    ],
+    [
+     "county of stockholm",
+     1
+    ],
+    [
+     "i̇slahiye execution office",
+     1
+    ],
+    [
+     "equality and human rights commission",
+     1
+    ],
+    [
+     "çiğli directorate of land registration",
+     1
+    ],
+    [
+     "malatya administrative court",
+     1
+    ],
+    [
+     "supreme court",
+     1
+    ],
+    [
+     "international commission of jurists",
+     1
+    ],
+    [
+     "court of appeal (hovrätten) for southern norrland",
+     1
+    ],
+    [
+     "southern norrland",
+     1
+    ],
+    [
+     "district court (tingsrätten)",
+     1
+    ],
+    [
+     "court of appeal (hovrätten)",
+     1
+    ],
+    [
+     "social insurance office’s",
+     1
+    ],
+    [
+     "supreme administrative court",
+     1
+    ],
+    [
+     "försäkringskassan",
+     1
+    ],
+    [
+     "länsrätten",
+     1
+    ],
+    [
+     "(kammarrätten)",
+     1
+    ],
+    [
+     "regeringsrätten",
+     1
+    ],
+    [
+     "enforcement authority (kronofogdemyndigheten)",
+     1
+    ],
+    [
+     "enforcement authority",
+     1
+    ],
+    [
+     "kronofogdemyndigheten",
+     1
+    ],
+    [
+     "hizbullah",
+     1
+    ],
+    [
+     "diyarbakır public prosecutor’s",
+     1
+    ],
+    [
+     "diyarbakır public prosecutor",
+     1
+    ],
+    [
+     "muş public prosecutor",
+     1
+    ],
+    [
+     "sarpsborg city court (tingrett)",
+     1
+    ],
+    [
+     "sarpsborg city court",
+     1
+    ],
+    [
+     "stockholm district court",
+     1
+    ],
+    [
+     "stockholms tingsrätt",
+     1
+    ],
+    [
+     "stockholm district court (stockholms tingsrätt)",
+     1
+    ],
+    [
+     "court of appeal (svea hovrätt)",
+     1
+    ],
+    [
+     "city court",
+     1
+    ],
+    [
+     "retten i viborg",
+     1
+    ],
+    [
+     "city court (retten i viborg)",
+     1
+    ],
+    [
+     "falun municipal council (kommunfullmäktige)",
+     1
+    ],
+    [
+     "falun municipal council",
+     1
+    ],
+    [
+     "kommunfullmäktige",
+     1
+    ],
+    [
+     "tingsrätten",
+     1
+    ],
+    [
+     "ireland",
+     1
+    ],
+    [
+     "department of foreign affairs",
+     1
+    ],
+    [
+     "church of ireland",
+     1
+    ],
+    [
+     "länsstyrelsen",
+     1
+    ],
+    [
+     "transportrådet",
+     1
+    ],
+    [
+     "company",
+     1
+    ],
+    [
+     "eastern court of appeal (østre landsret)",
+     1
+    ],
+    [
+     "eastern court of appeal",
+     1
+    ],
+    [
+     "østre landsret",
+     1
+    ],
+    [
+     "højesteret",
+     1
+    ],
+    [
+     "district court (tingsrätten) of ronneby",
+     1
+    ],
+    [
+     "court of appeal (hovrätten) of skåne and blekinge",
+     1
+    ],
+    [
+     "court of appeal of skåne and blekinge",
+     1
+    ],
+    [
+     "antrim police station",
+     1
+    ],
+    [
+     "department for education",
+     1
+    ],
+    [
+     "commonwealth office",
+     1
+    ],
+    [
+     "northern ireland standing advisory commission on human right",
+     1
+    ],
+    [
+     "committee on the administration of justice",
+     1
+    ],
+    [
+     "czech and slovak federal republic",
+     1
+    ],
+    [
+     "interrogation centre",
+     1
+    ],
+    [
+     "castlereagh interrogation centre",
+     1
+    ],
+    [
+     "rights international",
+     1
+    ],
+    [
+     "manchester crown court",
+     1
+    ],
+    [
+     "delegate of the commission",
+     1
+    ],
+    [
+     "merseyside police authority",
+     1
+    ],
+    [
+     "equal opportunities commission",
+     1
+    ],
+    [
+     "directorate of legal services",
+     1
+    ],
+    [
+     "judge advocate general’s office",
+     1
+    ],
+    [
+     "air force board",
+     1
+    ],
+    [
+     "southwark crown court",
+     1
+    ],
+    [
+     "denmark",
+     1
+    ],
+    [
+     "city court of skanderborg (retten i skanderborg)",
+     1
+    ],
+    [
+     "national board of industrial injuries",
+     1
+    ],
+    [
+     "arbejdsskadestyrelsen",
+     1
+    ],
+    [
+     "municipality of skanderborg",
+     1
+    ],
+    [
+     "municipality",
+     1
+    ],
+    [
+     "city court of skanderborg",
+     1
+    ],
+    [
+     "retten i skanderborg",
+     1
+    ],
+    [
+     "parole board’s",
+     1
+    ],
+    [
+     "dlp",
+     1
+    ],
+    [
+     "parole board's discretionary lifer panel (“the dlp”)",
+     1
+    ],
+    [
+     "stage 1 british sign language qualification",
+     1
+    ],
+    [
+     "acted as interpreter for",
+     1
+    ],
+    [
+     "discretionary lifer panel",
+     1
+    ],
+    [
+     "birmingham crown court",
+     1
+    ],
+    [
+     "lordship's house",
+     1
+    ],
+    [
+     "brompton barracks",
+     1
+    ],
+    [
+     "france",
+     1
+    ],
+    [
+     "army board",
+     1
+    ],
+    [
+     "turkey",
+     1
+    ],
+    [
+     "ankara martial law court",
+     1
+    ],
+    [
+     "tukey",
+     1
+    ],
+    [
+     "prk-rızgari",
+     1
+    ],
+    [
+     "gender identity clinic",
+     1
+    ],
+    [
+     "industrial tribunal",
+     1
+    ],
+    [
+     "dss contributions agency",
+     1
+    ],
+    [
+     "dss",
+     1
+    ],
+    [
+     "ni",
+     1
+    ],
+    [
+     "iraq",
+     1
+    ],
+    [
+     "city court of hobro (retten i hobro)",
+     1
+    ],
+    [
+     "city court of hobro",
+     1
+    ],
+    [
+     "refugee board",
+     1
+    ],
+    [
+     "retten i hobro",
+     1
+    ],
+    [
+     "vestre landsret",
+     1
+    ],
+    [
+     "udlændingestyrelsen",
+     1
+    ],
+    [
+     "flygtningenævnet",
+     1
+    ],
+    [
+     "leave to appeal board",
+     1
+    ],
+    [
+     "procesbevillingsnævnet",
+     1
+    ],
+    [
+     "court of appeal",
+     1
+    ],
+    [
+     "bristol crown court",
+     1
+    ],
+    [
+     "employment tribunal",
+     1
+    ],
+    [
+     "employment tribunal's",
+     1
+    ],
+    [
+     "london borough",
+     1
+    ],
+    [
+     "london borough of islington",
+     1
+    ],
+    [
+     "dorset police",
+     1
+    ],
+    [
+     "central criminal court",
+     1
+    ],
+    [
+     "peterborough crown court",
+     1
+    ],
+    [
+     "bilston street police station",
+     1
+    ],
+    [
+     "house of lords",
+     1
+    ],
+    [
+     "parkhurst prison",
+     1
+    ],
+    [
+     "naval police",
+     1
+    ],
+    [
+     "naval barrister",
+     1
+    ],
+    [
+     "admiralty board",
+     1
+    ],
+    [
+     "british army",
+     1
+    ],
+    [
+     "gdynia district court",
+     1
+    ],
+    [
+     "kielce regional court (sąd wojewódzki)",
+     1
+    ],
+    [
+     "polish party of unemployed",
+     1
+    ],
+    [
+     "kielce regional court",
+     1
+    ],
+    [
+     "kraków court of appeal (sąd apelacyjny)",
+     1
+    ],
+    [
+     "supreme court (sąd najwyższy)",
+     1
+    ],
+    [
+     "magistrates' court",
+     1
+    ],
+    [
+     "magistrate",
+     1
+    ],
+    [
+     "divisional court",
+     1
+    ],
+    [
+     "magistrates",
+     1
+    ],
+    [
+     "crown",
+     1
+    ],
+    [
+     "diyarbakır martial law court",
+     1
+    ],
+    [
+     "woodbourne police station",
+     1
+    ],
+    [
+     "belfast county court",
+     1
+    ],
+    [
+     "northern ireland court of appeal",
+     1
+    ],
+    [
+     "belfast magistrates' court",
+     1
+    ],
+    [
+     "proceeds of crime",
+     1
+    ],
+    [
+     "british government",
+     1
+    ],
+    [
+     "criminal appeals office",
+     1
+    ],
+    [
+     "muğla security department",
+     1
+    ],
+    [
+     "siirt civil court of first instance",
+     1
+    ],
+    [
+     "beyoğlu civil court of general jurisdiction",
+     1
+    ],
+    [
+     "beyoğlu court",
+     1
+    ],
+    [
+     "home office",
+     1
+    ],
+    [
+     "siverek security directorate",
+     1
+    ],
+    [
+     "ankara martial law court (sıkıyönetim mahkemesi)",
+     1
+    ],
+    [
+     "włocławek regional court",
+     1
+    ],
+    [
+     "batman magistrates' court",
+     1
+    ],
+    [
+     "court of cassation",
+     1
+    ],
+    [
+     "batman public prosecutor",
+     1
+    ],
+    [
+     "department of local government and the environment ('dolge')",
+     1
+    ],
+    [
+     "manx high court",
+     1
+    ],
+    [
+     "dolge",
+     1
+    ],
+    [
+     "coroner",
+     1
+    ],
+    [
+     "privy council",
+     1
+    ],
+    [
+     "high court of justice of the isle of man",
+     1
+    ],
+    [
+     "i̇zmir state security court",
+     1
+    ],
+    [
+     "turkish communist party/marxist leninist -turkish workers an",
+     1
+    ],
+    [
+     "service police",
+     1
+    ],
+    [
+     "4th division",
+     1
+    ],
+    [
+     "army general court martial",
+     1
+    ],
+    [
+     "beyoğlu assize court",
+     1
+    ],
+    [
+     "dev-yol",
+     1
+    ],
+    [
+     "konya",
+     1
+    ],
+    [
+     "grand national assembly of turkey",
+     1
+    ],
+    [
+     "national assembly",
+     1
+    ],
+    [
+     "konya assize court",
+     1
+    ],
+    [
+     "assize court",
+     1
+    ],
+    [
+     "department of criminal affairs of the ministry of justice",
+     1
+    ],
+    [
+     "beyoğlu district administrative council",
+     1
+    ],
+    [
+     "sivas military hospital",
+     1
+    ],
+    [
+     "turkish communist party-marxist leninist - turkish workers a",
+     1
+    ],
+    [
+     "ministry for foreign affairs",
+     1
+    ],
+    [
+     "swedish state",
+     1
+    ],
+    [
+     "national tax board (riksskatteverket)",
+     1
+    ],
+    [
+     "court of appeal to the government",
+     1
+    ],
+    [
+     "the district court",
+     1
+    ],
+    [
+     "tunceli civil court",
+     1
+    ],
+    [
+     "inebolu assize court",
+     1
+    ],
+    [
+     "wood green crown court",
+     1
+    ],
+    [
+     "opole regional court",
+     1
+    ],
+    [
+     "wroclaw court of appeal",
+     1
+    ],
+    [
+     "wrocław court of appeal",
+     1
+    ],
+    [
+     "polish helsinki foundation for human rights",
+     1
+    ],
+    [
+     "warsaw district court",
+     1
+    ],
+    [
+     "sąd rejonowy",
+     1
+    ],
+    [
+     "warsaw prosecutor of appeal",
+     1
+    ],
+    [
+     "warsaw regional court",
+     1
+    ],
+    [
+     "sąd okręgowy",
+     1
+    ],
+    [
+     "warsaw court of appeal",
+     1
+    ],
+    [
+     "etibank",
+     1
+    ],
+    [
+     "kahta civil court of first instance",
+     1
+    ],
+    [
+     "kahta cadastral court",
+     1
+    ],
+    [
+     "kahta court",
+     1
+    ],
+    [
+     "aliağa criminal court",
+     1
+    ],
+    [
+     "i̇zmir labour court",
+     1
+    ],
+    [
+     "ta",
+     1
+    ],
+    [
+     "bakırköy magistrates' court",
+     1
+    ],
+    [
+     "buca prison",
+     1
+    ],
+    [
+     "sheriff court",
+     1
+    ],
+    [
+     "court of session",
+     1
+    ],
+    [
+     "outer house of the court of session",
+     1
+    ],
+    [
+     "inner court",
+     1
+    ],
+    [
+     "summar roll",
+     1
+    ],
+    [
+     "outer house",
+     1
+    ],
+    [
+     "scottish legal services ombudsman",
+     1
+    ],
+    [
+     "sheriff principal",
+     1
+    ],
+    [
+     "lord ordinary",
+     1
+    ],
+    [
+     "istanbul assize court",
+     1
+    ],
+    [
+     "state treasury",
+     1
+    ],
+    [
+     "board of the warsaw national council",
+     1
+    ],
+    [
+     "prezydium rady narodowej",
+     1
+    ],
+    [
+     "warsaw district office",
+     1
+    ],
+    [
+     "urząd rejonowy",
+     1
+    ],
+    [
+     "wojewódzki sąd administracyjny",
+     1
+    ]
+   ]
+  },
+  "DEM": {
+   "leaked": 262,
+   "total": 396,
+   "spans": [
+    [
+     "turkish",
+     14
+    ],
+    [
+     "united kingdom",
+     14
+    ],
+    [
+     "united kingdom national",
+     10
+    ],
+    [
+     "swedish",
+     9
+    ],
+    [
+     "widowers",
+     7
+    ],
+    [
+     "son",
+     4
+    ],
+    [
+     "british",
+     4
+    ],
+    [
+     "widows",
+     4
+    ],
+    [
+     "father",
+     3
+    ],
+    [
+     "danish",
+     3
+    ],
+    [
+     "daughter",
+     3
+    ],
+    [
+     "woman",
+     3
+    ],
+    [
+     "swedish national",
+     2
+    ],
+    [
+     "irish",
+     2
+    ],
+    [
+     "lecturer in law",
+     2
+    ],
+    [
+     "unemployed",
+     2
+    ],
+    [
+     "black",
+     2
+    ],
+    [
+     "marxist-leninist",
+     2
+    ],
+    [
+     "disability",
+     2
+    ],
+    [
+     "lawyer",
+     2
+    ],
+    [
+     "dependent",
+     2
+    ],
+    [
+     "polish",
+     2
+    ],
+    [
+     "primary school teacher",
+     1
+    ],
+    [
+     "renovating walls",
+     1
+    ],
+    [
+     "lumbar spondylosis",
+     1
+    ],
+    [
+     "coxarthritis",
+     1
+    ],
+    [
+     "moderate arthritis in his hip joint",
+     1
+    ],
+    [
+     "age of 55",
+     1
+    ],
+    [
+     "arthritis",
+     1
+    ],
+    [
+     "serious joint arthritis",
+     1
+    ],
+    [
+     "hip joint arthritis",
+     1
+    ],
+    [
+     "back, hips, knees and ankles",
+     1
+    ],
+    [
+     "reconstructive operations",
+     1
+    ],
+    [
+     "severe complications affecting her ears and eyes",
+     1
+    ],
+    [
+     "school’s principal",
+     1
+    ],
+    [
+     "type ii diabetes",
+     1
+    ],
+    [
+     "vascular spasms",
+     1
+    ],
+    [
+     "heart attack",
+     1
+    ],
+    [
+     "cerebral stroke",
+     1
+    ],
+    [
+     "diabetes",
+     1
+    ],
+    [
+     "type ii diabetes and vascular spasms",
+     1
+    ],
+    [
+     "arteriosclerosis",
+     1
+    ],
+    [
+     "heart and vascular disorders",
+     1
+    ],
+    [
+     "djibouti",
+     1
+    ],
+    [
+     "gave birth to a son",
+     1
+    ],
+    [
+     "french",
+     1
+    ],
+    [
+     "gave birth to the applicants’ second child",
+     1
+    ],
+    [
+     "could not speak french",
+     1
+    ],
+    [
+     "djibouti national",
+     1
+    ],
+    [
+     "second child",
+     1
+    ],
+    [
+     "father on the birth certificate",
+     1
+    ],
+    [
+     "mayor",
+     1
+    ],
+    [
+     "norwegian",
+     1
+    ],
+    [
+     "seventeen and twenty-three years old",
+     1
+    ],
+    [
+     "foster mother of a child who had been a pupil in the same sc",
+     1
+    ],
+    [
+     "foster mother",
+     1
+    ],
+    [
+     "seventeen",
+     1
+    ],
+    [
+     "twenty-three years",
+     1
+    ],
+    [
+     "london-based",
+     1
+    ],
+    [
+     "full disability pension",
+     1
+    ],
+    [
+     "driver",
+     1
+    ],
+    [
+     "dairy worker",
+     1
+    ],
+    [
+     "food science technician",
+     1
+    ],
+    [
+     "back-related",
+     1
+    ],
+    [
+     "car driver",
+     1
+    ],
+    [
+     "their daughter",
+     1
+    ],
+    [
+     "scientific research and development manager",
+     1
+    ],
+    [
+     "school-teacher",
+     1
+    ],
+    [
+     "gave birth",
+     1
+    ],
+    [
+     "quakers",
+     1
+    ],
+    [
+     "christian",
+     1
+    ],
+    [
+     "illegitimate child",
+     1
+    ],
+    [
+     "not practised any formal religion",
+     1
+    ],
+    [
+     "scientific research",
+     1
+    ],
+    [
+     "development manager",
+     1
+    ],
+    [
+     "combined taxi and interurban traffic business",
+     1
+    ],
+    [
+     "interurban",
+     1
+    ],
+    [
+     "taxi",
+     1
+    ],
+    [
+     "boy",
+     1
+    ],
+    [
+     "girl",
+     1
+    ],
+    [
+     "two",
+     1
+    ],
+    [
+     "engineer by profession",
+     1
+    ],
+    [
+     "engineer",
+     1
+    ],
+    [
+     "aged seven",
+     1
+    ],
+    [
+     "seven-year-old",
+     1
+    ],
+    [
+     "seven",
+     1
+    ],
+    [
+     "policeman",
+     1
+    ],
+    [
+     "police officer",
+     1
+    ],
+    [
+     "non-commissioned officer",
+     1
+    ],
+    [
+     "partly disabled",
+     1
+    ],
+    [
+     "permanent disablement and loss of working capacity",
+     1
+    ],
+    [
+     "severely injured",
+     1
+    ],
+    [
+     "mental abnormality",
+     1
+    ],
+    [
+     "deaf mute",
+     1
+    ],
+    [
+     "mental abnormality induced by alcohol",
+     1
+    ],
+    [
+     "alcohol problem",
+     1
+    ],
+    [
+     "injuries to her face and back.",
+     1
+    ],
+    [
+     "his alcohol problem",
+     1
+    ],
+    [
+     "asian",
+     1
+    ],
+    [
+     "asians",
+     1
+    ],
+    [
+     "barrister",
+     1
+    ],
+    [
+     "men",
+     1
+    ],
+    [
+     "soldier",
+     1
+    ],
+    [
+     "regular forces",
+     1
+    ],
+    [
+     "british nationals",
+     1
+    ],
+    [
+     "scottish",
+     1
+    ],
+    [
+     "age of 39",
+     1
+    ],
+    [
+     "breadwinner",
+     1
+    ],
+    [
+     "transsexuals",
+     1
+    ],
+    [
+     "post-operative male to female transsexual",
+     1
+    ],
+    [
+     "dress as a woman",
+     1
+    ],
+    [
+     "transsexual",
+     1
+    ],
+    [
+     "married a woman",
+     1
+    ],
+    [
+     "“brain sex” did not fit her body",
+     1
+    ],
+    [
+     "man",
+     1
+    ],
+    [
+     "age of 60",
+     1
+    ],
+    [
+     "age of 65",
+     1
+    ],
+    [
+     "post-operative male to female transsexual.",
+     1
+    ],
+    [
+     "english",
+     1
+    ],
+    [
+     "social worker",
+     1
+    ],
+    [
+     "black woman",
+     1
+    ],
+    [
+     "race",
+     1
+    ],
+    [
+     "superficial wound to his shoulder.",
+     1
+    ],
+    [
+     "category a” (high security)",
+     1
+    ],
+    [
+     "75 year",
+     1
+    ],
+    [
+     "senior non-commissioned",
+     1
+    ],
+    [
+     "experienced administrator",
+     1
+    ],
+    [
+     "administrator.",
+     1
+    ],
+    [
+     "senior non-commissioned rank",
+     1
+    ],
+    [
+     "administrator",
+     1
+    ],
+    [
+     "historian",
+     1
+    ],
+    [
+     "a prisoner",
+     1
+    ],
+    [
+     "depression",
+     1
+    ],
+    [
+     "memory loss",
+     1
+    ],
+    [
+     "depression and memory loss",
+     1
+    ],
+    [
+     "suffering from depression and memory loss",
+     1
+    ],
+    [
+     "chair",
+     1
+    ],
+    [
+     "age is 49",
+     1
+    ],
+    [
+     "49",
+     1
+    ],
+    [
+     "sixty three",
+     1
+    ],
+    [
+     "age sixty",
+     1
+    ],
+    [
+     "aged sixty three",
+     1
+    ],
+    [
+     "sixty five,",
+     1
+    ],
+    [
+     "high risk prisoners",
+     1
+    ],
+    [
+     "fourteen years' old",
+     1
+    ],
+    [
+     "widows' benefits",
+     1
+    ],
+    [
+     "gunner",
+     1
+    ],
+    [
+     "soldiers",
+     1
+    ],
+    [
+     "lower part of his abdominal region",
+     1
+    ],
+    [
+     "his nose",
+     1
+    ],
+    [
+     "his left heel",
+     1
+    ],
+    [
+     "his left elbow",
+     1
+    ],
+    [
+     "the left elbow",
+     1
+    ],
+    [
+     "the right side of the lower lip",
+     1
+    ],
+    [
+     "the forehead",
+     1
+    ],
+    [
+     "the left heel",
+     1
+    ],
+    [
+     "the left lower part of the sternum",
+     1
+    ],
+    [
+     "the upper part of the external part of the outer ear",
+     1
+    ],
+    [
+     "sister",
+     1
+    ],
+    [
+     "unmarried sisters",
+     1
+    ],
+    [
+     "sisters",
+     1
+    ],
+    [
+     "sister’",
+     1
+    ],
+    [
+     "widow",
+     1
+    ],
+    [
+     "‑ 6, 25 of myopia (nearsightedness)",
+     1
+    ],
+    [
+     "+0,25 of hyperopia (farsightedness)",
+     1
+    ],
+    [
+     "– 6,75 of anisometropia amblyopia (difference in refractive ",
+     1
+    ],
+    [
+     "strong myopic degeneration (-8 degrees) in his left eye",
+     1
+    ],
+    [
+     "37 % of loss of sight",
+     1
+    ],
+    [
+     "lawyer.",
+     1
+    ],
+    [
+     "sixteen years old",
+     1
+    ],
+    [
+     "kurdish",
+     1
+    ],
+    [
+     "four sisters",
+     1
+    ],
+    [
+     "chef",
+     1
+    ],
+    [
+     "mild to moderate depression",
+     1
+    ],
+    [
+     "panic disorder",
+     1
+    ],
+    [
+     "mild mental retardation",
+     1
+    ],
+    [
+     "borderline intellectual functioning",
+     1
+    ],
+    [
+     "dyslexia",
+     1
+    ],
+    [
+     "eleven years",
+     1
+    ],
+    [
+     "mild to moderate depression, panic disorder, mild mental ret",
+     1
+    ],
+    [
+     "polish national",
+     1
+    ],
+    [
+     "private security guard",
+     1
+    ],
+    [
+     "pay and accounts clerk",
+     1
+    ],
+    [
+     "clerical post",
+     1
+    ],
+    [
+     "advocate",
+     1
+    ],
+    [
+     "grandmother",
+     1
+    ]
+   ]
+  },
+  "MISC": {
+   "leaked": 246,
+   "total": 298,
+   "spans": [
+    [
+     "wba",
+     5
+    ],
+    [
+     "marxist-leninist regime",
+     4
+    ],
+    [
+     "widow’s bereavement allowance",
+     3
+    ],
+    [
+     "food industry",
+     2
+    ],
+    [
+     "conspiracy to defraud",
+     2
+    ],
+    [
+     "marxist-leninist",
+     2
+    ],
+    [
+     "death penalty",
+     2
+    ],
+    [
+     "widowed parent’s allowance",
+     2
+    ],
+    [
+     "lower back and hip joint problems",
+     1
+    ],
+    [
+     "hip joint problems",
+     1
+    ],
+    [
+     "a degenerative joint disease of his lower back and right hip",
+     1
+    ],
+    [
+     "measuring, installing and painting",
+     1
+    ],
+    [
+     "pain in his hip joint and lower back",
+     1
+    ],
+    [
+     "carried animal carcasses",
+     1
+    ],
+    [
+     "heavy pieces of meat",
+     1
+    ],
+    [
+     "extreme strain on the back, hips, knees and ankles",
+     1
+    ],
+    [
+     "right hip and lower back",
+     1
+    ],
+    [
+     "hip joint had degenerative alterations",
+     1
+    ],
+    [
+     "lower back was not remarked on",
+     1
+    ],
+    [
+     "hip joint operation",
+     1
+    ],
+    [
+     "right hip",
+     1
+    ],
+    [
+     "slaughterhouse",
+     1
+    ],
+    [
+     "carried animal carcasses and heavy pieces of meat",
+     1
+    ],
+    [
+     "leaflets",
+     1
+    ],
+    [
+     "homosexual propaganda (homosexpropaganda) in the course of a",
+     1
+    ],
+    [
+     "upper secondary school (gymnasieskola)",
+     1
+    ],
+    [
+     "in or on the pupils’ lockers",
+     1
+    ],
+    [
+     "homosexual propaganda (homosexpropaganda)",
+     1
+    ],
+    [
+     "homosexuality",
+     1
+    ],
+    [
+     "sexual deviances (avarter)",
+     1
+    ],
+    [
+     "deviant sexual proclivity (böjelse)",
+     1
+    ],
+    [
+     "folkkroppen",
+     1
+    ],
+    [
+     "hiv and aids",
+     1
+    ],
+    [
+     "homosexuals",
+     1
+    ],
+    [
+     "modern-day plague",
+     1
+    ],
+    [
+     "homosexual",
+     1
+    ],
+    [
+     "avdramatisera",
+     1
+    ],
+    [
+     "sexual deviation (sexuella avart)",
+     1
+    ],
+    [
+     "hets mot folkgrupp",
+     1
+    ],
+    [
+     "education",
+     1
+    ],
+    [
+     "villkorlig dom",
+     1
+    ],
+    [
+     "a school",
+     1
+    ],
+    [
+     "in and on the pupils’ lockers",
+     1
+    ],
+    [
+     "pupils and teachers",
+     1
+    ],
+    [
+     "pupils",
+     1
+    ],
+    [
+     "distributed at a school and addressed to the pupils",
+     1
+    ],
+    [
+     "aimed at pupils",
+     1
+    ],
+    [
+     "(homosexpropaganda)",
+     1
+    ],
+    [
+     "(avarter)",
+     1
+    ],
+    [
+     "(böjelse)",
+     1
+    ],
+    [
+     "(folkkroppen)",
+     1
+    ],
+    [
+     "(sexuella avart)",
+     1
+    ],
+    [
+     "(hets mot folkgrupp)",
+     1
+    ],
+    [
+     "(villkorlig dom)",
+     1
+    ],
+    [
+     "(livränta)",
+     1
+    ],
+    [
+     "försäkringsläkare",
+     1
+    ],
+    [
+     "proof of attachment (bevis om utmätning)",
+     1
+    ],
+    [
+     "besluta om rättelse",
+     1
+    ],
+    [
+     "yttrande",
+     1
+    ],
+    [
+     "(bevis om utmätning)",
+     1
+    ],
+    [
+     "(besluta om rättelse)",
+     1
+    ],
+    [
+     "through a friend",
+     1
+    ],
+    [
+     "arms behind the neck support",
+     1
+    ],
+    [
+     "“insider”",
+     1
+    ],
+    [
+     "ansvarig utgivare",
+     1
+    ],
+    [
+     "chapters 5 and 6",
+     1
+    ],
+    [
+     "chapter 5",
+     1
+    ],
+    [
+     "brottsbalken",
+     1
+    ],
+    [
+     "chapter 10, section 2",
+     1
+    ],
+    [
+     "chapters 1-9",
+     1
+    ],
+    [
+     "chapter 6",
+     1
+    ],
+    [
+     "chapter 1, section 6(2)",
+     1
+    ],
+    [
+     "“shady transactions and shady characters” were revealed",
+     1
+    ],
+    [
+     "organised crime within media",
+     1
+    ],
+    [
+     "designer knives, lamps and similar products",
+     1
+    ],
+    [
+     "lamps and cutlery",
+     1
+    ],
+    [
+     "page 90",
+     1
+    ],
+    [
+     "pain in his back and legs",
+     1
+    ],
+    [
+     "numbness in his right arm",
+     1
+    ],
+    [
+     "back problems",
+     1
+    ],
+    [
+     "degenerative changes to his back",
+     1
+    ],
+    [
+     "back-related and other problems",
+     1
+    ],
+    [
+     "källviken 1:18, 1:25 and 1:26",
+     1
+    ],
+    [
+     "områdesplan",
+     1
+    ],
+    [
+     "nominated as beneficiary under the pension scheme attached t",
+     1
+    ],
+    [
+     "health insurance in the names of the second and third applic",
+     1
+    ],
+    [
+     "different levels in the family house",
+     1
+    ],
+    [
+     "self-contained flats in the house",
+     1
+    ],
+    [
+     "naturalisation",
+     1
+    ],
+    [
+     "taxi traffic licence",
+     1
+    ],
+    [
+     "advokat",
+     1
+    ],
+    [
+     "separation ved bevilling",
+     1
+    ],
+    [
+     "skilmisse ved bevilling",
+     1
+    ],
+    [
+     "fejde case",
+     1
+    ],
+    [
+     "y v. the united kingdom",
+     1
+    ],
+    [
+     "talking in the corridor",
+     1
+    ],
+    [
+     "being a little late for bed on one occasion",
+     1
+    ],
+    [
+     "rubber-soled gym shoe",
+     1
+    ],
+    [
+     "most senior-ranking female police officer",
+     1
+    ],
+    [
+     "injury to her knee",
+     1
+    ],
+    [
+     "pre-release employment scheme hostel",
+     1
+    ],
+    [
+     "her majesty’s pleasure",
+     1
+    ],
+    [
+     "absconded from prison",
+     1
+    ],
+    [
+     "his recapture",
+     1
+    ],
+    [
+     "during her majesty’s pleasure",
+     1
+    ],
+    [
+     "british sign language",
+     1
+    ],
+    [
+     "drinking at least eight cans of lager",
+     1
+    ],
+    [
+     "injuries to her face and back",
+     1
+    ],
+    [
+     "british sign language qualification",
+     1
+    ],
+    [
+     "heroin",
+     1
+    ],
+    [
+     "psychiatric care",
+     1
+    ],
+    [
+     "army act 1955",
+     1
+    ],
+    [
+     "scottish prison",
+     1
+    ],
+    [
+     "drug offence",
+     1
+    ],
+    [
+     "cancer",
+     1
+    ],
+    [
+     "underwent aversion therapy",
+     1
+    ],
+    [
+     "man for work but as a woman in her free time",
+     1
+    ],
+    [
+     "regular consultations with a psychiatrist",
+     1
+    ],
+    [
+     "psychologist",
+     1
+    ],
+    [
+     "prescribed hormone therapy",
+     1
+    ],
+    [
+     "attending grooming classes",
+     1
+    ],
+    [
+     "voice training",
+     1
+    ],
+    [
+     "surgery to shorten her vocal chords",
+     1
+    ],
+    [
+     "accepted on the waiting list for gender re-assignment surger",
+     1
+    ],
+    [
+     "gender re-assignment surgery",
+     1
+    ],
+    [
+     "national insurance (“ni”)",
+     1
+    ],
+    [
+     "ni number",
+     1
+    ],
+    [
+     "shorten her vocal chords",
+     1
+    ],
+    [
+     "former wife",
+     1
+    ],
+    [
+     "children",
+     1
+    ],
+    [
+     "aversion therapy",
+     1
+    ],
+    [
+     "narcotics",
+     1
+    ],
+    [
+     "ecstasy tablets",
+     1
+    ],
+    [
+     "pager system",
+     1
+    ],
+    [
+     "pager bureau",
+     1
+    ],
+    [
+     "pager operator",
+     1
+    ],
+    [
+     "pager terminal",
+     1
+    ],
+    [
+     "clone pagers",
+     1
+    ],
+    [
+     "supply a controlled drug",
+     1
+    ],
+    [
+     "nordic language convention",
+     1
+    ],
+    [
+     "nordiska språkkonventionen",
+     1
+    ],
+    [
+     "mercedes",
+     1
+    ],
+    [
+     "cannabis",
+     1
+    ],
+    [
+     "garage",
+     1
+    ],
+    [
+     "owned a garage",
+     1
+    ],
+    [
+     "two mercedes cars",
+     1
+    ],
+    [
+     "false compartment in the fuel tank",
+     1
+    ],
+    [
+     "stolen vehicles",
+     1
+    ],
+    [
+     "garage premises",
+     1
+    ],
+    [
+     "home office guidelines",
+     1
+    ],
+    [
+     "police and criminal evidence act 1984",
+     1
+    ],
+    [
+     "pace",
+     1
+    ],
+    [
+     "robbery, wounding with intent, possessing firearms with inte",
+     1
+    ],
+    [
+     "shoulder",
+     1
+    ],
+    [
+     "police officer in the leg",
+     1
+    ],
+    [
+     "credit card fraud",
+     1
+    ],
+    [
+     "armed robberies of mini-cab drivers",
+     1
+    ],
+    [
+     "person posing as a passenger at night",
+     1
+    ],
+    [
+     "too ill to go to work",
+     1
+    ],
+    [
+     "home office guidelines on the use of equipment in police sur",
+     1
+    ],
+    [
+     "the murder of a woman whom he had violently assaulted",
+     1
+    ],
+    [
+     "air force act",
+     1
+    ],
+    [
+     "naval",
+     1
+    ],
+    [
+     "suspicion of travel fraud",
+     1
+    ],
+    [
+     "travel allowances",
+     1
+    ],
+    [
+     "naval court-martial",
+     1
+    ],
+    [
+     "travel fraud",
+     1
+    ],
+    [
+     "court-martial",
+     1
+    ],
+    [
+     "section 42 of the naval discipline act 1957",
+     1
+    ],
+    [
+     "sections 1 and 15 of the theft act 1968",
+     1
+    ],
+    [
+     "o ochronę dóbr osobistych",
+     1
+    ],
+    [
+     "hammerhead in a sock",
+     1
+    ],
+    [
+     "murder,",
+     1
+    ],
+    [
+     "murdered",
+     1
+    ],
+    [
+     "murder",
+     1
+    ],
+    [
+     "four other people",
+     1
+    ],
+    [
+     "three different victims",
+     1
+    ],
+    [
+     "responding well to medication",
+     1
+    ],
+    [
+     "abused four other people including his brother",
+     1
+    ],
+    [
+     "false accounting",
+     1
+    ],
+    [
+     "starch",
+     1
+    ],
+    [
+     "diamorphine",
+     1
+    ],
+    [
+     "unladen lorry",
+     1
+    ],
+    [
+     "(subsequently found to be starch)",
+     1
+    ],
+    [
+     "belly tank of the apparently unladen lorry",
+     1
+    ],
+    [
+     "such removal risked causing harm to him",
+     1
+    ],
+    [
+     "picked it up and re-inserted it into his anus",
+     1
+    ],
+    [
+     "the item was a suppository",
+     1
+    ],
+    [
+     "no suppositories had been prescribed",
+     1
+    ],
+    [
+     "as it had already been re-inserted in his anal area",
+     1
+    ],
+    [
+     "already re-inserted the item",
+     1
+    ],
+    [
+     "suspected of being secreted internally",
+     1
+    ],
+    [
+     "to remove an item from his anus",
+     1
+    ],
+    [
+     "farm",
+     1
+    ],
+    [
+     "grew raspberries",
+     1
+    ],
+    [
+     "raspberries",
+     1
+    ],
+    [
+     "packing raspberries in his kitchen",
+     1
+    ],
+    [
+     "widowed bereavement allowance",
+     1
+    ],
+    [
+     "widow's bereavement allowance",
+     1
+    ],
+    [
+     "widowed mother's allowance",
+     1
+    ],
+    [
+     "8-day delay",
+     1
+    ],
+    [
+     "“16-day arrest” forms",
+     1
+    ],
+    [
+     "8-day reports",
+     1
+    ],
+    [
+     "ecchymosis",
+     1
+    ],
+    [
+     "sister’s",
+     1
+    ],
+    [
+     "incapacity benefit",
+     1
+    ],
+    [
+     "incapacity",
+     1
+    ],
+    [
+     "widow’s bereavement tax allowance",
+     1
+    ],
+    [
+     "article 83 of the constitution",
+     1
+    ],
+    [
+     "article 253 § 4 of the code of criminal procedure",
+     1
+    ],
+    [
+     "rules 131 et seq. of the rules of procedure of the national ",
+     1
+    ],
+    [
+     "secretariat of the speaker's office",
+     1
+    ],
+    [
+     "widowed mother’s allowance",
+     1
+    ],
+    [
+     "ecchymoses and lacerations",
+     1
+    ],
+    [
+     "long abrasion on the left side of the rear parietal region",
+     1
+    ],
+    [
+     "long ecchymosed area stretching from the back of the left sh",
+     1
+    ],
+    [
+     "ecchymosed area",
+     1
+    ],
+    [
+     "below the left scapular region",
+     1
+    ],
+    [
+     "the left lumbar",
+     1
+    ],
+    [
+     "the right side of the chest",
+     1
+    ],
+    [
+     "bleeding grazes",
+     1
+    ],
+    [
+     "the inside of the left arm",
+     1
+    ],
+    [
+     "the left cheek",
+     1
+    ],
+    [
+     "the right tibial region",
+     1
+    ],
+    [
+     "fastställelsetalan",
+     1
+    ],
+    [
+     "wpa",
+     1
+    ],
+    [
+     "driving whilst disqualified",
+     1
+    ],
+    [
+     "electric shock",
+     1
+    ],
+    [
+     "ownership and use of land",
+     1
+    ],
+    [
+     "local organs of the uniform state power",
+     1
+    ],
+    [
+     "ustawa o terenowych organach jednolitej władzy państwowej",
+     1
+    ],
+    [
+     "expropriation of property (conditions and procedures) act",
+     1
+    ]
+   ]
+  },
+  "DATETIME": {
+   "leaked": 163,
+   "total": 2522,
+   "spans": [
+    [
+     "28 days",
+     5
+    ],
+    [
+     "three months",
+     3
+    ],
+    [
+     "six months",
+     3
+    ],
+    [
+     "eight months",
+     3
+    ],
+    [
+     "thirty days",
+     2
+    ],
+    [
+     "16 years",
+     2
+    ],
+    [
+     "5 years",
+     2
+    ],
+    [
+     "five years",
+     2
+    ],
+    [
+     "one day",
+     2
+    ],
+    [
+     "two months",
+     2
+    ],
+    [
+     "eight days",
+     2
+    ],
+    [
+     "seventy-second day",
+     2
+    ],
+    [
+     "two days",
+     2
+    ],
+    [
+     "more than 20 years",
+     1
+    ],
+    [
+     "1990s",
+     1
+    ],
+    [
+     "one year, five months and twenty days",
+     1
+    ],
+    [
+     "four hours",
+     1
+    ],
+    [
+     "ten years",
+     1
+    ],
+    [
+     "nine years",
+     1
+    ],
+    [
+     "40 hours",
+     1
+    ],
+    [
+     "three weeks",
+     1
+    ],
+    [
+     "five years’",
+     1
+    ],
+    [
+     "15 days",
+     1
+    ],
+    [
+     "six months’",
+     1
+    ],
+    [
+     "120 hours",
+     1
+    ],
+    [
+     "two years",
+     1
+    ],
+    [
+     "one month",
+     1
+    ],
+    [
+     "2 november",
+     1
+    ],
+    [
+     "twenty-five minutes",
+     1
+    ],
+    [
+     "3.40 p.m.",
+     1
+    ],
+    [
+     "between 8.15 p.m. and 10.00 p.m.",
+     1
+    ],
+    [
+     "44 hours",
+     1
+    ],
+    [
+     "44 hours and 5 minutes",
+     1
+    ],
+    [
+     "18 months’",
+     1
+    ],
+    [
+     "between 11.05 a.m. and 12.15 p.m.",
+     1
+    ],
+    [
+     "30 hours and 15 minutes",
+     1
+    ],
+    [
+     "8.15 p.m.",
+     1
+    ],
+    [
+     "10.00 p.m",
+     1
+    ],
+    [
+     "11.40 a.m.",
+     1
+    ],
+    [
+     "5 minutes",
+     1
+    ],
+    [
+     "11.05 a.m.",
+     1
+    ],
+    [
+     "12.15 p.m",
+     1
+    ],
+    [
+     "2.10 p.m.",
+     1
+    ],
+    [
+     "three days later",
+     1
+    ],
+    [
+     "6.30 a.m.",
+     1
+    ],
+    [
+     "7.30 p.m.",
+     1
+    ],
+    [
+     "9.32 p.m.",
+     1
+    ],
+    [
+     "9 p.m.",
+     1
+    ],
+    [
+     "fourteen hours",
+     1
+    ],
+    [
+     "thirty minutes",
+     1
+    ],
+    [
+     "forty- eight hours",
+     1
+    ],
+    [
+     "5.05 a.m.",
+     1
+    ],
+    [
+     "5.10 p.m.",
+     1
+    ],
+    [
+     "11.30 a.m.",
+     1
+    ],
+    [
+     "four days, six hours and twenty-five minutes",
+     1
+    ],
+    [
+     "two-day extension",
+     1
+    ],
+    [
+     "three-day extension",
+     1
+    ],
+    [
+     "six days, fourteen hours and thirty minutes",
+     1
+    ],
+    [
+     "10.46 a.m.",
+     1
+    ],
+    [
+     "12.47 p.m",
+     1
+    ],
+    [
+     "12.50 p.m",
+     1
+    ],
+    [
+     "2.21 p.m.",
+     1
+    ],
+    [
+     "2.24 p.m.",
+     1
+    ],
+    [
+     "3.27 p.m.",
+     1
+    ],
+    [
+     "4.06 p.m.",
+     1
+    ],
+    [
+     "following seven years",
+     1
+    ],
+    [
+     "twenty-two weeks",
+     1
+    ],
+    [
+     "8 years",
+     1
+    ],
+    [
+     "12 months",
+     1
+    ],
+    [
+     "just over two years later",
+     1
+    ],
+    [
+     "friday evening",
+     1
+    ],
+    [
+     "monday morning",
+     1
+    ],
+    [
+     "christmas",
+     1
+    ],
+    [
+     "february",
+     1
+    ],
+    [
+     "two and a half years",
+     1
+    ],
+    [
+     "early february",
+     1
+    ],
+    [
+     "seven year",
+     1
+    ],
+    [
+     "mid-1960s",
+     1
+    ],
+    [
+     "every three months",
+     1
+    ],
+    [
+     "two year",
+     1
+    ],
+    [
+     "two year limitation period",
+     1
+    ],
+    [
+     "second half of the 1980s",
+     1
+    ],
+    [
+     "1 year",
+     1
+    ],
+    [
+     "2 months",
+     1
+    ],
+    [
+     "ten hours",
+     1
+    ],
+    [
+     "1 year and 2 months",
+     1
+    ],
+    [
+     "four days",
+     1
+    ],
+    [
+     "42 days",
+     1
+    ],
+    [
+     "17 years",
+     1
+    ],
+    [
+     "12-13 years",
+     1
+    ],
+    [
+     "12.5 years",
+     1
+    ],
+    [
+     "1984",
+     1
+    ],
+    [
+     "6.15 a.m.",
+     1
+    ],
+    [
+     "17 days",
+     1
+    ],
+    [
+     "75 year old",
+     1
+    ],
+    [
+     "1968",
+     1
+    ],
+    [
+     "1957",
+     1
+    ],
+    [
+     "28 days’",
+     1
+    ],
+    [
+     "eighteen months",
+     1
+    ],
+    [
+     "preceding eighteen months",
+     1
+    ],
+    [
+     "2 days",
+     1
+    ],
+    [
+     "over 4 years",
+     1
+    ],
+    [
+     "4 years",
+     1
+    ],
+    [
+     "twelve years",
+     1
+    ],
+    [
+     "six years and six months",
+     1
+    ],
+    [
+     "two month",
+     1
+    ],
+    [
+     "1996",
+     1
+    ],
+    [
+     "14 years",
+     1
+    ],
+    [
+     "18 years",
+     1
+    ],
+    [
+     "12 year",
+     1
+    ],
+    [
+     "one half of the 12 year",
+     1
+    ],
+    [
+     "twelve years and six months",
+     1
+    ],
+    [
+     "one year",
+     1
+    ],
+    [
+     "2 years",
+     1
+    ],
+    [
+     "5 additional days’",
+     1
+    ],
+    [
+     "10 days",
+     1
+    ],
+    [
+     "5 additional days",
+     1
+    ],
+    [
+     "forty-seven days",
+     1
+    ],
+    [
+     "4.55 a.m.",
+     1
+    ],
+    [
+     "two days late",
+     1
+    ],
+    [
+     "16-day",
+     1
+    ],
+    [
+     "5.15 a.m.",
+     1
+    ],
+    [
+     "7.10 a.m.",
+     1
+    ],
+    [
+     "7.25 a.m.",
+     1
+    ],
+    [
+     "abdominal region",
+     1
+    ],
+    [
+     "thirty-one years",
+     1
+    ],
+    [
+     "last thirty-one years",
+     1
+    ],
+    [
+     "approximately 11 p.m.",
+     1
+    ],
+    [
+     "1.20 a.m.",
+     1
+    ],
+    [
+     "10.40 a.m.",
+     1
+    ],
+    [
+     "2.15 a.m.",
+     1
+    ],
+    [
+     "eleven years old",
+     1
+    ],
+    [
+     "fifty hours",
+     1
+    ],
+    [
+     "eighteen month",
+     1
+    ],
+    [
+     "three years old",
+     1
+    ],
+    [
+     "nine months",
+     1
+    ],
+    [
+     "six weeks",
+     1
+    ],
+    [
+     "four and a half years’",
+     1
+    ],
+    [
+     "six years",
+     1
+    ],
+    [
+     "six-year",
+     1
+    ],
+    [
+     "35 days",
+     1
+    ],
+    [
+     "extra six years",
+     1
+    ],
+    [
+     "21 days",
+     1
+    ],
+    [
+     "six years and three months",
+     1
+    ]
+   ]
+  },
+  "LOC": {
+   "leaked": 145,
+   "total": 279,
+   "spans": [
+    [
+     "london",
+     33
+    ],
+    [
+     "turkey",
+     7
+    ],
+    [
+     "united kingdom",
+     7
+    ],
+    [
+     "istanbul",
+     6
+    ],
+    [
+     "stockholm",
+     5
+    ],
+    [
+     "ankara",
+     5
+    ],
+    [
+     "diyarbakır",
+     4
+    ],
+    [
+     "northern ireland",
+     4
+    ],
+    [
+     "germany",
+     3
+    ],
+    [
+     "i̇zmir",
+     2
+    ],
+    [
+     "sweden",
+     2
+    ],
+    [
+     "warsaw",
+     2
+    ],
+    [
+     "the usa",
+     1
+    ],
+    [
+     "usa",
+     1
+    ],
+    [
+     "southwark",
+     1
+    ],
+    [
+     "jönköping",
+     1
+    ],
+    [
+     "county of södermanland",
+     1
+    ],
+    [
+     "car parked near a petrol station",
+     1
+    ],
+    [
+     "falun",
+     1
+    ],
+    [
+     "dublin",
+     1
+    ],
+    [
+     "english",
+     1
+    ],
+    [
+     "county of norrbotten",
+     1
+    ],
+    [
+     "north of sweden",
+     1
+    ],
+    [
+     "norrbotten",
+     1
+    ],
+    [
+     "nyborg",
+     1
+    ],
+    [
+     "torsås",
+     1
+    ],
+    [
+     "south-west",
+     1
+    ],
+    [
+     "ronneby",
+     1
+    ],
+    [
+     "skåne",
+     1
+    ],
+    [
+     "blekinge",
+     1
+    ],
+    [
+     "hässleholm",
+     1
+    ],
+    [
+     "karlshamn",
+     1
+    ],
+    [
+     "sörby",
+     1
+    ],
+    [
+     "barnstaple",
+     1
+    ],
+    [
+     "merseyside",
+     1
+    ],
+    [
+     "brüggen",
+     1
+    ],
+    [
+     "rheindahlen",
+     1
+    ],
+    [
+     "halifax",
+     1
+    ],
+    [
+     "ilford north",
+     1
+    ],
+    [
+     "skanderborg, denmark",
+     1
+    ],
+    [
+     "pakistan",
+     1
+    ],
+    [
+     "sheffield",
+     1
+    ],
+    [
+     "denmark",
+     1
+    ],
+    [
+     "iran",
+     1
+    ],
+    [
+     "greece",
+     1
+    ],
+    [
+     "bristol",
+     1
+    ],
+    [
+     "gothenburg",
+     1
+    ],
+    [
+     "western sweden",
+     1
+    ],
+    [
+     "islington",
+     1
+    ],
+    [
+     "dorset",
+     1
+    ],
+    [
+     "spain",
+     1
+    ],
+    [
+     "surrey",
+     1
+    ],
+    [
+     "wolverhampton",
+     1
+    ],
+    [
+     "bilston street police station.",
+     1
+    ],
+    [
+     "bilston street",
+     1
+    ],
+    [
+     "england",
+     1
+    ],
+    [
+     "belen",
+     1
+    ],
+    [
+     "küçükyalı bridge",
+     1
+    ],
+    [
+     "belfast",
+     1
+    ],
+    [
+     "falls road, belfast",
+     1
+    ],
+    [
+     "petersfield",
+     1
+    ],
+    [
+     "m11",
+     1
+    ],
+    [
+     "north essex magistrates’ court",
+     1
+    ],
+    [
+     "batman",
+     1
+    ],
+    [
+     "isle of man",
+     1
+    ],
+    [
+     "manx",
+     1
+    ],
+    [
+     "şırnak",
+     1
+    ],
+    [
+     "uk",
+     1
+    ],
+    [
+     "i̇stanbul",
+     1
+    ],
+    [
+     "büyükçekmece",
+     1
+    ],
+    [
+     "fatih",
+     1
+    ],
+    [
+     "taksim",
+     1
+    ],
+    [
+     "beyoğlu",
+     1
+    ],
+    [
+     "tunceli",
+     1
+    ],
+    [
+     "iraq",
+     1
+    ],
+    [
+     "głubczyce",
+     1
+    ],
+    [
+     "scotland",
+     1
+    ]
+   ]
+  },
+  "QUANTITY": {
+   "leaked": 105,
+   "total": 310,
+   "spans": [
+    [
+     "four",
+     3
+    ],
+    [
+     "two",
+     3
+    ],
+    [
+     "eight",
+     2
+    ],
+    [
+     "sixteen",
+     1
+    ],
+    [
+     "sixteen books",
+     1
+    ],
+    [
+     "try 18,5140",
+     1
+    ],
+    [
+     "three other persons",
+     1
+    ],
+    [
+     "approximately a hundred leaflets",
+     1
+    ],
+    [
+     "three out of five",
+     1
+    ],
+    [
+     "two judges",
+     1
+    ],
+    [
+     "three members",
+     1
+    ],
+    [
+     "three votes to two",
+     1
+    ],
+    [
+     "three co‑accused",
+     1
+    ],
+    [
+     "two of the three properties",
+     1
+    ],
+    [
+     "180 pupils",
+     1
+    ],
+    [
+     "approximately 180 pupils",
+     1
+    ],
+    [
+     "five demerit marks",
+     1
+    ],
+    [
+     "fifth demerit mark",
+     1
+    ],
+    [
+     "three warnings",
+     1
+    ],
+    [
+     "three “whacks“",
+     1
+    ],
+    [
+     "forty-three occasions",
+     1
+    ],
+    [
+     "twenty-two occasions",
+     1
+    ],
+    [
+     "forty-three",
+     1
+    ],
+    [
+     "twenty-two",
+     1
+    ],
+    [
+     "five pounds sterling (“gbp”)",
+     1
+    ],
+    [
+     "five pounds sterling",
+     1
+    ],
+    [
+     "fourth review",
+     1
+    ],
+    [
+     "fifth review",
+     1
+    ],
+    [
+     "three times",
+     1
+    ],
+    [
+     "fourth absence",
+     1
+    ],
+    [
+     "third",
+     1
+    ],
+    [
+     "722",
+     1
+    ],
+    [
+     "450 swedish kronor (sek)",
+     1
+    ],
+    [
+     "50 pages",
+     1
+    ],
+    [
+     "six shots",
+     1
+    ],
+    [
+     "10 to 2",
+     1
+    ],
+    [
+     "33",
+     1
+    ],
+    [
+     "only 33",
+     1
+    ],
+    [
+     "624 co-suspects",
+     1
+    ],
+    [
+     "four others",
+     1
+    ],
+    [
+     "five applicants",
+     1
+    ],
+    [
+     "five cases",
+     1
+    ],
+    [
+     "thirty-five",
+     1
+    ],
+    [
+     "eleven",
+     1
+    ],
+    [
+     "nine",
+     1
+    ],
+    [
+     "twenty-eight",
+     1
+    ],
+    [
+     "fifteen",
+     1
+    ],
+    [
+     "2x1 metres",
+     1
+    ],
+    [
+     "79 packages",
+     1
+    ],
+    [
+     "79 packages of powder (subsequently found to be starch)",
+     1
+    ],
+    [
+     "58 occasions",
+     1
+    ],
+    [
+     "58 hearings",
+     1
+    ],
+    [
+     "11.590.000 turkish liras (trl)",
+     1
+    ],
+    [
+     "twenty three hearings",
+     1
+    ],
+    [
+     "69 miles per hour (mph)",
+     1
+    ],
+    [
+     "six penalty points",
+     1
+    ],
+    [
+     "47 mph",
+     1
+    ],
+    [
+     "30 mph",
+     1
+    ],
+    [
+     "gbp 750",
+     1
+    ],
+    [
+     "gbp 250",
+     1
+    ],
+    [
+     "three penalty points",
+     1
+    ],
+    [
+     "nineteen hearings",
+     1
+    ],
+    [
+     "nineteen",
+     1
+    ],
+    [
+     "37 page",
+     1
+    ],
+    [
+     "37 page judgment",
+     1
+    ],
+    [
+     "150 new turkish liras (ytl)",
+     1
+    ],
+    [
+     "two other soldiers",
+     1
+    ],
+    [
+     "twelve “8-day delay” reports",
+     1
+    ],
+    [
+     "twelve",
+     1
+    ],
+    [
+     "9 x 3 cm",
+     1
+    ],
+    [
+     "0.5 cm",
+     1
+    ],
+    [
+     "2-3 cm",
+     1
+    ],
+    [
+     "2 cm",
+     1
+    ],
+    [
+     "2 x 1 cm",
+     1
+    ],
+    [
+     "0.5 x 1 cm",
+     1
+    ],
+    [
+     "3 x 1 cm",
+     1
+    ],
+    [
+     "one child",
+     1
+    ],
+    [
+     "180 hearings",
+     1
+    ],
+    [
+     "fifteen other co‑accused",
+     1
+    ],
+    [
+     "four votes to three",
+     1
+    ],
+    [
+     "no children",
+     1
+    ],
+    [
+     "no",
+     1
+    ],
+    [
+     "299 files",
+     1
+    ],
+    [
+     "252 cases",
+     1
+    ],
+    [
+     "226 cases",
+     1
+    ],
+    [
+     "23rd parliament",
+     1
+    ],
+    [
+     "77 files",
+     1
+    ],
+    [
+     "one centimetre",
+     1
+    ],
+    [
+     "thirty centimetre",
+     1
+    ],
+    [
+     "fifteen by five centimetres",
+     1
+    ],
+    [
+     "seven by fourteen centimetres",
+     1
+    ],
+    [
+     "four one centimetre",
+     1
+    ],
+    [
+     "57 annexes",
+     1
+    ],
+    [
+     "three extensions",
+     1
+    ],
+    [
+     "three",
+     1
+    ],
+    [
+     "nine hearings",
+     1
+    ],
+    [
+     "twenty",
+     1
+    ],
+    [
+     "six",
+     1
+    ],
+    [
+     "twenty hearings",
+     1
+    ],
+    [
+     "two hearings",
+     1
+    ]
+   ]
+  },
+  "PERSON": {
+   "leaked": 23,
+   "total": 766,
+   "spans": [
+    [
+     "q.c.",
+     3
+    ],
+    [
+     "ms e. jagander",
+     1
+    ],
+    [
+     "y",
+     1
+    ],
+    [
+     "m",
+     1
+    ],
+    [
+     "m.",
+     1
+    ],
+    [
+     "juror",
+     1
+    ],
+    [
+     "n",
+     1
+    ],
+    [
+     "n.",
+     1
+    ],
+    [
+     "b.",
+     1
+    ],
+    [
+     "b.'s",
+     1
+    ],
+    [
+     "mrl.wildhaber",
+     1
+    ],
+    [
+     "i.",
+     1
+    ],
+    [
+     "h",
+     1
+    ],
+    [
+     "s",
+     1
+    ],
+    [
+     "s.",
+     1
+    ],
+    [
+     "h.",
+     1
+    ],
+    [
+     "j",
+     1
+    ],
+    [
+     "gl",
+     1
+    ],
+    [
+     "dm",
+     1
+    ],
+    [
+     "am",
+     1
+    ],
+    [
+     "mc",
+     1
+    ]
+   ]
+  },
+  "CODE": {
+   "leaked": 6,
+   "total": 298,
+   "spans": [
+    [
+     "78",
+     1
+    ],
+    [
+     "3/176",
+     1
+    ],
+    [
+     "3/453",
+     1
+    ],
+    [
+     "263 § 4",
+     1
+    ],
+    [
+     "53(1)",
+     1
+    ],
+    [
+     "215(1)",
+     1
+    ]
+   ]
+  }
+ },
+ "noMaskOverMasks": {
+  "ORG": {
+   "overMasked": 121,
+   "total": 833,
+   "spans": [
+    [
+     "inland revenue",
+     6
+    ],
+    [
+     "turkish government",
+     4
+    ],
+    [
+     "supreme court",
+     4
+    ],
+    [
+     "delegate of the commission",
+     4
+    ],
+    [
+     "agent of the government",
+     3
+    ],
+    [
+     "centre of public health, occupational and environmental medi",
+     2
+    ],
+    [
+     "the government of the united kingdom of great britain and no",
+     2
+    ],
+    [
+     "secretary of state",
+     2
+    ],
+    [
+     "home secretary",
+     2
+    ],
+    [
+     "house of lords",
+     2
+    ],
+    [
+     "government of the united kingdom of great britain and northe",
+     2
+    ],
+    [
+     "military public prosecutor",
+     2
+    ],
+    [
+     "ankara martial law court",
+     2
+    ],
+    [
+     "military court of cassation",
+     2
+    ],
+    [
+     "prison service",
+     2
+    ],
+    [
+     "ankara administrative court",
+     1
+    ],
+    [
+     "ministry of finance",
+     1
+    ],
+    [
+     "governorship",
+     1
+    ],
+    [
+     "supreme court (högsta domstolen",
+     1
+    ],
+    [
+     "mardin public prosecutor",
+     1
+    ],
+    [
+     "court of justice of the european union",
+     1
+    ],
+    [
+     "treasury",
+     1
+    ],
+    [
+     "centrum for folkhälsa, arbets‑ och miljömedicin",
+     1
+    ],
+    [
+     "centre of public health",
+     1
+    ],
+    [
+     "occupational and environmental medicine",
+     1
+    ],
+    [
+     "swedish government",
+     1
+    ],
+    [
+     "municipality",
+     1
+    ],
+    [
+     "legal and consular affairs",
+     1
+    ],
+    [
+     "supreme court (högsta domstolen)",
+     1
+    ],
+    [
+     "united kingdom’s",
+     1
+    ],
+    [
+     "qc",
+     1
+    ],
+    [
+     "national board of industrial injuries (arbejdsskadestyrelsen",
+     1
+    ],
+    [
+     "the crown",
+     1
+    ],
+    [
+     "appeal committee of the house of lords",
+     1
+    ],
+    [
+     "security service",
+     1
+    ],
+    [
+     "crown",
+     1
+    ],
+    [
+     "the government",
+     1
+    ],
+    [
+     "united kingdom of great britain and northern ireland",
+     1
+    ],
+    [
+     "british army",
+     1
+    ],
+    [
+     "ankara assize court",
+     1
+    ],
+    [
+     "ankara martial law court (sıkıyönetim mahkemesi)",
+     1
+    ],
+    [
+     "military court of cassation (askeri yargıtay)",
+     1
+    ],
+    [
+     "i̇zmir security directorate",
+     1
+    ],
+    [
+     "high court's",
+     1
+    ],
+    [
+     "the secretary of state",
+     1
+    ],
+    [
+     "employment appeal tribunal (“eat”)",
+     1
+    ],
+    [
+     "equal opportunities officers",
+     1
+    ],
+    [
+     "lord chief justice and trial judge",
+     1
+    ],
+    [
+     "lord chief justice",
+     1
+    ],
+    [
+     "regional crime squad",
+     1
+    ],
+    [
+     "magistrates’ court in newcastle",
+     1
+    ],
+    [
+     "criminal division of the district court",
+     1
+    ],
+    [
+     "central criminal court",
+     1
+    ],
+    [
+     "istanbul the state security court",
+     1
+    ],
+    [
+     "director of public prosecutions",
+     1
+    ],
+    [
+     "public prosecutor",
+     1
+    ],
+    [
+     "istanbul municipality",
+     1
+    ],
+    [
+     "prisons ombudsman’s",
+     1
+    ],
+    [
+     "staff government division",
+     1
+    ],
+    [
+     "ankara civil court of first",
+     1
+    ],
+    [
+     "5th chamber ankara civil court of first instance",
+     1
+    ],
+    [
+     "12th chamber ankara civil court of first instance",
+     1
+    ],
+    [
+     "5th chamber of the ankara civil court of first instance",
+     1
+    ],
+    [
+     "12th chamber of the ankara civil court of first instance",
+     1
+    ],
+    [
+     "the mctc",
+     1
+    ],
+    [
+     "lieutenant colonel",
+     1
+    ],
+    [
+     "human rights foundation",
+     1
+    ],
+    [
+     "dwp",
+     1
+    ],
+    [
+     "department of work and pensions (“dwp”)",
+     1
+    ],
+    [
+     "irish governments",
+     1
+    ],
+    [
+     "belgian and irish governments",
+     1
+    ],
+    [
+     "the state",
+     1
+    ],
+    [
+     "forensic medicine institute",
+     1
+    ],
+    [
+     "retired civil servant’s fund",
+     1
+    ],
+    [
+     "van state hospital",
+     1
+    ],
+    [
+     "istanbul assize court",
+     1
+    ],
+    [
+     "enforcement service’s",
+     1
+    ],
+    [
+     "enforcement service’s administration",
+     1
+    ],
+    [
+     "9th chamber of istanbul court of commerce",
+     1
+    ],
+    [
+     "4th chamber of the istanbul court of commerce",
+     1
+    ],
+    [
+     "court of cassation",
+     1
+    ],
+    [
+     "tunceli civil court (hereinafter the “tunceli court”)",
+     1
+    ],
+    [
+     "the prosecutor",
+     1
+    ],
+    [
+     "ssc",
+     1
+    ],
+    [
+     "scc",
+     1
+    ],
+    [
+     "home department",
+     1
+    ],
+    [
+     "immigration service border control and enforcement unit",
+     1
+    ],
+    [
+     "state prosecutor",
+     1
+    ],
+    [
+     "konya court",
+     1
+    ],
+    [
+     "republic of turkey",
+     1
+    ],
+    [
+     "commanding officer",
+     1
+    ],
+    [
+     "izmir criminal court",
+     1
+    ],
+    [
+     "izmir assize court",
+     1
+    ],
+    [
+     "principal public prosecutor",
+     1
+    ],
+    [
+     "mayor",
+     1
+    ]
+   ]
+  },
+  "MISC": {
+   "overMasked": 59,
+   "total": 296,
+   "spans": [
+    [
+     "social security and benefits act 1992 (“the 1992 act”)",
+     4
+    ],
+    [
+     "the 1992 act",
+     3
+    ],
+    [
+     "1992 act",
+     3
+    ],
+    [
+     "there was a causal link between the applicant’s work and his",
+     1
+    ],
+    [
+     "refugee convention travel document (“ctd”)",
+     1
+    ],
+    [
+     "refugee convention travel document",
+     1
+    ],
+    [
+     "ferrantelli and santangelo v. italy",
+     1
+    ],
+    [
+     "expropriation act 1972 (expropriationslagen 1972:719 - “the ",
+     1
+    ],
+    [
+     "traffic ordinance of 1972 (vägtrafikkungörelsen 1972:603 - “",
+     1
+    ],
+    [
+     "the 1984 act",
+     1
+    ],
+    [
+     "alcohol, anger and relationships",
+     1
+    ],
+    [
+     "english law",
+     1
+    ],
+    [
+     "two charges",
+     1
+    ],
+    [
+     "article 146 § 1 of the turkish criminal code",
+     1
+    ],
+    [
+     "british social-security legislation",
+     1
+    ],
+    [
+     "i. v. the united kingdom (application no. 25680/94)",
+     1
+    ],
+    [
+     "i. v. the united kingdom (no. 25680/94)",
+     1
+    ],
+    [
+     "form cf 384 age exemption certificate",
+     1
+    ],
+    [
+     "“carecraft” agreement",
+     1
+    ],
+    [
+     "section 6 of the company directors disqualification act 1986",
+     1
+    ],
+    [
+     "company directors disqualification act 1986",
+     1
+    ],
+    [
+     "life imprisonment",
+     1
+    ],
+    [
+     "home office guidelines of 1984.",
+     1
+    ],
+    [
+     "home office guidelines on the use of equipment in police sur",
+     1
+    ],
+    [
+     "r. v. central criminal court ex parte boulding [1984] 1 qb 8",
+     1
+    ],
+    [
+     "47675/99, mcandrew and others v. the united kingdom, decisio",
+     1
+    ],
+    [
+     "r. v. leeds justices ex parte kennett [1996] rvr 53",
+     1
+    ],
+    [
+     "r. v. oliver and oliver [1989] 11 cr app r(s) 10",
+     1
+    ],
+    [
+     "r. v. ealing justices ex parte cloves [1991] rvr 169",
+     1
+    ],
+    [
+     "r. v. newcastle upon tyne justices ex parte devine [1998] ra",
+     1
+    ],
+    [
+     "brooke lj in r. v. st helens justices ex parte jones co/3328",
+     1
+    ],
+    [
+     "r. v. hull justices ex parte shawcross (co/265/98)",
+     1
+    ],
+    [
+     "(47675/99, mcandrew and others v. the united kingdom, decisi",
+     1
+    ],
+    [
+     "r. v. hertfordshire county council, ex parte green environme",
+     1
+    ],
+    [
+     "proceeds of crime (northern ireland) order 1996",
+     1
+    ],
+    [
+     "the 1996 order",
+     1
+    ],
+    [
+     "stec and others v. the united kingdom [gc]",
+     1
+    ],
+    [
+     "grand chamber in stec and others v. the united kingdom",
+     1
+    ],
+    [
+     "stec and others v. the united kingdom",
+     1
+    ],
+    [
+     "applicant’s anus",
+     1
+    ],
+    [
+     "privy council in brown v. stott [2001] 2 wlr 817",
+     1
+    ],
+    [
+     "privy council in brown v. stott",
+     1
+    ],
+    [
+     "director of public prosecutions v. wilson ([2001] ewhc admin",
+     1
+    ],
+    [
+     "brown v. stott",
+     1
+    ],
+    [
+     "widow's bereavement allowance (“wba”)",
+     1
+    ],
+    [
+     "widowed mother's allowance",
+     1
+    ],
+    [
+     "the rights of a soldier charged with an offence under the ar",
+     1
+    ],
+    [
+     "army act 1955",
+     1
+    ],
+    [
+     "the 1955 ac",
+     1
+    ],
+    [
+     "social security and benefits act 1992",
+     1
+    ],
+    [
+     "the 1992 ac",
+     1
+    ],
+    [
+     "article 168 § 2 of the former criminal code",
+     1
+    ]
+   ]
+  },
+  "DEM": {
+   "overMasked": 47,
+   "total": 211,
+   "spans": [
+    [
+     "british national",
+     3
+    ],
+    [
+     "english",
+     2
+    ],
+    [
+     "woman",
+     2
+    ],
+    [
+     "not probable that work-related factors, such as stress, had ",
+     1
+    ],
+    [
+     "established no link between the work situation and the appli",
+     1
+    ],
+    [
+     "dr",
+     1
+    ],
+    [
+     "dr.",
+     1
+    ],
+    [
+     "entry clearance officer",
+     1
+    ],
+    [
+     "swedish citizen",
+     1
+    ],
+    [
+     "president of the court",
+     1
+    ],
+    [
+     "president",
+     1
+    ],
+    [
+     "president of the chamber",
+     1
+    ],
+    [
+     "deputy legal adviser",
+     1
+    ],
+    [
+     "senior counsel,",
+     1
+    ],
+    [
+     "counsel",
+     1
+    ],
+    [
+     "senior counsel",
+     1
+    ],
+    [
+     "under-secretary for legal and consular affairs",
+     1
+    ],
+    [
+     "under-secretary for legal affairs",
+     1
+    ],
+    [
+     "two children were born",
+     1
+    ],
+    [
+     "headmaster",
+     1
+    ],
+    [
+     "legal counsellor",
+     1
+    ],
+    [
+     "his mother’s",
+     1
+    ],
+    [
+     "police service",
+     1
+    ],
+    [
+     "labour",
+     1
+    ],
+    [
+     "liberal democrat",
+     1
+    ],
+    [
+     "the district judge",
+     1
+    ],
+    [
+     "secretary of state",
+     1
+    ],
+    [
+     "home secretary",
+     1
+    ],
+    [
+     "judge advocate",
+     1
+    ],
+    [
+     "commander in chief",
+     1
+    ],
+    [
+     "minister of state",
+     1
+    ],
+    [
+     "two children",
+     1
+    ],
+    [
+     "chief public prosecutor",
+     1
+    ],
+    [
+     "deputy chief constable",
+     1
+    ],
+    [
+     "judge advocate general",
+     1
+    ],
+    [
+     "commanding officer",
+     1
+    ],
+    [
+     "governor",
+     1
+    ],
+    [
+     "prison governor",
+     1
+    ],
+    [
+     "ombudsman",
+     1
+    ],
+    [
+     "military public prosecutor",
+     1
+    ],
+    [
+     "polish national",
+     1
+    ],
+    [
+     "lieutenant",
+     1
+    ],
+    [
+     "director",
+     1
+    ]
+   ]
+  },
+  "DATETIME": {
+   "overMasked": 28,
+   "total": 145,
+   "spans": [
+    [
+     "1 november 2001",
+     4
+    ],
+    [
+     "27 december 1993",
+     2
+    ],
+    [
+     "1 november 1998",
+     2
+    ],
+    [
+     "life imprisonment",
+     2
+    ],
+    [
+     "applicant two weeks",
+     1
+    ],
+    [
+     "applicant three weeks",
+     1
+    ],
+    [
+     "2009",
+     1
+    ],
+    [
+     "1998",
+     1
+    ],
+    [
+     "1984",
+     1
+    ],
+    [
+     "1991",
+     1
+    ],
+    [
+     "2001",
+     1
+    ],
+    [
+     "17 september 2004",
+     1
+    ],
+    [
+     "15 years",
+     1
+    ],
+    [
+     "them to three months’",
+     1
+    ],
+    [
+     "three months",
+     1
+    ],
+    [
+     "two years",
+     1
+    ],
+    [
+     "28 may 2002",
+     1
+    ],
+    [
+     "17 june 2004",
+     1
+    ],
+    [
+     "16 june 2004",
+     1
+    ],
+    [
+     "21 december 2000",
+     1
+    ],
+    [
+     "18 july 2001",
+     1
+    ],
+    [
+     "20 march 1950",
+     1
+    ]
+   ]
+  },
+  "PERSON": {
+   "overMasked": 25,
+   "total": 46,
+   "spans": [
+    [
+     "v.b",
+     1
+    ],
+    [
+     "ms a",
+     1
+    ],
+    [
+     "mr d, ms a’s boyfriend",
+     1
+    ],
+    [
+     "mr b",
+     1
+    ],
+    [
+     "mr d",
+     1
+    ],
+    [
+     "ms a’s assistant advocate (bistandsadvokat)",
+     1
+    ],
+    [
+     "ms a’s assistant advocate (bistandsadvokat for offeret)",
+     1
+    ],
+    [
+     "mr c’s",
+     1
+    ],
+    [
+     "ms a’s",
+     1
+    ],
+    [
+     "mr c",
+     1
+    ],
+    [
+     "mr b’s",
+     1
+    ],
+    [
+     "a’s",
+     1
+    ],
+    [
+     "his brother",
+     1
+    ],
+    [
+     "district judge",
+     1
+    ],
+    [
+     "morritt",
+     1
+    ],
+    [
+     "lawyer p.s.",
+     1
+    ],
+    [
+     "lawyer p.s",
+     1
+    ],
+    [
+     "chief constable",
+     1
+    ],
+    [
+     "judge advocate",
+     1
+    ],
+    [
+     "officer",
+     1
+    ],
+    [
+     "simon brown",
+     1
+    ],
+    [
+     "mcandrew",
+     1
+    ],
+    [
+     "brown",
+     1
+    ],
+    [
+     "stott",
+     1
+    ],
+    [
+     "wife",
+     1
+    ]
+   ]
+  },
+  "LOC": {
+   "overMasked": 17,
+   "total": 55,
+   "spans": [
+    [
+     "istanbul",
+     4
+    ],
+    [
+     "ankara",
+     2
+    ],
+    [
+     "kahramanmaraş",
+     1
+    ],
+    [
+     "gaziantep",
+     1
+    ],
+    [
+     "oslo",
+     1
+    ],
+    [
+     "mr c’s home",
+     1
+    ],
+    [
+     "human rights buildings, strasbourg",
+     1
+    ],
+    [
+     "raf station",
+     1
+    ],
+    [
+     "mardin",
+     1
+    ],
+    [
+     "van",
+     1
+    ],
+    [
+     "turkey",
+     1
+    ],
+    [
+     "france",
+     1
+    ],
+    [
+     "adıyaman",
+     1
+    ]
+   ]
+  },
+  "QUANTITY": {
+   "overMasked": 15,
+   "total": 52,
+   "spans": [
+    [
+     "150,000,000,000 turkish liras (trl)",
+     1
+    ],
+    [
+     "approximately 90,000 euros (eur)",
+     1
+    ],
+    [
+     "five years’ imprisonment",
+     1
+    ],
+    [
+     "two children",
+     1
+    ],
+    [
+     "approximately 50,000",
+     1
+    ],
+    [
+     "25,000",
+     1
+    ],
+    [
+     "25,000 copies",
+     1
+    ],
+    [
+     "less than gbp 5,000",
+     1
+    ],
+    [
+     "two charges",
+     1
+    ],
+    [
+     "four",
+     1
+    ],
+    [
+     "49 accused persons",
+     1
+    ],
+    [
+     "three",
+     1
+    ],
+    [
+     "400",
+     1
+    ],
+    [
+     "two",
+     1
+    ],
+    [
+     "four witnesses",
+     1
+    ]
+   ]
+  },
+  "CODE": {
+   "overMasked": 4,
+   "total": 10,
+   "spans": [
+    [
+     "43376/06",
+     1
+    ],
+    [
+     "1976:380",
+     1
+    ],
+    [
+     "1971:291",
+     1
+    ],
+    [
+     "65900/01",
+     1
+    ]
+   ]
+  }
+ }
+}

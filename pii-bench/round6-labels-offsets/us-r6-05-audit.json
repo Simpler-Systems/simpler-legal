@@ -1,0 +1,13 @@
+{
+ "doc": "us-r6-05.txt",
+ "docSha256_16": "1c9bd5f25fb6370b",
+ "entities": [
+  {
+   "category": "ORG",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 64,
+   "len": 3
+  }
+ ]
+}

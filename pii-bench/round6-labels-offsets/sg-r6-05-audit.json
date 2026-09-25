@@ -1,0 +1,13 @@
+{
+ "doc": "sg-r6-05.txt",
+ "docSha256_16": "ae8049713fd7e2ea",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "QUASI",
+   "occurrences": 1,
+   "off": 21268,
+   "len": 7
+  }
+ ]
+}

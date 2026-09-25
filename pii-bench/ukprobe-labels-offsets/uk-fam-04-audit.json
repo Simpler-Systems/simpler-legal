@@ -1,0 +1,155 @@
+{
+ "doc": "uk-fam-04.txt",
+ "docSha256_16": "2616146ed0fdddfd",
+ "entities": [
+  {
+   "category": "CODE",
+   "off": 1577,
+   "len": 9
+  },
+  {
+   "category": "CODE",
+   "off": 1606,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "off": 7615,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "off": 20465,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 3374,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 30054,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "off": 6589,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "off": 25428,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 25690,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "off": 25938,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "off": 25158,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 24855,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "off": 19172,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "off": 21752,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 19488,
+   "len": 10
+  },
+  {
+   "category": "MISC",
+   "off": 26429,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "off": 37284,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "off": 11987,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "off": 16070,
+   "len": 3
+  },
+  {
+   "category": "DATETIME",
+   "unmatchable": true
+  },
+  {
+   "category": "QUANTITY",
+   "off": 11730,
+   "len": 17
+  },
+  {
+   "category": "QUANTITY",
+   "off": 25190,
+   "len": 9
+  },
+  {
+   "category": "QUANTITY",
+   "off": 25584,
+   "len": 8
+  },
+  {
+   "category": "DATETIME",
+   "off": 47931,
+   "len": 20
+  },
+  {
+   "category": "LOC",
+   "off": 9798,
+   "len": 21
+  },
+  {
+   "category": "MISC",
+   "off": 17517,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "off": 69,
+   "len": 21
+  },
+  {
+   "category": "ORG",
+   "off": 52,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "off": 24350,
+   "len": 10
+  },
+  {
+   "category": "CODE",
+   "off": 5605,
+   "len": 5
+  }
+ ]
+}

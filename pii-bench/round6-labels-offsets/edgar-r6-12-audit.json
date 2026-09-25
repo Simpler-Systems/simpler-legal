@@ -1,0 +1,13 @@
+{
+ "doc": "edgar-r6-12.txt",
+ "docSha256_16": "eab0702e33986839",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 12,
+   "len": 24
+  }
+ ]
+}

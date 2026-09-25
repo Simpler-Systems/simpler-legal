@@ -1,0 +1,27 @@
+{
+ "doc": "edgar-r7-14.txt",
+ "docSha256_16": "4b1bbc5aa52166d1",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 3155,
+   "len": 3
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 8735,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 8741,
+   "len": 4
+  }
+ ]
+}

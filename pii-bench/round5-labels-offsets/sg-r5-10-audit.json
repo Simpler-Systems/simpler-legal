@@ -1,0 +1,20 @@
+{
+ "doc": "sg-r5-10.txt",
+ "docSha256_16": "f0db4019ea2677b4",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "DIRECT",
+   "occurrences": 1,
+   "off": 13183,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 59614,
+   "len": 8
+  }
+ ]
+}

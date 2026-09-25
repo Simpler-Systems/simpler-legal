@@ -1,0 +1,207 @@
+{
+ "name": "UKPROBE-firstcontact",
+ "batch": "all",
+ "strippedDir": "raw/stripped/uk-courts-FINAL",
+ "scoredAt": "2026-07-23T17:14:15.625Z",
+ "aggregate": {
+  "docs": 10,
+  "missingOutputs": [],
+  "directRecall": 1,
+  "quasiRecall": 0.39956803455723544,
+  "noMaskPreservation": 0.5424063116370809,
+  "gatePassRate": 1,
+  "unmatchable": 19
+ },
+ "perDoc": [
+  {
+   "file": "uk-civ-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 27,
+    "leaked": 19
+   },
+   "no_mask": {
+    "total": 105,
+    "preserved": 50
+   },
+   "unmatchable": 3,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-civ-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 6,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 34,
+    "leaked": 21
+   },
+   "no_mask": {
+    "total": 118,
+    "preserved": 75
+   },
+   "unmatchable": 10,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-civ-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 49,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 50,
+    "leaked": 40
+   },
+   "no_mask": {
+    "total": 76,
+    "preserved": 38
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-civ-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 12,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 34,
+    "leaked": 22
+   },
+   "no_mask": {
+    "total": 55,
+    "preserved": 32
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-civ-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 20,
+    "leaked": 14
+   },
+   "no_mask": {
+    "total": 74,
+    "preserved": 46
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-civ-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 43,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 60,
+    "leaked": 33
+   },
+   "no_mask": {
+    "total": 122,
+    "preserved": 66
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-fam-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 9,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 58,
+    "leaked": 21
+   },
+   "no_mask": {
+    "total": 121,
+    "preserved": 65
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-fam-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 106,
+    "leaked": 69
+   },
+   "no_mask": {
+    "total": 94,
+    "preserved": 59
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-fam-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 30,
+    "leaked": 13
+   },
+   "no_mask": {
+    "total": 73,
+    "preserved": 19
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "uk-fam-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 44,
+    "leaked": 26
+   },
+   "no_mask": {
+    "total": 176,
+    "preserved": 100
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "doc": "uk-fam-02.txt",
+ "docSha256_16": "62b1a9cf4d9bfd7e",
+ "entities": [
+  {
+   "category": "HEALTH",
+   "off": 39832,
+   "len": 24
+  },
+  {
+   "category": "HEALTH",
+   "off": 39582,
+   "len": 32
+  },
+  {
+   "category": "HEALTH",
+   "off": 44425,
+   "len": 10
+  },
+  {
+   "category": "HEALTH",
+   "off": 44574,
+   "len": 12
+  },
+  {
+   "category": "HEALTH",
+   "off": 12886,
+   "len": 7
+  },
+  {
+   "category": "HEALTH",
+   "off": 12898,
+   "len": 10
+  },
+  {
+   "category": "HEALTH",
+   "off": 43723,
+   "len": 22
+  },
+  {
+   "category": "HEALTH",
+   "off": 41718,
+   "len": 14
+  },
+  {
+   "category": "HEALTH",
+   "off": 11406,
+   "len": 23
+  },
+  {
+   "category": "HEALTH",
+   "off": 44630,
+   "len": 22
+  },
+  {
+   "category": "MISC",
+   "off": 46945,
+   "len": 7
+  },
+  {
+   "category": "MISC",
+   "off": 46321,
+   "len": 22
+  }
+ ]
+}

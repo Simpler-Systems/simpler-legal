@@ -1,0 +1,944 @@
+{
+ "doc": "us-r5-09.txt",
+ "docSha256_16": "a1259a89889f7a89",
+ "entities": [
+  {
+   "category": "PERSON",
+   "identifier_type": "person_surname_party_and_case_shortcite",
+   "occurrences": 3,
+   "off": 7,
+   "len": 8
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 37806,
+   "len": 14
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 37911,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 38046,
+   "len": 17
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 38168,
+   "len": 12
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 38310,
+   "len": 13
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 38422,
+   "len": 11
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "plaintiff_full_name",
+   "occurrences": 1,
+   "off": 38635,
+   "len": 15
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "judge_name_NOMASK",
+   "occurrences": 2,
+   "off": 131,
+   "len": 7
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "judge_name_NOMASK",
+   "occurrences": 1,
+   "off": 173,
+   "len": 6
+  },
+  {
+   "category": "PERSON",
+   "identifier_type": "judge_name_NOMASK",
+   "occurrences": 1,
+   "off": 190,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 3743,
+   "len": 56
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 3,
+   "off": 3743,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 1,
+   "off": 3743,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 4011,
+   "len": 47
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 2,
+   "off": 5162,
+   "len": 29
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 4327,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 1,
+   "off": 4327,
+   "len": 5
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 4537,
+   "len": 27
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 5226,
+   "len": 39
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 2,
+   "off": 5226,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 5498,
+   "len": 32
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 1,
+   "off": 5498,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 7004,
+   "len": 26
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 1,
+   "off": 7004,
+   "len": 3
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 7264,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 2,
+   "off": 7273,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 7368,
+   "len": 30
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 8085,
+   "len": 15
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 28304,
+   "len": 56
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_shortform_NOMASK",
+   "occurrences": 1,
+   "off": 35254,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 42455,
+   "len": 20
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "case_citation_NOMASK",
+   "occurrences": 1,
+   "off": 42539,
+   "len": 23
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "municipal_government_body_defendant_NOMASK",
+   "occurrences": 6,
+   "off": 19,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "defined_term_municipal_government_NOMASK",
+   "occurrences": 90,
+   "off": 19,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "city_department_government_body_NOMASK",
+   "occurrences": 40,
+   "off": 7813,
+   "len": 4
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "city_department_government_body_NOMASK",
+   "occurrences": 1,
+   "off": 7770,
+   "len": 40
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "state_government_body_NOMASK",
+   "occurrences": 4,
+   "off": 1595,
+   "len": 24
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "state_government_shortform_NOMASK",
+   "occurrences": 8,
+   "off": 1595,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "state_government_agency_NOMASK",
+   "occurrences": 1,
+   "off": 8976,
+   "len": 29
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "state_government_agency_NOMASK",
+   "occurrences": 1,
+   "off": 8985,
+   "len": 20
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_government_agency_NOMASK",
+   "occurrences": 4,
+   "off": 29234,
+   "len": 19
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_government_division_NOMASK",
+   "occurrences": 1,
+   "off": 42193,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "municipal_government_body_NOMASK",
+   "occurrences": 1,
+   "off": 10109,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_legislature_NOMASK",
+   "occurrences": 3,
+   "off": 29278,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_officer_amicus_NOMASK",
+   "occurrences": 3,
+   "off": 4040,
+   "len": 18
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_officer_shortform_NOMASK",
+   "occurrences": 3,
+   "off": 4040,
+   "len": 9
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_government_NOMASK",
+   "occurrences": 1,
+   "off": 27973,
+   "len": 31
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_agency_NOMASK",
+   "occurrences": 1,
+   "off": 28113,
+   "len": 28
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "federal_agency_NOMASK",
+   "occurrences": 1,
+   "off": 28146,
+   "len": 22
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "state_officer_NOMASK",
+   "occurrences": 1,
+   "off": 37311,
+   "len": 12
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "professional_organization",
+   "occurrences": 1,
+   "off": 10596,
+   "len": 30
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "coordinating_organization",
+   "occurrences": 1,
+   "off": 12165,
+   "len": 49
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_NOMASK",
+   "occurrences": 6,
+   "off": 336,
+   "len": 14
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_reporter_NOMASK",
+   "occurrences": 1,
+   "off": 793,
+   "len": 7
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_reporter_NOMASK",
+   "occurrences": 5,
+   "off": 4368,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_reporter_NOMASK",
+   "occurrences": 1,
+   "off": 7309,
+   "len": 8
+  },
+  {
+   "category": "ORG",
+   "identifier_type": "court_reporter_NOMASK",
+   "occurrences": 1,
+   "off": 7417,
+   "len": 8
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "city_place",
+   "occurrences": 3,
+   "off": 27,
+   "len": 14
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "state_place",
+   "occurrences": 2,
+   "off": 27,
+   "len": 8
+  },
+  {
+   "category": "LOC",
+   "identifier_type": "county_in_citation",
+   "occurrences": 1,
+   "off": 28339,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 551,
+   "len": 22
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 3542,
+   "len": 23
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 4850,
+   "len": 23
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 5016,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 5082,
+   "len": 8
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 12,
+   "off": 26901,
+   "len": 14
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 27903,
+   "len": 26
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 28259,
+   "len": 20
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 8859,
+   "len": 45
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 9175,
+   "len": 29
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 9502,
+   "len": 30
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 1,
+   "off": 9210,
+   "len": 36
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 2,
+   "off": 36965,
+   "len": 27
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 1,
+   "off": 29190,
+   "len": 19
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 1,
+   "off": 29592,
+   "len": 22
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 1,
+   "off": 29780,
+   "len": 22
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 1,
+   "off": 30653,
+   "len": 22
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "regulation_NOMASK",
+   "occurrences": 1,
+   "off": 40563,
+   "len": 22
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "statute_NOMASK",
+   "occurrences": 1,
+   "off": 40393,
+   "len": 33
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_name_NOMASK",
+   "occurrences": 1,
+   "off": 499,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_acronym_NOMASK",
+   "occurrences": 25,
+   "off": 530,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "statute_name_NOMASK",
+   "occurrences": 1,
+   "off": 40235,
+   "len": 34
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "reporter_citation_NOMASK",
+   "occurrences": 1,
+   "off": 776,
+   "len": 15
+  },
+  {
+   "category": "CODE",
+   "identifier_type": "reporter_citation_NOMASK",
+   "occurrences": 1,
+   "off": 26692,
+   "len": 18
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 580,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "decade",
+   "occurrences": 3,
+   "off": 1936,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 4,
+   "off": 2948,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 6,
+   "off": 3196,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 3,
+   "off": 4111,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 37895,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 3,
+   "off": 9585,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 37998,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 38030,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 38104,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 38217,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 3,
+   "off": 38360,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "year",
+   "occurrences": 1,
+   "off": 10099,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "relative_period",
+   "occurrences": 1,
+   "off": 10015,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "relative_period",
+   "occurrences": 1,
+   "off": 10035,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 24073,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 38237,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 38366,
+   "len": 9
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duration",
+   "occurrences": 1,
+   "off": 38476,
+   "len": 11
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duty_duration",
+   "occurrences": 1,
+   "off": 17180,
+   "len": 29
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "duty_duration",
+   "occurrences": 1,
+   "off": 39661,
+   "len": 28
+  },
+  {
+   "category": "DATETIME",
+   "identifier_type": "workweek_duration",
+   "occurrences": 1,
+   "off": 3524,
+   "len": 12
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count_of_plaintiffs",
+   "occurrences": 1,
+   "off": 875,
+   "len": 25
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 1968,
+   "len": 25
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 40014,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "membership_count",
+   "occurrences": 1,
+   "off": 2268,
+   "len": 19
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "overtime_multiplier",
+   "occurrences": 1,
+   "off": 3440,
+   "len": 22
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 26983,
+   "len": 36
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 33393,
+   "len": 40
+  },
+  {
+   "category": "QUANTITY",
+   "identifier_type": "count",
+   "occurrences": 1,
+   "off": 14427,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation",
+   "occurrences": 20,
+   "off": 247,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation",
+   "occurrences": 2,
+   "off": 881,
+   "len": 19
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation",
+   "occurrences": 1,
+   "off": 11334,
+   "len": 9
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation",
+   "occurrences": 1,
+   "off": 9808,
+   "len": 20
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation",
+   "occurrences": 2,
+   "off": 12368,
+   "len": 29
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "judicial_title_NOMASK",
+   "occurrences": 1,
+   "off": 220,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 10915,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 3,
+   "off": 11167,
+   "len": 13
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 2,
+   "off": 11282,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 2,
+   "off": 10563,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 10521,
+   "len": 38
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 19114,
+   "len": 18
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 19134,
+   "len": 16
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 19156,
+   "len": 26
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "job_title",
+   "occurrences": 1,
+   "off": 10791,
+   "len": 12
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "role_designation",
+   "occurrences": 4,
+   "off": 19683,
+   "len": 5
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation_category",
+   "occurrences": 1,
+   "off": 37208,
+   "len": 30
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation_category",
+   "occurrences": 1,
+   "off": 37240,
+   "len": 24
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "occupation_category",
+   "occurrences": 1,
+   "off": 37266,
+   "len": 15
+  }
+ ]
+}

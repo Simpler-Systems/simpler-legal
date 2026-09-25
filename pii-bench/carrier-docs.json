@@ -1,0 +1,209 @@
+{
+ "basedOn": "tab-dev-slice-v1legal2-e2e residual QUASI leaks",
+ "carriers": {
+  "DEM": [
+   {
+    "file": "001-114244.txt",
+    "leaks": 10
+   },
+   {
+    "file": "001-57563.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-60605.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-86146.txt",
+    "leaks": 4
+   },
+   {
+    "file": "001-58590.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-91094.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-108409.txt",
+    "leaks": 2
+   },
+   {
+    "file": "001-58913.txt",
+    "leaks": 2
+   }
+  ],
+  "MISC": [
+   {
+    "file": "001-61100.txt",
+    "leaks": 11
+   },
+   {
+    "file": "001-88377.txt",
+    "leaks": 11
+   },
+   {
+    "file": "001-79012.txt",
+    "leaks": 8
+   },
+   {
+    "file": "001-67243.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-169481.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-57563.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-84285.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-60605.txt",
+    "leaks": 2
+   }
+  ],
+  "LOC": [
+   {
+    "file": "001-60605.txt",
+    "leaks": 6
+   },
+   {
+    "file": "001-61100.txt",
+    "leaks": 4
+   },
+   {
+    "file": "001-84285.txt",
+    "leaks": 4
+   },
+   {
+    "file": "001-88377.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-90131.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-169481.txt",
+    "leaks": 2
+   },
+   {
+    "file": "001-58018.txt",
+    "leaks": 2
+   },
+   {
+    "file": "001-58913.txt",
+    "leaks": 2
+   }
+  ],
+  "QUANTITY": [
+   {
+    "file": "001-97995.txt",
+    "leaks": 6
+   },
+   {
+    "file": "001-67243.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-69128.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-88377.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-60605.txt",
+    "leaks": 4
+   },
+   {
+    "file": "001-169481.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-58913.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-82485.txt",
+    "leaks": 3
+   }
+  ],
+  "DATETIME": [
+   {
+    "file": "001-84285.txt",
+    "leaks": 13
+   },
+   {
+    "file": "001-57563.txt",
+    "leaks": 11
+   },
+   {
+    "file": "001-58018.txt",
+    "leaks": 7
+   },
+   {
+    "file": "001-58913.txt",
+    "leaks": 6
+   },
+   {
+    "file": "001-169481.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-79012.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-67243.txt",
+    "leaks": 4
+   },
+   {
+    "file": "001-69128.txt",
+    "leaks": 4
+   }
+  ],
+  "ORG": [
+   {
+    "file": "001-60605.txt",
+    "leaks": 11
+   },
+   {
+    "file": "001-169481.txt",
+    "leaks": 7
+   },
+   {
+    "file": "001-58590.txt",
+    "leaks": 7
+   },
+   {
+    "file": "001-57563.txt",
+    "leaks": 5
+   },
+   {
+    "file": "001-82485.txt",
+    "leaks": 4
+   },
+   {
+    "file": "001-61100.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-67243.txt",
+    "leaks": 3
+   },
+   {
+    "file": "001-79012.txt",
+    "leaks": 3
+   }
+  ]
+ }
+}

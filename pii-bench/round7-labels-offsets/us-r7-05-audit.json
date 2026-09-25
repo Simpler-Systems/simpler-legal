@@ -1,0 +1,27 @@
+{
+ "doc": "us-r7-05.txt",
+ "docSha256_16": "8e19d1c4e834ab44",
+ "entities": [
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 3,
+   "off": 11993,
+   "len": 8
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 57992,
+   "len": 33
+  },
+  {
+   "category": "MISC",
+   "identifier_type": "NO_MASK",
+   "occurrences": 1,
+   "off": 29285,
+   "len": 4
+  }
+ ]
+}

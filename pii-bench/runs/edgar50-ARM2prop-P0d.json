@@ -1,0 +1,1176 @@
+{
+ "name": "edgar50-ARM2prop-P0d",
+ "batch": "all",
+ "strippedDir": "raw/stripped/edgar50-A2",
+ "scoredAt": "2026-07-22T22:30:33.585Z",
+ "aggregate": {
+  "docs": 100,
+  "missingOutputs": [
+   "us-opinion-01.txt",
+   "us-opinion-02.txt",
+   "us-opinion-03.txt",
+   "us-opinion-04.txt",
+   "us-opinion-05.txt",
+   "us-opinion-06.txt",
+   "us-opinion-07.txt",
+   "us-opinion-08.txt",
+   "us-opinion-09.txt",
+   "us-opinion-10.txt",
+   "us-opinion-11.txt",
+   "us-opinion-12.txt",
+   "us-opinion-13.txt",
+   "us-opinion-14.txt",
+   "us-opinion-15.txt",
+   "us-opinion-16.txt",
+   "us-opinion-17.txt",
+   "us-opinion-18.txt",
+   "us-opinion-19.txt",
+   "us-opinion-20.txt",
+   "us-opinion-21.txt",
+   "us-opinion-22.txt",
+   "us-opinion-23.txt",
+   "us-opinion-24.txt",
+   "us-opinion-25.txt",
+   "sg-judgment-01.txt",
+   "sg-judgment-02.txt",
+   "sg-judgment-03.txt",
+   "sg-judgment-04.txt",
+   "sg-judgment-05.txt",
+   "sg-judgment-06.txt",
+   "sg-judgment-07.txt",
+   "sg-judgment-08.txt",
+   "sg-judgment-09.txt",
+   "sg-judgment-10.txt",
+   "sg-judgment-11.txt",
+   "sg-judgment-12.txt",
+   "sg-judgment-13.txt",
+   "sg-judgment-14.txt",
+   "sg-judgment-15.txt",
+   "sg-judgment-16.txt",
+   "sg-judgment-17.txt",
+   "sg-judgment-18.txt",
+   "sg-judgment-19.txt",
+   "sg-judgment-20.txt",
+   "sg-judgment-21.txt",
+   "sg-judgment-22.txt",
+   "sg-judgment-23.txt",
+   "sg-judgment-24.txt",
+   "sg-judgment-25.txt",
+   "edgar-ex10-20.txt",
+   "edgar-ex10-27.txt",
+   "edgar-ex10-48.txt"
+  ],
+  "directRecall": 1,
+  "quasiRecall": 0.5775401069518716,
+  "noMaskPreservation": 0.7083595223130107,
+  "gatePassRate": 1,
+  "unmatchable": 53
+ },
+ "perDoc": [
+  {
+   "file": "us-opinion-01.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-02.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-03.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-04.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-05.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-06.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-07.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-08.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-09.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-10.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-11.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-12.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-13.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-14.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-15.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-16.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-17.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-18.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-19.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-20.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-21.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-22.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-23.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-24.txt",
+   "missing": true
+  },
+  {
+   "file": "us-opinion-25.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-01.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-02.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-03.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-04.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-05.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-06.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-07.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-08.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-09.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-10.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-11.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-12.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-13.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-14.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-15.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-16.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-17.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-18.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-19.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-20.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-21.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-22.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-23.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-24.txt",
+   "missing": true
+  },
+  {
+   "file": "sg-judgment-25.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-01.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 8,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 31,
+    "preserved": 28
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-02.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 7,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 27
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-03.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 3,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 12,
+    "preserved": 7
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-04.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 9
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-05.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 3,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 16,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-06.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 4,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 26,
+    "preserved": 22
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-07.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 41,
+    "preserved": 37
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-08.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 0,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 42,
+    "preserved": 36
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-09.txt",
+   "missing": false,
+   "direct": {
+    "total": 13,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 36,
+    "leaked": 12
+   },
+   "no_mask": {
+    "total": 104,
+    "preserved": 80
+   },
+   "unmatchable": 7,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-10.txt",
+   "missing": false,
+   "direct": {
+    "total": 14,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 35,
+    "leaked": 18
+   },
+   "no_mask": {
+    "total": 104,
+    "preserved": 71
+   },
+   "unmatchable": 8,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-11.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 2,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 21,
+    "preserved": 16
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-12.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 6,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 17,
+    "preserved": 15
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-13.txt",
+   "missing": false,
+   "direct": {
+    "total": 6,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 14,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 28,
+    "preserved": 16
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-14.txt",
+   "missing": false,
+   "direct": {
+    "total": 6,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 7,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 30,
+    "preserved": 19
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-15.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 16,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 34,
+    "preserved": 22
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-16.txt",
+   "missing": false,
+   "direct": {
+    "total": 10,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 17,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 39,
+    "preserved": 25
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-17.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 6,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 39,
+    "preserved": 21
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-18.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 7,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 51,
+    "preserved": 33
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-19.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 6,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 32,
+    "preserved": 20
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-20.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-21.txt",
+   "missing": false,
+   "direct": {
+    "total": 1,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 4,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 15,
+    "preserved": 14
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-22.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 11,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 46,
+    "preserved": 31
+   },
+   "unmatchable": 10,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-23.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 11,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 40,
+    "preserved": 25
+   },
+   "unmatchable": 6,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-24.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 3,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 17
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-25.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 4,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 29,
+    "preserved": 20
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-26.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 2,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 23,
+    "preserved": 14
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-27.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-28.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 14,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 57,
+    "preserved": 35
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-29.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 15,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 42,
+    "preserved": 29
+   },
+   "unmatchable": 4,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-30.txt",
+   "missing": false,
+   "direct": {
+    "total": 6,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 11,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 29,
+    "preserved": 18
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-31.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 3,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 22,
+    "preserved": 16
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-32.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 1,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 15,
+    "preserved": 11
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-33.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 12,
+    "leaked": 8
+   },
+   "no_mask": {
+    "total": 30,
+    "preserved": 23
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-34.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 9,
+    "leaked": 5
+   },
+   "no_mask": {
+    "total": 37,
+    "preserved": 33
+   },
+   "unmatchable": 5,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-35.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 7,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 45,
+    "preserved": 23
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-36.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 5,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 44,
+    "preserved": 23
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-37.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 10,
+    "leaked": 6
+   },
+   "no_mask": {
+    "total": 39,
+    "preserved": 31
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-38.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 10,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 25
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-39.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 2,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 14,
+    "preserved": 13
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-40.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 2,
+    "leaked": 0
+   },
+   "no_mask": {
+    "total": 21,
+    "preserved": 14
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-41.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 7,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 26,
+    "preserved": 15
+   },
+   "unmatchable": 2,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-42.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 13,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 40,
+    "preserved": 27
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-43.txt",
+   "missing": false,
+   "direct": {
+    "total": 5,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 9,
+    "leaked": 7
+   },
+   "no_mask": {
+    "total": 34,
+    "preserved": 23
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-44.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 6,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 22
+   },
+   "unmatchable": 1,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-45.txt",
+   "missing": false,
+   "direct": {
+    "total": 2,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 6,
+    "leaked": 2
+   },
+   "no_mask": {
+    "total": 46,
+    "preserved": 37
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-46.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 7,
+    "leaked": 4
+   },
+   "no_mask": {
+    "total": 33,
+    "preserved": 25
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-47.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 5,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 25,
+    "preserved": 18
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-48.txt",
+   "missing": true
+  },
+  {
+   "file": "edgar-ex10-49.txt",
+   "missing": false,
+   "direct": {
+    "total": 4,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 2,
+    "leaked": 1
+   },
+   "no_mask": {
+    "total": 18,
+    "preserved": 14
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  },
+  {
+   "file": "edgar-ex10-50.txt",
+   "missing": false,
+   "direct": {
+    "total": 3,
+    "leaked": 0
+   },
+   "quasi": {
+    "total": 6,
+    "leaked": 3
+   },
+   "no_mask": {
+    "total": 21,
+    "preserved": 14
+   },
+   "unmatchable": 0,
+   "leakedSpans": [],
+   "gatePass": true
+  }
+ ]
+}

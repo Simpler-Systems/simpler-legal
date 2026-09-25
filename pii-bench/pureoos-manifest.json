@@ -1,0 +1,18 @@
+{
+ "builtAt": "2026-07-24",
+ "protocol": "PURE-OOS n=1: 2026-filed EX-10, fresh query (transition agreement), first qualifying hit, rule pre-registered; blind gold BEFORE strip; strip via LIVE serve-legal adapter; scored + adversarially leak-hunted; published as drawn",
+ "docs": [
+  {
+   "file": "pureoos-01.txt",
+   "source": "pureoos",
+   "title": "Oportun Financial Corp  (OPRT)  (CIK 0001538716)",
+   "cite": "0001193125-26-017944",
+   "filed": "2026-01-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1538716/000119312526017944/d78665dex101.htm",
+   "words": 7714,
+   "sha256_16": "edde3f6dae1a5a1d"
+  }
+ ],
+ "shaPinnedAt": "2026-07-25",
+ "shaNote": "sha256_16 = first 16 hex of sha256 over the extracted text as scored. A rebuild that does not match these was not the corpus these boards measured."
+}

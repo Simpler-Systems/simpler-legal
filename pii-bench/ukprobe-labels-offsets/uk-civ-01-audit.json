@@ -1,0 +1,34 @@
+{
+ "doc": "uk-civ-01.txt",
+ "docSha256_16": "b84ae823becc5161",
+ "entities": [
+  {
+   "category": "ORG",
+   "off": 69,
+   "len": 13
+  },
+  {
+   "category": "DATETIME",
+   "off": 44561,
+   "len": 4
+  },
+  {
+   "category": "DATETIME",
+   "off": 1386,
+   "len": 4
+  },
+  {
+   "category": "MISC",
+   "unmatchable": true
+  },
+  {
+   "category": "MISC",
+   "unmatchable": true
+  },
+  {
+   "category": "CODE",
+   "off": 11796,
+   "len": 2
+  }
+ ]
+}
