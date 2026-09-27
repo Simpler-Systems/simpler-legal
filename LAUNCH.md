@@ -13,6 +13,67 @@ printed, so the claim is stated here even where the file cannot be opened.*
 
 ---
 
+## Published: the repository and release on 2026-09-25, the site on 2026-09-27
+
+*The record of the publication. The sections under it are the go/no-go record as it was
+written.*
+
+**The repository** (2026-09-25, about 20:00 SGT, on the owner's "go"):
+`github.com/Simpler-Systems/simpler-legal`, public.
+- `main` was one commit, `2dc54d3` (tree `a79ad68`), tagged `v0.1.0`. It is the cut described
+  under "The public repository" below, authored and committed as
+  `Simpler Terminal Value Systems <support@simpler.asia>`.
+- It was created private, pushed and released, and only then made public, so no one saw an
+  empty repository.
+- Settings: Issues on; wiki, projects and discussions off; private vulnerability reporting on
+  (§3.6). GitHub detects the licence as Apache-2.0. The homepage was set to
+  `https://simpler.legal` on 2026-09-27, once the site answered.
+
+**The release**, "simpler.legal 0.1.0", carries the installer of record (39,909,063 bytes,
+SHA-256 `7c79cd90…a8e606`) and its `.sha256`. The asset was downloaded back after the upload,
+and its hash matched.
+
+**Checked as a stranger, with no login:**
+- An anonymous clone has the same tree, 1 commit and 1,648 files, with LF endings on the `.sh`
+  files.
+- `/releases/latest` and the asset answer 200.
+
+**The site** (2026-09-27, on the owner's word): `simpler.legal` and `www.simpler.legal` serve
+`site/` as a Cloudflare Workers static-assets deployment with no script (`wrangler.jsonc`).
+- DNS was not changed. Both names are proxied records to the registrar's parking host, which is
+  what answered 525 (§3.1). A Worker route answers at the edge before any origin fetch.
+- Three changes to `site/index.html` came first, on the owner's approval. All three concern the
+  images (§3.8):
+  - The caption under the hero shot no longer says the screenshots are retaken before launch.
+  - The `og:image` and `twitter:image` tags are gone, and `twitter:card` is `summary`. A shared
+    link now carries no image instead of simpler-red's card.
+  - The two `DO NOT LAUNCH` source comments are removed.
+- `og-card.png` was not uploaded. The second public commit deletes it from the tree.
+- The smoke test on the first deploy:
+  - `/`, `/it`, `/research`, the stylesheet, the favicon, the images and the fonts answered 200,
+    and `www` answered 200.
+  - `/assets/og-card.png`, `/_serve-site.mjs` and an unknown path answered 404.
+  - `/it.html`, `/research.html` and `/index.html` answer 307 to the same path without `.html`.
+    That is the default HTML handling of static assets.
+  - The served bytes of the three pages equalled the deployed copy, and the page showed no
+    console errors in a browser.
+- `dl.simpler.legal` (§3.5) is not routed, and still answers 525.
+
+**The second public commit** (2026-09-27) is a child of `2dc54d3`, with the same author. It
+carries:
+- the three `index.html` changes above, `wrangler.jsonc` and `site/.assetsignore`;
+- the canonical address in `site/it.html`, now `/it`, where `/it.html` redirects;
+- the sentence in `site/it.html` telling a reviewer to check the installer's hash against the
+  published one;
+- the copyright line in `site/research.html`'s footer;
+- this record.
+
+**Still open, §3.8, the images.** The three screenshots are still simpler-red captures, and the
+page says so. There is no preview card. They are retaken from the real app when the machine has
+the memory for a live run (the 10 GB rule; `OPS_LEDGER.md`, 2026-09-27).
+
+---
+
 ## Position on 2026-09-25 (v0.1.0: the first live run through the app, and rulings 27–33)
 
 *Written by the orchestrator after the launch workflow `wf_fc82a3a3-f39` (10 started, 10
@@ -880,6 +941,10 @@ Probed 2026-09-24 with `curl`, and again at 20:27 in the round-7 pass with the s
 3.1, 3.2, 3.3 and 3.5 (the `href` counts and the asset dates re-counted then too). The site now
 states each of these gaps instead of hiding it.
 
+*2026-09-27: the publication closed 3.1, 3.2, 3.3, 3.4 and 3.6 ("Published", at the top).
+For 3.3: the site's 32 GitHub `href`s, 15 distinct, all answered 200 when followed with no
+login. The rows below are as they were written, except 3.8, which is amended.*
+
 | # | Destination | Status |
 |---|---|---|
 | 3.1 | `simpler.legal` | **OPEN** — **525** (origin certificate) |
@@ -889,7 +954,7 @@ states each of these gaps instead of hiding it.
 | 3.5 | `dl.simpler.legal` model mirror | **OPEN** — the name now answers **525**, like the apex, and serves nothing. A mirror also waits on §5. |
 | 3.6 | Security disclosure channel | **PARTIAL — owner step** — `SECURITY.md` (2026-09-25) sends reports through GitHub private vulnerability reporting, `github.com/Simpler-Systems/simpler-legal/security/advisories/new`, and publishes one e-mail address, `support@simpler.asia`, for a reporter who cannot use GitHub (owner ruling 30 as amended; `site-claims` law "security reports", which fails on any other address, on that address inside a longer domain and on a `mailto:` link). That address works only once the repository is public and private vulnerability reporting is switched on in its settings. |
 | 3.7 | Any contact address at all | **OPEN** — `mailto:`, `<form>` and `<input>` each count 0 on all three pages. |
-| 3.8 | Screenshots and OG card | **OPEN** — `site/assets/react-app-*.png` and `og-card.png` are still the files of 2026-07-22/23: simpler-red captures, with the card reading "Simpler Redact". The alt text now says "the sibling app simpler-red, not of Simpler Legal", and the source comment above them still says `DO NOT LAUNCH BEFORE THESE ARE RETAKEN`. Every share of the link renders another product's wordmark. |
+| 3.8 | Screenshots and OG card | **OPEN** — `site/assets/react-app-*.png` and `og-card.png` are still the files of 2026-07-22/23: simpler-red captures, with the card reading "Simpler Redact". The alt text now says "the sibling app simpler-red, not of Simpler Legal", and the source comment above them still says `DO NOT LAUNCH BEFORE THESE ARE RETAKEN`. Every share of the link renders another product's wordmark. *Amended 2026-09-27:* still **OPEN** for the three screenshots, which the page labels as simpler-red captures. The site launched without a card: `og-card.png` is deleted, the page has no `og:image` or `twitter:image`, `twitter:card` is `summary`, and both `DO NOT LAUNCH` comments are gone. A shared link renders no image. |
 
 ---
 

@@ -62,13 +62,7 @@
 <meta property="og:site_name" content="Simpler Legal" />
 <meta property="og:title" content="Redact legal documents before they leave your machine" />
 <meta property="og:description" content="A local redaction engine for legal documents, Apache-2.0-licensed, with its source on GitHub. People's names and identifiers are removed — not covered — on your own hardware: 46 unseen SEC-filed business agreements, zero identity leaks across four consecutive fresh draws (45 of them ran the engine as it stood before its freeze, 1 ran the frozen engine). Court judgments and a firm's own filings still leak some, and the evidence says how many. Dates, amounts and most places (not a person's address) stay readable on purpose, and by default so do company names. There is no account, no API key and no server of ours." />
-<!-- SCREENSHOT SWAP PENDING: assets/og-card.png is still RED's social card — its wordmark
-     reads "Simpler Redact". Retake before launch; see the full asset list at the hero fold. -->
-<meta property="og:image" content="https://simpler.legal/assets/og-card.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://simpler.legal/assets/og-card.png" />
+<meta name="twitter:card" content="summary" />
 <!--
   SLOT PROTOCOL (for the session that lands the final numbers):
   every element with [data-slot] is a placeholder awaiting measured results.
@@ -439,34 +433,10 @@
   </div>
 
   <div class="fold">
-    <!-- SCREENSHOT SWAP PENDING — DO NOT LAUNCH BEFORE THESE ARE RETAKEN.
-         Every image asset on this site is still a simpler-red capture. Verified by opening
-         each file 2026-07-25; what is wrong in each, precisely:
-
-           assets/react-app-drop-v2.png   (used here, line ~419)
-             sidebar masthead reads "Simpler AI / simpler.red" under the RED kite logo;
-             red PDF file card; red stepper dot on "Drop".
-           assets/react-app-review.png    (used in the walkthrough, line ~629)
-             same red masthead + "simpler.red"; red stepper dot; the primary guided-review
-             button "Confirm — redact as PERSON 1" is red.
-           assets/react-app-export.png    (used in the walkthrough, line ~635)
-             same red masthead + "simpler.red"; red stepper dot; primary "Copy redacted text"
-             button is red; closing paragraph pitches "simpler.asia", not this product.
-           assets/og-card.png             (og:image AND twitter:image, lines 36 and 40)
-             this is RED'S SOCIAL CARD: the wordmark reads "Simpler Redact", red kite logo,
-             red diagonal tape. It is what every shared simpler.legal link renders as.
-             Highest-visibility miss of the four — fix this one first.
-
-         Retake all four from the navy build at localhost:1435. Until then the hero, review and
-         export alt texts and the caption under the hero shot SAY these are simpler-red
-         captures; when you retake, rewrite all three alts and delete the caption. The review
-         retake should show the tally line, not a guided card: on the frozen engine no row
-         arrives flagged, so a real document opens with no card. og-card.png must be
-         re-rendered at 1200x630 to match the meta tags. -->
     <div class="shot wrap" style="padding:0">
       <img src="assets/react-app-drop-v2.png" alt="A screenshot of the sibling app simpler-red, not of Simpler Legal: the simpler.red masthead with its kite, a document drop sheet with TXT, PDF and DOCX file cards, a trust footer stating nothing is uploaded, and the Drop, Review, Export stepper — engine ready at 127.0.0.1." />
     </div>
-    <p class="cta-note" style="margin-top:10px">Screenshots on this page are of the sibling app simpler-red, not of Simpler Legal. They are retaken before launch.</p>
+    <p class="cta-note" style="margin-top:10px">Screenshots on this page are of the sibling app simpler-red, not of Simpler Legal.</p>
   </div>
 </div>
 

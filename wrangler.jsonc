@@ -1,0 +1,18 @@
+// simpler.legal — the site in site/, served as a Cloudflare Workers static-assets deployment
+// with no script. Deploy from the repository root with `wrangler deploy`; site/.assetsignore
+// keeps the local preview server out of the upload.
+// The zone's DNS records for simpler.legal and www point at the registrar's parking host, which
+// answered 525. A Worker route runs at the edge before any origin fetch, so that host is never
+// contacted. To undo: delete the routes and redeploy, or `wrangler delete --name
+// simpler-legal-site`; the domain goes back to its 525.
+{
+  "name": "simpler-legal-site",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./site"
+  },
+  "routes": [
+    { "pattern": "simpler.legal/*", "zone_name": "simpler.legal" },
+    { "pattern": "www.simpler.legal/*", "zone_name": "simpler.legal" }
+  ]
+}

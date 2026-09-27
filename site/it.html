@@ -6,7 +6,7 @@
 <title>Simpler Legal — brief for IT &amp; InfoSec reviewers</title>
 <meta name="description" content="One page for IT and security teams: what Simpler Legal is, what it needs, what it does on the network and on the local ports, and what each of those statements rests on." />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="canonical" href="https://simpler.legal/it.html" />
+<link rel="canonical" href="https://simpler.legal/it" />
 <link rel="stylesheet" href="fonts.css" />
 <style>
   /* paper-on-a-light-table, almond ground — matches index.html tokens */
@@ -133,7 +133,7 @@
     test in the repository, or nothing yet. The files named here are in the source repository,
     <a href="https://github.com/Simpler-Systems/simpler-legal">github.com/Simpler-Systems/simpler-legal</a>.</p>
     <p class="print-note">Print-friendly — forward or attach as-is to a software-review request.
-    This page lives at <code>simpler.legal/it.html</code>.</p>
+    This page lives at <code>simpler.legal/it</code>.</p>
   </div>
 
   <section id="what">
@@ -505,8 +505,9 @@
         app's relay (<code>app/src-tauri/src/relay.rs</code>). There is no model download to
         audit.</li>
       <li><b>Artifact audit:</b> the installer is unsigned, so take its SHA-256 yourself from the
-        copy you reviewed and allowlist that hash. The model pin is in
-        <code>locate-model.mjs</code> and in the app.</li>
+        copy you reviewed, check it against the one published beside the release (its
+        <code>.sha256</code> file) and in <code>README.md</code>, and allowlist that hash. The
+        model pin is in <code>locate-model.mjs</code> and in the app.</li>
       <li><b>Accuracy audit:</b> the benchmark's draw manifests, gold labels (as character
         offsets), scorer and result boards are in the repository; the documents themselves
         re-fetch from public sources, and one court's gold is withheld. The measurement record is
@@ -640,7 +641,7 @@
 
 <footer>
   <div class="wrap row">
-    <span>Simpler Legal · simpler.legal/it.html</span>
+    <span>Simpler Legal · simpler.legal/it</span>
     <span>© 2026 Simpler Terminal Value Systems Pte Ltd · Apache-2.0 licensed</span>
     <span class="spacer"></span>
     <a href="index.html">Home</a>

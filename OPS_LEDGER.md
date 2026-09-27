@@ -1362,3 +1362,34 @@ No workflow ran. Every step was a command in the main session, and each finished
    review's fixes. So `node tools/verify.mjs` ran again, in three foreground batches of six
    (16:22–16:32), on the tree that was then committed and cut. The result was 18 of 18, and no
    tracked file changed.
+
+## 2026-09-27 — the publication and the site: a fetch that refused, a domain parked behind a 525, a browser on another computer, and a retake held by the 10 GB rule
+
+No workflow ran. Every step was a command in the main session, and each finished with a result.
+`LAUNCH.md`, "Published", has the record.
+
+1. **The cut's fetch refused on its first run** (2026-09-25). `git fetch` into the new public
+   repository would not write its checked-out branch, `main`. `scratchpad/wf10/cut-public.sh`
+   now passes `--update-head-ok`. The half-made repository was deleted before the cut was run
+   again, and nothing from it was pushed.
+2. **The domain answered 525.** `simpler.legal` and `www` are proxied DNS records to the
+   registrar's parking host. The deploy left DNS alone: a Worker route answers at the edge
+   before any origin fetch. `dl.simpler.legal` is not routed, and still answers 525.
+3. **A browser check that reached another computer.** The Chrome extension pairs with a browser
+   signed into the session's Claude account. This machine's browser was signed into a
+   different one, so the extension was driving a browser on another computer. A local test
+   server that logs every request received none, and the page on screen was that computer's
+   error page. Once the session was signed into the account of this machine's browser, the
+   same address loaded and the server logged it. A page check through the extension counts
+   only when the server's own log shows the request.
+4. **A filter that dropped what it was meant to keep.** `grep -v simpler.legal`, meant to drop
+   the site's own addresses from a link list, also dropped every
+   `github.com/Simpler-Systems/simpler-legal` link, because `.` matches `-`. The list was taken
+   again with a pattern for the GitHub links. It is the class of the 2026-09-12 entry: a
+   pattern that ran and matched something other than what was meant.
+5. **wrangler is not a dependency here.** `npx wrangler` stopped at its install prompt. The
+   deploy used wrangler 4.136.1, already installed on the machine for another project.
+6. **The image retake, held by the 10 GB rule.** Retaking the three screenshots needs the app
+   to run a document through the engine. Free memory was 5.9 of 31.1 GB, with 49.7 of 52.7 GB
+   committed, and the owner's programs held most of it. The owner chose to publish the text
+   now and the images in a later commit. Nothing ran below the rule.
