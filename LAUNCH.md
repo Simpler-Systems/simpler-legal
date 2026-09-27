@@ -58,6 +58,13 @@ and its hash matched.
   - The served bytes of the three pages equalled the deployed copy, and the page showed no
     console errors in a browser.
 - `dl.simpler.legal` (§3.5) is not routed, and still answers 525.
+  - *Later on 2026-09-27:* `dl` never had a record of its own. The registrar's default wildcard,
+    `*.simpler.legal`, a proxied CNAME to the parking host, answered every subdomain with the
+    525. On the owner's word it was deleted through the Cloudflare API.
+  - The zone now holds the two apex A records and `www`, which the Worker routes need.
+  - Cloudflare's and Google's resolvers answer NXDOMAIN for `dl` and for an invented
+    subdomain. The apex and `www` still resolve and answer 200, and `/`, `/it` and `/research`
+    are byte-identical to `9f95bd2`. §3.5 is closed.
 
 **The second public commit** (2026-09-27) is a child of `2dc54d3`, with the same author. It
 carries:
@@ -102,6 +109,64 @@ owner asked for the app to be run without the model up.
   - The three alt texts describe the new captures.
   - The caption about simpler-red is gone.
 - The four PNGs carry no text chunks: IHDR, IDAT and IEND only.
+
+**The page cut and the family strip: the fourth public commit** (2026-09-28, a child of
+`9f95bd2`, same author). The owner said the site needed fixing. They chose to cut the landing
+page to simpler.red's length, and to link every sibling site from every other.
+- **Length.** The landing page's visible text went from 7,538 words (live, from `9f95bd2`) to
+  2,661. simpler.red's is 2,007. All three were counted as `document.body.innerText` in
+  headless Chrome at 1440 px.
+- **Nothing was dropped; it moved.**
+  - To `it.html`, in a new section `#files` ("What files it reads, and what the .docx check
+    cannot see"):
+    - the moral paragraph and the whole "What files does it read?" answer, word for word. The
+      one change is "listed in the questions below" becoming "listed below". The answer is
+      split into paragraphs at its own "First", "Second", "Third" and "Fourth".
+    - the two Source-audit sentences: the four namespace hosts, and the one https:// address.
+  - To `research.html`:
+    - where FREEZE.md's claims table and the site differ (§1);
+    - why the firm-filings run is not a receipt against the freeze (§4);
+    - what stays readable and the 245 of 503 (§5).
+    - §6 is now `#repro`, and the landing page's "Reproduce it yourself" links to it.
+  - The landing page keeps a short version of each, and a link to where the whole text is.
+- **`tools/site-claims.mjs`.**
+  - Every law moved with its sentence. The laws on the FAQ answer and the moral paragraph now
+    read `it.html#files`, where the section after it ("Audit artifacts your users get") closes
+    the answer.
+  - A sentence that must never appear is looked for on both pages, and each control edits the
+    page the sentence is on.
+  - The llama.cpp law's control puts its sentence back beside the work-machine note's
+    loopback line.
+  - 43 of 43 laws pass, and every control fails.
+- **The family strip** ("Made by the same people") sits under the questions. It is the output
+  of `simpler-capital/scripts/stamp-family.mjs --self legal`, between its `family:start` and
+  `family:end` markers.
+  - It has seven cards in `family.json` order: host, asia, run, house, tax, red, capital.
+  - The page's line in `family.json` is also the first sentence of the hero, the meta
+    description and `og:description`: "Swap the names in a legal document for tags, check
+    them, then hand it to any AI."
+  - One edit to the stamp's output: the stamp gives Asia's mark Host's clip id
+    (`fam-host-t`), so the id appeared twice. Asia's is `fam-asia-t` here.
+  - The card CSS is the stamp's `--css` output, unchanged. Around it, a few rules map the
+    page's tokens onto the names the cards read, and let a lone seventh card span the row.
+- **Two layout fixes** found in the same pass:
+  - The download notes are two columns, so the fourth no longer sits alone.
+  - At phone width, `it.html`'s fact tables ran 20 px past a 390 px screen, live too. The label
+    now sits above its answer below 560 px.
+- **Checked** at 390, 860 and 1440 px on all three pages:
+  - no page scrolls sideways;
+  - no same-site `#` link points at a missing id;
+  - no page error.
+  - The landing page and the new `it.html` section were looked at in both colour schemes.
+- **Before the push:**
+  - `publish-check` printed nothing for all 11 checks.
+  - The traceability scan ran over a `git archive` of the commit, 1,650 files. It found 0
+    hits for the username, surname, given name and machine name, and none in the commit's
+    author, committer or message.
+  - The private-domain needle matched twice, both in `site/index.html`, both on the family
+    card for the sibling site Simpler.Host: its link and its name. simpler.red and
+    simpler.capital already link that site publicly, and the site names no person. The card
+    is kept.
 
 ---
 
@@ -974,7 +1039,8 @@ states each of these gaps instead of hiding it.
 
 *2026-09-27: the publication closed 3.1, 3.2, 3.3, 3.4 and 3.6 ("Published", at the top).
 For 3.3: the site's 32 GitHub `href`s, 15 distinct, all answered 200 when followed with no
-login. The rows below are as they were written, except 3.8, which is amended and then closed.*
+login. The rows below are as they were written, except 3.8, which is amended and then closed,
+and 3.5, which is closed.*
 
 | # | Destination | Status |
 |---|---|---|
@@ -982,7 +1048,7 @@ login. The rows below are as they were written, except 3.8, which is amended and
 | 3.2 | `github.com/Simpler-Systems/simpler-legal` | **OPEN until the push** — the owner's GitHub account is Simpler-Systems (renamed; the old account name is not used, and links under it are not published). The repository is created from `../simpler-legal-public` at the push. `git remote -v` here prints nothing, by design: this repository is never pushed. |
 | 3.3 | Every GitHub link on the site | **OPEN** — 20 `href`s (17 in `site/index.html`, 3 in `site/it.html`), all dead, including every "verify it yourself" link. The app itself now carries 0 (grep over `app/frontend/src` and `public/*.html`). Publishing the repository will not revive most of them: 12 of the 17 in `site/index.html` point at `/blob/main/…`, and `git branch -a` lists only `master` (2026-09-24). Owner ruling 14: the repository is published on `main`, the 12 `href`s stay, and renaming `master` to `main` is the owner's step at push time. Re-counted 2026-09-24: 17 GitHub `href`s in `site/index.html`, 12 of them `/blob/main/`, 3 in `site/it.html`, 0 in `site/research.html`. |
 | 3.4 | Download section | **PARTIAL — owner step** — the Windows card now links `github.com/Simpler-Systems/simpler-legal/releases/latest` and says "v0.1.0, Windows, unsigned: Windows SmartScreen will warn" (`site/index.html`, `#download`); `site/it.html` links the same address with the same words (`site-claims` law "download"), and `README.md` links it too. No release exists yet: the link works only once the repository is public and the owner has published v0.1.0 there (owner ruling 28). |
-| 3.5 | `dl.simpler.legal` model mirror | **OPEN** — the name now answers **525**, like the apex, and serves nothing. A mirror also waits on §5. |
+| 3.5 | `dl.simpler.legal` model mirror | **OPEN** — the name now answers **525**, like the apex, and serves nothing. A mirror also waits on §5. *Closed 2026-09-27:* owner ruling 28 already left no mirror to build. The installer is offered only on GitHub Releases and the model only at Google's Hugging Face address, and `site-claims` fails any page that names `dl.simpler.legal`. The 525 came from the registrar's wildcard record, which is deleted, so the name no longer resolves ("Published", at the top). |
 | 3.6 | Security disclosure channel | **PARTIAL — owner step** — `SECURITY.md` (2026-09-25) sends reports through GitHub private vulnerability reporting, `github.com/Simpler-Systems/simpler-legal/security/advisories/new`, and publishes one e-mail address, `support@simpler.asia`, for a reporter who cannot use GitHub (owner ruling 30 as amended; `site-claims` law "security reports", which fails on any other address, on that address inside a longer domain and on a `mailto:` link). That address works only once the repository is public and private vulnerability reporting is switched on in its settings. |
 | 3.7 | Any contact address at all | **OPEN** — `mailto:`, `<form>` and `<input>` each count 0 on all three pages. |
 | 3.8 | Screenshots and OG card | **OPEN** — `site/assets/react-app-*.png` and `og-card.png` are still the files of 2026-07-22/23: simpler-red captures, with the card reading "Simpler Redact". The alt text now says "the sibling app simpler-red, not of Simpler Legal", and the source comment above them still says `DO NOT LAUNCH BEFORE THESE ARE RETAKEN`. Every share of the link renders another product's wordmark. *Amended 2026-09-27:* still **OPEN** for the three screenshots, which the page labels as simpler-red captures. The site launched without a card: `og-card.png` is deleted, the page has no `og:image` or `twitter:image`, `twitter:card` is `summary`, and both `DO NOT LAUNCH` comments are gone. A shared link renders no image. *Closed later on 2026-09-27:* the three screenshots and the card are Simpler Legal's own, taken without a model ("Published", at the top, "The images"). |

@@ -51,6 +51,8 @@
   section h2{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:-.01em;margin-bottom:10px}
   section p, section li{color:var(--sec);font-size:14px;line-height:1.65;max-width:74ch}
   section p b, section li b{color:var(--ink)}
+  section h3{font-size:15.5px;font-weight:600;color:var(--ink);margin:22px 0 8px}
+  section p + p{margin-top:10px}
   section ul{margin:8px 0 0 20px}
   section li{margin-bottom:8px}
 
@@ -59,6 +61,10 @@
   .facts td{border-bottom:1px solid var(--hair);padding:11px 15px;vertical-align:top;color:var(--sec);line-height:1.6}
   .facts tr:last-child td{border-bottom:none}
   .facts td:first-child{width:215px;font-weight:600;color:var(--ink);border-right:1px solid var(--hair)}
+  /* on a phone the 215px label column left the answer too narrow for its code, and the table
+     ran 20px past the screen: the label sits above its answer instead */
+  @media (max-width:560px){.facts td{display:block}.facts td:first-child{width:auto;border-right:none;border-bottom:none;padding-bottom:0}
+    .facts code{overflow-wrap:anywhere}}
   .ok{color:var(--go);font-weight:600}
 
   footer{border-top:1px solid var(--hair);background:var(--chrome);margin-top:56px;padding:22px 0 40px;color:var(--mut);font-size:12.5px}
@@ -503,7 +509,18 @@
         <code>app/src-tauri/src/engine.rs</code>, which reaches <code>127.0.0.1:1436</code> and
         <code>127.0.0.1:49400</code> only. The pipeline's stages reach the model through the
         app's relay (<code>app/src-tauri/src/relay.rs</code>). There is no model download to
-        audit.</li>
+        audit. The other
+        <code>http://</code> strings in the app's source code (<code>app/frontend/src</code>,
+        <code>app/src-tauri/src</code>) name four hosts, schemas.openxmlformats.org,
+        schemas.microsoft.com, purl.org and www.w3.org: they are the addresses of the XML
+        namespaces Word and Office files use, which the .docx writer and its check recognise, and
+        examples of such addresses in the text of the .docx receipt. None of them is requested.
+        Outside comments, the app's source code in those two folders holds one
+        <code>https://</code> address: Google's address for the model file, which the Setup and
+        Settings screens show as text for you to copy. The app
+        never requests it.</li>
+      <!-- The two sentences above stood on the landing page's "Read the code" until 2026-09-28;
+           tools/site-claims.mjs holds them here now (the http hosts law, READ_HTTPS). -->
       <li><b>Artifact audit:</b> the installer is unsigned, so take its SHA-256 yourself from the
         copy you reviewed, check it against the one published beside the release (its
         <code>.sha256</code> file) and in <code>README.md</code>, and allowlist that hash. The
@@ -513,6 +530,146 @@
         re-fetch from public sources, and one court's gold is withheld. The measurement record is
         at <a href="research.html">simpler.legal/research</a>.</li>
     </ul>
+  </section>
+
+  <section id="files">
+    <h2>What files it reads, and what the .docx check cannot see</h2>
+    <!-- Moved here verbatim from the landing page on 2026-09-28, when the owner had the landing
+         page cut to simpler.red's length; the landing page keeps one sentence and links here.
+         tools/site-claims.mjs reads this section (faqOf, moralOf) and fails when a sentence
+         and the code part. The two comments below travelled with their text. -->
+    <!-- "Every identifying detail is deleted" was the same absolute the meta description carried
+         (fixed 2026-09-23, see the head). This paragraph is about the MECHANISM — deletion, not
+         ink — so it says what happens to what the engine redacts, and leaves coverage to the
+         evidence section, which publishes it: DIRECT 0/184, QUASI 245 of 503 spans readable.
+         The tag sentence used to say "the same person becomes the same tag everywhere".
+         buildTable (lib-core/anonymize.mjs) keys each tag on the lowercased surface string,
+         and on the post-freeze showcase document the defined term for the executive and its
+         possessive carry two different [Person] tags (raw/stripped/pureoos-FINAL).
+         "Every copy of the same spelling gets the same tag" was cut 2026-09-23: the frozen chain
+         also writes a bare, unnumbered [Person] (apply-v2.mjs, lib-legal/legal-rails.mjs), which
+         the app passes through unchanged (engine.ts mapLegalOutcome takes the service's final
+         text and row tags as they are). Aligned with lib-legal/regions.mjs alignTags over the
+         71 frozen-era FINAL outputs (raw/stripped/{pureoos,r5-edgar,r6-edgar,r7-edgar,
+         r7-courts}-FINAL; raw/ is not in the repository): a bare [Person] stands for two or
+         more different spellings in 15 of the 25 court judgments and in none of the 46
+         agreements; one exact spelling carries two different tags in 9 of the 71 (8 of them a
+         company tag in one place and a person tag in another).
+         The .docx check: every author bookmark is renamed bm1 … whatever it is called
+         (docxWrite.ts, the comment above WORD_BOOKMARK). What still ships under a passing check,
+         and what now masks or holds, is cited above the files FAQ and driven through the real
+         writer by tools/site-claims.mjs, which fails when a sentence here and the writer part.
+         The run-together, box/bar equation and namespace/element-name cases this paragraph
+         named on 2026-09-23 are closed (docx-parts laws 45, 46, 49). The plain-word and
+         McDonald sentences are refFind 'text' in docxWrite.ts (textHolds, owner ruling 8: never
+         inside a plain word of letters, found where a capital starts it), which engine.ts uses
+         for the text export too; the percent-escape sentence came off when pctRuns (ruling 10)
+         masked it in both exports. -->
+    <p>Simpler Legal never draws boxes over your document. Everything it redacts is
+    <b>deleted from the text and substituted with a placeholder</b>, and a text export is a new file
+    rebuilt from the cleaned text. A .docx export is not: it rewrites your original Word package,
+    so its safety rests on a check rather than on impossibility — the finished file is walked
+    again, and if the check finds a name the engine found or a term from your always-redact
+    list still in it, the export is held back. The check has blind spots, listed below. A name the engine never
+    found, in the body or in the headers, footers and notes it reads apart from the body, is in
+    no table, so the check cannot catch it unless the name is on your always-redact list. A name run into a
+    plain word of letters where nothing marks both its ends is a second:
+    <code>kestrelholdings</code> where the list says Kestrel, or <code>tanholdings</code> where
+    the table says Tan, is not masked in the text export or in the .docx, and the check passes.
+    So is a name typed with its letters spaced apart. Word's hidden places are a third: a
+    name split between separate parts of an equation, such as a fraction's top and bottom,
+    ships, and the check passes. Tags follow spellings, not people: a different form of the same person's name, such
+    as a surname alone or a possessive, can get a tag of its own, so the AI you hand the
+    document to may read one person as two. The reverse happens too. Some names are replaced
+    by a bare, unnumbered <code>[Person]</code> that does not tell people apart: on the
+    benchmark's 25 court judgments, one <code>[Person]</code> stood for two or more
+    differently spelled names in 15 (in none of its 46 agreements). And one spelling can carry
+    two tags: in 9 of those 71 documents a name was tagged as a company in one place and a
+    person in another, or as two different people. A table row can also reach into a different,
+    longer name: with Donald in the table, McDonald becomes <code>Mc[Person1]</code>, and the
+    two read as one. Across separate documents of one matter the
+    tags are not coordinated either: the same person can carry a different tag in each file.
+    The map from tags back to names is a
+    separate file that never exports with the document unless you explicitly say so.</p>
+    <h3>What files does it read?</h3>
+    <!-- The .docx answer is docxWrite.ts, docx.ts and engine.ts as they stand on 2026-09-24,
+         each case driven through the real engine, walker and writer (table row "Margaret
+         Tan", always-redact list Kestrel and Harrow Leung, US practice unless named) by
+         tools/site-claims.mjs, which exits 1 when a sentence below and the code part. What the
+         check reads is Export.tsx docxScope ("every part, each part's name, the text between
+         its tags, every attribute value, the names of its elements and attributes, and the
+         namespaces it declares or lists"). The receipt carries docxScope whole, and docxScope
+         now names the equation, the letters spaced apart, the plain word of letters, the
+         longer name, Office's namespace names and a number under Office's prefixes, so this
+         answer says so (site-claims reads docxScope for each and turns red when one goes).
+         The element and attribute names are read in every part except, in Word's own parts, a
+         name under an Office namespace or an unprefixed attribute on a non-w: Office element
+         (nsOfName; an unprefixed attribute on a w: element is read, W3-7).
+         Closed this round, each measured masked or held: a name run together in any part of
+         the text a reader sees (docx-parts law 46; engine.ts places the same reading in the
+         text export); an equation split across a box, border box, bar, accent, group
+         character or bracket-less delimiter (law 45); a namespace declaration, a compatibility
+         list and an element or attribute name (law 49); "margaretTan" in an add-in attribute;
+         "<?mso-…?>" (removed, law 50); a Social Security number, telephone number or e-mail
+         address in a chart's currency section (law 48); a telephone number in an unknown part
+         (held, law 47, owner ruling 2); an element name or "[$Jonas Whitfield] 0" in an
+         unknown part (held); a look-alike part name such as word/stylesX.xml (now listed under
+         Warnings: docx.ts STRUCTURAL_RE is anchored).
+         Closed on 2026-09-24: a percent-escaped name (a space, an apostrophe, an accented
+         letter, a Chinese name, a listed term) is masked in both exports and holds in a
+         namespace declaration (pctRuns, owner ruling 10); a telephone number in an add-in's
+         attribute or element holds (attrNet/elemNet, ruling 11); an unprefixed attribute on a
+         w: element and the XML declaration's encoding hold. Over-masking closed by ruling 8:
+         "Margaret Tang", "Wong Wei Ming", "reporter" are kept (site-claims holds each).
+         Still shipping, measured: a name run into a plain word of letters with no break at its
+         end, at any length ("kestrelholdings" for the listed term Kestrel, "margarettanfile"
+         for row Margaret Tan, "tanholdings" for row Tan, "LIWUCORP" for row Li Wu), and under
+         RUN_FLOOR (6) inside an address ("tanholdings.com"); a row of digits grouped with a
+         comma (DIGIT_SEP); a name with its letters spaced apart (both exports); a name across
+         a fraction, a base and its script, or matrix cells (docx.ts MATH_APART, kept apart on
+         purpose); a lower-case name under six characters in an add-in attribute of a known
+         part ("lee" for row Lee, D13R-2); element and attribute names under Office's
+         namespaces in a known part (Word writes none, so the page names the class, not the
+         form); a telephone number in w:tel or unprefixed on v:shape (nsOfName counts both as
+         Office's; docxScope says so). Over-masking now: row Donald in "McDonald" ->
+         "Mc[Person1]" (a capital is a break), row Law in "the Laws Committee" -> "the
+         [Person1]s Committee" (the plural ending), in the .docx and the text export alike.
+         Unknown parts: the writer's note (docxWrite.ts, "is a part this writer does not know")
+         is printed word for word on the save line and the receipt (Export.tsx); of a name not
+         in the table, "whitfield" or "jonasWhitfield" as an attribute value (a small-letter
+         word after purl.org or www.w3.org in an attribute too), "whitfield2291" between tags,
+         <acme:whitfield/>, acme:whitfield="1", a prefix "whitfield:", the part's own file
+         name, <w:JonasWhitfield/> and a namespace address "urn:matters:Jonas Whitfield" are
+         kept, while the same name between tags, "jonasWhitfield" between tags,
+         <acme:Whitfield/> and a small-letter or capital word after the host between tags
+         hold (owner ruling 12).
+         Intake: detect.ts refusal reasons; its rule (the comment above the .eml refusal) is
+         that a user-facing "we catch it" line carries the exceptions, so the FAQ names ASCII85
+         (measured route=text) and the short or id-shaped base64 runs it lets through. pdf.ts
+         leaves out the one page that carries such a block; store.ts holds a PDF with no
+         readable page and writes "[page N is not included: this app could not read it]" for
+         every refused page.
+         Each blind spot the FAQ states is driven by a site-claims law against the writer and the
+         text export as they stand (owner rulings 8 to 19, D1, 2026-09-24 and 2026-09-25): the
+         digits a row is found across are DIGIT_SEP's, and each mark it does not list (a comma,
+         an underscore, a square bracket, a no-break space in " - ", a fraction slash, an
+         ideographic full stop, a white bullet) ships verified from both exports; a line break
+         inside an escape is read only in a link with a scheme or "www." and not where the next
+         line starts with "&gt;" (LINK_BROKEN); a direction or format mark inside a name ships
+         (REF_INVISIBLE reads through a zero-width space, joiner and soft hyphen only). The
+         receipt names each (Export.tsx docxScope; site-claims RECEIPT_NAMES). A clause comes
+         off when its law says the case closed. -->
+    <p>PDF, Word (.docx) and plain text. Scanned or image-only pages need OCR, which isn't included yet — we'd rather tell you that plainly than silently guess at a page. A PDF with no readable page is held; a scanned page inside an otherwise readable PDF is left out, and the copy carries a line in its place (<code>[page 7 is not included: this app could not read it]</code>). A saved email, or a file whose text carries an email's headers or encoded content such as a base64 attachment, is held before the engine reads it, because the app cannot read what is encoded and so cannot mask it; the hold says how to get through (save the message body as text or PDF, and each attachment as its own file). In a PDF, only the page that carries such a block is left out, marked the same way, and the other pages are read. Not every encoding is caught: ASCII85, for one, goes through unread, and so does a base64 run short enough, or shaped enough like a column of ids, to pass for one. A file is held when a run of characters written as % and two hexadecimal digits spells two or more plain Latin letters or digits, or, outside a web link or a file path, two or more letters of another script such as Chinese; an escaped space or punctuation mark, an escaped accented letter, and escaped letters of another script inside a link or a path go through on one line, except in a file name with a bare comma or semicolon in it, which is held, and a name written that way is masked in both exports, the escapes with it (see below); printed across rows, such a link can still be held.</p>
+    <p>A text export is a new file rebuilt from the redacted text — never your original with boxes drawn on it. A .docx export is different: it rewrites your original Word package, and its safety rests on a check rather than on impossibility. The finished file is read again: every part and the part's name, its text, every attribute value, the names of its elements and attributes (in the parts Word writes, not a name under one of Office's own namespaces), and the namespaces it declares or lists. It is held back if the check finds a name from the review table or a term from your always-redact list still in it, with its words apart or run together, or something the safety-net pattern masks. The check has blind spots, stated plainly here. The receipt states what the check reads and what it does not, and names the blind spots below that concern the check itself: a name split between the parts of an equation; a name with its letters spaced apart or each in brackets, with a hyphen, a line break or an invisible direction or format mark inside one of its words, broken across the lines of a quoted reply, or with a letter written as a symbol in the Symbol font; a name run into a plain word of letters; a name under six letters inside an address or in a value in the file's code; a row masked inside a longer name; a row of digits alone under six digits inside a longer number or value, or grouped other than by the marks it lists; a character reference without its semicolon (other than <code>&amp;nbsp</code> and one by number), one HTML does not define, or one escaped again; a name under one of Office's own namespaces; and a number under one of Office's own prefixes or in a drawing's position, size or share of the page.</p>
+    <p>First, the engine reads the main body, and then, in a request of its own, the text the saved .docx carries outside it: headers (with any watermark), footers, footnotes, endnotes, chart and SmartArt text. A name it finds only there is masked wherever the saved .docx carries it, and the Review screen lists it; the copied text and the .txt are the body alone. If the body was read and that text was not, or its read could not be used, the .docx is held and says why. A name the engine did not find anywhere, and that is not on your always-redact list, is not masked anywhere in the file, and the check passes.</p>
+    <p>Second, a name or listed term run together with other words (<code>KestrelCapital</code> or <code>kestrelcapital.com</code> where the list says Kestrel, <code>MargaretTan</code> where the table says Margaret Tan) is masked in the text a reader sees, in the text export too, and holds the export wherever else the check finds it. In the text a reader sees, a name is found inside a longer word only where a break marks both its ends — a space or punctuation mark, letters meeting digits, a capital after a small letter — or before a plural ending when it is written with its capital (<code>the Smiths</code> where the table says Smith), or, from six letters and digits, inside a web or e-mail address, a path, a handle, a tag or a word with a digit in it (<code>www.kestrelcorp.com</code>, <code>@kestrelholdings</code> or <code>#kestrelholdings</code> where the list says Kestrel). Run into a plain word of letters where nothing marks both its ends, a name of any length ships, in the text export as well, and the check passes (<code>kestrelholdings</code> where the list says Kestrel, <code>margarettanfile</code> where the table says Margaret Tan, <code>tanholdings</code> or <code>Tanholdings</code> where it says Tan, <code>LIWUCORP</code> where it says Li Wu), and so does a name under six letters inside an address (<code>tanholdings.com</code>).</p>
+    <p>A row of digits alone, such as an account or matter number you add to the table, is found from six digits wherever they stand together, inside a longer number or a reference too (an IBAN that ends in it), and in the text a reader sees also across one mark that groups them: a space of any kind or a tab, a full stop, a middle dot or the bullet (•), a slash, a hyphen, a dash or the minus sign, a hyphen with a plain space either side (<code>3192 - 6819</code>), or a round closing bracket and one plain space after the first group, as <code>(3192) 6819</code> is written; grouped any other way — with a comma (<code>3192,6819</code>), an underscore, a colon, two spaces, a line break, an en or em dash or a slash with a space either side (<code>3192 – 6819</code>, as a range is written), a square bracket (<code>[3192] 6819</code>), a no-break space beside a bracket or a hyphen, or a mark that only looks like one of those (a fraction slash, an ideographic or small full stop, a swung dash, a heavy minus sign, a white, black or triangular bullet: <code>3192⁄6819</code>, <code>3192。6819</code>, <code>3192◦6819</code>) — it ships from both exports, and the check passes. A row of fewer than six digits, such as a five-digit matter number, is masked where it stands alone in the text, and holds the export where it is the whole of a value in the file's code that the check reads (in an add-in's attribute, in a part this app does not know, or between the tags of an element under one of Office's own namespaces); it is not looked for inside a longer number or value (<code>9944179</code>, or <code>Matter 44179</code> as one value, where the table says 44179), in an attribute under one of Office's own prefixes (<code>w:tel</code>) or with no prefix on a drawn shape, or in a drawing's position, size or share of the page: there it ships, and the check passes.</p>
+    <p>A name written with percent-escapes, as a web link writes a space (<code>Margaret%20Tan</code>), an apostrophe, an accented letter (<code>M%C3%BCller</code> for Müller) or a Chinese name, or with a character reference typed out, with its semicolon or, for <code>&amp;nbsp</code> and a reference by number, without it (<code>Margaret&amp;nbsp;Tan</code>, <code>Margaret&amp;nbspTan</code>, <code>Margaret&amp;#160Tan</code>), is read as the characters it writes: it is masked in both exports, the escapes with it, and holds the export in the file's code. An escape that writes no character where a name could stand (<code>Ren%E9%20Tan</code> where the table says René Tan) holds both exports. Written as a mail gateway rewrites a link (Proofpoint's <code>Ren*E9*20Tan</code> or <code>Ren-E9-20Tan</code>), the same escape holds both exports too. A line break that a mail program's wrap put inside an escape, or inside a mail gateway's wrapping of a link, is read across where the link starts with a scheme (<code>https://</code>) or <code>www.</code>, and the name is masked; in a link that starts with neither, or where the line after the break starts with a quote mark (<code>&gt;</code>), as each line of a quoted reply does, a name broken that way ships from both exports, and so does a name with a line break inside its own letters (<code>Marg</code> and <code>aret Tan</code> on two lines), in a link or in prose.</p>
+    <p>The same rule can mask too much. A row is found in a longer name where a capital marks where it starts: with Donald in the table, McDonald becomes <code>Mc[Person1]</code>. And a row is found before a plural ending on a word written with its capital: with Law in the table, the Laws Committee becomes <code>the [Person1]s Committee</code>. And inside a tag, as inside an address or a handle, a row of six letters or more is found wherever it stands: with Porter in the table, <code>#supporters</code> becomes <code>#sup[Person1]s</code>. All three happen in the text export too, and the AI you hand the copy to may read someone else, or something else, as the person in your table. A name that ends in a short designator is found with the designator written out, and the whole word is masked with it: with Hickson Corp in the table, Hickson Corporation becomes <code>[Company1]</code>, in the text export too.</p>
+    <p>Third, a Word file keeps names you never see on the page. The app gives every bookmark the author made a neutral name (<code>bm1</code>, <code>bm2</code> and so on; the ones Word makes itself, for a table of contents or a cross-reference, keep theirs), does the same for every list and caption label the author named, and renames styles and fonts that carry a masked name. Internal links, page-number and footnote-number references and the table of contents follow the renamed bookmark and keep working, except that a table of contents whose entries are written as link fields keeps its page numbers but its entries stop being links; a cross-reference that shows a clause's number or text (Word's REF field), and a link written as a field code, become plain text and no longer update, and the save line and the receipt say so.</p>
+    <p>Measured on 2026-09-24, a name still ships, and the check passes, when its letters are spaced apart in the text or each written in brackets (<code>M a r g a r e t T a n</code>, <code>⒨⒜⒭⒢⒜⒭⒠⒯ ⒯⒜⒩</code>), in the text export too; when a hyphen stands inside one of its words (<code>Marga-ret Tan</code>, as text copied from a PDF keeps a line's break), in the text export too; when an invisible mark that sets the direction or format of text stands inside one of its words (a left-to-right mark, as text pasted from a right-to-left document can carry), in the text export too; when it is written with a character reference that has lost its semicolon, other than <code>&amp;nbsp</code> or one by number, that HTML does not define, or that was escaped again (<code>Ren&amp;eacute Tan</code>, <code>Margaret&amp;NBSP;Tan</code>, <code>Ren&amp;amp;eacute; Tan</code>), in the text export too; when a letter of it is written as a symbol in the Symbol font, which Word draws as the Greek capital shaped like the Latin one (the A of <code>Margaret TΑn</code>), in the .docx; when it is split between separate parts of an equation, such as a fraction's top and bottom, a base and its superscript, or two cells of a matrix; when it is shorter than six letters and a program wrote it in lower case as a value in the code of one of Word's own parts (<code>lee</code> where the table says Lee); and when a program other than Word wrote it into one of the few places in the file's code that Word fills only with its own words.</p>
+    <p>A telephone or other number that the safety-net pattern masks in the text holds the export when an add-in wrote it into an attribute or an element of its own in one of Word's own parts, or when it is written as digits alone between the tags of an element under one of Office's own namespaces (<code>&lt;w14:tel&gt;2125550147&lt;/w14:tel&gt;</code>), but is not found when a program wrote it into an attribute under one of Office's own prefixes (<code>w:tel</code>), into an attribute with no prefix on a drawn shape, or into a drawing's position, size or share of the page (<code>&lt;wp:posOffset&gt;</code>).</p>
+    <p>Fourth, a part of the file this app does not know, such as an add-in's, is kept only when what it holds reads as code — numbers, dates, ids, single code words, names Word looks up; anything typed in it, or a number the safety-net pattern would mask, holds the export. What is kept is read by the check for your table's names (a row of digits alone under six digits only where it is the whole of a value) and by the safety-net pattern, but a name that is not in your table is kept as written where it stands as a program writes code: in small letters, or starting with one and run together (<code>whitfield</code>, <code>jonasWhitfield</code>), as an attribute's value, and so at the end of a web address on a host Office's own addresses use (purl.org, www.w3.org) in an attribute; run together with digits between its tags (<code>whitfield2291</code>); in small letters, or so run together, as the name of an element, an attribute or a prefix; as the part's own file name; whatever it says, as the name of an element under one of Office's own namespaces; and, whatever it says, in the address of a namespace the part declares (<code>urn:matters:Jonas Whitfield</code>). When the export keeps such a part, the save line and the receipt carry the writer's note naming it, and the Review screen lists it under Warnings (“Unrecognized part not scanned”). If a part is named there, delete the object it belongs to or copy the document's text into a new blank document, and drop that copy instead.</p>
   </section>
 
   <section id="artifacts">

@@ -1375,6 +1375,15 @@ No workflow ran. Every step was a command in the main session, and each finished
 2. **The domain answered 525.** `simpler.legal` and `www` are proxied DNS records to the
    registrar's parking host. The deploy left DNS alone: a Worker route answers at the edge
    before any origin fetch. `dl.simpler.legal` is not routed, and still answers 525.
+   - Later the same day: `dl` had no record. The registrar's default wildcard
+     `*.simpler.legal`, a proxied CNAME to the parking host, gave every subdomain the 525.
+   - The wildcard was deleted through the API on the owner's word. The auto-mode permission
+     check first refused the DNS change, and the owner then said to do it.
+   - The first DELETE went to `zones/undefined`, because the record saved for a restore
+     carries no zone ID. It answered error 7003 and changed nothing. The zone was then looked
+     up by name, and the second DELETE succeeded.
+   - Cloudflare's and Google's resolvers answer NXDOMAIN for `dl`, and the apex and `www` still
+     serve the site. The record's JSON is kept in `scratchpad/wf15/wildcard-before.json`.
 3. **A browser check that reached another computer.** The Chrome extension pairs with a browser
    signed into the session's Claude account. This machine's browser was signed into a
    different one, so the extension was driving a browser on another computer. A local test
@@ -1401,3 +1410,24 @@ No workflow ran. Every step was a command in the main session, and each finished
    - The first capture through the Chrome extension came back blank, because the tab it drove
      was not visible (`document.visibilityState` "hidden"). The captures went through a
      separate headless Chrome instead, which also fixes the pixel size.
+
+## 2026-09-28 — the page cut and the family strip: a shell that ate a backslash again, a stamp that gave two marks one id, and a word count that was a third of the truth
+
+1. **The backslashes, again.** A script that re-points the site-claims laws was written through
+   a shell here-document. The shell turned `\\?` into `\?` inside a JavaScript string, so the
+   pattern it looked for read `read?(`, which is not in the file. The script's own guard (each
+   replacement must match exactly once) stopped it at 0 matches, and nothing was written. It
+   is the class of the 2026-09-12 entry. The script was written again through the file tool,
+   with `String.raw`, and matched once each. The first draft of this entry, appended through a
+   here-document, lost the same backslash in the sentence above.
+2. **The family stamp gives two marks one id.** `simpler-capital/scripts/stamp-family.mjs
+   --self legal` draws Asia's mark with Host's clip id, `fam-host-t`, so the page carried the id
+   twice. Both clips are the same rectangle, so nothing looked wrong. A check for duplicate ids
+   in the splice script caught it. This page renames Asia's to `fam-asia-t`. The generator is
+   simpler-capital's and was not changed here. simpler.tax's page had already renamed it the
+   same way.
+3. **A word count a third of the truth.** A headless-Chrome counter written earlier in the
+   session gave the cut page 741 words. Printing `document.body.innerText` and counting it gave
+   2,661. Counting the page's HTML source with comments, scripts, styles, the head and SVGs taken
+   out gave 2,664. The cause of the low count was not found. The counts of record in `LAUNCH.md`
+   are the innerText counts, taken the same way for this page, the live page and simpler.red.

@@ -809,8 +809,10 @@ async function main() {
   // comments; PRIVACY.md as plain words (its backticks dropped)
   const HTML = { idx: read('site', 'index.html'), it: read('site', 'it.html'), res: read('site', 'research.html') };
   const PAGES = { idx: visible(HTML.idx), it: visible(HTML.it), res: visible(HTML.res), idxH: HTML.idx, itH: HTML.it, resH: HTML.res, privacy: PRIVACY.replace(/`/g, '').replace(/\s+/g, ' '), readme: README.replace(/`/g, '').replace(/\s+/g, ' ') };
-  const faqOf = (idx) => (idx.match(/What files does it read\?(.*?)What does it cost\?/) ?? ['', ''])[1];
-  const moralOf = (idx) => (idx.match(/Simpler Legal never draws boxes over your document\.(.*?)explicitly say so\./) ?? ['', ''])[1];
+  // 2026-09-28: the whole answer and the moral paragraph moved to it.html#files, which the
+  // section after it ("Audit artifacts your users get") closes; the index keeps a short answer
+  const faqOf = (it) => (it.match(/What files does it read\?(.*?)Audit artifacts your users get/) ?? ['', ''])[1];
+  const moralOf = (it) => (it.match(/Simpler Legal never draws boxes over your document\.(.*?)explicitly say so\./) ?? ['', ''])[1];
   const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
   const SIX = words[F.floor] ?? String(F.floor);
 
@@ -973,105 +975,105 @@ async function main() {
 
   const LAWS = [
     ['what the .docx check reads: every part, its name, text, attribute values, element and attribute names, namespaces', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'reads, with the parts Word writes qualified', F.reads && F.readsSafetyNet && F.officeNamesUnread, has(faq, READS) && has(faq, 'or something the safety-net pattern masks.'));
       never(b, 'reads every element and attribute name, unqualified', F.officeNamesUnread, has(faq, READS_UNQUALIFIED));
-      never(b, 'round-4 "not read" sentence', F.reads, /The names of its elements and attributes are not read|other than a namespace declaration or a compatibility list/.test(V.idx));
+      never(b, 'round-4 "not read" sentence', F.reads, /The names of its elements and attributes are not read|other than a namespace declaration or a compatibility list/.test(V.idx + V.it));
       return b;
-    }, [['sentence dropped', drop('idx', READS)], ['round-4 sentence put back', putBack('idx', READS, ' The names of its elements and attributes are not read.')],
-      ['qualifier dropped', swap('idx', ' (in the parts Word writes, not a name under one of Office\'s own namespaces)', '')]]],
+    }, [['sentence dropped', drop('it', READS)], ['round-4 sentence put back', putBack('it', READS, ' The names of its elements and attributes are not read.')],
+      ['qualifier dropped', swap('it', ' (in the parts Word writes, not a name under one of Office\'s own namespaces)', '')]]],
     ['a name run together is masked in text a reader sees and holds elsewhere', (V) => {
       const b = [];
-      says(b, 'run-together', F.runMasked && F.runHeldInCode, has(faqOf(V.idx), RUN));
-      never(b, 'round-4 run-together blind spot', F.runMasked, /is not masked anywhere in the text a reader sees|run into another word \(KestrelCapital where the list says Kestrel\) is a second/.test(V.idx));
+      says(b, 'run-together', F.runMasked && F.runHeldInCode, has(faqOf(V.it), RUN));
+      never(b, 'round-4 run-together blind spot', F.runMasked, /is not masked anywhere in the text a reader sees|run into another word \(KestrelCapital where the list says Kestrel\) is a second/.test(V.idx + V.it));
       return b;
-    }, [['sentence dropped', drop('idx', RUN)], ['round-4 moral sentence put back', putBack('idx', 'unless the name is on your always-redact list.', ' A name or listed term run into another word (KestrelCapital where the list says Kestrel) is a second: it is not masked in the text or in the .docx, and the check passes.')]]],
+    }, [['sentence dropped', drop('it', RUN)], ['round-4 moral sentence put back', putBack('it', 'unless the name is on your always-redact list.', ' A name or listed term run into another word (KestrelCapital where the list says Kestrel) is a second: it is not masked in the text or in the .docx, and the check passes.')]]],
     [`in text a reader sees: found at breaks, before a plural, and from ${F.floor} inside an address; a plain word of letters ships`, (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'where a name is found in text', F.breaksFound, has(faq, BREAKS));
       says(b, 'plain word ships in the FAQ', F.plainShips, has(faq, FLOOR));
-      says(b, 'plain word ships in the moral paragraph', F.plainShips, has(moralOf(V.idx), FLOOR_MORAL));
-      never(b, 'the round-6 floor that said a name of six or more was found inside any word', F.plainShips, FLOOR_OLD.test(V.idx));
+      says(b, 'plain word ships in the moral paragraph', F.plainShips, has(moralOf(V.it), FLOOR_MORAL));
+      never(b, 'the round-6 floor that said a name of six or more was found inside any word', F.plainShips, FLOOR_OLD.test(V.idx + V.it));
       if (!/export const RUN_FLOOR = \d+;/.test(WRITER)) b.push('RUN_FLOOR is no longer a plain constant in docxWrite.ts; re-read the floor sentences');
       return b;
-    }, [['FAQ plain-word sentence dropped', drop('idx', FLOOR)], ['moral sentence dropped', drop('idx', FLOOR_MORAL)], ['break sentence dropped', drop('idx', BREAKS)],
-      ['the second pass\'s break sentence, no tag, put back', swap('idx', BREAKS, BREAKS_R8)],
-      ['a different floor stated', swap('idx', `from ${SIX} letters and digits, inside a web`, 'from four letters and digits, inside a web')],
-      ['round-6 floor put back', putBack('idx', FLOOR, ` Inside a longer word, unless a space or punctuation mark, a digit, or a capital after a small letter shows where the name ends as well as where it starts, a name is found only from ${SIX} letters and digits, so a shorter one ships.`)]]],
+    }, [['FAQ plain-word sentence dropped', drop('it', FLOOR)], ['moral sentence dropped', drop('it', FLOOR_MORAL)], ['break sentence dropped', drop('it', BREAKS)],
+      ['the second pass\'s break sentence, no tag, put back', swap('it', BREAKS, BREAKS_R8)],
+      ['a different floor stated', swap('it', `from ${SIX} letters and digits, inside a web`, 'from four letters and digits, inside a web')],
+      ['round-6 floor put back', putBack('it', FLOOR, ` Inside a longer word, unless a space or punctuation mark, a digit, or a capital after a small letter shows where the name ends as well as where it starts, a name is found only from ${SIX} letters and digits, so a shorter one ships.`)]]],
     ['a row reaches into a longer name where a capital starts it or a plural ends it (over-masking), in both exports', (V) => {
-      const b = [], faq = faqOf(V.idx);
-      says(b, 'McDonald', F.overMc, has(faq, MC) && has(moralOf(V.idx), MC_MORAL));
+      const b = [], faq = faqOf(V.it);
+      says(b, 'McDonald', F.overMc, has(faq, MC) && has(moralOf(V.it), MC_MORAL));
       says(b, 'the Laws Committee', F.overLaws, has(faq, LAWS_OVER));
       says(b, '#supporters', F.overHash, has(faq, HASH_OVER));
       says(b, 'text export too', F.overMc && F.overLaws && F.overHash, has(faq, OVER_TXT));
-      never(b, 'Tang, Wong and Porter, closed by ruling 8', F.tangGone && F.wongGone && F.porterGone, OVER_OLD.test(V.idx));
+      never(b, 'Tang, Wong and Porter, closed by ruling 8', F.tangGone && F.wongGone && F.porterGone, OVER_OLD.test(V.idx + V.it));
       if (C.tanner.body !== 'Margaret Tanner met [Person1].') b.push('probe: a name three letters longer than the row is masked now; the over-masking sentences need re-measuring');
       return b;
-    }, [['McDonald dropped from the moral paragraph', drop('idx', MC_MORAL)], ['McDonald dropped from the FAQ', drop('idx', MC)], ['Laws dropped', drop('idx', LAWS_OVER)],
-      ['#supporters dropped', drop('idx', HASH_OVER)],
-      ['Tang put back', putBack('idx', MC, ' With Margaret Tan in the table, Margaret Tang becomes [Person1]g.')], ['Porter put back', putBack('idx', LAWS_OVER, ' A row Porter turns reporter into re[Person1].')]]],
+    }, [['McDonald dropped from the moral paragraph', drop('it', MC_MORAL)], ['McDonald dropped from the FAQ', drop('it', MC)], ['Laws dropped', drop('it', LAWS_OVER)],
+      ['#supporters dropped', drop('it', HASH_OVER)],
+      ['Tang put back', putBack('it', MC, ' With Margaret Tan in the table, Margaret Tang becomes [Person1]g.')], ['Porter put back', putBack('it', LAWS_OVER, ' A row Porter turns reporter into re[Person1].')]]],
     [`a row of digits: found from ${F.floor} inside a longer number and across one listed separator; any other grouping ships; under ${F.floor}, only standing alone`, (V) => {
       const b = [];
-      says(b, 'digits', F.digitsFound && F.digitsCommaShips && F.digitsOtherShips && F.digitsWideFound && F.digitsLookShips, has(faqOf(V.idx), DIGITS_FAQ));
-      never(b, 'round 7\'s first-pass list, "a dot" and "a bullet" where look-alikes ship', F.digitsLookShips, has(V.idx, DIGITS_FAQ_R9));
-      never(b, 'round 7\'s "a drawing\'s position on the page", where its share of the page ships too', F.shortDigitsShips, has(V.idx, DIGITS_SHORT_R9));
-      says(b, 'under six digits: alone in text, whole in code', F.shortDigitsShips && F.shortDigitsWholeHeld, has(faqOf(V.idx), DIGITS_SHORT));
-      never(b, 'the first-pass "one space … or dash", comma only', F.digitsOtherShips, has(V.idx, DIGITS_R7));
-      never(b, 'the second pass\'s list, where an em dash, a minus sign and a tab ship', F.digitsWideFound, has(V.idx, DIGITS_R6));
-      never(b, 'the second pass\'s "under six, not looked for in an add-in\'s value"', F.shortDigitsWholeHeld, has(V.idx, DIGITS_SHORT_R8));
+      says(b, 'digits', F.digitsFound && F.digitsCommaShips && F.digitsOtherShips && F.digitsWideFound && F.digitsLookShips, has(faqOf(V.it), DIGITS_FAQ));
+      never(b, 'round 7\'s first-pass list, "a dot" and "a bullet" where look-alikes ship', F.digitsLookShips, has(V.idx + V.it, DIGITS_FAQ_R9));
+      never(b, 'round 7\'s "a drawing\'s position on the page", where its share of the page ships too', F.shortDigitsShips, has(V.idx + V.it, DIGITS_SHORT_R9));
+      says(b, 'under six digits: alone in text, whole in code', F.shortDigitsShips && F.shortDigitsWholeHeld, has(faqOf(V.it), DIGITS_SHORT));
+      never(b, 'the first-pass "one space … or dash", comma only', F.digitsOtherShips, has(V.idx + V.it, DIGITS_R7));
+      never(b, 'the second pass\'s list, where an em dash, a minus sign and a tab ship', F.digitsWideFound, has(V.idx + V.it, DIGITS_R6));
+      never(b, 'the second pass\'s "under six, not looked for in an add-in\'s value"', F.shortDigitsWholeHeld, has(V.idx + V.it, DIGITS_SHORT_R8));
       return b;
-    }, [['sentence dropped', drop('idx', DIGITS_FAQ)], ['the comma dropped from what ships', swap('idx', 'with a comma (3192,6819), an underscore', 'with an underscore')],
-      ['the spaced dash dropped from what ships', swap('idx', ', a line break, an en or em dash or a slash with a space either side (3192 – 6819, as a range is written)', ', a line break')],
-      ['the look-alike marks dropped from what ships', swap('idx', ', a square bracket ([3192] 6819), a no-break space beside a bracket or a hyphen, or a mark that only looks like one of those (a fraction slash, an ideographic or small full stop, a swung dash, a heavy minus sign, a white, black or triangular bullet: 3192⁄6819, 3192。6819, 3192◦6819)', '')],
-      ['round 7\'s first-pass sentence put back', swap('idx', DIGITS_FAQ, DIGITS_FAQ_R9)], ['round 7\'s first-pass under-six sentence put back', swap('idx', DIGITS_SHORT, DIGITS_SHORT_R9)],
-      ['second-pass sentence put back', swap('idx', DIGITS_FAQ, DIGITS_R6)],
-      ['first-pass sentence put back', swap('idx', DIGITS_FAQ, DIGITS_R6.slice(0, DIGITS_R6.indexOf('and in the text a reader sees')) + DIGITS_R7)],
-      ['under-six sentence dropped', drop('idx', DIGITS_SHORT)], ['second-pass under-six sentence put back', swap('idx', DIGITS_SHORT, DIGITS_SHORT_R8)]]],
+    }, [['sentence dropped', drop('it', DIGITS_FAQ)], ['the comma dropped from what ships', swap('it', 'with a comma (3192,6819), an underscore', 'with an underscore')],
+      ['the spaced dash dropped from what ships', swap('it', ', a line break, an en or em dash or a slash with a space either side (3192 – 6819, as a range is written)', ', a line break')],
+      ['the look-alike marks dropped from what ships', swap('it', ', a square bracket ([3192] 6819), a no-break space beside a bracket or a hyphen, or a mark that only looks like one of those (a fraction slash, an ideographic or small full stop, a swung dash, a heavy minus sign, a white, black or triangular bullet: 3192⁄6819, 3192。6819, 3192◦6819)', '')],
+      ['round 7\'s first-pass sentence put back', swap('it', DIGITS_FAQ, DIGITS_FAQ_R9)], ['round 7\'s first-pass under-six sentence put back', swap('it', DIGITS_SHORT, DIGITS_SHORT_R9)],
+      ['second-pass sentence put back', swap('it', DIGITS_FAQ, DIGITS_R6)],
+      ['first-pass sentence put back', swap('it', DIGITS_FAQ, DIGITS_R6.slice(0, DIGITS_R6.indexOf('and in the text a reader sees')) + DIGITS_R7)],
+      ['under-six sentence dropped', drop('it', DIGITS_SHORT)], ['second-pass under-six sentence put back', swap('it', DIGITS_SHORT, DIGITS_SHORT_R8)]]],
     ['a hyphen or a line break inside a word, a reference HTML reads otherwise, a Symbol-font letter: each ships; a ligature no longer does', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'hyphen', F.hyphenShips, has(faq, HYPHEN));
       says(b, 'references', F.refShips, has(faq, REFS));
       says(b, 'a Symbol-font letter', F.symShips, has(faq, SYM));
       says(b, 'a line break', F.brokenShips && F.brokenQuotedShips, has(faq, PCT_BREAK));
       never(b, 'round 7\'s first-pass line-break sentence, no quoted reply', F.brokenQuotedShips, has(faq, PCT_BREAK_R9));
       says(b, 'an invisible direction mark', F.bidiShips, has(faq, BIDI_FAQ));
-      never(b, 'the ligature, closed by owner ruling 19c', F.ligGone, /with a ligature/.test(V.idx));
-      never(b, 'the second pass\'s references, "&nbsp" without its semicolon shipping', F.refNoSemiRead, has(V.idx, REFS_R8));
+      never(b, 'the ligature, closed by owner ruling 19c', F.ligGone, /with a ligature/.test(V.idx + V.it));
+      never(b, 'the second pass\'s references, "&nbsp" without its semicolon shipping', F.refNoSemiRead, has(V.idx + V.it, REFS_R8));
       return b;
-    }, [['hyphen clause dropped', drop('idx', HYPHEN)], ['reference clause dropped', drop('idx', REFS)], ['Symbol-font clause dropped', drop('idx', SYM)], ['line-break sentence dropped', drop('idx', PCT_BREAK)],
-      ['ligature clause put back', putBack('idx', HYPHEN, ' ' + LIG)], ['second-pass reference clause put back', swap('idx', REFS, REFS_R8)],
-      ['direction-mark clause dropped', drop('idx', BIDI_FAQ)], ['round 7\'s first-pass line-break sentence put back', swap('idx', PCT_BREAK, PCT_BREAK_R9)]]],
+    }, [['hyphen clause dropped', drop('it', HYPHEN)], ['reference clause dropped', drop('it', REFS)], ['Symbol-font clause dropped', drop('it', SYM)], ['line-break sentence dropped', drop('it', PCT_BREAK)],
+      ['ligature clause put back', putBack('it', HYPHEN, ' ' + LIG)], ['second-pass reference clause put back', swap('it', REFS, REFS_R8)],
+      ['direction-mark clause dropped', drop('it', BIDI_FAQ)], ['round 7\'s first-pass line-break sentence put back', swap('it', PCT_BREAK, PCT_BREAK_R9)]]],
     ['a designator written out: the whole word is masked with the name, in both exports', (V) => {
       const b = [];
-      says(b, 'long form', F.longFormWhole, has(faqOf(V.idx), LONG));
-      never(b, 'the second pass\'s "[Company1]oration"', F.longFormWhole, has(V.idx, LONG_R8) || /\[Company1\]oration/.test(V.idx));
+      says(b, 'long form', F.longFormWhole, has(faqOf(V.it), LONG));
+      never(b, 'the second pass\'s "[Company1]oration"', F.longFormWhole, has(V.idx + V.it, LONG_R8) || /\[Company1\]oration/.test(V.idx + V.it));
       return b;
-    }, [['sentence dropped', drop('idx', LONG)], ['second-pass sentence put back', swap('idx', LONG, LONG_R8)]]],
+    }, [['sentence dropped', drop('it', LONG)], ['second-pass sentence put back', swap('it', LONG, LONG_R8)]]],
     ['letters spaced apart or each in brackets ship from both exports', (V) => {
       const b = [];
-      says(b, 'spaced in the FAQ', F.spacedShips && F.bracketShips, has(faqOf(V.idx), SPACED));
-      says(b, 'spaced in the moral paragraph', F.spacedShips, has(moralOf(V.idx), SPACED_MORAL));
+      says(b, 'spaced in the FAQ', F.spacedShips && F.bracketShips, has(faqOf(V.it), SPACED));
+      says(b, 'spaced in the moral paragraph', F.spacedShips, has(moralOf(V.it), SPACED_MORAL));
       return b;
-    }, [['FAQ clause dropped', drop('idx', SPACED)], ['moral sentence dropped', drop('idx', SPACED_MORAL)], ['second-pass clause, no brackets, put back', swap('idx', SPACED, SPACED_R8)]]],
+    }, [['FAQ clause dropped', drop('it', SPACED)], ['moral sentence dropped', drop('it', SPACED_MORAL)], ['second-pass clause, no brackets, put back', swap('it', SPACED, SPACED_R8)]]],
     ['a name written with percent-escapes or a character reference is masked in both exports and holds in code', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'percent-escapes masked', F.pctMasked && F.refNoSemiRead, has(faq, PCT_NOW));
       says(b, 'an escape that writes no character holds', F.pctBadByteHolds, has(faq, PCT_BAD));
       says(b, 'a mail gateway\'s rewrite of it holds both exports', F.ppTextHolds, has(faq, PCT_PP));
-      never(b, 'a sentence that says a mail gateway\'s rewrite ships from the text export', F.ppTextHolds, /the text export carries it as written/.test(V.idx));
-      never(b, 'a sentence that says a percent-escaped name ships', F.pctMasked, PCT_SHIPS_OLD.test(V.idx));
+      never(b, 'a sentence that says a mail gateway\'s rewrite ships from the text export', F.ppTextHolds, /the text export carries it as written/.test(V.idx + V.it));
+      never(b, 'a sentence that says a percent-escaped name ships', F.pctMasked, PCT_SHIPS_OLD.test(V.idx + V.it));
       return b;
-    }, [['sentence dropped', drop('idx', PCT_NOW)], ['bad-byte sentence dropped', drop('idx', PCT_BAD)], ['mail-gateway sentence dropped', drop('idx', PCT_PP)],
-      ['second-pass sentence, no reference without its semicolon, put back', swap('idx', PCT_NOW, PCT_NOW_R8)],
-      ['round-6 moral sentence put back', putBack('idx', FLOOR_MORAL, ' A name with some of its characters written as % and two hexadecimal digits, as a pasted web link writes a space, an apostrophe, an accented letter or a Chinese name, is a third: it is not masked in the text export or in the .docx, and the check passes.')],
-      ['round-6 FAQ clause put back', putBack('idx', SPACED, ' when some of its characters are written as % and two hexadecimal digits, in a SharePoint or other web link pasted into the text (the text export ships it too);')]]],
+    }, [['sentence dropped', drop('it', PCT_NOW)], ['bad-byte sentence dropped', drop('it', PCT_BAD)], ['mail-gateway sentence dropped', drop('it', PCT_PP)],
+      ['second-pass sentence, no reference without its semicolon, put back', swap('it', PCT_NOW, PCT_NOW_R8)],
+      ['round-6 moral sentence put back', putBack('it', FLOOR_MORAL, ' A name with some of its characters written as % and two hexadecimal digits, as a pasted web link writes a space, an apostrophe, an accented letter or a Chinese name, is a third: it is not masked in the text export or in the .docx, and the check passes.')],
+      ['round-6 FAQ clause put back', putBack('it', SPACED, ' when some of its characters are written as % and two hexadecimal digits, in a SharePoint or other web link pasted into the text (the text export ships it too);')]]],
     ['intake: which percent-escapes hold and which go through', (V) => {
       const b = [];
-      says(b, 'percent intake', F.pctIntake && F.pctMasked, has(faqOf(V.idx), PCT_INTAKE));
+      says(b, 'percent intake', F.pctIntake && F.pctMasked, has(faqOf(V.it), PCT_INTAKE));
       return b;
-    }, [['sentence dropped', drop('idx', PCT_INTAKE)], ['"ships" put back', swap('idx', 'and a name written that way is masked in both exports, the escapes with it (see below);', 'and a name written that way ships (see below);')]]],
+    }, [['sentence dropped', drop('it', PCT_INTAKE)], ['"ships" put back', swap('it', 'and a name written that way is masked in both exports, the escapes with it (see below);', 'and a name written that way ships (see below);')]]],
     ['what the FAQ says the receipt names, the receipt names', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       const missing = RECEIPT_NAMES.filter(([, re]) => !re.test(SCOPE)).map(([w]) => w);
       says(b, 'the receipt names these blind spots', F.receiptNames, has(faq, RECEIPT));
       if (missing.length) b.push(`the receipt no longer names: ${missing.join(', ')}; re-word the sentence or the receipt`);
@@ -1081,43 +1083,43 @@ async function main() {
       never(b, 'the second pass\'s list, with the ligature and digits in an Office element', F.receiptNames, has(faq, RECEIPT_R8));
       never(b, 'round 7\'s first-pass list, without the direction mark or the quoted reply', F.receiptNames, has(faq, RECEIPT_R9));
       return b;
-    }, [['sentence dropped', drop('idx', RECEIPT)], ['round-6 sentence put back', swap('idx', RECEIPT, RECEIPT_OLD)], ['first-pass list of six put back', swap('idx', RECEIPT, RECEIPT_R7)],
-      ['second-pass list put back', swap('idx', RECEIPT, RECEIPT_R8)], ['round 7\'s first-pass list put back', swap('idx', RECEIPT, RECEIPT_R9)]]],
+    }, [['sentence dropped', drop('it', RECEIPT)], ['round-6 sentence put back', swap('it', RECEIPT, RECEIPT_OLD)], ['first-pass list of six put back', swap('it', RECEIPT, RECEIPT_R7)],
+      ['second-pass list put back', swap('it', RECEIPT, RECEIPT_R8)], ['round 7\'s first-pass list put back', swap('it', RECEIPT, RECEIPT_R9)]]],
     ['Read the code: the other http:// strings are namespace addresses on four hosts, and nothing requests them', (V) => {
       const b = [];
-      says(b, 'hosts', F.httpHosts === HTTP_HOSTS && F.httpNoRequest, has(V.idx, HTTP));
+      says(b, 'IT brief: Source audit', F.httpHosts === HTTP_HOSTS && F.httpNoRequest, has(V.it, HTTP));
       if (F.httpHosts !== HTTP_HOSTS) b.push(`the app source's non-loopback http:// hosts are now: ${F.httpHosts}`);
-      never(b, '"one in code, one in a comment"', F.httpHosts === HTTP_HOSTS, /one in code,\s*one in a comment/.test(V.idx));
+      never(b, '"one in code, one in a comment"', F.httpHosts === HTTP_HOSTS, /one in code,\s*one in a comment/.test(V.idx + V.it));
       return b;
-    }, [['sentence dropped', drop('idx', HTTP)], ['round-4 count put back', swap('idx', HTTP, 'The other http:// strings in the app source are Word XML namespace names (one in code, one in a comment), not requests.')],
-      ['a host dropped from the list', swap('idx', 'purl.org and www.w3.org: they', 'and www.w3.org: they')]]],
+    }, [['sentence dropped', drop('it', HTTP)], ['round-4 count put back', swap('it', HTTP, 'The other http:// strings in the app source are Word XML namespace names (one in code, one in a comment), not requests.')],
+      ['a host dropped from the list', swap('it', 'purl.org and www.w3.org: they', 'and www.w3.org: they')]]],
     ['equations: in-line structures masked, separate parts named as a blind spot', (V) => {
       const b = [];
-      never(b, 'round-4 box/bar clause', F.eqInlineMasked, /in a box or a border box|in a box or under a bar/.test(V.idx));
-      says(b, 'separate parts in the FAQ', F.eqApartShips, has(faqOf(V.idx), EQ));
-      says(b, 'separate parts in the moral paragraph', F.eqApartShips, has(moralOf(V.idx), EQ_MORAL));
+      never(b, 'round-4 box/bar clause', F.eqInlineMasked, /in a box or a border box|in a box or under a bar/.test(V.idx + V.it));
+      says(b, 'separate parts in the FAQ', F.eqApartShips, has(faqOf(V.it), EQ));
+      says(b, 'separate parts in the moral paragraph', F.eqApartShips, has(moralOf(V.it), EQ_MORAL));
       return b;
-    }, [['FAQ clause dropped', drop('idx', EQ)], ['round-4 clause put back', putBack('idx', EQ, ' when part of it is in a box or a border box, under a bar, an accent or a brace;')]]],
+    }, [['FAQ clause dropped', drop('it', EQ)], ['round-4 clause put back', putBack('it', EQ, ' when part of it is in a box or a border box, under a bar, an accent or a brace;')]]],
     ['a short lower-case name in the code of Word\'s own parts ships', (V) => {
       const b = [];
-      says(b, 'lee', F.leeShips, has(faqOf(V.idx), LEE));
+      says(b, 'lee', F.leeShips, has(faqOf(V.it), LEE));
       return b;
-    }, [['clause dropped', drop('idx', LEE)]]],
+    }, [['clause dropped', drop('it', LEE)]]],
     ['a number in an add-in\'s attribute or element holds; under Office\'s own prefix or on a shape it is not read', (V) => {
       const b = [];
-      says(b, 'phone in an attribute', F.phoneOfficeShips && F.phoneOfficeElemHeld, has(faqOf(V.idx), PHONE));
-      never(b, 'the round-6 sentence that said an add-in\'s number is not found', F.phoneOfficeShips, has(V.idx, PHONE_OLD));
-      never(b, 'the second pass\'s sentence that said digits alone in an Office element are not found', F.phoneOfficeElemHeld, has(V.idx, PHONE_R8));
+      says(b, 'phone in an attribute', F.phoneOfficeShips && F.phoneOfficeElemHeld, has(faqOf(V.it), PHONE));
+      never(b, 'the round-6 sentence that said an add-in\'s number is not found', F.phoneOfficeShips, has(V.idx + V.it, PHONE_OLD));
+      never(b, 'the second pass\'s sentence that said digits alone in an Office element are not found', F.phoneOfficeElemHeld, has(V.idx + V.it, PHONE_R8));
       return b;
-    }, [['sentence dropped', drop('idx', PHONE)], ['round-6 sentence put back', swap('idx', PHONE, PHONE_OLD)], ['first-pass sentence, no Office element, put back', swap('idx', PHONE, PHONE_R7)],
-      ['second-pass sentence put back', swap('idx', PHONE, PHONE_R8)]]],
+    }, [['sentence dropped', drop('it', PHONE)], ['round-6 sentence put back', swap('it', PHONE, PHONE_OLD)], ['first-pass sentence, no Office element, put back', swap('it', PHONE, PHONE_R7)],
+      ['second-pass sentence put back', swap('it', PHONE, PHONE_R8)]]],
     ['a program other than Word can write a name where Word writes only its own words', (V) => {
       const b = [];
-      says(b, 'crafted forms', F.craftedShips, has(faqOf(V.idx), CRAFTED));
+      says(b, 'crafted forms', F.craftedShips, has(faqOf(V.it), CRAFTED));
       return b;
-    }, [['clause dropped', drop('idx', CRAFTED)]]],
+    }, [['clause dropped', drop('it', CRAFTED)]]],
     ['cases closed since round 4 are not listed as shipping', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       never(b, 'mso- note', F.msoGone, /<\?mso-/.test(faq));
       never(b, 'chart currency format', F.chartMasked, /chart's currency format/.test(faq));
       never(b, 'unknown part: phone, currency brackets, element names', F.unkHolds, /a telephone number there is kept as written|currency brackets|a confirmed name used as one ships/.test(faq));
@@ -1125,14 +1127,14 @@ async function main() {
       never(b, 'element name in any part', F.reads, /name of an element or attribute a program wrote, in any part/.test(faq));
       return b;
     }, [
-      ['mso- clause put back', putBack('idx', CRAFTED, ' A name ships as a program\'s note that begins mso- (<?mso-KestrelHoldings?>).')],
-      ['chart clause put back', putBack('idx', CRAFTED, ' A Social Security number ships when written into a chart\'s currency format.')],
-      ['unknown-part phone put back', putBack('idx', UNK_HOLDS, ' What is kept is not reviewed: a telephone number there is kept as written.')],
-      ['margaretTan clause put back', putBack('idx', CRAFTED, ' A name ships when it is run together starting in lower case (margaretTan) in a value a program wrote into the file\'s code.')],
-      ['element-name clause put back', putBack('idx', CRAFTED, ' A name ships when it is the name of an element or attribute a program wrote, in any part (<acme:MargaretTan/>).')],
+      ['mso- clause put back', putBack('it', CRAFTED, ' A name ships as a program\'s note that begins mso- (<?mso-KestrelHoldings?>).')],
+      ['chart clause put back', putBack('it', CRAFTED, ' A Social Security number ships when written into a chart\'s currency format.')],
+      ['unknown-part phone put back', putBack('it', UNK_HOLDS, ' What is kept is not reviewed: a telephone number there is kept as written.')],
+      ['margaretTan clause put back', putBack('it', CRAFTED, ' A name ships when it is run together starting in lower case (margaretTan) in a value a program wrote into the file\'s code.')],
+      ['element-name clause put back', putBack('it', CRAFTED, ' A name ships when it is the name of an element or attribute a program wrote, in any part (<acme:MargaretTan/>).')],
     ]],
     ['a part the writer does not know: what holds and what is kept', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'typed text and safety-net numbers hold', F.unkHolds, has(faq, UNK_HOLDS));
       says(b, 'a name written as code is kept', F.unkCodeKept, has(faq, UNK_KEPT));
       says(b, 'what is kept is read for a row of digits under six only where it is a whole value', F.shortDigitsShips && F.shortDigitsWholeHeld, has(faq, UNK_READ));
@@ -1140,38 +1142,38 @@ async function main() {
       never(b, 'the round-5 narrower kept list', F.unkCodeKept, has(faq, UNK_KEPT_OLD));
       never(b, 'the round-6 list that kept a web address on an Office host between tags too', F.unkCodeKept, has(faq, UNK_KEPT_R6));
       return b;
-    }, [['hold clause dropped', drop('idx', UNK_HOLDS)], ['kept clause dropped', drop('idx', UNK_KEPT)],
-      ['digit qualifier dropped', swap('idx', UNK_READ, UNK_READ.replace(` (a row of digits alone under ${SIX} digits only where it is the whole of a value)`, ''))],
-      ['second-pass qualifier put back', swap('idx', UNK_READ, UNK_READ_R8)],
-      ['round-5 narrower list put back', swap('idx', UNK_KEPT, 'but a name that is not in your table and is written the way a program writes code — ' + UNK_KEPT_OLD + ' — is kept as written.')],
-      ['round-6 list put back', swap('idx', UNK_KEPT, 'but a name that is not in your table and is written the way a program writes code is kept as written: in small letters, or starting with one and run together (whitfield, jonasWhitfield), as an attribute\'s value; ' + UNK_KEPT_R6 + ', whatever it says, as the name of an element under one of Office\'s own namespaces.')]]],
+    }, [['hold clause dropped', drop('it', UNK_HOLDS)], ['kept clause dropped', drop('it', UNK_KEPT)],
+      ['digit qualifier dropped', swap('it', UNK_READ, UNK_READ.replace(` (a row of digits alone under ${SIX} digits only where it is the whole of a value)`, ''))],
+      ['second-pass qualifier put back', swap('it', UNK_READ, UNK_READ_R8)],
+      ['round-5 narrower list put back', swap('it', UNK_KEPT, 'but a name that is not in your table and is written the way a program writes code — ' + UNK_KEPT_OLD + ' — is kept as written.')],
+      ['round-6 list put back', swap('it', UNK_KEPT, 'but a name that is not in your table and is written the way a program writes code is kept as written: in small letters, or starting with one and run together (whitfield, jonasWhitfield), as an attribute\'s value; ' + UNK_KEPT_R6 + ', whatever it says, as the name of an element under one of Office\'s own namespaces.')]]],
     ['the writer\'s note is printed as written, and Review warns on every unknown part', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'note and warning', F.warnEvery && F.noteVerbatim, has(faq, NOTE));
       never(b, 'round-4 "usually lists" / "untrue" sentences', F.warnEvery && F.noteVerbatim, /usually lists the part under Warnings|the check of the copy read all of it|which is untrue of/.test(faq));
       return b;
-    }, [['sentence dropped', drop('idx', NOTE)], ['round-4 exception put back', putBack('idx', NOTE, ' The Review screen usually lists the part under Warnings too, but not a part filed under Word\'s own theme or style folder names.')]]],
+    }, [['sentence dropped', drop('it', NOTE)], ['round-4 exception put back', putBack('it', NOTE, ' The Review screen usually lists the part under Warnings too, but not a part filed under Word\'s own theme or style folder names.')]]],
     ['outside the body: read in a request of its own, a name found only there masked in the .docx, the .docx held when that read fails, and a name found nowhere not masked', (V) => {
-      const b = [], faq = faqOf(V.idx), moral = moralOf(V.idx);
+      const b = [], faq = faqOf(V.it), moral = moralOf(V.it);
       says(b, 'read apart, and what a find there does', F.sideMasked, has(faq, SIDE_READ) && has(faq, SIDE_MASKED));
       says(b, 'held when that read fails', F.sideHeld, has(faq, SIDE_HELD));
       says(b, 'a name found nowhere', F.footerOnlyShips, has(faq, FOOTER) && has(moral, MORAL_FOOTER));
       says(b, 'README', F.sideMasked && F.sideHeld, has(V.readme, README_SIDE));
       never(b, 'the body-only sentences', F.sideMasked, has(faq, FOOTER_OLD) || has(faq, FAQ_BODY_ONLY) || has(moral, MORAL_OLD) || has(V.readme, README_OLD));
       return b;
-    }, [['found-nowhere sentence dropped', drop('idx', FOOTER)], ['held sentence dropped', drop('idx', SIDE_HELD)], ['README sentence dropped', drop('readme', README_SIDE)],
-      ['footer-only sentence put back', putBack('idx', FOOTER, ' ' + FOOTER_OLD)], ['moral paragraph as it was', swap('idx', MORAL_FOOTER, MORAL_OLD)],
+    }, [['found-nowhere sentence dropped', drop('it', FOOTER)], ['held sentence dropped', drop('it', SIDE_HELD)], ['README sentence dropped', drop('readme', README_SIDE)],
+      ['footer-only sentence put back', putBack('it', FOOTER, ' ' + FOOTER_OLD)], ['moral paragraph as it was', swap('it', MORAL_FOOTER, MORAL_OLD)],
       ['README "reads the body alone" put back', putBack('readme', README_SIDE, ' It masks them with the review table only, ' + README_OLD + '.')]]],
     ['fields: cross-references and link fields become text, a link-field table of contents loses its links', (V) => {
       const b = [];
-      says(b, 'fields', F.refUnlinked && F.tocLinksGo, has(faqOf(V.idx), FIELDS));
+      says(b, 'fields', F.refUnlinked && F.tocLinksGo, has(faqOf(V.it), FIELDS));
       return b;
-    }, [['sentence dropped', drop('idx', FIELDS)]]],
+    }, [['sentence dropped', drop('it', FIELDS)]]],
     ['intake: the exceptions and the PDF page rule', (V) => {
-      const b = [], faq = faqOf(V.idx);
+      const b = [], faq = faqOf(V.it);
       says(b, 'intake', F.intake, has(faq, INTAKE) && has(faq, PDFLINE));
       return b;
-    }, [['exceptions dropped', drop('idx', INTAKE)], ['PDF rule dropped', drop('idx', PDFLINE)]]],
+    }, [['exceptions dropped', drop('it', INTAKE)], ['PDF rule dropped', drop('it', PDFLINE)]]],
     ['it.html: the receipt carries the writer\'s notes', (V) => { const b = []; says(b, 'notes', F.noteVerbatim, has(V.it, IT_NOTES)); return b; }, [['sentence dropped', drop('it', IT_NOTES)]]],
     ['it.html: the name key lists what was left readable, the receipt names nothing', (V) => {
       const b = [];
@@ -1296,14 +1298,14 @@ async function main() {
     ['the one https:// address in the app is the model\'s, shown as text and never requested', (V) => {
       const b = [];
       const fact = F.httpNoRequest && F2.modelUrl;
-      says(b, 'index: Read the code', fact, has(V.idx, READ_HTTPS));
+      says(b, 'IT brief: Source audit', fact, has(V.it, READ_HTTPS));
       says(b, 'PRIVACY.md', fact, has(V.privacy, PRIVACY_HTTPS));
       // the comment lines the fact leaves out do hold https:// links, so the pages may not say
       // the source holds one without "outside comments"
-      never(b, 'one https:// address in the source, comments included', /https:\/\//.test(APP.ts.replace(MODEL_URL_LINE, '') + APP.rs), has(V.idx, HTTPS_OLD) || /The app's code holds one https:\/\/ address/.test(V.privacy));
+      never(b, 'one https:// address in the source, comments included', /https:\/\//.test(APP.ts.replace(MODEL_URL_LINE, '') + APP.rs), has(V.idx + V.it, HTTPS_OLD) || /The app's code holds one https:\/\/ address/.test(V.privacy));
       return b;
-    }, [['sentence dropped', drop('idx', READ_HTTPS)], ['PRIVACY.md without it', drop('privacy', PRIVACY_HTTPS)],
-      ['the unqualified sentence put back', putBack('idx', READ_HTTPS, ' ' + HTTPS_OLD)]]],
+    }, [['sentence dropped', drop('it', READ_HTTPS)], ['PRIVACY.md without it', drop('privacy', PRIVACY_HTTPS)],
+      ['the unqualified sentence put back', putBack('it', READ_HTTPS, ' ' + HTTPS_OLD)]]],
     ['the llama.cpp settings the app does not remove are stated where the network is', (V) => {
       const b = [];
       says(b, 'IT brief', F2.llamaGap, has(V.it, LLAMA_GAP));
@@ -1317,7 +1319,7 @@ async function main() {
       // states the gap is the break this law has to catch
       : [['the IT brief with it', putBack('it', 'and says which setting to remove.', ' ' + LLAMA_GAP)],
         ['PRIVACY.md with it', putBack('privacy', 'NODE_OPTIONS (scrub_proxy in app/src-tauri/src/engine.rs).', ' ' + LLAMA_GAP)],
-        ['index with it', putBack('idx', 'The app also starts everything with proxy settings removed.', ' ' + LLAMA_GAP_IDX)]]],
+        ['index with it', putBack('idx', 'By the app\'s code, every call it makes goes to 127.0.0.1.', ' ' + LLAMA_GAP_IDX)]]],
     ['no page says the app sends nothing off the machine', (V) => {
       const b = [];
       // Two things stand behind this, and either keeps it: the model server the app starts reads

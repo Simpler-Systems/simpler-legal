@@ -124,6 +124,17 @@ under those revisions, against gold the Opus swarms labelled; the agreement was 
 neither, so for those boards it is an indicator, not a measured limit.
 <code>node pii-bench/gold-ceiling/score-ceiling.mjs</code> recomputes it from the committed
 sample, key and verdicts.</p>
+<!-- Moved from the landing page's Exhibit C on 2026-09-28. FREEZE.md claims table vs these
+     pages: "independent relabel agreement", "blind Opus Q&A" (harness-v1.js tells the judge
+     which answer is the redacted one), "pre-registered rule", "courts pack byte-unchanged"
+     (UKPROBE predates the round-6 and round-7 fix-sets), and a panel with no committed output. -->
+<p class="note">FREEZE.md freezes the engine with a claims table, each claim beside the record it
+cites. Where that table and this site differ, this site's wording is the checked one. The
+differences are the 88.8% (240 sampled calls re-judged, not a relabel), the utility judge (the
+table says blind; its prompt says which answer came from the redacted copy, §3), the
+"pre-registered" draw rules (above), the UK probe (run on the configuration from before the
+round-6 and round-7 fixes, §4), and an adversarial review panel that left no committed
+output.</p>
 
 <h2><span class="sec">§2</span>The campaign — first contact, round over round</h2>
 <!-- Round 4 courts used to show only the instrument-v2 row (98.9 / 92%) under a note calling
@@ -213,7 +224,10 @@ setting, 7 sit in the first-page caption or a “Re:” line, by the survivor ta
 OPS_LEDGER.md (2026-09-15); FREEZE.md first said 8 and corrects itself to 7 (its
 correction C9). The record is
 OPS_LEDGER.md (2026-09-14 and 2026-09-15) and FREEZE.md; the documents, the engine output and
-the agent's list are not in the repository.</li>
+the agent's list are not in the repository. Identifiers stayed readable under the frozen
+configuration here, but with one agent's list and no sealed gold behind it, the run was not
+treated as a receipt against the freeze, which lifts only on an identity leak in the frozen
+configuration on real paper, or on the maintainer's order.</li>
 </ul>
 
 <h2><span class="sec">§5</span>The misses, by class</h2>
@@ -260,8 +274,29 @@ but pushing that axis further belongs to a compliance profile and was deferred a
 freeze — the export-to-AI profile's bar is utility, measured at 0.968 on round-4 paper
 masked before the freeze. And stripping withholds
 identities — it does not claim inference-proofing.</p>
+<!-- Moved from the landing page's "honest claim" on 2026-09-28. The 245/503 is recomputed from
+     the four boards the zero-leak claim comes from (perDoc.quasi over ROUND{5,6,7}-edgar-
+     firstcontact.json + PUREOOS-firstcontact.json). Places: derive-product-gold.mjs P0i (LOC is
+     NO_MASK unless an occurrence sits within ±90 chars of a personal-life anchor; address-shaped
+     spans and notice-block context stay QUASI; full personal addresses DIRECT). Company names:
+     lib/profile.ts PROFILES ('auto' and 'firm'), Settings.tsx "Redaction → These documents",
+     engine.ts profileNote; the two firm-setting survivors are OPS_LEDGER.md "What still
+     survives, by mechanism — all 11" (a Re: line in doc 08, 1 of 59 in doc 01). -->
+<p class="note">What stays readable is a decision, and it is measured. What the engine removes is
+identities: people's names, identifiers, the things that point at a person. Dates, amounts,
+business facts and most places stay, because that is what the AI you hand the copy to has to
+reason about. A person's full address is treated as an identifier; a place tied to a person
+(where someone lives or was born) and a street or notice address are quasi-identifiers, which
+the engine removes only in part. Across the 46 agreements, 245 of 503 quasi-identifier spans were
+left readable, so a distinctive enough profile can still be inferred from what remains. Company
+names depend on a setting: by default a company name is released when it is not the document's
+own identity, and the “Our own matter files” setting (Settings → Redaction) releases none by
+design when the local engine runs it. The engine can still miss one: on the 20 firm filings under
+that setting, two company names stayed readable, one in a Re: line and one in 1 of its 59
+mentions. If the local engine does not run the document, the app says the setting did not run
+and that company and brand names may remain readable.</p>
 
-<h2><span class="sec">§6</span>Reproduce our numbers</h2>
+<h2 id="repro"><span class="sec">§6</span>Reproduce our numbers</h2>
 <pre># the scorer proves itself first
 node score-pii.mjs selftest                # 8/8 verdicts verified
 
