@@ -68,9 +68,40 @@ carries:
 - the copyright line in `site/research.html`'s footer;
 - this record.
 
-**Still open, §3.8, the images.** The three screenshots are still simpler-red captures, and the
-page says so. There is no preview card. They are retaken from the real app when the machine has
-the memory for a live run (the 10 GB rule; `OPS_LEDGER.md`, 2026-09-27).
+**The images: the third public commit** (2026-09-27, a child of `95f2ebc`, same author) closes
+§3.8. The three screenshots and the preview card are now Simpler Legal's own. No model ran: the
+owner asked for the app to be run without the model up.
+- **How they were taken.** The app's frontend (`app/frontend`) ran on its development server at
+  `127.0.0.1:1435`. A headless Chrome opened it at 1332×846 CSS pixels and scale 5/3, so each
+  capture is 2220×1410, the size of the file it replaces. No model server and no engine service
+  were running.
+- **Drop** (`react-app-drop-v2.png`) is the screen just after launch, while the app looks for
+  the engine.
+  - The browser build words that line "Looking for the local engine…". The packaged app says
+    "Engine starting…" at the same moment.
+  - Once the probe gives up, the page shows an amber "isn't running" banner instead. That is
+    not the state in the picture.
+- **Review and Export** (`react-app-review.png`, `react-app-export.png`) show the built-in
+  sample NDA.
+  - The app labels it "a fixed demo list, not an engine run", and the receipt's engine line
+    reads "none — fixed demo set".
+  - Its seven flagged rows were decided through the guided card: four confirmed, and three
+    pieces of boilerplate left readable. Then the review was finished.
+  - The rows are the app's fixture (`sampleFile` in `app/frontend/src/lib/store.ts`), not an
+    engine's output. The frozen engine flags none, as the page's review text says.
+- **The card** (`og-card.png`, 1200×630) is rendered from HTML. It carries:
+  - the page's own `og:title` and the logo;
+  - `simpler.legal · Apache-2.0 · v0.1.0 for Windows`;
+  - a crop of the review capture.
+
+  It states no figure, so it cannot say more than the tags do (the rule in the head of
+  `site/index.html`).
+- **`site/index.html`:**
+  - The `og:image` and `twitter:image` tags are back, with `og:image:alt`, and `twitter:card`
+    is `summary_large_image`.
+  - The three alt texts describe the new captures.
+  - The caption about simpler-red is gone.
+- The four PNGs carry no text chunks: IHDR, IDAT and IEND only.
 
 ---
 
@@ -943,7 +974,7 @@ states each of these gaps instead of hiding it.
 
 *2026-09-27: the publication closed 3.1, 3.2, 3.3, 3.4 and 3.6 ("Published", at the top).
 For 3.3: the site's 32 GitHub `href`s, 15 distinct, all answered 200 when followed with no
-login. The rows below are as they were written, except 3.8, which is amended.*
+login. The rows below are as they were written, except 3.8, which is amended and then closed.*
 
 | # | Destination | Status |
 |---|---|---|
@@ -954,7 +985,7 @@ login. The rows below are as they were written, except 3.8, which is amended.*
 | 3.5 | `dl.simpler.legal` model mirror | **OPEN** — the name now answers **525**, like the apex, and serves nothing. A mirror also waits on §5. |
 | 3.6 | Security disclosure channel | **PARTIAL — owner step** — `SECURITY.md` (2026-09-25) sends reports through GitHub private vulnerability reporting, `github.com/Simpler-Systems/simpler-legal/security/advisories/new`, and publishes one e-mail address, `support@simpler.asia`, for a reporter who cannot use GitHub (owner ruling 30 as amended; `site-claims` law "security reports", which fails on any other address, on that address inside a longer domain and on a `mailto:` link). That address works only once the repository is public and private vulnerability reporting is switched on in its settings. |
 | 3.7 | Any contact address at all | **OPEN** — `mailto:`, `<form>` and `<input>` each count 0 on all three pages. |
-| 3.8 | Screenshots and OG card | **OPEN** — `site/assets/react-app-*.png` and `og-card.png` are still the files of 2026-07-22/23: simpler-red captures, with the card reading "Simpler Redact". The alt text now says "the sibling app simpler-red, not of Simpler Legal", and the source comment above them still says `DO NOT LAUNCH BEFORE THESE ARE RETAKEN`. Every share of the link renders another product's wordmark. *Amended 2026-09-27:* still **OPEN** for the three screenshots, which the page labels as simpler-red captures. The site launched without a card: `og-card.png` is deleted, the page has no `og:image` or `twitter:image`, `twitter:card` is `summary`, and both `DO NOT LAUNCH` comments are gone. A shared link renders no image. |
+| 3.8 | Screenshots and OG card | **OPEN** — `site/assets/react-app-*.png` and `og-card.png` are still the files of 2026-07-22/23: simpler-red captures, with the card reading "Simpler Redact". The alt text now says "the sibling app simpler-red, not of Simpler Legal", and the source comment above them still says `DO NOT LAUNCH BEFORE THESE ARE RETAKEN`. Every share of the link renders another product's wordmark. *Amended 2026-09-27:* still **OPEN** for the three screenshots, which the page labels as simpler-red captures. The site launched without a card: `og-card.png` is deleted, the page has no `og:image` or `twitter:image`, `twitter:card` is `summary`, and both `DO NOT LAUNCH` comments are gone. A shared link renders no image. *Closed later on 2026-09-27:* the three screenshots and the card are Simpler Legal's own, taken without a model ("Published", at the top, "The images"). |
 
 ---
 

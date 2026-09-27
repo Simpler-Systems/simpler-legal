@@ -1393,3 +1393,11 @@ No workflow ran. Every step was a command in the main session, and each finished
    to run a document through the engine. Free memory was 5.9 of 31.1 GB, with 49.7 of 52.7 GB
    committed, and the owner's programs held most of it. The owner chose to publish the text
    now and the images in a later commit. Nothing ran below the rule.
+   - Later the same day the owner asked for the app to be run without the model, and the
+     images were taken that way (`LAUNCH.md`, "Published", "The images").
+   - The frontend's development server and a headless Chrome ran, using 108 MB and 881 MB in
+     9 processes. Nothing listened on 49400 or 1436. Free memory was 4.4–5.5 GB. The 10 GB
+     rule is for a run of the engine, and none ran.
+   - The first capture through the Chrome extension came back blank, because the tab it drove
+     was not visible (`document.visibilityState` "hidden"). The captures went through a
+     separate headless Chrome instead, which also fixes the pixel size.

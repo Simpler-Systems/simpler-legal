@@ -62,7 +62,12 @@
 <meta property="og:site_name" content="Simpler Legal" />
 <meta property="og:title" content="Redact legal documents before they leave your machine" />
 <meta property="og:description" content="A local redaction engine for legal documents, Apache-2.0-licensed, with its source on GitHub. People's names and identifiers are removed — not covered — on your own hardware: 46 unseen SEC-filed business agreements, zero identity leaks across four consecutive fresh draws (45 of them ran the engine as it stood before its freeze, 1 ran the frozen engine). Court judgments and a firm's own filings still leak some, and the evidence says how many. Dates, amounts and most places (not a person's address) stay readable on purpose, and by default so do company names. There is no account, no API key and no server of ours." />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://simpler.legal/assets/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Simpler Legal: redact legal documents before they leave your machine. Beside the title, the app's review screen on its sample document, with names and companies replaced by tags." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://simpler.legal/assets/og-card.png" />
 <!--
   SLOT PROTOCOL (for the session that lands the final numbers):
   every element with [data-slot] is a placeholder awaiting measured results.
@@ -434,9 +439,8 @@
 
   <div class="fold">
     <div class="shot wrap" style="padding:0">
-      <img src="assets/react-app-drop-v2.png" alt="A screenshot of the sibling app simpler-red, not of Simpler Legal: the simpler.red masthead with its kite, a document drop sheet with TXT, PDF and DOCX file cards, a trust footer stating nothing is uploaded, and the Drop, Review, Export stepper — engine ready at 127.0.0.1." />
+      <img src="assets/react-app-drop-v2.png" alt="The Drop screen of Simpler Legal just after launch, while it looks for the local engine: a drop sheet for PDF, Word and plain-text files, a line saying nothing has left this machine this session beside a link to the network record, the Drop, Review and Export steps, a counter reading 0 requests off this machine, and an offer to try it on a sample NDA." />
     </div>
-    <p class="cta-note" style="margin-top:10px">Screenshots on this page are of the sibling app simpler-red, not of Simpler Legal.</p>
   </div>
 </div>
 
@@ -725,7 +729,7 @@
     </div>
     <div class="shots">
       <div class="shotcard">
-        <img src="assets/react-app-review.png" loading="lazy" alt="The review screen of the sibling app simpler-red, not of Simpler Legal: the original document and the redacted copy side by side with strong colored highlights, a guided-review card walking a pending item, and an entity table with confirm and leave-visible controls per row." />
+        <img src="assets/react-app-review.png" loading="lazy" alt="The review screen of Simpler Legal on its built-in sample NDA, which the app labels a fixed demo list, not an engine run: the original and the redacted copy side by side, names, companies, an address, an ID and phone numbers highlighted in the original and replaced by tags such as COMPANY 1 and PERSON 1 in the copy, an entity table grouped by kind, and a count reading 7 decided by you, 7 as marked automatically, 0 waiting on you, above the button that finishes the review." />
         <p><b>Review.</b> Original and redacted side by side, every finding highlighted in place.
         The count under the table keeps apart what you decided and what stands as the machine
         marked it, and the receipt carries the same split. Rows an engine flags as uncertain are
@@ -734,7 +738,7 @@
         finish becomes readable, the finish comes off.</p>
       </div>
       <div class="shotcard">
-        <img src="assets/react-app-export.png" loading="lazy" alt="The export screen of the sibling app simpler-red, not of Simpler Legal: the found-kept-redacted funnel, verification checks including a partial-name check, a paper receipt, and buttons to copy the redacted text or save it as a file." />
+        <img src="assets/react-app-export.png" loading="lazy" alt="The export screen of Simpler Legal after the sample NDA's review: 14 found, 11 redacted in 13 tags, 3 left readable; a check that every name chosen for redaction is gone from the copy; a note that the entities come from the demo set; a receipt whose engine line reads none, fixed demo set; and buttons to copy the redacted text or save it as a file." />
         <p><b>Export.</b> The honest funnel, verify-by-extraction plus a partial-name check, a receipt
         for your records — then copy the redacted text straight into the AI you use, or save it as a
         file. The original is never touched.</p>
