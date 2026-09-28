@@ -168,6 +168,35 @@ page to simpler.red's length, and to link every sibling site from every other.
     simpler.capital already link that site publicly, and the site names no person. The card
     is kept.
 
+**The first card spans the row: the fifth public commit** (2026-09-28, a child of `6275bf9`,
+same author). The owner asked for one full-width card in the family strip, the Host card, at
+the top.
+- **`site/index.html`** changes one CSS rule. `.fams>.fam:first-child{grid-column:1/-1}`
+  replaces `.fams>.fam:last-child:nth-child(odd){grid-column:1/-1}`, and the comment above it
+  says so.
+  - Above 760 px the first card spans the row, and the other six sit two to a row under it.
+    At or below 760 px the strip is one column, as before.
+  - The old rule had to go. With seven cards the seventh is an odd last child, and it would
+    span too.
+  - No card moved. `family.json` order without this site already puts the Host card first.
+- **How it was cut.** The development tree's `HEAD` carried other, unpublished commits. So the
+  public tree is `6275bf9`'s tree with this change applied, not `HEAD`'s tree.
+- **Checked** in headless Chrome at 1440, 860 and 390 px:
+  - Every element above the strip kept its top, height, left and width (315, 315 and 314
+    elements). At 860 px the strip is 22 px taller (517 to 539 px). At 1440 and 390 px its
+    height did not change.
+  - The family-strip laws passed in light and dark, 304 of 304: the wide card first, six equal
+    half-width cards under it, the order, the marks, the links, no overflow, no duplicate ids
+    and no page errors.
+- **Before the push:**
+  - `publish-check` printed nothing for all 11 checks. CONTROL: 9 of 11 print over the
+    development repository.
+  - The traceability scan ran over a `git archive` of the commit, 1,650 files. It found 0
+    hits for the username, surname, given name and machine name, and none in the commit's
+    author, committer or message.
+  - The private-domain needle matched 3 times: the Host card's link and name in
+    `site/index.html`, and the note above. This record adds none.
+
 ---
 
 ## Position on 2026-09-25 (v0.1.0: the first live run through the app, and rulings 27–33)

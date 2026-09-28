@@ -367,13 +367,15 @@
   /* ── the family strip: simpler.capital/family.json, stamped by
      simpler-capital/scripts/stamp-family.mjs --self legal (2026-09-28). The card rules
      below are the stamp's --css output unchanged; this block maps the page's tokens onto
-     the names they read, and a lone seventh card spans the row. ── */
+     the names they read, and the first card (Host's) spans the row, with the other six two
+     to a row under it (owner's ruling, 2026-09-28). The lone-last-card rule is gone on
+     purpose: with seven cards the seventh is an odd last child and would span too. ── */
   .fam-sec{padding:0 0 88px}
   .family{--sheet:var(--paper);--text-2:var(--sec);--line:var(--border)}
   .family .sec-label{font-family:var(--sans);font-size:12.5px;font-weight:600;letter-spacing:.1em;
     text-transform:uppercase;color:var(--mut);margin:0}
   .fam-what{font-size:14.5px;line-height:1.5}
-  .fams>.fam:last-child:nth-child(odd){grid-column:1/-1}
+  .fams>.fam:first-child{grid-column:1/-1}
   .fams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px 0 0}
   .fam{position:relative;display:flex;flex-direction:column;gap:9px;padding:16px 44px 16px 18px;border-radius:6px;text-decoration:none;color:inherit;
     background-color:color-mix(in srgb,var(--fam-g) 8%,var(--sheet,#fff));

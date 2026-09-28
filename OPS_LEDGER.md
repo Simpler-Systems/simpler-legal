@@ -1431,3 +1431,15 @@ No workflow ran. Every step was a command in the main session, and each finished
    2,661. Counting the page's HTML source with comments, scripts, styles, the head and SVGs taken
    out gave 2,664. The cause of the low count was not found. The counts of record in `LAUNCH.md`
    are the innerText counts, taken the same way for this page, the live page and simpler.red.
+
+## 2026-09-28 — the first card spans the row: a scan count that its own record had changed
+
+1. **The record changed the count it reported.** The fourth public commit's record says the
+   private-domain needle matched twice. That note names the sibling site by its domain, so it
+   is itself a third match: the pushed tree matched 3 times. The fifth commit's records name
+   that card without its domain, and its scan matched 3 times, the same 3.
+2. **The cut came from the published tree.** The development tree's `HEAD` carried other,
+   unpublished commits, so the public tree could not be `HEAD`'s tree less the export-ignored
+   paths. It is `6275bf9`'s tree with the one CSS rule, this entry and the `LAUNCH.md` record.
+3. Every step of this change finished with a result. One headless Chrome and one local server
+   ran, with 4.9 GB of memory free at the start.
