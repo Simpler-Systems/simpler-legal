@@ -236,6 +236,7 @@ inputs are absent. A skip is never counted as a pass. What each gate needs, from
 | `floor-tables`, `doctrine-profile`, `protected-terms`, `review-honesty`, `finish-attestation`, `compare-refusal`, `docx-parts`, `intake-refusal`, `copy-claims`, `drop-holds`, `site-claims` | `app\frontend\node_modules` |
 | `service-auth`, `service-lifecycle` | `app\frontend\node_modules`; they start the engine service on local ports in 14380 to 14399 |
 | `rust-unit` | `cargo` on PATH and step 3's files. It runs `cargo test --offline`, so the crates must already be downloaded; step 5 downloads them |
+| `family-json` | the `simpler-capital` repository beside this one, whose `scripts\family.mjs` gives the list of live Simpler sites that `site\family.json` must match. It is not in this repository, so this gate skips in a clone |
 | `clone-imports` | nothing |
 | `graph` | `corpus\`, which is in git |
 | `score-pii` | `raw\oos\` and the hydrated gold. Neither is in git (`raw\` is gitignored; the gold is kept as offsets, `WITHHELD.md`), so this gate skips in a clone. Its skip names `node build-oos.mjs` and then `node gold-offsets.mjs hydrate`; neither was run for section 8 |

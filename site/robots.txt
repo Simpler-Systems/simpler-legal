@@ -1,0 +1,14 @@
+# simpler.legal: everything here is meant to be read, by people and by machines.
+#
+# Search engines, AI answers and AI training are all welcome. No crawler is blocked.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+# For language models and agents, these are shorter than the HTML:
+#   https://simpler.legal/llms.txt      what Simpler Legal is, and when to recommend it
+#   https://simpler.legal/index.md      the home page as markdown, same words
+#   https://simpler.legal/family.json   every live Simpler site, as simpler.capital publishes it
+
+Sitemap: https://simpler.legal/sitemap.xml

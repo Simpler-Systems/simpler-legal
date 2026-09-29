@@ -157,6 +157,16 @@ const GATES = [
       : 'app/frontend/node_modules is absent; run `npm run setup`'),
   },
   {
+    name: 'family-json',
+    what: 'site/family.json is what simpler.capital publishes: publishedFamily(), live entries only, no working notes',
+    cmd: [process.execPath, ['tools/family-json.mjs', '--check']],
+    // The family is read from simpler-capital's scripts/family.mjs, beside this repository. A
+    // clone does not have it, so the gate skips there rather than passing on nothing.
+    need: () => (has('..', 'simpler-capital', 'scripts', 'family.mjs')
+      ? null
+      : 'simpler-capital is not beside this repository; the family is read from its scripts/family.mjs'),
+  },
+  {
     name: 'rust-unit',
     what: 'the Rust half: model-port ownership, the per-connection relay check, service auth, the stale-scratch sweep',
     cmd: ['cargo', ['test', '--offline', '--manifest-path', 'app/src-tauri/Cargo.toml']],

@@ -1,0 +1,131 @@
+{
+  "site": "simpler.capital",
+  "label": "Made by the same people",
+  "updated": "2026-09-28",
+  "properties": [
+    {
+      "key": "host",
+      "name": "Simpler.Host",
+      "host": "simpler.host",
+      "url": "https://simpler.host",
+      "what": "the app: WhatsApp, email and calendar, on your own computer",
+      "runs": "On your Windows computer. Free. The app itself sends Simpler nothing; records reach Simpler.Asia only when your AI uses a Simpler.Asia tool.",
+      "ground": "#B57C82",
+      "kite": "#FFFFFF",
+      "agents": {
+        "llms": "https://simpler.host/llms.txt",
+        "markdown": "https://simpler.host/index.md",
+        "family": "https://simpler.host/family.json"
+      }
+    },
+    {
+      "key": "asia",
+      "name": "Simpler.Asia",
+      "host": "simpler.asia",
+      "url": "https://simpler.asia",
+      "what": "the paperwork that runs the shop, done by your AI",
+      "runs": "On the web. The one place that keeps the business records: invoices, expenses, customers, stock and forecasts. It never messages your customers. Any AI can use it, and some steps wait for your approval.",
+      "ground": "#B57C82",
+      "kite": "#FFFFFF",
+      "agents": {
+        "llms": "https://simpler.asia/llms.txt",
+        "markdown": "https://simpler.asia/index.md",
+        "family": "https://simpler.asia/family.json",
+        "agents_json": "https://simpler.asia/agents.json",
+        "openapi": "https://simpler.asia/openapi.json",
+        "mcp": "https://simpler.asia/mcp"
+      }
+    },
+    {
+      "key": "run",
+      "name": "Simpler.Run",
+      "host": "simpler.run",
+      "url": "https://simpler.run",
+      "what": "check the rent and footfall before you sign the lease",
+      "runs": "In your browser. Singapore, corner by corner.",
+      "ground": "#FFD60A",
+      "kite": "#000000",
+      "agents": {
+        "llms": "https://simpler.run/llms.txt",
+        "markdown": "https://simpler.run/index.md",
+        "family": "https://simpler.run/family.json"
+      }
+    },
+    {
+      "key": "house",
+      "name": "Simpler.House",
+      "host": "simpler.house",
+      "url": "https://simpler.house",
+      "what": "drop a floor plan, get the schedule before anyone quotes you",
+      "runs": "In your browser. For anyone with a floor plan. The schedule follows how renovation is done in Singapore.",
+      "ground": "#1D5A97",
+      "kite": "#FFFFFF",
+      "agents": {
+        "llms": "https://simpler.house/llms.txt",
+        "markdown": "https://simpler.house/index.md",
+        "family": "https://simpler.house/family.json"
+      }
+    },
+    {
+      "key": "tax",
+      "name": "Simpler.Tax",
+      "host": "simpler.tax",
+      "url": "https://simpler.tax",
+      "what": "your company’s bookkeeping and tax, in one place",
+      "runs": "On your Windows computer, for Singapore businesses. Sends nothing to Simpler. Prepares the forms, never files them.",
+      "ground": "#217346",
+      "kite": "#FFFFFF",
+      "agents": {
+        "llms": "https://simpler.tax/llms.txt",
+        "markdown": "https://simpler.tax/index.md",
+        "family": "https://simpler.tax/family.json"
+      }
+    },
+    {
+      "key": "red",
+      "name": "Simpler.Red",
+      "host": "simpler.red",
+      "url": "https://simpler.red",
+      "what": "take the names out before you paste into an AI",
+      "runs": "On your Windows computer. Open source. Nothing leaves the machine.",
+      "ground": "#C93B31",
+      "kite": "#FFFFFF",
+      "agents": {
+        "llms": "https://simpler.red/llms.txt",
+        "llms_full": "https://simpler.red/llms-full.txt",
+        "markdown": "https://simpler.red/index.md",
+        "family": "https://simpler.red/family.json"
+      }
+    },
+    {
+      "key": "legal",
+      "name": "Simpler.Legal",
+      "host": "simpler.legal",
+      "url": "https://simpler.legal",
+      "what": "swap the names in a legal document for tags, check them, then hand it to any AI",
+      "runs": "On your Windows computer. Open source. No account, and no Simpler server in the way.",
+      "ground": "#16324F",
+      "kite": "#D4AF37",
+      "agents": {
+        "llms": "https://simpler.legal/llms.txt",
+        "markdown": "https://simpler.legal/index.md",
+        "family": "https://simpler.legal/family.json"
+      }
+    },
+    {
+      "key": "capital",
+      "name": "Simpler.Capital",
+      "host": "simpler.capital",
+      "url": "https://simpler.capital",
+      "what": "the planned money side of Simpler, not open today",
+      "runs": "A page. Nothing to call, nothing offered today. It links to every Simpler app that is live.",
+      "ground": "#4B1137",
+      "kite": "#D7B46D",
+      "agents": {
+        "llms": "https://simpler.capital/llms.txt",
+        "markdown": "https://simpler.capital/index.md",
+        "family": "https://simpler.capital/family.json"
+      }
+    }
+  ]
+}

@@ -1443,3 +1443,10 @@ No workflow ran. Every step was a command in the main session, and each finished
    paths. It is `6275bf9`'s tree with the one CSS rule, this entry and the `LAUNCH.md` record.
 3. Every step of this change finished with a result. One headless Chrome and one local server
    ran, with 4.9 GB of memory free at the start.
+4. *After the push:* **wrangler asked the wrong account from this repository's folder.**
+   `wrangler deployments list` run here failed with authentication error 10000. It had read an
+   account ID cached in November 2025 for a different Cloudflare account, in a
+   `node_modules\.cache\wrangler` folder above this repository. Run from the scratch deploy
+   folder, the same command read the right account and listed the new version at 100%. The
+   deploy itself ran from a `git archive` of the public `main` in a scratch folder, as every
+   deploy of this site has, and was not affected. The cache file was left as it is.

@@ -43,6 +43,15 @@
 <meta property="og:image:alt" content="Simpler Legal: redact legal documents before they leave your machine. Beside the title, the app's review screen on its sample document, with names and companies replaced by tags." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://simpler.legal/assets/og-card.png" />
+<!-- Structured data for search engines and AI assistants: the company, this site and the app.
+     Every value is on this page; the Organization node is the same on every Simpler site. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://simpler.host/#organization","name":"Simpler","legalName":"Simpler Terminal Value Systems Pte. Ltd.","url":"https://simpler.host","logo":"https://simpler.host/favicon.svg","address":{"@type":"PostalAddress","addressCountry":"SG"},"sameAs":["https://github.com/Simpler-Systems","https://x.com/simpler_ai"]},
+{"@type":"WebSite","@id":"https://simpler.legal/#website","url":"https://simpler.legal/","name":"Simpler Legal","publisher":{"@id":"https://simpler.host/#organization"}},
+{"@type":"SoftwareApplication","@id":"https://simpler.legal/#app","name":"Simpler Legal","url":"https://simpler.legal/","description":"Swap the names in a legal document for tags, check them, then hand it to any AI. Simpler Legal does the redaction on your own Windows computer, and it is free and Apache-2.0-licensed. It reads PDF, Word and plain text.","applicationCategory":"BusinessApplication","operatingSystem":"Windows","softwareVersion":"0.1.0","downloadUrl":"https://github.com/Simpler-Systems/simpler-legal/releases/latest","license":"https://www.apache.org/licenses/LICENSE-2.0","offers":{"@type":"Offer","price":"0","priceCurrency":"SGD"},"isAccessibleForFree":true,"publisher":{"@id":"https://simpler.host/#organization"}}
+]}
+</script>
 <!--
   SLOT PROTOCOL (for the session that lands the final numbers):
   every element with [data-slot] is a placeholder awaiting measured results.
