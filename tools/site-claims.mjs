@@ -1330,7 +1330,7 @@ async function main() {
       const offMachine = /sends nothing off th(?:e|is) (?:machine|computer)/i;
       never(b, 'the app sends nothing off the machine', unmeasured, [V.idxH.replace(/<!--[\s\S]*?-->/g, ''), V.it, V.res, V.readme, V.privacy].some((s) => offMachine.test(s)));
       return b;
-    }, [['the description saying it', swap('idxH', 'There is no account, no API key and no server of ours." />', 'The app itself sends nothing off the machine." />')],
+    }, [['the description saying it', swap('idxH', 'it runs on your own Windows computer." />', 'it runs on your own Windows computer. The app itself sends nothing off the machine." />')],
       ['the tape saying it', swap('idxH', 'NO API KEY &middot; NO ACCOUNT &middot; NO SERVER OF OURS', 'NO API KEY &middot; NO ACCOUNT &middot; SENDS NOTHING OFF THE MACHINE')],
       ['README saying it', putBack('readme', README_SIDE, ' The app sends nothing off this machine.')]]],
   ];
