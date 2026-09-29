@@ -187,6 +187,9 @@ ${s.body.map(render).join('\n')}
 <!-- Written by site-src/build-answers.mjs from site-src/answers/${file}. Do not edit by hand: edit the source and re-run the build. -->
 <meta name="description" content="${esc(meta.description)}" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+<link rel="icon" sizes="48x48" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="canonical" href="${url}" />
 <link rel="alternate" type="text/markdown" href="${url}.md" />
 <meta property="og:type" content="article" />

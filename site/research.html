@@ -20,12 +20,12 @@
 <style>
 :root{
   --paper:#F7F6F3; --ink:#37352F; --muted:#6F6B64; --line:#E3E1DC; --card:#FCFCFB;
-  --navy:#16324F; --navy-wash:#E8EEF6; --gold:#D4AF37; --good:#1E7F4F; --good-wash:#E2F2E9;
-  --warn:#9A7B24; --warn-wash:#F7F0DC; --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+  --navy:#16324F; --navy-wash:#E8EEF6; --gold:#D4AF37; --gold-ink:#876A1A; --good:#17693F; --good-wash:#E2F2E9;
+  --warn:#7A5F12; --warn-wash:#F7F0DC; --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
 }
 @media (prefers-color-scheme: dark){
   :root{ --paper:#191919; --ink:#E6E4DF; --muted:#9B968E; --line:#33322F; --card:#211F1E;
-         --navy-wash:#1C2B3D; --good-wash:#16281E; --warn-wash:#2B2517; }
+         --navy-wash:#1C2B3D; --gold-ink:#D4AF37; --good:#54B183; --good-wash:#16281E; --warn:#D3A445; --warn-wash:#2B2517; }
 }
 *{box-sizing:border-box;margin:0}
 body{background:var(--paper);color:var(--ink);font:16px/1.65 'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;padding:0 20px 80px}
@@ -38,7 +38,7 @@ header{padding:56px 0 8px}
 h1{font-size:34px;line-height:1.2;letter-spacing:-.01em;margin:6px 0 10px}
 .sub{color:var(--muted);max-width:620px}
 h2{font-size:22px;margin:56px 0 6px;letter-spacing:-.005em}
-h2 .sec{color:var(--gold);font-family:var(--mono);font-size:14px;margin-right:8px}
+h2 .sec{color:var(--gold-ink);font-family:var(--mono);font-size:14px;margin-right:8px}
 h3{font-size:16px;margin:24px 0 6px}
 p{margin:10px 0;max-width:720px}
 .note{color:var(--muted);font-size:14px;max-width:720px}

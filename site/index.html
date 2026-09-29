@@ -28,6 +28,9 @@
      different font. -->
 <meta name="description" content="Swap the names in a legal document for tags, check them, then hand it to any AI. Simpler Legal does the redaction on your own Windows computer, and it is free and Apache-2.0-licensed. On 46 unseen SEC-filed business agreements: zero identity leaks across four consecutive fresh draws (45 ran the engine as it stood before its freeze, 1 the frozen engine). Court judgments and a firm's own filings still leak some. Dates, amounts, most places (not a person's address) and, by default, company names stay readable. There is no account, no API key and no server of ours." />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+<link rel="icon" sizes="48x48" href="favicon.ico" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IBMPlexSerif-SemiBold-Latin1.woff2" crossorigin />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/IBMPlexSans-Regular-Latin1.woff2" crossorigin />
 <link rel="stylesheet" href="fonts.css" />
@@ -258,7 +261,7 @@
   /* ── steps — captions under the corridor sheet, not more cards ── */
   .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0 28px}
   .step{border-top:1px solid var(--border);padding:16px 4px 6px;position:relative}
-  .step .n{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1;color:var(--faint);display:block;margin-bottom:12px}
+  .step .n{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1;color:var(--mut);display:block;margin-bottom:12px}
   .step h3{font-size:15.5px;font-weight:600;margin-bottom:6px}
   .step p{font-size:14px;line-height:1.6;color:var(--sec)}
   .stamp{position:absolute;top:14px;right:4px;border:2.5px solid var(--red);color:var(--red);border-radius:5px;
@@ -331,7 +334,7 @@
   footer .fbrand{display:flex;align-items:center;gap:8px;color:var(--ink);font-weight:600}
   footer .spacer{flex:1}
   footer a{color:var(--sec)}
-  footer .legal{margin-top:14px;font-size:13px;color:var(--faint)}
+  footer .legal{margin-top:14px;font-size:13px;color:var(--mut)}
 
   @media (prefers-reduced-motion: reduce){
     html{scroll-behavior:auto}
@@ -352,7 +355,7 @@
       --table:#232220; --chrome:#2A2826; --paper:#2F2D2A; --card:#282624;
       --hair:#3B3835; --border:#4A4641; --border-strong:#767068; --hover:#35322E;
       --ink:#E7E4DE; --sec:#B4AEA5; --mut:#9B958B; --faint:#716C64;
-      --red:#6E96BE; --red-hover:#5B84AD; --red-wash:#1C2B3D;
+      --red:#6E96BE; --red-hover:#86A9CC; --red-wash:#1C2B3D;
       --applied:#141312;
       --go:#54B183; --go-wash:#20342A; --amber:#D3A445; --amber-wash:#383021;
       --person:#82ABD7; --person-wash:#26313E;
@@ -363,6 +366,10 @@
     .navpill{background:rgba(42,40,38,.94)}
     .fold .shot img,.shotcard img{filter:brightness(.9) contrast(1.02)}
     .btn-red{box-shadow:0 1px 2px rgba(0,0,0,.4)}
+    /* white on the dark mode's light blue is 3.1:1; ink is 5.4, and the hover
+       goes lighter, not darker, so it stays above 4.5 */
+    .btn-red,.btn-red:hover{color:#1F1D1A}
+    .exhibit .ex-label{color:#86A9CC}
     .tape{box-shadow:0 5px 18px rgba(0,0,0,.5);background:#16324F}
     /* paper objects stay light: the demo documents and diagram sheets are
        literal sheets on the dark desk — re-derive the light ramp locally */
