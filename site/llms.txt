@@ -29,10 +29,12 @@ Maker: Simpler Terminal Value Systems Pte. Ltd.
 - [Home](https://simpler.legal/): what it does, the copy-paste demo, the evidence, the download and common questions.
 - [The measurement record](https://simpler.legal/research): the full methodology, per-class results and leak ledger, and how to reproduce the numbers.
 - [Brief for IT & InfoSec reviewers](https://simpler.legal/it): the local ports, the model server and the installer, and what the .docx export's check cannot see.
+- [How to remove your client's name from a contract before you use ChatGPT](https://simpler.legal/remove-client-names-before-chatgpt): the steps in Word on Windows, the ChatGPT settings that keep a chat out of training, and what Singapore's rules and guides say.
 
 ## For agents
 
 - [index.md](https://simpler.legal/index.md): the home page as markdown, same words.
+- [remove-client-names-before-chatgpt.md](https://simpler.legal/remove-client-names-before-chatgpt.md): that answer page as markdown, same words.
 - [family.json](https://simpler.legal/family.json): every live Simpler site, as JSON: the same list simpler.capital publishes.
 
 ## The Simpler family

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Remove a client’s name from a contract before using ChatGPT</title>
+<!-- Written by site-src/build-answers.mjs from site-src/answers/remove-client-names-before-chatgpt.md. Do not edit by hand: edit the source and re-run the build. -->
+<meta name="description" content="Swap each name and ID number for a placeholder like [Party A] in Word, then paste only the clauses into a Temporary chat. With Singapore's rules." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="canonical" href="https://simpler.legal/remove-client-names-before-chatgpt" />
+<link rel="alternate" type="text/markdown" href="https://simpler.legal/remove-client-names-before-chatgpt.md" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://simpler.legal/remove-client-names-before-chatgpt" />
+<meta property="og:site_name" content="Simpler Legal" />
+<meta property="og:title" content="Remove a client’s name from a contract before using ChatGPT" />
+<meta property="og:description" content="Swap each name and ID number for a placeholder like [Party A] in Word, then paste only the clauses into a Temporary chat. With Singapore's rules." />
+<meta property="og:image" content="https://simpler.legal/assets/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://simpler.legal/assets/og-card.png" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://simpler.host/#organization","name":"Simpler","legalName":"Simpler Terminal Value Systems Pte. Ltd.","url":"https://simpler.host","logo":"https://simpler.host/favicon.svg","address":{"@type":"PostalAddress","addressCountry":"SG"},"sameAs":["https://github.com/Simpler-Systems","https://x.com/simpler_ai"]},{"@type":"Article","@id":"https://simpler.legal/remove-client-names-before-chatgpt#article","url":"https://simpler.legal/remove-client-names-before-chatgpt","headline":"How to remove your client's name from a contract before you use ChatGPT","description":"Swap each name and ID number for a placeholder like [Party A] in Word, then paste only the clauses into a Temporary chat. With Singapore's rules.","inLanguage":"en","datePublished":"2026-09-29","dateModified":"2026-09-29","author":{"@id":"https://simpler.host/#organization"},"publisher":{"@id":"https://simpler.host/#organization"},"isPartOf":{"@id":"https://simpler.legal/#website"},"about":{"@id":"https://simpler.legal/#app"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Simpler Legal","item":"https://simpler.legal/"},{"@type":"ListItem","position":2,"name":"Remove client names before ChatGPT","item":"https://simpler.legal/remove-client-names-before-chatgpt"}]}]}
+</script>
+<link rel="stylesheet" href="fonts.css" />
+<style>
+  /* the site's tokens, as it.html and index.html carry them */
+  :root{
+    color-scheme:light;
+    --table:#F0E9DD; --chrome:#F7F2E9; --paper:#FFFEFA; --card:#FAF6ED;
+    --hair:#E3DACA; --border:#CFC5B2; --border-strong:#8D8371; --hover:#EAE1D2;
+    --ink:#37352F; --sec:#5D5951; --mut:#665F55;
+    --red:#16324F; --red-hover:#0F2438; --on-red:#fff;
+    --sh-card:0 1px 3px rgba(31,29,26,.05);
+    --sans:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+    --serif:'IBM Plex Serif','Charter',Georgia,Cambria,serif;
+    --mono:'IBM Plex Mono','Cascadia Code',Consolas,ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{overflow-x:clip}
+  :focus-visible{outline:2px solid var(--border-strong);outline-offset:2px;border-radius:3px}
+  body{background:var(--table);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:2.5px;text-decoration-color:var(--border)}
+  a:hover{color:var(--red);text-decoration-color:var(--red)}
+  code{font-family:var(--mono);font-size:.86em;background:var(--card);border:1px solid var(--hair);border-radius:5px;padding:1px 5px;white-space:nowrap}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+
+  .navbar{position:sticky;top:14px;z-index:50;display:flex;justify-content:center;padding:0 16px}
+  .navpill{display:flex;align-items:center;gap:22px;background:rgba(255,253,247,.92);backdrop-filter:blur(8px);
+    border:1px solid var(--hair);border-radius:999px;padding:9px 20px;box-shadow:var(--sh-card);flex-wrap:nowrap;white-space:nowrap}
+  .navpill .brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);padding:4px;margin:-4px}
+  .navpill .brand b{font-size:13.5px;font-weight:600}
+  .navpill nav{display:flex;gap:18px;font-size:13px;flex-wrap:nowrap}
+  .navpill nav a{color:var(--sec);text-decoration:none;padding:4px 0}
+  .navpill nav a:hover{color:var(--ink)}
+  @media (max-width:520px){.navpill .brand b{display:none}.navpill{gap:12px;padding:9px 16px}.navpill nav{gap:12px}}
+
+  .head{padding:52px 0 0}
+  .crumbs{font-size:13.5px;color:var(--mut);margin-bottom:14px}
+  .crumbs a{color:var(--mut)}
+  .head h1{font-family:var(--serif);font-size:34px;font-weight:600;line-height:1.18;letter-spacing:-.01em;text-wrap:balance}
+  .answer{margin-top:22px;background:var(--paper);border:1px solid var(--hair);border-left:3px solid var(--red);
+    border-radius:0 10px 10px 0;padding:18px 22px;box-shadow:var(--sh-card)}
+  .answer p{font-size:18px;line-height:1.6;color:var(--ink);text-wrap:pretty}
+  .answer p+p{margin-top:12px}
+  .note{margin-top:12px;font-size:13.5px;color:var(--mut)}
+
+  section{padding:40px 0 0}
+  section[id]{scroll-margin-top:88px}
+  section h2{font-family:var(--serif);font-size:23px;font-weight:600;line-height:1.3;letter-spacing:-.01em;margin-bottom:12px;text-wrap:balance}
+  section p, section li{color:var(--sec);line-height:1.7;max-width:35em;text-wrap:pretty}
+  section b{color:var(--ink);font-weight:600}
+  section p+p, section ol+p, section ul+p, section p+ol, section p+ul{margin-top:14px}
+  section ol, section ul{padding-left:1.4em}
+  section li{margin-top:10px;padding-left:.2em}
+  section li::marker{color:var(--mut)}
+
+  .product{max-width:calc(35em + 54px);margin-top:48px;padding:26px 26px 28px;background:var(--paper);border:1px solid var(--hair);border-radius:12px;box-shadow:var(--sh-card)}
+  .kicker{font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+  .cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;align-items:center}
+  .btn-red{display:inline-block;background:var(--red);color:var(--on-red);font-size:15px;font-weight:600;
+    padding:12px 22px;border-radius:9px;text-decoration:none;box-shadow:0 1px 2px rgba(31,29,26,.18)}
+  .btn-red:hover{background:var(--red-hover);color:var(--on-red)}
+  .btn-plain{display:inline-block;background:var(--paper);border:1px solid var(--border);color:var(--ink);
+    font-size:15px;font-weight:600;padding:11px 21px;border-radius:9px;text-decoration:none;box-shadow:var(--sh-card)}
+  .btn-plain:hover{background:var(--hover);color:var(--ink)}
+
+  .sources h2{font-size:19px}
+  .sources li{font-size:14.5px;margin-top:6px}
+  .checked{margin-top:20px;font-size:13.5px;color:var(--mut)}
+
+  footer{border-top:1px solid var(--hair);background:var(--chrome);margin-top:56px;padding:22px 0 40px;color:var(--mut);font-size:13px}
+  footer .row{display:flex;gap:10px 20px;flex-wrap:wrap;align-items:center}
+  footer .spacer{flex:1}
+  footer a{color:var(--sec);display:inline-block;padding:4px 0}
+
+  @media (max-width:600px){
+    .wrap{padding:0 16px}
+    .head{padding-top:40px}
+    .head h1{font-size:28px}
+    .answer{padding:16px 18px}
+    .answer p{font-size:17px}
+    section h2{font-size:21px}
+    .product{padding:22px 18px 24px}
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme:dark;
+      --table:#232220; --chrome:#2A2826; --paper:#2F2D2A; --card:#282624;
+      --hair:#3B3835; --border:#4A4641; --border-strong:#767068; --hover:#35322E;
+      --ink:#E7E4DE; --sec:#B4AEA5; --mut:#9B958B;
+      /* the dark scheme's light blue carries dark text: white on it would be 3:1 */
+      --red:#6E96BE; --red-hover:#86A9CC; --on-red:#1F1D1A;
+      --sh-card:0 1px 3px rgba(0,0,0,.35);
+    }
+    .navpill{background:rgba(42,40,38,.94)}
+    .btn-red{box-shadow:0 1px 2px rgba(0,0,0,.4)}
+  }
+
+  @media print{
+    :root{--table:#fff; --chrome:#fff; --paper:#fff; --card:#f5f2ec; --ink:#1c1a17; --sec:#3d3a34; --mut:#5c574e; --sh-card:none}
+    .navbar, .cta{display:none}
+    footer{background:none;margin-top:24px;padding:12px 0 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navpill">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="20" height="20" style="border-radius:5px" /><b>Simpler Legal</b></a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="research">Research</a>
+      <a href="./#download">Download</a>
+      <a href="https://github.com/Simpler-Systems/simpler-legal">Source</a>
+    </nav>
+  </div>
+</div>
+
+<main class="wrap">
+<article>
+<div class="head">
+  <p class="crumbs"><a href="./">Simpler Legal</a> / Remove client names before ChatGPT</p>
+  <h1>How to remove your client’s name from a contract before you use ChatGPT</h1>
+  <div class="answer">
+<p>Work on a copy in Word: accept all tracked changes, then use the Replace box (Ctrl+H) to swap every name, ID number, address and account number for a placeholder such as [Party&nbsp;A], the kind Singapore’s Ministry of Law (MinLaw) suggests. Even without names, the facts of a deal can point to your client, so read the result once more and paste only the clauses you need, as plain text and not the file, into a Temporary chat in&nbsp;ChatGPT.</p>
+  </div>
+  <p class="note">Not legal advice.</p>
+</div>
+
+<section id="what-should-you-take-out-of-the-contract">
+<h2>What should you take out of the contract?</h2>
+<ul>
+  <li><b>Names:</b> every party and its short forms, signatories, witnesses, and anyone in the notices&nbsp;clause.</li>
+  <li><b>Numbers:</b> NRIC, FIN, passport, UEN, phone, bank account and your matter reference. Singapore’s Personal Data Protection Commission (PDPC) says a partial NRIC can still be personal data, so replace the whole&nbsp;number.</li>
+  <li><b>Addresses and emails,</b> including the address of a property the deal is&nbsp;about.</li>
+  <li><b>The letterhead, logo and file&nbsp;name.</b></li>
+  <li><b>Details that identify only together,</b> which the PDPC calls indirect identifiers. In a contract: an unusual amount, a date and a place. Where the AI does not need the exact figure, replace it too, as MinLaw’s [Amount&nbsp;X] example&nbsp;does.</li>
+</ul>
+</section>
+
+<section id="how-do-you-remove-client-names-in-word-on-windows">
+<h2>How do you remove client names in Word on Windows?</h2>
+<ol>
+  <li><b>Save a copy</b> (File &gt; Save As) and work only on&nbsp;it.</li>
+  <li><b>Accept all tracked changes and stop tracking:</b> Review &gt; Accept &gt; Accept All Changes and Stop Tracking. Otherwise each name you replace stays in the file as a tracked deletion. The No Markup view only hides&nbsp;changes.</li>
+  <li><b>Write your key</b> in a separate file on your own computer. Give each party its own placeholder, such as [Party&nbsp;A] or its role, like [Purchaser], so the AI can tell them apart. MinLaw suggests recording your placeholders, and the PDPC says a table mapping pseudonyms back to people should be kept securely. Never paste the&nbsp;key.</li>
+  <li><b>Replace each name:</b> press Ctrl+H, type the name in Find what and its placeholder in Replace with. Under More, tick Find whole words only, so a short name is not changed inside a longer word. Click Find Next, then Replace, one at a time. Don’t use Replace All: it also changes words you didn’t mean. Repeat for the surname alone, initials and every&nbsp;number.</li>
+  <li><b>Catch the numbers you never typed:</b> tick Use wildcards and search for <code>[STFGM][0-9]{7}[A-Z]</code> for NRIC and FIN numbers, then <code>[3689][0-9]{7}</code> for Singapore phone numbers, which have eight digits and start with 3, 6, 8 or 9 (<a href="https://www.imda.gov.sg/-/media/imda/files/regulation-licensing-and-consultations/frameworks-and-policies/numbering/national-numbering-plan-and-allocation-process/imda-national-numbering-plan.pdf">IMDA</a>). Replace each one you find, then untick Use&nbsp;wildcards.</li>
+  <li><b>Check by eye:</b> headers, footers, footnotes, text boxes, schedules and the signature page, for a name spelled another&nbsp;way.</li>
+  <li><b>Move to plain text:</b> copy the clauses you need into Notepad, then clear the formatting (the Edit menu or the formatting toolbar), or turn formatting off in Notepad’s settings first. A link can hide an email address behind its text (<a href="https://blogs.windows.com/windows-insider/2025/05/30/text-formatting-in-notepad-begin-rolling-out-to-windows-insiders/">Microsoft</a>). The <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/disclosing-documents-to-the-public-securely/how-do-we-avoid-an-accidental-breach-when-redacting-information/">ICO</a>, the UK’s information rights regulator, says converting to plain text removes any information that is not displayed. Search the text for every name and number on your&nbsp;key.</li>
+  <li><b>Send less:</b> MinLaw suggests isolated clauses instead of full documents, and questions framed as&nbsp;hypotheticals.</li>
+</ol>
+<p><b>If you must upload the file itself,</b> run Document Inspector on your copy first: File &gt; Info &gt; Check for Issues &gt; Inspect Document, select Inspect, then Remove All for comments and revisions and for document properties, which hold the author and the last person to save the file. It cannot find text hidden in other ways, such as white text on a white&nbsp;background.</p>
+</section>
+
+<section id="what-if-the-contract-is-a-pdf">
+<h2>What if the contract is a PDF?</h2>
+<p>Black boxes do not remove names. The ICO notes that text under a black rectangle stays in the file and may be revealed by pasting it into Notepad. Work from the Word version, or copy the clauses into plain text and clean them there. If the PDF is a scan, its words may be stored as an image, so type out what you&nbsp;need.</p>
+</section>
+
+<section id="which-chatgpt-settings-keep-the-chat-out-of-training">
+<h2>Which ChatGPT settings keep the chat out of training?</h2>
+<ul>
+  <li><b>Use a Temporary chat:</b> open a new chat and select Temporary. OpenAI says a temporary chat is not used to improve its models while it remains temporary, and that it may keep a copy for up to 30 days for safety purposes. Don’t save it: once saved, your model-improvement setting&nbsp;applies.</li>
+  <li><b>Or at least turn training off:</b> account menu &gt; Settings &gt; Data controls &gt; Improve the model for everyone, off. OpenAI says new conversations then won’t be used to train its models, though they can still appear in your chat&nbsp;history.</li>
+  <li><b>Don’t rate the answer.</b> OpenAI <a href="https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt">says</a> that if you give a thumbs up or down, the whole conversation may be used to train its models, even after you turn training&nbsp;off.</li>
+  <li><b>Check again later.</b> On free tools, MinLaw’s guide says to turn off both data retention and model training, and to check regularly, because updates may reset the settings. It notes that data may be kept for a while even&nbsp;so.</li>
+</ul>
+</section>
+
+<section id="what-do-singapore-s-rules-and-guides-say-about-using-chatgpt">
+<h2>What do Singapore’s rules and guides say about using ChatGPT?</h2>
+<ul>
+  <li><b>Rule 6</b> of the <a href="https://sso.agc.gov.sg/SL/LPA1966-S706-2015">Legal Profession (Professional Conduct) Rules 2015</a>: you must not knowingly disclose information that is confidential to your client and that you acquired in the course of the engagement, unless an exception applies, such as the client authorising the&nbsp;disclosure.</li>
+  <li><b>MinLaw’s <a href="https://www.mlaw.gov.sg/files/Guide_for_using_Generative_AI_in_the_Legal_Sector__Published_on_6_Mar_2026_.pdf">Guide for Using Generative AI in the Legal Sector</a></b> (6 March 2026, non-binding) says rule 6 does not prohibit GenAI “provided that appropriate safeguards are implemented”. On free tools, it says to avoid confidential information and, if necessary, to use generic placeholders such as [Party&nbsp;A], [Company&nbsp;B] and [Amount&nbsp;X]. For confidential client data, it says to prefer enterprise-level&nbsp;tools.</li>
+  <li><b>If the contract is part of a court case,</b> the Singapore Courts’ <a href="https://www.judiciary.gov.sg/docs/default-source/news-and-resources-docs/guide-on-the-use-of-generative-ai-tools-by-court-users.pdf?sfvrsn=3900c814_1">guide for court users</a> says anything you give a GenAI chatbot may potentially be disclosed publicly, and a document you obtained through a court order for production is for those proceedings&nbsp;only.</li>
+  <li><b>The Personal Data Protection Act (PDPA)</b> covers personal data: data about an individual who can be identified. Rule 6 is not limited to personal data, so a company client’s name and UEN need the same&nbsp;care.</li>
+</ul>
+</section>
+
+<section id="is-the-contract-anonymous-once-the-names-are-gone">
+<h2>Is the contract anonymous once the names are gone?</h2>
+<p>Not necessarily. Removing names is what the PDPC calls de-identification, which it does not treat as anonymisation: de-identified data may be easily re-identified when combined with data that is publicly or easily accessible. MinLaw adds that anonymised content may still be identifiable with enough context, so a known deal or an unusual price can still point to your client. It also says to consider telling clients you use GenAI, especially when you use it substantially, for example to review contracts, or when a tool’s data handling may clash with their preferences or data residency requirements. If in doubt, rule 6 allows a disclosure your client authorises, so&nbsp;ask.</p>
+</section>
+
+<section class="product" id="is-there-a-free-app-that-swaps-the-names-for-you">
+  <p class="kicker">Do it in Simpler Legal</p>
+  <h2>Is there a free app that swaps the names for you?</h2>
+<p>Simpler Legal is free, with no account, and does the redaction on your own Windows computer: it never uploads, because there is nowhere to upload to. It reads PDF, Word (.docx) and plain text, swaps people’s names and identifiers for tags such as [Person1], and lists everything it found in one table for you to check. The key that maps tags back to names exports separately, only if you ask. Dates, amounts, business facts and most places stay readable on purpose, and by default so do company names that are not the document’s own. Tags follow spellings, not people, so read the copy before you send it. It does not read scanned pages yet. Version 0.1.0 is not code-signed, so Windows SmartScreen will warn, and you download the 3.35&nbsp;GB model&nbsp;yourself.</p>
+<p>How well it does, measured:&nbsp;<a href="research">simpler.legal/research</a>.</p>
+  <div class="cta">
+    <a class="btn-red" href="./#download">Download for Windows</a>
+    <a class="btn-plain" href="./#how">How it works</a>
+  </div>
+</section>
+<p class="note">Not legal advice.</p>
+
+<section class="sources" id="sources">
+<h2>Sources</h2>
+<ul>
+  <li>Legal Profession (Professional Conduct) Rules 2015, rule 6: <a href="https://sso.agc.gov.sg/SL/LPA1966-S706-2015">Singapore Statutes&nbsp;Online</a></li>
+  <li>Ministry of Law: <a href="https://www.mlaw.gov.sg/files/Guide_for_using_Generative_AI_in_the_Legal_Sector__Published_on_6_Mar_2026_.pdf">Guide for Using Generative AI in the Legal&nbsp;Sector</a></li>
+  <li>Singapore Courts: <a href="https://www.judiciary.gov.sg/docs/default-source/news-and-resources-docs/guide-on-the-use-of-generative-ai-tools-by-court-users.pdf?sfvrsn=3900c814_1">Guide on the Use of Generative AI Tools by Court&nbsp;Users</a></li>
+  <li>PDPC: <a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-key-concepts/advisory-guidelines-on-key-concepts-in-the-pdpa-17-may-2022.pdf">Key Concepts in the PDPA</a>, <a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/ag-on-selected-topics/advisory-guidelines-on-the-pdpa-for-selected-topics-(revised-may-2024).pdf">Selected Topics</a>, <a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/guide-to-basic-anonymisation-(updated-24-july-2024).pdf">Guide to Basic Anonymisation</a>, <a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/advisory-guidelines/advisory-guidelines-for-nric-numbers---310818.pdf">NRIC&nbsp;Numbers</a></li>
+  <li>Microsoft: <a href="https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2">Keyboard shortcuts in Word</a>, <a href="https://support.microsoft.com/en-us/word/replace-text">Replace text</a>, <a href="https://support.microsoft.com/en-us/word/training/find-and-replace-text-in-word">Find and replace text</a>, <a href="https://support.microsoft.com/en-us/word/accept-or-reject-tracked-changes-in-word">Accept or reject tracked changes</a>, <a href="https://support.microsoft.com/en-us/office/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f">Document&nbsp;Inspector</a></li>
+  <li>ICO: <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/disclosing-documents-to-the-public-securely/how-do-we-avoid-an-accidental-breach-when-redacting-information/">Avoiding an accidental breach when&nbsp;redacting</a></li>
+  <li>OpenAI: <a href="https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt">Temporary chat</a>, <a href="https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt">Data&nbsp;controls</a></li>
+  <li>Microsoft: <a href="https://blogs.windows.com/windows-insider/2025/05/30/text-formatting-in-notepad-begin-rolling-out-to-windows-insiders/">Text formatting in&nbsp;Notepad</a></li>
+  <li>IMDA: <a href="https://www.imda.gov.sg/-/media/imda/files/regulation-licensing-and-consultations/frameworks-and-policies/numbering/national-numbering-plan-and-allocation-process/imda-national-numbering-plan.pdf">National Numbering&nbsp;Plan</a></li>
+</ul>
+</section>
+
+<p class="checked">Sources checked on 29 September 2026.</p>
+</article>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <span>Simpler Legal · simpler.legal/remove-client-names-before-chatgpt</span>
+    <span>© 2026 Simpler Terminal Value Systems Pte Ltd · Apache-2.0 licensed</span>
+    <span class="spacer"></span>
+    <a href="./">Home</a>
+    <a href="research">Research</a>
+    <a href="https://github.com/Simpler-Systems/simpler-legal">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>

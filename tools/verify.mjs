@@ -157,6 +157,12 @@ const GATES = [
       : 'app/frontend/node_modules is absent; run `npm run setup`'),
   },
   {
+    name: 'site-answers',
+    what: 'the answer pages are what site-src/build-answers.mjs writes today, their product box still backed by the landing, and each listed in the sitemap and llms.txt',
+    cmd: [process.execPath, ['site-src/build-answers.mjs', '--check']],
+    need: () => null,
+  },
+  {
     name: 'family-json',
     what: 'site/family.json is what simpler.capital publishes: publishedFamily(), live entries only, no working notes',
     cmd: [process.execPath, ['tools/family-json.mjs', '--check']],
