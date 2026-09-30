@@ -319,6 +319,10 @@
   .note h3{font-size:14.5px;font-weight:600;margin-bottom:6px}
   .note p{font-size:14px;line-height:1.6;color:var(--sec)}
   .note p b{color:var(--ink)}
+  /* the tools and settings beside the corridor, under its four steps */
+  .beside{margin-top:48px}
+  .beside .kicker{margin-bottom:0}
+  .notes.three{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:10px 0 30px}
 
   .checks{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;max-width:920px;margin:0 auto}
   @media (max-width:720px){.checks{grid-template-columns:1fr}}
@@ -617,7 +621,7 @@
     <div class="sechead">
       <p class="kicker">The corridor</p>
       <h2>Four steps, all local</h2>
-      <p class="lead">One corridor, no suite, no workflow product. It does one job.</p>
+      <p class="lead">The redaction is four steps, each on this computer. Beside it, the app has three tools for the documents you've added and three settings the redaction reads.</p>
     </div>
     <div class="factory" aria-label="A document on a conveyor: dropped in, scanned and redacted, stamped as reviewed, then exported with its key produced separately.">
       <div class="factory-inner">
@@ -678,6 +682,26 @@
       <div class="step"><span class="n">2</span><h3>Redact</h3><p>A wide sweep finds identities; code removes every copy document-wide; a second pass re-reads the result hunting anything left behind.</p></div>
       <div class="step"><span class="stamp">Reviewed</span><span class="n">3</span><h3>Review</h3><p>Everything found, in one table, with keyboard shortcuts. The frozen engine flags no row as uncertain, so the reading is yours. Nothing exports until you finish.</p></div>
       <div class="step"><span class="n">4</span><h3>Export</h3><p>The redacted copy — plus, separately and only if you ask, the key that maps tags back to names.</p></div>
+    </div>
+    <!-- 2026-09-30: "One corridor, no suite, no workflow product. It does one job." came off. The app has had Compare, Find and
+         Related cases lanes, and the settings below, since before v0.1.0. Every sentence in this
+         block is held to the code by tools/site-claims.mjs, law "the tools beside the corridor".
+         Related cases is stated as the v0.1.0 installer of record has it (LAUNCH.md 4.12: a fixed
+         library of 99 opinions). The tree now ranks your own documents; the law flips when the
+         version moves past 0.1.0, and the sentence has to change with it. -->
+    <div class="beside">
+      <p class="kicker">On the documents you've added</p>
+      <div class="notes three">
+        <div class="note"><h3>Compare versions</h3><p>Line up two versions of a document and see every change in the text, including the ones nobody redlined. It is worked out from the two texts on this computer, and nothing is judged. The Copy the changes button copies the changed paragraphs already masked, each with its own document's tags.</p></div>
+        <div class="note"><h3>Find across documents</h3><p>Which of your documents mention a name, a company or a number, from what was marked in each. Click a document to open its review.</p></div>
+        <div class="note"><h3>Related cases</h3><p>A map of how cases connect: which cite one another, which rely on the same authorities, which read alike, with the reason for each link. In v0.1.0 it runs on an example library of 99 published US federal appeals opinions that comes with the app, not on your documents.</p></div>
+      </div>
+      <p class="kicker">Settings the redaction reads</p>
+      <div class="notes three">
+        <div class="note"><h3>Protected terms</h3><p>Codenames, matter numbers, deal names: words that are confidential because of what they mean inside your firm. Add them once and every document masks them, matched exactly as whole words, even with the AI model switched off.</p></div>
+        <div class="note"><h3>Practice</h3><p>Singapore, United States or United Kingdom: which table of identifier patterns runs after the frozen one. Singapore, the default, is the frozen table itself. United States adds Social Security numbers, employer identification numbers and punctuated 10-digit phone numbers; United Kingdom adds National Insurance numbers, NHS numbers and 07 mobile numbers. The receipt names the tables that ran.</p></div>
+        <div class="note"><h3>Our own matter files</h3><p>For a firm's own papers, where the client's company is the matter: company names stay masked outside a reported case citation, and more of those citations stay readable. On 20 public filings in a firm's shapes, documents with an identifier left readable fell from 14 of 20 to 8, and citations kept readable rose from 11% to 56%. It needs the local engine running.</p></div>
+      </div>
     </div>
   </div>
 </section>

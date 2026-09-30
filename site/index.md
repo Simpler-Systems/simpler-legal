@@ -52,7 +52,7 @@ It's the same architecture the AI labs run — a model behind a server — excep
 
 *The corridor*
 
-One corridor, no suite, no workflow product. It does one job.
+The redaction is four steps, each on this computer. Beside it, the app has three tools for the documents you've added and three settings the redaction reads.
 
 *(A document on a conveyor: dropped in, scanned and redacted, stamped as reviewed, then exported with its key produced separately.)*
 
@@ -60,6 +60,18 @@ One corridor, no suite, no workflow product. It does one job.
 2. **Redact.** A wide sweep finds identities; code removes every copy document-wide; a second pass re-reads the result hunting anything left behind.
 3. **Review.** Everything found, in one table, with keyboard shortcuts. The frozen engine flags no row as uncertain, so the reading is yours. Nothing exports until you finish.
 4. **Export.** The redacted copy — plus, separately and only if you ask, the key that maps tags back to names.
+
+*On the documents you've added*
+
+- **Compare versions.** Line up two versions of a document and see every change in the text, including the ones nobody redlined. It is worked out from the two texts on this computer, and nothing is judged. The Copy the changes button copies the changed paragraphs already masked, each with its own document's tags.
+- **Find across documents.** Which of your documents mention a name, a company or a number, from what was marked in each. Click a document to open its review.
+- **Related cases.** A map of how cases connect: which cite one another, which rely on the same authorities, which read alike, with the reason for each link. In v0.1.0 it runs on an example library of 99 published US federal appeals opinions that comes with the app, not on your documents.
+
+*Settings the redaction reads*
+
+- **Protected terms.** Codenames, matter numbers, deal names: words that are confidential because of what they mean inside your firm. Add them once and every document masks them, matched exactly as whole words, even with the AI model switched off.
+- **Practice.** Singapore, United States or United Kingdom: which table of identifier patterns runs after the frozen one. Singapore, the default, is the frozen table itself. United States adds Social Security numbers, employer identification numbers and punctuated 10-digit phone numbers; United Kingdom adds National Insurance numbers, NHS numbers and 07 mobile numbers. The receipt names the tables that ran.
+- **Our own matter files.** For a firm's own papers, where the client's company is the matter: company names stay masked outside a reported case citation, and more of those citations stay readable. On 20 public filings in a firm's shapes, documents with an identifier left readable fell from 14 of 20 to 8, and citations kept readable rose from 11% to 56%. It needs the local engine running.
 
 ## The review is the gate
 

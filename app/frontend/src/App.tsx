@@ -14,6 +14,7 @@ import { netSnapshot, netMark, netSince, type NetCounts } from './lib/netmeter';
 import Drop from './screens/Drop';
 import Compare from './screens/Compare';
 import Find from './screens/Find';
+import Related from './screens/Related';
 import Review from './screens/Review';
 import Export from './screens/Export';
 import History from './screens/History';
@@ -460,7 +461,7 @@ export default function App() {
         {laneBtn('compare', 'Compare', <svg width={16} height={16} viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.7} strokeLinecap='round' strokeLinejoin='round'><path d='M9.5 4H5.5a1.5 1.5 0 0 0-1.5 1.5v13A1.5 1.5 0 0 0 5.5 20h4M14.5 4h4A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-4' /><path d='M12 2.5v19' strokeDasharray='2 2.6' /></svg>)}
         {laneBtn('find', 'Find', <svg width={16} height={16} viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.7} strokeLinecap='round'><circle cx={10.5} cy={10.5} r={6.5} /><path d='M15.4 15.4 20.5 20.5' /></svg>)}
         {laneBtn('map', 'Related cases', <svg width={15} height={15} viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth={1.8} strokeLinecap='round'><circle cx={6} cy={6} r={2.4}/><circle cx={18} cy={8} r={2.4}/><circle cx={12} cy={18} r={2.4}/><path d='M8 7l7.6 1M7 8l4 8M17 10l-4 6'/></svg>, undefined,
-          'Which opinions in the shipped library connect to a given case — and why')}
+          'How the documents you added connect — which cite one another, rely on the same authorities, or read alike')}
         {laneBtn('history', 'History', NAV_ICONS.history)}
         {/* Recent removed (queue-page audit): it mirrored the queue rows
             without adding actions — History owns "what did I work on". */}
@@ -570,12 +571,7 @@ export default function App() {
           })()}
           {lane === 'compare' && <Compare files={files} onGoToDrop={() => { setLane('redact'); setStep(1); }} />}
           {lane === 'find' && <Find files={files} onOpenFile={(id) => { setLane('redact'); openReview(id); }} onGoToDrop={() => { setLane('redact'); setStep(1); }} />}
-          {/* allow=fullscreen is what lets the map's own Full screen button cover the
-              monitor. Without it requestFullscreen is refused inside the frame and the
-              map falls back to covering only the iframe — this rail would stay put. */}
-          {lane === 'map' && <iframe src='/synergy.html?theme=light&embed=1&case=c1-fourth-amendment-new.txt' title='Related cases'
-            allow='fullscreen'
-            style={{ width: '100%', flex: 1, minHeight: 0, display: 'block', border: 'none', background: 'var(--table)' }} />}
+          {lane === 'map' && <Related files={files} onGoToDrop={() => { setLane('redact'); setStep(1); }} />}
           {lane === 'history' && <History files={files} onReopen={(id) => { setLane('redact'); openReview(id); }} onStart={() => { setLane('redact'); setStep(1); }} />}
           {lane === 'settings' && <Settings onShowSetup={() => setLane('setup')} engine={engine} onRetry={retryEngine} onPracticeChange={onPracticeChange} />}
           {lane === 'about' && <About />}

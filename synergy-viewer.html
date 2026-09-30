@@ -390,14 +390,45 @@
 <div class="visually-hidden" aria-live="polite" id="announce"></div>
 <script>
   'use strict'
-  if (!DATA) { document.body.textContent = 'No graph data injected — run: node graph.mjs build'; throw new Error('no data') }
-  const nodes = DATA.nodes, edges = DATA.edges, M = DATA.metrics
-  const TYPES = ['cites', 'authority', 'text']
-
-  // ---- theme (embedding shell pins via ?theme=; standalone keeps toggle) ----
   const root = document.documentElement
   const PARAMS = new URLSearchParams(location.search)
   if (PARAMS.get('embed') === '1') root.dataset.embed = '1'
+
+  // ---- which library ----
+  // Two libraries run through this one page. The example library is the build's own, injected
+  // above as DATA. The lawyer's own (?lib=mine) is built by the app from the documents added
+  // this session (related.mjs buildLibrary) and handed over by postMessage with their text —
+  // it is never written to disk, and it goes when the lane closes. The app remounts this frame
+  // when the set of documents changes, so each page boots exactly once.
+  const MINE = PARAMS.get('lib') === 'mine'
+  // A custom-scheme webview can report its origin as "null", which postMessage refuses as a
+  // target; the frame's source is checked either way.
+  const ORIGIN = location.origin && location.origin !== 'null' ? location.origin : '*'
+  if (MINE) {
+    addEventListener('message', function take(ev) {
+      if (ev.source !== parent || (ORIGIN !== '*' && ev.origin !== ORIGIN)) return
+      if (!ev.data || ev.data.type !== 'related:data') return
+      removeEventListener('message', take)
+      boot(ev.data.graph, ev.data.texts || {}, ev.data.subject || '')
+    })
+    parent.postMessage({ type: 'related:ready' }, ORIGIN)
+  } else {
+    if (!DATA) { document.body.textContent = 'No graph data injected — run: node graph.mjs build'; throw new Error('no data') }
+    boot(DATA, null, (PARAMS.get('case') || '').trim())
+  }
+
+  function boot(DATA, TEXTS, WANT) {
+  const nodes = DATA.nodes, edges = DATA.edges, M = DATA.metrics
+  const TYPES = ['cites', 'authority', 'text']
+  // the words that change with the library: a lawyer's own files are documents, not cases
+  const DOC = MINE ? 'document' : 'case'
+  const DOCS = MINE ? 'documents' : 'cases'
+  // an outcome exists only where facets.mjs read one: every example opinion, and an own
+  // document only if it carries a Case: header. With none on the map, the legend drops it.
+  const faceted = (n) => 'outcome' in n
+  const ANY_FACETED = nodes.some(faceted)
+
+  // ---- theme (embedding shell pins via ?theme=; standalone keeps toggle) ----
   const pinnedTheme = PARAMS.get('theme')
   if (pinnedTheme === 'light' || pinnedTheme === 'dark') {
     root.dataset.theme = pinnedTheme
@@ -460,7 +491,7 @@
       let m
       if ((m = seg.match(/^(.+?) cites (.+)$/))) {
         out.direct = seg
-        out.sentences.push(m[1] === subj.name ? 'This case cites it directly.' : 'Cites ' + shortCase(subj.name) + ' directly.')
+        out.sentences.push(m[1] === subj.name ? `This ${DOC} cites it directly.` : 'Cites ' + shortCase(subj.name) + ' directly.')
       } else if ((m = seg.match(/^shared: (.+)$/))) {
         out.shared = m[1].split('; ')
         out.sentences.push(out.shared.length === 1
@@ -479,11 +510,15 @@
 
   // ---- method popover ----
   document.getElementById('scopeLine').textContent = DATA.scope
-  document.getElementById('methodStats').textContent =
-    'Three signals, weighted 3 / 2 / 1: one case citing the other, similar language, and authorities both rely on — each normalised to the largest value in this library. ' +
-    'That order is the measured one: in this corpus a citation link landed in the same practice area 100% of the time (only 2 such links exist here), similar language 73.8%, shared authorities 55.3%, against 9.1% for a random pair. ' +
-    'So that a case resembling everything does not count as relevant to everything, similar language and shared authorities are each divided by that case’s own average plus a floor; a direct citation is never generic, so it is counted as it stands, and authorities cited by almost every case are weighted down for the same reason. ' +
-    `Coverage ${(M.coverage * 100).toFixed(0)}% · strength gini ${M.gini}. Scores are comparable only within one case's list.`
+  document.getElementById('methodStats').textContent = MINE
+    ? 'Three signals, weighted 3 / 2 / 1: one document citing the other, similar language, and authorities both rely on — each normalised to the largest value among your documents. ' +
+      'That order was measured on the example library, where a citation link landed in the same practice area more often than similar language, and similar language more often than shared authorities. ' +
+      'So that a document resembling everything does not count as relevant to everything, similar language and shared authorities are each divided by that document’s own average plus a floor; a direct citation is never generic, so it is counted as it stands, and authorities cited by almost every document are weighted down for the same reason. ' +
+      `Coverage ${(M.coverage * 100).toFixed(0)}% · strength gini ${M.gini}. Scores are comparable only within one document's list.`
+    : 'Three signals, weighted 3 / 2 / 1: one case citing the other, similar language, and authorities both rely on — each normalised to the largest value in this library. ' +
+      'That order is the measured one: in this corpus a citation link landed in the same practice area 100% of the time (only 2 such links exist here), similar language 73.8%, shared authorities 55.3%, against 9.1% for a random pair. ' +
+      'So that a case resembling everything does not count as relevant to everything, similar language and shared authorities are each divided by that case’s own average plus a floor; a direct citation is never generic, so it is counted as it stands, and authorities cited by almost every case are weighted down for the same reason. ' +
+      `Coverage ${(M.coverage * 100).toFixed(0)}% · strength gini ${M.gini}. Scores are comparable only within one case's list.`
 
   // ---- state ----
   let subject = null          // node id or null: what the MAP is centred on
@@ -509,27 +544,44 @@
     // sort by something that varies: every node has exactly SYNERGY_TOP_N links, so the
     // old "related" sort was a 99-way tie that degenerated to file order
     list = [...list].sort((a, b) => missCount(b) - missCount(a) || a.name.localeCompare(b.name))
-    const topics = [...new Set(nodes.map((n) => n.topic))].sort()
     content.innerHTML =
       `<div class="introrow">
-        <span class="sub-line">The ${nodes.length} published federal appellate opinions that ship with the app. Open any one to put it at the centre of the map. &ldquo;To check&rdquo; counts the authorities its related cases rely on that it never cites.</span>
-        <button class="cta" id="tryExample">${exampleIdx < 0 ? 'Show an example matter' : 'Show another example matter'}</button>
+        ${MINE
+          ? `<span class="sub-line">The ${nodes.length} documents you added this session, each ranked against the others. Open any one to put it at the centre of the map. &ldquo;To check&rdquo; counts the authorities its related documents rely on that it never cites.</span>`
+          : `<span class="sub-line">The ${nodes.length} published federal appellate opinions that ship with the app. Open any one to put it at the centre of the map. &ldquo;To check&rdquo; counts the authorities its related cases rely on that it never cites.</span>`}
+        ${newIds.length ? `<button class="cta" id="tryExample">${exampleIdx < 0 ? 'Show an example matter' : 'Show another example matter'}</button>` : ''}
       </div>
-      <div class="grouphead"><h2>The library</h2><span class="n">· ${list.length} of ${nodes.length} published opinions</span></div>
+      <div class="grouphead"><h2>${MINE ? 'Your documents' : 'The library'}</h2><span class="n">· ${list.length} of ${nodes.length} ${MINE ? 'documents' : 'published opinions'}</span></div>
       <div class="sheet">${list.length ? list.map((n) =>
         `<button class="librow" data-id="${n.id}">
           <span class="nm">${odot(n)}${esc(n.name)}${n.kind === 'new' ? '<span class="exchip">Example matter</span>' : ''}${n.id === subject ? '<span class="exchip">on the map</span>' : ''}</span>
-          <span class="meta">${oword(n)} · <span class="cite">${esc(n.cite || '')}</span>${n.court ? ' · ' + esc(shortCourt(n.court)) : ''}${year(n.date) ? ' · ' + year(n.date) : ''} · ${esc(topicWords(n.topic))}</span>
+          <span class="meta">${metaLine(n)}</span>
           <span class="rel">${missCount(n) ? missCount(n) + ' to check' : '—'}</span>
         </button>`).join('') :
-        `<div class="noresults">No case matches &ldquo;${esc(q)}&rdquo;. Try a party name, a reporter citation (180 F.3d 957), or a topic.</div>`}</div>`
+        MINE
+          ? `<div class="noresults">No document matches &ldquo;${esc(q)}&rdquo;. Try part of a file name or a citation.</div>`
+          : `<div class="noresults">No case matches &ldquo;${esc(q)}&rdquo;. Try a party name, a reporter citation (180 F.3d 957), or a topic.</div>`}</div>`
     lastMatches = list
-    document.getElementById('tryExample').onclick = () => {
+    const tryEx = document.getElementById('tryExample')
+    if (tryEx) tryEx.onclick = () => {
       if (!newIds.length) return
       exampleIdx = (exampleIdx + 1) % newIds.length
       setSubject(newIds[exampleIdx])
     }
     for (const el of content.querySelectorAll('.librow')) el.onclick = () => setSubject(+el.dataset.id)
+  }
+  // The line under a name carries only what this node has. A lawyer's own document has no
+  // topic label, usually no citation, court or date, and an outcome word only if facets.mjs
+  // read one — "Not extracted" on a contract would describe a refusal that never happened.
+  function metaLine(n, o) {
+    const full = o && o.fullDate
+    const parts = []
+    if (!(o && o.noWord) && faceted(n)) parts.push(oword(n))
+    if (n.cite) parts.push(`<span class="cite">${esc(n.cite)}</span>`)
+    if (n.court) parts.push(esc(shortCourt(n.court)))
+    if (full ? n.date : year(n.date)) parts.push(full ? esc(fmtDate(n.date)) : String(year(n.date)))
+    if (n.topic) parts.push(esc(topicWords(n.topic)))
+    return parts.join(' · ')
   }
 
   // ---- the searcher, wired ONCE ----
@@ -540,8 +592,15 @@
   let lastMatches = []
   const searchEl = document.getElementById('search')
   const chiprow = document.getElementById('chiprow')
+  if (MINE) {
+    searchEl.placeholder = 'Search your documents — file name or citation'
+    document.querySelector('.pagehead .lede').textContent =
+      'Search your documents below; the map holds all of them. Hover a node for why it is related, click it to open it.'
+  }
   function renderChips() {
-    const topics = [...new Set(nodes.map((x) => x.topic))].sort()
+    const topics = [...new Set(nodes.map((x) => x.topic).filter(Boolean))].sort()
+    // a lawyer's own documents carry no topic labels, so there is nothing to filter by
+    if (!topics.length) { chiprow.innerHTML = ''; chiprow.hidden = true; return }
     chiprow.innerHTML = `<button class="tchip ${activeTopic === null ? 'on' : ''}" data-topic="">All</button>` +
       topics.map((t) => `<button class="tchip ${activeTopic === t ? 'on' : ''}" data-topic="${esc(t)}">${esc(topicWords(t))}</button>`).join('')
     for (const el of chiprow.querySelectorAll('.tchip')) el.onclick = () => {
@@ -596,7 +655,7 @@
         <span class="rk">${k + 1}</span>
         <span class="nm">${odot(o)}${esc(o.name)}</span>
         <span class="badge ${bcls}">${esc(badgeText)}</span>
-        <span class="meta">${oword(o)} · <span class="cite">${esc(o.cite || '')}</span>${o.court ? ' · ' + esc(shortCourt(o.court)) : ''}${year(o.date) ? ' · ' + year(o.date) : ''} · ${esc(topicWords(o.topic))}</span>
+        <span class="meta">${metaLine(o)}</span>
         <span class="why">${esc(w.sentences.join(' ') || 'Connected within your library.')}</span>
       </button>
       <div class="rowx">
@@ -623,34 +682,36 @@
     const short = shortCase(n.name)
     const miss = n.missing || []
     content.innerHTML =
-      `<div class="backbar"><button class="back" id="backBtn">← All cases</button></div>
+      `<div class="backbar"><button class="back" id="backBtn">← All ${DOCS}</button></div>
       <div class="subjcard" tabindex="-1">
         <h2>${esc(n.name)}${n.kind === 'new' ? '<span class="exchip">Example matter</span>' : ''} ${ochip(n)}</h2>
-        <div class="meta"><span class="cite">${esc(n.cite || '')}</span>${n.court ? ' · ' + esc(shortCourt(n.court)) : ''}${n.date ? ' · ' + esc(fmtDate(n.date)) : ''} · ${esc(topicWords(n.topic))}</div>
+        <div class="meta">${metaLine(n, { fullDate: true, noWord: true })}</div>
         ${n.kind === 'new' ? `<div class="count">${esc(n.name)} is a real published opinion, introduced into this library the way a new matter would arrive on your desk. It stands in for a matter of yours, so you can see the view before you pick a case.</div>` : ''}
-        <div class="count">The ${subjLinks.length} strongest connections in this library, closest first.</div>
+        <div class="count">${MINE && subjLinks.length === 1 ? 'Its one connection among your documents.' : `The ${subjLinks.length} strongest connections ${MINE ? 'among your documents' : 'in this library'}, closest first.`}</div>
       </div>
-      <details class="opinion" id="opinion"><summary>Read the opinion</summary><div class="opbody" id="opbody"></div></details>
+      <details class="opinion" id="opinion"><summary>Read the ${MINE ? 'document' : 'opinion'}</summary><div class="opbody" id="opbody"></div></details>
       ${miss.length ? `<div class="misscard">
         <div class="ghead"><span>Authorities ${esc(short)} doesn&rsquo;t cite</span><span>${miss.length} to check</span></div>
-        <div class="glead">The related cases below rely on these; ${esc(short)} does not cite them. Checked against the ${nodes.length} opinions in this library only &mdash; this is not a citator, and nothing here checks whether an authority is still good law.</div>
+        <div class="glead">The related ${DOCS} below rely on these; ${esc(short)} does not cite them. Checked against the ${nodes.length} ${MINE ? 'documents you added' : 'opinions in this library'} only &mdash; this is not a citator, and nothing here checks whether an authority is still good law.</div>
         ${miss.map((x) => {
           const names = (x.by || []).slice(0, 3).map((id) => `<i>${esc(shortCase(nodes[id].name))}</i>`)
           const byTxt = names.length
             ? `Relied on by ${names.join(', ')}${(x.by || []).length > 3 ? ` and ${x.by.length - 3} more` : ''}`
-            : `Relied on by ${x.n} of the ${subjLinks.length} related cases below`
+            : `Relied on by ${x.n} of the ${subjLinks.length} related ${DOCS} below`
           return `<div class="missrow"><span class="mc">${esc(x.name)}</span><span class="by">${byTxt}</span><button class="copybtn" data-copy="${esc(x.name)}">Copy</button></div>`
         }).join('')}
       </div>` : `<div class="okcard">
         <div class="ghead"><span>Nothing flagged</span></div>
-        <div class="glead">No authority is relied on by two or more of the related cases below without also appearing in ${esc(short)}. Citation extraction is a lower bound &mdash; the archived text is truncated &mdash; and this is not a citator.</div>
+        <div class="glead">No authority is relied on by two or more of the related ${DOCS} below without also appearing in ${esc(short)}. ${MINE
+          ? 'Citations are read in US reporter, Singapore, UK and Commonwealth forms only, so this is a lower bound &mdash; and this is not a citator.'
+          : 'Citation extraction is a lower bound &mdash; the archived text is truncated &mdash; and this is not a citator.'}</div>
       </div>`}
       ${cy === null && subjLinks.length
-        ? `<div class="grouphead"><h2>Related cases</h2><span class="n">· ${subjLinks.length}</span></div><div class="sheet"><ul class="rows">${[...groups.earlier, ...groups.later, ...groups.undated].join('')}</ul></div>`
+        ? `<div class="grouphead"><h2>Related ${DOCS}</h2><span class="n">· ${subjLinks.length}</span></div><div class="sheet"><ul class="rows">${[...groups.earlier, ...groups.later, ...groups.undated].join('')}</ul></div>`
         : `${groups.earlier.length ? `<div class="grouphead"><h2>Decided before or alongside this case</h2><span class="n">· ${groups.earlier.length}</span><div class="sub">Same year as <i>${esc(short)}</i> or earlier. Ordered by connection strength, not by date.</div></div><div class="sheet"><ul class="rows">${groups.earlier.join('')}</ul></div>` : ''}
           ${groups.later.length ? `<div class="grouphead"><h2>Decided after</h2><span class="n">· ${groups.later.length}</span><div class="sub">How courts have used this ground since.</div></div><div class="sheet"><ul class="rows">${groups.later.join('')}</ul></div>` : ''}
           ${groups.undated.length ? `<div class="grouphead"><h2>Undated</h2><span class="n">· ${groups.undated.length}</span><div class="sub">No date parsed from the header.</div></div><div class="sheet"><ul class="rows">${groups.undated.join('')}</ul></div>` : ''}`}
-      ${subjLinks.length === 0 ? '<div class="sheet"><div class="noresults">No related cases found — this document stands alone in the current library.</div></div>' : ''}`
+      ${subjLinks.length === 0 ? `<div class="sheet"><div class="noresults">No related ${DOCS} found — this document stands alone in the current library.</div></div>` : ''}`
     document.getElementById('backBtn').onclick = () => showLibrary()
     const det = document.getElementById('opinion')
     det.ontoggle = () => { if (det.open) loadOpinion(n.file, document.getElementById('opbody')) }
@@ -738,16 +799,23 @@
     + '<span class="lg" style="--c:var(--o-split);--r:var(--o-split-accent)">split &mdash; part upheld, part undone</span>'
     + '<span class="lg" style="--c:var(--o-down);--r:var(--o-down-accent)">overturned</span>'
     + '<span class="lg hollow">no disposition extracted</span>'
-  const LEG_SUBJ = '<span class="lgl">Gold ring = the case on the map; its 12 strongest connections are numbered by rank. Line colour = why:</span>'
+  // the outcome key only where some node carries an outcome: on a map of contracts and memos
+  // it would explain a colour nothing is painted in
+  const LEG_OUT = ANY_FACETED ? LEG_OUTCOME : ''
+  const LEG_SUBJ = (MINE
+      ? '<span class="lgl">Gold ring = the document on the map; its strongest connections are numbered by rank. Line colour = why:</span>'
+      : '<span class="lgl">Gold ring = the case on the map; its 12 strongest connections are numbered by rank. Line colour = why:</span>')
     + '<span class="lg" style="--c:var(--e-cites)">cites</span>'
     + '<span class="lg" style="--c:var(--e-auth)">shared authorities</span>'
     + '<span class="lg" style="--c:var(--e-text)">similar language</span>'
-    + LEG_OUTCOME
-  const LEG_ALL = '<span class="lgl">Every case in the library, placed by how they connect. Diamond = example matter. Click any node to open it.</span>'
-    + LEG_OUTCOME
+    + LEG_OUT
+  const LEG_ALL = (MINE
+      ? '<span class="lgl">Every document you added, placed by how they connect. Click any node to open it.</span>'
+      : '<span class="lgl">Every case in the library, placed by how they connect. Diamond = example matter. Click any node to open it.</span>')
+    + LEG_OUT
   function updateMapChrome() {
     mapTitle.textContent = subject === null
-      ? `${M.nodes} cases \u00b7 ${M.edges} connections`
+      ? `${M.nodes} ${DOCS} \u00b7 ${M.edges} connections`
       : `${shortCase(nodes[subject].name)} \u00b7 ${subjLinks.length} strongest of ${M.nodes}`
     mapLeg.innerHTML = subject === null ? LEG_ALL : LEG_SUBJ
   }
@@ -1094,6 +1162,8 @@
   // silence it is. Both are the hollow mark, matching the map and the list rows.
   const ochipNone = (word, why) => '<span class="ochip none" title="' + why + '">' + word + '</span>'
   const odot = (nd) => {
+    // no dot on a document with no outcome to report: the hollow dot means "not extracted"
+    if (!faceted(nd)) return ''
     const o = oc(nd)
     return '<span class="odot ' + (o ? o.cls : 'none') + '" aria-hidden="true"></span>'
   }
@@ -1137,10 +1207,24 @@
     const why = link ? whyParts(link, nodes[subject]).sentences.join(' ') : ''
     const sec = (lbl, body, cls, secCls) =>
       `<div class="t-sec ${secCls || ''}"><span class="t-lbl">${lbl}</span><span class="${cls || ''}">${body}</span></div>`
+    const OPEN = `<div class="t-open">Click to open this ${DOC}.</div>`
     let h = `<div class="t-name">${esc(nd.name)}${rk >= 0 ? `<span class="t-rank">rank ${rk + 1}</span>` : ''}</div>`
-      + `<div class="t-meta"><span class="cite">${esc(nd.cite || 'no citation in header')}</span>`
-      + `${nd.court ? ' \u00b7 ' + esc(shortCourt(nd.court)) : ''}${nd.date ? ' \u00b7 ' + esc(fmtDate(nd.date)) : ''} \u00b7 ${esc(topicWords(nd.topic))}</div>`
-    if (compact) return h + sec('', 'This window is too small to hold the summary and the disposition. Click to open the case.', 't-none') + '<div class="t-open">Click to open this case.</div>'
+    if (!faceted(nd)) {
+      // A document of yours: no synopsis or disposition was extracted (facets.mjs reads court
+      // opinions only), so the card shows how it opens, verbatim, and why it ranks.
+      const ml = metaLine(nd, { fullDate: true, noWord: true })
+      if (ml) h += `<div class="t-meta">${ml}</div>`
+      if (compact) return h + sec('', 'This window is too small for more. Click to open the document.', 't-none') + OPEN
+      const op = openingOf(nd)
+      if (op && syn !== null) h += sec('Opens with', esc(op))
+      if (why) h += sec('Why it ranks here', esc(why), 't-why')
+      else if (nd.id === subject) h += sec('On the map', `The ${DOC} everything else is ranked against.`, 't-why')
+      else h += sec('Among your documents', `${relatedCount(nd)} ranked connections · ${missCount(nd) ? missCount(nd) + ' authorities to check' : 'nothing flagged'}`, 't-why')
+      return h + OPEN
+    }
+    h += `<div class="t-meta"><span class="cite">${esc(nd.cite || 'no citation in header')}</span>`
+      + `${nd.court ? ' · ' + esc(shortCourt(nd.court)) : ''}${nd.date ? ' · ' + esc(fmtDate(nd.date)) : ''}${nd.topic ? ' · ' + esc(topicWords(nd.topic)) : ''}</div>`
+    if (compact) return h + sec('', 'This window is too small to hold the summary and the disposition. Click to open the case.', 't-none') + OPEN
     if (syn === null) h += sec('What it is about', 'Too long for this window — open the case.', 't-none')
     else if (syn !== undefined) h += sec('What it is about · opening lines', esc(syn) + '…')
     else if (nd.synopsis) h += sec('What it is about', esc(nd.synopsis))
@@ -1164,9 +1248,19 @@
         't-none')
     }
     if (why) h += sec('Why it ranks here', esc(why), 't-why')
-    else if (nd.id === subject) h += sec('On the map', 'The case everything else is ranked against.', 't-why')
+    else if (nd.id === subject) h += sec('On the map', `The ${DOC} everything else is ranked against.`, 't-why')
     else h += sec('In this library', `${relatedCount(nd)} ranked connections \u00b7 ${missCount(nd) ? missCount(nd) + ' authorities to check' : 'nothing flagged'}`, 't-why')
-    return h + '<div class="t-open">Click to open this case.</div>'
+    return h + OPEN
+  }
+  // The first words of a document of yours, verbatim, cut at a word: the card's answer to
+  // "what is this" when no synopsis was extracted.
+  function openingOf(nd) {
+    const raw = TEXTS && TEXTS[nd.file]
+    if (!raw) return ''
+    const t = raw.replace(/\s+/g, ' ').trim()
+    if (t.length <= 240) return t
+    const cut = t.slice(0, 240)
+    return cut.slice(0, Math.max(cut.lastIndexOf(' '), 160)) + '\u2026'
   }
 
   // A card taller than the map has nowhere to go: it is pointer-events:none, so
@@ -1224,6 +1318,15 @@
   async function loadOpinion(file, box) {
     if (!box) return
     if (opCache.has(file)) { box.innerHTML = opCache.get(file); return }
+    // A document of yours came with its text from the app; there is nothing to fetch, and
+    // it has no provenance header to strip.
+    if (TEXTS) {
+      const raw = TEXTS[file]
+      const paras = (raw || '').split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean)
+      box.innerHTML = '<div class="opsrc">Your file, as the app read it this session · on this machine only</div>'
+        + (paras.length ? paras.map((p) => `<p>${esc(p).split('\n').join('<br>')}</p>`).join('') : '<div class="opnote bad">The app holds no text for this document.</div>')
+      return
+    }
     box.innerHTML = '<div class="opnote">Loading\u2026</div>'
     try {
       const res = await fetch('cases/' + encodeURIComponent(file))
@@ -1296,7 +1399,13 @@
     return rich !== undefined ? rich : newIds.length ? newIds[0] : 0
   }
   function bootRoute() {
-    const want = (PARAMS.get('case') || '').trim()
+    // the example opens on ?case=; your library on the document the app names (the newest)
+    const want = WANT
+    if (MINE) {
+      const hit = nodes.find((x) => x.file === want)
+      setSubject(hit ? hit.id : nodes.length - 1, { focus: false })
+      return
+    }
     if (want) {
       const hit = nodes.find((x) => x.file === want)
       if (hit) { setSubject(hit.id, { focus: false }); return }
@@ -1307,11 +1416,13 @@
     setSubject(defaultSubject(), { focus: false })
   }
   readCSSColors()
-  document.getElementById('footline').textContent =
-    `Ranked from the ${nodes.length} published opinions indexed when this library was built and shipped with the app. Citation sets are lower bounds — archival text is truncated. Nothing you do here leaves this machine.`
+  document.getElementById('footline').textContent = MINE
+    ? `Ranked from the ${nodes.length} documents you added this session, on this machine. Nothing here is saved, and nothing you do here leaves this machine.`
+    : `Ranked from the ${nodes.length} published opinions indexed when this library was built and shipped with the app. Citation sets are lower bounds — archival text is truncated. Nothing you do here leaves this machine.`
   renderChips()
   resize()
   bootRoute()
+  }
 </script>
 </body>
 </html>

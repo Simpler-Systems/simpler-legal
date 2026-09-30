@@ -973,6 +973,59 @@ async function main() {
   const LLAMA_GAP = 'The app does not remove llama.cpp\'s own settings that make the model server connect to another computer: LLAMA_ARG_RPC, which sends the model\'s work to other computers, and LLAMA_ARG_HF_REPO, LLAMA_ARG_MODEL_URL and others like them, which download a model.';
   const LLAMA_GAP_IDX = 'It does not remove llama.cpp\'s own settings that make the model server connect to another computer';
 
+  // ---- the tools beside the corridor (2026-09-30) -------------------------------------------
+  // Until 2026-09-30 the index named none of the lanes beside the redaction and said "One
+  // corridor, no suite, no workflow product. It does one job." Its "beside" block now names three
+  // tools and three settings; each sentence is held to the screen or table that does what it says.
+  // Related cases is stated as the installer of record has it: v0.1.0, whose lane showed only the
+  // 99 bundled opinions (LAUNCH.md 4.12). The tree ranks your own documents (Related.tsx); while the
+  // version is still 0.1.0 the page may not say so, and once it moves the v0.1.0 sentence must go.
+  const SRCB = {
+    cmp: read('app', 'frontend', 'src', 'screens', 'Compare.tsx'),
+    find: read('app', 'frontend', 'src', 'screens', 'Find.tsx'),
+    set: read('app', 'frontend', 'src', 'screens', 'Settings.tsx').replace(/\s+/g, ' '),
+    prof: read('app', 'frontend', 'src', 'lib', 'profile.ts'),
+    floor: read('app', 'frontend', 'src', 'lib', 'floorTables.mjs'),
+    app: read('app', 'frontend', 'src', 'App.tsx'),
+    rel: existsSync(join(SRC, 'screens', 'Related.tsx')) ? read('app', 'frontend', 'src', 'screens', 'Related.tsx') : '',
+    version: CONF.version,
+    exampleN: ['corpus', 'newcases'].reduce((n, d) => n + (existsSync(join(ROOT, d)) ? readdirSync(join(ROOT, d)).filter((x) => x.endsWith('.txt')).length : 0), 0),
+  };
+  const besideFacts = (x) => ({
+    compare: /<h1>Compare versions<\/h1>/.test(x.cmp) && /'Copy the changes'/.test(x.cmp)
+      && /Copies the changed paragraphs, masked with each document.s own entity table/.test(x.cmp) && !/\bfetch\(/.test(x.cmp),
+    find: /<h1>Find across documents<\/h1>/.test(x.find) && /onClick=\{\(\) => onOpenFile\(h\.fileId\)\}/.test(x.find)
+      && /lane === 'find' && <Find [^\n]*onOpenFile=\{\(id\) => \{ setLane\('redact'\); openReview\(id\); \}\}/.test(x.app),
+    relatedLane: /laneBtn\('map', 'Related cases'/.test(x.app),
+    relatedOwn: /import \{ buildLibrary \} from '(?:\.\.\/)+related\.mjs'/.test(x.rel) && /lane === 'map' && <Related /.test(x.app),
+    released010: x.version === '0.1.0',
+    example99: x.exampleN === 99,
+    protectedTerms: /always redacted, model or no model/.test(x.set)
+      && /They are matched exactly, as whole words, and they still apply when the AI engine is switched off\./.test(x.set),
+    practice: /id: 'sg', label: 'Singapore', note: 'the frozen table only/.test(x.floor)
+      && /id: 'us', label: 'United States', note: 'adds Social Security numbers, employer identification numbers and punctuated 10-digit phone numbers'/.test(x.floor)
+      && /id: 'uk', label: 'United Kingdom', note: 'adds National Insurance numbers, NHS numbers and 07 mobile numbers'/.test(x.floor)
+      && /export const DEFAULT_PRACTICE = 'sg';/.test(x.floor) && /The receipt names the tables that ran\./.test(x.set),
+    ownFiles: /label: 'Our own matter files'/.test(x.prof) && /company and brand names are not released outside a reported case citation/.test(x.prof)
+      && /14\/20 \\u2192 8\/20/.test(x.prof) && /11% \\u2192 56%/.test(x.prof) && /Needs the local engine/.test(x.set),
+  });
+  const FB = besideFacts(SRCB);
+  PAGES.md = read('site', 'index.md').replace(/\s+/g, ' ');
+  PAGES.llms = read('site', 'llms.txt').replace(/\s+/g, ' ');
+  const BESIDE = {
+    lead: "The redaction is four steps, each on this computer. Beside it, the app has three tools for the documents you've added and three settings the redaction reads.",
+    cmp: "Line up two versions of a document and see every change in the text, including the ones nobody redlined. It is worked out from the two texts on this computer, and nothing is judged. The Copy the changes button copies the changed paragraphs already masked, each with its own document's tags.",
+    find: 'Which of your documents mention a name, a company or a number, from what was marked in each. Click a document to open its review.',
+    rel: 'A map of how cases connect: which cite one another, which rely on the same authorities, which read alike, with the reason for each link. In v0.1.0 it runs on an example library of 99 published US federal appeals opinions that comes with the app, not on your documents.',
+    prot: 'Codenames, matter numbers, deal names: words that are confidential because of what they mean inside your firm. Add them once and every document masks them, matched exactly as whole words, even with the AI model switched off.',
+    prac: 'Singapore, United States or United Kingdom: which table of identifier patterns runs after the frozen one. Singapore, the default, is the frozen table itself. United States adds Social Security numbers, employer identification numbers and punctuated 10-digit phone numbers; United Kingdom adds National Insurance numbers, NHS numbers and 07 mobile numbers. The receipt names the tables that ran.',
+    own: "For a firm's own papers, where the client's company is the matter: company names stay masked outside a reported case citation, and more of those citations stay readable. On 20 public filings in a firm's shapes, documents with an identifier left readable fell from 14 of 20 to 8, and citations kept readable rose from 11% to 56%. It needs the local engine running.",
+  };
+  const REL_LLMS = 'in v0.1.0 it runs on an example library of 99 published US federal appeals opinions that comes with the app, not on your documents';
+  // the sentence the page takes once an installer ranks your own documents; never before
+  const REL_OWN = 'It ranks the documents you added this session against each other, on this computer.';
+  const ONE_JOB = /It does one job|no suite, no workflow product/;
+
   const LAWS = [
     ['what the .docx check reads: every part, its name, text, attribute values, element and attribute names, namespaces', (V) => {
       const b = [], faq = faqOf(V.it);
@@ -1333,6 +1386,25 @@ async function main() {
     }, [['the description saying it', swap('idxH', 'it runs on your own Windows computer." />', 'it runs on your own Windows computer. The app itself sends nothing off the machine." />')],
       ['the tape saying it', swap('idxH', 'NO API KEY &middot; NO ACCOUNT &middot; NO SERVER OF OURS', 'NO API KEY &middot; NO ACCOUNT &middot; SENDS NOTHING OFF THE MACHINE')],
       ['README saying it', putBack('readme', README_SIDE, ' The app sends nothing off this machine.')]]],
+    ['the tools beside the corridor: Compare, Find, Related cases and three settings, as the code has them', (V) => {
+      const b = [];
+      says(b, 'Compare versions', FB.compare, has(V.idx, BESIDE.cmp) && has(V.md, BESIDE.cmp));
+      says(b, 'Find across documents', FB.find, has(V.idx, BESIDE.find) && has(V.md, BESIDE.find));
+      says(b, 'Protected terms', FB.protectedTerms, has(V.idx, BESIDE.prot) && has(V.md, BESIDE.prot));
+      says(b, 'Practice', FB.practice, has(V.idx, BESIDE.prac) && has(V.md, BESIDE.prac));
+      says(b, 'Our own matter files', FB.ownFiles, has(V.idx, BESIDE.own) && has(V.md, BESIDE.own));
+      says(b, 'Related cases as the v0.1.0 installer has it', FB.relatedLane && FB.released010 && FB.example99,
+        has(V.idx, BESIDE.rel) && has(V.md, BESIDE.rel) && has(V.llms, REL_LLMS));
+      never(b, 'Related cases on your own documents, before an installer carries it', FB.released010 && FB.relatedOwn,
+        has(V.idx + V.md + V.llms, REL_OWN));
+      never(b, '"It does one job"', FB.compare && FB.find && FB.relatedLane, ONE_JOB.test(V.idx + V.md + V.llms));
+      return b;
+    }, [['Compare dropped', drop('idx', BESIDE.cmp)], ['Find dropped', drop('idx', BESIDE.find)], ['Related cases dropped', drop('idx', BESIDE.rel)],
+      ['Protected terms dropped', drop('idx', BESIDE.prot)], ['Practice dropped', drop('idx', BESIDE.prac)], ['Our own matter files dropped', drop('idx', BESIDE.own)],
+      ['index.md without Related cases', drop('md', BESIDE.rel)], ['llms.txt without Related cases', drop('llms', REL_LLMS)],
+      ['your own documents claimed before a build', putBack('idx', BESIDE.rel, ' ' + REL_OWN)],
+      ['"It does one job" put back', putBack('idx', BESIDE.lead, ' One corridor, no suite, no workflow product. It does one job.')],
+      ['index.md with "It does one job"', putBack('md', BESIDE.lead, ' It does one job.')]]],
   ];
 
   // ---- run ---------------------------------------------------------------------------------
@@ -1389,6 +1461,17 @@ async function main() {
     ['SECURITY.md without the advisory link', () => securityFact(SECURITY.split(`<${ADVISORY}>`).join(''), PRIVACY)],
     ['engine.rs removing LLAMA_ARG_RPC', () => llamaGapFact(APP.rs + '\n        "LLAMA_ARG_RPC",\n')],
     ['engine.rs removing every one of them and setting LLAMA_OFFLINE', () => llamaGapFact(APP.rs + LLAMA_NET.map((v) => `\n        "${v}",`).join('') + '\n    cmd.env("LLAMA_OFFLINE", "1");\n')],
+    // 2026-09-30: the tools beside the corridor
+    ['a Compare copy that is not masked', () => besideFacts({ ...SRCB, cmp: SRCB.cmp.split('Copies the changed paragraphs, masked with').join('Copies the changed paragraphs, with') }).compare],
+    ['a Compare screen that fetches', () => besideFacts({ ...SRCB, cmp: SRCB.cmp + '\nfetch(u);' }).compare],
+    ['a Find row that opens nothing', () => besideFacts({ ...SRCB, find: SRCB.find.split('onClick={() => onOpenFile(h.fileId)}').join('') }).find],
+    ['protected terms that need the engine', () => besideFacts({ ...SRCB, set: SRCB.set.split('and they still apply when the AI engine is switched off.').join('while the AI engine runs.') }).protectedTerms],
+    ['a United States table without the SSN', () => besideFacts({ ...SRCB, floor: SRCB.floor.split('adds Social Security numbers, ').join('adds ') }).practice],
+    ['a default practice of us', () => besideFacts({ ...SRCB, floor: SRCB.floor.split("DEFAULT_PRACTICE = 'sg'").join("DEFAULT_PRACTICE = 'us'") }).practice],
+    ['Our own matter files re-measured', () => besideFacts({ ...SRCB, prof: SRCB.prof.split('11% \\u2192 56%').join('11% \\u2192 40%') }).ownFiles],
+    ['a version past 0.1.0', () => besideFacts({ ...SRCB, version: '0.1.1' }).released010],
+    ['an example library of 98', () => besideFacts({ ...SRCB, exampleN: 98 }).example99],
+    ['a Related lane that is the fixed demo again', () => besideFacts({ ...SRCB, rel: '' }).relatedOwn],
   ]) {
     const failed = broken() === false;
     console.log(`  CONTROL (source fact, ${cname}) ${failed ? 'fails, as it must' : 'PASSED — the fact cannot see it'}`);
