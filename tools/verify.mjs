@@ -163,6 +163,12 @@ const GATES = [
     need: () => null,
   },
   {
+    name: 'site-links',
+    what: 'the pages link each other at clean addresses (no .html, which Cloudflare answers with a 307) and real anchors, the sitemap has one dated row per page, and (with full git history) no lastmod is older than its page',
+    cmd: [process.execPath, ['tools/site-links.mjs']],
+    need: () => null,
+  },
+  {
     name: 'family-json',
     what: 'site/family.json is what simpler.capital publishes: publishedFamily(), live entries only, no working notes',
     cmd: [process.execPath, ['tools/family-json.mjs', '--check']],

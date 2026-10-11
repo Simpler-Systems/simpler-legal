@@ -8,6 +8,8 @@ const MIME = { '.html': 'text/html', '.css': 'text/css', '.svg': 'image/svg+xml'
 createServer((req, res) => {
   let p = decodeURIComponent(req.url.split('?')[0])
   if (p === '/') p = '/index.html'
+  // clean addresses, as Cloudflare serves them: /it is it.html (the pages link that way)
+  if (!extname(p) && existsSync(join(ROOT, `${p}.html`))) p = `${p}.html`
   const f = resolve(join(ROOT, p))
   if (!f.startsWith(ROOT) || !existsSync(f) || statSync(f).isDirectory()) { res.writeHead(404); return res.end('404') }
   res.writeHead(200, { 'content-type': MIME[extname(f)] || 'application/octet-stream' })

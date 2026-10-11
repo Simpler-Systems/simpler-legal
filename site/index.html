@@ -525,7 +525,7 @@
     <b>deleted from the text and replaced with a tag</b>, and a text export is a new file rebuilt
     from the cleaned text. A .docx export rewrites your original Word package instead, and is held
     back if a check of the finished file finds a listed name still in it. That check has blind
-    spots, and <a href="it.html#files">the IT brief lists every one</a>. Tags follow spellings, not
+    spots, and <a href="it#files">the IT brief lists every one</a>. Tags follow spellings, not
     people: one person can carry two tags, and a bare <code>[Person]</code> does not tell people
     apart, so read the copy before you send it. The map from tags back to names is a separate file that
     never exports with the document unless you explicitly say so.</p>
@@ -754,7 +754,7 @@
       <p class="lead">Every accuracy number in this industry is a sentence you're asked to believe.
       Ours come with the files behind them: the draw manifests, the gold labels, the scorer and
       every round's board are committed in the repository, and the exhibits below link to them.
-      The <a href="research.html">full methodology, per-class results and leak ledger have their own page</a>.</p>
+      The <a href="research">full methodology, per-class results and leak ledger have their own page</a>.</p>
     </div>
     <!-- 2026-09-28: cut to simpler.red's length on the owner's word. What the exhibits, the
          results note, "Reproduce it yourself" and the honest claim said at length is on
@@ -861,7 +861,7 @@
       engine it says so, and no number here was measured on that path. Both kinds of row are
       published — the genre that converged and the one where every fresh draw still finds
       something new. A vendor that shows you only one number is showing you the wrong one.
-      <a href="research.html">The measurement record</a> has the methodology and every named miss.</p>
+      <a href="research">The measurement record</a> has the methodology and every named miss.</p>
     </div>
 
     <div class="repro">
@@ -869,7 +869,7 @@
       <p>The manifests, the sealed gold (as character offsets, not text), the scorer and every
       board ship in the tree. The documents re-fetch from their public sources, and the Singapore
       Family Court gold is withheld, so the courts numbers do not fully rebuild. The
-      <a href="research.html#repro">research page</a> has the whole procedure.</p>
+      <a href="research#repro">research page</a> has the whole procedure.</p>
       <pre>git clone https://github.com/Simpler-Systems/simpler-legal
 cd simpler-legal
 node score-pii.mjs selftest     # the scorer proves itself first: 8/8</pre>
@@ -922,7 +922,7 @@ node score-pii.mjs selftest     # the scorer proves itself first: 8/8</pre>
       filename. Settings shows which file it found.</p></div>
       <div class="note"><h3>On a work machine?</h3><p>By the app's code, every call it makes goes
       to 127.0.0.1. Its installer may fetch Microsoft's WebView2 runtime, and no packet capture of
-      the packaged app is on record yet. The <a href="it.html">IT brief</a> covers the local
+      the packaged app is on record yet. The <a href="it">IT brief</a> covers the local
       ports, the model server and the installer, and
       <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/PRIVACY.md">PRIVACY.md</a>
       says what the app keeps on disk. Report a security problem privately, through the
@@ -941,7 +941,7 @@ node score-pii.mjs selftest     # the scorer proves itself first: 8/8</pre>
       <code>node serve-legal.mjs</code> puts the frozen engine on <code>127.0.0.1:1436</code>.
       The launcher leaves the model server's <code>/slots</code> endpoint on, which lets a web page
       read the last text it was given, so set <code>LLAMA_ARG_ENDPOINT_SLOTS=0</code> first
-      (<a href="it.html#ports">the IT brief</a> says why).</p></div>
+      (<a href="it#ports">the IT brief</a> says why).</p></div>
     </div>
   </div>
 </section>
@@ -964,7 +964,7 @@ node score-pii.mjs selftest     # the scorer proves itself first: 8/8</pre>
       <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2.5 12 7 12 10 5.5 14 18.5 17 12 21.5 12"/></svg>
         <div><b>Watch the wire</b><p>Run a network monitor (Wireshark, or Windows' own Resource Monitor or pktmon) during a redaction. By the code, you should see only loopback traffic to 127.0.0.1. No capture of this is on record yet.</p></div></div>
       <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8.5 7-5 5 5 5M15.5 7l5 5-5 5"/></svg>
-        <div><b>Read the code</b><p>It's Apache-2.0 source, on GitHub. Grep the app and engine for a network call: every one goes to 127.0.0.1. There is no updater and no telemetry. The <a href="it.html#verify">IT brief</a> lists the other addresses in the source, and why none is requested.</p></div></div>
+        <div><b>Read the code</b><p>It's Apache-2.0 source, on GitHub. Grep the app and engine for a network call: every one goes to 127.0.0.1. There is no updater and no telemetry. The <a href="it#verify">IT brief</a> lists the other addresses in the source, and why none is requested.</p></div></div>
       <div class="check"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="8.5" width="19" height="7" rx="3.5"/><circle cx="7.5" cy="12" r="1.7" fill="currentColor" stroke="none"/><path d="M12 12h6" stroke-linecap="round"/></svg>
         <div><b>In the app itself</b><p>The egress pill in the corner reads "0 requests off this machine" and opens that window's live network record — what the app itself requested, and what the browser loaded for the page. It says what it cannot see, too.</p></div></div>
     </div>
@@ -986,7 +986,7 @@ node score-pii.mjs selftest     # the scorer proves itself first: 8/8</pre>
       <div class="claim"><h3>Can I use this with privileged or confidential matter files?</h3><p>The redaction stays in your custody: this is local software, and there is no server of ours to receive your originals. But the copy you then send to an AI provider still carries the matter's facts, dates, amounts and most places, by default the names of companies that are not the document's own, and anything the engine missed: on a firm's own filings, an identifier stayed readable in 14 of 20 under the default setting. Review it before you send it, and weigh the provider's terms as you would for any disclosure. Not legal advice.</p></div>
       <!-- 2026-09-28: the whole answer, every blind spot site-claims holds, is on
            it.html#files with its comment; this is its first sentences and the pointer. -->
-      <div class="claim" id="faq-files"><h3>What files does it read?</h3><p>PDF, Word (.docx) and plain text. Scanned or image-only pages need OCR, which isn't included yet: a PDF with no readable page is held, and a scanned page inside a readable one is left out, with a line in its place. A text export is a new file rebuilt from the redacted text. A .docx export rewrites your original Word package and is held back if a check of the finished file finds a listed name still in it; <a href="it.html#files">the IT brief lists what that check cannot see</a>.</p></div>
+      <div class="claim" id="faq-files"><h3>What files does it read?</h3><p>PDF, Word (.docx) and plain text. Scanned or image-only pages need OCR, which isn't included yet: a PDF with no readable page is held, and a scanned page inside a readable one is left out, with a line in its place. A text export is a new file rebuilt from the redacted text. A .docx export rewrites your original Word package and is held back if a check of the finished file finds a listed name still in it; <a href="it#files">the IT brief lists what that check cannot see</a>.</p></div>
       <div class="claim"><h3>What does it cost?</h3><p>Nothing. Apache-2.0-licensed, no account, no tiers. If you want document work handled end-to-end on the AI subscription you already pay for, that's our sibling product — <a href="https://simpler.asia">simpler.asia</a>.</p></div>
     </div>
   </div>
@@ -1168,8 +1168,8 @@ node score-pii.mjs selftest     # the scorer proves itself first: 8/8</pre>
   <div class="wrap">
     <div class="row">
       <span class="fbrand"><img src="favicon.svg" alt="" width="16" height="16" style="border-radius:4px" />Simpler Legal</span>
-      <a href="research.html">Research</a>
-      <a href="it.html">IT brief</a>
+      <a href="research">Research</a>
+      <a href="it">IT brief</a>
       <a href="https://github.com/Simpler-Systems/simpler-legal">GitHub</a>
       <a href="https://github.com/Simpler-Systems/simpler-legal/releases">Releases</a>
       <a href="https://github.com/Simpler-Systems/simpler-legal/blob/main/SECURITY.md">Security</a>
